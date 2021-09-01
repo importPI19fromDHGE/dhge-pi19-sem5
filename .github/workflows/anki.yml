@@ -1,4 +1,4 @@
-name: Create PDF release from markdown
+name: Create Anki Decks release from markdown
 
 on:
   push:
@@ -22,7 +22,7 @@ jobs:
         with:
           name: output
           path: output
-  release_pdfs:
+  release_decks:
     runs-on: ubuntu-18.04
     needs: convert_via_md2apkg
     if: github.ref == 'refs/heads/main' # only publish if commited to the main branch
@@ -32,7 +32,7 @@ jobs:
         with:
           name: output
           path: output
-      - uses: meeDamian/github-release@2.0 # create/override a release and attach a pdf
+      - uses: meeDamian/github-release@2.0 # create/override a release and attach apkgs
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
           tag: anki-release
