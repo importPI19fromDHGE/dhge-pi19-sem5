@@ -9,7 +9,7 @@ on:
 
 jobs:
   convert_via_pandoc:
-    runs-on: docker://rstropek/pandoc-latex:latest
+    runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
       - run: |
@@ -18,10 +18,9 @@ jobs:
           for f in [A-Z]*[A-Z]-[A-Z]*[A-Z]/README.md; do awk '/!\[/{gsub(/<!--/,"{");gsub(/-->/,"}")};{gsub("<!--pagebreak-->","\\pagebreak")};{gsub("<!--newpage-->","\\newpage")};{gsub("<!--clearpage-->","\\clearpage")};{gsub("<!----------","---")};{gsub("---------->","...")};{print}' .old/${f} > ${f} ; done
       - run: |
           mkdir output
-     # - uses: docker://rstropek/pandoc-latex:latest # generate ABWL-LEDER pdf
-     #   with:
-      - run: pandoc --output=output/ABWL-LEDER.pdf --resource-path=ABWL-LEDER/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose ABWL-LEDER/README.md
-      - run: pandoc --help
+      - uses: docker://rstropek/pandoc-latex:latest # generate ABWL-LEDER pdf
+        with:
+          args: --output=output/ABWL-LEDER.pdf --resource-path=ABWL-LEDER/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose ABWL-LEDER/README.md; pandoc --help
       - uses: actions/upload-artifact@master # upload pdfs as an artifact
         with:
           name: output
