@@ -38,7 +38,13 @@ Alle Kommilitonen PI19 sind dazu eingeladen, ihre eigenen Beiträge zu diesem Pr
 
 ## Module
 
-> coming soon
+- [ABWL - Allgemeine Betriebswirtschaftslehre](./ABWL-LEDER)
+- [GDV - Graphische Datenverarbeitung](./GDV-HERBST)
+- [NET - Rechnernetzadministration/Verteilte Systeme](./NET-BARIE)
+- [RES - Systemprogrammierung](./RES-GUENTHER)
+- [WEB - Webbasierte Anwendungen/E-Commerce](./WEB-MUELLER)
+- [EMB - Embedded Systems II](./EMB-GUENTHER)
+- [SEW - Software-Entwicklungswerkzeuge](./SEW-KUSCHE)
 
 ## Markdown-Erweiterungen
 
