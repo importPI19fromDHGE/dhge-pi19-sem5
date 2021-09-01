@@ -41,7 +41,7 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
           tag: pdf-release
           name: PDFs
-          body: Automated release
+          body: Dieses Release wurde automatisch erstellt
           gzip: false
-          files: output/ABWL-LEDER.pdf
+          files: output/[A-Z]*[A-Z]-[A-Z]*[A-Z].pdf
           allow_override: true
