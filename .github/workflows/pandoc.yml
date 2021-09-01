@@ -20,7 +20,7 @@ jobs:
           mkdir output
       - uses: docker://rstropek/pandoc-latex:latest # generate ABWL-LEDER pdf
         with:
-          entrypoint: /bin/sh
+          entrypoint: /bin/bash
           args: -c "for f in [A-Z]*[A-Z]-[A-Z]*[A-Z]/README.md; do d=$(awk -F/ '{print $1}' <<< ${f}); echo ${d}+${f}; pandoc --output=output/${d}.pdf --resource-path=${d}/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose ${f}; done"
       - uses: actions/upload-artifact@master # upload pdfs as an artifact
         with:
