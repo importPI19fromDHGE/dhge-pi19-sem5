@@ -14,4 +14,4 @@ jobs:
         # Git commit name.
         COMMIT_NAME: "TOCGEN"
         CREATE_PR: false
-        TARGET_PATHS: "./ABWL-LEDER/README.md"
+        TARGET_PATHS: "./[A-Z]*[A-Z]-[A-Z]*[A-Z]/README.md"
