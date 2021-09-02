@@ -1,0 +1,47 @@
+name: Create PDF release from markdown
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  convert_via_pandoc:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          mkdir .old &&
+          rsync -vr ./* .old/ --exclude .old &&
+          for f in [A-Z]*[A-Z]-[A-Z]*[A-Z]/README.md; do awk '/!\[/{gsub(/<!--/,"{");gsub(/-->/,"}")};{gsub("<!--pagebreak-->","\\pagebreak")};{gsub("<!--newpage-->","\\newpage")};{gsub("<!--clearpage-->","\\clearpage")};{gsub("<!----------","---")};{gsub("---------->","...")};{print}' .old/${f} > ${f} ; done
+      - run: |
+          mkdir output
+      - uses: docker://rstropek/pandoc-latex:latest # generate ABWL-LEDER pdf
+        with:
+          entrypoint: /bin/sh
+          args: -c "for f in [A-Z]*[A-Z]-[A-Z]*[A-Z]/README.md; do d=$(echo ${f} | awk -F/ '{print $1}'); echo ${d}+${f}; pandoc --output=output/${d}.pdf --resource-path=${d}/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose ${f}; done"
+      - uses: actions/upload-artifact@master # upload pdfs as an artifact
+        with:
+          name: output
+          path: output
+  release_pdfs:
+    runs-on: ubuntu-20.04
+    needs: convert_via_pandoc
+    if: github.ref == 'refs/heads/main' # only publish if commited to the main branch
+    steps:
+      - name: Retrieve saved Docker image
+        uses: actions/download-artifact@v2
+        with:
+          name: output
+          path: output
+      - uses: meeDamian/github-release@2.0 # create/override a release and attach a pdf
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+          tag: pdf-release
+          name: PDFs
+          body: Dieses Release wurde automatisch erstellt
+          gzip: false
+          files: output/[A-Z]*[A-Z]-[A-Z]*[A-Z].pdf
+          allow_override: true
