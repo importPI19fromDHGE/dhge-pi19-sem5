@@ -9,7 +9,7 @@ on:
 
 jobs:
   convert_via_pandoc:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
       - run: |
@@ -27,7 +27,7 @@ jobs:
           name: output
           path: output
   release_pdfs:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     needs: convert_via_pandoc
     if: github.ref == 'refs/heads/main' # only publish if commited to the main branch
     steps:
