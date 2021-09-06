@@ -74,3 +74,8 @@ Damit eine Kompatibilität zum Github-`markdown` haben wir eigene Erweiterungen 
 Github unterstützt keine mathematischen Formeln.
 Als Workaround gibt es eine [Erweiterung für Chrome](https://github.com/orsharir/github-mathjax).
 Ansonsten können Formeln in ihrer vollen Pracht nur in den PDFs betrachtet werden.
+
+### Anki-Decks
+
+Zusätzlich zu den PDFs generieren wir zu allen Modulen Anki-Decks.
+Damit diese möglichst problemlos generiert werden können, sollten auch die Markdown Extensions [hier](https://github.com/Steve2955/md2apkg) beachtet werden. 
