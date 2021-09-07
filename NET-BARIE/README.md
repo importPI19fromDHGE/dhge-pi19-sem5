@@ -7,6 +7,8 @@ keywords: [Rechnernetzadministration, Verteilte Systeme, NET, DHGE, Semester 5]
 Rechnernetzadministration/Verteilte Systeme
 ===========================================
 
+<!-- md2apkg ignore-card -->
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
@@ -33,6 +35,8 @@ Rechnernetzadministration/Verteilte Systeme
 <!--newpage-->
 
 # Literaturempfehlung
+
+<!-- md2apkg ignore-card -->
 
 - Saida Helali: Systems and Network Infrastructure Integration
 - J. Scott Marcus: Designing Wide Area Networks and Internetworks
