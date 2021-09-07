@@ -9,13 +9,28 @@ Rechnernetzadministration/Verteilte Systeme
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Inhaltsverzeichnis**
 
-
+- [Einleitung / Designziele](#einleitung--designziele)
+  - [Designziele](#designziele)
+  - [Wiederholung Grundlagen](#wiederholung-grundlagen)
+    - [Netzwerk](#netzwerk)
+    - [Klassifizierung von Datennetzen](#klassifizierung-von-datennetzen)
+      - [räumliche Ausdehnung](#r%C3%A4umliche-ausdehnung)
+      - [Größe (Anzahl der Teilnehmer)](#gr%C3%B6%C3%9Fe-anzahl-der-teilnehmer)
+      - [Hardware-Sicht](#hardware-sicht)
+      - [logische Sicht](#logische-sicht)
+        - [ISO / OSI](#iso--osi)
+      - [Topologie- / Struktursicht](#topologie---struktursicht)
+        - [Stern](#stern)
+        - [mehrere kleine Sterne -> Redundanz](#mehrere-kleine-sterne---redundanz)
+        - [Ring](#ring)
+        - [Mesh](#mesh)
+      - [logische Struktur](#logische-struktur)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 <!--newpage-->
-
 
 # Literaturempfehlung
 
@@ -30,7 +45,7 @@ Rechnernetzadministration/Verteilte Systeme
 
 ## Designziele
 
-- **Funktional:** Erfüllung der Anforderungen im Lastenheft $\rightarrow$ Benutzer können ihre Arbeit unter ptimalen Bedingungen erfüllen
+- **Funktional:** Erfüllung der Anforderungen im Lastenheft $\rightarrow$ Benutzer können ihre Arbeit unter optimalen Bedingungen erfüllen
 - **Ausbaufähig:** Wachstum muss möglich sein
 - **Wartbarkeit:** von der Entwurfsphase an muss einfache Wartung/Betrieb eingeplant werden $\rightarrow$ Doku
 - **Adaptivität:** Anpassung an neue Technologien
@@ -42,23 +57,23 @@ Rechnernetzadministration/Verteilte Systeme
 - Besteht aus Hard- und Software
 - durch kabelgebundene und/oder drahtlose Übertragungssysteme verbunden
 - zur Übertragung/Verarbeitung von Informationen
-- In LV: Fokus auf digitalen Datennetzen (~~Telefon-, Rundfunknetze~~) $\rightarrow$ Next Generation Networking
+- digitale Datennetzte (es sollen keine Rundfunknetze und Telefonnetze behandelt werden) $\rightarrow$ NGN (Next Generation Networking)
 
 ### Klassifizierung von Datennetzen
 
 - Topologien/Strukturen
-- Größe(Anzahl Clients)/Leistungsfähigkeit
+- Größe/Leistungsfähigkeit (Anzahl Clients)
 - Übertragungmedium
-- Protokollebene (Heterogen/Homogen)
+- Anwendungsbereich: Protokollebene (Heterogen/Homogen)
 - Hard-/Software
-- Räumliche Ausdehnung
-- Betriebsmodus (Client/Server, Peer2Peer)
+- Räumliche Ausdehnung (LAN, WAN, etc.)
+- Betriebsmodus (Client-Server, Peer-to-Peer)
 
 #### Räumliche Ausdehnung
 
-- **PAN:** Personal Area Network, *1m-10m*
-- **LAN:** Local Area Network, *10m-1km*
-- **MAN:** Metropolitan Area Network, *1-100km*
+- **PAN:** Personal Area Network, Reichweite *1m-10m* (bspw. Bluetooth)
+- **LAN:** Local Area Network, Reichweite *10m-1km*
+- **MAN:** Metropolitan Area Network, Reichweite *1-100km*
 - **WAN:** Metropolitan Area Network
 - **GAN:** Global Area Network
 
@@ -70,8 +85,8 @@ Rechnernetzadministration/Verteilte Systeme
 
 #### Hardware-Sicht
 
-- Endgeräte (PC, Handy, Telefon, Server, Drucker, IoT)
-- Kopplungsgeräte (Switch, Firewall, Repeater, Router, Bridge, Hub, Access-Point)
+- Endgeräte (PC, Handy, Telefon, Server, Drucker, IoT, Management-Stationen)
+- Kopplungsgeräte (Switch, Firewall, Repeater, Router, Bridge, Hub, Modem, Access-Point)
 - Übertragungsmedien (Kabel, Funk)
 
 #### Logische Sicht
@@ -90,14 +105,14 @@ Rechnernetzadministration/Verteilte Systeme
 
 #### Topologie-/Struktursicht
 
-- ~~**Bus**~~
-- **Stern** (Switch $\rightarrow$ Host 1, Host 2, Host n; Router $\rightarrow$ Switch 1, Switch 2, Switch 3) <!--siehe OneNote-->
+- ~~**Bus**~~ (in LV nicht betrachtet)
+- **Stern** (Switch verbunden zu Host 1..n; Routerverbunden zu  Switch 1..n)
   - *nicht nur in Geräten denken, sondern allgemein in Strukturen*
   - Vorteil: schöne Struktur (leicht verständlich, wartbar), kostengünstig
   - Problem: Zentrale (Router, Switch) ist SPOF
-- Lösung Redundanz: Stern aufbrechen $\rightarrow$ mehrere, kleinere Sterne, redundant verbunden
+- Lösung Redundanz: Stern aufbrechen $\rightarrow$ mehrere kleinere Sterne, redundant verbunden
   - $\rightarrow$ SPOF nicht mehr katastrophal, weniger Langstreckenverkehr
-- **Ring:** weitere Redundanzen durch ringförmige Verbindungen der Zentralen (SoNET/SDH, Telekom)
+- **Ring:** weitere Redundanzen durch ringförmige Verbindungen der Zentralen (früher bereits leitungsvermittelt: SoNET/SDH $\rightarrow$ Telekom)
   - jede Einheit ist mit zwei anderen verbunden
     - Vorteil: einzelne Verbindung kann ausfallen, Kommunikation weiterhin möglich
     - Nachteil: hohe Kosten, schwerer wartbar (Strukturänderungen)
@@ -105,7 +120,7 @@ Rechnernetzadministration/Verteilte Systeme
 
 #### Logische Sicht
 
-- logische Struktur kann nicht in übereinstimmung mit der physischen Struktur entworfen werden
+- logische Struktur kann nicht in Übereinstimmung mit der physischen Struktur entworfen werden
 - wird beeinflusst von Unternehmensstruktur, Zugang zu Diensten, Verzeichnisdienst
 - z.B. flaches L2-Netz: eine Broadcast-Domäne, kein Router
-  - Overlay: logische Struktur über physikalischen Netz $\rightarrow$ **VLAN**, IEEE 802.1q
+  - Overlay: logische Struktur über physikalischen Netz $\rightarrow$ **VLAN** (IEEE 802.1q)
