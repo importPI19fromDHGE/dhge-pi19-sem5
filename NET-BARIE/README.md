@@ -76,7 +76,7 @@ Rechnernetzadministration/Verteilte Systeme
 
 #### Logische Sicht
 
-##### ISO/OSI
+##### ISO/OSI und TCP/IP
 
 | Schicht                | Funktion                                                     | Protokolle | TCP/IP                          |
 | ---------------------- | ------------------------------------------------------------ | ---------- | ------------------------------- |
@@ -88,4 +88,24 @@ Rechnernetzadministration/Verteilte Systeme
 | Sicherungsschicht      | Behandlung von Übertragungsfehlern                           | Ethernet   | Netzzugangsschicht (Link Layer) |
 | Bitübertragungsschicht | physikalische Ebene -> Übertragung von Signalen              |            | Netzzugangsschicht (Link Layer) |
 
-##### TCP/IP
+#### Topologie-/Struktursicht
+
+- ~~**Bus**~~
+- **Stern** (Switch $\rightarrow$ Host 1, Host 2, Host n; Router $\rightarrow$ Switch 1, Switch 2, Switch 3) <!--siehe OneNote-->
+  - *nicht nur in Geräten denken, sondern allgemein in Strukturen*
+  - Vorteil: schöne Struktur (leicht verständlich, wartbar), kostengünstig
+  - Problem: Zentrale (Router, Switch) ist SPOF
+- Lösung Redundanz: Stern aufbrechen $\rightarrow$ mehrere, kleinere Sterne, redundant verbunden
+  - $\rightarrow$ SPOF nicht mehr katastrophal, weniger Langstreckenverkehr
+- **Ring:** weitere Redundanzen durch ringförmige Verbindungen der Zentralen (SoNET/SDH, Telekom)
+  - jede Einheit ist mit zwei anderen verbunden
+    - Vorteil: einzelne Verbindung kann ausfallen, Kommunikation weiterhin möglich
+    - Nachteil: hohe Kosten, schwerer wartbar (Strukturänderungen)
+- **Mesh:** Verknüpfung von Ringen und Sternen (Teilvermascht)
+
+#### Logische Sicht
+
+- logische Struktur kann nicht in übereinstimmung mit der physischen Struktur entworfen werden
+- wird beeinflusst von Unternehmensstruktur, Zugang zu Diensten, Verzeichnisdienst
+- z.B. flaches L2-Netz: eine Broadcast-Domäne, kein Router
+  - Overlay: logische Struktur über physikalischen Netz $\rightarrow$ **VLAN**, IEEE 802.1q
