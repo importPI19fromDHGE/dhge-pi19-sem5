@@ -9,8 +9,24 @@ Rechnernetzadministration/Verteilte Systeme
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Inhaltsverzeichnis**
 
-
+- [Einleitung / Designziele](#einleitung--designziele)
+  - [Designziele](#designziele)
+  - [Wiederholung Grundlagen](#wiederholung-grundlagen)
+    - [Netzwerk](#netzwerk)
+    - [Klassifizierung von Datennetzen](#klassifizierung-von-datennetzen)
+      - [räumliche Ausdehnung](#r%C3%A4umliche-ausdehnung)
+      - [Größe (Anzahl der Teilnehmer)](#gr%C3%B6%C3%9Fe-anzahl-der-teilnehmer)
+      - [Hardware-Sicht](#hardware-sicht)
+      - [logische Sicht](#logische-sicht)
+        - [ISO / OSI](#iso--osi)
+      - [Topologie- / Struktursicht](#topologie---struktursicht)
+        - [Stern](#stern)
+        - [mehrere kleine Sterne -> Redundanz](#mehrere-kleine-sterne---redundanz)
+        - [Ring](#ring)
+        - [Mesh](#mesh)
+      - [logische Struktur](#logische-struktur)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
