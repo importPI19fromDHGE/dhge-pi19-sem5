@@ -122,7 +122,7 @@ Rechnernetzadministration/Verteilte Systeme
     - Nachteil: hohe Kosten, schwerer wartbar (Strukturänderungen)
 - **Mesh:** Verknüpfung von Ringen und Sternen (Teilvermascht)
 
-#### Logische Sicht
+#### Logische Struktur
 
 - logische Struktur kann nicht in Übereinstimmung mit der physischen Struktur entworfen werden
 - wird beeinflusst von Unternehmensstruktur, Zugang zu Diensten, Verzeichnisdienst
