@@ -9,8 +9,29 @@ Allgemeine Betriebswirtschaftslehre
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Inhaltsverzeichnis**
 
-
+- [Klausur (NICHT vollständig)](#klausur-nicht-vollst%C3%A4ndig)
+  - [BWL](#bwl)
+  - [Projektmanagement](#projektmanagement)
+- [Generelles (Wiederholung)](#generelles-wiederholung)
+- [Projektmanagement](#projektmanagement-1)
+  - [Grundlagen](#grundlagen)
+  - [ausrichtungsbezogene Projektarten (Folie 10-11)](#ausrichtungsbezogene-projektarten-folie-10-11)
+    - [Revolutionäre](#revolution%C3%A4re)
+    - [Evolutionäre](#evolution%C3%A4re)
+    - [Expansiv](#expansiv)
+    - [Forschung](#forschung)
+    - [Entwicklung](#entwicklung)
+  - [funktionsbezogene Projektarten](#funktionsbezogene-projektarten)
+    - [Materialwirtschaft](#materialwirtschaft)
+    - [Fertigung](#fertigung)
+    - [Marketing](#marketing)
+    - [Verwaltung](#verwaltung)
+  - [Ziel eines Projekts](#ziel-eines-projekts)
+  - [Grundsätze für die Projektplanung (Folie 17)](#grunds%C3%A4tze-f%C3%BCr-die-projektplanung-folie-17)
+  - [Projektmanagement - Funktionskreis PDCA (Folie 18)](#projektmanagement---funktionskreis-pdca-folie-18)
+  - [Problemanalyse (Folie 22)](#problemanalyse-folie-22)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
