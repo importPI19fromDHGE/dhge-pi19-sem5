@@ -35,12 +35,16 @@ Allgemeine Betriebswirtschaftslehre
 * Finanzierung - Strategie (Ziele formulieren)
 * Abschreibung berechnen (oder Berechnungsverfahren erkennen (linear, degressiv etc.))
 * Definition, Inhalt, Ziel von Protektionswirtschaft (in heutiges Leben einordnen können)
+* Nutzwertanalyse (evtl. auch in Projektmanagement)
 
 ## Projektmanagement
 
 * Projekt und Projektmanagement erläutern können
 * Kennzeichen/Merkmale von Projektmanagement erläutern können (Folie 4)
 * Knotennetzplan
+* Grundsätze für die Projektplanung (Folie 17)
+* PDCA anwenden und beschreiben können
+* Problemanalyse (Folie 22)
 
 # Generelles (Wiederholung)
 
@@ -103,4 +107,19 @@ Allgemeine Betriebswirtschaftslehre
 
 * Umstellung von Fax auf ein Vorgangsbearbeitungssystem (Echtzeitsystem)
 
-### Kombination
+## Ziel eines Projekts
+
+* SMART: Spezifisch (Sache), Messbar (Größenordnung, Umfang), Aktuell/Akzeptiert/Agreed, Realistisch (Ziel muss erfüllbar sein, auch wenn Möglichkeit des Scheiterns besteht), Terminiert (Wann ist das Projekt fertiggestellt: mit Zeitabschnitt oder Datum)
+* A,R sind die Bedingungen für ein Projekt; sind die Bedingungen nicht gegeben, ist es kein Ziel sondern ein Wunsch
+
+## Grundsätze für die Projektplanung (Folie 17)
+
+* Projektfindung-/Vorbereitung ist reine Theorie
+
+## Projektmanagement - Funktionskreis PDCA (Folie 18)
+
+* **Do** ist ein beschränkter Test
+
+## Problemanalyse (Folie 22)
+
+* Umfeld = Mileau (somit 7 M)
