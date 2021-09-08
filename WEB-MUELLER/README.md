@@ -11,8 +11,28 @@ Webbasierte Anwendungen/E-Commerce
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Inhaltsverzeichnis**
 
-
+- [E-Commerce](#e-commerce)
+- [E-Business](#e-business)
+  - [Kategorien von E-Business](#kategorien-von-e-business)
+  - [Phasen einer Online-Präsenz](#phasen-einer-online-pr%C3%A4senz)
+  - [Website vs. Webpage](#website-vs-webpage)
+  - [Problembereiche von E-Business](#problembereiche-von-e-business)
+  - [Die sieben Erfolgsfaktoren eines Online-Shops](#die-sieben-erfolgsfaktoren-eines-online-shops)
+  - [Mögliche Probleme beim Betreiben eines Web-Shops](#m%C3%B6gliche-probleme-beim-betreiben-eines-web-shops)
+  - [Internetrecht](#internetrecht)
+- [Kennzeichenrecht (Adresse)](#kennzeichenrecht-adresse)
+  - [Grundlagen des Kennzeichenrechts](#grundlagen-des-kennzeichenrechts)
+    - [Kennzeichen](#kennzeichen)
+    - [Kennzeichenschutz durch MarkenG](#kennzeichenschutz-durch-markeng)
+    - [Markenrechtsverletzung](#markenrechtsverletzung)
+    - [Verwechslungsgefahr](#verwechslungsgefahr)
+- [Internationalität](#internationalit%C3%A4t)
+  - [Anwendbares Recht](#anwendbares-recht)
+- [Urheberrecht (Inhalte)](#urheberrecht-inhalte)
+  - [Entstehung des Urheberrechts](#entstehung-des-urheberrechts)
+- [Recht E-Commerce (Kundenkontakt)](#recht-e-commerce-kundenkontakt)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
