@@ -15,7 +15,7 @@ Projektmanagement
 
 - [Klausur (unvollständig)](#klausur-unvollst%C3%A4ndig)
   - [BWL](#bwl)
-  - [Projektmanagement](#projektmanagement)
+  - [Projektmanagement (Klausurschwerpunkte)](#projektmanagement-klausurschwerpunkte)
 - [Grundlagen](#grundlagen)
   - [Allgemeine Wiederholung](#allgemeine-wiederholung)
   - [Management Methoden](#management-methoden)
