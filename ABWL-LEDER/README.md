@@ -1,52 +1,35 @@
 <!----------
-title: "Allgemeine Betriebswirtschaftslehre"
+title: "Projektmanagement"
 date: "Semester 5"
-keywords: [Betriebswirtschaftslehre, BWL, DHGE, Semester 5]
+keywords: [Projektmanagement, BWL, DHGE, Semester 5]
 ---------->
 
-Allgemeine Betriebswirtschaftslehre
-===================================
+Projektmanagement
+=================
+
+<!-- md2apkg ignore-card -->
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Inhaltsverzeichnis**
 
-- [Klausur (NICHT vollständig)](#klausur-nicht-vollst%C3%A4ndig)
-  - [BWL](#bwl)
-  - [Projektmanagement](#projektmanagement)
-- [Generelles (Wiederholung)](#generelles-wiederholung)
-- [Projektmanagement](#projektmanagement-1)
-  - [Grundlagen](#grundlagen)
-  - [ausrichtungsbezogene Projektarten (Folie 10-11)](#ausrichtungsbezogene-projektarten-folie-10-11)
-    - [Revolutionäre](#revolution%C3%A4re)
-    - [Evolutionäre](#evolution%C3%A4re)
-    - [Expansiv](#expansiv)
-    - [Forschung](#forschung)
-    - [Entwicklung](#entwicklung)
-  - [funktionsbezogene Projektarten](#funktionsbezogene-projektarten)
-    - [Materialwirtschaft](#materialwirtschaft)
-    - [Fertigung](#fertigung)
-    - [Marketing](#marketing)
-    - [Verwaltung](#verwaltung)
-  - [Ziel eines Projekts](#ziel-eines-projekts)
-  - [Grundsätze für die Projektplanung (Folie 17)](#grunds%C3%A4tze-f%C3%BCr-die-projektplanung-folie-17)
-  - [Projektmanagement - Funktionskreis PDCA (Folie 18)](#projektmanagement---funktionskreis-pdca-folie-18)
-  - [Problemanalyse (Folie 22)](#problemanalyse-folie-22)
+
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 <!--newpage-->
 
-# Klausur (NICHT vollständig)
+# Klausur (unvollständig)
 
 ## BWL
+
+<!-- md2apkg ignore-card -->
 
 - SWOT Analyse
 - Kundenorientierung (die Kurzfassung reicht)
 - Center Organisation
 - Berechnung des Personalbedarfs
 - Auftragszeit berechnen
-- KVP (Kontinuirlicher Verbesserungsprozess)
+- KVP (Kontinuierlicher Verbesserungsprozess)
 - interne vs. externe Mitarbeiter-Beschaffung
 - ZVEI basiert auf ROI (Grundlage Dupont), unterteilt in 4 Sektoren (2 Ertragskraft, 2 Risiko); keine Berechnungen können, nur beschreiben
 - RL: Darstellung (gelb) Bilanz, Controlling (zur Leistungserbringung)
@@ -60,6 +43,8 @@ Allgemeine Betriebswirtschaftslehre
 
 ## Projektmanagement
 
+<!-- md2apkg ignore-card -->
+
 - Projekt und Projektmanagement erläutern können
 - Kennzeichen/Merkmale von Projektmanagement erläutern können (Folie 4)
 - Knotennetzplan
@@ -67,80 +52,114 @@ Allgemeine Betriebswirtschaftslehre
 - PDCA anwenden und beschreiben können
 - Problemanalyse (Folie 22)
 
-# Generelles (Wiederholung)
+# Grundlagen
+
+> Die Durchführung eines Projektes besteht aus dem Projekt selbst und dem Projektmanagement
+
+- **Projekt:** risikobehafteter, hoch komplexer Gegenstand einer Handlung (Ziel/Aufgabe) mit begrenzten Ressourcen (HR, MR, FR) in einem bestimmten Zeitrahmen
+- **Projektmanagement:** Organisation von Ablauf, Abrechnung und Dokumentation der Umsetzung eines Projektes
+- **Kontinuierlicher Verbesserungsprozess** (KVP) durch Markt (Wettbewerb, Kunde) und technisch-technologischen Fortschritt getrieben
+- Verantwortung: Übernahme der Aufgabenerfüllung $\rightarrow$ Folgen: Tadel, Lob
+
+<!--
+Mögliche Klausuraufgabe: Was zeichnet ein Projekt aus?
+Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönliche Kompetenz
+-->
+
+## Allgemeine Wiederholung
 
 - KVP bewegt durch Markt (Wettbewerb, Kunde) und technisch technologischen Fortschritt
 - Ressourcen: HR, MR, FR (human, material und financial resources)
-- Verantwortung: Übergeben, Übernommen -> Aufgabenerfüllung
+- Verantwortung: Übergeben, Übernommen $\rightarrow$ Aufgabenerfüllung
   - Folge von Verantwortung: Tadel oder Lob (beides wichtig, jedoch nicht inflationär)
 - Teile des Marketings: Preis (Kontrahierungspolitik), Verteilung (Distribution), Produktpolitik, Kommunikation
 
-# Projektmanagement
+## Management Methoden
 
-## Grundlagen
+- Effektivität (*Ist die Maßnahme zielführend?*) und Effizienz (Aufwand/Nutzen-Verhältnis)
+  - wichtig für einheitliche Planungsmethoden
+- einheitliche Standards zur Vergleichbarkeit
 
-- personeller Rahmen: begrenzte Menge an Mitarbeitern, in einer begrenzten Zeit, an einem begrenzten Ort -> Quantität
-- Qualität eines Mitarbeiters: fachliche Kompetenz, methodische Kompetenz, persönliche Kompetenz
-- Effektivität (Ist die Maßnahme zielführend?) und Effizienz (Verhältnis von Aufwand und Nutzen)
-  - wichtig für einheitliche Planungsmethoden (Folie 7)
-- Korrelation (zwei Ereignisse entwickeln sich in die gleiche Richtung, **ohne** Bezug zueinander) und Kausalität (Ursache und Wirkung, zwei Ereignisse entwickeln sich abhängig von einander)
+<!--Kontennetzplan vllt in Klausur-->
 
-## ausrichtungsbezogene Projektarten (Folie 10-11)
+- Planungsmethoden: Knotennetzplan, Vorgangspfeilnetzdiagram, Flussplan, Ganttdiagramm, Workflow
+- Anforderung an Planungsstandard:
+  - Kausalität (Ursache $\rightarrow$ Wirkung, abhängig zueinander)
+    - vgl. Korrelation: zwei Ereignisse entwickeln sich parallel [ohne Bezug zueinander](http://tylervigen.com/spurious-correlations)
+	- Übersichtlichkeit
+	- Transparenz
+	- Vollständigkeit
+	- Zweckbestimmtheit: jedes Projekt hat seine eigenen Vorgaben
 
-### Revolutionäre
+## Projektarten
 
-- gewollte Schritte (bewusst angeregt)
-- Bsp.: Glühbirne
+- ausrichtungsbezogen:
+  - revolutionär: neue Idee; gewollte Schritte, bewusst angeregt (z.B. Glühbirne)
+  - evolutionär: kleine ungewollte Schritte $\rightarrow$ Weiterentwicklung einer Idee (Entwicklung) oder Verbesserung/Optimierung einer Idee (Rationalisierung)
+    - z.B.: Sensomotorik beim Menschen
+  - expansiv: Vergrößern/Ausweiten einer Idee (Objekte)
+    - z.B.: zusätzliche Produktionsanlagen bauen, neue Märkte erschließen
+  - Forschung: z.B. Trial and Error
+  - Entwicklung: z.B. Rennrad als Weiterentwicklung des "normalen" Fahrrads
+- ausstattungsbezogen:
+  - personell: eine/mehrere Personen
+  - Vollzeit: begrenzte hauptamtliche Tätigkeit
+  - Teilzeit: parallel zur derzeitigen Tätigkeit
+- trägerbezogen:
+  - eigene Projekte: im eigenen Unternehmen
+  - fremde Projekte: für ein anders Unternehmen bzw. durch ein anderes Unternehmen
+  - Mischprojekte: eigene und fremde Kräfte wirken gemeinsam
+- funktionsbezogen:
+  - Materialwirtschaft: Supply Chain Management (bspw.: Schreiner muss Holz beschaffen)
+  - Fertigung: ein Projekt zur Optimierung der Produktion (bspw. energiersparenderer Prozess)
+  - Marketing (Preis-, Verteilungs- Produkt-, Kommunikationspolitik)
+  - Verwaltung: Umstellung von Fax auf ein Vorgangsbearbeitungssystem (Echtzeitsystem)
+  - Kombination
 
-### Evolutionäre
 
-- kleine ungewollte Schritte
-- Bsp.: Sensomotorik beim Menschen
+## Organisation
 
-### Expansiv
+### Ziele eines Projektes
 
-- Bsp.: zusätzliche Produktionsanlagen bauen, neue Märkte erschließen
+- strategisch (> 3/5 Jahre): langfristige, grundlegende Ziele
+- taktisch (< 3/5 Jahre, >1 Jahr): mittelfristige Teilziele
+- operativ (<1 Jahr): kurzfristige Prozesssteuerung
+- Ziel (SMART): **S**pezifische Sache, **M**essbare Größenordnung, **A**ktualität, **R**ealistisch (erfüllbar), **T**erminierung (A,R = Bedingungen)
 
-### Forschung
+### Projektfindung/-vorbereitung
 
-- Bspw.: durch Trial and Error
+- **Zielfindung/-bildung:** Benchmarks, Trends, ...
+- **Problemanalyse:** Ishikawa (Ursache/Wirkungs-Diagramm), FMEA (Fehlermöglichkeits- und -einflussanalyse), ...
+- Finden von **Alternativen:** Plan B, Kreativtechniken (Brainstorming)
+- **Prognose:** Extrapolation, Szenarien, Modelle
+- **Bewertung:** Nutzwertanalyse <!--Nutzwertanalyse könnte in der Klausur gebraucht werden-->
 
-### Entwicklung
+### Projektrealisierung
 
-- Bsp.: Rennrad als Weiterentwicklung des "normalen" Fahrrads
+- **Start:** Kick off $\rightarrow$ Bekanntgabe des Projektes
+- **Definitionsphase:** Ziel und Aufgabe (SMART, Operationalisierung (Muss-, Soll-, Kann-Ziele))
+- **Planungsphase:** Netzplantechnik (Pakete, ...)
+- **Umsetzungsphase:** Realisierung
+- **Bewertung:** Kennzahlen, BSC
 
-## funktionsbezogene Projektarten
+### PDCA
 
-### Materialwirtschaft
+- **PLAN:** Prozess planen; Aufgabe und Zielstellung, Analyse des aktuellen Zustands und Entwicklung eines Konzeptes (Plan)
+- **DO:** begrenzter Test
+- **CHECK:** Überprüfen und Analyse der gesammelten Daten
+- **ACT**
 
-- Supply chain management
-- bspw.: Schreiner muss Holz beschaffen
+<!--Klausur: Anwendung und Beschreibung des PDCA für ein Projekt = 8 Punkte -->
 
-### Fertigung
+### Problemermittlung
 
-- ein Projekt zur Optimierung der Produktion (bspw. energiersparenderer Prozess)
+- Ursachenermittlung: Ishikawa, FMEA
+- Fehlerermittlung: FMEA
+- Zukunftsermittlung: FMEA
 
-### Marketing
+#### Ishikawa
 
-- Projekt aus Fertigung zur Senkung des Preises (mehr Profit und/oder bessere Wettbewerbsfähigkeit)
+- Betrachtung der sieben Ms: Mensch, Maschine, Methode, Milieu (Umfeld), Material, Messung, Management
+- Faktoren können je nach Anwendung variieren
 
-### Verwaltung
 
-- Umstellung von Fax auf ein Vorgangsbearbeitungssystem (Echtzeitsystem)
-
-## Ziel eines Projekts
-
-- SMART: Spezifisch (Sache), Messbar (Größenordnung, Umfang), Aktuell/Akzeptiert/Agreed, Realistisch (Ziel muss erfüllbar sein, auch wenn Möglichkeit des Scheiterns besteht), Terminiert (Wann ist das Projekt fertiggestellt: mit Zeitabschnitt oder Datum)
-- A,R sind die Bedingungen für ein Projekt; sind die Bedingungen nicht gegeben, ist es kein Ziel sondern ein Wunsch
-
-## Grundsätze für die Projektplanung (Folie 17)
-
-- Projektfindung-/Vorbereitung ist reine Theorie
-
-## Projektmanagement - Funktionskreis PDCA (Folie 18)
-
-- **Do** ist ein beschränkter Test
-
-## Problemanalyse (Folie 22)
-
-- Umfeld = Mileau (somit 7 M)
