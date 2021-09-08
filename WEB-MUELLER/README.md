@@ -26,9 +26,9 @@ Webbasierte Anwendungen/E-Commerce
   - [Überblick](#%C3%9Cberblick)
   - [Einordung](#einordung)
   - [Kennzeichenrecht](#kennzeichenrecht)
-      - [Kennzeichenschutz durch MarkenG](#kennzeichenschutz-durch-markeng)
-      - [Anwendbares Recht](#anwendbares-recht)
-      - [Domain-Streitigkeiten als Anwendungsgebiet des Kennzeichenrechts](#domain-streitigkeiten-als-anwendungsgebiet-des-kennzeichenrechts)
+    - [Kennzeichenschutz durch MarkenG](#kennzeichenschutz-durch-markeng)
+    - [Anwendbares Recht](#anwendbares-recht)
+    - [Domain-Streitigkeiten als Anwendungsgebiet des Kennzeichenrechts](#domain-streitigkeiten-als-anwendungsgebiet-des-kennzeichenrechts)
   - [Urheberrecht](#urheberrecht)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -146,7 +146,7 @@ Webbasierte Anwendungen/E-Commerce
   - geschäftliche Bezeichnungen: Werktitel (Druck-, Film-, Tonwerke, ...), Unternehmenskennzeichen (Verwendung im geschäftlichen Verkehr $\rightarrow$ Name, Firma, Geschäftsbezeichnung, **Domain**)
   - Namen: Zwangs- und Wahlnamen (§12 BGB)
 
-#### Kennzeichenschutz durch MarkenG
+### Kennzeichenschutz durch MarkenG
 
 - Marken/geschäftliche Bezeichnungen: Unterlassung, Schadenersatz
 
@@ -161,12 +161,12 @@ Webbasierte Anwendungen/E-Commerce
     - Verwechslungsschutz (bei ähnlichen Namen/Produkten $\rightarrow$ Unterscheidung für umsichtigen, kritisch prüfenden Verbraucher nicht deutlich)
     - Bekanntheitsschutzes
 
-#### Anwendbares Recht
+### Anwendbares Recht
 
 - Grundsatz: Territorialitätsprinzip
 - $\rightarrow$ Möglichkeit des Abrufs = Recht des Abrufstaates (Sprache, Währung, Werbung, Disclaimer)
 
-#### Domain-Streitigkeiten als Anwendungsgebiet des Kennzeichenrechts
+### Domain-Streitigkeiten als Anwendungsgebiet des Kennzeichenrechts
 
 > Wenn mehrere gleichen Namen besitzen: First-come-First-serve ([suhl.de](https://suhl.de))
 > Bei deutlichen Unterschieden der Bekanntheit gewinnt der Bekanntere (z.B. Shell)
