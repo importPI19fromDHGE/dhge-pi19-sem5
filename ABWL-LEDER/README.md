@@ -55,7 +55,7 @@ Projektmanagement
 - Definition, Inhalt, Ziel von Protektionswirtschaft (in heutiges Leben einordnen können)
 - Nutzwertanalyse (evtl. auch in Projektmanagement)
 
-## Projektmanagement
+## Projektmanagement (Klausurschwerpunkte)
 
 <!-- md2apkg ignore-card -->
 
