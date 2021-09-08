@@ -15,3 +15,148 @@ Webbasierte Anwendungen/E-Commerce
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 <!--newpage-->
+
+# E-Commerce
+
+- E-Commerce ist Bestandteil des E-Business
+
+# E-Business
+
+## Kategorien von E-Business
+
+- Unternehmen zu Unternehmen (B2B - Business-to-Business)
+- Unternehmen zu Verbrauchern (B2C - Business-to-Consumer)
+- Unternehmen zu Verwaltungen (B2G - Business-to-Government)
+
+
+## Phasen einer Online-Präsenz
+
+- Hallo, ich bin online
+  - Website ohne Struktur
+  - nur Produktinformationen
+  - keine Kommunikation mit Unternehmensangehörigen
+- Strukturierte Website
+  - vernünftige Struktur
+  - Suchmaschine
+  - alle Unternehmensinformationen
+  - Kommunikation mit Unternehmen möglich
+
+## Website vs. Webpage
+
+- Unterscheidung von Website und Webpage (Website ist eine Ansammlung von Webpages) $\rightarrow$ hoch kontrovers!
+
+## Problembereiche von E-Business
+
+- Kanalkonflikt
+  - Aussteigen von Zwischenhändlern
+- Konkurrenz
+  - von lokaler zu global Konkurrenz
+- Copyright
+  - leichtes Koprieren von Informatione und Verwenden für eigene Geschäfte
+- Kundenakzeptanz
+  - Nimmt der Kunde den neuen Kanal an?
+- Juristische Probleme
+  - juristisches Rahmenwerk ist sehr dynamisch
+- Treue
+  - Internet ist wenig persönlich, weniger Bindung
+- Preise, Service
+  - Preise und Service sind leicht vergleichbar
+- Sicherheit
+- Überlebensfähigkeit
+
+## Die sieben Erfolgsfaktoren eines Online-Shops
+
+- Website-Gestaltung
+- Benutzerfreundlichkeit
+- Sortiment
+- Preis-Leistung
+- Service
+- Bezahlung
+- Versand und Lieferung
+
+## Mögliche Probleme beim Betreiben eines Web-Shops
+
+- Internationalität!
+- Bildrechte
+- Impressum (HGB (Handles- und Gesellschaftsrecht))
+- Datenschutz
+- Vertragsrecht (inkl. AGB)
+- Urheberrecht
+- Wettbewerbsrecht (inkl. PAVO(?))
+- Markenrecht
+
+## Internetrecht
+
+- Querschnittsmaterie (Mischung aus Zivilrecht, öffentlichem Recht und Strafrecht)
+- Anwendung vorhandenen Rechts auf Internetproblematiken (BGB, MarktenG, UWG, ...)
+- Neue, häufig infolge europäischer Richtlinien geschaffene Regelungen
+  - in seperaten Gesetzen (SignG, TDG, ...)
+
+# Kennzeichenrecht (Adresse)
+
+## Grundlagen des Kennzeichenrechts
+
+- Unterscheidbarkeit durch Kennzeichen ist Voraussetzung für den Leistungserwerb
+
+### Kennzeichen
+
+- Kennzeichen als Vermögenswerte: ca. 75 Markten weltweit mit Wert > 1 Milliarde USD
+
+verschiedene Kennzeichen:
+
+- Marke (Waren oder Dienstleistungen)
+- Geschäftliche Bezeichnung (Werktitel
+- Unternehmens-kennzeichen)
+- Namen (Zwangs- und Wahlnamen)
+
+### Kennzeichenschutz durch MarkenG
+
+Voraussetzungen:
+
+- Schutzfähiges Zeichen
+- Kennzeichenschutz
+- Kennzeichenrechtsverletzung
+  - Benutzung ohne Zustimmung im geschäftlichen Verkehr
+  - Verletzung des
+    - Identitätsschutzes (nur bei Marken),
+    - Verwechslungsschutzes oder
+    - Bekanntheitsschutzes
+
+### Markenrechtsverletzung
+
+- eine Verletzung kann nur bei identischen oder ähnlichen (nur bei Verwechslungsgefahr!) Verwendungen auftreten
+
+### Verwechslungsgefahr
+
+- Gesamteindruck der Kollisionszeichen (Zeichenähnlichkeit, Kennzeichnungskraft der geschützten Bezeichnung, Änhnlichkeit der Ware/Dienstleistung bzw. Branche)
+- Gefahr der Verwechslung für "umsichtig und kritisch prüfenden Verbraucher"
+  - eins für das Andere halten
+  - Zuordnung der Zeichen zum selben Unternehmen
+  - Anschein von wirtschaftlichen oder vertraglichen Beziehungen
+
+# Internationalität
+
+## Anwendbares Recht
+
+- Grundsatz: Territorialitätsprinzip
+- Möglichkeit des Abrufs = Recht des Abrufstaates
+- Inlandsbezug des Internetauftritts:
+  - Sprache
+  - Währung
+  - Staatsangehörigkeit von Kläger und Beklagten
+  - Werbung fuer dir Website im Inland
+  - Disclaimer
+
+# Urheberrecht (Inhalte)
+
+- Copyright nicht mit europäischem Urheberrecht kompatibel
+
+## Entstehung des Urheberrechts
+
+- geschütztes Werk (§§2ff. UrhG)
+- Schutzzeitraum (§§64 ff.)
+- Urheberschaft ($$7 ff.)
+- Urheberrecht entsteht automatisch, es muss keine Eintragung oder Ähnliches erfolgen
+- Unterscheidung zwischen ausschließlichem und einfachem Nutzungsrecht
+
+# Recht E-Commerce (Kundenkontakt)
