@@ -7,6 +7,8 @@ keywords: [Rechnernetzadministration, Verteilte Systeme, NET, DHGE, Semester 5]
 Rechnernetzadministration/Verteilte Systeme
 ===========================================
 
+<!-- md2apkg ignore-card -->
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
@@ -32,94 +34,97 @@ Rechnernetzadministration/Verteilte Systeme
 
 <!--newpage-->
 
-# Einleitung / Designziele
+# Literaturempfehlung
+
+<!-- md2apkg ignore-card -->
+
+- Saida Helali: Systems and Network Infrastructure Integration
+- J. Scott Marcus: Designing Wide Area Networks and Internetworks
+- Jeff Bollinger: Crafting the InfoSec Playbook
+- Tanenbaum: Computer Networks
+- Douglas R. Mauro: Essential SNMP
+- Thomas A. Limoncelli: The Practice of System and Network Administration
+
+# Einleitung
 
 ## Designziele
 
-- Funktional: Erfüllung der Anforderungen im Lastenheft -> Benutzer können ihre Arbeit unter optimalen Bedingungen erfüllen
-- Ausbaufähigkeit: Wachstum muss möglich sein
-- Wartbarkeit: von Entwurfsphase an muss einfache Wartung / Betrieb eingeplant werden -> **DOKU**
-- Adaptivität: Anpassung an neue Technologien
+- **Funktional:** Erfüllung der Anforderungen im Lastenheft $\rightarrow$ Benutzer können ihre Arbeit unter optimalen Bedingungen erfüllen
+- **Ausbaufähig:** Wachstum muss möglich sein
+- **Wartbarkeit:** von der Entwurfsphase an muss einfache Wartung/Betrieb eingeplant werden $\rightarrow$ Doku
+- **Adaptivität:** Anpassung an neue Technologien
 
 ## Wiederholung Grundlagen
 
 ### Netzwerk
 
-- besteht aus: Hardware, Software
-- durch kabelgebundene und / oder drahtlose Übertragungssysteme verbunden
-- zur Übertragung / Verarbeitung von Informationen
-- digitale Datennetzte (es sollen keine Rundfunknetze und Telefonnetze behandelt werden)
-- -> NGN (Next Generation Network)
+- besteht aus Hard- und Software
+- durch kabelgebundene und/oder drahtlose Übertragungssysteme verbunden
+- zur Übertragung/Verarbeitung von Informationen
+- digitale Datennetze (es sollen keine Rundfunknetze und Telefonnetze behandelt werden) \rightarrow\rightarrow NGN (Next Generation Networking)
 
 ### Klassifizierung von Datennetzen
 
-- Topologien / Strukturen
-- Größe / Leistungsfähigkeit (Anzahl der Clients)
-- Übertragungsmedium
-- Anwendungsbereich
-- Protokolle (heterogen / homogen)
-- Hardware / Software
-- räumliche Ausdehnung (LAN, WAN etc.)
-- Betriebsmodus (Peer-to-peer oder Client-Server)
+- Topologien/Strukturen
+- Größe/Leistungsfähigkeit (Anzahl Clients)
+- Übertragungmedium
+- Anwendungsbereich: Protokollebene (Heterogen/Homogen)
+- Hard-/Software
+- Räumliche Ausdehnung (LAN, WAN, etc.)
+- Betriebsmodus (Client-Server, Peer-to-Peer)
 
-#### räumliche Ausdehnung
+#### Räumliche Ausdehnung
 
-- PAN: personal area network, Reichweite 1-10m (bspw. Bluetooth)
-- LAN: local area network, Reichweite 10-1000m
-- MAN: metropolitan area network, Reichweite 1-100km
-- WAN: wide area network
-- GAN: global area network
+- **PAN:** Personal Area Network, Reichweite *1m-10m* (bspw. Bluetooth)
+- **LAN:** Local Area Network, Reichweite *10m-1km*
+- **MAN:** Metropolitan Area Network, Reichweite *1-100km*
+- **WAN:** Metropolitan Area Network
+- **GAN:** Global Area Network
 
-#### Größe (Anzahl der Teilnehmer)
+#### Größe/Anzahl der Teilnehmer
 
-- klein: bis ca. 200 Teilnehmer
-- mittel: bis ca. 1000-2000 Teilnehmer
-- groß: über 2000 Teilnehmer
+- klein: ~200 Teilnehmer
+- mittel: ~1000..2000 Teilnehmer
+- groß: >2000 Teilnehmer
 
 #### Hardware-Sicht
 
-- Endgeräte (PC, Telefon, Server, ioT, Drucker, Management-Stationen)
-- Kopplungsgeräte (Switches, Firewall, Router, Repeater, Bridges, Hub, Modem, Accesspoint)
-- Übertragungsmedien (Funk, Kabel)
+- Endgeräte (PC, Handy, Telefon, Server, Drucker, IoT, Management-Stationen)
+- Kopplungsgeräte (Switch, Firewall, Repeater, Router, Bridge, Hub, Modem, Access-Point)
+- Übertragungsmedien (Kabel, Funk)
 
-#### logische Sicht
+#### Logische Sicht
 
-##### ISO / OSI
+##### ISO/OSI und TCP/IP
 
-- siehe [Semester 3](https://github.com/importPI19fromDHGE/dhge-pi19-sem3/tree/main/NET-FELDMANN)
+| Schicht                | Funktion                                                     | Protokolle | TCP/IP                          |
+| ---------------------- | ------------------------------------------------------------ | ---------- | ------------------------------- |
+| Anwendungsschicht      | Kommunikation zw. Anwendungen                                | NFS, DNS,  | Anwendungungsschicht            |
+| Darstellungsschicht    | Transformation zw. Datenformaten, Verschlüsselung            | DHCP, HTTP | Anwendungungsschicht            |
+| Sitzungsschicht        | Dialogsteuerung, Synchronisation                             | FTP, ...   | Anwendungungsschicht            |
+| Transportschicht       | Ende-zu-Ende-Kommunikation zw. Prozessen                     | TCP, UDP   | Transportschicht                |
+| Vermittlungsschicht    | Wegewahl Sender -> Empfänger, Kopplung heterogener Teilnetze | IP         | Internetschicht                 |
+| Sicherungsschicht      | Behandlung von Übertragungsfehlern                           | Ethernet   | Netzzugangsschicht (Link Layer) |
+| Bitübertragungsschicht | physikalische Ebene -> Übertragung von Signalen              |            | Netzzugangsschicht (Link Layer) |
 
-#### Topologie- / Struktursicht
+#### Topologie-/Struktursicht
 
-##### Stern
+- ~~**Bus**~~ (in LV nicht betrachtet)
+- **Stern** (Switch verbunden zu Host 1..n; Routerverbunden zu  Switch 1..n)
+  - *nicht nur in Geräten denken, sondern allgemein in Strukturen*
+  - Vorteil: schöne Struktur (leicht verständlich, wartbar), kostengünstig
+  - Problem: Zentrale (Router, Switch) ist SPOF
+- Lösung Redundanz: Stern aufbrechen $\rightarrow$ mehrere kleinere Sterne, redundant verbunden
+  - $\rightarrow$ SPOF nicht mehr katastrophal, weniger Langstreckenverkehr
+- **Ring:** weitere Redundanzen durch ringförmige Verbindungen der Zentralen (früher bereits leitungsvermittelt: SoNET/SDH $\rightarrow$ Telekom)
+  - jede Einheit ist mit zwei anderen verbunden
+    - Vorteil: einzelne Verbindung kann ausfallen, Kommunikation weiterhin möglich
+    - Nachteil: hohe Kosten, schwerer wartbar (Strukturänderungen)
+- **Mesh:** Verknüpfung von Ringen und Sternen (Teilvermascht)
 
-- siehe Zeichnung in OneNote
-- nicht nur Geräten denken, sondern allgemein in Strukturen
-- Problem: Zentrale ist SPOF
-- Vorteil: schöne Struktur, leicht verständlich, leicht wartbar, kostengünstig
+#### Logische Struktur
 
-##### mehrere kleine Sterne -> Redundanz
-
-- siehe Zeichnung in OneNote
-- Vorteil: SPOF nicht mehr katastrophal, weniger Langstreckenverkehr
-
-##### Ring
-
-- siehe Zeichnung in OneNote
-- früher bereits leitungsvermittelt: Sonet/SDH (Telekom)
-- jede Einheit ist mit zwei anderen verbunden
-- Vorteil: eine einzelne Verbindung kann ausfallen, Kommunikation ist trotzdem noch möglich
-- Nachteile: teurer, schwerer wartbar (besonders bei Strukturänderungen)
-
-##### Mesh
-
-- siehe Zeichnung in OneNote
-
-#### logische Struktur
-
-- logische Struktur kann nicht in vollständiger Übereinstimmung mit der physikalischen Struktur entworfen werden
-- wird beeinflusst von
-  - Unternehmensstruktur
-  - Zugang zu Daten
-  - Verzeichnisdienst
-- einfachster Fall: flaches L2 Netzwerk: 1 Broadcast-Domain, kein Router
-- Overlay : logische Struktur über das physische Netz -> VLAN (IEEE 802.1q)
+- logische Struktur kann nicht in Übereinstimmung mit der physischen Struktur entworfen werden
+- wird beeinflusst von Unternehmensstruktur, Zugang zu Diensten, Verzeichnisdienst
+- z.B. flaches L2-Netz: eine Broadcast-Domäne, kein Router
+  - Overlay: logische Struktur über physikalischen Netz $\rightarrow$ **VLAN** (IEEE 802.1q)
