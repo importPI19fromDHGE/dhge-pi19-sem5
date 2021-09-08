@@ -7,6 +7,8 @@ keywords: [Webbasierte Anwendungen, E-Commerce, WEB, DHGE, Semester 5]
 Webbasierte Anwendungen/E-Commerce
 ==================================
 
+<!-- md2apkg ignore-card -->
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
@@ -82,3 +84,92 @@ Webbasierte Anwendungen/E-Commerce
 - Preis/Leistungs-Verhältnis
 - Service
 - Bezahlung
+
+# Internetrecht
+
+## Überblick
+
+<!-- md2apkg ignore-card -->
+
+- Impressum (HGB)
+- Vertragsrecht (AGB)
+- Markenrecht
+- Bild-Rechte
+- Urheberrecht
+- Wettbewerbsrecht
+- Datenschutz
+- ...
+
+## Einordung
+
+> Das Internetrecht ist keine abgrenzbarer Rechtsbereich (verteilt sich auf Zivilrecht, Öffentliches Recht, Strafrecht, ...)
+> Das Internetrecht verändert sich sehr dynamisch $\rightarrow$ Empfehlung: immer beraten lassen
+> Der Betreiber ist in der Haftung
+
+- Anwendung vorhandenen Rechts auf Internetproblematiken (BGB, MarkenG, UWG)
+- Neue, häufig infolge europäischer RL geschaffene Regelungen
+  - in separaten Gesetzen
+  - Anpassung vorhandener Gesetze
+
+## Kennzeichenrecht
+
+### Domain-Namen und Praxis der Adressvergabe
+
+### Grundlagen des Kennzeichenrechts
+
+- Unterscheidbarkeit durch Kennzeichnen ist Voraussetzung für Leistungswettbewerb
+- Kennzeichen als Vermögenswerte (ca. 75 Marken weltweit mit Wert >1 Milliarde USD)
+- Arten von Kennzeichen:
+  - Marke: Kennzeichen für Ware/Dienstleistung (MarkenG)
+  - geschäftliche Bezeichnungen: Werktitel (Druck-, Film-, Tonwerke, ...), Unternehmenskennzeichen (Verwendung im geschäftlichen Verkehr $\rightarrow$ Name, Firma, Geschäftsbezeichnung, **Domain**)
+  - Namen: Zwangs- und Wahlnamen (§12 BGB)
+
+#### Kennzeichenschutz durch MarkenG
+
+- marken/geschäftliche Bezeichnungen: Unterlassung, Schadenersatz
+
+**Voraussetzungen:**
+
+- Schutzfähiges Zeichen
+- Kennzeichenschutz
+- Kennzeichenrechtsverletzung
+  - Benutzung im geschäftlichen Verkehr
+  - Verletzung des:
+    - Identitätsschutzes (identisches Produkt, identischer Name)
+    - Verwechslungsschutz (bei ähnlichen Namen/Produkten, anscheinenden Unternehmensbeziehungen $\rightarrow$ für umsichtig, kritisch prüfenden Verbraucher)
+    - ???
+
+#### Anwendbares Recht
+
+- Grundsatz: Territorialitätsprinzip
+- $\rightarrow$ Möglichkeit des Abrufs = Recht des Abrufstaates (Sprache, Währung, Werbung, Disclaimer)
+
+#### Domain-Streitigkeiten als Anwendungsgebiet des Kennzeichenrechts
+
+- Alternative Konfliktlösungen:
+  - Kaufmännische Lösung
+  - Schiedsgerichtsverfahren nach UDRP
+  - Konfliktvermeidung durch umfangreiche Recherche, Absicherung durch Markenanmeldung
+
+## Urheberrecht
+
+> Gesetz über Urheberrecht und verwandte Schutzrechte
+
+**Entstehung des Urheberrechts:**
+
+- geschütztes Werk (§§2ff UrhG)
+- Schutzzeitraum (§§64ff UrhG)
+- Urheberschaft (§§7ff UrhG) $\rightarrow$ entsteht automatisch (keine Eintragung o.ä. erforderlich)
+
+**Nutzungsrecht**
+
+- ausschließlich: nur einer hat Nutzungsrecht (auch nicht Urheber!)
+- einfaches Nutzungsrecht
+
+### Recht des Urhebers und Schranken des Urheberrechts
+## Recht des E-Commerce (Kundenkontakt)
+
+## Arbeitsrecht
+
+## Strafrecht
+
