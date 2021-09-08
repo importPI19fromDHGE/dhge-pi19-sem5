@@ -78,4 +78,4 @@ Ansonsten können Formeln in ihrer vollen Pracht nur in den PDFs betrachtet werd
 ### Anki-Decks
 
 Zusätzlich zu den PDFs generieren wir zu allen Modulen Anki-Decks.
-Damit diese möglichst problemlos generiert werden können, sollten auch die Markdown Extensions [hier](https://github.com/Steve2955/md2apkg) beachtet werden. 
+Damit diese möglichst problemlos generiert werden können, sollten auch die Markdown Extensions [hier](https://github.com/Steve2955/md2apkg) beachtet werden.
