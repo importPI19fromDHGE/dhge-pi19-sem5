@@ -100,10 +100,10 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 - Anforderung an Planungsstandard:
   - Kausalität (Ursache $\rightarrow$ Wirkung, abhängig zueinander)
     - vgl. Korrelation: zwei Ereignisse entwickeln sich parallel [ohne Bezug zueinander](http://tylervigen.com/spurious-correlations)
-	- Übersichtlichkeit
-	- Transparenz
-	- Vollständigkeit
-	- Zweckbestimmtheit: jedes Projekt hat seine eigenen Vorgaben
+  - Übersichtlichkeit
+  - Transparenz
+  - Vollständigkeit
+  - Zweckbestimmtheit: jedes Projekt hat seine eigenen Vorgaben
 
 ## Projektarten
 
@@ -129,7 +129,6 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
   - Marketing (Preis-, Verteilungs- Produkt-, Kommunikationspolitik)
   - Verwaltung: Umstellung von Fax auf ein Vorgangsbearbeitungssystem (Echtzeitsystem)
   - Kombination
-
 
 ## Organisation
 
