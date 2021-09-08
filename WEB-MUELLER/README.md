@@ -24,11 +24,9 @@ Webbasierte Anwendungen/E-Commerce
   - digitale Bezahlung, Übermittlung digitaler Güter und Dienstleistungen
   - betrifft viele unternehmerische Handlungsfelder: Werbung, Geschäftsanbahnung, -abwicklung, Online-Banking, Kundenservice
 
-> E-Commerce ist mehr: *...umfassende, digitale abwicklung der Geschäftsprozesse zwischen Unternehmen und Kunden über öffentliche und private Netze*
-
-- **E-Business:** Abwicklung der administrativen und betriebswirtschaftlichen Geschäftsprozesse unter Benutzung der elektronischen Kommunikationsmedien
-
-> E-Business ist weiter gefasst als E-Commerce!
+> E-Commerce ist mehr: *...umfassende, digitale Abwicklung der Geschäftsprozesse zwischen Unternehmen und Kunden über öffentliche und private Netze* $\rightarrow$ ***E-Business***
+>
+> *E-Business ist weiter gefasst als E-Commerce!*
 
 ## Erfolgsgründe
 
@@ -43,9 +41,9 @@ Webbasierte Anwendungen/E-Commerce
 - Unternehmen zu Unternehmen (**B2B** = Business-to-Business)
 - Unternehmen zu Verbrauchern (**B2C** = Business-to-Consumer)
 - Unternehmen zu Verwaltungen (**B2G** = Business-to-Government)
-- Bürger zu Verwaltungen
-- Bürger zu Bürger
-- Verwaltungen zu Verwaltungen
+- *Bürger zu Verwaltungen*
+- *Bürger zu Bürger*
+- *Verwaltungen zu Verwaltungen*
 
 ### Entwicklung B2B
 
@@ -54,28 +52,39 @@ Webbasierte Anwendungen/E-Commerce
 
 ## Warum E-Business einführen?
 
-- Erweitern der Marktreichweite
-- Sichtbarkeit im Zielmarkt vergrößern
-- Verstärken der Geschäftsbeziehungen
-- Neue Dienstleistungen anbieten
-- Kostenreduktion
-- Reaktionsfähigkeit
+- Erweitern der Marktreichweite: Globale Verfügbarkeit über geografische Grenzen, aber neuer Druck durch mehr Konkurrenz
+- Sichtbarkeit im Zielmarkt vergrößern: bessere Wahrnehmung von kleinen und mittleren Unternehmen mit geringem Kostenaufwand
+- Verstärken der Geschäftsbeziehungen: Kommunikation zwischen Lieferanten, Herstellern und Händlern verbessert
+- Neue Dienstleistungen anbieten: geringe Startkosten im Internet
+- Kostenreduktion: Reduzierung von Besitzkosten, Support- und Produktionskosten; kaum Vervielfältigungkosten
+- Reaktionsfähigkeit: Just-in-time-Lagerung (hoher Preisdruck im Internet)
 
 ### Phasen der Online-Präsenz
 
+- *Hallo, ich bin online*: Website ohne Struktur; nur Produktinformationen; keine Kommunikation mit Unternehmensangehörigen
+- Strukturierte Website: Suchmaschinenoptimierung; alle Unternehmensinformationen; Kommunikation mit Unternehmen möglich
+- E-Commerce probieren: erster Versuch, Produkte und Dienstleistungen zu verkaufen (fehlende Sicherheit, keine Datenbank-Anbindung)
+- E-Business durchführen: sichere Verbindung zum Intranet; erster Gewinn
+- Pervasive Computing: Verbindung zum Unternehmen über beliebige Geräte (empfangen und senden von Produktinformationen)
+- *Alles ist vernetzt*: Verbindung aller elektronischen Geräte $\rightarrow$ tauschen Informationen objektorientiert aus
+
+### Website vs. Webpage
+
+- Unterscheidung von Website und Webpage (Website ist eine Ansammlung von Webpages) $\rightarrow$ hoch kontrovers!
+
 ### Problembereiche von E-Business
 
-- Kanalkonflikt: Aussteigen von Zwischenhändlern
+- Kanalkonflikt: Aussteigen von Zwischenhändlern (z.B. beim versuchten Direkteinstieg in den Markt)
 - Konkurrenz: von lokaler zu globaler Konkurrenz
 - Copyright: leichtes Kopieren von Informationen und Verwenden für eigene Geschäfte
 - Kundenakzeptanz: nimmt Kunde neuen Kanal an?
 - Juristische Probleme: juristisches Rahmenwerk sehr dynamisch
 - Treue: Internet wenig persönlich, kaum Bindung
 - Preise, Service: Preis und Service leichter vergleichbar
-- Sicherheit
-- Überlebensfähigkeit
+- IT-Sicherheit
+- Überlebensfähigkeit: auch im Bezug auf die Lieferkette
 
-### Erfolgsfaktoren
+### Erfolgsfaktoren eines Online-Shops
 
 - Versand und Lieferung
 - Website-Gestaltung
@@ -91,8 +100,8 @@ Webbasierte Anwendungen/E-Commerce
 
 <!-- md2apkg ignore-card -->
 
-- Impressum (HGB)
-- Vertragsrecht (AGB)
+- Impressum (HGB - Handels- und Gesellschaftsrecht)
+- Vertragsrecht (inkl. AGB)
 - Markenrecht
 - Bild-Rechte
 - Urheberrecht
@@ -102,20 +111,16 @@ Webbasierte Anwendungen/E-Commerce
 
 ## Einordung
 
-> Das Internetrecht ist keine abgrenzbarer Rechtsbereich (verteilt sich auf Zivilrecht, Öffentliches Recht, Strafrecht, ...)
+> Das Internetrecht ist keine abgrenzbarer Rechtsbereich (verteilt auf Zivilrecht, Öffentliches Recht, Strafrecht, ...)
 > Das Internetrecht verändert sich sehr dynamisch $\rightarrow$ Empfehlung: immer beraten lassen
 > Der Betreiber ist in der Haftung
 
 - Anwendung vorhandenen Rechts auf Internetproblematiken (BGB, MarkenG, UWG)
-- Neue, häufig infolge europäischer RL geschaffene Regelungen
-  - in separaten Gesetzen
+- Neue, häufig infolge europäischer Richtlinien geschaffene Regelungen
+  - in separaten Gesetzen (SignG, TDG, ...)
   - Anpassung vorhandener Gesetze
 
 ## Kennzeichenrecht
-
-### Domain-Namen und Praxis der Adressvergabe
-
-### Grundlagen des Kennzeichenrechts
 
 - Unterscheidbarkeit durch Kennzeichnen ist Voraussetzung für Leistungswettbewerb
 - Kennzeichen als Vermögenswerte (ca. 75 Marken weltweit mit Wert >1 Milliarde USD)
@@ -126,7 +131,7 @@ Webbasierte Anwendungen/E-Commerce
 
 #### Kennzeichenschutz durch MarkenG
 
-- marken/geschäftliche Bezeichnungen: Unterlassung, Schadenersatz
+- Marken/geschäftliche Bezeichnungen: Unterlassung, Schadenersatz
 
 **Voraussetzungen:**
 
@@ -136,8 +141,8 @@ Webbasierte Anwendungen/E-Commerce
   - Benutzung im geschäftlichen Verkehr
   - Verletzung des:
     - Identitätsschutzes (identisches Produkt, identischer Name)
-    - Verwechslungsschutz (bei ähnlichen Namen/Produkten, anscheinenden Unternehmensbeziehungen $\rightarrow$ für umsichtig, kritisch prüfenden Verbraucher)
-    - ???
+    - Verwechslungsschutz (bei ähnlichen Namen/Produkten $\rightarrow$ Unterscheidung für umsichtigen, kritisch prüfenden Verbraucher nicht deutlich)
+    - Bekanntheitsschutzes
 
 #### Anwendbares Recht
 
@@ -145,6 +150,9 @@ Webbasierte Anwendungen/E-Commerce
 - $\rightarrow$ Möglichkeit des Abrufs = Recht des Abrufstaates (Sprache, Währung, Werbung, Disclaimer)
 
 #### Domain-Streitigkeiten als Anwendungsgebiet des Kennzeichenrechts
+
+> Wenn mehrere gleichen Namen besitzen: First-come-First-serve ([suhl.de](https://suhl.de))
+> Bei deutlichen Unterschieden der Bekanntheit gewinnt der Bekanntere (z.B. Shell)
 
 - Alternative Konfliktlösungen:
   - Kaufmännische Lösung
@@ -163,13 +171,6 @@ Webbasierte Anwendungen/E-Commerce
 
 **Nutzungsrecht**
 
-- ausschließlich: nur einer hat Nutzungsrecht (auch nicht Urheber!)
+- zeitlich, räumlich, zweckmäßig einschränkbar
+- ausschließliches Nutzungsrecht: nur einer hat Nutzungsrecht (auch nicht Urheber!)
 - einfaches Nutzungsrecht
-
-### Recht des Urhebers und Schranken des Urheberrechts
-## Recht des E-Commerce (Kundenkontakt)
-
-## Arbeitsrecht
-
-## Strafrecht
-
