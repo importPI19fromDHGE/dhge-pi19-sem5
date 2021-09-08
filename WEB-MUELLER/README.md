@@ -38,15 +38,18 @@ Webbasierte Anwendungen/E-Commerce
 
 # E-Commerce
 
-- E-Commerce ist Bestandteil des E-Business
+- E-Commerce ist Bestandteil des E-Business und meint das Anbieten von Waren und Dienstleistungen über das Internet
 
 # E-Business
+
+- ist die digitale Abwicklung von Geschäftsprozessen
 
 ## Kategorien von E-Business
 
 - Unternehmen zu Unternehmen (B2B - Business-to-Business)
 - Unternehmen zu Verbrauchern (B2C - Business-to-Consumer)
 - Unternehmen zu Verwaltungen (B2G - Business-to-Government)
+- weitere: C2C, C2G, G2G
 
 
 ## Phasen einer Online-Präsenz
@@ -68,28 +71,28 @@ Webbasierte Anwendungen/E-Commerce
 ## Problembereiche von E-Business
 
 - Kanalkonflikt
-  - Aussteigen von Zwischenhändlern
+  - Aussteigen von Zwischenhändlern, z.B. beim versuchten Direkteinstieg in den Markt
 - Konkurrenz
-  - von lokaler zu global Konkurrenz
+  - von lokaler zu globaler Konkurrenz
 - Copyright
-  - leichtes Koprieren von Informatione und Verwenden für eigene Geschäfte
+  - leichtes Kopieren von Informationen und Verwenden für eigene Geschäfte
 - Kundenakzeptanz
   - Nimmt der Kunde den neuen Kanal an?
 - Juristische Probleme
   - juristisches Rahmenwerk ist sehr dynamisch
 - Treue
-  - Internet ist wenig persönlich, weniger Bindung
+  - Internet ist wenig persönlich \rightarrow\rightarrow weniger Bindung
 - Preise, Service
-  - Preise und Service sind leicht vergleichbar
-- Sicherheit
-- Überlebensfähigkeit
+  - Preise und Services sind leicht vergleichbar
+- IT-Sicherheit
+- Überlebensfähigkeit, auch im Bezug auf die Lieferkette
 
 ## Die sieben Erfolgsfaktoren eines Online-Shops
 
 - Website-Gestaltung
 - Benutzerfreundlichkeit
 - Sortiment
-- Preis-Leistung
+- Preis-Leistungs-Verhältnis
 - Service
 - Bezahlung
 - Versand und Lieferung
@@ -98,7 +101,7 @@ Webbasierte Anwendungen/E-Commerce
 
 - Internationalität!
 - Bildrechte
-- Impressum (HGB (Handles- und Gesellschaftsrecht))
+- Impressum (HGB (Handels- und Gesellschaftsrecht))
 - Datenschutz
 - Vertragsrecht (inkl. AGB)
 - Urheberrecht
@@ -125,8 +128,8 @@ Webbasierte Anwendungen/E-Commerce
 verschiedene Kennzeichen:
 
 - Marke (Waren oder Dienstleistungen)
-- Geschäftliche Bezeichnung (Werktitel
-- Unternehmens-kennzeichen)
+- Geschäftliche Bezeichnung (Werktitel)
+- Unternehmens-Kennzeichen
 - Namen (Zwangs- und Wahlnamen)
 
 ### Kennzeichenschutz durch MarkenG
@@ -144,13 +147,13 @@ Voraussetzungen:
 
 ### Markenrechtsverletzung
 
-- eine Verletzung kann nur bei identischen oder ähnlichen (nur bei Verwechslungsgefahr!) Verwendungen auftreten
+- eine Verletzung kann nur bei identischen oder ähnlichen (d.h. nur bei Verwechslungsgefahr!) Verwendungen auftreten
 
 ### Verwechslungsgefahr
 
 - Gesamteindruck der Kollisionszeichen (Zeichenähnlichkeit, Kennzeichnungskraft der geschützten Bezeichnung, Änhnlichkeit der Ware/Dienstleistung bzw. Branche)
 - Gefahr der Verwechslung für "umsichtig und kritisch prüfenden Verbraucher"
-  - eins für das Andere halten
+  - Eins für das Andere halten
   - Zuordnung der Zeichen zum selben Unternehmen
   - Anschein von wirtschaftlichen oder vertraglichen Beziehungen
 
@@ -164,7 +167,7 @@ Voraussetzungen:
   - Sprache
   - Währung
   - Staatsangehörigkeit von Kläger und Beklagten
-  - Werbung fuer dir Website im Inland
+  - Werbung für die Website im Inland
   - Disclaimer
 
 # Urheberrecht (Inhalte)
@@ -175,7 +178,7 @@ Voraussetzungen:
 
 - geschütztes Werk (§§2ff. UrhG)
 - Schutzzeitraum (§§64 ff.)
-- Urheberschaft ($$7 ff.)
+- Urheberschaft (§§7 ff.)
 - Urheberrecht entsteht automatisch, es muss keine Eintragung oder Ähnliches erfolgen
 - Unterscheidung zwischen ausschließlichem und einfachem Nutzungsrecht
 
