@@ -37,13 +37,13 @@ Webbasierte Anwendungen/E-Commerce
 
 # Grundlagen
 
-- **E-Commerce:** Verkauf von Waren und Dienstleistungen über das Internet
-  - digitale Bezahlung, Übermittlung digitaler Güter und Dienstleistungen
-  - betrifft viele unternehmerische Handlungsfelder: Werbung, Geschäftsanbahnung, -abwicklung, Online-Banking, Kundenservice
+- **E-Commerce:** jede Art von elektronischem Handel, bei dem die Beteiligten auf elektronischem Weg miteinander kommunizieren (kein physischer Kontakt)
+  - digitale Bezahlung, Übermittlung digitaler Güter und Dienstleistungen, ...
+- **E-Business:** Abwicklung von administrativen und betriebswirtschaftlichen Geschäftsprozessen unter Verwendung elektronischer Kommunikationsmedien
+  - betrifft viele unternehmerische Handlungsfelder: Werbung, Geschäftsanbahnung, -abwicklung, Online-Banking, Kundenservice, ...
 
-> E-Commerce ist mehr: *...umfassende, digitale Abwicklung der Geschäftsprozesse zwischen Unternehmen und Kunden über öffentliche und private Netze* $\rightarrow$ ***E-Business***
->
-> *E-Business ist weiter gefasst als E-Commerce!*
+> E-Business ist weiter gefasst als E-Commerce!
+
 
 ## Erfolgsgründe
 
