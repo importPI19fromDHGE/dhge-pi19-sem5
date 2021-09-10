@@ -13,6 +13,9 @@ exclude_rule 'MD036'
 # Allow multiple top-level headers per file
 exclude_rule 'MD025'
 
+# Allow the used of trailing punctuation in headers
+exclude_rule 'MD026'
+
 # Extend line length, since each sentence should be on a separate line.
 rule 'MD013', :line_length => 200
 

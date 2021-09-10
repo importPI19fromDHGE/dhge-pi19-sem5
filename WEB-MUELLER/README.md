@@ -7,179 +7,187 @@ keywords: [Webbasierte Anwendungen, E-Commerce, WEB, DHGE, Semester 5]
 Webbasierte Anwendungen/E-Commerce
 ==================================
 
+<!-- md2apkg ignore-card -->
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [E-Commerce](#e-commerce)
-- [E-Business](#e-business)
+- [Grundlagen](#grundlagen)
+  - [Erfolgsgründe](#erfolgsgr%C3%BCnde)
   - [Kategorien von E-Business](#kategorien-von-e-business)
-  - [Phasen einer Online-Präsenz](#phasen-einer-online-pr%C3%A4senz)
-  - [Website vs. Webpage](#website-vs-webpage)
-  - [Problembereiche von E-Business](#problembereiche-von-e-business)
-  - [Die sieben Erfolgsfaktoren eines Online-Shops](#die-sieben-erfolgsfaktoren-eines-online-shops)
-  - [Mögliche Probleme beim Betreiben eines Web-Shops](#m%C3%B6gliche-probleme-beim-betreiben-eines-web-shops)
-  - [Internetrecht](#internetrecht)
-- [Kennzeichenrecht (Adresse)](#kennzeichenrecht-adresse)
-  - [Grundlagen des Kennzeichenrechts](#grundlagen-des-kennzeichenrechts)
-    - [Kennzeichen](#kennzeichen)
+    - [Entwicklung B2B](#entwicklung-b2b)
+  - [Warum E-Business einführen?](#warum-e-business-einf%C3%BChren)
+    - [Phasen der Online-Präsenz](#phasen-der-online-pr%C3%A4senz)
+    - [Website vs. Webpage](#website-vs-webpage)
+    - [Problembereiche von E-Business](#problembereiche-von-e-business)
+    - [Erfolgsfaktoren eines Online-Shops](#erfolgsfaktoren-eines-online-shops)
+- [Internetrecht](#internetrecht)
+  - [Überblick](#%C3%9Cberblick)
+  - [Einordung](#einordung)
+  - [Kennzeichenrecht](#kennzeichenrecht)
     - [Kennzeichenschutz durch MarkenG](#kennzeichenschutz-durch-markeng)
-    - [Markenrechtsverletzung](#markenrechtsverletzung)
-    - [Verwechslungsgefahr](#verwechslungsgefahr)
-- [Internationalität](#internationalit%C3%A4t)
-  - [Anwendbares Recht](#anwendbares-recht)
-- [Urheberrecht (Inhalte)](#urheberrecht-inhalte)
-  - [Entstehung des Urheberrechts](#entstehung-des-urheberrechts)
-- [Recht E-Commerce (Kundenkontakt)](#recht-e-commerce-kundenkontakt)
+    - [Anwendbares Recht](#anwendbares-recht)
+    - [Domain-Streitigkeiten als Anwendungsgebiet des Kennzeichenrechts](#domain-streitigkeiten-als-anwendungsgebiet-des-kennzeichenrechts)
+  - [Urheberrecht](#urheberrecht)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 <!--newpage-->
 
-# E-Commerce
+# Grundlagen
 
-- E-Commerce ist Bestandteil des E-Business und meint das Anbieten von Waren und Dienstleistungen über das Internet
+- **E-Commerce:** jede Art von elektronischem Handel, bei dem die Beteiligten auf elektronischem Weg miteinander kommunizieren (kein physischer Kontakt)
+  - digitale Bezahlung, Übermittlung digitaler Güter und Dienstleistungen, ...
+- **E-Business:** Abwicklung von administrativen und betriebswirtschaftlichen Geschäftsprozessen unter Verwendung elektronischer Kommunikationsmedien
+  - betrifft viele unternehmerische Handlungsfelder: Werbung, Geschäftsanbahnung, -abwicklung, Online-Banking, Kundenservice, ...
 
-# E-Business
+> E-Business ist weiter gefasst als E-Commerce!
 
-- ist die digitale Abwicklung von Geschäftsprozessen
+
+## Erfolgsgründe
+
+- Browser und E-Mail-Programme sind einfach zu verwenden
+- E-Mail-Adresse ohne große technische Vorkenntnisse verfügbar
+- Schneller einfacher Zugriff auf Dienstleistungen
+- Internet ist Massenmedium mit mehr Angeboten als Anwendern
+- Möglichkeit der Interaktion (Vergleich von Waren, Preisen, Konfigurationen)
 
 ## Kategorien von E-Business
 
-- Unternehmen zu Unternehmen (B2B - Business-to-Business)
-- Unternehmen zu Verbrauchern (B2C - Business-to-Consumer)
-- Unternehmen zu Verwaltungen (B2G - Business-to-Government)
-- weitere: C2C, C2G, G2G
+- Unternehmen zu Unternehmen (**B2B** = Business-to-Business)
+- Unternehmen zu Verbrauchern (**B2C** = Business-to-Consumer)
+- Unternehmen zu Verwaltungen (**B2G** = Business-to-Government)
+- *Bürger zu Verwaltungen*
+- *Bürger zu Bürger*
+- *Verwaltungen zu Verwaltungen*
 
+### Entwicklung B2B
 
-## Phasen einer Online-Präsenz
+- E-Commerce lebt zuerst dort auf, wo bislang über traditionalle Vertriebsstrukturen hohe Margen erzielt wurden
+  - z.B. hohe Einsparungspotentiale bei: Versicherungen, Bankdienstleistungen, Flugtickets, Software, ...
 
-- Hallo, ich bin online
-  - Website ohne Struktur
-  - nur Produktinformationen
-  - keine Kommunikation mit Unternehmensangehörigen
-- Strukturierte Website
-  - vernünftige Struktur
-  - Suchmaschine
-  - alle Unternehmensinformationen
-  - Kommunikation mit Unternehmen möglich
+## Warum E-Business einführen?
 
-## Website vs. Webpage
+- Erweitern der Marktreichweite: Globale Verfügbarkeit über geografische Grenzen, aber neuer Druck durch mehr Konkurrenz
+- Sichtbarkeit im Zielmarkt vergrößern: bessere Wahrnehmung von kleinen und mittleren Unternehmen mit geringem Kostenaufwand
+- Verstärken der Geschäftsbeziehungen: Kommunikation zwischen Lieferanten, Herstellern und Händlern verbessert
+- Neue Dienstleistungen anbieten: geringe Startkosten im Internet
+- Kostenreduktion: Reduzierung von Besitzkosten, Support- und Produktionskosten; kaum Vervielfältigungkosten
+- Reaktionsfähigkeit: Just-in-time-Lagerung (hoher Preisdruck im Internet)
+
+### Phasen der Online-Präsenz
+
+- *Hallo, ich bin online*: Website ohne Struktur; nur Produktinformationen; keine Kommunikation mit Unternehmensangehörigen
+- Strukturierte Website: Suchmaschinenoptimierung; alle Unternehmensinformationen; Kommunikation mit Unternehmen möglich
+- E-Commerce probieren: erster Versuch, Produkte und Dienstleistungen zu verkaufen (fehlende Sicherheit, keine Datenbank-Anbindung)
+- E-Business durchführen: sichere Verbindung zum Intranet; erster Gewinn
+- Pervasive Computing: Verbindung zum Unternehmen über beliebige Geräte (empfangen und senden von Produktinformationen)
+- *Alles ist vernetzt*: Verbindung aller elektronischen Geräte $\rightarrow$ tauschen Informationen objektorientiert aus
+
+### Website vs. Webpage
 
 - Unterscheidung von Website und Webpage (Website ist eine Ansammlung von Webpages) $\rightarrow$ hoch kontrovers!
 
-## Problembereiche von E-Business
+### Problembereiche von E-Business
 
-- Kanalkonflikt
-  - Aussteigen von Zwischenhändlern, z.B. beim versuchten Direkteinstieg in den Markt
-- Konkurrenz
-  - von lokaler zu globaler Konkurrenz
-- Copyright
-  - leichtes Kopieren von Informationen und Verwenden für eigene Geschäfte
-- Kundenakzeptanz
-  - Nimmt der Kunde den neuen Kanal an?
-- Juristische Probleme
-  - juristisches Rahmenwerk ist sehr dynamisch
-- Treue
-  - Internet ist wenig persönlich \rightarrow\rightarrow weniger Bindung
-- Preise, Service
-  - Preise und Services sind leicht vergleichbar
+- Kanalkonflikt: Aussteigen von Zwischenhändlern (z.B. beim versuchten Direkteinstieg in den Markt)
+- Konkurrenz: von lokaler zu globaler Konkurrenz
+- Copyright: leichtes Kopieren von Informationen und Verwenden für eigene Geschäfte
+- Kundenakzeptanz: nimmt Kunde neuen Kanal an?
+- Juristische Probleme: juristisches Rahmenwerk sehr dynamisch
+- Treue: Internet wenig persönlich, kaum Bindung
+- Preise, Service: Preis und Service leichter vergleichbar
 - IT-Sicherheit
-- Überlebensfähigkeit, auch im Bezug auf die Lieferkette
+- Überlebensfähigkeit: auch im Bezug auf die Lieferkette
 
-## Die sieben Erfolgsfaktoren eines Online-Shops
+### Erfolgsfaktoren eines Online-Shops
 
+- Versand und Lieferung
 - Website-Gestaltung
 - Benutzerfreundlichkeit
 - Sortiment
-- Preis-Leistungs-Verhältnis
+- Preis/Leistungs-Verhältnis
 - Service
 - Bezahlung
-- Versand und Lieferung
 
-## Mögliche Probleme beim Betreiben eines Web-Shops
+# Internetrecht
 
-- Internationalität!
-- Bildrechte
-- Impressum (HGB (Handels- und Gesellschaftsrecht))
-- Datenschutz
+## Überblick
+
+<!-- md2apkg ignore-card -->
+
+- Impressum (HGB - Handels- und Gesellschaftsrecht)
 - Vertragsrecht (inkl. AGB)
-- Urheberrecht
-- Wettbewerbsrecht (inkl. PAVO(?))
 - Markenrecht
+- Bild-Rechte
+- Urheberrecht
+- Wettbewerbsrecht
+- Datenschutz
+- ...
 
-## Internetrecht
+## Einordung
 
-- Querschnittsmaterie (Mischung aus Zivilrecht, öffentlichem Recht und Strafrecht)
-- Anwendung vorhandenen Rechts auf Internetproblematiken (BGB, MarktenG, UWG, ...)
+> Das Internetrecht ist keine abgrenzbarer Rechtsbereich (verteilt auf Zivilrecht, Öffentliches Recht, Strafrecht, ...)
+> Das Internetrecht verändert sich sehr dynamisch $\rightarrow$ Empfehlung: immer beraten lassen
+> Der Betreiber ist in der Haftung
+
+- Anwendung vorhandenen Rechts auf Internetproblematiken (BGB, MarkenG, UWG)
 - Neue, häufig infolge europäischer Richtlinien geschaffene Regelungen
-  - in seperaten Gesetzen (SignG, TDG, ...)
+  - in separaten Gesetzen (SignG, TDG, ...)
+  - Anpassung vorhandener Gesetze
 
-# Kennzeichenrecht (Adresse)
+## Kennzeichenrecht
 
-## Grundlagen des Kennzeichenrechts
-
-- Unterscheidbarkeit durch Kennzeichen ist Voraussetzung für den Leistungserwerb
-
-### Kennzeichen
-
-- Kennzeichen als Vermögenswerte: ca. 75 Markten weltweit mit Wert > 1 Milliarde USD
-
-verschiedene Kennzeichen:
-
-- Marke (Waren oder Dienstleistungen)
-- Geschäftliche Bezeichnung (Werktitel)
-- Unternehmens-Kennzeichen
-- Namen (Zwangs- und Wahlnamen)
+- Unterscheidbarkeit durch Kennzeichnen ist Voraussetzung für Leistungswettbewerb
+- Kennzeichen als Vermögenswerte (ca. 75 Marken weltweit mit Wert >1 Milliarde USD)
+- Arten von Kennzeichen:
+  - Marke: Kennzeichen für Ware/Dienstleistung (MarkenG)
+  - geschäftliche Bezeichnungen: Werktitel (Druck-, Film-, Tonwerke, ...), Unternehmenskennzeichen (Verwendung im geschäftlichen Verkehr $\rightarrow$ Name, Firma, Geschäftsbezeichnung, **Domain**)
+  - Namen: Zwangs- und Wahlnamen (§12 BGB)
 
 ### Kennzeichenschutz durch MarkenG
 
-Voraussetzungen:
+- Marken/geschäftliche Bezeichnungen: Unterlassung, Schadenersatz
+
+**Voraussetzungen:**
 
 - Schutzfähiges Zeichen
 - Kennzeichenschutz
 - Kennzeichenrechtsverletzung
-  - Benutzung ohne Zustimmung im geschäftlichen Verkehr
-  - Verletzung des
-    - Identitätsschutzes (nur bei Marken),
-    - Verwechslungsschutzes oder
+  - Benutzung im geschäftlichen Verkehr
+  - Verletzung des:
+    - Identitätsschutzes (identisches Produkt, identischer Name)
+    - Verwechslungsschutz (bei ähnlichen Namen/Produkten $\rightarrow$ Unterscheidung für umsichtigen, kritisch prüfenden Verbraucher nicht deutlich)
     - Bekanntheitsschutzes
 
-### Markenrechtsverletzung
-
-- eine Verletzung kann nur bei identischen oder ähnlichen (d.h. nur bei Verwechslungsgefahr!) Verwendungen auftreten
-
-### Verwechslungsgefahr
-
-- Gesamteindruck der Kollisionszeichen (Zeichenähnlichkeit, Kennzeichnungskraft der geschützten Bezeichnung, Änhnlichkeit der Ware/Dienstleistung bzw. Branche)
-- Gefahr der Verwechslung für "umsichtig und kritisch prüfenden Verbraucher"
-  - Eins für das Andere halten
-  - Zuordnung der Zeichen zum selben Unternehmen
-  - Anschein von wirtschaftlichen oder vertraglichen Beziehungen
-
-# Internationalität
-
-## Anwendbares Recht
+### Anwendbares Recht
 
 - Grundsatz: Territorialitätsprinzip
-- Möglichkeit des Abrufs = Recht des Abrufstaates
-- Inlandsbezug des Internetauftritts:
-  - Sprache
-  - Währung
-  - Staatsangehörigkeit von Kläger und Beklagten
-  - Werbung für die Website im Inland
-  - Disclaimer
+- $\rightarrow$ Möglichkeit des Abrufs = Recht des Abrufstaates (Sprache, Währung, Werbung, Disclaimer)
 
-# Urheberrecht (Inhalte)
+### Domain-Streitigkeiten als Anwendungsgebiet des Kennzeichenrechts
 
-- Copyright nicht mit europäischem Urheberrecht kompatibel
+> Wenn mehrere gleichen Namen besitzen: First-come-First-serve ([suhl.de](https://suhl.de))
+> Bei deutlichen Unterschieden der Bekanntheit gewinnt der Bekanntere (z.B. Shell)
 
-## Entstehung des Urheberrechts
+- Alternative Konfliktlösungen:
+  - Kaufmännische Lösung
+  - Schiedsgerichtsverfahren nach UDRP
+  - Konfliktvermeidung durch umfangreiche Recherche, Absicherung durch Markenanmeldung
 
-- geschütztes Werk (§§2ff. UrhG)
-- Schutzzeitraum (§§64 ff.)
-- Urheberschaft (§§7 ff.)
-- Urheberrecht entsteht automatisch, es muss keine Eintragung oder Ähnliches erfolgen
-- Unterscheidung zwischen ausschließlichem und einfachem Nutzungsrecht
+## Urheberrecht
 
-# Recht E-Commerce (Kundenkontakt)
+> Gesetz über Urheberrecht und verwandte Schutzrechte
+
+**Entstehung des Urheberrechts:**
+
+- geschütztes Werk (§§2ff UrhG)
+- Schutzzeitraum (§§64ff UrhG)
+- Urheberschaft (§§7ff UrhG) $\rightarrow$ entsteht automatisch (keine Eintragung o.ä. erforderlich)
+
+**Nutzungsrecht**
+
+- zeitlich, räumlich, zweckmäßig einschränkbar
+- ausschließliches Nutzungsrecht: nur einer hat Nutzungsrecht (auch nicht Urheber!)
+- einfaches Nutzungsrecht
