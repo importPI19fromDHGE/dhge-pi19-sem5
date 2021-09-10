@@ -11,8 +11,26 @@ Graphische Datenverarbeitung
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Inhaltsverzeichnis**
 
-
+- [Organisatorisches](#organisatorisches)
+- [CAD - Computer Aided Design](#cad---computer-aided-design)
+  - [Grundlagen](#grundlagen)
+  - [Technik](#technik)
+  - [Konfiguration](#konfiguration)
+  - [Internet](#internet)
+  - [Konstruktion](#konstruktion)
+  - [Werkzeuge](#werkzeuge)
+- [CG - Computer Graphics](#cg---computer-graphics)
+  - [Grundlagen](#grundlagen-1)
+  - [Mathematik](#mathematik)
+  - [Farbgebung](#farbgebung)
+  - [Technik](#technik-1)
+  - [Standards](#standards)
+  - [2D-Elemente](#2d-elemente)
+  - [3D-Objekte](#3d-objekte)
+  - [Visualisierung](#visualisierung)
+  - [Bildformate](#bildformate)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
