@@ -47,7 +47,7 @@ Graphische Datenverarbeitung
 
 # CAD - Computer Aided Design
 
-## Grundlagen
+## CAD-Grundlagen
 
 - **CAD:** Computer Aided Design (Computergestützte Entwicklung von Produkten)
   - **MCAD:** Mechanical CAD
@@ -64,7 +64,7 @@ Graphische Datenverarbeitung
 
 <!-- ziemlich viele einfache Begriffe, aber wir haben sehr viel Zeit damit verbracht (in BAckstage soll ein Glossar landen) -->
 
-## Technik
+## CAD-Technik
 
 ## Konfiguration
 
@@ -76,7 +76,7 @@ Graphische Datenverarbeitung
 
 # CG - Computer Graphics
 
-## Grundlagen
+## CG-Grundlagen
 
 > Umwandlung von Daten des Objektraums in grafische Daten des Bildraumes
 
@@ -90,7 +90,7 @@ Graphische Datenverarbeitung
 
 ## Farbgebung
 
-## Technik
+## CG-Technik
 
 ## Standards
 
