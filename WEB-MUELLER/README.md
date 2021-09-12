@@ -44,7 +44,6 @@ Webbasierte Anwendungen/E-Commerce
 
 > E-Business ist weiter gefasst als E-Commerce!
 
-
 ## Erfolgsgründe
 
 - Browser und E-Mail-Programme sind einfach zu verwenden
