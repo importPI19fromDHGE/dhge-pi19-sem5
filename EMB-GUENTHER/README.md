@@ -17,4 +17,30 @@ Embedded Systems II
 
 <!--newpage-->
 
-# Platzhalter
+# Einleitung
+
+- Prüfung: Seminararbeit + Kurzvortrag (30+15 Minuten)
+  - Arbeit soll Ansprüchen wissenschaftlichen Arbeitens genügen, ca. 10 Seiten
+- Zusammenarbeit erwünscht <!--GitHub intensifies-->
+- Projekt: Webcam *oder* QR-Scanner mit Raspberry Pi und eigenem WiFi-AP und App-Zugriff; Linux von Grund auf bauen
+
+## Vortragsthemen
+
+- Raspberry Pi Hardware
+- Buildroot / Image-Erzeugung
+- Kernelkonfiguration
+- Webserver / Motion (Stream-Software für Kamera)
+- Konfigurationsmanagement
+- WLAN
+- DHCP
+
+optional:
+
+- QR-Code, digitales Impfzertifikat, Testbestätigung
+- Servobetrieb für bewegliche Kamera
+- QEMU-Simulation des Pi 4
+
+## Organisation
+
+- Teambildung
+  - jedes Team hat eine Nummer
