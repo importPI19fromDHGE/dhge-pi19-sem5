@@ -24,8 +24,13 @@ Software-Entwicklungswerkzeuge
 # Dokumentation
 
 - Unterscheidung zwischen interner Doku (Entwickler-/Tester-Doku) und externer Doku (Endnutzer)
-- interne Doku ist vom jeweiligen Entwickler zu erstellen
-- interne Doku sollte so viel wie möglich direkt aus dem Source kommen (möglichst keine separaten files)
+- in agilen Teams wird die interne Doku von den Entwicklern geschrieben; in schwergewichtigen von einer eigenen Abteilung
+- interne Dokumentation sollte direkt in dem Quellcode festgehalten werden
+  - dokumentiert gleichzeitig Code
+  - erlaubt einfachere Änderung der Dokumentation bei Codeäderung
+  - einfach und direkt in Versionsverwaltung eingebunden (entgegen Office-Formaten)
+  - Unterstützung durch moderne IDE-Anbindung
+  - einfaches Suchen-und-Ersetzen
 
 **Grundsätze**
 
