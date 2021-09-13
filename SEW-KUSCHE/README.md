@@ -13,7 +13,9 @@ Software-Entwicklungswerkzeuge
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Platzhalter](#platzhalter)
+- [Dokumentation](#dokumentation)
+  - [Dokumentationsgeneratoren](#dokumentationsgeneratoren)
+  - [Andere Tools](#andere-tools)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
