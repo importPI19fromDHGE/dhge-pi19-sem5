@@ -11,18 +11,35 @@ Embedded Systems II
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Platzhalter](#platzhalter)
+- [Embedded Systems II](#embedded-systems-ii)
+- [Prüfungsleistung](#prüfungsleistung)
+  - [Projekt](#projekt)
+  - [Vortragsthemen](#vortragsthemen)
+- [Buildroot](#buildroot)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 <!--newpage-->
 
-# Einleitung
+# Prüfungsleistung
 
-- Prüfung: Seminararbeit + Kurzvortrag (30+15 Minuten)
-  - Arbeit soll Ansprüchen wissenschaftlichen Arbeitens genügen, ca. 10 Seiten
-- Zusammenarbeit erwünscht <!--GitHub intensifies-->
-- Projekt: Webcam *oder* QR-Scanner mit Raspberry Pi und eigenem WiFi-AP und App-Zugriff; Linux von Grund auf bauen
+- Seminararbeit bzw. Teildokumentation + Kurzvortrag
+- Bewertungskriterien:
+  - Detaillierungsgrad (Nachvollziehbarkeit)
+  - Umfang: 10 Seiten (A4, 11pt, Word)
+- Vortrag: 30 min + 15 min Diskussion
+- Demo: 13.10.21
+- Abgabe Doku: 17.10.21
+- optional: Image-Battle unter 15 MB
+- Arbeit soll Ansprüchen wissenschaftlichen Arbeitens genügen
+- Zusammenarbeit erwünscht
+
+## Projekt
+
+- Webcam
+  - Webzugriff auf RPI Cam über Access-Point
+- QR-Scanner für Impfzertifikate
+  - QR-Code einlesen, auswerten und Aktion realisieren
 
 ## Vortragsthemen
 
@@ -40,14 +57,15 @@ optional:
 - Servobetrieb für bewegliche Kamera
 - QEMU-Simulation des Pi 4
 
-## Organisation
-
-- Teambildung
-  - jedes Team hat eine Nummer
-
 # Buildroot
 
-- Tool zum Bauen von Embedded Linux Images
-- Bauen der Default-Config: ``make defconfig`` gefolgt von ``make``
-  - die Images liegen in ``output/images``
-- eigene Dateien können via Overlay-Ordner im Board-Verzeichnis abgelegt werden
+[https://buildroot.org/](https://buildroot.org/)
+
+Buildroot ist ein Tool zum Bauen von Embedded Linux Images.
+
+1. [buildroot herunterladen](https://buildroot.org/downloads/buildroot-2021.02.4.tar.gz) und entpacken
+2. `make <board>`, wobei \<board\> eine Konfiguration aus dem `boards`-Ordner ist (`WSL2` braucht eventuell `apt install libncurses-dev`)
+3. `make menuconfig` öffnet eine TUI zur Konfigurationsanpassung
+4. eigene Dateien können via Overlay-Ordner im Board-Verzeichnis abgelegt werden
+5. `make` baut das Image
+6. Image auf SD-Karte kopieren: `sudo dd if=output/images/sdcard.img of=/dev/sdX`
