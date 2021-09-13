@@ -27,7 +27,7 @@ Software-Entwicklungswerkzeuge
 - in agilen Teams wird die interne Doku von den Entwicklern geschrieben; in schwergewichtigen von einer eigenen Abteilung
 - interne Dokumentation sollte direkt in dem Quellcode festgehalten werden
   - dokumentiert gleichzeitig Code
-  - erlaubt einfachere Änderung der Dokumentation bei Codeäderung
+  - erlaubt einfachere Änderung der Dokumentation bei Code-Änderung
   - einfach und direkt in Versionsverwaltung eingebunden (entgegen Office-Formaten)
   - Unterstützung durch moderne IDE-Anbindung
   - einfaches Suchen-und-Ersetzen
