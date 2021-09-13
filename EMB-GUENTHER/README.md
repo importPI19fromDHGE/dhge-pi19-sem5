@@ -31,7 +31,7 @@ Embedded Systems II
 - Kernelkonfiguration
 - Webserver / Motion (Stream-Software für Kamera)
 - Konfigurationsmanagement
-- WLAN
+- WLAN<!--gemacht von Ben, -edict, Max-->
 - DHCP
 
 optional:
@@ -44,3 +44,10 @@ optional:
 
 - Teambildung
   - jedes Team hat eine Nummer
+
+# Buildroot
+
+- Tool zum Bauen von Embedded Linux Images
+- Bauen der Default-Config: ``make defconfig`` gefolgt von ``make``
+  - die Images liegen in ``output/images``
+- eigene Dateien können via Overlay-Ordner im Board-Verzeichnis abgelegt werden
