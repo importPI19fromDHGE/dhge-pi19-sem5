@@ -11,8 +11,7 @@ Embedded Systems II
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Embedded Systems II](#embedded-systems-ii)
-- [Prüfungsleistung](#prüfungsleistung)
+- [Prüfungsleistung](#pr%C3%BCfungsleistung)
   - [Projekt](#projekt)
   - [Vortragsthemen](#vortragsthemen)
 - [Buildroot](#buildroot)
