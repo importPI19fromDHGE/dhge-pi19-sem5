@@ -11,12 +11,11 @@ Software-Entwicklungswerkzeuge
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Software-Entwicklungswerkzeuge](#software-entwicklungswerkzeuge)
 - [Dokumentation](#dokumentation)
-	- [Grundsätze](#grundsätze)
-	- [Dokumentationsgeneratoren](#dokumentationsgeneratoren)
-		- [Doxygen](#doxygen)
-	- [Andere Tools zur Doku und zum Verstehen von Code](#andere-tools-zur-doku-und-zum-verstehen-von-code)
+  - [Grundsätze](#grunds%C3%A4tze)
+  - [Dokumentationsgeneratoren](#dokumentationsgeneratoren)
+    - [Doxygen](#doxygen)
+  - [Andere Tools zur Doku und zum Verstehen von Code](#andere-tools-zur-doku-und-zum-verstehen-von-code)
 - [Make](#make)
 - [C-Fehler-Analyse](#c-fehler-analyse)
 - [Performance-Analyse](#performance-analyse)
