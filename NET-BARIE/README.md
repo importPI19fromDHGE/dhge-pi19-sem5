@@ -227,7 +227,9 @@ $\rightarrow$ zur Erfüllung dieser Aufgaben: **Bildung von Frames/Rahmen**
 
 #### flache Topologie
 
-- **HIER BILD EINFÜGEN:** PC1, PC2 und PC3 sind mit Switch1 verbunden
+![Bild flache Topologie](assets/flat_topology.png)<!--width=600px-->
+
+- PC1, PC2 und PC3 sind mit Switch1 verbunden
 - flache Topologie
 - großes Netzwerk aller Layer2 Geräte
 - Switch ist SPOF
@@ -238,14 +240,16 @@ $\rightarrow$ zur Erfüllung dieser Aufgaben: **Bildung von Frames/Rahmen**
 
 #### standortbasiert
 
-- **HIER BILD EINFÜGEN:**
+![Bild standortbasierte Topologie](assets/standortbasierte_topologie.png)<!--width=600px-->
+
 - Schicht-2-Netzwerke basierend auf dem Standort
 - L3-Geräte, um die L2-Netze zu verbinden
 - jedes Stockwerk/L2-Netz hat einen eigenen L3-Adressblock
 
 #### funktionsgruppenbasierte Topologie
 
-- **HIER BILD EINFÜGEN:**
+![Bild funktionsgruppen Topologie](assets/funktionsgruppenbasiert.png)<!--width=600px-->
+
 - Mitglieder einer Funktionsgruppe (= Abteilung) in jeweils eigenem L2-Netz (Gruppennetzwerke)
 - Dienste teils auf Gruppen-Ebene (Anmeldung, Dateien, ...
 - andere Dienste(bspw. E-Mail/Internet) zentral
