@@ -127,8 +127,6 @@ Beispiel-Skelett:
 - Screenreader können flüssiger lesen
 - weiter Neuerungen für Multimedia, Formulare
 
-192.168.71.6
-
 ## CSS
 
 ## JS
