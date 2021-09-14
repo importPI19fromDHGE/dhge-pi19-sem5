@@ -182,7 +182,7 @@ Rechnernetzadministration/Verteilte Systeme
 - **Bridge:**
   - verbindet zwei/mehrere LANs miteinander (bspw. WLAN mit kabelgebundenem LAN $\rightarrow$ Accesspoint)
   - Entkopplung von Kollisionsdomänen
-  - Frames werden nur an Ports gesendet, für deren angeschlossene Teilenehmer die Frames relevant sind
+  - Frames werden nur an Ports gesendet, für deren angeschlossene Teilnehmer die Frames relevant sind
   - gleichzeitig ankommende Frames werden gepuffert
     - Kollisionsvermeidung
     - Geschwindigkeitsanpassung
