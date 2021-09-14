@@ -13,19 +13,23 @@ Rechnernetzadministration/Verteilte Systeme
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Rechnernetzadministration/Verteilte Systeme](#rechnernetzadministrationverteilte-systeme)
 - [Literaturempfehlung](#literaturempfehlung)
 - [Einleitung](#einleitung)
   - [Designziele](#designziele)
   - [Wiederholung Grundlagen](#wiederholung-grundlagen)
     - [Netzwerk](#netzwerk)
     - [Klassifizierung von Datennetzen](#klassifizierung-von-datennetzen)
-      - [Räumliche Ausdehnung](#r%C3%A4umliche-ausdehnung)
-      - [Größe/Anzahl der Teilnehmer](#gr%C3%B6%C3%9Feanzahl-der-teilnehmer)
+      - [Räumliche Ausdehnung](#räumliche-ausdehnung)
+      - [Größe/Anzahl der Teilnehmer](#größeanzahl-der-teilnehmer)
       - [Hardware-Sicht](#hardware-sicht)
       - [Logische Sicht](#logische-sicht)
         - [ISO/OSI und TCP/IP](#isoosi-und-tcpip)
       - [Topologie-/Struktursicht](#topologie-struktursicht)
       - [Logische Struktur](#logische-struktur)
+    - [Einschub: Frames/Sicherungsschicht](#einschub-framessicherungsschicht)
+    - [Paketkollision](#paketkollision)
+    - [Einschub: Geräte](#einschub-geräte)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -125,3 +129,52 @@ Rechnernetzadministration/Verteilte Systeme
 - wird beeinflusst von Unternehmensstruktur, Zugang zu Diensten, Verzeichnisdienst
 - z.B. flaches L2-Netz: eine Broadcast-Domäne, kein Router
   - Overlay: logische Struktur über physikalischen Netz $\rightarrow$ **VLAN** (IEEE 802.1q)
+
+### Einschub: Frames/Sicherungsschicht
+- Bereitstellung einer wohldefinierten Schnittstelle zur Vermittlungsschicht
+- Umgang mit Übertragungsfehlern
+- Regulierung des Datenflusses (Flow-Control)
+- zur Erfüllung dieser Aufgaben: Bildung von Frames/Rahmen
+  - | Header | Payload | Trailer |
+  - Header und Trailer werden von der Sicherungsschicht hinzugefügt
+  - Payload Daten kommen von der Vermittlungsschicht
+  - Header: Verwaltungsinformationen
+  - Trailer: Prüfsumme
+  - Frames unterscheiden sich von System zu System
+
+### Paketkollision
+
+- zwei Teilnehmer senden zur gleichen Zeit Frames über ein geteiltes Medium (bspw. Bus oder Funk (bei gleicher Frequenz))
+- Verhinderung mithilfe von CSMA/CD (Carrier Sense Multiple Access/Collision Detection) oder anderen Multiplex-Verfahren
+- Collision-Domain $\rightarrow$ Bereich, in dem Kollisionen auftreten können
+  - solche Domains sollten klein sein
+  - keine Busse bauen
+- Switches sollten duplex sein (heute eigentlich immer der Fall)
+
+### Einschub: Geräte
+
+| Schicht                | Gerät                                    |
+| ---------------------- | ---------------------------------------- |
+| Anwendungsschicht      | Application-Gateway                      |
+| Darstellungsschicht    |                                          |
+| Sitzungsschicht        |                                          |
+| Transportschicht       | Transport-Gateway                        |
+| Vermittlungsschicht    | L3-Switch, Router                        |
+| Sicherungsschicht      | Switch                                   |
+| Bitübertragungsschicht | Kabel, Repeater, Kopplungselemente (Hub) |
+
+- **Firewall:** traditionell auf L3, bei Deep-Packet-Inspection etc. heute jedoch auch auf anderen Ebenen
+  - besteht aus: | Router | Application Layer Gateway | Router
+- **Repeater:** analoges Gerät, arbeitet mit Signalen auf Kabeln/Funkstrecke
+  - empfängt, bereinigt, verstärkt, sendet Signale
+  - i.d.R. Anzahl an Repeatern und Kabellänge ist durch die maximal "erlaubte" Latenz begrenzt
+- **Hub:** verbindet Leitungen elektrisch <!-- dicker Lötklecks :D -->
+  - an den Hub angeschlossene Geräte sind Mitglieder der gleichen Kollisionsdomain
+  - alle Teilnehmer müssen mit der gleichen Geschwindigkeit angebunden sein
+- **Bridge:** verbindet zwei/mehrere LANs miteinander (bspw. WLAN mit kabelgebundenem LAN $\rightarrow$ Accesspoint)
+  - Entkopplung von Kollisionsdomänen
+  - Frames werden nur an Ports gesendet, für deren angeschlossene Teilenehmer die Frames relevant sind
+  - gleichzeitig ankommende Frames werden gepuffert
+    - Kollisionsvermeidung
+    - Geschwindigkeitsanpassung
+  - Kopplung von LANs mit verschiedenen Protokollen
