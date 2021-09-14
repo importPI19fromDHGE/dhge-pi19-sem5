@@ -56,7 +56,7 @@ Entwicklung von Webanwendungen
 - Web = World Wide Web $\rightarrow$ Teil des Internets
 - Client-Server-Anwendung (Client = Browser)
 - Pattformunabhängig, keine zusätzliche Installation
-- Nutzung des http-Protokolls
+- Nutzung des Hypertext Transfer Protocol (Http)
 - Interaktion mit dem Nutzer
 
 ## Client-Technologien
