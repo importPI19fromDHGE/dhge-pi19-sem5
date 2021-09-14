@@ -13,22 +13,45 @@ Rechnernetzadministration/Verteilte Systeme
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Rechnernetzadministration/Verteilte Systeme](#rechnernetzadministrationverteilte-systeme)
 - [Literaturempfehlung](#literaturempfehlung)
 - [Einleitung](#einleitung)
   - [Designziele](#designziele)
   - [Wiederholung Grundlagen](#wiederholung-grundlagen)
     - [Netzwerk](#netzwerk)
     - [Klassifizierung von Datennetzen](#klassifizierung-von-datennetzen)
-      - [Räumliche Ausdehnung](#r%C3%A4umliche-ausdehnung)
-      - [Größe/Anzahl der Teilnehmer](#gr%C3%B6%C3%9Feanzahl-der-teilnehmer)
+      - [Räumliche Ausdehnung](#räumliche-ausdehnung)
+      - [Größe/Anzahl der Teilnehmer](#größeanzahl-der-teilnehmer)
       - [Hardware-Sicht](#hardware-sicht)
       - [Logische Sicht](#logische-sicht)
         - [ISO/OSI und TCP/IP](#isoosi-und-tcpip)
       - [Topologie-/Struktursicht](#topologie-struktursicht)
       - [Logische Struktur](#logische-struktur)
+      - [Einschub: Frames/Sicherungsschicht](#einschub-framessicherungsschicht)
+        - [Grober Aufbau eines Frames](#grober-aufbau-eines-frames)
+        - [Paketkollision](#paketkollision)
+      - [Einschub: Geräte](#einschub-geräte)
+    - [Topologien auf der logischen Ebene](#topologien-auf-der-logischen-ebene)
+      - [flache Topologie](#flache-topologie)
+      - [standortbasiert](#standortbasiert)
+      - [funktionsgruppenbasierte Topologie](#funktionsgruppenbasierte-topologie)
+      - [Overlay-Netzwerke](#overlay-netzwerke)
+      - [VLAN](#vlan)
+<<<<<<< HEAD
         - [Einschub: Frames/Sicherungsschicht](#einschub-framessicherungsschicht)
           - [Grober Aufbau eines Frames](#grober-aufbau-eines-frames)
         - [Einschub: Geräte](#einschub-ger%C3%A4te)
+=======
+    - [Einschub: Frames/Sicherungsschicht](#einschub-framessicherungsschicht)
+    - [Paketkollision](#paketkollision)
+    - [Einschub: Geräte](#einschub-ger%C3%A4te)
+    - [Topologien auf der logischen Ebene](#topologien-auf-der-logischen-ebene)
+      - [flache Topologie](#flache-topologie)
+      - [standortbasiert](#standortbasiert)
+      - [funktionsgruppenbasierte Topologie](#funktionsgruppenbasierte-topologie)
+      - [Overlay-Netzwerke](#overlay-netzwerke)
+      - [VLAN](#vlan)
+>>>>>>> origin/oko-res
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -129,16 +152,16 @@ Rechnernetzadministration/Verteilte Systeme
 - z.B. flaches L2-Netz: eine Broadcast-Domäne, kein Router
   - Overlay: logische Struktur über physikalischen Netz $\rightarrow$ **VLAN** (IEEE 802.1q)
 
-##### Einschub: Frames/Sicherungsschicht
+#### Einschub: Frames/Sicherungsschicht
 
-- Bereitstellung wohldefinierter Schnittstellen zur Vermittlungsschicht
+- Bereitstellung einer wohldefinierten Schnittstelle zur Vermittlungsschicht
 - Umgang mit Übertragungsfehlern
 - Kommunikation zwischen benachbarten Hosts
 - Regulierung des Datenflusses (Flow-Control)
 
-$\rightarrow$ zur Erfüllung der Aufgaben: **Bildung von Frames/Rahmen**
+$\rightarrow$ zur Erfüllung dieser Aufgaben: **Bildung von Frames/Rahmen**
 
-###### Grober Aufbau eines Frames
+##### Grober Aufbau eines Frames
 
 ```text
 ┌────────┬─────────┬─────────┐
@@ -149,34 +172,42 @@ $\rightarrow$ zur Erfüllung der Aufgaben: **Bildung von Frames/Rahmen**
 - Header: Verwaltungsinformationen (z.B. Infos zu Sender/Empfänger)
 - Payload: Daten der höheren Schicht
 - Trailer: Prüfsummen
+- Frames sind je nach Implementierung unterschiedlich
 
-> Paketkollision: Bus ist ein geteiltes Medium $\rightarrow$ mehrere Frames können sich überlagern
-> Relevante Verfahren zur Kollisionsbehandlung: CSMA/CD bzw. CSMA/CA, Multiplex-Verfahren
+##### Paketkollision
+
+- zwei Teilnehmer senden zur gleichen Zeit Frames über ein geteiltes Medium (bspw. Bus oder Funk (bei gleicher Frequenz))
+- Verhinderung mithilfe von CSMA/CD (Carrier Sense Multiple Access/Collision Detection) oder anderen Multiplex-Verfahren
+- Collision-Domain $\rightarrow$ Bereich, in dem Kollisionen auftreten können
+  - solche Domains sollten klein sein
+  - keine Busse bauen
+- Switches sollten duplex sein (heute eigentlich immer der Fall)
 
 - Simplex (A $\rightarrow$ B; nur in eine Richtung)
 - Halbduplex (A $\leftrightarrow$ B; Zwei-Wege-Kommunikation, aber nicht gleichzeitig)
 - Vollduplex (A $\leftrightarrow$ B; gleichzeitige Zwei-Wege-Kommunikation)
 
-##### Einschub: Geräte
+#### Einschub: Geräte
 
-| Layer               | Gerät                        |
-| ------------------- | ---------------------------- |
-| Anwendungschicht    | Application-GW               |
-| Transportschicht    | Transport-GW                 |
-| Vermittlungsschicht | L3-Switch, Router            |
-| Sicherungsschicht   | Switch                       |
-| Bitübertragung      | Repeater, Hub, (Kabel, Funk) |
+| Layer               | Gerät                                            |
+| ------------------- | ------------------------------------------------ |
+| Anwendungschicht    | Application-Gateway                              |
+| Transportschicht    | Transport-Gateway                                |
+| Vermittlungsschicht | L3-Switch, Router                                |
+| Sicherungsschicht   | Switch                                           |
+| Bitübertragung      | Repeater, Kopplungselemente (Hub), (Kabel, Funk) |
 
-> Firewall = Router + Application-Level-Gateway + Router
-
+- **Firewall:**
+  - traditionell auf L3, bei Deep-Packet-Inspection etc. heute jedoch auch auf anderen Ebenen
+  - besteht aus: Router + Application Layer Gateway + Router
 - **Repeater:** analoges Gerät (analog = Zeit- und Wertkontinuierlich)
   - arbeitet mit Signalen auf Kabeln bzw. Funkstrecke
   - empfängt, bereinigt, verstärkt und sendet Signale
-  - i.d.R. begrenzte Anzahl (Latenz)
-- **Hub:** elektrische Verbindung mehrerer Leitungen
+  - i.d.R. begrenzte Anzahl durch Latenz
+- **Hub:** elektrische Verbindung mehrerer Leitungen <!-- dicker Lötklecks :D -->
   - angeschlossene Geräte sind Mitglieder der gleichen Kollision-Domäne
-  - Anbindung aller Teilnehmer mit der gleichen Geschwindigkeit
-- **Bridge:** verbindet zwei/mehrere LANs (z.B. WLAN mit kabelgebundenem LAN = Access-Point)
+  - Anbindung aller Teilnehmer mit der gleichen Geschwindigkeit erforderlich
+- **Bridge:** verbindet zwei/mehrere LANs (z.B. WLAN mit kabelgebundenem LAN $\rightarrow$ Access-Point)
   - Trennung der Kollisionsdomänen
   - Frames werden nur an Port gesendet, für deren angeschlossene Teilnehmer die Frames relevant sind
   - gleichzeitig ankommende Frames werden gepuffert (Kollisionsvermeidung, Geschwindigkeitsanpassung)
@@ -185,6 +216,47 @@ $\rightarrow$ zur Erfüllung der Aufgaben: **Bildung von Frames/Rahmen**
 - **Switch:** Bridge mit anderem Namen
   - mit zusätzlichen Point-to-Point Anbindung der Teilnehmer
 - **Router:** Payload wird aus Frame entpackt und in Routing-SW verarbeitet
-  - Routing-SW wählt Ausgangsport
+  - wirft Header und Trailer weg und kümmert sich lediglich um den Payload
+  - L2-Payload wird an die Routing Software übergeben
+  - Routing-Software wählt Ausgangsport aus
 - **Transport-Gateway:** Umsetzung zwischen verschiedenen Protokollen auf der Transportebene
-- **Application-(Level)-Gateway:** Umsetzung zwischen verschiedenen Protokollen auf der Anwendungsebene (E-Mail $\leftrightarrow$ SMS)
+- **Application-(Level)-Gateway:** Umsetzung zwischen verschiedenen Protokollen auf der Anwendungsebene
+  - bspw.: SIP $\leftrightarrow$ H.323, E-Mail $\leftrightarrow$ SMS
+
+### Topologien auf der logischen Ebene
+
+#### flache Topologie
+
+- **HIER BILD EINFÜGEN:** PC1, PC2 und PC3 sind mit Switch1 verbunden
+- flache Topologie
+- großes Netzwerk aller Layer2 Geräte
+- Switch ist SPOF
+- kein Routing
+- eine Broadcast-Domain
+- ein Subnetz
+- Dienste (Datei-/Druck-/Namensauflösungs-/Email-/Dienste) werden in diesem Netz bereitgestellt
+
+#### standortbasiert
+
+- **HIER BILD EINFÜGEN:**
+- Schicht-2-Netzwerke basierend auf dem Standort
+- L3-Geräte, um die L2-Netze zu verbinden
+- jedes Stockwerk/L2-Netz hat einen eigenen L3-Adressblock
+
+#### funktionsgruppenbasierte Topologie
+
+- **HIER BILD EINFÜGEN:**
+- Mitglieder einer Funktionsgruppe (= Abteilung) in jeweils eigenem L2-Netz (Gruppennetzwerke)
+- Dienste teils auf Gruppen-Ebene (Anmeldung, Dateien, ...
+- andere Dienste(bspw. E-Mail/Internet) zentral
+- teils hierarchische Struktur der Dienste (bspw. Anmelde-Server)
+
+#### Overlay-Netzwerke
+
+- Entkopplung der physischen von der logischen Struktur
+- logische Struktur, die auf der physischen aufbaut
+- VLAN, VPN(, Framerelay, ATM)
+
+#### VLAN
+
+- virtuelle LANs schaffen, die in Software konfiguriert werden können
