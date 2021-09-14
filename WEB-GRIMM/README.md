@@ -11,6 +11,7 @@ Entwicklung von Webanwendungen
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Entwicklung von Webanwendungen](#entwicklung-von-webanwendungen)
 - [Geschichte des Internets](#geschichte-des-internets)
 - [Technologien](#technologien)
   - [Was ist eine Webanwendung?](#was-ist-eine-webanwendung)
@@ -90,6 +91,27 @@ Entwicklung von Webanwendungen
 - Öffnendes Tag $\rightarrow$ schließendes Tag $\rightarrow$ dazwischen Body
 - schließende Tags können in einigen Fällen entfallen
 - Tags können Attritube enthalten ```<tag attribut="Wert">body</tag>```
+
+Beispiel-Skelett:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title></title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="images/favicon.png" />
+  </head>
+
+  <body>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
+```
 
 ### HTML 5
 
