@@ -11,7 +11,6 @@ Entwicklung von Webanwendungen
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Entwicklung von Webanwendungen](#entwicklung-von-webanwendungen)
 - [Geschichte des Internets](#geschichte-des-internets)
 - [Technologien](#technologien)
   - [Was ist eine Webanwendung?](#was-ist-eine-webanwendung)
