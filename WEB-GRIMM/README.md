@@ -11,17 +11,16 @@ Entwicklung von Webanwendungen
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Entwicklung von Webanwendungen](#entwicklung-von-webanwendungen)
 - [Geschichte des Internets](#geschichte-des-internets)
 - [Technologien](#technologien)
-	- [Was ist eine Webanwendung?](#was-ist-eine-webanwendung)
-	- [Client-Technologien](#client-technologien)
-	- [Server](#server)
-	- [HTML](#html)
-		- [HTML-Syntax](#html-syntax)
-		- [HTML 5](#html-5)
-	- [CSS](#css)
-	- [JS](#js)
+  - [Was ist eine Webanwendung?](#was-ist-eine-webanwendung)
+  - [Client-Technologien](#client-technologien)
+  - [Server](#server)
+  - [HTML](#html)
+    - [HTML-Syntax](#html-syntax)
+    - [HTML 5](#html-5)
+  - [CSS](#css)
+  - [JS](#js)
 - [PHP und Datenbanken](#php-und-datenbanken)
 - [Moderne Webentwicklung mit Frameworks](#moderne-webentwicklung-mit-frameworks)
 
