@@ -39,7 +39,7 @@ Entwicklung von Webanwendungen
 - 1981 188 Rechner mit ca. 500,000 Nutzern im Internet
 - 1986 Top Level Domains werden ins Leben gerufen
 - 1988 erste deutsche Internetprovider Eunet und Xlink
-- 1989 Timothy Berners-Lee entwickelt ersten "Browser"
+- 1989 Timothy Berners-Lee entwickelt ersten "Browser" WorldWideWeb
 - 1991 Berners-Lee veröffentlicht WWW im Internet sowie HTML
 - 1992 1 Mio. Rechner im Internet
 - 1996 mehr als 16 Mio.
