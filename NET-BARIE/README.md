@@ -26,6 +26,9 @@ Rechnernetzadministration/Verteilte Systeme
         - [ISO/OSI und TCP/IP](#isoosi-und-tcpip)
       - [Topologie-/Struktursicht](#topologie-struktursicht)
       - [Logische Struktur](#logische-struktur)
+        - [Einschub: Frames/Sicherungsschicht](#einschub-framessicherungsschicht)
+          - [Grober Aufbau eines Frames](#grober-aufbau-eines-frames)
+        - [Einschub: Geräte](#einschub-ger%C3%A4te)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
