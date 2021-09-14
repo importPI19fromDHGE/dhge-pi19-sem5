@@ -125,3 +125,63 @@ Rechnernetzadministration/Verteilte Systeme
 - wird beeinflusst von Unternehmensstruktur, Zugang zu Diensten, Verzeichnisdienst
 - z.B. flaches L2-Netz: eine Broadcast-Domäne, kein Router
   - Overlay: logische Struktur über physikalischen Netz $\rightarrow$ **VLAN** (IEEE 802.1q)
+
+##### Einschub: Frames/Sicherungsschicht
+
+- Bereitstellung wohldefinierter Schnittstellen zur Vermittlungsschicht
+- Umgang mit Übertragungsfehlern
+- Kommunikation zwischen benachbarten Hosts
+- Regulierung des Datenflusses (Flow-Control)
+
+$\rightarrow$ zur Erfüllung der Aufgaben: **Bildung von Frames/Rahmen**
+
+###### Grober Aufbau eines Frames
+
+```text
+┌────────┬─────────┬─────────┐
+│ Header │ Payload │ Trailer │
+└────────┴─────────┴─────────┘
+```
+
+- Header: Verwaltungsinformationen (z.B. Infos zu Sender/Empfänger)
+- Payload: Daten der höheren Schicht
+- Trailer: Prüfsummen
+
+> Paketkollision: Bus ist ein geteiltes Medium $\rightarrow$ mehrere Frames können sich überlagern
+> Relevante Verfahren zur Kollisionsbehandlung: CSMA/CD bzw. CSMA/CA, Multiplex-Verfahren
+
+- Simplex (A $\rightarrow$ B; nur in eine Richtung)
+- Halbduplex (A $\leftrightarrow$ B; Zwei-Wege-Kommunikation, aber nicht gleichzeitig)
+- Vollduplex (A $\leftrightarrow$ B; gleichzeitige Zwei-Wege-Kommunikation)
+
+##### Einschub: Geräte
+
+| Layer               | Gerät                        |
+| ------------------- | ---------------------------- |
+| Anwendungschicht    | Application-GW               |
+| Transportschicht    | Transport-GW                 |
+| Vermittlungsschicht | L3-Switch, Router            |
+| Sicherungsschicht   | Switch                       |
+| Bitübertragung      | Repeater, Hub, (Kabel, Funk) |
+
+> Firewall = Router + Application-Level-Gateway + Router
+
+- **Repeater:** analoges Gerät (analog = Zeit- und Wertkontinuierlich)
+  - arbeitet mit Signalen auf Kabeln bzw. Funkstrecke
+  - empfängt, bereinigt, verstärkt und sendet Signale
+  - i.d.R. begrenzte Anzahl (Latenz)
+- **Hub:** elektrische Verbindung mehrerer Leitungen
+  - angeschlossene Geräte sind Mitglieder der gleichen Kollision-Domäne
+  - Anbindung aller Teilnehmer mit der gleichen Geschwindigkeit
+- **Bridge:** verbindet zwei/mehrere LANs (z.B. WLAN mit kabelgebundenem LAN = Access-Point)
+  - Trennung der Kollisionsdomänen
+  - Frames werden nur an Port gesendet, für deren angeschlossene Teilnehmer die Frames relevant sind
+  - gleichzeitig ankommende Frames werden gepuffert (Kollisionsvermeidung, Geschwindigkeitsanpassung)
+  - Kopplung von LANs mit verschiedenen Protokollen
+  - Problem: z.B. Dienstgüte, Verschlüsselung unterschiedlich
+- **Switch:** Bridge mit anderem Namen
+  - mit zusätzlichen Point-to-Point Anbindung der Teilnehmer
+- **Router:** Payload wird aus Frame entpackt und in Routing-SW verarbeitet
+  - Routing-SW wählt Ausgangsport
+- **Transport-Gateway:** Umsetzung zwischen verschiedenen Protokollen auf der Transportebene
+- **Application-(Level)-Gateway:** Umsetzung zwischen verschiedenen Protokollen auf der Anwendungsebene (E-Mail $\leftrightarrow$ SMS)
