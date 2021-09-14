@@ -75,7 +75,7 @@ Rechnernetzadministration/Verteilte Systeme
 - **PAN:** Personal Area Network, Reichweite *1m-10m* (bspw. Bluetooth)
 - **LAN:** Local Area Network, Reichweite *10m-1km*
 - **MAN:** Metropolitan Area Network, Reichweite *1-100km*
-- **WAN:** Metropolitan Area Network
+- **WAN:** Wide Area Network
 - **GAN:** Global Area Network
 
 #### Größe/Anzahl der Teilnehmer
