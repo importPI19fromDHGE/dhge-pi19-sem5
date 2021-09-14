@@ -7,6 +7,8 @@ keywords: [Entwicklung von Webanwendungen, Webbasierte Anwendungen, PRO, DHGE, S
 Entwicklung von Webanwendungen
 ==============================
 
+<!-- md2apkg ignore-card -->
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
@@ -29,6 +31,8 @@ Entwicklung von Webanwendungen
 <!--newpage-->
 
 # Geschichte des Internets
+
+<!-- md2apkg ignore-card -->
 
 - 1958 Gründung Advanced Research Projects Agency
 - 1969 ARPAnet vernetzt 4 Großrechner in Kalifornien und Utah
@@ -71,6 +75,7 @@ Entwicklung von Webanwendungen
 ## Server
 
 - PHP
+- NodeJS
 - Ruby (on Rails)
 - Java Applet
 - ASP.NET
@@ -100,7 +105,6 @@ Beispiel-Skelett:
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <title></title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="icon" href="images/favicon.png" />
