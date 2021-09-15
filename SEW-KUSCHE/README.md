@@ -24,6 +24,7 @@ Software-Entwicklungswerkzeuge
 - [Make](#make)
   - [Makefile](#makefile)
   - [Autotools](#autotools)
+  - [Doxygen](#doxygen)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -200,3 +201,15 @@ make automatisiert das Compilieren (großer) Projekte:
 - dieser C-Headerfile steuert plattformabhängige Code-Strukturen mit Makros
 - libtool ist ein Tool zum Erzeugen und Linken von Shared Libraries, es soll es auf verschiedenen Plattformen vereinheitlichen
 - gettext ist ein Tool zum Internationalisieren aller Texte in einem Programm
+
+## Doxygen
+
+- Doxygen interessiert sich nicht für alle Kommentare
+- Kommentare sollten `///` oder `/**` sein
+- Parameter werden i.d.R. mit `//<` dahinter kommentiert, bspw.:
+
+```cpp
+///
+int someFunction(int par1, ///< parameter 1
+                 int par2) ///< parameter 2
+```
