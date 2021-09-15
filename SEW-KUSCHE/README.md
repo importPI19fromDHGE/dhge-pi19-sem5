@@ -13,9 +13,14 @@ Software-Entwicklungswerkzeuge
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Software-Entwicklungswerkzeuge](#software-entwicklungswerkzeuge)
 - [Dokumentation](#dokumentation)
   - [Dokumentationsgeneratoren](#dokumentationsgeneratoren)
   - [Andere Tools](#andere-tools)
+- [Versions-Verwaltungs-Systeme](#versions-verwaltungs-systeme)
+  - [Zweck von Versions-Verwaltungs-Systemen](#zweck-von-versions-verwaltungs-systemen)
+  - [Aufgaben von Versions-Verwaltungs-Systemen](#aufgaben-von-versions-verwaltungs-systemen)
+  - [Andere Tools für Patches, Versionshandling usw](#andere-tools-für-patches-versionshandling-usw)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -61,3 +66,93 @@ Software-Entwicklungswerkzeuge
   - zur Durchsetzung eines firmenweit einheitlichen Stils
   - lesbarmachen fremder und alter Sourcen
   - z.B.: `indent`, `astyle`, `uncrustify`
+
+# Versions-Verwaltungs-Systeme
+
+## Zweck von Versions-Verwaltungs-Systemen
+
+- Verwaltung / Archivierung aller Dateien eines Software-Produkts in allen Ständen
+- Buchführung über jede einzelne Änderung jeder einzelnen Datei
+- $\rightarrow$ Reproduzierbarkeit und Nachvollziehbarkeit
+
+## Aufgaben von Versions-Verwaltungs-Systemen
+
+- Versionsgeschichte: Wer (Autor) hat wann (Datum) was (Änderung) geändert? Entweder eines einzelnen Files / Verzeichnisses oder des gesamten Projekts!
+- konsistente Versions-Nummerierung.x.y.z (heute nicht mehr so, in git hashes $\rightarrow$ Blockchain)
+- Labeling / Tagging von Ständen: z.B. "Weihnachts-Beta-Release"
+- Kommentar der Änderungen Warum $\rightarrow$ Querverweis in den Bugtracker!
+- Rekonstruktion alter Stände (nach Datum oder Versionsnummer)
+- Anzeige aller Änderungen zwischen zwei Ständen (grafisch!)
+- Verwaltung von Branches:
+  - Head, Master oder Trunk (aktueller Hauptentwicklungs-Branch)
+  - Release- und Wartungs-Branches (nur Fixes, keine Neuentwicklungen)
+  - Plattform- oder Kundenbranches (Sonderversion anderer Branches)
+  - Feature Development Branches (experimentelle Entwicklungen)
+  - Im schlimmsten Fall: Dead Head Branch (aufgegebener Head, Weiterentwicklung in anderem, älteren Stand)
+  - Anzeige der Versionen im Idealfall als Graph oder Baum!
+  - Automatisches Mergen von einzelnen Änderungen aus dem “Head”-Branch oder einem Wartungs-Branch in andere Branches (bei Wartungs-Branches auch aufwärts: Mergen eines Fixes aus dem Wartungsbranch nach “Head”).
+  - Vor allem bei Feature Branches: Zurück-Mergen aller Entwicklungen des Feature-Branches nach “Head” oder Resynchronisation mit “Head” in beide Richtungen (Übernahme aller Neuerungen von “Head” in den Feature-Branch).
+- Sperrverwaltung:
+  - Welche Files werden aktuell gerade geändert (sind ausgecheckt), von wem?
+  - Konkurrierende Veränderungen verhindern oder mergen!
+- Automatisches Einfügen von Versionsverwaltungs-Tags (Datum, Version, Autor, ...) in Source-Kommentare.
+- Automatische Changelog-Erstellung
+- Optimierte Speicherung: Nur die Deltas jeder Änderung, nicht jedesmal die komplette Datei, und zwar rückwärts (aktuelle Version im Volltext)!
+- **Beispiele:**
+  - Historisch: SCCS (“Source Code Control System”, AT & T System V Unix), RCS (“Revision Control System”, andere Unix-Dialekte) (nur lokal)
+  - Lange Zeit führend: CVS (“Concurrent Version System”), Subversion (beide Open Source, Remote- und Multi-User-Fähigkeit)
+  - Kommerziell: Perforce, IBM/Rational ClearCase, MS Visual SourceSafe (alt) / Team Foundation Server (neu), BitKeeper (verteilt)
+  - Aktuell im Open-Source-Bereich: GIT (verteilt, ursprünglich für den Linux-Kernel entwickelt, heute für zehntausende Projekte eingesetzt)
+  - Andere: Mercurial, Monotone (verteilt)
+  - Einige Webdienste (z.B. GitHub, Sourceforge oder berliOS) bieten über das Internet eine Versionsverwaltung für freie (und gegen Entgelt für kommerzielle) Projekte.
+- **Terminologie:**
+  - Repository: Ablage aller Files und Verwaltungsdaten
+  - Checkout: Herauskopieren einer Datei zwecks Änderung, ev. mit Sperre
+  - Checkin / Commit: Speichern einer geänderten Datei, Anlegen einer neuen Version
+  - Merge: Übernahme von Änderungen aus einem Branch in einen anderen / aus einem verteilten Repository in ein anderes
+    - Im Idealfall (nicht kollidierende Änderungen) vollautomatisch, sonst mit händischer Unterstützung (grafisch)
+    - Sonderfall “Three Way Merge”: Nicht zwei Files miteinander abgleichen, sondern die Änderungen zwischen zwei Files in einen dritten File einarbeiten.
+- **Wichtige Features:**
+  - Verwaltung mehrerer Projekte
+  - Datenbank (Vorteil oder Nachteil???) (rein text-basiert ist besser)
+  - Netzwerk-Zugriff, Client-Server-Architektur
+  - Commandline- bzw. Batch-Zugriff (für automatische Checkouts für die Builds) sowie Zugriff mit GUI (Versionsbaum!)
+  - Client-Plugins für IDE's
+  - Web-Interface
+  - Remote Checkout / Checkin / Clone (über HTTPS oder anderes “firewall-gängiges” und sicheres Protokoll!)
+  - Rechte-Verwaltung (wer darf was ändern?)
+  - Verwaltung auch von Binär-Dateien
+  - Hooks für eigene Programme / Skripts bei Checkin und Checkout
+    - (z.B. automatische Qualitätssicherung, Verständigung des Projektleiters, ...)
+  - Export- / Import-Fähigkeiten der Versionsgeschichte
+  - “Blame Tool”: Anzeige von Fileinhalt mit Version, Datum, Autor neben jeder Zeile
+  - **Verteilte Versionsverwaltung:**
+    - Kein zentrales Repository mehr, Dateien und Verwaltungsinformation (Versionsgeschichte) auf mehrere Standorte verteilt
+    - Nicht jeder Standort benötigt das komplette Repository
+    - Lokale Checkins und Checkouts ohne Server-Verbindung möglich
+      - ==> Sperren-freies Arbeiten
+      - ==> nachträglicher Abgleich / Merge mit anderen Standorten
+- **Was wird eingecheckt?**
+  - Alle Sourcen (incl. Makefiles, ...) (auch Icons, ...)
+  - Die Entwicklungs-Tools (Compiler, ...)
+  - Alle Fremd-Libraries usw.
+  - Alle Test-Sourcen und -Scripts, alle Testfälle / Testinputs
+  - Die Dokumentation + Doku-Tools
+
+## Andere Tools für Patches, Versionshandling usw
+
+- **Diff & Merge:**
+  - Vergleicht 2 Dateien / Verzeichnisse.
+  - Liefert zeilenweise Unterschiede in verschiedenen Formaten.
+  - Gleicht die Unterschiede wenn möglich automatisch ab.
+  - Sowohl für die Commandline als auch mit GUI.
+- **Three Way Merge:**
+  - Sonderform, spielt die Unterschiede zweier Dateien / Verzeichnisse in einer dritten Datei / einem dritten Verzeichnis ein.
+- **Kriterien grafischer Tools:**
+  - Zeichenweise grafische Darstellung der Unterschiede in den einzelnen Zeilen.
+  - Geh zum nächsten / vorigen Unterschied.
+  - Händisches Einfügen oder Entfernen von Unterschieden per Tastatur und Maus, automatisches Mergen aller konfliktfreien Unterschiede.
+  - Händische Editierbarkeit der Files.
+  - Händisches Alignment der Differenzen in der Darstellung.
+  - Mehrere Vergleiche (ganzer Verzeichnisbaum) gleichzeitig.
+  - Ignorieren von Zwischenräumen / Leerzeilen / unterschiedlichen Zeilenenden / Groß- und Kleinschreibung
