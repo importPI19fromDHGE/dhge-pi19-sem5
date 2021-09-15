@@ -118,7 +118,19 @@ Buildroot ist ein Tool zum Bauen von Embedded Linux Images.
 - GPU mit bis zu 500MHz, OpenGL-Support
 - LP-DDR4-SDRAM; beim Pi 4 1 bis 8 GB
   - ``LP``: Low Power; 1,1V
-- 2x miniHDMI, Klinkenausgang, Ethernet mit bis zu 300Mbit/s, Dual-Band WiFi, Bluetooth 5.0, 2x USB 2.0, 2x USB 3.0, microSD-Karte, 40 Pins (davon 26 GPIO), Display Serial Interface (DSI), Camera Serial Interface (CSI), 5,1V 3A USB-C Input
+- Interfaces:
+  - 2x miniHDMI
+  - Klinkenausgang
+  - Ethernet mit bis zu 300Mbit/s
+  - Dual-Band WiFi
+  - Bluetooth 5.0
+  - 2x USB 2.0
+  - 2x USB 3.0
+  - microSD-Karte
+  - 40 Pins (davon 26 GPIO)
+  - Display Serial Interface (DSI)
+  - Camera Serial Interface (CSI)
+  - 5,1V 3A USB-C Input
 
 ### Peripherie
 
