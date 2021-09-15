@@ -21,6 +21,9 @@ Software-Entwicklungswerkzeuge
   - [Zweck von Versions-Verwaltungs-Systemen](#zweck-von-versions-verwaltungs-systemen)
   - [Aufgaben von Versions-Verwaltungs-Systemen](#aufgaben-von-versions-verwaltungs-systemen)
   - [Andere Tools für Patches, Versionshandling usw](#andere-tools-für-patches-versionshandling-usw)
+- [Make](#make)
+  - [Makefile](#makefile)
+  - [Autotools](#autotools)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -156,3 +159,44 @@ Software-Entwicklungswerkzeuge
   - Händisches Alignment der Differenzen in der Darstellung.
   - Mehrere Vergleiche (ganzer Verzeichnisbaum) gleichzeitig.
   - Ignorieren von Zwischenräumen / Leerzeilen / unterschiedlichen Zeilenenden / Groß- und Kleinschreibung
+- **patch:**
+  - Kleines Tool, um Änderungen in Source-Code-Verzeichnissen einzuspielen. Im wesentlichen die Merge-Seite eines 3-Way-Merge:
+  - Bekommt diff-Outputs (d.h. geänderte Zeilen) als Input und spielt die Änderungen in einem lokalen Verzeichnis ein.
+  - Erkennt geringfügig verschobene Änderungen automatisch.
+  - Legt nicht einspielbare Änderungen zum händischen Nachziehen ab.
+
+# Make
+
+make automatisiert das Compilieren (großer) Projekte:
+
+- Es erzeugt intern einen Abhängigkeitsgraph der gewünschten Output-Files von den dazu notwendigen Input-Files.
+- Es prüft, welche der benötigten Files überhaupt noch fehlen, und vergleicht das File-Datum aller vorhandenen direkt voneinander abhängigen Files (potentielles Problem bei Netz-Laufwerken usw. mit ungenauen Uhren!).
+- Es baut genau das neu, was notwendig ist / geändert wurde (und nicht mehr!).
+- Es kennt Abhängigkeiten (welcher File braucht zum Bauen welche Input-Files?) ==> Es kann voneinander unabhängige Files parallel compilieren! (==> schneller!)
+- Es kann sich selbst rekursiv aufrufen ==> Es kann Unterverzeichnisse, Teilprojekte, ... erzeugen.
+- make arbeitet nur nach File-Datum, aber greift nicht auf die File-Inhalte zu ==> Es ist nicht auf C/C++ beschränkt, sondern kann für beliebige Aufgaben verwendet werden, bei denen ein Programm einen Outputfile X aus Inputfiles Y1, ... erzeugt. ==> Es wird nicht nur zum Compilieren verwendet, sondern auch zum Installieren, Aufräumen, Testen, Doku erstellen, .tar-Archiv erstellen, ...
+- Gesteuert wird make vom “Makefile”. Dieser wird pro Projekt (bei größeren Projekten eventuell pro Verzeichnis) erstellt
+
+## Makefile
+
+- jede Befehlszeile muss mit einem ECHTEN tab beginnen
+- erste Zeile `ziel: prereqs`
+- `clean` löscht alle Kompilate aber keine Konfigurationen, `dist-clean` löscht Konfigurationen
+- Compiler, Linker etc. sollten alle in Variablen definiert sein, einfache Anpassung
+- ein Makefile kann auch automatisch generiert werden (von der IDE, einem Dependency-Generator oder cmake etc.)
+- Alternativen: jam (C/C++), ant (Java), Maven (Java), Gradle (Java), IDE-integrierte build-tools
+
+## Autotools
+
+- sollen helfen portable Software und portable Makefiles zu erstellen
+- Entwicklung von GNU
+- Nutzer soll den geladenen Source-Code konfigurieren können
+- Entwickler baut Makefile-Gerüste und ein Konfigurationsfile (plattformabhängige Konfigurationen)
+- ein Tool findet nicht-portable Konstrukte im C/C++ code
+- Autotools erstellen ein `configure`-Script
+- Nutzer startet dann `configure`
+- configure führt automatische tests auf dem lokalen System aus, um Probleme und Inkompatiblitäten zu finden
+- danach wird ein Makefile generiert und ein C-Headerfile
+- dieser C-Headerfile steuert plattformabhängige Code-Strukturen mit Makros
+- libtool ist ein Tool zum Erzeugen und Linken von Shared Libraries, es soll es auf verschiedenen Plattformen vereinheitlichen
+- gettext ist ein Tool zum Internationalisieren aller Texte in einem Programm
