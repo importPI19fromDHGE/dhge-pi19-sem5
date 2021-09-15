@@ -11,10 +11,15 @@ Embedded Systems II
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Prüfungsleistung](#pr%C3%BCfungsleistung)
+- [Embedded Systems II](#embedded-systems-ii)
+- [Prüfungsleistung](#prüfungsleistung)
   - [Projekt](#projekt)
   - [Vortragsthemen](#vortragsthemen)
 - [Buildroot](#buildroot)
+- [QR-Code und Impfzertifikat](#qr-code-und-impfzertifikat)
+  - [Grundlegender Aufbau](#grundlegender-aufbau)
+  - [Impfzertifikat-Code](#impfzertifikat-code)
+    - [Überprüfung](#überprüfung)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -68,3 +73,31 @@ Buildroot ist ein Tool zum Bauen von Embedded Linux Images.
 4. eigene Dateien können via Overlay-Ordner im Board-Verzeichnis abgelegt werden
 5. `make` baut das Image
 6. Image auf SD-Karte kopieren: `sudo dd if=output/images/sdcard.img of=/dev/sdX`
+
+# QR-Code und Impfzertifikat
+
+- steht für "Quick Response"
+- 2D-Matrix aus schwarzen und weißen Quadraten, in denen Zeichen codiert sind
+- Weiterentwicklung des Barcodes
+- wesentlich höhere Zeichenmengen als im Barcode möglich
+
+## Grundlegender Aufbau
+
+- aufgeteilt in Ruhezone und Datenbereich
+- Ruhezone trennt Code von Umgebung, hilft bei Bildverzerrung, zeigt Ausrichtung an
+- Synchronisationscode zur Größenbestimmung durch abwechselnd schwarze und weiße Zellen zwischen Positionsmarkern
+- Formatinformationen über Datenmaske und Prüfbits für diese (XOR)
+- verschiedene Versionen für verschiedene Größen (21x21 bis 177x177)
+- verschiedene Encoding-Modes für numerisch, alphanumerisch, End of Message
+  - Datenstream: Mode, Bitstream, EOM
+
+## Impfzertifikat-Code
+
+- ``base45``-codiert in QR-Code
+- decodiert: signiertes JSON
+
+### Überprüfung
+
+- App lädt universellen öffentlichen Schlüssel zum Entschlüsseln der Signatur
+- Signatur wird auf Gültigkeit geprüft
+- Details zum Signaturverfahren: [Krypto Semester 4](https://github.com/importPI19fromDHGE/dhge-pi19-sem4/tree/main/SWS-KUSCHE#hashes--signatur)
