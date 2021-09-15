@@ -11,15 +11,14 @@ Embedded Systems II
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Embedded Systems II](#embedded-systems-ii)
-- [Prüfungsleistung](#prüfungsleistung)
+- [Prüfungsleistung](#pr%C3%BCfungsleistung)
   - [Projekt](#projekt)
   - [Vortragsthemen](#vortragsthemen)
 - [Buildroot](#buildroot)
 - [QR-Code und Impfzertifikat](#qr-code-und-impfzertifikat)
   - [Grundlegender Aufbau](#grundlegender-aufbau)
   - [Impfzertifikat-Code](#impfzertifikat-code)
-    - [Überprüfung](#überprüfung)
+    - [Überprüfung](#%C3%9Cberpr%C3%BCfung)
 - [Hardware des Raspberry Pi 4](#hardware-des-raspberry-pi-4)
   - [Komponenten](#komponenten)
     - [Peripherie](#peripherie)
