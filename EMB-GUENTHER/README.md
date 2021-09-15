@@ -80,14 +80,13 @@ Buildroot ist ein Tool zum Bauen von Embedded Linux Images.
 
 - steht für "Quick Response"
 - 2D-Matrix aus schwarzen und weißen Quadraten, in denen Zeichen codiert sind
-- Weiterentwicklung des Barcodes
-- wesentlich höhere Zeichenmengen als im Barcode möglich
+- Weiterentwicklung des Barcodes $\rightarrow$ wesentlich höhere Zeichenmenge möglich
 
 ## Grundlegender Aufbau
 
 - aufgeteilt in Ruhezone und Datenbereich
 - Ruhezone trennt Code von Umgebung, hilft bei Bildverzerrung, zeigt Ausrichtung an
-- Synchronisationscode zur Größenbestimmung durch abwechselnd schwarze und weiße Zellen zwischen Positionsmarkern
+- Synchronisationscode zur Größenbestimmung durch abwechselnde schwarze und weiße Zellen zwischen Positionsmarkern
 - Formatinformationen über Datenmaske und Prüfbits für diese (XOR)
 - verschiedene Versionen für verschiedene Größen (21x21 bis 177x177)
 - verschiedene Encoding-Modes für numerisch, alphanumerisch, End of Message
@@ -106,16 +105,16 @@ Buildroot ist ein Tool zum Bauen von Embedded Linux Images.
 
 # Hardware des Raspberry Pi 4
 
-- Motivation: billiger + einfacher Computer zur Steigerung des Interesse an Computertechnik und Programmierung
+- Motivation: günstiger + einfacher Computer zur Steigerung des Interesse an Computertechnik und Programmierung
 - flexibler Einsatz: Radio- / Funkmodule, Roboter, NAS- und Server-Betrieb, Anlagen-Steuerung, Prozessüberwachung, u.v.m.
-- gängige Betriebssysteme: Raspberry Pi OS, KODI/OSMC, Ubuntu Core, Retro Pie / Lakka Linux, Ubuntu Server
+- gängige Betriebssysteme: Raspberry Pi OS, KODI/OSMC, Ubuntu Core / Server, Retro Pie / Lakka Linux
 
 ## Komponenten
 
 - Broadcom SoC mit ARM Cortex A-72 64-Bit CPU mit 4 Kernen und bis zu 1,5GHz
-  - gut geeignet für Embedded Systeme, da energiesparende RISC-CPU
+  - = energiesparende RISC-CPU $\rightarrow$ gut geeignet für Embedded Systems
 - GPU mit bis zu 500MHz, OpenGL-Support
-- LP-DDR4-SDRAM; beim Pi 4 1 bis 8 GB
+- LP-DDR4-SDRAM (je nach Modell des Pi 4: 1 bis 8 GB)
   - ``LP``: Low Power; 1,1V
 - Interfaces:
   - 2x miniHDMI
