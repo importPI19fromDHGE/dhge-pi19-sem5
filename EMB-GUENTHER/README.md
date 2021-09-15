@@ -63,8 +63,8 @@ optional:
 Buildroot ist ein Tool zum Bauen von Embedded Linux Images.
 
 1. [buildroot herunterladen](https://buildroot.org/downloads/buildroot-2021.02.4.tar.gz) und entpacken
-2. `make <board>`, wobei \<board\> eine Konfiguration aus dem `boards`-Ordner ist (`WSL2` braucht eventuell `apt install libncurses-dev`)
-3. `make menuconfig` öffnet eine TUI zur Konfigurationsanpassung
+2. `make <board>_defconfig`, wobei \<board\> eine Konfiguration aus dem `boards`-Ordner ist 
+3. `make menuconfig` öffnet eine TUI zur Konfigurationsanpassung (`WSL2` braucht eventuell `apt install libncurses-dev`)
 4. eigene Dateien können via Overlay-Ordner im Board-Verzeichnis abgelegt werden
 5. `make` baut das Image
 6. Image auf SD-Karte kopieren: `sudo dd if=output/images/sdcard.img of=/dev/sdX`
