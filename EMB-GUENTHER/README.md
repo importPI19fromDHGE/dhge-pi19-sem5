@@ -20,6 +20,9 @@ Embedded Systems II
   - [Grundlegender Aufbau](#grundlegender-aufbau)
   - [Impfzertifikat-Code](#impfzertifikat-code)
     - [Überprüfung](#überprüfung)
+- [Hardware des Raspberry Pi 4](#hardware-des-raspberry-pi-4)
+  - [Komponenten](#komponenten)
+    - [Peripherie](#peripherie)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -101,3 +104,28 @@ Buildroot ist ein Tool zum Bauen von Embedded Linux Images.
 - App lädt universellen öffentlichen Schlüssel zum Entschlüsseln der Signatur
 - Signatur wird auf Gültigkeit geprüft
 - Details zum Signaturverfahren: [Krypto Semester 4](https://github.com/importPI19fromDHGE/dhge-pi19-sem4/tree/main/SWS-KUSCHE#hashes--signatur)
+
+# Hardware des Raspberry Pi 4
+
+- Motivation: billiger + einfacher Computer zur Steigerung des Interesse an Computertechnik und Programmierung
+- flexibler Einsatz: Radio- / Funkmodule, Roboter, NAS- und Server-Betrieb, Anlagen-Steuerung, Prozessüberwachung, u.v.m.
+- gängige Betriebssysteme: Raspberry Pi OS, KODI/OSMC, Ubuntu Core, Retro Pie / Lakka Linux, Ubuntu Server
+
+## Komponenten
+
+- Broadcom SoC mit ARM Cortex A-72 64-Bit CPU mit 4 Kernen und bis zu 1,5GHz
+  - gut geeignet für Embedded Systeme, da energiesparende RISC-CPU
+- GPU mit bis zu 500MHz, OpenGL-Support
+- LP-DDR4-SDRAM; beim Pi 4 1 bis 8 GB
+  - ``LP``: Low Power; 1,1V
+- 2x miniHDMI, Klinkenausgang, Ethernet mit bis zu 300Mbit/s, Dual-Band WiFi, Bluetooth 5.0, 2x USB 2.0, 2x USB 3.0, microSD-Karte, 40 Pins (davon 26 GPIO), Display Serial Interface (DSI), Camera Serial Interface (CSI), 5,1V 3A USB-C Input
+
+### Peripherie
+
+- pHats: **H**ardware **A**ttached on **T**op
+  - Komponenten benötigen EEPROM mit Hardware-Informationen
+  - z.B.: Coaxial-Adapter, Servomotoren, PoE, u.v.m.
+- PiCamera
+  - über CSI angeschlossen
+  - verschiedene Generationen, 5MP bis 12,3MP
+- Touch-Bildschirme via DSI angeschlossen
