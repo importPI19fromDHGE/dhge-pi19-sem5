@@ -13,13 +13,14 @@ Software-Entwicklungswerkzeuge
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Software-Entwicklungswerkzeuge](#software-entwicklungswerkzeuge)
 - [Dokumentation](#dokumentation)
   - [Dokumentationsgeneratoren](#dokumentationsgeneratoren)
   - [Andere Tools](#andere-tools)
 - [Versions-Verwaltungs-Systeme](#versions-verwaltungs-systeme)
   - [Zweck von Versions-Verwaltungs-Systemen](#zweck-von-versions-verwaltungs-systemen)
   - [Aufgaben von Versions-Verwaltungs-Systemen](#aufgaben-von-versions-verwaltungs-systemen)
-  - [Andere Tools für Patches, Versionshandling usw](#andere-tools-f%C3%BCr-patches-versionshandling-usw)
+  - [Andere Tools für Patches, Versionshandling usw](#andere-tools-für-patches-versionshandling-usw)
 - [Make](#make)
   - [Makefile](#makefile)
   - [Autotools](#autotools)
