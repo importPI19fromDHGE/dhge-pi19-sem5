@@ -308,7 +308,7 @@ Vernünftige Compiler sollten folgende Features besitzen:
 - Genaue Festlegung von Zielhardware (Befehlssatz und Optimierung für Eigenheiten von Rechenwerken)
 - Profiling und Coverage-Analyse
 - Feedback-Optimierung ("Profile Guided Optimization"), damit für die meistgenutzten Programm-Abläufe und -Strukturen optimiert wird
-- Optimierung beim Linken ("Link-time Optimization") - Optimierung über Filegrenzen hinweg
+- Optimierung beim Linken ("Link-time Optimization") $\rightarrow$ Optimierung über Filegrenzen hinweg
 
 ## Tools im Compiler-Umfeld
 
