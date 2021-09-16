@@ -235,6 +235,7 @@ latex/refman.pdf: Doxyfile html/index.html
 
 clean:
         @rm -rf main *.o html latex
+```
 
 ## Autotools
 
