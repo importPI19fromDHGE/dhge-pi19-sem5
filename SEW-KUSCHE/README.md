@@ -204,17 +204,40 @@ Software-Entwicklungswerkzeuge
 Beispieldatei für Übung 2:
 
 ```make
-all: main
+all: main html/index.html latex/refman.pdf
 
-main: main.cpp sdlinterf.o circ.cpp circ.h color.h graobj.cpp graobj.h rect.cpp rect.h
-  g++ -o main main.cpp sdlinterf.o circ.cpp circ.h color.h graobj.cpp graobj.h rect.cpp rect.h `sdl2-config --libs`
-sdlinterf.o: sdlinterf.c sdlinterf.h
-  gcc -c sdlinterf.c sdlinterf.h
+hfiles=circ.h color.h graobj.h rect.h
+
+main.o: main.cpp $(hfiles)
+        @g++ -c main.cpp
+
+rect.o: rect.cpp $(hfiles)
+        @g++ -c rect.cpp
+	
+circ.o: circ.cpp $(hfiles)
+        @g++ -c circ.cpp
+	
+graobj.o: graobj.cpp $(hfiles)
+        @g++ -c graobj.cpp
+	
+sdlinterf.o: sdlinterf.c $(hfiles)
+        @gcc `sdl2-config --cflags` -c sdlinterf.c
+	
+main: circ.o graobj.o main.o rect.o sdlinterf.o
+        @echo Compiling $@
+        @g++ -o main circ.o graobj.o main.o rect.o sdlinterf.o `sdl2-config --libs`
+
+Doxyfile:
+        @doxygen -g
+
+html/index.html: Doxyfile
+        @doxygen &> /dev/null
+	
+latex/refman.pdf: Doxyfile html/index.html
+        @$(MAKE) -C latex &> /dev/null
+
 clean:
-  rm -f *.o *.gch main
-```
-
-> Oben genanntes Beispiel ist zwar kürzer als die Musterlösung, hat aber die Konsequenz, dass man bei einer Dateiänderung alles neu kompilieren muss und keine Parallelisierung möglich ist.
+        @rm -rf main *.o html latex
 
 ## Autotools
 
@@ -253,10 +276,10 @@ int someFunction(int par1, ///< parameter 1
 
 # Compiler
 
-Praxistipps
+**Praxistipps**
 
 - Es spart Mühe, Code für alle Plattformen vom selben Compiler bauen zu lassen
-- Keine Kompilate unterschiedliche Compiler zusammenlinken
+- Keine Kompilate unterschiedlicher Compiler zusammenlinken
 - Compiler finden mehr Fehler bei aktivierter Optimierung
 - Precompiled Headers vermeiden
 - Cross-Compiler bauen Code für eine andere Zielplattform
@@ -311,12 +334,12 @@ Vernünftige Compiler sollten folgende Features besitzen:
 
 ## Debugger
 
-- 3 Betriebsmodi
-  - Post mortem Debugging: analysieren einer "Leiche"
+- drei Betriebsmodi:
+  - Post-mortem Debugging: Analysieren einer "Leiche"
   - Anhängen an einen bereits laufenden Prozess: nützlich, wenn Programm erst nach langer Laufzeit Fehler zeigt
   - Starten einer Binary mit Debugger: gängigste Methode in der Entwicklung
 - Laden eines Coredumps: ``gdb programm coredump``
-  - wenn Programm und Dump nicht zusammenpassen, wird GDB das anmerken
+  - wenn Programm und Dump nicht zusammenpassen, wird `gdb` das anmerken
   - wichtigste Befehle:
     - ``where``: zeigt Position des Absturzes auf dem Call-Stack mit Traceback
     - ``up``: geht im Call-Stack eins nach oben (in den Aufrufer des Absturzes) (analog: ``down``)
