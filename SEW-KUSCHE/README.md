@@ -211,7 +211,7 @@ main: main.cpp sdlinterf.o circ.cpp circ.h color.h graobj.cpp graobj.h rect.cpp 
 sdlinterf.o: sdlinterf.c sdlinterf.h
   gcc -c sdlinterf.c sdlinterf.h
 clean:
-  rm -f *.o *.gch main 
+  rm -f *.o *.gch main
 ```
 
 > Oben genanntes Beispiel ist zwar kürzer als die Musterlösung, hat aber die Konsequenz, dass man bei einer Dateiänderung alles neu kompilieren muss und keine Parallelisierung möglich ist.
