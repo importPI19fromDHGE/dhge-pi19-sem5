@@ -16,6 +16,14 @@ Software-Entwicklungswerkzeuge
 - [Dokumentation](#dokumentation)
   - [Dokumentationsgeneratoren](#dokumentationsgeneratoren)
   - [Andere Tools](#andere-tools)
+- [Versions-Verwaltungs-Systeme](#versions-verwaltungs-systeme)
+  - [Zweck von Versions-Verwaltungs-Systemen](#zweck-von-versions-verwaltungs-systemen)
+  - [Aufgaben von Versions-Verwaltungs-Systemen](#aufgaben-von-versions-verwaltungs-systemen)
+  - [Andere Tools für Patches, Versionshandling usw](#andere-tools-f%C3%BCr-patches-versionshandling-usw)
+- [Make](#make)
+  - [Makefile](#makefile)
+  - [Autotools](#autotools)
+  - [Doxygen](#doxygen)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -61,3 +69,150 @@ Software-Entwicklungswerkzeuge
   - zur Durchsetzung eines firmenweit einheitlichen Stils
   - lesbarmachen fremder und alter Sourcen
   - z.B.: `indent`, `astyle`, `uncrustify`
+
+# Versions-Verwaltungs-Systeme
+
+## Zweck von Versions-Verwaltungs-Systemen
+
+- Verwaltung / Archivierung aller Dateien eines Software-Produkts in allen Ständen
+- Buchführung über jede einzelne Änderung jeder einzelnen Datei
+- \rightarrow\rightarrow **Reproduzierbarkeit** und **Nachvollziehbarkeit**
+
+## Aufgaben von Versions-Verwaltungs-Systemen
+
+- Versionsgeschichte: Wer (Autor) hat wann (Datum) was (Änderung) geändert? Entweder eines einzelnen Files / Verzeichnisses oder des gesamten Projekts!
+- konsistente Versions-Nummerierung x.y.z (heute nicht mehr so, z.B. in `git`: Hashes \rightarrow\rightarrow Blockchain)
+- Labeling / Tagging von Ständen: z.B. "Weihnachts-Beta-Release"
+- Änderungen begründen \rightarrow\rightarrow Querverweis in den Bugtracker / Ticket-System!
+- Rekonstruktion alter Stände (nach Datum oder Versionsnummer)
+- Anzeige aller Änderungen zwischen zwei Ständen (grafisch!)
+- Verwaltung von Branches:
+  - `Head`, `Main` oder `Trunk` (aktueller Hauptentwicklungs-Branch)
+  - Release- und Wartungs-Branches (nur Fixes, keine Neuentwicklungen)
+  - Plattform- oder Kundenbranches (Sonderversion anderer Branches)
+  - Feature Development Branches (experimentelle Entwicklungen)
+  - Im schlimmsten Fall: Dead Head Branch (aufgegebener Head, Weiterentwicklung in anderem, älteren Stand)
+  - Anzeige der Versionen im Idealfall als Graph oder Baum!
+  - Automatisches Mergen von einzelnen Änderungen aus dem `Head`-Branch oder einem Wartungs-Branch in andere Branches (bei Wartungs-Branches auch aufwärts: Mergen eines Fixes aus dem Wartungsbranch nach `Head`).
+  - Vor allem bei Feature Branches: Zurück-Mergen aller Entwicklungen des Feature-Branches nach `Head` oder Resynchronisation mit `Head` in beide Richtungen (Übernahme aller Neuerungen von `Head` in den Feature-Branch).
+- Sperrverwaltung:
+  - Welche Files werden aktuell gerade geändert (sind ausgecheckt), von wem?
+  - Konkurrierende Veränderungen verhindern oder mergen!
+  - nicht von allen VCS genutzt
+  - beim Checkout einer Datei wird die Bearbeitung für Andere gesperrt
+  - Vorteil: keine Merge Konflikte
+  - Nachteil: für große, verteilte Entwicklergruppen nicht praktisch
+- Automatisches Einfügen von Versionsverwaltungs-Tags (Datum, Version, Autor, ...) in Source-Kommentare
+- Automatische Changelog-Erstellung
+- Optimierte Speicherung: Nur die Deltas jeder Änderung, nicht jedesmal die komplette Datei, und zwar rückwärts (aktuelle Version im Volltext)!
+- **Beispiele:**
+  - Historisch: SCCS (“Source Code Control System”, AT & T System V Unix), RCS (“Revision Control System”, andere Unix-Dialekte) (nur lokal)
+  - Lange Zeit führend: CVS (“Concurrent Version System”), Subversion (beide Open Source, Remote- und Multi-User-Fähigkeit)
+  - Kommerziell: Perforce, IBM/Rational ClearCase, MS Visual SourceSafe (alt) / Team Foundation Server (neu), BitKeeper (verteilt)
+  - Aktuell im Open-Source-Bereich: GIT (verteilt, ursprünglich für den Linux-Kernel entwickelt, heute für die meisten Projekte eingesetzt)
+  - Andere: Mercurial, Monotone (verteilt)
+  - Einige Webdienste (z.B. GitHub, Sourceforge oder berliOS) bieten über das Internet eine Versionsverwaltung für freie (und gegen Entgelt für kommerzielle) Projekte.
+- **Terminologie:**
+  - Repository: Ablage aller Files und Verwaltungsdaten
+  - Checkout: Herauskopieren einer Datei zwecks Änderung, ev. mit Sperre
+  - Checkin / Commit: Speichern einer geänderten Datei, Anlegen einer neuen Version
+  - Merge: Übernahme von Änderungen aus einem Branch in einen anderen / aus einem verteilten Repository in ein anderes
+    - Im Idealfall (nicht kollidierende Änderungen) vollautomatisch, sonst mit händischer Unterstützung (grafisch)
+    - Sonderfall "Three Way Merge": Nicht zwei Files miteinander abgleichen, sondern die Änderungen zwischen zwei Files in einen dritten File einarbeiten.
+- **Wichtige Features:**
+  - Verwaltung mehrerer Projekte
+  - Datenbank (Vorteil oder Nachteil???) (rein text-basiert ist besser)
+  - Netzwerk-Zugriff, Client-Server-Architektur
+  - Commandline- bzw. Batch-Zugriff (für automatische Checkouts für die Builds) sowie Zugriff mit GUI (Versionsbaum!)
+  - Client-Plugins für IDEs
+  - Web-Interface
+  - Remote Checkout / Checkin / Clone (über HTTPS oder anderes "Firewall-gängiges" und sicheres Protokoll!)
+  - Rechte-Verwaltung (wer darf was ändern?)
+  - Verwaltung auch von Binär-Dateien
+  - Hooks für eigene Programme / Skripts bei Checkin und Checkout
+    - (z.B. automatische Qualitätssicherung, Verständigung des Projektleiters, ...)
+  - Export- / Import-Fähigkeiten der Versionsgeschichte
+  - "Blame Tool": Anzeige von Fileinhalt mit Version, Datum, Autor neben jeder Zeile
+  - **Verteilte Versionsverwaltung:**
+    - Kein zentrales Repository mehr, Dateien und Verwaltungsinformation (Versionsgeschichte) auf mehrere Standorte verteilt
+    - Nicht jeder Standort benötigt das komplette Repository
+    - Lokale Checkins und Checkouts ohne Server-Verbindung möglich
+      - \rightarrow\rightarrow Sperren-freies Arbeiten
+      - \rightarrow\rightarrow nachträglicher Abgleich / Merge mit anderen Standorten
+- **Was wird eingecheckt?**
+  - Alle Sourcen (incl. Makefiles, Icons, ...)
+  - Die Entwicklungs-Tools (Compiler, ...)
+  - Alle Fremd-Libraries usw.
+  - Alle Test-Sourcen und -Scripts, alle Testfälle / Testinputs
+  - Die Dokumentation + Doku-Tools
+
+## Andere Tools für Patches, Versionshandling usw
+
+- **Diff & Merge:**
+  - Vergleicht 2 Dateien / Verzeichnisse
+  - Liefert zeilenweise Unterschiede in verschiedenen Formaten
+  - Gleicht die Unterschiede wenn möglich automatisch ab
+  - Sowohl für die Commandline als auch mit GUI
+- **Three Way Merge:**
+  - Sonderform, spielt die Unterschiede zweier Dateien / Verzeichnisse in einer dritten Datei / einem dritten Verzeichnis ein
+- **Kriterien grafischer Tools:**
+  - Zeichenweise grafische Darstellung der Unterschiede in den einzelnen Zeilen
+  - Geh zum nächsten / vorigen Unterschied
+  - Händisches Einfügen oder Entfernen von Unterschieden per Tastatur und Maus, automatisches Mergen aller konfliktfreien Unterschiede
+  - Händische Editierbarkeit der Files
+  - Händisches Alignment der Differenzen in der Darstellung
+  - Mehrere Vergleiche (ganzer Verzeichnisbaum) gleichzeitig
+  - Ignorieren von Zwischenräumen / Leerzeilen / unterschiedlichen Zeilenenden / Groß- und Kleinschreibung
+- **patch:**
+  - Kleines Tool, um Änderungen in Source-Code-Verzeichnissen einzuspielen. Im wesentlichen die Merge-Seite eines 3-Way-Merge:
+  - Bekommt diff-Outputs (d.h. geänderte Zeilen) als Input und spielt die Änderungen in einem lokalen Verzeichnis ein
+  - Erkennt geringfügig verschobene Änderungen automatisch
+  - Legt nicht einspielbare Änderungen zum händischen Nachziehen ab
+
+# Make
+
+`make` automatisiert das Compilieren (großer) Projekte:
+
+- Es erzeugt intern einen Abhängigkeitsgraph der gewünschten Output-Files von den dazu notwendigen Input-Files
+- Es prüft, welche der benötigten Files überhaupt noch fehlen, und vergleicht das File-Datum aller vorhandenen direkt voneinander abhängigen Files (potentielles Problem bei Netz-Laufwerken usw. mit ungenauen Uhren!)
+- Es baut genau das neu, was notwendig ist / geändert wurde (und nicht mehr!)
+- Es kennt Abhängigkeiten (welcher File braucht zum Bauen welche Input-Files?) \rightarrow\rightarrow Es kann voneinander unabhängige Files parallel compilieren! (\rightarrow\rightarrow schneller!)
+- Es kann sich selbst rekursiv aufrufen \rightarrow\rightarrow Es kann Unterverzeichnisse, Teilprojekte, ... erzeugen
+- `make` arbeitet nur nach File-Datum, aber greift nicht auf die File-Inhalte zu \rightarrow\rightarrow Es ist nicht auf C/C++ beschränkt, sondern kann für beliebige Aufgaben verwendet werden, bei denen ein Programm einen Outputfile X aus Inputfiles Y1, ... erzeugt. \rightarrow\rightarrow Es wird nicht nur zum Compilieren verwendet, sondern auch zum Installieren, Aufräumen, Testen, Doku erstellen, .tar-Archiv erstellen, ...
+- Gesteuert wird make vom “Makefile”. Dieser wird pro Projekt (bei größeren Projekten eventuell pro Verzeichnis) erstellt
+
+## Makefile
+
+- jede Befehlszeile muss mit einem ECHTEN Tab beginnen
+- erste Zeile `ziel: prereqs`
+- `clean` löscht alle Kompilate aber keine Konfigurationen, `dist-clean` löscht Konfigurationen
+- Compiler, Linker etc. sollten alle in Variablen definiert sein, einfache Anpassung
+- ein Makefile kann auch automatisch generiert werden (von der IDE, einem Dependency-Generator oder cmake etc.)
+- Alternativen: jam (C/C++), ant (Java), Maven (Java), Gradle (Java), IDE-integrierte build-tools
+
+## Autotools
+
+- sollen helfen, portable Software und portable Makefiles zu erstellen
+- Entwicklung durch GNU
+- Nutzer soll den geladenen Source-Code konfigurieren können
+- Entwickler baut Makefile-Gerüste und ein Konfigurationsfile (plattformabhängige Konfigurationen)
+- ein Tool findet nicht-portable Konstrukte im C/C++ Code
+- Autotools erstellen ein `configure`-Script
+- Nutzer startet dann `configure`
+- `configure` führt automatische Tests auf dem lokalen System aus, um Probleme und Inkompatiblitäten zu finden
+- danach wird ein Makefile generiert und ein C-Headerfile
+- dieser C-Headerfile steuert plattformabhängige Code-Strukturen mit Makros
+- `libtool` ist ein Tool zum Erzeugen und Linken von Shared Libraries, es soll es auf verschiedenen Plattformen vereinheitlichen
+- `gettext` ist ein Tool zum Internationalisieren aller Texte in einem Programm
+
+## Doxygen
+
+- Doxygen interessiert sich nicht für alle Kommentare
+- Kommentare sollten `///` oder `/**` sein
+- Parameter werden i.d.R. mit `//<` dahinter kommentiert, bspw.:
+
+```cpp
+/// this function does something
+int someFunction(int par1, ///< parameter 1
+                 int par2) ///< parameter 2
+```
