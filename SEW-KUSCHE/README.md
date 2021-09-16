@@ -13,13 +13,14 @@ Software-Entwicklungswerkzeuge
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Software-Entwicklungswerkzeuge](#software-entwicklungswerkzeuge)
 - [Dokumentation](#dokumentation)
   - [Dokumentationsgeneratoren](#dokumentationsgeneratoren)
   - [Andere Tools](#andere-tools)
 - [Versions-Verwaltungs-Systeme](#versions-verwaltungs-systeme)
   - [Zweck von Versions-Verwaltungs-Systemen](#zweck-von-versions-verwaltungs-systemen)
   - [Aufgaben von Versions-Verwaltungs-Systemen](#aufgaben-von-versions-verwaltungs-systemen)
-  - [Andere Tools für Patches, Versionshandling usw](#andere-tools-f%C3%BCr-patches-versionshandling-usw)
+  - [Andere Tools für Patches, Versionshandling usw](#andere-tools-für-patches-versionshandling-usw)
 - [Make](#make)
   - [Makefile](#makefile)
   - [Autotools](#autotools)
@@ -180,6 +181,7 @@ Software-Entwicklungswerkzeuge
 - Es kann sich selbst rekursiv aufrufen \rightarrow\rightarrow Es kann Unterverzeichnisse, Teilprojekte, ... erzeugen
 - `make` arbeitet nur nach File-Datum, aber greift nicht auf die File-Inhalte zu \rightarrow\rightarrow Es ist nicht auf C/C++ beschränkt, sondern kann für beliebige Aufgaben verwendet werden, bei denen ein Programm einen Outputfile X aus Inputfiles Y1, ... erzeugt. \rightarrow\rightarrow Es wird nicht nur zum Compilieren verwendet, sondern auch zum Installieren, Aufräumen, Testen, Doku erstellen, .tar-Archiv erstellen, ...
 - Gesteuert wird make vom “Makefile”. Dieser wird pro Projekt (bei größeren Projekten eventuell pro Verzeichnis) erstellt
+- man kann parallele Rechenarbeit daran erkennen, dass bei einer Messung mit ``time`` die Userspace-Zeit die Realzeit übertrifft
 
 ## Makefile
 
@@ -189,6 +191,23 @@ Software-Entwicklungswerkzeuge
 - Compiler, Linker etc. sollten alle in Variablen definiert sein, einfache Anpassung
 - ein Makefile kann auch automatisch generiert werden (von der IDE, einem Dependency-Generator oder cmake etc.)
 - Alternativen: jam (C/C++), ant (Java), Maven (Java), Gradle (Java), IDE-integrierte build-tools
+- das ``all``-Ziel sollte als erstes in der Makefile stehen, da der Aufruf ohne Ziel das erste baut
+- Shell-Erweiterungen werden unterstützt, z.B.: `` `sdl2-config --libs` ``
+
+Beispieldatei für Übung 2:
+
+```make
+all: main
+
+main: main.cpp sdlinterf.o circ.cpp circ.h color.h graobj.cpp graobj.h rect.cpp rect.h
+  g++ -o main main.cpp sdlinterf.o circ.cpp circ.h color.h graobj.cpp graobj.h rect.cpp rect.h `sdl2-config --libs`
+sdlinterf.o: sdlinterf.c sdlinterf.h
+  gcc -c sdlinterf.c sdlinterf.h
+clean:
+  rm -f *.o *.gch main 
+```
+
+> Oben genanntes Beispiel ist zwar kürzer als die Musterlösung, hat aber die Konsequenz, dass man bei einer Dateiänderung alles neu kompilieren muss und keine Parallelisierung möglich ist.
 
 ## Autotools
 
