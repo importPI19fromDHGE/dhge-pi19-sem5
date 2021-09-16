@@ -99,7 +99,7 @@ Buildroot ist ein Tool zum Bauen von Embedded Linux Images.
 
 ### Überprüfung
 
-- App lädt [öffentliche Schlüssel](https://github.com/HQJaTu/vacdec/blob/main/certs/roots/Digital_Green_Certificate_Signing_Keys.json) zum Entschlüsseln der Signatur 
+- App lädt [öffentliche Schlüssel](https://github.com/HQJaTu/vacdec/blob/main/certs/roots/Digital_Green_Certificate_Signing_Keys.json) zum Entschlüsseln der Signatur
 - Signatur wird auf Gültigkeit geprüft
 - Details zum Signaturverfahren: [Krypto Semester 4](https://github.com/importPI19fromDHGE/dhge-pi19-sem4/tree/main/SWS-KUSCHE#hashes--signatur)
 
