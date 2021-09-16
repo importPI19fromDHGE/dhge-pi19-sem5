@@ -15,6 +15,13 @@ Embedded Systems II
   - [Projekt](#projekt)
   - [Vortragsthemen](#vortragsthemen)
 - [Buildroot](#buildroot)
+- [QR-Code und Impfzertifikat](#qr-code-und-impfzertifikat)
+  - [Grundlegender Aufbau](#grundlegender-aufbau)
+  - [Impfzertifikat-Code](#impfzertifikat-code)
+    - [Überprüfung](#%C3%9Cberpr%C3%BCfung)
+- [Hardware des Raspberry Pi 4](#hardware-des-raspberry-pi-4)
+  - [Komponenten](#komponenten)
+    - [Peripherie](#peripherie)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -68,3 +75,67 @@ Buildroot ist ein Tool zum Bauen von Embedded Linux Images.
 4. eigene Dateien können via Overlay-Ordner im Board-Verzeichnis abgelegt werden
 5. `make` baut das Image
 6. Image auf SD-Karte kopieren: `sudo dd if=output/images/sdcard.img of=/dev/sdX`
+
+# QR-Code und Impfzertifikat
+
+- steht für "Quick Response"
+- 2D-Matrix aus schwarzen und weißen Quadraten, in denen Zeichen codiert sind
+- Weiterentwicklung des Barcodes $\rightarrow$ wesentlich höhere Zeichenmenge möglich
+
+## Grundlegender Aufbau
+
+- aufgeteilt in Ruhezone und Datenbereich
+- Ruhezone trennt Code von Umgebung, hilft bei Bildverzerrung, zeigt Ausrichtung an
+- Synchronisationscode zur Größenbestimmung durch abwechselnde schwarze und weiße Zellen zwischen Positionsmarkern
+- Formatinformationen über Datenmaske und Prüfbits für diese (XOR)
+- verschiedene Versionen für verschiedene Größen (21x21 bis 177x177)
+- verschiedene Encoding-Modes für numerisch, alphanumerisch, End of Message
+  - Datenstream: Mode, Bitstream, EOM
+
+## Impfzertifikat-Code
+
+- ``base45``-codiert in QR-Code
+- decodiert: signiertes JSON
+
+### Überprüfung
+
+- App lädt [öffentliche Schlüssel](https://github.com/HQJaTu/vacdec/blob/main/certs/roots/Digital_Green_Certificate_Signing_Keys.json) zum Entschlüsseln der Signatur
+- Signatur wird auf Gültigkeit geprüft
+- Details zum Signaturverfahren: [Krypto Semester 4](https://github.com/importPI19fromDHGE/dhge-pi19-sem4/tree/main/SWS-KUSCHE#hashes--signatur)
+
+# Hardware des Raspberry Pi 4
+
+- Motivation: günstiger + einfacher Computer zur Steigerung des Interesse an Computertechnik und Programmierung
+- flexibler Einsatz: Radio- / Funkmodule, Roboter, NAS- und Server-Betrieb, Anlagen-Steuerung, Prozessüberwachung, u.v.m.
+- gängige Betriebssysteme: Raspberry Pi OS, KODI/OSMC, Ubuntu Core / Server, Retro Pie / Lakka Linux
+
+## Komponenten
+
+- Broadcom SoC mit ARM Cortex A-72 64-Bit CPU mit 4 Kernen und bis zu 1,5GHz
+  - = energiesparende RISC-CPU $\rightarrow$ gut geeignet für Embedded Systems
+- GPU mit bis zu 500MHz, OpenGL-Support
+- LP-DDR4-SDRAM (je nach Modell des Pi 4: 1 bis 8 GB)
+  - ``LP``: Low Power; 1,1V
+- Interfaces:
+  - 2x miniHDMI
+  - Klinkenausgang
+  - Ethernet mit bis zu 300Mbit/s
+  - Dual-Band WiFi
+  - Bluetooth 5.0
+  - 2x USB 2.0
+  - 2x USB 3.0
+  - microSD-Karte
+  - 40 Pins (davon 26 GPIO)
+  - Display Serial Interface (DSI)
+  - Camera Serial Interface (CSI)
+  - 5,1V 3A USB-C Input
+
+### Peripherie
+
+- pHats: **H**ardware **A**ttached on **T**op
+  - Komponenten benötigen EEPROM mit Hardware-Informationen
+  - z.B.: Coaxial-Adapter, Servomotoren, PoE, u.v.m.
+- PiCamera
+  - über CSI angeschlossen
+  - verschiedene Generationen, 5MP bis 12,3MP
+- Touch-Bildschirme via DSI angeschlossen
