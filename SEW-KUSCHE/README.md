@@ -283,7 +283,7 @@ int someFunction(int par1, ///< parameter 1
 - Keine Kompilate unterschiedlicher Compiler zusammenlinken
 - Compiler finden mehr Fehler bei aktivierter Optimierung
 - Precompiled Headers vermeiden
-- Cross-Compiler bauen Code für eine andere Zielplattform
+- Cross-Compiler bauen Code für andere Zielplattformen
 
 ## Funktionsumfang
 
