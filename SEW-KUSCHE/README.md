@@ -13,13 +13,14 @@ Software-Entwicklungswerkzeuge
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Software-Entwicklungswerkzeuge](#software-entwicklungswerkzeuge)
 - [Dokumentation](#dokumentation)
   - [Dokumentationsgeneratoren](#dokumentationsgeneratoren)
   - [Andere Tools](#andere-tools)
 - [Versions-Verwaltungs-Systeme](#versions-verwaltungs-systeme)
   - [Zweck von Versions-Verwaltungs-Systemen](#zweck-von-versions-verwaltungs-systemen)
   - [Aufgaben von Versions-Verwaltungs-Systemen](#aufgaben-von-versions-verwaltungs-systemen)
-  - [Andere Tools für Patches, Versionshandling usw](#andere-tools-f%C3%BCr-patches-versionshandling-usw)
+  - [Andere Tools für Patches, Versionshandling usw](#andere-tools-für-patches-versionshandling-usw)
 - [Make](#make)
   - [Makefile](#makefile)
   - [Autotools](#autotools)
@@ -28,7 +29,7 @@ Software-Entwicklungswerkzeuge
 - [Compiler](#compiler)
   - [Funktionsumfang](#funktionsumfang)
   - [Tools im Compiler-Umfeld](#tools-im-compiler-umfeld)
-    - [Tools für Objects, Libraries, Executables](#tools-f%C3%BCr-objects-libraries-executables)
+    - [Tools für Objects, Libraries, Executables](#tools-für-objects-libraries-executables)
 - [Fehlersuche und Analyse des Programm-Verhaltens](#fehlersuche-und-analyse-des-programm-verhaltens)
   - [Debugger](#debugger)
   - [ltrace und strace](#ltrace-und-strace)
@@ -209,35 +210,35 @@ all: main html/index.html latex/refman.pdf
 hfiles=circ.h color.h graobj.h rect.h
 
 main.o: main.cpp $(hfiles)
-        @g++ -c main.cpp
+  @g++ -c main.cpp
 
 rect.o: rect.cpp $(hfiles)
-        @g++ -c rect.cpp
-	
+  @g++ -c rect.cpp
+
 circ.o: circ.cpp $(hfiles)
-        @g++ -c circ.cpp
-	
+  @g++ -c circ.cpp
+
 graobj.o: graobj.cpp $(hfiles)
-        @g++ -c graobj.cpp
-	
+  @g++ -c graobj.cpp
+
 sdlinterf.o: sdlinterf.c $(hfiles)
-        @gcc `sdl2-config --cflags` -c sdlinterf.c
-	
+  @gcc `sdl2-config --cflags` -c sdlinterf.c
+
 main: circ.o graobj.o main.o rect.o sdlinterf.o
-        @echo Compiling $@
-        @g++ -o main circ.o graobj.o main.o rect.o sdlinterf.o `sdl2-config --libs`
+  @echo Compiling $@
+  @g++ -o main circ.o graobj.o main.o rect.o sdlinterf.o `sdl2-config --libs`
 
 Doxyfile:
-        @doxygen -g
+  @doxygen -g
 
 html/index.html: Doxyfile
-        @doxygen &> /dev/null
-	
+  @doxygen &> /dev/null
+
 latex/refman.pdf: Doxyfile html/index.html
-        @$(MAKE) -C latex &> /dev/null
+  @$(MAKE) -C latex &> /dev/null
 
 clean:
-        @rm -rf main *.o html latex
+  @rm -rf main *.o html latex
 ```
 
 ## Autotools
