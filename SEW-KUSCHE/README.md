@@ -24,7 +24,17 @@ Software-Entwicklungswerkzeuge
 - [Make](#make)
   - [Makefile](#makefile)
   - [Autotools](#autotools)
+    - [Verwendung](#verwendung)
   - [Doxygen](#doxygen)
+- [Compiler](#compiler)
+  - [Funktionsumfang](#funktionsumfang)
+  - [Tools im Compiler-Umfeld](#tools-im-compiler-umfeld)
+  - [Tools für Objects, Libraries, Executables](#tools-für-objects-libraries-executables)
+  - [Sonderfall Cross-Compiler](#sonderfall-cross-compiler)
+  - [nm](#nm)
+- [Fehlersuche und Analyse des Programm-Verhaltens](#fehlersuche-und-analyse-des-programm-verhaltens)
+  - [Debugger](#debugger)
+  - [ltrace und strace](#ltrace-und-strace)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -224,6 +234,14 @@ clean:
 - `libtool` ist ein Tool zum Erzeugen und Linken von Shared Libraries, es soll es auf verschiedenen Plattformen vereinheitlichen
 - `gettext` ist ein Tool zum Internationalisieren aller Texte in einem Programm
 
+### Verwendung
+
+- Indiz: Vorhandensein von ausführbarer ``configure``, ``*.in``, ``*.ac``
+- ``configure``-Datei muss ausgeführt werden, um auf das System angepasste Makefiles etc. zu generieren
+  - ``-h`` / ``--help`` zeigt alle Optionen und Variablen an
+  - kompiliert Testprogramme und prüft auf Abhängigkeiten
+  - ist das erfolgreich, werden systemspezifische Dateien wie ``config.h`` und ``Makefile`` generiert
+
 ## Doxygen
 
 - Doxygen interessiert sich nicht für alle Kommentare
@@ -235,3 +253,85 @@ clean:
 int someFunction(int par1, ///< parameter 1
                  int par2) ///< parameter 2
 ```
+
+# Compiler
+
+Praxistipps
+
+- Es spart Mühe, Code für alle Plattformen vom selben Compiler bauen zu lassen
+- Keine Kompilate unterschiedliche Compiler zusammenlinken
+- Compiler finden mehr Fehler bei aktivierter Optimierung
+- Precompiled Headers vermeiden
+
+## Funktionsumfang
+
+Vernünftige Compiler sollten folgende Features besitzen:
+
+- Präprozessor TBD
+- Liste definierter Makros
+- wählbares temporäres Verzeichnis
+- Warnings für "dubiose Konstrukte" (mögliche Programmierfehler)
+- verschiedene Zeichensätze
+- Standardkonformität des Codes prüfen lassen
+- signed und unsigned chars
+- Ausgabe der Assembler-Sourcen
+- Debug-Output für optimierten Code
+- Separierung von Executable und Debug-Symbolen
+- Erzeugung zusätzlicher Laufzeitprüfungen
+- "Strict inlining mode"
+- Reduzierter C++-Runtime (keine Exceptions, ...)
+- Genaue Festlegung von Zielhardware (Befehlssatz und Optimierung)
+- Profiling und Coverage-Analyse
+- Feedback-Optimierung ("Profile Guided Optimization")
+- Optimierung beim Linken ("Link-time Optimization" - Optimierung über Filegrenzen hinweg)
+
+## Tools im Compiler-Umfeld
+
+- Compiler-Compiler: Erzeugen Code für Syntaxanalyse
+- Compiler-Caches, z.B.: ``ccache``
+- verteiltes Kompilieren, z.B. mit ``distcc``: große Projekte können über mehrere Computer verteilt gebaut werden
+
+## Tools für Objects, Libraries, Executables
+
+- ``strip`` löscht Debug-Informationen aus Binary
+- TBD
+- Linker ``ld``
+- Symbole anzeigen mit ``nm``
+- TBD
+
+## Sonderfall Cross-Compiler
+
+- Kompiliert Code für eine andere Plattform
+
+## nm
+
+- T: Text
+- U: Undefines - müssen gelinkt werden
+- D: Datensegment
+- B: null-initialisierter Datenbereich
+- R: read-only
+
+- Parameter -C: Auflösen von Symbolen in die originalen Namen, nützlich bei C++
+- einzelne Namensauflösung via ``c++filt``
+- ``size`` gibt Größe der Datenbereiche in einer Binary an
+
+# Fehlersuche und Analyse des Programm-Verhaltens
+
+## Debugger
+
+- 3 Betriebsmodi
+  - Post mortem Debugging: analysieren einer "Leiche"
+  - Anhängen an einen bereits laufenden Prozess: nützlich, wenn Programm erst nach langer Laufzeit Fehler zeigt
+  - Starten einer Binary mit Debugger: gängigste Methode
+- Laden eines Coredumps: ``gdb programm coredump``
+  - wenn Programm und Dump nicht zusammenpassen, wird GDB das anmerken
+  - wichtigste Befehle:
+    - ``where``: zeigt Position des Absturzes auf dem Call-Stack mit Traceback
+    - ``up``: geht im Call-Stack eins nach oben (in den Aufrufer des Absturzes) (analog: ``down``)
+    - ``print``: gibt Variablen aus, aber nur die im aktuellen Stack Frame
+
+## ltrace und strace
+
+- funktionieren immer, auch ohne Debug-Symbole u.s.w.
+- ``ltrace`` untersucht Library-Calls
+- ``strace`` untersucht Kernel-Calls
