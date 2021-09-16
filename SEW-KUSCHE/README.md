@@ -29,9 +29,7 @@ Software-Entwicklungswerkzeuge
 - [Compiler](#compiler)
   - [Funktionsumfang](#funktionsumfang)
   - [Tools im Compiler-Umfeld](#tools-im-compiler-umfeld)
-  - [Tools für Objects, Libraries, Executables](#tools-für-objects-libraries-executables)
-  - [Sonderfall Cross-Compiler](#sonderfall-cross-compiler)
-  - [nm](#nm)
+    - [Tools für Objects, Libraries, Executables](#tools-für-objects-libraries-executables)
 - [Fehlersuche und Analyse des Programm-Verhaltens](#fehlersuche-und-analyse-des-programm-verhaltens)
   - [Debugger](#debugger)
   - [ltrace und strace](#ltrace-und-strace)
@@ -262,28 +260,32 @@ Praxistipps
 - Keine Kompilate unterschiedliche Compiler zusammenlinken
 - Compiler finden mehr Fehler bei aktivierter Optimierung
 - Precompiled Headers vermeiden
+- Cross-Compiler bauen Code für eine andere Zielplattform
 
 ## Funktionsumfang
 
 Vernünftige Compiler sollten folgende Features besitzen:
 
-- Präprozessor TBD
-- Liste definierter Makros
+- Präprozessor:
+  - Ausgabe der Abhängigkeiten
+  - mit Linker: Umdefinieren von Header-, Lib-Verzeichnissen und System-Startup-Codes<!--?-->
+  - Ausgabe der vom Präprozessor verarbeiteten Quellen mit Beibehaltung von Formatierung und Kommentaren und Verweis auf Quell-Zeile (für Probleme in Makros und Headern)
+  - Liste definierter Makros
 - wählbares temporäres Verzeichnis
 - Warnings für "dubiose Konstrukte" (mögliche Programmierfehler)
 - verschiedene Zeichensätze
 - Standardkonformität des Codes prüfen lassen
-- signed und unsigned chars
+- signed und unsigned ``char``s
 - Ausgabe der Assembler-Sourcen
 - Debug-Output für optimierten Code
 - Separierung von Executable und Debug-Symbolen
 - Erzeugung zusätzlicher Laufzeitprüfungen
-- "Strict inlining mode"
+- "Strict inlining mode" für Inline-Assembler
 - Reduzierter C++-Runtime (keine Exceptions, ...)
-- Genaue Festlegung von Zielhardware (Befehlssatz und Optimierung)
+- Genaue Festlegung von Zielhardware (Befehlssatz und Optimierung für Eigenheiten von Rechenwerken)
 - Profiling und Coverage-Analyse
-- Feedback-Optimierung ("Profile Guided Optimization")
-- Optimierung beim Linken ("Link-time Optimization" - Optimierung über Filegrenzen hinweg)
+- Feedback-Optimierung ("Profile Guided Optimization"), damit für die meistgenutzten Programm-Abläufe und -Strukturen optimiert wird
+- Optimierung beim Linken ("Link-time Optimization") - Optimierung über Filegrenzen hinweg
 
 ## Tools im Compiler-Umfeld
 
@@ -291,29 +293,20 @@ Vernünftige Compiler sollten folgende Features besitzen:
 - Compiler-Caches, z.B.: ``ccache``
 - verteiltes Kompilieren, z.B. mit ``distcc``: große Projekte können über mehrere Computer verteilt gebaut werden
 
-## Tools für Objects, Libraries, Executables
+### Tools für Objects, Libraries, Executables
 
-- ``strip`` löscht Debug-Informationen aus Binary
-- TBD
-- Linker ``ld``
-- Symbole anzeigen mit ``nm``
-- TBD
-
-## Sonderfall Cross-Compiler
-
-- Kompiliert Code für eine andere Plattform
-
-## nm
-
-- T: Text
-- U: Undefines - müssen gelinkt werden
-- D: Datensegment
-- B: null-initialisierter Datenbereich
-- R: read-only
-
-- Parameter -C: Auflösen von Symbolen in die originalen Namen, nützlich bei C++
-- einzelne Namensauflösung via ``c++filt``
-- ``size`` gibt Größe der Datenbereiche in einer Binary an
+- ``strip``: löscht Debug-Informationen aus einer Binary
+- ``ld``: Linker
+- ``nm``: Symbole anzeigen
+  - ``T``: Text
+  - ``U``: Undefines - müssen gelinkt werden
+  - ``D``: Datensegment
+  - ``B``: null-initialisierter Datenbereich
+  - ``R``: read-only
+  - Parameter ``-C``: Auflösen von Symbolen in die originalen Namen, nützlich bei C++
+- ``c++filt``: Auflösung eines bestimmten Namens in einer Binary
+- ``ar``: Anzeige und Manipulation von Objekten in einer Library
+- ``size``: gibt Größe der Datenbereiche in einer Binary an
 
 # Fehlersuche und Analyse des Programm-Verhaltens
 
@@ -322,7 +315,7 @@ Vernünftige Compiler sollten folgende Features besitzen:
 - 3 Betriebsmodi
   - Post mortem Debugging: analysieren einer "Leiche"
   - Anhängen an einen bereits laufenden Prozess: nützlich, wenn Programm erst nach langer Laufzeit Fehler zeigt
-  - Starten einer Binary mit Debugger: gängigste Methode
+  - Starten einer Binary mit Debugger: gängigste Methode in der Entwicklung
 - Laden eines Coredumps: ``gdb programm coredump``
   - wenn Programm und Dump nicht zusammenpassen, wird GDB das anmerken
   - wichtigste Befehle:
