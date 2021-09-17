@@ -13,7 +13,8 @@ Projektmanagement
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Klausur (unvollständig)](#klausur-unvollst%C3%A4ndig)
+- [Projektmanagement](#projektmanagement)
+- [Klausur (unvollständig)](#klausur-unvollständig)
   - [BWL](#bwl)
   - [Projektmanagement (Klausurschwerpunkte)](#projektmanagement-klausurschwerpunkte)
 - [Grundlagen](#grundlagen)
@@ -27,6 +28,9 @@ Projektmanagement
     - [PDCA](#pdca)
     - [Problemermittlung](#problemermittlung)
       - [Ishikawa](#ishikawa)
+        - [Die 7-M des Ishikawa Diagramms](#die-7-m-des-ishikawa-diagramms)
+        - [Vorteile von Ishikawa](#vorteile-von-ishikawa)
+        - [Nachteile von Ishikawa](#nachteile-von-ishikawa)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -65,6 +69,7 @@ Projektmanagement
 - Grundsätze für die Projektplanung (Folie 17)
 - PDCA anwenden und beschreiben können
 - Problemanalyse (Folie 22)
+- Ishikawa
 
 # Grundlagen
 
@@ -174,5 +179,32 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 
 - Betrachtung der sieben Ms: Mensch, Maschine, Methode, Milieu (Umfeld), Material, Messung, Management
 - Faktoren können je nach Anwendung variieren
+- Ursache-Wirkungs-Diagramm
+- 3 Vorteile und 3 Nachteile sollen gekonnt sein!
 
+##### Die 7-M des Ishikawa Diagramms
 
+- **M:** Mileau
+- **M:** Methode (Technologie)
+- **M:** Maschine
+- **M:** Mensch
+- **M:** Management (Führungsprozess)
+- **M:** Messung
+- **M:** Material
+
+##### Vorteile von Ishikawa
+
+- Fördert Kreativität bei der Suche nach Ursachen
+- Ordnet mögliche Ursachen in Kategorien
+- Erarbeitung im Team ermöglicht neue Perspektiven
+- Kausalitäten von Ursachen werden dargestellen
+- Ermutigt Mitarbeiter zum Einbringen von Ideen
+- Vereinfacht das Problem
+- Einfache Anwendung und Erlernbarkeit
+
+##### Nachteile von Ishikawa
+
+- Erfordert Diziplin und Vereinfachung, damit das Diagramm nutzbar bleibt
+- Vorgefertigte Kategorien (z. B. 5M) können kreative Problemlösungswege einschränken
+- Komplexe Zusammenhänge lassen sich im Ishikawa-Diagramm nicht darstellen
+- Liefert keine Lösungen, sondern visualisiert nur die Ursachen
