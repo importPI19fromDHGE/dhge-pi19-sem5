@@ -21,21 +21,27 @@ Projektmanagement
   - [Allgemeine Wiederholung](#allgemeine-wiederholung)
   - [Management Methoden](#management-methoden)
   - [Projektarten](#projektarten)
-  - [Organisation](#organisation)
-    - [Ziele eines Projektes](#ziele-eines-projektes)
-    - [Projektfindung/-vorbereitung](#projektfindung-vorbereitung)
-    - [Projektrealisierung](#projektrealisierung)
-    - [PDCA](#pdca)
-    - [Problemermittlung](#problemermittlung)
-      - [Ishikawa](#ishikawa)
-        - [Die 7-M des Ishikawa Diagramms](#die-7-m-des-ishikawa-diagramms)
-        - [Vorteile von Ishikawa](#vorteile-von-ishikawa)
-        - [Nachteile von Ishikawa](#nachteile-von-ishikawa)
-      - [FMEA-Analyse](#fmea-analyse)
-        - [Die Spalten der FMEA-Analyse](#die-spalten-der-fmea-analyse)
-        - [Berechnung des Fehlers](#berechnung-des-fehlers)
-    - [Prozessvorbereitung](#prozessvorbereitung)
-      - [Alternativen durch Kreativtechniken](#alternativen-durch-kreativtechniken)
+- [Organisation](#organisation)
+  - [Ziele eines Projektes](#ziele-eines-projektes)
+  - [Projektfindung/-vorbereitung](#projektfindung-vorbereitung)
+  - [Projektrealisierung](#projektrealisierung)
+  - [PDCA](#pdca)
+  - [Problemermittlung](#problemermittlung)
+    - [Ishikawa](#ishikawa)
+      - [Die 7-M des Ishikawa Diagramms](#die-7-m-des-ishikawa-diagramms)
+      - [Vorteile von Ishikawa](#vorteile-von-ishikawa)
+      - [Nachteile von Ishikawa](#nachteile-von-ishikawa)
+    - [FMEA-Analyse](#fmea-analyse)
+      - [Die Spalten der FMEA-Analyse](#die-spalten-der-fmea-analyse)
+      - [Berechnung des Fehlers](#berechnung-des-fehlers)
+  - [Prozessvorbereitung](#prozessvorbereitung)
+    - [Alternativen durch Kreativtechniken](#alternativen-durch-kreativtechniken)
+    - [Erfolgseinschätzung](#erfolgseinschätzung)
+      - [Machbarkeitsprüfung](#machbarkeitsprüfung)
+      - [Risikoanalyse](#risikoanalyse)
+    - [Projektentscheidung](#projektentscheidung)
+      - [Was muss entschieden werden? (Projektentscheidung)](#was-muss-entschieden-werden-projektentscheidung)
+      - [Was muss der Projektleiter entscheiden?](#was-muss-der-projektleiter-entscheiden)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -141,16 +147,16 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
   - Verwaltung: Umstellung von Fax auf ein Vorgangsbearbeitungssystem (Echtzeitsystem)
   - Kombination
 
-## Organisation
+# Organisation
 
-### Ziele eines Projektes
+## Ziele eines Projektes
 
 - strategisch (> 3/5 Jahre): langfristige, grundlegende Ziele
 - taktisch (< 3/5 Jahre, >1 Jahr): mittelfristige Teilziele
 - operativ (<1 Jahr): kurzfristige Prozesssteuerung
 - Ziel (SMART): **S**pezifische Sache, **M**essbare Größenordnung, **A**ktualität, **R**ealistisch (erfüllbar), **T**erminierung (A,R = Bedingungen)
 
-### Projektfindung/-vorbereitung
+## Projektfindung/-vorbereitung
 
 - **Zielfindung/-bildung:** Benchmarks, Trends, ...
 - **Problemanalyse:** Ishikawa (Ursache/Wirkungs-Diagramm), FMEA (Fehlermöglichkeits- und -einflussanalyse), ...
@@ -158,7 +164,7 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 - **Prognose:** Extrapolation, Szenarien, Modelle
 - **Bewertung:** Nutzwertanalyse <!--Nutzwertanalyse könnte in der Klausur gebraucht werden-->
 
-### Projektrealisierung
+## Projektrealisierung
 
 - **Start:** Kick off $\rightarrow$ Bekanntgabe des Projektes
 - **Definitionsphase:** Ziel und Aufgabe (SMART, Operationalisierung (Muss-, Soll-, Kann-Ziele))
@@ -166,7 +172,7 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 - **Umsetzungsphase:** Realisierung
 - **Bewertung:** Kennzahlen, BSC
 
-### PDCA
+## PDCA
 
 - **PLAN:** Prozess planen; Aufgabe und Zielstellung, Analyse des aktuellen Zustands und Entwicklung eines Konzeptes (Plan)
 - **DO:** begrenzter Test
@@ -175,20 +181,20 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 
 <!--Klausur: Anwendung und Beschreibung des PDCA für ein Projekt = 8 Punkte -->
 
-### Problemermittlung
+## Problemermittlung
 
 - Ursachenermittlung: Ishikawa, FMEA
 - Fehlerermittlung: FMEA
 - Zukunftsermittlung: FMEA
 
-#### Ishikawa
+### Ishikawa
 
 - Betrachtung der sieben Ms: Mensch, Maschine, Methode, Milieu (Umfeld), Material, Messung, Management
 - Faktoren können je nach Anwendung variieren
 - Ursache-Wirkungs-Diagramm
 - 3 Vorteile und 3 Nachteile sollen gekonnt sein!
 
-##### Die 7-M des Ishikawa Diagramms
+#### Die 7-M des Ishikawa Diagramms
 
 - **M:** Mileau
 - **M:** Methode (Technologie)
@@ -198,7 +204,7 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 - **M:** Messung
 - **M:** Material
 
-##### Vorteile von Ishikawa
+#### Vorteile von Ishikawa
 
 - Fördert Kreativität bei der Suche nach Ursachen
 - Ordnet mögliche Ursachen in Kategorien
@@ -208,33 +214,33 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 - Vereinfacht das Problem
 - Einfache Anwendung und Erlernbarkeit
 
-##### Nachteile von Ishikawa
+#### Nachteile von Ishikawa
 
 - Erfordert Diziplin und Vereinfachung, damit das Diagramm nutzbar bleibt
 - Vorgefertigte Kategorien (z. B. 5M) können kreative Problemlösungswege einschränken
 - Komplexe Zusammenhänge lassen sich im Ishikawa-Diagramm nicht darstellen
 - Liefert keine Lösungen, sondern visualisiert nur die Ursachen
 
-#### FMEA-Analyse
+### FMEA-Analyse
 
 ![FMEA Formblatt](assets/fmea.png)<!--width=200px-->
 
 - Punktesystem, Verbesserung/Verschlechterung kann bemessen werden
 - Ziel: Fehler finden, bevor der Kunde sie bemerkt
 
-##### Die Spalten der FMEA-Analyse
+#### Die Spalten der FMEA-Analyse
 
 - **Fehlerort/Fehlermerkmal:** Wo tritt der Fehler aus?
 - **Potentielle Fehler**
 - **Fehlerfolge:** Was ist das Resultat des Fehlers?
 - **Fehlerursache:** Aus welchem Grund tritt der Fehler auf?
 - **Kontrollmaßnahmen:** Wie wurde der Fehler ermittelt?
-- A, B, E, RPZ $\rightarrow$ siehe Berechnung des Fehlers
+- A, B, E, RPZ $\rightarrow$ siehe [Berechnung des Fehlers](#berechnung-des-fehlers)
 - **Empfohlene Maßnahme:** Welchem Maßnahmen könnte man durchführen, um den Fehler zu beseitigen?
 - **Verantwortlich:** Wer ist für die Maßnahmen verantwortlich?
 - **Getroffene Maßnahmen:** Was wurde tatsächlich getan?
 
-##### Berechnung des Fehlers
+#### Berechnung des Fehlers
 
 - **(A) Auftreten:** Wahrscheinlichkeit des Auftretens: Vergeben von Punkten (1-10)
   - unwahrscheinlich = 1
@@ -254,7 +260,7 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
   - gering = 4-6
   - sehr gering = 7-8
   - unwahrscheinlich = 9-10
-- **RPZ**: Risiko-Prioritätszahl
+- **RPZ:** Risiko-Prioritätszahl
   - hoch <= 1000
   - mittel <=250
   - gering <= 125
@@ -263,9 +269,9 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 - je höher RPZ, desto wichtiger ist es den Fehler zu behandeln $\rightarrow$ Priorisierung nach RPZ
 - danach können die Fehler in dieser Reihenfolge nach Ishikawa behandelt werden
 
-### Prozessvorbereitung
+## Prozessvorbereitung
 
-#### Alternativen durch Kreativtechniken
+### Alternativen durch Kreativtechniken
 
 - Brainstorming
 - **Brainwriting:** - 635 Methode (Strukturierung des Brainwritings)
@@ -275,4 +281,47 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 - **Morphologischer Kasten:**
   - "Konfigurator"
 - **Mindmapping:** Graphische Darstellung von Sachverhalten
+- **Bionic:** Inspiration für die Problemlösung in der Natur suchen
 - ...
+
+### Erfolgseinschätzung
+
+#### Machbarkeitsprüfung
+
+- **Ressourcen:** HR, MR und FR
+- **Zeit:** Zeitpunkt, Dauer
+- **Raum:** Ort, Umweltverträglichkeit
+- Machbarkeitsstudie: 3 Säulen bestehend aus: soziale Beziehungen, Ökonomie, Ökologie
+  - Schnittmenge aus den 3 Säulen bedeutet: Nachhaltigkeit
+
+#### Risikoanalyse
+
+- jedes Projekt kann scheitern
+- die Risikoanalyse ermittelt: Wann soll das Problem abgebrochen werden? Ab wann lohnt es sich nicht mehr?
+- Es wird eingeschätzt nach: Wahrscheinlichkeit des Stattfindens (häufig bis unvorstellbar) und der Auswirkung/Ausmaß (unwesentlich bis katastrophal)
+- Kombination aus Wahrscheinlichkeit und Ausmaß ergeben die Risikobewertung: akzeptiert, kritisch oder inakzeptabel
+
+### Projektentscheidung
+
+#### Was muss entschieden werden? (Projektentscheidung)
+
+- **Projektleiter:** muss fachliche, methode und persönliche Kompetenzen haben (wie jeder Mitarbeiter)
+- **Projektgruppe:**
+  - Quantität: Welche, wie viele (zu welcher Zeit und an welchem Ort) Mitarbeiter?
+  - Qualität: fachliche, methodische und persönliche Kompetenzen (wie jeder Mitarbeiter)
+- **Institutionen:** welche uns in der Bewältigung unserer Probleme brauchen (bspw. Großrechner zur Klimasimulation)
+- **Experten:** interne und externe (bspw. Berater für die betriebliche Gesundheitsförderung)
+- **Einbindung in die Organisation:** Wie sieht das Organigramm aus? Wie fügen sich alle Teile in die Organisation ein?
+- **Controlling:** Dienstleister für die Erfolgskontrolle
+  - müssen die Daten genau so vorbereiten, wie sie gebraucht werden
+  - treffen **keine** Entscheidungen!
+
+#### Was muss der Projektleiter entscheiden?
+
+- **Aufgabe:**
+  - Definition des Inhalts: Wer? Was? Wann? Warum? Wo? Wie? $\rightarrow$ 5-W Regel
+  - Unterschiedliche Definition eine W's $\rightarrow$ Konfliktpotential
+- **Ziele:** siehe [Ziele eines Projektes](#ziele-eines-projektes)
+- Befugnisse
+- Verantwortung
+- Anforderungen
