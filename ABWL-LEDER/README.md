@@ -31,6 +31,9 @@ Projektmanagement
         - [Die 7-M des Ishikawa Diagramms](#die-7-m-des-ishikawa-diagramms)
         - [Vorteile von Ishikawa](#vorteile-von-ishikawa)
         - [Nachteile von Ishikawa](#nachteile-von-ishikawa)
+      - [FMEA-Analyse](#fmea-analyse)
+        - [Die Spalten der FMEA-Analyse](#die-spalten-der-fmea-analyse)
+        - [Berechnung des Fehlers](#berechnung-des-fehlers)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -208,3 +211,30 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 - Vorgefertigte Kategorien (z. B. 5M) können kreative Problemlösungswege einschränken
 - Komplexe Zusammenhänge lassen sich im Ishikawa-Diagramm nicht darstellen
 - Liefert keine Lösungen, sondern visualisiert nur die Ursachen
+
+#### FMEA-Analyse
+
+- Punktesystem, Verbesserung/Verschlechterung kann bemessen werden
+
+##### Die Spalten der FMEA-Analyse
+
+- **Fehlerort/Fehlermerkmal:** Wo tritt der Fehler aus?
+- **Potentielle Fehler**
+- **Fehlerfolge:** Was ist das Resultat des Fehlers?
+- **Fehlerursache:** Aus welchem Grund tritt der Fehler auf?
+- **Kontrollmaßnahmen:** Wie wurde der Fehler ermittelt?
+
+##### Berechnung des Fehlers
+
+- Wahrscheinlichkeit des Auftretens: Vergeben von Punkten (1-10)
+  - unwahrscheinlich = 1
+  - sehr gering = 2-3
+  - gering = 4-6
+  - mäßig = 7-8
+  - hoch = 9-10
+- Bedeutung des Fehlers / Auswirkungen auf den Kunden
+  - kaum wahrnehmbar = 1
+  - unbedeutender Fehler = 2-3
+  - mäßig schwerer Fehler = 4-6
+  - schwerer Fehler = 7-8
+  - äußerst schwerer Fehler = 9-10
