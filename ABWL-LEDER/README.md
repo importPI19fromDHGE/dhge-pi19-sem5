@@ -359,10 +359,10 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 2. Formelle Projektorganisation
 3. Formelle Projektrichtlinien
 4. Formelle Projektplanung
-   - Gantdiagramm (Meilensteine)
-   - Workflow
-   - Flussplan
-   - Netzplantechnik (Meilensteine, Ressourcen) $\rightarrow$ Pfeilnetzplan, Notennetzplan
+  - Gantdiagramm (Meilensteine)
+  - Workflow
+  - Flussplan
+  - Netzplantechnik (Meilensteine, Ressourcen) \rightarrow\rightarrow Pfeilnetzplan, Notennetzplan
 5. Formelle Projektdokumentation
   - Daten, die während der Projekts erhoben wurden, aufschreiben
 
