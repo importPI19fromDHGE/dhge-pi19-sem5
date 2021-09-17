@@ -308,6 +308,8 @@ Vernünftige Compiler sollten folgende Features besitzen:
 - Genaue Festlegung von Zielhardware (Befehlssatz und Optimierung für Eigenheiten von Rechenwerken)
 - Profiling und Coverage-Analyse
 - Feedback-Optimierung ("Profile Guided Optimization"), damit für die meistgenutzten Programm-Abläufe und -Strukturen optimiert wird
+  - typischer Programmablauf wird durchgefuehrt $\rightarrow$ Profil wird erstellt
+  - Programm wird erneut mit diesem Profil gebaut
 - Optimierung beim Linken ("Link-time Optimization") \rightarrow\rightarrow Optimierung über Filegrenzen hinweg
 - Bei der Fehlersuche sollte mit Compiler-Optimierungen kompiliert werden, da dadurch mehr Fehler gefunden werden können
 - Precompiled Header beschleunigen zwar das Kompilieren großer Projekte, machen aber teilweise noch viel Ärger wegen unausgereifter Implementierungen
