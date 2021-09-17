@@ -13,7 +13,8 @@ Projektmanagement
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Klausur (unvollständig)](#klausur-unvollst%C3%A4ndig)
+- [Projektmanagement](#projektmanagement)
+- [Klausur (unvollständig)](#klausur-unvollständig)
   - [BWL](#bwl)
   - [Projektmanagement (Klausurschwerpunkte)](#projektmanagement-klausurschwerpunkte)
 - [Grundlagen](#grundlagen)
@@ -35,12 +36,14 @@ Projektmanagement
       - [Berechnung des Fehlers](#berechnung-des-fehlers)
   - [Prozessvorbereitung](#prozessvorbereitung)
     - [Alternativen durch Kreativtechniken](#alternativen-durch-kreativtechniken)
-    - [Erfolgseinschätzung](#erfolgseinsch%C3%A4tzung)
-      - [Machbarkeitsprüfung](#machbarkeitspr%C3%BCfung)
+    - [Erfolgseinschätzung](#erfolgseinschätzung)
+      - [Machbarkeitsprüfung](#machbarkeitsprüfung)
       - [Risikoanalyse](#risikoanalyse)
     - [Projektentscheidung](#projektentscheidung)
       - [Was muss entschieden werden? (Projektentscheidung)](#was-muss-entschieden-werden-projektentscheidung)
-      - [Was muss der Projektleiter entscheiden?](#was-muss-der-projektleiter-entscheiden)
+      - [Was muss beim Projektleiter entschieden werden?](#was-muss-beim-projektleiter-entschieden-werden)
+      - [Was muss in der Projektgruppe entschieden werden?](#was-muss-in-der-projektgruppe-entschieden-werden)
+      - [Welche formellen Schritte muss jedes Projekt durchlaufen?](#welche-formellen-schritte-muss-jedes-projekt-durchlaufen)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -81,6 +84,8 @@ Projektmanagement
 - Problemanalyse (Folie 22)
 - Ishikawa
 - Brainwriting nach 635 Methode
+- Kompetenz kann "etwas können" oder "etwas dürfen" bedeuten, aus dem Kontext deuten können!
+- Knoten-Netzplan (Ablauf von Projekten) berechnen können (!!!)
 
 # Grundlagen
 
@@ -103,6 +108,7 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 - Verantwortung: Übergeben, Übernommen $\rightarrow$ Aufgabenerfüllung
   - Folge von Verantwortung: Tadel oder Lob (beides wichtig, jedoch nicht inflationär)
 - Teile des Marketings: Preis (Kontrahierungspolitik), Verteilung (Distribution), Produktpolitik, Kommunikation
+- Lean Management: flache Hierarchie
 
 ## Management Methoden
 
@@ -309,18 +315,60 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
   - Quantität: Welche, wie viele (zu welcher Zeit und an welchem Ort) Mitarbeiter?
   - Qualität: fachliche, methodische und persönliche Kompetenzen (wie jeder Mitarbeiter)
 - **Institutionen:** welche uns in der Bewältigung unserer Probleme brauchen (bspw. Großrechner zur Klimasimulation)
-- **Experten:** interne und externe (bspw. Berater für die betriebliche Gesundheitsförderung)
+- **Experten:** interne und externe (bspw. Berater für das betriebliche Gesundheitsmanagement)
 - **Einbindung in die Organisation:** Wie sieht das Organigramm aus? Wie fügen sich alle Teile in die Organisation ein?
 - **Controlling:** Dienstleister für die Erfolgskontrolle
   - müssen die Daten genau so vorbereiten, wie sie gebraucht werden
   - treffen **keine** Entscheidungen!
 
-#### Was muss der Projektleiter entscheiden?
+#### Was muss beim Projektleiter entschieden werden?
 
 - **Aufgabe:**
   - Definition des Inhalts: Wer? Was? Wann? Warum? Wo? Wie? $\rightarrow$ 5-W Regel
   - Unterschiedliche Definition eine W's $\rightarrow$ Konfliktpotential
 - **Ziele:** siehe [Ziele eines Projektes](#ziele-eines-projektes)
-- Befugnisse
-- Verantwortung
-- Anforderungen
+- **Befugnisse:**
+  - Kompetenz (etwas können): fachlich, methodisch, persönlich
+  - Kompetenz (etwas dürfen): Befugnis
+  - Der Mitarbeiter muss mit Befugnissen umgehen können
+  - zu wenige Befugnisse verlangsamen den Prozess
+- **Verantwortung:** Pflicht der Aufgabenerfüllung (siehe [Allgemeine Wiederholung](#allgemeine-wiederholung))
+- **Anforderungen:** Muss fachlich, methodisch und persönlich die Aufgabe bewältigen können.
+
+#### Was muss in der Projektgruppe entschieden werden?
+
+- **Aufbau/Struktur:** Wie viele Mitarbeiter? Welche Hierarchien (bei größeren Projektgruppen)?
+- **Gruppenarbeit:**
+  - Entwicklung der Gruppe in 5 Phasen:
+    1. Kennenlernen, Zusammenstellung $\rightarrow$ Forming
+    2. Rangordnunug, Rollen festlegen $\rightarrow$ Storming
+    3. Qualität und Quantität oder Aufgabenerfüllung $\rightarrow$ Norming
+    4. Doing, Erfüllung, höchste Leistungsfähigkeit $\rightarrow$ Performing
+    5. Verarbschiedung, Auflösung $\rightarrow$ Adjourning
+- **Gruppenarten:**
+  - Art des Projekts
+  - Art der Berufung
+  - Nach der Leitung
+  - Nach der Veränderlichkeit
+  - Strukturierung
+- **Qualifikation der Mitarbeiter:** Wer muss welche Qualifikationen haben?
+  - stehen im Anforderungsprofil der Stellenausschreibung
+
+#### Welche formellen Schritte muss jedes Projekt durchlaufen?
+
+1. Formeller Projektauftrag
+2. Formelle Projektorganisation
+3. Formelle Projektrichtlinien
+4. Formelle Projektplanung
+   - Gantdiagramm (Meilensteine)
+   - Workflow
+   - Flussplan
+   - Netzplantechnik (Meilensteine, Ressourcen) $\rightarrow$ Pfeilnetzplan, Notennetzplan
+5. Formelle Projektdokumentation
+   - Daten, die während der Projekts erhoben wurden, aufschreiben
+
+- Auftraggeber wendet sich an den Projektleiter
+- Projektleiter ist für das gesamte Projekt verantwortlich
+- Teile des Projekts werden von Projekt-Managern bearbeitet
+- den Projektmanagern sind jeweils Projekt-Mitarbeiter untergeordnet
+- $\rightarrow$ Folie 39: klassisches Einliniensystem
