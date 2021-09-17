@@ -34,6 +34,8 @@ Projektmanagement
       - [FMEA-Analyse](#fmea-analyse)
         - [Die Spalten der FMEA-Analyse](#die-spalten-der-fmea-analyse)
         - [Berechnung des Fehlers](#berechnung-des-fehlers)
+    - [Prozessvorbereitung](#prozessvorbereitung)
+      - [Alternativen durch Kreativtechniken](#alternativen-durch-kreativtechniken)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -73,6 +75,7 @@ Projektmanagement
 - PDCA anwenden und beschreiben können
 - Problemanalyse (Folie 22)
 - Ishikawa
+- Brainwriting nach 635 Methode
 
 # Grundlagen
 
@@ -214,7 +217,10 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 
 #### FMEA-Analyse
 
+![FMEA Formblatt](assets/fmea.png)<!--width=200px-->
+
 - Punktesystem, Verbesserung/Verschlechterung kann bemessen werden
+- Ziel: Fehler finden, bevor der Kunde sie bemerkt
 
 ##### Die Spalten der FMEA-Analyse
 
@@ -223,18 +229,50 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 - **Fehlerfolge:** Was ist das Resultat des Fehlers?
 - **Fehlerursache:** Aus welchem Grund tritt der Fehler auf?
 - **Kontrollmaßnahmen:** Wie wurde der Fehler ermittelt?
+- A, B, E, RPZ $\rightarrow$ siehe Berechnung des Fehlers
+- **Empfohlene Maßnahme:** Welchem Maßnahmen könnte man durchführen, um den Fehler zu beseitigen?
+- **Verantwortlich:** Wer ist für die Maßnahmen verantwortlich?
+- **Getroffene Maßnahmen:** Was wurde tatsächlich getan?
 
 ##### Berechnung des Fehlers
 
-- Wahrscheinlichkeit des Auftretens: Vergeben von Punkten (1-10)
+- **(A) Auftreten:** Wahrscheinlichkeit des Auftretens: Vergeben von Punkten (1-10)
   - unwahrscheinlich = 1
   - sehr gering = 2-3
   - gering = 4-6
   - mäßig = 7-8
   - hoch = 9-10
-- Bedeutung des Fehlers / Auswirkungen auf den Kunden
+- **(B) Bedeutung** des Fehlers / Auswirkungen auf den Kunden
   - kaum wahrnehmbar = 1
   - unbedeutender Fehler = 2-3
   - mäßig schwerer Fehler = 4-6
   - schwerer Fehler = 7-8
   - äußerst schwerer Fehler = 9-10
+- **(E) Entdeckung**: Wahrscheinlichkeit der Entdeckung (vor Auslieferung an den Kunden)
+  - hoch = 1
+  - mäßig = 2-3
+  - gering = 4-6
+  - sehr gering = 7-8
+  - unwahrscheinlich = 9-10
+- **RPZ**: Risiko-Prioritätszahl
+  - hoch <= 1000
+  - mittel <=250
+  - gering <= 125
+  - kein = 1
+- A, B und E werden für jeden Fehler miteinander multipliziert, daraus ergibt sich die RPZ
+- je höher RPZ, desto wichtiger ist es den Fehler zu behandeln $\rightarrow$ Priorisierung nach RPZ
+- danach können die Fehler in dieser Reihenfolge nach Ishikawa behandelt werden
+
+### Prozessvorbereitung
+
+#### Alternativen durch Kreativtechniken
+
+- Brainstorming
+- **Brainwriting:** - 635 Methode (Strukturierung des Brainwritings)
+  - **1. Möglichkeit:** 6 Gruppen oder 6 Teilnehmer | je 3 Ideen aufschreiben | 5 Minuten Zeit $\rightarrow$ 18 Ideen | Mehrfachnennungen sind möglich
+  - **2. Möglichkeit:** 6 Gruppen oder 6 Teilnehmer | je 3 Ideen | 5 Minuten Zeit | umlaufend 6 Durchgänge (Gruppen sehen und ergänzen Ideen der anderen Gruppen vor der Auswertung) $\rightarrow$ 108 Ideen | Mehrfachnennungen sind möglich
+  - **3. Möglichkeit:** 6 Gruppen oder 6 Teilnehmer | je 3 Ideen | 5 Minuten Zeit | umlaufend, aufbauend 6 Durchgänge (Ideen werden weitergegeben, Ideen müssen von der nächsten Gruppe erweitert werden) $\rightarrow$ 18 Ideen | Mehrfachnennungen sind unwahrscheinlich
+- **Morphologischer Kasten:**
+  - "Konfigurator"
+- **Mindmapping:** Graphische Darstellung von Sachverhalten
+- ...
