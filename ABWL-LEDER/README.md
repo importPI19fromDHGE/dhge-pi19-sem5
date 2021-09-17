@@ -13,8 +13,7 @@ Projektmanagement
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Projektmanagement](#projektmanagement)
-- [Klausur (unvollständig)](#klausur-unvollständig)
+- [Klausur (unvollständig)](#klausur-unvollst%C3%A4ndig)
   - [BWL](#bwl)
   - [Projektmanagement (Klausurschwerpunkte)](#projektmanagement-klausurschwerpunkte)
 - [Grundlagen](#grundlagen)
