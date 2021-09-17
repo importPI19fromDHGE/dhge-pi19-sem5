@@ -364,7 +364,7 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
    - Flussplan
    - Netzplantechnik (Meilensteine, Ressourcen) $\rightarrow$ Pfeilnetzplan, Notennetzplan
 5. Formelle Projektdokumentation
-   - Daten, die während der Projekts erhoben wurden, aufschreiben
+  - Daten, die während der Projekts erhoben wurden, aufschreiben
 
 - Auftraggeber wendet sich an den Projektleiter
 - Projektleiter ist für das gesamte Projekt verantwortlich
