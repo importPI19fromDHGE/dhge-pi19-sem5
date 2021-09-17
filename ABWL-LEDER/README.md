@@ -13,8 +13,7 @@ Projektmanagement
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Projektmanagement](#projektmanagement)
-- [Klausur (unvollständig)](#klausur-unvollständig)
+- [Klausur (unvollständig)](#klausur-unvollst%C3%A4ndig)
   - [BWL](#bwl)
   - [Projektmanagement (Klausurschwerpunkte)](#projektmanagement-klausurschwerpunkte)
 - [Grundlagen](#grundlagen)
@@ -36,8 +35,8 @@ Projektmanagement
       - [Berechnung des Fehlers](#berechnung-des-fehlers)
   - [Prozessvorbereitung](#prozessvorbereitung)
     - [Alternativen durch Kreativtechniken](#alternativen-durch-kreativtechniken)
-    - [Erfolgseinschätzung](#erfolgseinschätzung)
-      - [Machbarkeitsprüfung](#machbarkeitsprüfung)
+    - [Erfolgseinschätzung](#erfolgseinsch%C3%A4tzung)
+      - [Machbarkeitsprüfung](#machbarkeitspr%C3%BCfung)
       - [Risikoanalyse](#risikoanalyse)
     - [Projektentscheidung](#projektentscheidung)
       - [Was muss entschieden werden? (Projektentscheidung)](#was-muss-entschieden-werden-projektentscheidung)
