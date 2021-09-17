@@ -23,7 +23,15 @@ Software-Entwicklungswerkzeuge
 - [Make](#make)
   - [Makefile](#makefile)
   - [Autotools](#autotools)
+    - [Verwendung](#verwendung)
   - [Doxygen](#doxygen)
+- [Compiler](#compiler)
+  - [Funktionsumfang](#funktionsumfang)
+  - [Tools im Compiler-Umfeld](#tools-im-compiler-umfeld)
+    - [Tools für Objects, Libraries, Executables](#tools-f%C3%BCr-objects-libraries-executables)
+- [Fehlersuche und Analyse des Programm-Verhaltens](#fehlersuche-und-analyse-des-programm-verhaltens)
+  - [Debugger](#debugger)
+  - [ltrace und strace](#ltrace-und-strace)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -180,6 +188,7 @@ Software-Entwicklungswerkzeuge
 - Es kann sich selbst rekursiv aufrufen \rightarrow\rightarrow Es kann Unterverzeichnisse, Teilprojekte, ... erzeugen
 - `make` arbeitet nur nach File-Datum, aber greift nicht auf die File-Inhalte zu \rightarrow\rightarrow Es ist nicht auf C/C++ beschränkt, sondern kann für beliebige Aufgaben verwendet werden, bei denen ein Programm einen Outputfile X aus Inputfiles Y1, ... erzeugt. \rightarrow\rightarrow Es wird nicht nur zum Compilieren verwendet, sondern auch zum Installieren, Aufräumen, Testen, Doku erstellen, .tar-Archiv erstellen, ...
 - Gesteuert wird make vom “Makefile”. Dieser wird pro Projekt (bei größeren Projekten eventuell pro Verzeichnis) erstellt
+- man kann parallele Rechenarbeit daran erkennen, dass bei einer Messung mit ``time`` die Userspace-Zeit die Realzeit übertrifft
 
 ## Makefile
 
@@ -189,6 +198,47 @@ Software-Entwicklungswerkzeuge
 - Compiler, Linker etc. sollten alle in Variablen definiert sein, einfache Anpassung
 - ein Makefile kann auch automatisch generiert werden (von der IDE, einem Dependency-Generator oder cmake etc.)
 - Alternativen: jam (C/C++), ant (Java), Maven (Java), Gradle (Java), IDE-integrierte build-tools
+- das ``all``-Ziel sollte als erstes in der Makefile stehen, da der Aufruf ohne Ziel das erste baut
+- Shell-Erweiterungen werden unterstützt, z.B.: `` `sdl2-config --libs` ``
+
+Beispieldatei für Übung 2:
+
+```make
+all: main html/index.html latex/refman.pdf
+
+hfiles=circ.h color.h graobj.h rect.h
+
+main.o: main.cpp $(hfiles)
+  @g++ -c main.cpp
+
+rect.o: rect.cpp $(hfiles)
+  @g++ -c rect.cpp
+
+circ.o: circ.cpp $(hfiles)
+  @g++ -c circ.cpp
+
+graobj.o: graobj.cpp $(hfiles)
+  @g++ -c graobj.cpp
+
+sdlinterf.o: sdlinterf.c $(hfiles)
+  @gcc `sdl2-config --cflags` -c sdlinterf.c
+
+main: circ.o graobj.o main.o rect.o sdlinterf.o
+  @echo Compiling $@
+  @g++ -o main circ.o graobj.o main.o rect.o sdlinterf.o `sdl2-config --libs`
+
+Doxyfile:
+  @doxygen -g
+
+html/index.html: Doxyfile
+  @doxygen &> /dev/null
+
+latex/refman.pdf: Doxyfile html/index.html
+  @$(MAKE) -C latex &> /dev/null
+
+clean:
+  @rm -rf main *.o html latex
+```
 
 ## Autotools
 
@@ -205,6 +255,14 @@ Software-Entwicklungswerkzeuge
 - `libtool` ist ein Tool zum Erzeugen und Linken von Shared Libraries, es soll es auf verschiedenen Plattformen vereinheitlichen
 - `gettext` ist ein Tool zum Internationalisieren aller Texte in einem Programm
 
+### Verwendung
+
+- Indiz: Vorhandensein von ausführbarer ``configure``, ``*.in``, ``*.ac``
+- ``configure``-Datei muss ausgeführt werden, um auf das System angepasste Makefiles etc. zu generieren
+  - ``-h`` / ``--help`` zeigt alle Optionen und Variablen an
+  - kompiliert Testprogramme und prüft auf Abhängigkeiten
+  - ist das erfolgreich, werden systemspezifische Dateien wie ``config.h`` und ``Makefile`` generiert
+
 ## Doxygen
 
 - Doxygen interessiert sich nicht für alle Kommentare
@@ -216,3 +274,84 @@ Software-Entwicklungswerkzeuge
 int someFunction(int par1, ///< parameter 1
                  int par2) ///< parameter 2
 ```
+
+# Compiler
+
+**Praxistipps**
+
+- Es spart Mühe, Code für alle Plattformen vom selben Compiler bauen zu lassen
+- Keine Kompilate unterschiedlicher Compiler zusammenlinken
+- Compiler finden mehr Fehler bei aktivierter Optimierung
+- Precompiled Headers vermeiden
+- Cross-Compiler bauen Code für andere Zielplattformen
+
+## Funktionsumfang
+
+Vernünftige Compiler sollten folgende Features besitzen:
+
+- Präprozessor:
+  - Ausgabe der Abhängigkeiten
+  - mit Linker: Umdefinieren von Header-, Lib-Verzeichnissen und System-Startup-Codes<!--?-->
+  - Ausgabe der vom Präprozessor verarbeiteten Quellen mit Beibehaltung von Formatierung und Kommentaren und Verweis auf Quell-Zeile (für Probleme in Makros und Headern)
+  - Liste definierter Makros
+- wählbares temporäres Verzeichnis
+- Warnings für "dubiose Konstrukte" (mögliche Programmierfehler)
+- verschiedene Zeichensätze
+- Standardkonformität des Codes prüfen lassen
+- signed und unsigned ``char``s
+- Ausgabe der Assembler-Sourcen
+- Debug-Output für optimierten Code
+- Separierung von Executable und Debug-Symbolen (Debug Symbole können in seperater Datei gespeichert werden)
+- Erzeugung zusätzlicher Laufzeitprüfungen
+- "Strict inlining mode" für Inline-Assembler
+- Reduzierter C++-Runtime (keine Exceptions, ...)
+- Genaue Festlegung von Zielhardware (Befehlssatz und Optimierung für Eigenheiten von Rechenwerken)
+- Profiling und Coverage-Analyse
+- Feedback-Optimierung ("Profile Guided Optimization"), damit für die meistgenutzten Programm-Abläufe und -Strukturen optimiert wird
+  - typischer Programmablauf wird durchgefuehrt $\rightarrow$ Profil wird erstellt
+  - Programm wird erneut mit diesem Profil gebaut
+- Optimierung beim Linken ("Link-time Optimization") \rightarrow\rightarrow Optimierung über Filegrenzen hinweg
+- Bei der Fehlersuche sollte mit Compiler-Optimierungen kompiliert werden, da dadurch mehr Fehler gefunden werden können
+- Precompiled Header beschleunigen zwar das Kompilieren großer Projekte, machen aber teilweise noch viel Ärger wegen unausgereifter Implementierungen
+
+## Tools im Compiler-Umfeld
+
+- Compiler-Compiler: Erzeugen Code für Syntaxanalyse
+- Compiler-Caches, z.B.: ``ccache``
+- verteiltes Kompilieren, z.B. mit ``distcc``: große Projekte können über mehrere Computer verteilt gebaut werden
+
+### Tools für Objects, Libraries, Executables
+
+- ``strip``: löscht Debug-Informationen aus einer Binary
+- ``ld``: Linker
+- ``nm``: Symbole anzeigen
+  - ``T``: Text
+  - ``U``: Undefines - müssen gelinkt werden
+  - ``D``: Datensegment
+  - ``B``: null-initialisierter Datenbereich
+  - ``R``: read-only
+  - Parameter ``-C``: Auflösen von Symbolen in die originalen Namen, nützlich bei C++
+- ``c++filt``: Auflösung eines bestimmten Namens in einer Binary
+- ``ar``: Anzeige und Manipulation von Objekten in einer Library
+- ``size``: gibt Größe der Datenbereiche in einer Binary an
+
+# Fehlersuche und Analyse des Programm-Verhaltens
+
+## Debugger
+
+- drei Betriebsmodi:
+  - Post-mortem Debugging: Analysieren einer "Leiche"
+  - Anhängen an einen bereits laufenden Prozess: nützlich, wenn Programm erst nach langer Laufzeit Fehler zeigt
+  - Starten einer Binary mit Debugger: gängigste Methode in der Entwicklung
+- Laden eines Coredumps: ``gdb programm coredump``
+  - wenn Programm und Dump nicht zusammenpassen, wird `gdb` das anmerken
+  - wichtigste Befehle:
+    - ``where``: zeigt Position des Absturzes auf dem Call-Stack mit Traceback
+    - ``up``: geht im Call-Stack eins nach oben (in den Aufrufer des Absturzes) (analog: ``down``)
+    - ``print``: gibt Variablen aus, aber nur die im aktuellen Stack Frame
+
+## ltrace und strace
+
+- funktionieren immer, auch ohne Debug-Symbole u.s.w.
+- ``ltrace`` untersucht Library-Calls
+- ``strace`` untersucht Kernel-Calls
