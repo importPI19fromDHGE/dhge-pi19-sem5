@@ -356,16 +356,16 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 
 #### Welche formellen Schritte muss jedes Projekt durchlaufen?
 
-1. Formeller Projektauftrag
-2. Formelle Projektorganisation
-3. Formelle Projektrichtlinien
-4. Formelle Projektplanung
-   1. Ganttdiagramm (Meilensteine)
-   2. Workflow
-   3. Flussplan
-   4. Netzplantechnik (Meilensteine, Ressourcen) \rightarrow\rightarrow Pfeilnetzplan, Notennetzplan
-5. Formelle Projektdokumentation
-6. Daten, die während der Projekts erhoben wurden, aufschreiben
+- Formeller Projektauftrag
+- Formelle Projektorganisation
+- Formelle Projektrichtlinien
+- Formelle Projektplanung
+  - Ganttdiagramm (Meilensteine)
+  - Workflow
+  - Flussplan
+  - Netzplantechnik (Meilensteine, Ressourcen) \rightarrow\rightarrow Pfeilnetzplan, Knotennetzplan
+- Formelle Projektdokumentation
+- Daten, die während des Projekts erhoben wurden, aufschreiben
 
 - Auftraggeber wendet sich an den Projektleiter
 - Projektleiter ist für das gesamte Projekt verantwortlich
