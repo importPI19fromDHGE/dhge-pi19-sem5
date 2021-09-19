@@ -280,9 +280,23 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 
 - Brainstorming
 - **Brainwriting:** - 635 Methode (Strukturierung des Brainwritings)
-  - **1. Möglichkeit:** 6 Gruppen oder 6 Teilnehmer | je 3 Ideen aufschreiben | 5 Minuten Zeit $\rightarrow$ 18 Ideen | Mehrfachnennungen sind möglich
-  - **2. Möglichkeit:** 6 Gruppen oder 6 Teilnehmer | je 3 Ideen | 5 Minuten Zeit | umlaufend 6 Durchgänge (Gruppen sehen und ergänzen Ideen der anderen Gruppen vor der Auswertung) $\rightarrow$ 108 Ideen | Mehrfachnennungen sind möglich
-  - **3. Möglichkeit:** 6 Gruppen oder 6 Teilnehmer | je 3 Ideen | 5 Minuten Zeit | umlaufend, aufbauend 6 Durchgänge (Ideen werden weitergegeben, Ideen müssen von der nächsten Gruppe erweitert werden) $\rightarrow$ 18 Ideen | Mehrfachnennungen sind unwahrscheinlich
+  - **1. Möglichkeit:**
+    - 6 Gruppen oder 6 Teilnehmer
+    - je 3 Ideen aufschreiben
+    - 5 Minuten Zeit $\rightarrow$ 18 Ideen
+    - Mehrfachnennungen sind möglich
+  - **2. Möglichkeit:**
+    - 6 Gruppen oder 6 Teilnehmer
+    - je 3 Ideen
+    - 5 Minuten Zeit
+    - umlaufend 6 Durchgänge (Gruppen sehen und ergänzen Ideen der anderen Gruppen vor der Auswertung) $\rightarrow$ 108 Ideen
+    - Mehrfachnennungen sind möglich
+  - **3. Möglichkeit:**
+    - 6 Gruppen oder 6 Teilnehmer
+    - je 3 Ideen
+    - 5 Minuten Zeit
+    - umlaufend, aufbauend 6 Durchgänge (Ideen werden weitergegeben, Ideen müssen von der nächsten Gruppe erweitert werden) $\rightarrow$ 18 Ideen
+    - Mehrfachnennungen sind unwahrscheinlich
 - **Morphologischer Kasten:**
   - "Konfigurator"
 - **Mindmapping:** Graphische Darstellung von Sachverhalten
