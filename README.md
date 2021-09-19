@@ -57,7 +57,7 @@ Damit eine Kompatibilität zum Github-`markdown` haben wir eigene Erweiterungen 
 ### Markdown-Linter
 
 In unseren Github Repositories kommt ein sogenannter Linter zum Einsatz. Dieser sorgt dafür, dass bei allen Markdown Dokumenten eine einheitliche Formatierung eingehalten wird.
-Damit bereits bei der lokalen Bearbeitung etwaige Fehler festgestellt werden können, empfehlen wir die Verwendung der VSCode-Extension [markdownlint von David Anson](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint). 
+Damit bereits bei der lokalen Bearbeitung etwaige Fehler festgestellt werden können, empfehlen wir die Verwendung der VSCode-Extension [markdownlint von David Anson](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint).
 Dieses Repository enthält für die Extension bereits eine vorgefertigte Konfiguration, die automatisch verwendet wird.
 
 ### Bildgröße
