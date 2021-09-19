@@ -377,7 +377,7 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
   - Ganttdiagramm (Meilensteine)
   - Workflow
   - Flussplan
-  - Netzplantechnik (Meilensteine, Ressourcen) \rightarrow\rightarrow Pfeilnetzplan, Knotennetzplan
+  - Netzplantechnik (Meilensteine, Ressourcen) $\rightarrow$ Pfeilnetzplan, Knotennetzplan
 - Formelle Projektdokumentation
 - Daten, die während des Projekts erhoben wurden, aufschreiben
 
