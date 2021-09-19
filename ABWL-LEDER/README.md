@@ -13,7 +13,8 @@ Projektmanagement
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Klausur (unvollständig)](#klausur-unvollst%C3%A4ndig)
+- [Projektmanagement](#projektmanagement)
+- [Klausur (unvollständig)](#klausur-unvollständig)
   - [BWL](#bwl)
   - [Projektmanagement (Klausurschwerpunkte)](#projektmanagement-klausurschwerpunkte)
 - [Grundlagen](#grundlagen)
@@ -35,8 +36,8 @@ Projektmanagement
       - [Berechnung des Fehlers](#berechnung-des-fehlers)
   - [Prozessvorbereitung](#prozessvorbereitung)
     - [Alternativen durch Kreativtechniken](#alternativen-durch-kreativtechniken)
-    - [Erfolgseinschätzung](#erfolgseinsch%C3%A4tzung)
-      - [Machbarkeitsprüfung](#machbarkeitspr%C3%BCfung)
+    - [Erfolgseinschätzung](#erfolgseinschätzung)
+      - [Machbarkeitsprüfung](#machbarkeitsprüfung)
       - [Risikoanalyse](#risikoanalyse)
     - [Projektentscheidung](#projektentscheidung)
       - [Was muss entschieden werden? (Projektentscheidung)](#was-muss-entschieden-werden-projektentscheidung)
@@ -359,10 +360,10 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 2. Formelle Projektorganisation
 3. Formelle Projektrichtlinien
 4. Formelle Projektplanung
-  1. Ganttdiagramm (Meilensteine)
-  2. Workflow
-  3. Flussplan
-  4. Netzplantechnik (Meilensteine, Ressourcen) \rightarrow\rightarrow Pfeilnetzplan, Notennetzplan
+   1. Ganttdiagramm (Meilensteine)
+   2. Workflow
+   3. Flussplan
+   4. Netzplantechnik (Meilensteine, Ressourcen) \rightarrow\rightarrow Pfeilnetzplan, Notennetzplan
 5. Formelle Projektdokumentation
 6. Daten, die während der Projekts erhoben wurden, aufschreiben
 
