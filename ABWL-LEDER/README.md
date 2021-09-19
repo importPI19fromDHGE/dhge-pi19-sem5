@@ -220,7 +220,7 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 
 #### Nachteile von Ishikawa
 
-- Erfordert Diziplin und Vereinfachung, damit das Diagramm nutzbar bleibt
+- Erfordert Disziplin und Vereinfachung, damit das Diagramm nutzbar bleibt
 - Vorgefertigte Kategorien (z. B. 5M) können kreative Problemlösungswege einschränken
 - Komplexe Zusammenhänge lassen sich im Ishikawa-Diagramm nicht darstellen
 - Liefert keine Lösungen, sondern visualisiert nur die Ursachen
@@ -354,10 +354,10 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 - **Gruppenarbeit:**
   - Entwicklung der Gruppe in 5 Phasen:
     1. Kennenlernen, Zusammenstellung $\rightarrow$ Forming
-    2. Rangordnunug, Rollen festlegen $\rightarrow$ Storming
+    2. Rangordnung, Rollen festlegen \rightarrow\rightarrow Storming
     3. Qualität und Quantität oder Aufgabenerfüllung $\rightarrow$ Norming
     4. Doing, Erfüllung, höchste Leistungsfähigkeit $\rightarrow$ Performing
-    5. Verarbschiedung, Auflösung $\rightarrow$ Adjourning
+    5. Verabschiedung, Auflösung \rightarrow\rightarrow Adjourning
 - **Gruppenarten:**
   - Art des Projekts
   - Art der Berufung
