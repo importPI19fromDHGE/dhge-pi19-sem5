@@ -20,13 +20,29 @@ Projektmanagement
   - [Allgemeine Wiederholung](#allgemeine-wiederholung)
   - [Management Methoden](#management-methoden)
   - [Projektarten](#projektarten)
-  - [Organisation](#organisation)
-    - [Ziele eines Projektes](#ziele-eines-projektes)
-    - [Projektfindung/-vorbereitung](#projektfindung-vorbereitung)
-    - [Projektrealisierung](#projektrealisierung)
-    - [PDCA](#pdca)
-    - [Problemermittlung](#problemermittlung)
-      - [Ishikawa](#ishikawa)
+- [Organisation](#organisation)
+  - [Ziele eines Projektes](#ziele-eines-projektes)
+  - [Projektfindung/-vorbereitung](#projektfindung-vorbereitung)
+  - [Projektrealisierung](#projektrealisierung)
+  - [PDCA](#pdca)
+  - [Problemermittlung](#problemermittlung)
+    - [Ishikawa](#ishikawa)
+      - [Die 7-M des Ishikawa Diagramms](#die-7-m-des-ishikawa-diagramms)
+      - [Vorteile von Ishikawa](#vorteile-von-ishikawa)
+      - [Nachteile von Ishikawa](#nachteile-von-ishikawa)
+    - [FMEA-Analyse](#fmea-analyse)
+      - [Die Spalten der FMEA-Analyse](#die-spalten-der-fmea-analyse)
+      - [Berechnung des Fehlers](#berechnung-des-fehlers)
+  - [Prozessvorbereitung](#prozessvorbereitung)
+    - [Alternativen durch Kreativtechniken](#alternativen-durch-kreativtechniken)
+    - [Erfolgseinschätzung](#erfolgseinsch%C3%A4tzung)
+      - [Machbarkeitsprüfung](#machbarkeitspr%C3%BCfung)
+      - [Risikoanalyse](#risikoanalyse)
+    - [Projektentscheidung](#projektentscheidung)
+      - [Was muss entschieden werden? (Projektentscheidung)](#was-muss-entschieden-werden-projektentscheidung)
+      - [Was muss beim Projektleiter entschieden werden?](#was-muss-beim-projektleiter-entschieden-werden)
+      - [Was muss in der Projektgruppe entschieden werden?](#was-muss-in-der-projektgruppe-entschieden-werden)
+      - [Welche formellen Schritte muss jedes Projekt durchlaufen?](#welche-formellen-schritte-muss-jedes-projekt-durchlaufen)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -65,6 +81,10 @@ Projektmanagement
 - Grundsätze für die Projektplanung (Folie 17)
 - PDCA anwenden und beschreiben können
 - Problemanalyse (Folie 22)
+- Ishikawa
+- Brainwriting nach 635 Methode
+- Kompetenz kann "etwas können" oder "etwas dürfen" bedeuten, aus dem Kontext deuten können!
+- Knoten-Netzplan (Ablauf von Projekten) berechnen können (!!!)
 
 # Grundlagen
 
@@ -87,6 +107,7 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 - Verantwortung: Übergeben, Übernommen $\rightarrow$ Aufgabenerfüllung
   - Folge von Verantwortung: Tadel oder Lob (beides wichtig, jedoch nicht inflationär)
 - Teile des Marketings: Preis (Kontrahierungspolitik), Verteilung (Distribution), Produktpolitik, Kommunikation
+- Lean Management: flache Hierarchie
 
 ## Management Methoden
 
@@ -130,16 +151,16 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
   - Verwaltung: Umstellung von Fax auf ein Vorgangsbearbeitungssystem (Echtzeitsystem)
   - Kombination
 
-## Organisation
+# Organisation
 
-### Ziele eines Projektes
+## Ziele eines Projektes
 
 - strategisch (> 3/5 Jahre): langfristige, grundlegende Ziele
 - taktisch (< 3/5 Jahre, >1 Jahr): mittelfristige Teilziele
 - operativ (<1 Jahr): kurzfristige Prozesssteuerung
 - Ziel (SMART): **S**pezifische Sache, **M**essbare Größenordnung, **A**ktualität, **R**ealistisch (erfüllbar), **T**erminierung (A,R = Bedingungen)
 
-### Projektfindung/-vorbereitung
+## Projektfindung/-vorbereitung
 
 - **Zielfindung/-bildung:** Benchmarks, Trends, ...
 - **Problemanalyse:** Ishikawa (Ursache/Wirkungs-Diagramm), FMEA (Fehlermöglichkeits- und -einflussanalyse), ...
@@ -147,7 +168,7 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 - **Prognose:** Extrapolation, Szenarien, Modelle
 - **Bewertung:** Nutzwertanalyse <!--Nutzwertanalyse könnte in der Klausur gebraucht werden-->
 
-### Projektrealisierung
+## Projektrealisierung
 
 - **Start:** Kick off $\rightarrow$ Bekanntgabe des Projektes
 - **Definitionsphase:** Ziel und Aufgabe (SMART, Operationalisierung (Muss-, Soll-, Kann-Ziele))
@@ -155,7 +176,7 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 - **Umsetzungsphase:** Realisierung
 - **Bewertung:** Kennzahlen, BSC
 
-### PDCA
+## PDCA
 
 - **PLAN:** Prozess planen; Aufgabe und Zielstellung, Analyse des aktuellen Zustands und Entwicklung eines Konzeptes (Plan)
 - **DO:** begrenzter Test
@@ -164,15 +185,203 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 
 <!--Klausur: Anwendung und Beschreibung des PDCA für ein Projekt = 8 Punkte -->
 
-### Problemermittlung
+## Problemermittlung
 
 - Ursachenermittlung: Ishikawa, FMEA
 - Fehlerermittlung: FMEA
 - Zukunftsermittlung: FMEA
 
-#### Ishikawa
+### Ishikawa
 
 - Betrachtung der sieben Ms: Mensch, Maschine, Methode, Milieu (Umfeld), Material, Messung, Management
 - Faktoren können je nach Anwendung variieren
+- Ursache-Wirkungs-Diagramm
+- 3 Vorteile und 3 Nachteile sollen gekonnt sein!
 
+#### Die 7-M des Ishikawa Diagramms
 
+- **M:** Mileau
+- **M:** Methode (Technologie)
+- **M:** Maschine
+- **M:** Mensch
+- **M:** Management (Führungsprozess)
+- **M:** Messung
+- **M:** Material
+
+#### Vorteile von Ishikawa
+
+- Fördert Kreativität bei der Suche nach Ursachen
+- Ordnet mögliche Ursachen in Kategorien
+- Erarbeitung im Team ermöglicht neue Perspektiven
+- Kausalitäten von Ursachen werden dargestellt
+- Ermutigt Mitarbeiter zum Einbringen von Ideen
+- Vereinfacht das Problem
+- Einfache Anwendung und Erlernbarkeit
+
+#### Nachteile von Ishikawa
+
+- Erfordert Disziplin und Vereinfachung, damit das Diagramm nutzbar bleibt
+- Vorgefertigte Kategorien (z. B. 5M) können kreative Problemlösungswege einschränken
+- Komplexe Zusammenhänge lassen sich im Ishikawa-Diagramm nicht darstellen
+- Liefert keine Lösungen, sondern visualisiert nur die Ursachen
+
+### FMEA-Analyse
+
+![FMEA Formblatt](assets/fmea.png)<!--width=200px-->
+
+- Punktesystem, Verbesserung/Verschlechterung kann bemessen werden
+- Ziel: Fehler finden, bevor der Kunde sie bemerkt
+
+#### Die Spalten der FMEA-Analyse
+
+- **Fehlerort/Fehlermerkmal:** Wo tritt der Fehler aus?
+- **Potentielle Fehler**
+- **Fehlerfolge:** Was ist das Resultat des Fehlers?
+- **Fehlerursache:** Aus welchem Grund tritt der Fehler auf?
+- **Kontrollmaßnahmen:** Wie wurde der Fehler ermittelt?
+- A, B, E, RPZ $\rightarrow$ siehe [Berechnung des Fehlers](#berechnung-des-fehlers)
+- **Empfohlene Maßnahme:** Welchem Maßnahmen könnte man durchführen, um den Fehler zu beseitigen?
+- **Verantwortlich:** Wer ist für die Maßnahmen verantwortlich?
+- **Getroffene Maßnahmen:** Was wurde tatsächlich getan?
+
+#### Berechnung des Fehlers
+
+- **(A) Auftreten:** Wahrscheinlichkeit des Auftretens: Vergeben von Punkten (1-10)
+  - unwahrscheinlich = 1
+  - sehr gering = 2-3
+  - gering = 4-6
+  - mäßig = 7-8
+  - hoch = 9-10
+- **(B) Bedeutung** des Fehlers / Auswirkungen auf den Kunden
+  - kaum wahrnehmbar = 1
+  - unbedeutender Fehler = 2-3
+  - mäßig schwerer Fehler = 4-6
+  - schwerer Fehler = 7-8
+  - äußerst schwerer Fehler = 9-10
+- **(E) Entdeckung**: Wahrscheinlichkeit der Entdeckung (vor Auslieferung an den Kunden)
+  - hoch = 1
+  - mäßig = 2-3
+  - gering = 4-6
+  - sehr gering = 7-8
+  - unwahrscheinlich = 9-10
+- **RPZ:** Risiko-Prioritätszahl
+  - hoch <= 1000
+  - mittel <=250
+  - gering <= 125
+  - kein = 1
+- A, B und E werden für jeden Fehler miteinander multipliziert, daraus ergibt sich die RPZ
+- je höher RPZ, desto wichtiger ist es den Fehler zu behandeln $\rightarrow$ Priorisierung nach RPZ
+- danach können die Fehler in dieser Reihenfolge nach Ishikawa behandelt werden
+
+## Prozessvorbereitung
+
+### Alternativen durch Kreativtechniken
+
+- Brainstorming
+- **Brainwriting:** - 635 Methode (Strukturierung des Brainwritings)
+  - **1. Möglichkeit:**
+    - 6 Gruppen oder 6 Teilnehmer
+    - je 3 Ideen aufschreiben
+    - 5 Minuten Zeit $\rightarrow$ 18 Ideen
+    - Mehrfachnennungen sind möglich
+  - **2. Möglichkeit:**
+    - 6 Gruppen oder 6 Teilnehmer
+    - je 3 Ideen
+    - 5 Minuten Zeit
+    - umlaufend 6 Durchgänge (Gruppen sehen und ergänzen Ideen der anderen Gruppen vor der Auswertung) $\rightarrow$ 108 Ideen
+    - Mehrfachnennungen sind möglich
+  - **3. Möglichkeit:**
+    - 6 Gruppen oder 6 Teilnehmer
+    - je 3 Ideen
+    - 5 Minuten Zeit
+    - umlaufend, aufbauend 6 Durchgänge (Ideen werden weitergegeben, Ideen müssen von der nächsten Gruppe erweitert werden) $\rightarrow$ 18 Ideen
+    - Mehrfachnennungen sind unwahrscheinlich
+- **Morphologischer Kasten:**
+  - "Konfigurator"
+- **Mindmapping:** Graphische Darstellung von Sachverhalten
+- **Bionic:** Inspiration für die Problemlösung in der Natur suchen
+- ...
+
+### Erfolgseinschätzung
+
+#### Machbarkeitsprüfung
+
+- **Ressourcen:** HR, MR und FR
+- **Zeit:** Zeitpunkt, Dauer
+- **Raum:** Ort, Umweltverträglichkeit
+- Machbarkeitsstudie: 3 Säulen bestehend aus: soziale Beziehungen, Ökonomie, Ökologie
+  - Schnittmenge aus den 3 Säulen bedeutet: Nachhaltigkeit
+
+#### Risikoanalyse
+
+- jedes Projekt kann scheitern
+- die Risikoanalyse ermittelt: Wann soll das Problem abgebrochen werden? Ab wann lohnt es sich nicht mehr?
+- Es wird eingeschätzt nach: Wahrscheinlichkeit des Stattfindens (häufig bis unvorstellbar) und der Auswirkung/Ausmaß (unwesentlich bis katastrophal)
+- Kombination aus Wahrscheinlichkeit und Ausmaß ergeben die Risikobewertung: akzeptiert, kritisch oder inakzeptabel
+
+### Projektentscheidung
+
+#### Was muss entschieden werden? (Projektentscheidung)
+
+- **Projektleiter:** muss fachliche, methode und persönliche Kompetenzen haben (wie jeder Mitarbeiter)
+- **Projektgruppe:**
+  - Quantität: Welche, wie viele (zu welcher Zeit und an welchem Ort) Mitarbeiter?
+  - Qualität: fachliche, methodische und persönliche Kompetenzen (wie jeder Mitarbeiter)
+- **Institutionen:** welche uns in der Bewältigung unserer Probleme brauchen (bspw. Großrechner zur Klimasimulation)
+- **Experten:** interne und externe (bspw. Berater für das betriebliche Gesundheitsmanagement)
+- **Einbindung in die Organisation:** Wie sieht das Organigramm aus? Wie fügen sich alle Teile in die Organisation ein?
+- **Controlling:** Dienstleister für die Erfolgskontrolle
+  - müssen die Daten genau so vorbereiten, wie sie gebraucht werden
+  - treffen **keine** Entscheidungen!
+
+#### Was muss beim Projektleiter entschieden werden?
+
+- **Aufgabe:**
+  - Definition des Inhalts: Wer? Was? Wann? Warum? Wo? Wie? $\rightarrow$ 5-W Regel
+  - Unterschiedliche Definition eine W's $\rightarrow$ Konfliktpotential
+- **Ziele:** siehe [Ziele eines Projektes](#ziele-eines-projektes)
+- **Befugnisse:**
+  - Kompetenz (etwas können): fachlich, methodisch, persönlich
+  - Kompetenz (etwas dürfen): Befugnis
+  - Der Mitarbeiter muss mit Befugnissen umgehen können
+  - zu wenige Befugnisse verlangsamen den Prozess
+- **Verantwortung:** Pflicht der Aufgabenerfüllung (siehe [Allgemeine Wiederholung](#allgemeine-wiederholung))
+- **Anforderungen:** Muss fachlich, methodisch und persönlich die Aufgabe bewältigen können.
+
+#### Was muss in der Projektgruppe entschieden werden?
+
+- **Aufbau/Struktur:** Wie viele Mitarbeiter? Welche Hierarchien (bei größeren Projektgruppen)?
+- **Gruppenarbeit:**
+  - Entwicklung der Gruppe in 5 Phasen:
+    1. Kennenlernen, Zusammenstellung $\rightarrow$ Forming
+    2. Rangordnung, Rollen festlegen \rightarrow\rightarrow Storming
+    3. Qualität und Quantität oder Aufgabenerfüllung $\rightarrow$ Norming
+    4. Doing, Erfüllung, höchste Leistungsfähigkeit $\rightarrow$ Performing
+    5. Verabschiedung, Auflösung \rightarrow\rightarrow Adjourning
+- **Gruppenarten:**
+  - Art des Projekts
+  - Art der Berufung
+  - Nach der Leitung
+  - Nach der Veränderlichkeit
+  - Strukturierung
+- **Qualifikation der Mitarbeiter:** Wer muss welche Qualifikationen haben?
+  - stehen im Anforderungsprofil der Stellenausschreibung
+
+#### Welche formellen Schritte muss jedes Projekt durchlaufen?
+
+- Formeller Projektauftrag
+- Formelle Projektorganisation
+- Formelle Projektrichtlinien
+- Formelle Projektplanung
+  - Ganttdiagramm (Meilensteine)
+  - Workflow
+  - Flussplan
+  - Netzplantechnik (Meilensteine, Ressourcen) $\rightarrow$ Pfeilnetzplan, Knotennetzplan
+- Formelle Projektdokumentation
+- Daten, die während des Projekts erhoben wurden, aufschreiben
+
+- Auftraggeber wendet sich an den Projektleiter
+- Projektleiter ist für das gesamte Projekt verantwortlich
+- Teile des Projekts werden von Projekt-Managern bearbeitet
+- den Projektmanagern sind jeweils Projekt-Mitarbeiter untergeordnet
+- $\rightarrow$ Folie 39: klassisches Einliniensystem
