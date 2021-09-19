@@ -213,7 +213,7 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 - Fördert Kreativität bei der Suche nach Ursachen
 - Ordnet mögliche Ursachen in Kategorien
 - Erarbeitung im Team ermöglicht neue Perspektiven
-- Kausalitäten von Ursachen werden dargestellen
+- Kausalitäten von Ursachen werden dargestellt
 - Ermutigt Mitarbeiter zum Einbringen von Ideen
 - Vereinfacht das Problem
 - Einfache Anwendung und Erlernbarkeit
