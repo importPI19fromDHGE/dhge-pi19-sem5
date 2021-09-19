@@ -54,6 +54,12 @@ Es ist beispielsweise nicht möglich die Größe von Bilder zu definieren, Metad
 Aus diesem Grund wird [`pandoc`](https://pandoc.org/) verwendet, um `markdown`-Dateien mit vielen Funktionserweiterungen in PDFs umzuwandeln.
 Damit eine Kompatibilität zum Github-`markdown` haben wir eigene Erweiterungen definiert, die im Folgenden beschrieben werden:
 
+### Markdown-Linter
+
+In unseren Github Repositories kommt ein sogenannter Linter zum Einsatz. Dieser sorgt dafür, dass bei allen Markdown Dokumenten eine einheitliche Formatierung eingehalten wird.
+Damit bereits bei der lokalen Bearbeitung etwaige Fehler festgestellt werden können, empfehlen wir die Verwendung der VSCode-Extension [markdownlint von David Anson](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint). 
+Dieses Repository enthält für die Extension bereits eine vorgefertigte Konfiguration, die automatisch verwendet wird.
+
 ### Bildgröße
 
 ```md
