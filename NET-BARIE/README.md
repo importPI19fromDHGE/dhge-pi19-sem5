@@ -2,6 +2,7 @@
 title: "Rechnernetzadministration/Verteilte Systeme"
 date: "Semester 5"
 keywords: [Rechnernetzadministration, Verteilte Systeme, NET, DHGE, Semester 5]
+in_header: enumitem.sty
 header-includes:
   - \usepackage{enumitem}
   - \setlistdepth{20}
