@@ -39,6 +39,13 @@ Software-Entwicklungswerkzeuge
   - [Das `/proc` Verzeichnis](#das-proc-verzeichnis)
   - [Das `/sys` Verzeichnis](#das-sys-verzeichnis)
   - [Core dumps aktivieren](#core-dumps-aktivieren)
+  - [Finding your C/C++ Pointer and Array Bugs](#finding-your-cc-pointer-and-array-bugs)
+    - [Knowing your enemies](#knowing-your-enemies)
+    - [What's so nasty about these bugs?](#whats-so-nasty-about-these-bugs)
+    - [Program checking, debugging, tracing](#program-checking-debugging-tracing)
+    - [Compiling your code with seatbelts: Address sanitizer & co.](#compiling-your-code-with-seatbelts-address-sanitizer--co)
+    - [Dealing with plain off-the-shelf code: Valgrind and friends](#dealing-with-plain-off-the-shelf-code-valgrind-and-friends)
+    - [Similar tools for different purposes](#similar-tools-for-different-purposes)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -402,3 +409,69 @@ Vernünftige Compiler sollten folgende Features besitzen:
 - `ulimit -S -c unlimited`
 - `-S` Größe angeben
 - `c` Core dumps
+
+## Finding your C/C++ Pointer and Array Bugs
+
+### Knowing your enemies
+
+- Bad pointers
+  - NULL pointer
+  - uninitalized pointer
+    - single pointer $\rightarrow$ kann vom Compiler entdeckt werden
+    - element of a struct or an array of pointers $\rightarrow$ wird NICHT vom Compiler entdeckt
+  - Pointer to a local array or struct after the function has returned: "use-after-return"
+- Arrays & pointer arithmetic
+  - array bounds violation
+    - "off by one"
+    - unchecked
+    - string termination
+  - inter overflow
+  - uninitalized integer values
+- Dynamic memory handling
+  - bounds violations
+  - "use-after-free"
+  - double free
+  - invalid free
+  - allocation/deallocation function mismatch
+  - (memory leaks)
+  - (memory fragmentation)
+- The dark corners of C/C++
+  - printf format / argument mismatch (bspw. non-string argument mit `%S`)
+  - Variadic functions (variabel viele Parameter wie bspw. printf)
+  - 32bit / 64bit casts between pointer and int (very common in 32 bit code ported to 64 bit)
+  - non-pointer data interpreted as a pointer:
+    - wrong case in a union
+    - forced casts (e.g. base class ptr $\rightarrow$ derived class ptr)
+
+### What's so nasty about these bugs?
+
+- immediate and debuggable crash: be happy, you had very good luck :^)
+- crash with massively corrupted memory: debugger is unable to extract any info
+- delayed crash:
+  - hours later
+  - in completely unrelated parts of the program
+- no crash at all: Program just silently gives wrong results
+- Random, unreproducable behavior
+
+### Program checking, debugging, tracing
+
+- mit maximum warning level und maximum optimization level kompilieren
+- warnings LESEN!
+- static program checkers
+- ltrace und strace
+  - nur von begrenztem nutzen für Pointerfehler
+- Compiler-basierte Lösung
+  - viele Prüfungen im Code
+  - Daten sicherer im Speicher anlegen
+  - bgcc, MIRO (beide nicht mehr geplegt)
+  - heute: Address Sanitizer "Asan" (sehr schnell!)
+- Valgrind runs any code checked
+  - open source x86 binary code interpreter
+  - Valgrind bietet viele Plugins für verschiedene Szenarien
+  - ähnliche Projekte: DrMemory, Purify/Quantify (kommerziell), Micro Focus BoundsChecker
+
+### Compiling your code with seatbelts: Address sanitizer & co.
+
+### Dealing with plain off-the-shelf code: Valgrind and friends
+
+### Similar tools for different purposes
