@@ -12,6 +12,7 @@ header-includes:
   - \setlist[itemize,1]{label=\textbullet}
   - \setlist[itemize,2]{label=--}
   - \setlist[itemize,3]{label=*}
+
 ---------->
 
 Rechnernetzadministration/Verteilte Systeme
