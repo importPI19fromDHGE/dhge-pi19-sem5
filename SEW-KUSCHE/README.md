@@ -13,13 +13,14 @@ Software-Entwicklungswerkzeuge
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Software-Entwicklungswerkzeuge](#software-entwicklungswerkzeuge)
 - [Dokumentation](#dokumentation)
   - [Dokumentationsgeneratoren](#dokumentationsgeneratoren)
   - [Andere Tools](#andere-tools)
 - [Versions-Verwaltungs-Systeme](#versions-verwaltungs-systeme)
   - [Zweck von Versions-Verwaltungs-Systemen](#zweck-von-versions-verwaltungs-systemen)
   - [Aufgaben von Versions-Verwaltungs-Systemen](#aufgaben-von-versions-verwaltungs-systemen)
-  - [Andere Tools für Patches, Versionshandling usw](#andere-tools-f%C3%BCr-patches-versionshandling-usw)
+  - [Andere Tools für Patches, Versionshandling usw](#andere-tools-für-patches-versionshandling-usw)
 - [Make](#make)
   - [Makefile](#makefile)
   - [Autotools](#autotools)
@@ -28,10 +29,16 @@ Software-Entwicklungswerkzeuge
 - [Compiler](#compiler)
   - [Funktionsumfang](#funktionsumfang)
   - [Tools im Compiler-Umfeld](#tools-im-compiler-umfeld)
-    - [Tools für Objects, Libraries, Executables](#tools-f%C3%BCr-objects-libraries-executables)
+    - [Tools für Objects, Libraries, Executables](#tools-für-objects-libraries-executables)
 - [Fehlersuche und Analyse des Programm-Verhaltens](#fehlersuche-und-analyse-des-programm-verhaltens)
   - [Debugger](#debugger)
   - [ltrace und strace](#ltrace-und-strace)
+  - [Was ist der technische Auslöser eines Coredumps?](#was-ist-der-technische-auslöser-eines-coredumps)
+  - [Mit welchem Programm kann ich mir alle geöffneten Files (im weitestens Sinne) anzeigen lassen?](#mit-welchem-programm-kann-ich-mir-alle-geöffneten-files-im-weitestens-sinne-anzeigen-lassen)
+  - [Was macht der Befehl `df`?](#was-macht-der-befehl-df)
+  - [Das `/proc` Verzeichnis](#das-proc-verzeichnis)
+  - [Das `/sys` Verzeichnis](#das-sys-verzeichnis)
+  - [Core dumps aktivieren](#core-dumps-aktivieren)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -355,3 +362,43 @@ Vernünftige Compiler sollten folgende Features besitzen:
 - funktionieren immer, auch ohne Debug-Symbole u.s.w.
 - ``ltrace`` untersucht Library-Calls
 - ``strace`` untersucht Kernel-Calls
+
+## Was ist der technische Auslöser eines Coredumps?
+
+- Betriebssystem löst für bspw. einen Seitenfehler ein Signal aus
+- das Programm hat die Möglichkeit auf das Signal zu reagieren
+- SIGSEGV $\rightarrow$ Invalid Memory Reference
+- SIGBUG $\rightarrow$ Bus error (bad memory access), tritt bei Intel Prozessoren nicht auf
+- SIGABRT $\rightarrow$ wird vom Programm (durch ABORT) aufgerufen
+- viele weitere Signale, die zu einem core dump führen können, steht auf der man page: `man 7 signal`
+  - bei `Term` wird das Programm beendet
+  - bei `Core` wird ein core-dump erstellt (default)
+  - bei `Cont` wird ein Programm wieder in der Vordergrund geholt
+  - bei `Ign` wird das Signal ignoriert
+  - bei `Stop` wird das Programm gestoppt
+
+## Mit welchem Programm kann ich mir alle geöffneten Files (im weitestens Sinne) anzeigen lassen?
+
+- `lsof`
+- `FD`: was ist der relative Pfad `.` des Programms?
+
+## Was macht der Befehl `df`?
+
+- alle Filesysteme und deren Disk-Usage anzeigen
+
+## Das `/proc` Verzeichnis
+
+- Hier kann man alle Prozesse und Informationen dazu finden
+- `xhci` $\rightarrow$ USB-3 Controller
+
+## Das `/sys` Verzeichnis
+
+- Informationen zum System
+- Kernel Parameter
+- etc.
+
+## Core dumps aktivieren
+
+- `ulimit -S -c unlimited`
+- `-S` Größe angeben
+- `c` Core dumps
