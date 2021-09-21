@@ -2,6 +2,9 @@
 title: "Rechnernetzadministration/Verteilte Systeme"
 date: "Semester 5"
 keywords: [Rechnernetzadministration, Verteilte Systeme, NET, DHGE, Semester 5]
+header-includes:
+  - \setlistdepth{20}
+  - \renewlist{enumerate}{enumerate}{20}
 ---------->
 
 Rechnernetzadministration/Verteilte Systeme
