@@ -3,6 +3,7 @@ title: "Rechnernetzadministration/Verteilte Systeme"
 date: "Semester 5"
 keywords: [Rechnernetzadministration, Verteilte Systeme, NET, DHGE, Semester 5]
 header-includes:
+
   - \usepackage{enumitem}
   - \setlistdepth{20}
   - \renewlist{itemize}{itemize}{20}
