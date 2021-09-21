@@ -13,13 +13,14 @@ Software-Entwicklungswerkzeuge
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Software-Entwicklungswerkzeuge](#software-entwicklungswerkzeuge)
 - [Dokumentation](#dokumentation)
   - [Dokumentationsgeneratoren](#dokumentationsgeneratoren)
   - [Andere Tools](#andere-tools)
 - [Versions-Verwaltungs-Systeme](#versions-verwaltungs-systeme)
   - [Zweck von Versions-Verwaltungs-Systemen](#zweck-von-versions-verwaltungs-systemen)
   - [Aufgaben von Versions-Verwaltungs-Systemen](#aufgaben-von-versions-verwaltungs-systemen)
-  - [Andere Tools für Patches, Versionshandling usw](#andere-tools-f%C3%BCr-patches-versionshandling-usw)
+  - [Andere Tools für Patches, Versionshandling usw](#andere-tools-für-patches-versionshandling-usw)
 - [Make](#make)
   - [Makefile](#makefile)
   - [Autotools](#autotools)
@@ -28,19 +29,19 @@ Software-Entwicklungswerkzeuge
 - [Compiler](#compiler)
   - [Funktionsumfang](#funktionsumfang)
   - [Tools im Compiler-Umfeld](#tools-im-compiler-umfeld)
-    - [Tools für Objects, Libraries, Executables](#tools-f%C3%BCr-objects-libraries-executables)
+    - [Tools für Objects, Libraries, Executables](#tools-für-objects-libraries-executables)
 - [Fehlersuche und Analyse des Programm-Verhaltens](#fehlersuche-und-analyse-des-programm-verhaltens)
   - [Debugger](#debugger)
   - [ltrace und strace](#ltrace-und-strace)
-  - [Was ist der technische Auslöser eines Coredumps?](#was-ist-der-technische-ausl%C3%B6ser-eines-coredumps)
-  - [Mit welchem Programm kann ich mir alle geöffneten Files (im weitestens Sinne) anzeigen lassen?](#mit-welchem-programm-kann-ich-mir-alle-ge%C3%B6ffneten-files-im-weitestens-sinne-anzeigen-lassen)
+  - [Was ist der technische Auslöser eines Coredumps?](#was-ist-der-technische-auslöser-eines-coredumps)
+  - [Mit welchem Programm kann ich mir alle geöffneten Files (im weitestens Sinne) anzeigen lassen?](#mit-welchem-programm-kann-ich-mir-alle-geöffneten-files-im-weitestens-sinne-anzeigen-lassen)
   - [Was macht der Befehl `df`?](#was-macht-der-befehl-df)
   - [Das `/proc` Verzeichnis](#das-proc-verzeichnis)
   - [Das `/sys` Verzeichnis](#das-sys-verzeichnis)
   - [Core dumps aktivieren](#core-dumps-aktivieren)
   - [Finding your C/C++ Pointer and Array Bugs](#finding-your-cc-pointer-and-array-bugs)
     - [Knowing your enemies](#knowing-your-enemies)
-    - [What's so nasty about these bugs?](#whats-so-nasty-about-these-bugs)
+    - [Bug-Symptome](#bug-symptome)
     - [Program checking, debugging, tracing](#program-checking-debugging-tracing)
     - [Compiling your code with seatbelts: Address sanitizer & co.](#compiling-your-code-with-seatbelts-address-sanitizer--co)
     - [Dealing with plain off-the-shelf code: Valgrind and friends](#dealing-with-plain-off-the-shelf-code-valgrind-and-friends)
@@ -413,59 +414,60 @@ Vernünftige Compiler sollten folgende Features besitzen:
 
 ### Knowing your enemies
 
-- Bad pointers
-  - NULL pointer
-  - uninitalized pointer
-    - single pointer $\rightarrow$ kann vom Compiler entdeckt werden
-    - element of a struct or an array of pointers $\rightarrow$ wird NICHT vom Compiler entdeckt
+- falsche Pointer
+  - NULL-Pointer
+  - Uninitialisierte Pointer-Variable
+    - einfacher Pointer $\rightarrow$ kann vom Compiler entdeckt werden
+    - Elemente eines ``struct``s oder Array-Elemente werden **nicht** vom Compiler untersucht
   - Pointer to a local array or struct after the function has returned: "use-after-return"
-- Arrays & pointer arithmetic
-  - array bounds violation
-    - "off by one"
-    - unchecked
-    - string termination
-  - inter overflow
-  - uninitalized integer values
-- Dynamic memory handling
-  - bounds violations
-  - "use-after-free"
-  - double free
-  - invalid free
-  - allocation/deallocation function mismatch
-  - (memory leaks)
-  - (memory fragmentation)
-- The dark corners of C/C++
-  - printf format / argument mismatch (bspw. non-string argument mit `%S`)
-  - Variadic functions (variabel viele Parameter wie bspw. printf)
-  - 32bit / 64bit casts between pointer and int (very common in 32 bit code ported to 64 bit)
-  - non-pointer data interpreted as a pointer:
-    - wrong case in a union
-    - forced casts (e.g. base class ptr $\rightarrow$ derived class ptr)
+  - "use-after-return": Pointer auf eine lokale Variable einer Funktions, die bereits ``return``ed ist
+- Arrays & Pointer-Arithmetrik
+  - Verletzung von Arraygrenzen
+    - "off by one": knapp daneben ist auch vorbe
+    - keine Laufzeitprüfungen
+    - fehlender String-Terminator ``\0``
+  - Integer Overflow: Wertebereich ausgeschöpft, flippt ins Negative
+  - uninitialisierte Variablen (v.a. Integers)
+- Dynamischer Speicher
+  - Objektgrenzenverletzung<!--merke ich mir für Galgenraten-->
+  - "use-after-free": Zugriff auf eigentlich bereits gelöschte Daten via Pointer
+  - doppeltes ``free``
+  - ``free`` auf ungültige Daten
+  - Mischung von C und C++ Konstrukten zum Reservieren + Löschen von Speicher (z.B. ``malloc`` + ``delete``)<!--heutige Compiler sind da sogar gnädig, aber machts einfach nicht-->
+  - (Memory-Leaks)<!--ich könnte schwören, ich hätte hier was reserviert... Wo ist nur der Pointer hin???-->
+  - (Speicherfragmentierung)
+- *Dreckecken* von C/C++
+  - falscher ``printf``-Aufruf (bspw. non-String Argument mit `%s`)
+  - Variadische Funktionen (variabel viele Parameter wie bspw. bei ``printf``)
+  - 32bit / 64bit casts zwischen Pointer und ``int`` (sehr oft in 32bit Programmen zu sehen, die zu 64bit portiert wurden)
+  - Nutzung von anderen Datentypen als Pointer:
+    - falsche Form von ``union``
+    - ``static_cast``s (z.B.: Pointer auf Oberklasse $\rightarrow$ Pointer auf Unterklasse)
 
-### What's so nasty about these bugs?
+### Bug-Symptome
 
-- immediate and debuggable crash: be happy, you had very good luck :^)
-- crash with massively corrupted memory: debugger is unable to extract any info
-- delayed crash:
-  - hours later
-  - in completely unrelated parts of the program
-- no crash at all: Program just silently gives wrong results
-- Random, unreproducable behavior
+- sofortiger, Debug-fähiger Absturz: be happy, you had very good luck :^)
+- Absturz mit schwerwiegender Speicherkorruption: hier kann selbst der Debugger nicht mehr helfen
+- verzögerte Nummer:
+  - Stunden später
+  - in komplett anderen Programmteilen
+- überhaupt kein Absturz, nur falsche Ergebnisse
+- unvorhersagbares Verhalten
 
 ### Program checking, debugging, tracing
 
 - mit maximum warning level und maximum optimization level kompilieren
-- warnings LESEN!
-- static program checkers
-- ltrace und strace
+- warnings LESEN!<!--haha, LOL-->
+- statische Programmanalyse
+- ``ltrace`` und ``strace``
   - nur von begrenztem nutzen für Pointerfehler
 - Compiler-basierte Lösung
   - viele Prüfungen im Code
   - Daten sicherer im Speicher anlegen
-  - bgcc, MIRO (beide nicht mehr geplegt)
+  - ``bgcc``, ``MIRO`` (beide nicht mehr geplegt)
   - heute: Address Sanitizer "Asan" (sehr schnell!)
-- Valgrind runs any code checked
-  - open source x86 binary code interpreter
+- Valgrind: Codeprüfung jedes Befehls zur Laufzeit
+  - stark vereinfacht: vor und nach jeder x86-Instruktion können Plugins ausgeführt werden; die Binary wird quasi "interpretiert"<!--dont quote that-->
   - Valgrind bietet viele Plugins für verschiedene Szenarien
   - ähnliche Projekte: DrMemory, Purify/Quantify (kommerziell), Micro Focus BoundsChecker
 
