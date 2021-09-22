@@ -386,8 +386,7 @@ Vernünftige Compiler sollten folgende Features besitzen:
 ## Mit welchem Programm kann ich mir alle geöffneten Files (im weitestens Sinne) anzeigen lassen?
 
 - `lsof`
-- `FD`: was ist der relative Pfad `.` des Programms?
-
+- `fd`: was ist der relative Pfad `.` des Programms?
 ## Was macht der Befehl `df`?
 
 - alle Filesysteme und deren Disk-Usage anzeigen
