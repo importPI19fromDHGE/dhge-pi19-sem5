@@ -374,7 +374,7 @@ Vernünftige Compiler sollten folgende Features besitzen:
 - Betriebssystem löst für bspw. einen Seitenfehler ein Signal aus
 - das Programm hat die Möglichkeit auf das Signal zu reagieren
 - SIGSEGV $\rightarrow$ Invalid Memory Reference
-- SIGBUG $\rightarrow$ Bus error (bad memory access), tritt bei Intel Prozessoren nicht auf
+- SIGBUS $\rightarrow$ Bus error (bad memory access), tritt bei Intel Prozessoren nicht auf
 - SIGABRT $\rightarrow$ wird vom Programm (durch ABORT) aufgerufen
 - viele weitere Signale, die zu einem core dump führen können, steht auf der man page: `man 7 signal`
   - bei `Term` wird das Programm beendet
