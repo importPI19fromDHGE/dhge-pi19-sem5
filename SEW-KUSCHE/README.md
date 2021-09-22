@@ -387,6 +387,7 @@ Vernünftige Compiler sollten folgende Features besitzen:
 
 - `lsof`
 - `fd`: was ist der relative Pfad `.` des Programms?
+
 ## Was macht der Befehl `df`?
 
 - alle Filesysteme und deren Disk-Usage anzeigen
