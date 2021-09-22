@@ -32,6 +32,19 @@ Software-Entwicklungswerkzeuge
 - [Fehlersuche und Analyse des Programm-Verhaltens](#fehlersuche-und-analyse-des-programm-verhaltens)
   - [Debugger](#debugger)
   - [ltrace und strace](#ltrace-und-strace)
+  - [Was ist der technische Auslöser eines Coredumps?](#was-ist-der-technische-ausl%C3%B6ser-eines-coredumps)
+  - [Mit welchem Programm kann ich mir alle geöffneten Files (im weitestens Sinne) anzeigen lassen?](#mit-welchem-programm-kann-ich-mir-alle-ge%C3%B6ffneten-files-im-weitestens-sinne-anzeigen-lassen)
+  - [Was macht der Befehl `df`?](#was-macht-der-befehl-df)
+  - [Das `/proc` Verzeichnis](#das-proc-verzeichnis)
+  - [Das `/sys` Verzeichnis](#das-sys-verzeichnis)
+  - [Core dumps aktivieren](#core-dumps-aktivieren)
+  - [Finding your C/C++ Pointer and Array Bugs](#finding-your-cc-pointer-and-array-bugs)
+    - [Knowing your enemies](#knowing-your-enemies)
+    - [Bug-Symptome](#bug-symptome)
+    - [Program checking, debugging, tracing](#program-checking-debugging-tracing)
+    - [Compiling your code with seatbelts: Address sanitizer & co.](#compiling-your-code-with-seatbelts-address-sanitizer--co)
+    - [Dealing with plain off-the-shelf code: Valgrind and friends](#dealing-with-plain-off-the-shelf-code-valgrind-and-friends)
+    - [Similar tools for different purposes](#similar-tools-for-different-purposes)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -355,3 +368,110 @@ Vernünftige Compiler sollten folgende Features besitzen:
 - funktionieren immer, auch ohne Debug-Symbole u.s.w.
 - ``ltrace`` untersucht Library-Calls
 - ``strace`` untersucht Kernel-Calls
+
+## Was ist der technische Auslöser eines Coredumps?
+
+- Betriebssystem löst für bspw. einen Seitenfehler ein Signal aus
+- das Programm hat die Möglichkeit auf das Signal zu reagieren
+- SIGSEGV $\rightarrow$ Invalid Memory Reference
+- SIGBUS $\rightarrow$ Bus error (bad memory access), tritt bei Intel Prozessoren nicht auf
+- SIGABRT $\rightarrow$ wird vom Programm (durch ABORT) aufgerufen
+- viele weitere Signale, die zu einem core dump führen können, steht auf der man page: `man 7 signal`
+  - bei `Term` wird das Programm beendet
+  - bei `Core` wird ein core-dump erstellt (default)
+  - bei `Cont` wird ein Programm wieder in der Vordergrund geholt
+  - bei `Ign` wird das Signal ignoriert
+  - bei `Stop` wird das Programm gestoppt
+
+## Mit welchem Programm kann ich mir alle geöffneten Files (im weitestens Sinne) anzeigen lassen?
+
+- `lsof`
+- `fd`: was ist der relative Pfad `.` des Programms?
+
+## Was macht der Befehl `df`?
+
+- alle Filesysteme und deren Disk-Usage anzeigen
+
+## Das `/proc` Verzeichnis
+
+- Hier kann man alle Prozesse und Informationen dazu finden
+- `xhci` $\rightarrow$ USB-3 Controller
+
+## Das `/sys` Verzeichnis
+
+- Informationen zum System
+- Kernel Parameter
+- etc.
+
+## Core dumps aktivieren
+
+- `ulimit -S -c unlimited`
+- `-S` Größe angeben
+- `c` Core dumps
+
+## Finding your C/C++ Pointer and Array Bugs
+
+### Knowing your enemies
+
+- falsche Pointer
+  - NULL-Pointer
+  - Uninitialisierte Pointer-Variable
+    - einfacher Pointer $\rightarrow$ kann vom Compiler entdeckt werden
+    - Elemente eines ``struct``s oder Array-Elemente werden **nicht** vom Compiler untersucht
+  - Pointer to a local array or struct after the function has returned: "use-after-return"
+  - "use-after-return": Pointer auf eine lokale Variable einer Funktions, die bereits ``return``ed ist
+- Arrays & Pointer-Arithmetrik
+  - Verletzung von Arraygrenzen
+    - "off by one": knapp daneben ist auch vorbe
+    - keine Laufzeitprüfungen
+    - fehlender String-Terminator ``\0``
+  - Integer Overflow: Wertebereich ausgeschöpft, flippt ins Negative
+  - uninitialisierte Variablen (v.a. Integers)
+- Dynamischer Speicher
+  - Objektgrenzenverletzung<!--merke ich mir für Galgenraten-->
+  - "use-after-free": Zugriff auf eigentlich bereits gelöschte Daten via Pointer
+  - doppeltes ``free``
+  - ``free`` auf ungültige Daten
+  - Mischung von C und C++ Konstrukten zum Reservieren + Löschen von Speicher (z.B. ``malloc`` + ``delete``)<!--heutige Compiler sind da sogar gnädig, aber machts einfach nicht-->
+  - (Memory-Leaks)<!--ich könnte schwören, ich hätte hier was reserviert... Wo ist nur der Pointer hin???-->
+  - (Speicherfragmentierung)
+- *Dreckecken* von C/C++
+  - falscher ``printf``-Aufruf (bspw. non-String Argument mit `%s`)
+  - Variadische Funktionen (variabel viele Parameter wie bspw. bei ``printf``)
+  - 32bit / 64bit casts zwischen Pointer und ``int`` (sehr oft in 32bit Programmen zu sehen, die zu 64bit portiert wurden)
+  - Nutzung von anderen Datentypen als Pointer:
+    - falsche Form von ``union``
+    - ``static_cast``s (z.B.: Pointer auf Oberklasse $\rightarrow$ Pointer auf Unterklasse)
+
+### Bug-Symptome
+
+- sofortiger, Debug-fähiger Absturz: be happy, you had very good luck :^)
+- Absturz mit schwerwiegender Speicherkorruption: hier kann selbst der Debugger nicht mehr helfen
+- verzögerte Nummer:
+  - Stunden später
+  - in komplett anderen Programmteilen
+- überhaupt kein Absturz, nur falsche Ergebnisse
+- unvorhersagbares Verhalten
+
+### Program checking, debugging, tracing
+
+- mit maximum warning level und maximum optimization level kompilieren
+- warnings LESEN!<!--haha, LOL-->
+- statische Programmanalyse
+- ``ltrace`` und ``strace``
+  - nur von begrenztem nutzen für Pointerfehler
+- Compiler-basierte Lösung
+  - viele Prüfungen im Code
+  - Daten sicherer im Speicher anlegen
+  - ``bgcc``, ``MIRO`` (beide nicht mehr geplegt)
+  - heute: Address Sanitizer "Asan" (sehr schnell!)
+- Valgrind: Codeprüfung jedes Befehls zur Laufzeit
+  - stark vereinfacht: vor und nach jeder x86-Instruktion können Plugins ausgeführt werden; die Binary wird quasi "interpretiert"<!--dont quote that-->
+  - Valgrind bietet viele Plugins für verschiedene Szenarien
+  - ähnliche Projekte: DrMemory, Purify/Quantify (kommerziell), Micro Focus BoundsChecker
+
+### Compiling your code with seatbelts: Address sanitizer & co.
+
+### Dealing with plain off-the-shelf code: Valgrind and friends
+
+### Similar tools for different purposes
