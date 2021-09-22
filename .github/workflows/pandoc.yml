@@ -21,7 +21,7 @@ jobs:
       - uses: docker://rstropek/pandoc-latex:latest # generate pdfs using pandoc
         with:
           entrypoint: /bin/sh
-          args: -c "for f in [A-Z]*[A-Z]-[A-Z]*[A-Z]/README.md; do d=$(echo ${f} | awk -F/ '{print $1}'); echo ${d}+${f}; pandoc --output=output/${d}.pdf --resource-path=${d}/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose ${f} || exit 1; done"
+          args: -c "for f in [A-Z]*[A-Z]-[A-Z]*[A-Z]/README.md; do d=$(echo ${f} | awk -F/ '{print $1}');echo ${d} ${f} $PATH; pandoc --output=output/${d}.pdf --resource-path=${d}/ --template https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template/v2.0.0/eisvogel.tex --pdf-engine=xelatex --listings -f markdown+raw_tex --verbose ${f} || exit 1; done"
       - uses: actions/upload-artifact@master # upload pdfs as an artifact
         with:
           name: output
