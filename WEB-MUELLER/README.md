@@ -273,3 +273,40 @@ $\rightarrow$ [Impressums-Generator](https://wwww.e-recht24.de/impressum-generat
 ### Wettbewerbsrecht
 
 ### Impressumspflicht
+
+## Datenschutz
+
+- Datenschutzhinweise vs. Datenschutzerklärung
+
+### DSGVO (Datenschutz-Grundverordnung)
+
+- ist europäisches Recht
+- kann durch Öffnungsklauseln erweitert werden $\rightarrow$ BDSG und TMG in Deutschland
+- §13 TMG Cookies usw.
+- Regelungen sollten eigentlich im E-Privacy Gesetz stehen $\rightarrow$ noch nicht fertig
+- **Art. 5 DSGVO** beschreibt welche Dinge passieren sollen, wenn Daten von Kunden verarbeitet werden:
+  - Transparenz
+  - Zweckbindung
+  - Datenminimierung
+  - Richtigkeit
+  - Speicherbegrenzung (Löschfristen)
+  - TOM (Technisch-organisatorische Maßnahmen): Integrität + Vertrauligkeit der Daten
+  - Rechenschaftspflicht
+- **für den E-Commerce wichtig:**
+  - DSGVO Art. 12 und 13 sind für den E-Commerce wichtig $\rightarrow$ Informationspflichten
+  - §13 TMG $\rightarrow$ Datenschutzhinweise, Datenschutzerklärung
+- alles muss präzise, transparent, in verständlicher und leicht zugänglicher Form in einer klaren und einfachen Sprache übermittelt werden
+- Händler muss innerhalb eines Monats und unentgeltlich Auskunft über Daten eines Kunden geben können (bei Nachfrage)
+- **Art. 13 DSGVO Infopflichten beim Erheben:**
+  - Wer ist der Verantwortliche?
+  - ggf. Kontaktdaten des Datenschutzbeauftragten
+  - Zwecke für die Verarbeitung + Rechtsgrundlage
+  - berechtigte Interessen ("Gummiparagraph")
+  - Empfänger oder Kategorien von Empfängern der personenbezogenen Daten
+  - Werden die Daten noch an Dritte weitergegeben?
+  - Dauer
+  - Recht auf Auskunft/Berichtigung
+  - Widerspruchrecht
+  - Beschwerderecht bei einer Aufsichtsbehörde
+  - sind Daten für einen Vertragsabschluss erforderlich?
+  - wird Profiling betrieben?
