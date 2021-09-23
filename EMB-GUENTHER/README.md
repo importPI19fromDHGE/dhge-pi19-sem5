@@ -158,7 +158,7 @@ Buildroot ist ein Tool zum Bauen von Embedded Linux Images.
 
 - Repo auschecken
 - Erweitern des RaspberryPiOS-Image um 4 GiB mit ``dd``
-- Einhängen des Images mit ``losetuo -f -P --show``
+- Einhängen des Images mit ``losetup -f -P --show``
 - Vergrößern der 2. Partition auf Image-Grenze
 - Mounten des Images mit Schreibzugriff
 
