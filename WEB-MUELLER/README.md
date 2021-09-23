@@ -310,3 +310,10 @@ $\rightarrow$ [Impressums-Generator](https://wwww.e-recht24.de/impressum-generat
   - Beschwerderecht bei einer Aufsichtsbehörde
   - sind Daten für einen Vertragsabschluss erforderlich?
   - wird Profiling betrieben?
+- ein Mehrebenenansatz wird verwendet
+- Datenschutzerklärung $\rightarrow$ Aktion des **Nutzers** gegenüber dem Betreiber
+- von den Unternehmen aus gibt es nur Datenschutz**hinweise**
+- Infopflichten **vor** Nutzung (TMG §13)
+  - Art, Umfang, Zwecke der Verarbeitung (wie bei Art. 13 DSGVO)
+- TMG §13 Abs. 1 Datenschutzhinweise an den Kunden
+- TMG §13 Abs. 2 Datenschutzerklärung durch den Kunden
