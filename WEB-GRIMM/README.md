@@ -13,6 +13,8 @@ Entwicklung von Webanwendungen
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Entwicklung von Webanwendungen](#entwicklung-von-webanwendungen)
+- [Prüfungsleistung](#prüfungsleistung)
 - [Geschichte des Internets](#geschichte-des-internets)
 - [Technologien](#technologien)
   - [Was ist eine Webanwendung?](#was-ist-eine-webanwendung)
@@ -21,6 +23,10 @@ Entwicklung von Webanwendungen
   - [HTML](#html)
     - [HTML-Syntax](#html-syntax)
     - [HTML 5](#html-5)
+      - [Bilder](#bilder)
+      - [Listen](#listen)
+      - [Tabellen](#tabellen)
+      - [Zeilenumbrüche](#zeilenumbrüche)
   - [CSS](#css)
   - [JS](#js)
 - [PHP und Datenbanken](#php-und-datenbanken)
@@ -29,6 +35,10 @@ Entwicklung von Webanwendungen
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 <!--newpage-->
+
+# Prüfungsleistung
+
+- Klausur über behandelte Themen
 
 # Geschichte des Internets
 
@@ -130,6 +140,117 @@ Beispiel-Skelett:
 - Suchmaschinen werten den Inhalt der Seite besser aus
 - Screenreader können flüssiger lesen
 - weiter Neuerungen für Multimedia, Formulare
+
+#### Bilder
+
+- Attribute:
+  - ismap: serverseitige Image Map, bei Klick werden Mauskoordinaten an Server gesendet
+  - usemap: in Verbindung mit Map-Tag
+- Map-Tag:
+  - ``<map name="NAME">``
+  - in Verbindung mit ``<img usemap ...>``
+  - Definition einer verweissensitiven Fläche, die mit Sprungziel verknüpft ist
+
+Beispiel mit ``usemap``:
+
+```html
+<section>
+  <h1>Verweissensitiv</h1>
+    <img src="bild.jpg"
+    alt="Bild"
+    usemap="#bild1"
+    >
+</section>
+
+<map name="bild1">
+  <area shape="circle" coords="402,209,13" href="https://www.dhge.de" title="DHGE"><!--coords: x, y, radius-->
+```
+
+#### Listen
+
+- es gibt sortierte (``ol``), unsortierte (``ul``) und Beschreibungs-Listen (``dl``)
+- Listenelemente tragen das ``li``-Tag
+- geordnete Listen
+  - nummeriert
+  - ``start``-Attribut gibt Startwert für Nummerierung an
+  - ``reversed``-Atttribut für umgekehrte Zählrichtung
+  - ``type``-Tag für die Art der Aufzählungszeichen (arabisch, römisch, ...)
+- ungeordnete Listen:
+  - Reihenfolge nicht wichtig
+  - ``type``-Attribut deprecated
+- Beschreibungsliste
+  - zweiteilig: Listenelement besteht aus ``dt`` (description term) und ``dd`` (description description)
+  - wird z.B. für Glossare verwendet
+  - zu einem ``dt`` können mehrere ``dd`` gehören
+
+Beispiel für Listen:
+
+```html
+<ul>
+  <li>Listenpunkt 1</li>
+  <li>Listenpunkt 2</li>
+  <li>Listenpunkt 3</li>
+</ul>
+```
+
+Beispiel für Beschreibungslisten:
+
+```html
+<dl>
+  <dt>DDR</dt>
+  <dd>Deutsche Demokratische Republik</dd>
+  <dd lang="en">Double Data Rate</dd>
+  <dd lang="en">Data Direction Register</dd>
+  <dt>BRD</dt>
+  <dd>Bundesrepublik Deutschland</dd>
+</dl>
+```
+
+#### Tabellen
+
+- strukturierte Datensammlung
+- Anwendug in z.B. Kalender, Stundenpläne, Fahrpläne, ...
+- Tag ``<table>``
+  - Zeile mit ``<tr>``
+  - Zelle / TBD
+- ``<thead>``: Tabellenkopf
+- ``<tfoot>``: Tabellenfuß
+- ``<tbody>``
+- ``<caption>``: Beschriftung oder Überschrift, außerhalb der Tabelle
+  - muss unmittelbar hinter dem ``<table>``-Tag folgen
+- TBD
+
+#### Zeilenumbrüche
+
+- werden erzwungen mit ``<br>``
+
+Beispiel Tabelle:
+
+```html
+<table>
+  <thead>
+    <tr>
+      <th>Zeit</th>
+      <th>Fach</th>
+      <th>Dozent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>08:00 - 09:30</th>
+      <td>Web</td>
+      <td>Herr Grimm</td>
+    </tr>
+    <tr>
+      <th>09:45 - 11:15</th>
+      <td>SysEnt</td>
+      <td>Herr Günther</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr><td colspan="3">Woche vom 20.09. bis 24.04.</td></tr>
+</table>
+```
 
 ## CSS
 
