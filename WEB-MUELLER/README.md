@@ -236,6 +236,7 @@ Webbasierte Anwendungen/E-Commerce
   - Vervielfältigung zum privaten und sonstigen eigenen Gebrauch §53 UrhG, aber: Vergütungsanspruch §54 UrhG  (Leermittelabgabe)
   - Zitierfreiheit §51 UrhG, aber: Quellenangabe §63 UrhG (*Bilder sind in der Regel keine Zitate!*)
   - öffentliche Zugänglichmachung für Unterricht und Forschung, §52a UrhG, aber: Vergütungsanspruch und Quellenangabe
+
 ## Wettbewerbsrecht
 
 ### Spam - Begriff
