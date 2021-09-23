@@ -22,6 +22,12 @@ Embedded Systems II
 - [Hardware des Raspberry Pi 4](#hardware-des-raspberry-pi-4)
   - [Komponenten](#komponenten)
     - [Peripherie](#peripherie)
+- [QEMU](#qemu)
+  - [Vorgehen](#vorgehen)
+- [Konfigurationsmanagement mit Buildroot](#konfigurationsmanagement-mit-buildroot)
+  - [Motivation](#motivation)
+  - [Konfigurationsdateien](#konfigurationsdateien)
+  - [Erstellen und Ändern](#erstellen-und-%C3%84ndern)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -139,3 +145,42 @@ Buildroot ist ein Tool zum Bauen von Embedded Linux Images.
   - über CSI angeschlossen
   - verschiedene Generationen, 5MP bis 12,3MP
 - Touch-Bildschirme via DSI angeschlossen
+
+# QEMU
+
+- nutzt ``Kernel Virtual Machine`` (KVM) von Linux
+- simuliert x86, ARM, u.v.m.
+- Emulation fremder Architekturen jedoch langsam
+- Emulation Raspberry Pi 3 mit ``qemu-system-aarch64`` mit ``-M type=raspi2`` oder ``-M type=raspi3``
+- kein RaspberryPiOS mit 64bit Kernel vorhanden
+
+## Vorgehen
+
+- Repo auschecken
+- Erweitern des RaspberryPiOS-Image um 4 GiB mit ``dd``
+- Einhängen des Images mit ``losetup -f -P --show``
+- Vergrößern der 2. Partition auf Image-Grenze
+- Mounten des Images mit Schreibzugriff
+
+# Konfigurationsmanagement mit Buildroot
+
+## Motivation
+
+- Optimale OS-Anpassung an gewünschten Zweck
+  - Weglassen unnötiger Komponenten
+  - höhere Geschwindigkeit<!--MEHR ENERGIE!-->
+
+## Konfigurationsdateien
+
+- in der ``.config``-Datei ist die gesamte Buildroot-Konfiguration für das Image gespeichert
+- ``defconfig``-Dateien sind kleinere Dteien, die alle Änderungen zur Standardkonfiguration enthalten
+
+## Erstellen und Ändern
+
+- ``make raspberrypi4_defconfig`` erstellt Standardkonfiguration für Pi 4
+- ``make config``: textbasierte Konfiguration
+- ``make menuconfig``: TUI
+- ``make gconfig``: GTK-GUI
+- ``make xconfig``: QT-GUI
+- ``make nconfig``: TUI (original curses-basiert, ähnlich menuconfig)
+- Overlay spezifizieren: Option ``Root filesystem overlay directories`` im Menü ``System configuration``
