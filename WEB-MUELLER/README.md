@@ -179,14 +179,97 @@ Webbasierte Anwendungen/E-Commerce
 
 > Gesetz über Urheberrecht und verwandte Schutzrechte
 
-**Entstehung des Urheberrechts:**
+### Entstehung des Urheberrechts
 
 - geschütztes Werk (§§2ff UrhG)
 - Schutzzeitraum (§§64ff UrhG)
 - Urheberschaft (§§7ff UrhG) $\rightarrow$ entsteht automatisch (keine Eintragung o.ä. erforderlich)
 
-**Nutzungsrecht**
+### Nutzungsrecht
 
 - zeitlich, räumlich, zweckmäßig einschränkbar
 - ausschließliches Nutzungsrecht: nur einer hat Nutzungsrecht (auch nicht Urheber!)
 - einfaches Nutzungsrecht
+
+### Umfang der Urheberrechte
+
+- **Urheberpersönlichkeitsrechte:**
+  - Namensnennungsrecht §14 (besonders bei Fotografien)
+    - muss am Foto selbst erfüllt werden! (nicht bspw. gebündelt an anderer Stelle oder per Mouse-Over-Funktion)
+- **Verwertungsrechte:**
+  - Vervielfältigungsrecht §16
+  - Öffentliche Zugänglichmachung §19a
+- **Leistungsschutzrechte:**
+  - Lichtbildner, Tonträgerhersteller, Filmhersteller, Datenbankhersteller
+
+### Übertragung von Nutzungsrechten
+
+- einfaches/ausschließliches Nutzungsrecht
+- Beschränkungen räumlich, zeitlich, inhaltlich möglich
+- Achtung! Kein gutgläubiger Rechtserwerb möglich
+
+- **Vertragsinhalt:**
+  - Vertragspartner
+  - Welche Rechte
+  - Nutzungsarten, Zeitraum, Gebiet
+  - Garantie über Rechtsinhaberschaft und keine anderweitige Rechtseinräumung
+  - Freistellungsklausel (zum Schutz des Rechteerwerbers, wird von der Haftung gegenüber Vertragspartner freigestellt, falls Rechtegeber die Rechte eigentlich gar nicht hat)
+
+### Schranken des Urheberrechts
+
+- Grundsatz: Nutzung von urheberrechtlich geschützten Werken nur mit Einwilligung/Lizenz
+- **Schrankenregelungen:**
+  - Vervielfältigung zum privaten und sonstigen eigenen Gebrauch §53 UrhG, aber: Vergütungsanspruch §54 UrhG
+  - Zitierfreiheit §51 UrhG, aber: Quellenangabe §63 UrhG
+  - öffentliche Zugänglichmachung für Unterricht und Forschung, §52 a UrhG, aber: Vergütungsanspruch und Quellenangabe
+
+### Spam - Begriff
+
+- SPAM = Marke für gewürztes Dosenfleisch
+- massenhaftes Verbreiten (zumüllen mit) ein und derselben Sache (Ursprung aus einem Monty Python Sketch)
+- alles was UWG §7 Abs. 2 widerspricht $\rightarrow$ Spam
+- opt-in Modell: Nutzer muss vorher einwilligen
+- Newsletter: Eintrag in die Mailingliste + Rückbestätigung + Jederzeitige Möglichkeit der Untersagung zu Basistarifen + Klar und deutlicher Hinweis bei jeder Nutzung auf die Möglichkeit der Untersagung
+
+### Informationspflichten
+
+- **Rechtsquellen sind u.a.:**
+  - Anbieterkennzeichnung nach TMG (Telemediengesetz)
+  - Informationspflichten und Widerrufsrecht bei Fernabsatzverträgen
+  - Rundfunkstaatsvertrag: bei journalistischen Texten muss immer der redaktionell Verantwortliche genannt werden
+    - steht in der Regel mit im Impressum
+  - Pflichten im elektronischen Geschäftsverkehr
+  - Pflichtangaben auf Geschäftsbriefen
+  - Preisangabenverordnung
+  - Sondervorschriften z.B. Heilmittelwerbegesetz, Textilkennzeichnungsverordnung
+
+### Informationspflichten nach TMG
+
+- Adressaten:
+  - geschäftsmäßige Telemedien (die müssen das Gesetz beachten)
+- Inhalt:
+  - ladungsfähige Anschrift, d.h. Postfach nicht ausreichend
+  - Telefonnummer "schnelle unmittelbare Kommunikation"
+  - Umsatzsteueridentifikations- (ist NICHT die Umsatzsteuernummer, nicht jedes Unternehmen hat diese Nummer) oder Wirtschaftsidentifikationsnummer
+- Verschleierungsverbot gemäß §6 II TMG
+- "Geschäftsbrief"?
+  - Angaben nach HGB/GmbHG/AG auch für E-Mails
+
+$\rightarrow$ [Impressums-Generator](https://wwww.e-recht24.de/impressum-generator.html)
+
+- Fernabsatz: Unternehmer $\leftarrow$ Fernkommunikation $\rightarrow$ Verbraucher
+  - weiter gefasst, beinhaltet aber auch Online-Shops
+  - EGBGB Art. 246a
+- Widerrufsrecht gilt NUR für Verbraucher, nicht für gewerbliche Bestellungen
+- Impressum muss von jeder Seite aus innerhalb von zwei Klicks erreichbar und gut erkennbar sein!
+- all diese Dinge müssen dem Verbraucher VOR dem Vertrag klar sein
+- Informationen müssen den Verbraucher in Textform (gängiges Format) erreichen
+- BGB §312g Abs. 2 $\rightarrow$ Widerrufsrecht gilt bei hier aufgeführten Dingen nicht
+
+- **Fehlerhaftes Impressum:**
+  - Bußgeld bis 50.000 Euro
+  - Unlauterer Wettbewerb i.S. des UWG
+
+### Wettbewerbsrecht
+
+### Impressumspflicht
