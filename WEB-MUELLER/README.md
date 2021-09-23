@@ -206,12 +206,14 @@ Webbasierte Anwendungen/E-Commerce
 ### Umfang der Urheberrechte
 
 - **Urheberpersönlichkeitsrechte:**
-  - Namensnennungsrecht §14 (besonders bei Fotografien)
+  - Veröffentlichungsrecht §12
+  - Namensnennungsrecht §13 (besonders bei Fotografien)
     - muss am Foto selbst erfüllt werden! (nicht bspw. gebündelt an anderer Stelle oder per Mouse-Over-Funktion)
-- **Verwertungsrechte:**
+  - Entstellungsschutz §14
+- **Verwertungsrechte:** *(können erworben werden)*
   - Vervielfältigungsrecht §16
   - Öffentliche Zugänglichmachung §19a
-- **Leistungsschutzrechte:**
+- **Leistungsschutzrechte:** Leistungen, die keine persönlich geistigen Schöpfungen beinhalten
   - Lichtbildner, Tonträgerhersteller, Filmhersteller, Datenbankhersteller
 
 ### Übertragung von Nutzungsrechten
@@ -220,28 +222,32 @@ Webbasierte Anwendungen/E-Commerce
 - Beschränkungen räumlich, zeitlich, inhaltlich möglich
 - Achtung! Kein gutgläubiger Rechtserwerb möglich
 
-- **Vertragsinhalt:**
-  - Vertragspartner
-  - Welche Rechte
-  - Nutzungsarten, Zeitraum, Gebiet
-  - Garantie über Rechtsinhaberschaft und keine anderweitige Rechtseinräumung
-  - Freistellungsklausel (zum Schutz des Rechteerwerbers, wird von der Haftung gegenüber Vertragspartner freigestellt, falls Rechtegeber die Rechte eigentlich gar nicht hat)
+**Vertragsinhalt:**
+
+- Vertragspartner
+- Welche Rechte
+- Nutzungsarten, Zeitraum, Gebiet
+- Garantie über Rechtsinhaberschaft und keine anderweitige Rechtseinräumung
+- Freistellungsklausel (zum Schutz des Rechteerwerbers, wird von der Haftung gegenüber Vertragspartner freigestellt, falls Rechtegeber die Rechte eigentlich gar nicht hat)
 
 ### Schranken des Urheberrechts
 
 - Grundsatz: Nutzung von urheberrechtlich geschützten Werken nur mit Einwilligung/Lizenz
-- **Schrankenregelungen:**
-  - Vervielfältigung zum privaten und sonstigen eigenen Gebrauch §53 UrhG, aber: Vergütungsanspruch §54 UrhG
-  - Zitierfreiheit §51 UrhG, aber: Quellenangabe §63 UrhG
-  - öffentliche Zugänglichmachung für Unterricht und Forschung, §52 a UrhG, aber: Vergütungsanspruch und Quellenangabe
+- **Schrankenregelungen §§44a ff. UrhG, insbesondere:**
+  - Vervielfältigung zum privaten und sonstigen eigenen Gebrauch §53 UrhG, aber: Vergütungsanspruch §54 UrhG  (Leermittelabgabe)
+  - Zitierfreiheit §51 UrhG, aber: Quellenangabe §63 UrhG (*Bilder sind in der Regel keine Zitate!*)
+  - öffentliche Zugänglichmachung für Unterricht und Forschung, §52a UrhG, aber: Vergütungsanspruch und Quellenangabe
+## Wettbewerbsrecht
 
 ### Spam - Begriff
 
 - SPAM = Marke für gewürztes Dosenfleisch
 - massenhaftes Verbreiten (zumüllen mit) ein und derselben Sache (Ursprung aus einem Monty Python Sketch)
 - alles was UWG §7 Abs. 2 widerspricht $\rightarrow$ Spam
-- opt-in Modell: Nutzer muss vorher einwilligen
-- Newsletter: Eintrag in die Mailingliste + Rückbestätigung + Jederzeitige Möglichkeit der Untersagung zu Basistarifen + Klar und deutlicher Hinweis bei jeder Nutzung auf die Möglichkeit der Untersagung
+- opt-in Modell: Nutzer muss **vorher** einwilligen
+- **Newsletter:** Eintrag in die Mailingliste und Rückbestätigung
+  - jederzeitige Möglichkeit der Untersagung zu Basistarifen
+  - klar und deutlicher Hinweis bei jeder Nutzung auf die Möglichkeit der Untersagung
 
 ### Informationspflichten
 
@@ -255,36 +261,34 @@ Webbasierte Anwendungen/E-Commerce
   - Preisangabenverordnung
   - Sondervorschriften z.B. Heilmittelwerbegesetz, Textilkennzeichnungsverordnung
 
+> Verletzungen der Informationspflichten sind auch Verletzungen des Wettbewerbsrecht (unlauterer Wettbewerb)
+
 ### Informationspflichten nach TMG
 
-- Adressaten:
-  - geschäftsmäßige Telemedien (die müssen das Gesetz beachten)
+- Adressaten: geschäftsmäßige Telemedien (die müssen das Gesetz beachten)
 - Inhalt:
   - ladungsfähige Anschrift, d.h. Postfach nicht ausreichend
-  - Telefonnummer "schnelle unmittelbare Kommunikation"
+  - Telefonnummer: *"schnelle unmittelbare Kommunikation"*
   - Umsatzsteueridentifikations- (ist NICHT die Umsatzsteuernummer, nicht jedes Unternehmen hat diese Nummer) oder Wirtschaftsidentifikationsnummer
 - Verschleierungsverbot gemäß §6 II TMG
-- "Geschäftsbrief"?
-  - Angaben nach HGB/GmbHG/AG auch für E-Mails
+- "Geschäftsbrief" \rightarrow\rightarrow Angaben nach HGB/GmbHG/AG auch für E-Mails
 
-$\rightarrow$ [Impressums-Generator](https://wwww.e-recht24.de/impressum-generator.html)
+> Empfehlung: [Impressums-Generator](https://wwww.e-recht24.de/impressum-generator.html)
+>
+> Zwei-Klick-Regel: in zwei Klicks muss man von einer beliebigen Seite das Impressum erreichen
 
 - Fernabsatz: Unternehmer $\leftarrow$ Fernkommunikation $\rightarrow$ Verbraucher
   - weiter gefasst, beinhaltet aber auch Online-Shops
   - EGBGB Art. 246a
 - Widerrufsrecht gilt NUR für Verbraucher, nicht für gewerbliche Bestellungen
-- Impressum muss von jeder Seite aus innerhalb von zwei Klicks erreichbar und gut erkennbar sein!
 - all diese Dinge müssen dem Verbraucher VOR dem Vertrag klar sein
 - Informationen müssen den Verbraucher in Textform (gängiges Format) erreichen
 - BGB §312g Abs. 2 $\rightarrow$ Widerrufsrecht gilt bei hier aufgeführten Dingen nicht
 
-- **Fehlerhaftes Impressum:**
-  - Bußgeld bis 50.000 Euro
-  - Unlauterer Wettbewerb i.S. des UWG
+**Fehlerhaftes Impressum:**
 
-### Wettbewerbsrecht
-
-### Impressumspflicht
+- Bußgeld bis 50.000 Euro
+- Unlauterer Wettbewerb i.S. des UWG
 
 ## Datenschutz
 
@@ -294,15 +298,15 @@ $\rightarrow$ [Impressums-Generator](https://wwww.e-recht24.de/impressum-generat
 
 - ist europäisches Recht
 - kann durch Öffnungsklauseln erweitert werden $\rightarrow$ BDSG und TMG in Deutschland
-- §13 TMG Cookies usw.
-- Regelungen sollten eigentlich im E-Privacy Gesetz stehen $\rightarrow$ noch nicht fertig
+  - §13 TMG Cookies usw.
+- Regelungen sollten eigentlich im E-Privacy Gesetz stehen \rightarrow\rightarrow noch nicht fertig (coming 2023 or later)
 - **Art. 5 DSGVO** beschreibt welche Dinge passieren sollen, wenn Daten von Kunden verarbeitet werden:
   - Transparenz
   - Zweckbindung
   - Datenminimierung
-  - Richtigkeit
+  - Richtigkeit der Daten
   - Speicherbegrenzung (Löschfristen)
-  - TOM (Technisch-organisatorische Maßnahmen): Integrität + Vertrauligkeit der Daten
+  - TOM (Technisch-organisatorische Maßnahmen): Integrität und Vertraulichkeit der Daten
   - Rechenschaftspflicht
 - **für den E-Commerce wichtig:**
   - DSGVO Art. 12 und 13 sind für den E-Commerce wichtig $\rightarrow$ Informationspflichten
@@ -327,5 +331,6 @@ $\rightarrow$ [Impressums-Generator](https://wwww.e-recht24.de/impressum-generat
 - von den Unternehmen aus gibt es nur Datenschutz**hinweise**
 - Infopflichten **vor** Nutzung (TMG §13)
   - Art, Umfang, Zwecke der Verarbeitung (wie bei Art. 13 DSGVO)
-- TMG §13 Abs. 1 Datenschutzhinweise an den Kunden
-- TMG §13 Abs. 2 Datenschutzerklärung durch den Kunden
+- TMG §13 Abs. 1: Datenschutzhinweise an den Kunden
+- TMG §13 Abs. 2: Datenschutzerklärung durch den Kunden
+- TMG §13 Abs. 3: Anforderung an Softwaresysteme (Trennung und Verschlüsselung der Daten, ...)
