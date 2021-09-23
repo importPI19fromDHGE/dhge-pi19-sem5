@@ -35,11 +35,10 @@ Webbasierte Anwendungen/E-Commerce
     - [Umfang der Urheberrechte](#umfang-der-urheberrechte)
     - [Übertragung von Nutzungsrechten](#%C3%9Cbertragung-von-nutzungsrechten)
     - [Schranken des Urheberrechts](#schranken-des-urheberrechts)
+  - [Wettbewerbsrecht](#wettbewerbsrecht)
     - [Spam - Begriff](#spam---begriff)
     - [Informationspflichten](#informationspflichten)
     - [Informationspflichten nach TMG](#informationspflichten-nach-tmg)
-    - [Wettbewerbsrecht](#wettbewerbsrecht)
-    - [Impressumspflicht](#impressumspflicht)
   - [Datenschutz](#datenschutz)
     - [DSGVO (Datenschutz-Grundverordnung)](#dsgvo-datenschutz-grundverordnung)
 
