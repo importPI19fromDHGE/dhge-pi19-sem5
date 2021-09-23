@@ -30,6 +30,18 @@ Webbasierte Anwendungen/E-Commerce
     - [Anwendbares Recht](#anwendbares-recht)
     - [Domain-Streitigkeiten als Anwendungsgebiet des Kennzeichenrechts](#domain-streitigkeiten-als-anwendungsgebiet-des-kennzeichenrechts)
   - [Urheberrecht](#urheberrecht)
+    - [Entstehung des Urheberrechts](#entstehung-des-urheberrechts)
+    - [Nutzungsrecht](#nutzungsrecht)
+    - [Umfang der Urheberrechte](#umfang-der-urheberrechte)
+    - [Übertragung von Nutzungsrechten](#%C3%9Cbertragung-von-nutzungsrechten)
+    - [Schranken des Urheberrechts](#schranken-des-urheberrechts)
+    - [Spam - Begriff](#spam---begriff)
+    - [Informationspflichten](#informationspflichten)
+    - [Informationspflichten nach TMG](#informationspflichten-nach-tmg)
+    - [Wettbewerbsrecht](#wettbewerbsrecht)
+    - [Impressumspflicht](#impressumspflicht)
+  - [Datenschutz](#datenschutz)
+    - [DSGVO (Datenschutz-Grundverordnung)](#dsgvo-datenschutz-grundverordnung)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
