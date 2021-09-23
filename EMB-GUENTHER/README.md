@@ -182,4 +182,5 @@ Buildroot ist ein Tool zum Bauen von Embedded Linux Images.
 - ``make menuconfig``: TUI
 - ``make gconfig``: GTK-GUI
 - ``make xconfig``: QT-GUI
+- ``make nconfig``: TUI (original curses-basiert, ähnlich menuconfig)
 - Overlay spezifizieren: Option ``Root filesystem overlay directories`` im Menü ``System configuration``
