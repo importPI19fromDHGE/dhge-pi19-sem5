@@ -11,17 +11,24 @@ Embedded Systems II
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Prüfungsleistung](#pr%C3%BCfungsleistung)
+- [Embedded Systems II](#embedded-systems-ii)
+- [Prüfungsleistung](#prüfungsleistung)
   - [Projekt](#projekt)
   - [Vortragsthemen](#vortragsthemen)
 - [Buildroot](#buildroot)
 - [QR-Code und Impfzertifikat](#qr-code-und-impfzertifikat)
   - [Grundlegender Aufbau](#grundlegender-aufbau)
   - [Impfzertifikat-Code](#impfzertifikat-code)
-    - [Überprüfung](#%C3%9Cberpr%C3%BCfung)
+    - [Überprüfung](#überprüfung)
 - [Hardware des Raspberry Pi 4](#hardware-des-raspberry-pi-4)
   - [Komponenten](#komponenten)
     - [Peripherie](#peripherie)
+- [QEMU](#qemu)
+  - [Vorgehen](#vorgehen)
+- [Konfigurationsmanagement mit Buildroot](#konfigurationsmanagement-mit-buildroot)
+  - [Motivation](#motivation)
+  - [Konfigurationsdateien](#konfigurationsdateien)
+  - [Erstellen und Ändern](#erstellen-und-ändern)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -139,3 +146,41 @@ Buildroot ist ein Tool zum Bauen von Embedded Linux Images.
   - über CSI angeschlossen
   - verschiedene Generationen, 5MP bis 12,3MP
 - Touch-Bildschirme via DSI angeschlossen
+
+# QEMU
+
+- nutzt ``Kernel Virtual Machine`` (KVM) von Linux
+- simuliert x86, ARM, u.v.m.
+- Emulation fremder Architekturen jedoch langsam
+- Emulation Raspberry Pi 3 mit ``qemu-system-aarch64`` mit ``-M type=raspi2`` oder ``-M type=raspi3``
+- kein RaspberryPiOS mit 64bit Kernel vorhanden
+
+## Vorgehen
+
+- Repo auschecken
+- erweitern des RaspberryPiOS-Image um 4 GiB mit ``dd``
+- einhängen des Images mit ``losetuo -f -P --show``
+- vergrößern der 2. Partition auf Image-Grenze
+- mounten des Images mit Schreibzugriff
+
+# Konfigurationsmanagement mit Buildroot
+
+## Motivation
+
+- Optimale OS-Anpassung an gewünschten Zweck
+  - weglassen unnötiger Komponenten
+  - höhere Geschwindigkeit<!--MEHR ENEGIE!-->
+
+## Konfigurationsdateien
+
+- in der ``.config``-Datei ist die gesamte Buildroot-Konfiguration für das Image gespeichert
+- ``defconfig``-Dateien sind kleinere Dteien, die alle Änderungen zur Standardkonfiguration enthalten
+
+## Erstellen und Ändern
+
+- ``make raspberrypi4_defconfig`` erstellt Standardkonfiguration für Pi 4
+- ``make config``: textbasierte Konfiguration
+- ``make menuconfig``: TUI
+- ``make gconfig``: GTK-GUI
+- ``make xconfig``: QT-GUI
+- Overlay spezifizieren: Option ``Root filesystem overlay directories`` im Menü ``System configuration``
