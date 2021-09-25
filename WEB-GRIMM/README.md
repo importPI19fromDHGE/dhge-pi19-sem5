@@ -212,17 +212,26 @@ Beispiel für Beschreibungslisten:
 - Anwendug in z.B. Kalender, Stundenpläne, Fahrpläne, ...
 - Tag ``<table>``
   - Zeile mit ``<tr>``
-  - Zelle / TBD
+  - Zelle mit ``<td>``
+  - Kopfzelle mit ``<th>``
+    - ``scope``-Attribut gibt an, ob es sich um einen Zeilen- oder Spalten-Kopf handelt
 - ``<thead>``: Tabellenkopf
 - ``<tfoot>``: Tabellenfuß
 - ``<tbody>``
 - ``<caption>``: Beschriftung oder Überschrift, außerhalb der Tabelle
   - muss unmittelbar hinter dem ``<table>``-Tag folgen
-- TBD
+- Es gibt Attribute für ``<td>``, um Zellen zu verbinden:
+  - ``colspan`` verbindet Spalten
+  - ``rowspan`` verbindet Zeilen
+  - ``colgroup`` gruppiert Spalten
+  - weitere Formatierung sollte mit CSS vorgenommen werden
 
 #### Zeilenumbrüche
 
 - werden erzwungen mit ``<br>``
+- Browser wird bei Leerzeichen einen Zeilenumbruch einfügen, wenn notwendig
+- ``<wbr>``: Word Break - unsichtbare Markierung, wo der Browser ggf. einen Zeilenumbruch einfügen kann
+- ``&shy;``: wie ``<wbr>``, fügt aber einen Bindestrich ein
 
 Beispiel Tabelle:
 
