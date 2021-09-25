@@ -145,8 +145,8 @@ Beispiel-Skelett:
 #### Bilder
 
 - Attribute:
-  - ismap: serverseitige Image Map, bei Klick werden Mauskoordinaten an Server gesendet
-  - usemap: in Verbindung mit Map-Tag
+  - `ismap`: serverseitige Image Map, bei Klick werden Mauskoordinaten an Server gesendet
+  - `usemap`: in Verbindung mit Map-Tag
 - Map-Tag:
   - ``<map name="NAME">``
   - in Verbindung mit ``<img usemap ...>``
@@ -157,14 +157,12 @@ Beispiel mit ``usemap``:
 ```html
 <section>
   <h1>Verweissensitiv</h1>
-    <img src="bild.jpg"
-    alt="Bild"
-    usemap="#bild1"
-    >
+    <img src="bild.jpg" alt="Bild" usemap="#bild1">
 </section>
 
 <map name="bild1">
   <area shape="circle" coords="402,209,13" href="https://www.dhge.de" title="DHGE"><!--coords: x, y, radius-->
+</map>
 ```
 
 #### Listen
@@ -178,7 +176,7 @@ Beispiel mit ``usemap``:
   - ``type``-Tag für die Art der Aufzählungszeichen (arabisch, römisch, ...)
 - ungeordnete Listen:
   - Reihenfolge nicht wichtig
-  - ``type``-Attribut deprecated
+  - ``type``-Attribut (deprecated)
 - Beschreibungsliste
   - zweiteilig: Listenelement besteht aus ``dt`` (description term) und ``dd`` (description description)
   - wird z.B. für Glossare verwendet
