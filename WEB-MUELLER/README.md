@@ -30,6 +30,17 @@ Webbasierte Anwendungen/E-Commerce
     - [Anwendbares Recht](#anwendbares-recht)
     - [Domain-Streitigkeiten als Anwendungsgebiet des Kennzeichenrechts](#domain-streitigkeiten-als-anwendungsgebiet-des-kennzeichenrechts)
   - [Urheberrecht](#urheberrecht)
+    - [Entstehung des Urheberrechts](#entstehung-des-urheberrechts)
+    - [Nutzungsrecht](#nutzungsrecht)
+    - [Umfang der Urheberrechte](#umfang-der-urheberrechte)
+    - [Übertragung von Nutzungsrechten](#%C3%9Cbertragung-von-nutzungsrechten)
+    - [Schranken des Urheberrechts](#schranken-des-urheberrechts)
+  - [Wettbewerbsrecht](#wettbewerbsrecht)
+    - [Spam - Begriff](#spam---begriff)
+    - [Informationspflichten](#informationspflichten)
+    - [Informationspflichten nach TMG](#informationspflichten-nach-tmg)
+  - [Datenschutz](#datenschutz)
+    - [DSGVO (Datenschutz-Grundverordnung)](#dsgvo-datenschutz-grundverordnung)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -179,14 +190,147 @@ Webbasierte Anwendungen/E-Commerce
 
 > Gesetz über Urheberrecht und verwandte Schutzrechte
 
-**Entstehung des Urheberrechts:**
+### Entstehung des Urheberrechts
 
 - geschütztes Werk (§§2ff UrhG)
 - Schutzzeitraum (§§64ff UrhG)
 - Urheberschaft (§§7ff UrhG) $\rightarrow$ entsteht automatisch (keine Eintragung o.ä. erforderlich)
 
-**Nutzungsrecht**
+### Nutzungsrecht
 
 - zeitlich, räumlich, zweckmäßig einschränkbar
 - ausschließliches Nutzungsrecht: nur einer hat Nutzungsrecht (auch nicht Urheber!)
 - einfaches Nutzungsrecht
+
+### Umfang der Urheberrechte
+
+- **Urheberpersönlichkeitsrechte:**
+  - Veröffentlichungsrecht §12
+  - Namensnennungsrecht §13 (besonders bei Fotografien)
+    - muss am Foto selbst erfüllt werden! (nicht bspw. gebündelt an anderer Stelle oder per Mouse-Over-Funktion)
+  - Entstellungsschutz §14
+- **Verwertungsrechte:** *(können erworben werden)*
+  - Vervielfältigungsrecht §16
+  - Öffentliche Zugänglichmachung §19a
+- **Leistungsschutzrechte:** Leistungen, die keine persönlich geistigen Schöpfungen beinhalten
+  - Lichtbildner, Tonträgerhersteller, Filmhersteller, Datenbankhersteller
+
+### Übertragung von Nutzungsrechten
+
+- einfaches/ausschließliches Nutzungsrecht
+- Beschränkungen räumlich, zeitlich, inhaltlich möglich
+- Achtung! Kein gutgläubiger Rechtserwerb möglich
+
+**Vertragsinhalt:**
+
+- Vertragspartner
+- Welche Rechte
+- Nutzungsarten, Zeitraum, Gebiet
+- Garantie über Rechtsinhaberschaft und keine anderweitige Rechtseinräumung
+- Freistellungsklausel (zum Schutz des Rechteerwerbers, wird von der Haftung gegenüber Vertragspartner freigestellt, falls Rechtegeber die Rechte eigentlich gar nicht hat)
+
+### Schranken des Urheberrechts
+
+- Grundsatz: Nutzung von urheberrechtlich geschützten Werken nur mit Einwilligung/Lizenz
+- **Schrankenregelungen §§44a ff. UrhG, insbesondere:**
+  - Vervielfältigung zum privaten und sonstigen eigenen Gebrauch §53 UrhG, aber: Vergütungsanspruch §54 UrhG  (Leermittelabgabe)
+  - Zitierfreiheit §51 UrhG, aber: Quellenangabe §63 UrhG (*Bilder sind in der Regel keine Zitate!*)
+  - öffentliche Zugänglichmachung für Unterricht und Forschung, §52a UrhG, aber: Vergütungsanspruch und Quellenangabe
+
+## Wettbewerbsrecht
+
+### Spam - Begriff
+
+- SPAM = Marke für gewürztes Dosenfleisch
+- massenhaftes Verbreiten (zumüllen mit) ein und derselben Sache (Ursprung aus einem Monty Python Sketch)
+- alles was UWG §7 Abs. 2 widerspricht $\rightarrow$ Spam
+- opt-in Modell: Nutzer muss **vorher** einwilligen
+- **Newsletter:** Eintrag in die Mailingliste und Rückbestätigung
+  - jederzeitige Möglichkeit der Untersagung zu Basistarifen
+  - klar und deutlicher Hinweis bei jeder Nutzung auf die Möglichkeit der Untersagung
+
+### Informationspflichten
+
+- **Rechtsquellen sind u.a.:**
+  - Anbieterkennzeichnung nach TMG (Telemediengesetz)
+  - Informationspflichten und Widerrufsrecht bei Fernabsatzverträgen
+  - Rundfunkstaatsvertrag: bei journalistischen Texten muss immer der redaktionell Verantwortliche genannt werden
+    - steht in der Regel mit im Impressum
+  - Pflichten im elektronischen Geschäftsverkehr
+  - Pflichtangaben auf Geschäftsbriefen
+  - Preisangabenverordnung
+  - Sondervorschriften z.B. Heilmittelwerbegesetz, Textilkennzeichnungsverordnung
+
+> Verletzungen der Informationspflichten sind auch Verletzungen des Wettbewerbsrecht (unlauterer Wettbewerb)
+
+### Informationspflichten nach TMG
+
+- Adressaten: geschäftsmäßige Telemedien (die müssen das Gesetz beachten)
+- Inhalt:
+  - ladungsfähige Anschrift, d.h. Postfach nicht ausreichend
+  - Telefonnummer: *"schnelle unmittelbare Kommunikation"*
+  - Umsatzsteueridentifikations- (ist NICHT die Umsatzsteuernummer, nicht jedes Unternehmen hat diese Nummer) oder Wirtschaftsidentifikationsnummer
+- Verschleierungsverbot gemäß §6 II TMG
+- "Geschäftsbrief" \rightarrow\rightarrow Angaben nach HGB/GmbHG/AG auch für E-Mails
+
+> Empfehlung: [Impressums-Generator](https://wwww.e-recht24.de/impressum-generator.html)
+>
+> Zwei-Klick-Regel: in zwei Klicks muss man von einer beliebigen Seite das Impressum erreichen
+
+- Fernabsatz: Unternehmer $\leftarrow$ Fernkommunikation $\rightarrow$ Verbraucher
+  - weiter gefasst, beinhaltet aber auch Online-Shops
+  - EGBGB Art. 246a
+- Widerrufsrecht gilt NUR für Verbraucher, nicht für gewerbliche Bestellungen
+- all diese Dinge müssen dem Verbraucher VOR dem Vertrag klar sein
+- Informationen müssen den Verbraucher in Textform (gängiges Format) erreichen
+- BGB §312g Abs. 2 $\rightarrow$ Widerrufsrecht gilt bei hier aufgeführten Dingen nicht
+
+**Fehlerhaftes Impressum:**
+
+- Bußgeld bis 50.000 Euro
+- Unlauterer Wettbewerb i.S. des UWG
+
+## Datenschutz
+
+- Datenschutzhinweise vs. Datenschutzerklärung
+
+### DSGVO (Datenschutz-Grundverordnung)
+
+- ist europäisches Recht
+- kann durch Öffnungsklauseln erweitert werden $\rightarrow$ BDSG und TMG in Deutschland
+  - §13 TMG Cookies usw.
+- Regelungen sollten eigentlich im E-Privacy Gesetz stehen \rightarrow\rightarrow noch nicht fertig (coming 2023 or later)
+- **Art. 5 DSGVO** beschreibt welche Dinge passieren sollen, wenn Daten von Kunden verarbeitet werden:
+  - Transparenz
+  - Zweckbindung
+  - Datenminimierung
+  - Richtigkeit der Daten
+  - Speicherbegrenzung (Löschfristen)
+  - TOM (Technisch-organisatorische Maßnahmen): Integrität und Vertraulichkeit der Daten
+  - Rechenschaftspflicht
+- **für den E-Commerce wichtig:**
+  - DSGVO Art. 12 und 13 sind für den E-Commerce wichtig $\rightarrow$ Informationspflichten
+  - §13 TMG $\rightarrow$ Datenschutzhinweise, Datenschutzerklärung
+- alles muss präzise, transparent, in verständlicher und leicht zugänglicher Form in einer klaren und einfachen Sprache übermittelt werden
+- Händler muss innerhalb eines Monats und unentgeltlich Auskunft über Daten eines Kunden geben können (bei Nachfrage)
+- **Art. 13 DSGVO Infopflichten beim Erheben:**
+  - Wer ist der Verantwortliche?
+  - ggf. Kontaktdaten des Datenschutzbeauftragten
+  - Zwecke für die Verarbeitung + Rechtsgrundlage
+  - berechtigte Interessen ("Gummiparagraph")
+  - Empfänger oder Kategorien von Empfängern der personenbezogenen Daten
+  - Werden die Daten noch an Dritte weitergegeben?
+  - Dauer
+  - Recht auf Auskunft/Berichtigung
+  - Widerspruchrecht
+  - Beschwerderecht bei einer Aufsichtsbehörde
+  - sind Daten für einen Vertragsabschluss erforderlich?
+  - wird Profiling betrieben?
+- ein Mehrebenenansatz wird verwendet
+- Datenschutzerklärung $\rightarrow$ Aktion des **Nutzers** gegenüber dem Betreiber
+- von den Unternehmen aus gibt es nur Datenschutz**hinweise**
+- Infopflichten **vor** Nutzung (TMG §13)
+  - Art, Umfang, Zwecke der Verarbeitung (wie bei Art. 13 DSGVO)
+- TMG §13 Abs. 1: Datenschutzhinweise an den Kunden
+- TMG §13 Abs. 2: Datenschutzerklärung durch den Kunden
+- TMG §13 Abs. 3: Anforderung an Softwaresysteme (Trennung und Verschlüsselung der Daten, ...)
