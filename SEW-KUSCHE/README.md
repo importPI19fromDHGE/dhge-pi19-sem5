@@ -484,7 +484,7 @@ Vernünftige Compiler sollten folgende Features besitzen:
 - melden heikle Programmkonstrukte sowie beliebte Programmierfehler
 - Untersuchen Wertebereiche von Variablen
   - stellen daraus fest, ob Zeilen harmlosen oder gefährlichen Code enthält
-- finden wenig, kosten viel; viele falsch-positive
+- finden wenig, kosten viel; viele Falsch-positive
 
 ### Profiling und Tracing
 
