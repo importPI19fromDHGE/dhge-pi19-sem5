@@ -506,7 +506,7 @@ Vernünftige Compiler sollten folgende Features besitzen:
   - unterbricht laufendes Programm regelmäßig und extrahiert Debug-Informationen zur Auswertung
   - unabhängiger Timer für Interrupts eigentlich notwendig, aber nicht mehr genutzt
   - Vorteile: geringer Overhead, faire Verteilung davon
-  - Nachteile: Mindestlaufzeit für statistische Relevant notwendig, geringere Genauigkeit, keine garantierte Aussage über ungenutzten Code
+  - Nachteile: Mindestlaufzeit für statistische Relevanz notwendig, geringere Genauigkeit, keine garantierte Aussage über ungenutzten Code
   - Anfällig für gesperrte Timer
 - Vertreter: **Google Perftools**, Oprofile, Sysprof, gprof
 - neben Software gibt es auf x86 auch Hardware-Profiler: "Performance-Counter", bspw. durch das ``perfmon``-Tool
