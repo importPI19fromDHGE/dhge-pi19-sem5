@@ -13,13 +13,14 @@ Software-Entwicklungswerkzeuge
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Software-Entwicklungswerkzeuge](#software-entwicklungswerkzeuge)
 - [Dokumentation](#dokumentation)
   - [Dokumentationsgeneratoren](#dokumentationsgeneratoren)
   - [Andere Tools](#andere-tools)
 - [Versions-Verwaltungs-Systeme](#versions-verwaltungs-systeme)
   - [Zweck von Versions-Verwaltungs-Systemen](#zweck-von-versions-verwaltungs-systemen)
   - [Aufgaben von Versions-Verwaltungs-Systemen](#aufgaben-von-versions-verwaltungs-systemen)
-  - [Andere Tools für Patches, Versionshandling usw](#andere-tools-f%C3%BCr-patches-versionshandling-usw)
+  - [Andere Tools für Patches, Versionshandling usw](#andere-tools-für-patches-versionshandling-usw)
 - [Make](#make)
   - [Makefile](#makefile)
   - [Autotools](#autotools)
@@ -28,12 +29,12 @@ Software-Entwicklungswerkzeuge
 - [Compiler](#compiler)
   - [Funktionsumfang](#funktionsumfang)
   - [Tools im Compiler-Umfeld](#tools-im-compiler-umfeld)
-    - [Tools für Objects, Libraries, Executables](#tools-f%C3%BCr-objects-libraries-executables)
+    - [Tools für Objects, Libraries, Executables](#tools-für-objects-libraries-executables)
 - [Fehlersuche und Analyse des Programm-Verhaltens](#fehlersuche-und-analyse-des-programm-verhaltens)
   - [Debugger](#debugger)
   - [ltrace und strace](#ltrace-und-strace)
-  - [Was ist der technische Auslöser eines Coredumps?](#was-ist-der-technische-ausl%C3%B6ser-eines-coredumps)
-  - [Mit welchem Programm kann ich mir alle geöffneten Files (im weitestens Sinne) anzeigen lassen?](#mit-welchem-programm-kann-ich-mir-alle-ge%C3%B6ffneten-files-im-weitestens-sinne-anzeigen-lassen)
+  - [Was ist der technische Auslöser eines Coredumps?](#was-ist-der-technische-auslöser-eines-coredumps)
+  - [Mit welchem Programm kann ich mir alle geöffneten Files (im weitestens Sinne) anzeigen lassen?](#mit-welchem-programm-kann-ich-mir-alle-geöffneten-files-im-weitestens-sinne-anzeigen-lassen)
   - [Was macht der Befehl `df`?](#was-macht-der-befehl-df)
   - [Das `/proc` Verzeichnis](#das-proc-verzeichnis)
   - [Das `/sys` Verzeichnis](#das-sys-verzeichnis)
@@ -45,6 +46,8 @@ Software-Entwicklungswerkzeuge
     - [Compiling your code with seatbelts: Address sanitizer & co.](#compiling-your-code-with-seatbelts-address-sanitizer--co)
     - [Dealing with plain off-the-shelf code: Valgrind and friends](#dealing-with-plain-off-the-shelf-code-valgrind-and-friends)
     - [Similar tools for different purposes](#similar-tools-for-different-purposes)
+    - [Statische Analyse](#statische-analyse)
+    - [Profiling und Tracing](#profiling-und-tracing)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -475,3 +478,42 @@ Vernünftige Compiler sollten folgende Features besitzen:
 ### Dealing with plain off-the-shelf code: Valgrind and friends
 
 ### Similar tools for different purposes
+
+### Statische Analyse
+
+- prüfen Quellcode
+- melden heikle Programmkonstrukte sowie beliebte Programmierfehler
+- Untersuchen Wertebereiche von Variablen
+  - stellen daraus fest, ob Zeilen harmlosen oder gefährlichen Code enthält
+- finden wenig, kosten viel; viele falsch-positive
+
+### Profiling und Tracing
+
+- Untersuchung vom zeitlichen Programmverhalten
+- Profiling: Statistiken über Programmablauf
+  - welche Funktionen wie oft aufgerufen?
+  - wie viel vom Quellcode wurde ausgeführt?
+  - in welchen Teilen des Programms wurden wie viel Prozent der Zeit verbracht?
+- Zweck von Profiling:
+  - Analyse der Laufzeitverteilung: Hotspots, Code-Optimierung
+  - Qualitätssicherung, Code-Coverage
+- Instrumentierende Profiler:
+  - Einfügen von Mess-Code für jeden "Basic Block" oder jeder Funktion
+    - Basic Block: Code-Teil ohne Sprünge oder Verzweigungen
+  - liefern exakte Zahlen
+  - hoher Overhead $\rightarrow$ verändert Zeitverhalten
+- Sampling Profiler:
+  - Code bleibt unverändert
+  - unterbricht laufendes Programm regelmäßig und extrahiert Debug-Informationen zur Auswertung
+  - unabhängiger Timer für Interrupts eigentlich notwendig, aber nicht mehr genutzt
+  - Vorteile: geringer Overhead, faire Verteilung davon
+  - Nachteile: Mindestlaufzeit für statistische Relevant notwendig, geringere Genauigkeit, keine garantierte Aussage über ungenutzten Code
+  - Anfällig für gesperrte Timer
+- Vertreter: **Google Perftools**, Oprofile, Sysprof, gprof
+- neben Software gibt es auf x86 auch Hardware-Profiler: "Performance-Counter", bspw. durch das ``perfmon``-Tool
+- Tracer suchen exakte Aussagen zu einzelnen Ereignissen
+  - warum trat ein Deadlock auf?
+  - warum wurde eine Echtzeit-Anforderung nicht eingehalten?
+  - loggt bestimmte Ereignisse mit genauem Timestamp
+  - schreibt Logs in Puffer, um I/O zu vermeiden
+  - Vertreter: LTTng
