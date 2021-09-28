@@ -113,7 +113,7 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 - Teile des Marketings: Preis (Kontrahierungspolitik), Verteilung (Distribution), Produktpolitik, Kommunikation
 - Lean Management: flache Hierarchie
 
-## Management Methoden
+## Allgemeine Management Methoden
 
 - Effektivität (*Ist die Maßnahme zielführend?*) und Effizienz (Aufwand/Nutzen-Verhältnis)
   - wichtig für einheitliche Planungsmethoden
@@ -394,7 +394,7 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 
 - **Fachausschuss:** Kontrollorgan zur fachlichen Beurteilung der erbrachten Leistung (quantitative und qualitative Beurteilung) - vergleichbar mit einer Stabstelle
 - **Lenkungskollegium:** Koordination und Unterstützung (besonders für finanzielle und materielle Bedürfnisse des Projektteams)
-- **Lenkungsausschuss:** Schnittstelle zwischen FK
+- **Lenkungsausschuss:** Schnittstelle zwischen Führungskräften
 
 $\rightarrow$ können vom Projektleiter als Unterstützer angefordert werden, für Dinge die das Team nicht selbst ausführen kann
 $\rightarrow$ hat der Projektleiter diese Dinge zur Verfügung, sinkt das Risiko, dass das Projekt scheitert
@@ -489,6 +489,7 @@ $\rightarrow$ hat der Projektleiter diese Dinge zur Verfügung, sinkt das Risiko
 - Matrix-Projekt-Organisation
   - eine der Geschäftsleitung direkt unterstellte Projektgruppe
   - greift auf die Organisation zu
+- Organisationsformen können bei Bedarf auch gemischt werden
 
 #### reine Projektorganisation
 
@@ -506,3 +507,189 @@ $\rightarrow$ hat der Projektleiter diese Dinge zur Verfügung, sinkt das Risiko
   - gutes Kosten-Nutzen Verhältnis durch die Auswahl der notwendigen Bereiche
 
 #### Matrix-Projektorganisation
+
+- basiert auf dem Mehrliniensystem (Matrix)
+- Projektleiter ist in die Struktur direkt integriert
+- PL holt sich MA aus allen Bereichen, in Vollzeit, sind dem PL direkt unterstellt
+- **Vorteile:**
+  - feste Projektteams, sind bereits eingespielt
+  - interne und externe Projekte können durchgeführt werden
+- **Nachteile:**
+  - Betriebsblindheit
+  - Innovation *kann* nachlassen
+  - kostenaufwändig (da Projektleiter Geld kostet)
+
+#### Linien-Projektorganisation
+
+- basiert auf dem Einliniensystem
+- ein Projekt ist einer Abteilung untergeordnet
+- bei abteilungsübergreifenden Projekten muss das Projekt geteilt werden
+  - eine Schnittstelle wird benötigt $\rightarrow$ Lenkungsausschuss
+  - in dieser Komplexität nicht in der Klausur gefragt
+
+### Einfluss auf die Wahl der Projektorganisation
+
+- Größe des Projekts
+- Dauer des Projekts
+- Komplexität des Projekts
+- Zusammensetzung des Projektteams (intern/extern-Mix)
+- Bedeutung für das Unternehmen
+- Folie 52 ist informativ!
+
+## Organisation-Zusammenfassung
+
+- Folie 53-54
+
+# Management Methoden
+
+## Projektplanung
+
+### Resourcennutzung
+
+- Einheitliche Planungsmethoden
+  - Herstellen der Vergleichbarkeit
+  - Kommunikation
+- Einheitliche Planungsstandards
+  - Qualitätssicherung
+  - Abrechnung
+- Nutzung geeigneter Projektsoftware
+  - Effizienz
+  - Handswerkszeug zur Bearbeitung der Daten
+- Nutzung von Projekterfahrung
+  - Risikominimierung
+  - Effizenz
+  - KVP
+
+### Problemstellung der Inhalte
+
+> Achtung: Die Felder sind noch komplexer miteinander verknüpft, siehe Folie 56
+
+- **Planungsinhalte**
+  - **Aufgaben**
+    - Lösungs-Konzepte
+    - Projekt-Struktur
+    - Tailoring
+    - Projekt-Prozess
+  - **Personal**
+    - Quantitativ
+    - Qualitativ
+    - Einsatz
+  - **Termin**
+    - Aufgaben
+    - Verfahren (Prozess)
+    - Vergleich
+  - **Ergänzende Planung**
+    - MR
+    - FR
+    - Dokumentation
+    - Qualität
+  - **Planungsergebnisse**
+    - Projektplan
+    - Projektantrag
+    - Projektauftrag
+    - Projektvergabe
+    - Förderung
+
+### Aufgaben der Planungsmethoden
+
+- Lösung
+  - Phasen-Konzepte (Wertanalyse, REFA 6-Stufen-Methode, ...)
+- Struktur
+  - Aufbau der Organisation nach Aufgaben
+- Tailoring
+  - Analyse der Aufgaben
+  - Ordnung und Syntese der Aufgaben
+- Prozess
+  - Finden und Herstellen der
+  - **HIER FEHLT NOCH WAS**
+
+### Planungsmethoden: Termin
+
+> Achtung: Die Felder sind noch komplexer miteinander verknüpft, siehe Folie 56
+
+- Terminplan
+  - Vorgänge
+    - Welche Vorgänge sollen durchgeführt werden?
+  - Abläufe
+    - Wie ist die Kausalität der Vorgänge?
+  - Dauer der Vorgänge
+    - Welche Dauer haben die Vorgänge?
+    - Welches ist die Gesamtdauer?
+    - Welche Zeitabschnitte werden benötigt (Meilensteine)?
+- FAZ: Frühstmöglicher-Anfangs-Zustand
+- FEX: Frühstmöglicher-End-Zustand
+- SAZ: Spätestmöglicher-Anfangs-Zustand
+- SEZ: Frühstmöglicher-End-Zustand
+- Differenz $\rightarrow$ Puffer
+
+### Planungsmethoden Ergänzung
+
+- Kapital
+  - Eigenkapital/Fremdkapital
+  - kurzfristig/langfristig
+- Material
+  - Rohstoffe ...
+  - Lizenzen
+- Dokumentation
+  - Wissensmanagement
+  - Erfüllung
+- Qualität
+  - Nachhaltigkeit
+  - Präzision
+
+### Planungsergebnis: Darstellung des Projektes
+
+- Projektplan
+- Planungsbericht
+- Projektantrag
+- Projektauftrag
+- Projektvergabe
+- Fördermittelantrag
+
+### Elemente der Projektfindung/Risikobetrachtung
+
+- für die Phase der Zielbildung $\rightarrow$ aktive oder reaktive Prozesse
+- für die Problemanalyse $\rightarrow$ Ishikawa, FMEA, ...
+- für Alternativen $\rightarrow$ Kreativitätstechniken - Brainstorming, 6 Hüte von de Bono, Morphologischer Kasten, Mindmapping, ...
+- für die Prognose $\rightarrow$ Szenario-Analyse, Extrapolation
+- für die Bewertung $\rightarrow$ Nutzwertanalyse, Kosten-/Nutzenrechnung, BSC (Balance-Score-Card)
+
+> Folie 65-69 ist informativ!
+
+- **argumentatatives Auswahlverfahren:** pro und kontra
+- **F/E-Bewertungsverfahren:** Forschung und Entwicklung
+
+**Achtung:**
+
+- in der Praxis werden subjektive Verfahren, wie die folgenden vorgezogen:
+  - Schätzungen von Außendienstmitarbeitern oder Befragungen
+  - statistisch-mathematische Verfahren - Trendextrapolation
+  - gleitende Durchschnitte
+  - Regressionsanalysen
+- Mathematische Prognosetechniken finden äußerst zurückhaltende Verwendung, es werden einfachere Methoden bevorzugt
+  - Netzplantechnik
+  - finanzmathematische Verfahren (siehe betriebliche Planungsprozesse)
+    - Zinsmodelle
+    - Kosten/Nutzen-Rechnung
+    - ROI
+  - spezielle Verfahren der Lager-und Transportoptimierung (JIT, JIS) eingesetzt
+
+## Phasen des Projektes
+
+### Projektablaufplanung
+
+- **Start**
+  - Kick off, Veröffentlichung
+  - Information aller betroffenen Mitarbeiter
+- **Definition**
+  - Ziel und Aufgabe definieren (SMART, 5-W-Regel)
+  - Muss-, Soll-, Kann-Ziele festlegen
+- **Planung**
+  - Koordination, Entscheidung zur Durchführung
+  - Überprüfung der Vollständigkeit aller Informationen
+- **Umsetzung**
+  - Realiserung der Arbeiten
+  - Controlling der Vorgänge und Meilensteine
+- **Bewertung**
+  - Abrechnung der Arbeiten, Dokumentation
+  - Nutzen, Aufwand, Verbesserungen, ...
