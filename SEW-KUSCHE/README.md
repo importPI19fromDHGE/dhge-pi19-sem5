@@ -481,7 +481,7 @@ Vernünftige Compiler sollten folgende Features besitzen:
 ### Statische Analyse
 
 - prüfen Quellcode
-- melden heikle Programmkonstrukte sowie beliebte Programmierfehler
+- melden heikle Programmkonstrukte, "gefährliche" Library-Calls, sowie beliebte Programmierfehler
 - Untersuchen Wertebereiche von Variablen
   - stellen daraus fest, ob Zeilen harmlosen oder gefährlichen Code enthält
 - finden wenig, kosten viel; viele Falsch-positive
@@ -493,8 +493,11 @@ Vernünftige Compiler sollten folgende Features besitzen:
   - welche Funktionen wie oft aufgerufen?
   - wie viel vom Quellcode wurde ausgeführt?
   - in welchen Teilen des Programms wurden wie viel Prozent der Zeit verbracht?
+  - welche `if`-Zweige werden nie aufgerufen?
 - Zweck von Profiling:
-  - Analyse der Laufzeitverteilung: Hotspots, Code-Optimierung
+  - Analyse der Laufzeitverteilung: Hotspots, Code-Optimierung (wo lohnt sie sich am meisten?)
+  - Vergleichen verschiedener Compiler-Parameter
+  - falsche Annahme über den typischen Input oder die Datenmenge verhindern
   - Qualitätssicherung, Code-Coverage
 - Instrumentierende Profiler:
   - Einfügen von Mess-Code für jeden "Basic Block" oder jeder Funktion
@@ -515,4 +518,5 @@ Vernünftige Compiler sollten folgende Features besitzen:
   - warum wurde eine Echtzeit-Anforderung nicht eingehalten?
   - loggt bestimmte Ereignisse mit genauem Timestamp
   - schreibt Logs in Puffer, um I/O zu vermeiden
+  - Daten können i.d.R. grafisch als Zeitdiagramm dargestellt werden
   - Vertreter: LTTng
