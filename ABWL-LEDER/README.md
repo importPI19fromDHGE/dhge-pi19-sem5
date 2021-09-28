@@ -89,6 +89,8 @@ Projektmanagement
 - Welche Faktoren führen zu Erfolg / Misserfolg?
 - Beispielaufgabe in [Integration in die bestehende Unternehmensorganisation](#integration-in-die-bestehende-unternehmensorganisation)
 - ERP-System (Enterprise-Resource-Planning-System), was ist das? (System zur Abrechnung und Steuerung eines Unternehmens, Bsp.: SAP)
+- Aufgaben eines Projektleiters
+- Loops in Projektmanagement Methoden
 
 # Grundlagen
 
@@ -693,3 +695,101 @@ $\rightarrow$ hat der Projektleiter diese Dinge zur Verfügung, sinkt das Risiko
 - **Bewertung**
   - Abrechnung der Arbeiten, Dokumentation
   - Nutzen, Aufwand, Verbesserungen, ...
+
+### Definitionsphase - Was wollen wir erreichen? - Stakeholder-Analyse
+
+Herstellen eines Mehrheitsinteresses aller Beteiligten und am Projekt Interessierten
+
+**Entscheidung zum Projekt:**
+
+- Eigentümer
+- Staat/Gesellschaft
+- Kunden
+- Fremd-Kapitalgeber
+- Konkurrenz
+- Lieferanten
+- Arbeitnehmer
+- Unternehmensleitung
+
+#### Zielentwicklung
+
+- **Drei Dimensionen der Zielentwicklung:**
+  - Termin, bis wann?
+  - Kosten/Ausmaß, Wie viel?
+  - Sache/Content, was?
+- If you can't measure it, you can't manage it
+- nach SMART entwickeln
+- Kreativtechniken erstellen einen Zielkatalog
+- Selektion mittels Entscheidungstechniken (Filterung): Muss, Soll, Kann Ziele
+
+#### Technisches Risiko
+
+- Quellen
+  - technisches, finanzielles, rechtliches, personelles, Risiko
+  - sozialer Bereich
+- Faktoren
+  - Personalprobleme
+  - Kostenentwicklung
+  - Gesetzgebung
+  - Neue Technik/Technologie
+  - Umweltstandards
+
+#### Strukturplanung
+
+- Zusammenfassung aller Entscheidungen der vorangegangen Schritte
+- Zusammenfassung von Teilzielen/Bestandteilen/Vorgängen zu Meilensteinen
+
+#### Terminplanung
+
+- Erstellen einer Übersicht der Arbeitspakete (AP)
+  - Vorgänger
+  - Nachfolger
+  - Parallelprozess
+  - Abhängigkeiten
+
+### Umsetzungsphase
+
+Der Projektleiter ist während der Durchführung des Projektes Vorgesetzter des Projektteams und wendet:
+
+- Führungsarten (Aufgabe, Ziel und Motivation)
+- Führungsstile (autoritär, kooperativ, Lazy-Fair)
+- Führungstechniken (Management by question, Management by objectives, Management by deligation)
+
+zur Erfüllung der Aufgabe an.
+
+## SCRUM
+
+siehe [Systemanalyse Semester 3](https://github.com/importPI19fromDHGE/dhge-pi19-sem3/tree/main/SWE-KASCHE#scrum)
+
+## Loops in Projektmanagement Methoden
+
+- Schnittstellenübereinstimmung ist wichtig
+
+## Vorraussetzung des Projektteams
+
+- ausreichend Personal (keine Überlastung)
+  - werden sonst krank, Qualität/Quantität leiden oder verlassen das Unternehmen
+- exzellentes Betriebsklima
+  - faire Bezahlung
+  - Förderung der Persönlichen Entwicklung
+  - Anerkennung und Integration
+  - Work-Life-Balance
+- exzellente Führung
+- jahrelange Zusammenarbeit
+  - Erfahrung
+
+# Controlling
+
+... ist eine interne Dienstleistung, für das Unternehmen.
+
+## Projeksteuerung durch Controlling
+
+- **Projektcontrolling:**
+  - Projektplanung
+  - Projektkontrolle
+  - Information/Dokumentation
+  - Projektsteuerung
+
+## Berichtswesen im Controlling Prozess
+
+- für jemanden (Kunden, für das Unternehmen (Wissensmanagement), Geschäftsberichte für Aktionäre etc.) wird etwas dokumentiert
