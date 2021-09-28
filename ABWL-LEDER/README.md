@@ -85,6 +85,10 @@ Projektmanagement
 - Brainwriting nach 635 Methode
 - Kompetenz kann "etwas können" oder "etwas dürfen" bedeuten, aus dem Kontext deuten können!
 - Knoten-Netzplan (Ablauf von Projekten) berechnen können (!!!)
+- Institutionen (Projektentscheidung) nennen und beschreiben können
+- Welche Faktoren führen zu Erfolg / Misserfolg?
+- Beispielaufgabe in [Integration in die bestehende Unternehmensorganisation](#integration-in-die-bestehende-unternehmensorganisation)
+- ERP-System (Enterprise-Resource-Planning-System), was ist das? (System zur Abrechnung und Steuerung eines Unternehmens, Bsp.: SAP)
 
 # Grundlagen
 
@@ -380,8 +384,125 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 - Formelle Projektdokumentation
 - Daten, die während des Projekts erhoben wurden, aufschreiben
 
-- Auftraggeber wendet sich an den Projektleiter
+- Auftraggeber (intern oder extern) wendet sich an den Projektleiter
 - Projektleiter ist für das gesamte Projekt verantwortlich
-- Teile des Projekts werden von Projekt-Managern bearbeitet
+- Teile des Projekts werden von Projekt-Managern bearbeitet (bei größeren Projekten, bei kleineren kann diese Zwischenstufe weggelassen werden)
 - den Projektmanagern sind jeweils Projekt-Mitarbeiter untergeordnet
 - $\rightarrow$ Folie 39: klassisches Einliniensystem
+
+#### Projektentscheidung: Institutionen
+
+- **Fachausschuss:** Kontrollorgan zur fachlichen Beurteilung der erbrachten Leistung (quantitative und qualitative Beurteilung) - vergleichbar mit einer Stabstelle
+- **Lenkungskollegium:** Koordination und Unterstützung (besonders für finanzielle und materielle Bedürfnisse des Projektteams)
+- **Lenkungsausschuss:** Schnittstelle zwischen FK
+
+$\rightarrow$ können vom Projektleiter als Unterstützer angefordert werden, für Dinge die das Team nicht selbst ausführen kann
+$\rightarrow$ hat der Projektleiter diese Dinge zur Verfügung, sinkt das Risiko, dass das Projekt scheitert
+
+- "Nennen und erläutern Sie..." $\rightarrow$ Tabelle machen!
+
+| Institution       | Beschreibung |
+| ----------------- | ------------ |
+| Fachausschuss     | ...          |
+| Lenkungskollegium | ...          |
+| Lenkungsauschuss  | ...          |
+
+## Faktoren für die Entwicklung eines Projekts
+
+- **Erfolg:**
+  - Förderung durch das Topmanagement
+  - "gutes" Projektteam (Mitarbeiter müssen die üblichen Anforderungen erfüllen)
+  - Einsatz der Methoden (Zeit, materielle und personelle Potentiale)
+- **Misserfolg:**
+  - Konflikte innerhalb und außerhalb des Projektteams (Ursache - Führung)
+  - Zieländerungen während des laufenden Projektes
+  - Führungskompetenz des Projektleiters
+  - Erfolgsdruck
+
+## Inhalte eines guten Projektteams
+
+> Hier ist die Reihenfolge zu beachten
+
+1. Fachliche Kompetenz aller Beteiligten
+2. Führungskompetenz der verantwortlichen Leiter
+3. Flache Strukturen (Einliniensystem mit wenig Vorgesetzten)
+4. Kenntnisse zum Stärken-Schwächen-Profil des Einzelnen
+5. Soft-Skills aller Beteiligten zur Zusammenarbeit
+
+### Unterschied zwischen Leiten und Führen
+
+- **Leiten:** Verwaltungsaufgabe (Prüfen, sind alle Parameter erfüllt?)
+- **Führen:** aktiver Prozess (zielgerichtet Einfluss nehmen, auf die Erfüllung einer Aufgabe / eines Ziels)
+
+## Spannungsdreieck
+
+```text
+    ┏━━━━━━━━┓
+    ┃Qualität┃
+    ┗━━━━━━━━┛
+        │
+    ┏━━━━━━━┓
+    ┃Projekt┃
+    ┗━━━━━━━┛
+    ╱       ╲
+┏━━━━┓    ┏━━━━━━┓
+┃Zeit┃    ┃Kosten┃
+┗━━━━┛    ┗━━━━━━┛
+```
+
+- Kosten: Einsatz und Verfügung von Kapital
+
+## Zusammensetzung eines Projektteams
+
+- **Primär:** auf den Kriterien des "guten Teams"
+- **Sekundär:**
+  - in wie weit externe und interne Experten eingesetzt werden
+  - Arbeitsweise auf Basis der Arbeitszeitverteilung (Vollzeit - Ausschließlich für das Projekt **oder** Teilzeit neben der normalen Arbeit für das Projekt gearbeitet wird)
+- **Job Enrichment:** ein MA arbeitet Teilzeit im Projekt (weil der MA bspw. mit seiner eigentlichen Tätigkeit schneller fertig ist, als andere)
+- mehr Leistung muss anerkannt werden
+
+## Integration in die bestehende Unternehmensorganisation
+
+- Reine Projektorganisation - Funktionalorganisation
+- Stab-Projektorganisation
+- Matrix-Projektorganisation
+- Linien-Projektorganisation
+
+> Aufgabe: Erläutern Sie anhand der sich ergebenden Vor- und Nachteile der einzelnen Formen und ihrer Kenntnisse aus Betriebsorganisation, Integrationsformen eines Projekts.
+
+- Stab-, Matrix- und Linien-Organisation beschäftigen sich nach Notwendigkeit mit Projekten
+
+### Kleiner Daten-Exkurs
+
+- in Unternehmen fallen **immer** Daten an
+  - Data-Mining
+  - je besser das ERP-System ist, desto besser können die Daten aufbereitet werden $\rightarrow$ bessere Entscheidungen können gefällt werden
+
+### Aufbauorganisation
+
+- Reine Projektgruppe
+  - teilautonome Gruppen
+- Linien-Projektgruppe
+  - innerhalb der Organisation direkt unterstellt
+- Stabs-Projekt-Organisation
+  - ein Koordinator greift auf meist Teilzeit festgelegte MA zu
+- Matrix-Projekt-Organisation
+  - eine der Geschäftsleitung direkt unterstellte Projektgruppe
+  - greift auf die Organisation zu
+
+#### reine Projektorganisation
+
+- organisiert nach der Spartenorganisation
+- Objekte der Organisation $\rightarrow$ Projekte
+- Sparte = Projekt
+
+#### Stabsprojektorganisation
+
+- basiert auf dem Stabsliniensystem
+- **Nachteile:**
+  - Notwendigkeit einer klaren Aufgabenteilung
+- **Vorteile:**
+  - hohe Flexibilität bei der Gestaltung von Projekten
+  - gutes Kosten-Nutzen Verhältnis durch die Auswahl der notwendigen Bereiche
+
+#### Matrix-Projektorganisation
