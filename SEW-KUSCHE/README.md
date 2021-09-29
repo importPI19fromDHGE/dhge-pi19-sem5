@@ -13,13 +13,14 @@ Software-Entwicklungswerkzeuge
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Software-Entwicklungswerkzeuge](#software-entwicklungswerkzeuge)
 - [Dokumentation](#dokumentation)
   - [Dokumentationsgeneratoren](#dokumentationsgeneratoren)
   - [Andere Tools](#andere-tools)
 - [Versions-Verwaltungs-Systeme](#versions-verwaltungs-systeme)
   - [Zweck von Versions-Verwaltungs-Systemen](#zweck-von-versions-verwaltungs-systemen)
   - [Aufgaben von Versions-Verwaltungs-Systemen](#aufgaben-von-versions-verwaltungs-systemen)
-  - [Andere Tools für Patches, Versionshandling usw](#andere-tools-f%C3%BCr-patches-versionshandling-usw)
+  - [Andere Tools für Patches, Versionshandling usw](#andere-tools-für-patches-versionshandling-usw)
 - [Make](#make)
   - [Makefile](#makefile)
   - [Autotools](#autotools)
@@ -28,12 +29,12 @@ Software-Entwicklungswerkzeuge
 - [Compiler](#compiler)
   - [Funktionsumfang](#funktionsumfang)
   - [Tools im Compiler-Umfeld](#tools-im-compiler-umfeld)
-    - [Tools für Objects, Libraries, Executables](#tools-f%C3%BCr-objects-libraries-executables)
+    - [Tools für Objects, Libraries, Executables](#tools-für-objects-libraries-executables)
 - [Fehlersuche und Analyse des Programm-Verhaltens](#fehlersuche-und-analyse-des-programm-verhaltens)
   - [Debugger](#debugger)
   - [ltrace und strace](#ltrace-und-strace)
-  - [Was ist der technische Auslöser eines Coredumps?](#was-ist-der-technische-ausl%C3%B6ser-eines-coredumps)
-  - [Mit welchem Programm kann ich mir alle geöffneten Files (im weitestens Sinne) anzeigen lassen?](#mit-welchem-programm-kann-ich-mir-alle-ge%C3%B6ffneten-files-im-weitestens-sinne-anzeigen-lassen)
+  - [Was ist der technische Auslöser eines Coredumps?](#was-ist-der-technische-auslöser-eines-coredumps)
+  - [Mit welchem Programm kann ich mir alle geöffneten Files (im weitestens Sinne) anzeigen lassen?](#mit-welchem-programm-kann-ich-mir-alle-geöffneten-files-im-weitestens-sinne-anzeigen-lassen)
   - [Was macht der Befehl `df`?](#was-macht-der-befehl-df)
   - [Das `/proc` Verzeichnis](#das-proc-verzeichnis)
   - [Das `/sys` Verzeichnis](#das-sys-verzeichnis)
@@ -47,6 +48,16 @@ Software-Entwicklungswerkzeuge
     - [Similar tools for different purposes](#similar-tools-for-different-purposes)
     - [Statische Analyse](#statische-analyse)
     - [Profiling und Tracing](#profiling-und-tracing)
+- [Qualitätssicherung](#qualitätssicherung)
+  - [Grundlegendes](#grundlegendes)
+  - [Tests vs. Verifikation](#tests-vs-verifikation)
+  - [Black Box Test vs. White Box Test](#black-box-test-vs-white-box-test)
+  - [Modultests vs. Gesamtsystem-Tests](#modultests-vs-gesamtsystem-tests)
+  - [manuelle vs. automatische Tests](#manuelle-vs-automatische-tests)
+  - [Test-Checkliste](#test-checkliste)
+  - [GUI-Scripting](#gui-scripting)
+  - [Unit Tests](#unit-tests)
+  - [Famework-Komponenten](#famework-komponenten)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -520,3 +531,138 @@ Vernünftige Compiler sollten folgende Features besitzen:
   - schreibt Logs in Puffer, um I/O zu vermeiden
   - Daten können i.d.R. grafisch als Zeitdiagramm dargestellt werden
   - Vertreter: LTTng
+
+# Qualitätssicherung
+
+- Was gehört zr Qualität?
+  - fehlerfreiheit
+  - Robustheit: geordnete Reaktion auf Eingabefehler, Systemfehler, Stromausfälle / Abstürze; Sicherheit gegen Angriffe
+  - Stabilität: vernünftiges Hochlastverhalten, gutes Langzeitverhalten (Memory Leaks, Alterung von Datenstrukturen), Verhalten bei großen Datenmengen
+  - Einhaltung relevanter Standards
+  - Integration in andere Software
+  - Erfüllung rechtlicher Vorgaben
+  - Bedienbarkeit (Optik, Verständlichkeit von Fehlermeldungen, Übersetzungen)
+  - Administrierbarkeit (Installaiton, Updates, Rollbacks, Backups, ...)
+  - Dokumentation und Hilfe
+  - Effizienz, Performance, Skalierbarkeit
+  - Zertifizierung
+
+## Grundlegendes
+
+- Fehler pro LoC bleibt historisch konstant
+- n Module mit Korrektheitswahrscheinlichkeit ergibt `p^n` Gesamt-Korrektheits-Wahrscheinlichkeit <!--TBD MathJax-->
+- **je später ein Fehler erkannt wird, umso teurer!** $\rightarrow$ Fehler so früh wie möglich beheben
+- Vorstufen in der Entwicklung:
+  - Testbaares Design mit Modularisierung
+  - Programmierhandbuch $\rightarrow$ festlegen von Richtlinien zu Code-Konstrukten, Kommentaren usw.
+  - Qualitäts-Tools
+  - Defensive Programmierung $\rightarrow$ viele Eingabeprüfungen
+  - Einsetzen von Code-Coverage
+
+## Tests vs. Verifikation
+
+- "Tests können nur die Anwesenheit von Fehlern beweisen, nie deren Abwesenheit!"
+- für absolute Fehlerfreiheit ist ein mathematischer Beweis notwendig $\rightarrow$ **Verifikation ist der formale Beweis der Programm-Korrektheit**
+- Grundsätzliches Vorgehen:
+  - gegeben ist:
+    - formale Verifikation des Inputs: welche Bedingugnen werden erfüllt
+    - TBD
+  - Beweise für Programmvorgehen vom Anfangszustand Schritt für Schritt, welche Bedingungen für alle Daten in jedem Zustand gelten
+  - für jede Schleife muss eine "Schleifeninvariante" gefunden werden
+- in der Praxis wird Verifikation kaum verwendet
+
+## Black Box Test vs. White Box Test
+
+- Black Box Test: Code nicht bekannt
+  - testet stets Gesamtsystem
+  - verhält sich wie ein Kunde
+  - Kein gezielter Test möglich, keine Gesamt-Coverage testen
+  - keine Gefahr von Fehlern, die erst in Testumgebung entstehen
+  - keine zusätzlichen Debug-Infos
+- Code bekannt
+  - TBD
+  - Tester kennt Quellen, "erbt" Gedanken des Entwicklers, macht dieselben Fehler
+
+## Modultests vs. Gesamtsystem-Tests
+
+- Bottom-Up-Tests:
+  - Das zu testende Modul ruft nur bereits gestestete, korrekte Module auf
+  - nur das Testprogramm wird selbst geschrieben
+- Testen mit Stubs
+  - Tests nur mit isolierten Funktionen
+  - alles andere wird durch "Stubs" ersetzt $\rightarrow$ Dummys, Hilfsprogramme speziell zum testen
+
+## manuelle vs. automatische Tests
+
+- automatisierte Ausführung und Auswertung, gleich in Datenbank, oft bei Nightly Build $\rightarrow$ zuverlässiger
+- anderes ist schwer automatisierbar $\rightarrow$ händische Tests notwendig
+- automatisierte Tests berücksichtigen nur wenige Nutzerfehler
+- am Ende beides wichtig und sinnvoll
+
+## Test-Checkliste
+
+- Funktionalitäts-Tests
+- Randfälle, Stabilität, Robustheit
+- GUI-Kontrolle
+  - Software-Ergonomie
+  - Schönheitskontrolle
+  - DPI / HiDPI
+- Regressionstests
+- Doku und Hilfe
+- Installations-, Deinstallations-, Upgrade-Tests
+
+## GUI-Scripting
+
+- 2 Formen:
+  - Benutzer-Input
+  - Reaktionen auf Input
+- Simulieren via Pixel-Vergleich oder mit modifizierten Programmen via GUI-Libraries
+- 3 Aufgaben:
+  - Test des Programmes selbst
+  - Autmatisiertes Ausführen / Installieren
+  - Lasterzeugung
+
+## Unit Tests
+
+- Motivation: zeitnahe Fehlerfindung, gesamte Code-Abdeckung, genaue Lokalisierung
+- Unit-Tests sind Tests von möglichst kleine Code-Stücken (z.B. Funktionen), auf konformes Verhalten
+- laufen automatisch, erfordern Tooling
+- hoher Einmal-Aufwand, geringer laufender Aufwand
+- sind auch Regression Tests
+- Positive Nebeneffekte:
+  - Prüfung der Spezifikation
+  - Prüfung des Feinentwurfes
+- Ein Testfall pro Verhalten einer Funktion $\rightarrow$ ein Testfall pro Codefall
+- Ein Testfall für jeden bekannten Bug
+- Erstellung...
+  - zeitnah / gleichzeitig zum Code
+  - nicht durch QA $\rightarrow$ Betriebsblindheit
+- grundsätzlich als Black Box Test
+- erweitert durch White Box Tests
+- Extremfall Test-Driven Development: Tests sind Spezifikation, zuerst geschrieben
+- GUI und Multithreaded Code schlecht geeignet für Unit Tests
+- werden mit eingecheckt
+- sind isoliert, darf nur zu testende Funktion aus dem Produktivcode verwenden
+  - Aufruf von Realcode wird umgeleitet zu Stubs mit selber Schnittstelle, aber nur Simulationen
+- Stubs und Mocks haben hohen hohen Aufwand, sind ungetestet, divergieren von Realcode, z.B. bei Anpassungen der Spezifikation
+- Werkzeuge: JUnit, CUnit, CppUnit, CppTest, GoogleTest, u.v.m.
+
+## Famework-Komponenten
+
+- Test-Makros
+  - rufen zu testende Funktion auf
+  - prüfen auf Ergebnis und Nebenwirkungen
+  - protokollieren Test
+  - Ein Testmakro für einen Testfall
+- Test-Setup und Test-Teardown
+  - anlegen und aufräumen von frischen, leeren Test-Environments für jeden Test
+  - meist für mehrere Tests verwendet
+- Testverwaltung und -ausführung
+  - Jeder Test im Framework registriert
+- Hierarchie:
+  - Test-Suite: 1 pro Modul / Klasse
+    - Tests: 1 pro Funktion / Methode
+      - Testfälle: 1 pro Funktionalität
+- Auswertungs-Skript
+  - generieren Statistiken, Fehlerlisten, Unterschiede zum vorherigen Lauf
+  - speichern und präsentieren Ergebnisse
