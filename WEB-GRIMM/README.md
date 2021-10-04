@@ -154,6 +154,7 @@ Beispiel-Skelett:
   - ``<map name="NAME">``
   - in Verbindung mit ``<img usemap ...>``
   - Definition einer verweissensitiven Fläche, die mit Sprungziel verknüpft ist
+- TBD: responsive Bilder
 
 Beispiel mit ``usemap``:
 
