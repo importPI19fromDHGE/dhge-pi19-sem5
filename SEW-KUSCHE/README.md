@@ -47,6 +47,16 @@ Software-Entwicklungswerkzeuge
     - [Similar tools for different purposes](#similar-tools-for-different-purposes)
     - [Statische Analyse](#statische-analyse)
     - [Profiling und Tracing](#profiling-und-tracing)
+- [Qualitätssicherung](#qualit%C3%A4tssicherung)
+  - [Grundlegendes](#grundlegendes)
+  - [Tests vs. Verifikation](#tests-vs-verifikation)
+  - [Black Box Test vs. White Box Test](#black-box-test-vs-white-box-test)
+  - [Modultests vs. Gesamtsystem-Tests](#modultests-vs-gesamtsystem-tests)
+  - [manuelle vs. automatische Tests](#manuelle-vs-automatische-tests)
+  - [Test-Checkliste](#test-checkliste)
+  - [GUI-Scripting](#gui-scripting)
+  - [Unit Tests](#unit-tests)
+  - [Famework-Komponenten](#famework-komponenten)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -520,3 +530,142 @@ Vernünftige Compiler sollten folgende Features besitzen:
   - schreibt Logs in Puffer, um I/O zu vermeiden
   - Daten können i.d.R. grafisch als Zeitdiagramm dargestellt werden
   - Vertreter: LTTng
+
+# Qualitätssicherung
+
+- Was gehört zur Qualität?
+  - Fehlerfreiheit
+  - Robustheit: geordnete Reaktion auf Eingabefehler, Systemfehler, Stromausfälle / Abstürze; Sicherheit gegen Angriffe
+  - Stabilität: vernünftiges Hochlastverhalten, gutes Langzeitverhalten (Memory Leaks, Alterung von Datenstrukturen), Verhalten bei großen Datenmengen
+  - Einhaltung relevanter Standards
+  - Integration in andere Software
+  - Erfüllung rechtlicher Vorgaben
+  - Bedienbarkeit (Optik, Verständlichkeit von Fehlermeldungen, Übersetzungen)
+  - Administrierbarkeit (Installation, Updates, Rollbacks, Backups, ...)
+  - Dokumentation und Hilfe
+  - Effizienz, Performance, Skalierbarkeit
+  - Zertifizierung
+
+## Grundlegendes
+
+- Fehler pro LoC bleibt historisch konstant
+- $n$ Module mit Korrektheitswahrscheinlichkeit ergibt $p^n$ Gesamt-Korrektheits-Wahrscheinlichkeit
+- **je später ein Fehler erkannt wird, umso teurer!** $\rightarrow$ Fehler so früh wie möglich beheben
+- Vorstufen in der Entwicklung:
+  - Testbares Design mit Modularisierung
+  - Programmierhandbuch $\rightarrow$ Festlegen von Richtlinien zu Code-Konstrukten, Kommentaren usw.
+  - Qualitäts-Tools
+  - Defensive Programmierung $\rightarrow$ viele Eingabeprüfungen
+  - Einsetzen von Code-Coverage
+
+## Tests vs. Verifikation
+
+- *"Tests können nur die Anwesenheit von Fehlern beweisen, nie deren Abwesenheit!"*
+- für absolute Fehlerfreiheit ist ein mathematischer Beweis notwendig $\rightarrow$ **Verifikation ist der formale Beweis der Programm-Korrektheit**
+- Grundsätzliches Vorgehen:
+  - gegeben ist:
+    - formale Spezifikation des Inputs: welche Bedingungen werden erfüllt
+    - formale Spezifikation des Outputs: Bedingungen, Abhängigkeit vom Input
+    - formale Spezifikation aller verwendeten Grundfunktionen
+  - Beweise für Programmvorgehen vom Anfangszustand Schritt für Schritt, welche Bedingungen für alle Daten in jedem Zustand gelten
+  - für jede Schleife muss eine "Schleifeninvariante" gefunden werden: eine Bedingung, die vor und nach **jedem** Schleifendurchlauf gelten muss
+- in der Praxis wird Verifikation kaum verwendet
+
+## Black Box Test vs. White Box Test
+
+- **Black Box Test:** Code nicht bekannt
+  - testet stets Gesamtsystem
+  - verhält sich wie ein Kunde
+  - kein gezielter Test möglich, keine Gesamt-Coverage testen
+  - keine Gefahr von Fehlern, die erst in Testumgebung entstehen
+  - keine zusätzlichen Debug-Infos
+- **White Box Test:** Code bekannt
+  - Modultests möglich
+  - gezielte Funktionstests mithilfe eigens konstruiertem Input möglich
+  - Codeabdeckung testbar
+  - zeitaufwändiger, da Einarbeitung in Code notwendig
+  - Tester kennt Quellen, "erbt" Gedanken des Entwicklers, macht ggf. dieselben Fehler
+
+## Modultests vs. Gesamtsystem-Tests
+
+- Bottom-Up-Tests:
+  - das zu testende Modul ruft nur bereits gestestete, korrekte Module auf
+  - nur das Testprogramm wird selbst geschrieben
+- Testen mit Stubs
+  - Tests nur mit isolierten Funktionen
+  - alles andere wird durch "Stubs" ersetzt $\rightarrow$ Dummys, Hilfsprogramme speziell zum Testen
+
+## manuelle vs. automatische Tests
+
+- automatisierte Ausführung und Auswertung, gleich in Datenbank, oft bei Nightly Build $\rightarrow$ zuverlässiger
+- anderes ist schwer automatisierbar $\rightarrow$ händische Tests notwendig
+- automatisierte Tests berücksichtigen nur wenige Nutzerfehler
+- am Ende beides wichtig und sinnvoll
+
+## Test-Checkliste
+
+- Funktionalitäts-Tests
+- Randfälle, Stabilität, Robustheit
+- GUI-Kontrolle
+  - Software-Ergonomie
+  - Schönheitskontrolle
+  - DPI / HiDPI
+- Regressionstests
+- Doku und Hilfe
+- Installations-, Deinstallations-, Upgrade-Tests
+
+## GUI-Scripting
+
+- zwei Formen:
+  - Benutzer-Input
+  - Reaktionen auf Input
+- Simulieren via Pixel-Vergleich oder mit modifizierten Programmen via GUI-Libraries
+- drei Aufgaben:
+  - Test des Programmes selbst
+  - Autmatisiertes Ausführen / Installieren
+  - Lasterzeugung
+
+## Unit Tests
+
+- Motivation: zeitnahe Fehlerfindung, gesamte Code-Abdeckung, genaue Lokalisierung
+- Unit-Tests sind Tests von möglichst kleine Code-Stücken (z.B. Funktionen), auf konformes Verhalten
+- laufen automatisch, erfordern Tooling
+- hoher Einmal-Aufwand, geringer laufender Aufwand
+- sind auch Regression Tests
+- Positive Nebeneffekte:
+  - Prüfung der Spezifikation
+  - Prüfung des Feinentwurfes
+- Ein Testfall pro Verhalten einer Funktion $\rightarrow$ ein Testfall pro Codefall
+- Ein Testfall für jeden bekannten Bug
+- Erstellung...
+  - zeitnah / gleichzeitig zum Code
+  - nicht durch QA $\rightarrow$ Betriebsblindheit
+- grundsätzlich als Black Box Test
+- erweitert durch White Box Tests
+- Extremfall Test-Driven Development: Tests sind Spezifikation, werden zuerst geschrieben
+- GUI und Multithreaded Code schlecht geeignet für Unit Tests
+- werden in der Versionsverwaltung mit eingecheckt
+- sind isoliert, darf nur zu testende Funktion aus dem Produktivcode verwenden
+  - Aufruf von Realcode wird umgeleitet zu Stubs mit selber Schnittstelle, aber nur Simulationen
+- Stubs und Mocks haben hohen Aufwand, sind ungetestet, divergieren von Realcode, z.B. bei Anpassungen der Spezifikation
+- Werkzeuge: `JUnit`, `CUnit`, `CppUnit`, `CppTest`, `GoogleTest`, u.v.m.
+
+## Famework-Komponenten
+
+- Test-Makros
+  - rufen zu testende Funktion auf
+  - prüfen auf Ergebnis und Nebenwirkungen
+  - protokollieren Test
+  - ein Testmakro für einen Testfall
+- Test-Setup und Test-Teardown
+  - Anlegen und Aufräumen von frischen, leeren Test-Environments für jeden Test
+  - meist für mehrere Tests verwendet
+- Testverwaltung und -ausführung
+  - jeder Test im Framework registriert
+- Hierarchie:
+  - Test-Suite: 1 pro Modul / Klasse
+    - Tests: 1 pro Funktion / Methode
+      - Testfälle: 1 pro Funktionalität
+- Auswertungs-Skript
+  - generieren Statistiken, Fehlerlisten, Unterschiede zum vorherigen Lauf
+  - speichern und präsentieren Ergebnisse
