@@ -534,14 +534,14 @@ Vernünftige Compiler sollten folgende Features besitzen:
 # Qualitätssicherung
 
 - Was gehört zr Qualität?
-  - fehlerfreiheit
+  - Fehlerfreiheit
   - Robustheit: geordnete Reaktion auf Eingabefehler, Systemfehler, Stromausfälle / Abstürze; Sicherheit gegen Angriffe
   - Stabilität: vernünftiges Hochlastverhalten, gutes Langzeitverhalten (Memory Leaks, Alterung von Datenstrukturen), Verhalten bei großen Datenmengen
   - Einhaltung relevanter Standards
   - Integration in andere Software
   - Erfüllung rechtlicher Vorgaben
   - Bedienbarkeit (Optik, Verständlichkeit von Fehlermeldungen, Übersetzungen)
-  - Administrierbarkeit (Installaiton, Updates, Rollbacks, Backups, ...)
+  - Administrierbarkeit (Installation, Updates, Rollbacks, Backups, ...)
   - Dokumentation und Hilfe
   - Effizienz, Performance, Skalierbarkeit
   - Zertifizierung
@@ -549,18 +549,18 @@ Vernünftige Compiler sollten folgende Features besitzen:
 ## Grundlegendes
 
 - Fehler pro LoC bleibt historisch konstant
-- n Module mit Korrektheitswahrscheinlichkeit ergibt $p^n$ Gesamt-Korrektheits-Wahrscheinlichkeit
+- $n$ Module mit Korrektheitswahrscheinlichkeit ergibt $p^n$ Gesamt-Korrektheits-Wahrscheinlichkeit
 - **je später ein Fehler erkannt wird, umso teurer!** $\rightarrow$ Fehler so früh wie möglich beheben
 - Vorstufen in der Entwicklung:
-  - Testbaares Design mit Modularisierung
-  - Programmierhandbuch $\rightarrow$ festlegen von Richtlinien zu Code-Konstrukten, Kommentaren usw.
+  - Testbares Design mit Modularisierung
+  - Programmierhandbuch $\rightarrow$ Festlegen von Richtlinien zu Code-Konstrukten, Kommentaren usw.
   - Qualitäts-Tools
   - Defensive Programmierung $\rightarrow$ viele Eingabeprüfungen
   - Einsetzen von Code-Coverage
 
 ## Tests vs. Verifikation
 
-- "Tests können nur die Anwesenheit von Fehlern beweisen, nie deren Abwesenheit!"
+- *"Tests können nur die Anwesenheit von Fehlern beweisen, nie deren Abwesenheit!"*
 - für absolute Fehlerfreiheit ist ein mathematischer Beweis notwendig $\rightarrow$ **Verifikation ist der formale Beweis der Programm-Korrektheit**
 - Grundsätzliches Vorgehen:
   - gegeben ist:
@@ -573,13 +573,13 @@ Vernünftige Compiler sollten folgende Features besitzen:
 
 ## Black Box Test vs. White Box Test
 
-- Black Box Test: Code nicht bekannt
+- **Black Box Test:** Code nicht bekannt
   - testet stets Gesamtsystem
   - verhält sich wie ein Kunde
-  - Kein gezielter Test möglich, keine Gesamt-Coverage testen
+  - kein gezielter Test möglich, keine Gesamt-Coverage testen
   - keine Gefahr von Fehlern, die erst in Testumgebung entstehen
   - keine zusätzlichen Debug-Infos
-- White Box Test: Code bekannt
+- **White Box Test:** Code bekannt
   - Modultests möglich
   - gezielte Funktionstests mithilfe eigens konstruiertem Input möglich
   - Codeabdeckung testbar
@@ -589,11 +589,11 @@ Vernünftige Compiler sollten folgende Features besitzen:
 ## Modultests vs. Gesamtsystem-Tests
 
 - Bottom-Up-Tests:
-  - Das zu testende Modul ruft nur bereits gestestete, korrekte Module auf
+  - das zu testende Modul ruft nur bereits gestestete, korrekte Module auf
   - nur das Testprogramm wird selbst geschrieben
 - Testen mit Stubs
   - Tests nur mit isolierten Funktionen
-  - alles andere wird durch "Stubs" ersetzt $\rightarrow$ Dummys, Hilfsprogramme speziell zum testen
+  - alles andere wird durch "Stubs" ersetzt $\rightarrow$ Dummys, Hilfsprogramme speziell zum Testen
 
 ## manuelle vs. automatische Tests
 
@@ -616,11 +616,11 @@ Vernünftige Compiler sollten folgende Features besitzen:
 
 ## GUI-Scripting
 
-- 2 Formen:
+- zwei Formen:
   - Benutzer-Input
   - Reaktionen auf Input
 - Simulieren via Pixel-Vergleich oder mit modifizierten Programmen via GUI-Libraries
-- 3 Aufgaben:
+- drei Aufgaben:
   - Test des Programmes selbst
   - Autmatisiertes Ausführen / Installieren
   - Lasterzeugung
@@ -642,13 +642,13 @@ Vernünftige Compiler sollten folgende Features besitzen:
   - nicht durch QA $\rightarrow$ Betriebsblindheit
 - grundsätzlich als Black Box Test
 - erweitert durch White Box Tests
-- Extremfall Test-Driven Development: Tests sind Spezifikation, zuerst geschrieben
+- Extremfall Test-Driven Development: Tests sind Spezifikation, werden zuerst geschrieben
 - GUI und Multithreaded Code schlecht geeignet für Unit Tests
-- werden mit eingecheckt
+- werden in der Versionsverwaltung mit eingecheckt
 - sind isoliert, darf nur zu testende Funktion aus dem Produktivcode verwenden
   - Aufruf von Realcode wird umgeleitet zu Stubs mit selber Schnittstelle, aber nur Simulationen
-- Stubs und Mocks haben hohen hohen Aufwand, sind ungetestet, divergieren von Realcode, z.B. bei Anpassungen der Spezifikation
-- Werkzeuge: JUnit, CUnit, CppUnit, CppTest, GoogleTest, u.v.m.
+- Stubs und Mocks haben hohen Aufwand, sind ungetestet, divergieren von Realcode, z.B. bei Anpassungen der Spezifikation
+- Werkzeuge: `JUnit`, `CUnit`, `CppUnit`, `CppTest`, `GoogleTest`, u.v.m.
 
 ## Famework-Komponenten
 
@@ -656,12 +656,12 @@ Vernünftige Compiler sollten folgende Features besitzen:
   - rufen zu testende Funktion auf
   - prüfen auf Ergebnis und Nebenwirkungen
   - protokollieren Test
-  - Ein Testmakro für einen Testfall
+  - ein Testmakro für einen Testfall
 - Test-Setup und Test-Teardown
-  - anlegen und aufräumen von frischen, leeren Test-Environments für jeden Test
+  - Anlegen und Aufräumen von frischen, leeren Test-Environments für jeden Test
   - meist für mehrere Tests verwendet
 - Testverwaltung und -ausführung
-  - Jeder Test im Framework registriert
+  - jeder Test im Framework registriert
 - Hierarchie:
   - Test-Suite: 1 pro Modul / Klasse
     - Tests: 1 pro Funktion / Methode
