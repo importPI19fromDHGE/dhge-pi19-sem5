@@ -442,7 +442,6 @@ $\rightarrow$ können vom Projektleiter als Unterstützer angefordert werden, f�
 
 $\rightarrow$ hat der Projektleiter diese Dinge zur Verfügung, sinkt das Risiko, dass das Projekt scheitert
 
-
 ## Faktoren für die Entwicklung eines Projekts
 
 - **Erfolg:**
