@@ -533,7 +533,7 @@ Vernünftige Compiler sollten folgende Features besitzen:
 
 # Qualitätssicherung
 
-- Was gehört zr Qualität?
+- Was gehört zur Qualität?
   - Fehlerfreiheit
   - Robustheit: geordnete Reaktion auf Eingabefehler, Systemfehler, Stromausfälle / Abstürze; Sicherheit gegen Angriffe
   - Stabilität: vernünftiges Hochlastverhalten, gutes Langzeitverhalten (Memory Leaks, Alterung von Datenstrukturen), Verhalten bei großen Datenmengen
