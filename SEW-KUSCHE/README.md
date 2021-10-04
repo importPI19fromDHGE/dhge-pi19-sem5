@@ -564,7 +564,7 @@ Vernünftige Compiler sollten folgende Features besitzen:
 - für absolute Fehlerfreiheit ist ein mathematischer Beweis notwendig $\rightarrow$ **Verifikation ist der formale Beweis der Programm-Korrektheit**
 - Grundsätzliches Vorgehen:
   - gegeben ist:
-    - formale Spezifikation des Inputs: welche Bedingugnen werden erfüllt
+    - formale Spezifikation des Inputs: welche Bedingungen werden erfüllt
     - formale Spezifikation des Outputs: Bedingungen, Abhängigkeit vom Input
     - formale Spezifikation aller verwendeten Grundfunktionen
   - Beweise für Programmvorgehen vom Anfangszustand Schritt für Schritt, welche Bedingungen für alle Daten in jedem Zustand gelten
