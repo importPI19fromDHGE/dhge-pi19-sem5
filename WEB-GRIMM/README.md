@@ -13,8 +13,7 @@ Entwicklung von Webanwendungen
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Entwicklung von Webanwendungen](#entwicklung-von-webanwendungen)
-- [Prüfungsleistung](#prüfungsleistung)
+- [Prüfungsleistung](#pr%C3%BCfungsleistung)
 - [Geschichte des Internets](#geschichte-des-internets)
 - [Technologien](#technologien)
   - [Was ist eine Webanwendung?](#was-ist-eine-webanwendung)
@@ -26,7 +25,7 @@ Entwicklung von Webanwendungen
       - [Bilder](#bilder)
       - [Listen](#listen)
       - [Tabellen](#tabellen)
-      - [Zeilenumbrüche](#zeilenumbrüche)
+      - [Zeilenumbrüche](#zeilenumbr%C3%BCche)
       - [Formulare](#formulare)
         - [Formular-Elemente](#formular-elemente)
   - [CSS](#css)
