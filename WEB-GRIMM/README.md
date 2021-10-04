@@ -13,7 +13,8 @@ Entwicklung von Webanwendungen
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Prüfungsleistung](#pr%C3%BCfungsleistung)
+- [Entwicklung von Webanwendungen](#entwicklung-von-webanwendungen)
+- [Prüfungsleistung](#prüfungsleistung)
 - [Geschichte des Internets](#geschichte-des-internets)
 - [Technologien](#technologien)
   - [Was ist eine Webanwendung?](#was-ist-eine-webanwendung)
@@ -25,7 +26,7 @@ Entwicklung von Webanwendungen
       - [Bilder](#bilder)
       - [Listen](#listen)
       - [Tabellen](#tabellen)
-      - [Zeilenumbrüche](#zeilenumbr%C3%BCche)
+      - [Zeilenumbrüche](#zeilenumbrüche)
       - [Formulare](#formulare)
         - [Formular-Elemente](#formular-elemente)
   - [CSS](#css)
@@ -168,6 +169,7 @@ Beispiel mit ``usemap``:
 ```
 
 > Gute Services für Beispielbilder:
+>
 > - [https://via.placeholder.com/500x300](https://via.placeholder.com/300x100)
 > - [https://placekitten.com/500/300](https://placekitten.com/500/300)
 > - [https://baconmockup.com/500/300](https://baconmockup.com/500/300/)
@@ -232,7 +234,6 @@ Beispiel für Beschreibungslisten:
   - ``rowspan`` verbindet Zeilen
   - ``colgroup`` gruppiert Spalten
   - weitere Formatierung sollte mit CSS vorgenommen werden
-
 
 Beispiel Tabelle:
 
