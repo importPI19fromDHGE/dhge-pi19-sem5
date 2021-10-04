@@ -26,6 +26,8 @@ Entwicklung von Webanwendungen
       - [Listen](#listen)
       - [Tabellen](#tabellen)
       - [Zeilenumbrüche](#zeilenumbr%C3%BCche)
+      - [Formulare](#formulare)
+        - [Formular-Elemente](#formular-elemente)
   - [CSS](#css)
   - [JS](#js)
 - [PHP und Datenbanken](#php-und-datenbanken)
