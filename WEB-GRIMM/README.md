@@ -13,7 +13,8 @@ Entwicklung von Webanwendungen
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Prüfungsleistung](#pr%C3%BCfungsleistung)
+- [Entwicklung von Webanwendungen](#entwicklung-von-webanwendungen)
+- [Prüfungsleistung](#prüfungsleistung)
 - [Geschichte des Internets](#geschichte-des-internets)
 - [Technologien](#technologien)
   - [Was ist eine Webanwendung?](#was-ist-eine-webanwendung)
@@ -25,7 +26,7 @@ Entwicklung von Webanwendungen
       - [Bilder](#bilder)
       - [Listen](#listen)
       - [Tabellen](#tabellen)
-      - [Zeilenumbrüche](#zeilenumbr%C3%BCche)
+      - [Zeilenumbrüche](#zeilenumbrüche)
       - [Formulare](#formulare)
         - [Formular-Elemente](#formular-elemente)
   - [CSS](#css)
@@ -299,9 +300,9 @@ Beispiel Tabelle:
   - `fieldset` (Gruppierung)
 
 ```html
-<form action="index.html" method="post">
-  <label for="name">Name:
-    <input id="name" type="text" name="name" maxlength="20" minlength="3" required>
+<form id="bsp" name="Beispiel" action="index.html" method="post">
+  <label for="name1">Name:
+    <input id="name1" type="text" name="name" maxlength="20" minlength="3" required>
   </label>
   <label for="suchfeld">Suche:
     <input id="suchfeld" type="search" list="suchliste">
@@ -309,9 +310,45 @@ Beispiel Tabelle:
       <option value="1">HTML</option>
       <option value="2">CSS</option>
       <option value="3">JS</option>
+      <option value="4">Perl</option>
     </datalist>
   </label>
-  <!-- ToDo: Beispiel vervollständigen -->
+  <label for="alter">Alter:
+      <input type="number" id="alter" name="alter" min="0">
+  </label>
+  <br>
+    <label for="tage">Tage:
+      <input type="range" id="tage" name="Tage" min="5" max="42" step="1" value="6">
+  </label>
+  <br>
+  <label for="sturi">Studienrichtung:
+    <fieldset id="sturi">
+      <label for="pi">PI
+        <input type="radio" name="mussGleichSein" id="pi" value="1">
+      </label>
+      <label for="wi">WI
+        <input type="radio" name="mussGleichSein" id="wi" value="2">
+      </label>
+      <label for="ti">TI
+        <input type="radio" name="mussGleichSein" id="ti" value="3">
+      </label>
+  </label>
+  <br>
+    <label for="sonder">Sonderheiten:
+    <fieldset id="sonder">
+      <label for="polster">Polsterstuhl
+        <input type="checkbox" name="sonder" id="polster" value="1">
+      </label>
+      <label for="steckdose">Steckdose
+        <input type="checkbox" name="sonder" id="steckdose" value="2">
+      </label>
+      <label for="loge">Privatloge
+        <input type="checkbox" name="sonder" id="loge" value="3">
+      </label>
+  </label>
+  <label for="farbe">Wähle eine Farbe:
+    <input type="color" id="farbe" name="hintergrund">
+  </label>
 </form>
 ```
 
