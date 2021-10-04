@@ -26,6 +26,8 @@ Entwicklung von Webanwendungen
       - [Listen](#listen)
       - [Tabellen](#tabellen)
       - [Zeilenumbrüche](#zeilenumbr%C3%BCche)
+      - [Formulare](#formulare)
+      - [Formular-Elemente](#formular-elemente)
   - [CSS](#css)
   - [JS](#js)
 - [PHP und Datenbanken](#php-und-datenbanken)
@@ -151,19 +153,27 @@ Beispiel-Skelett:
   - ``<map name="NAME">``
   - in Verbindung mit ``<img usemap ...>``
   - Definition einer verweissensitiven Fläche, die mit Sprungziel verknüpft ist
+- TBD: responsive Bilder
 
 Beispiel mit ``usemap``:
 
 ```html
 <section>
   <h1>Verweissensitiv</h1>
-    <img src="bild.jpg" alt="Bild" usemap="#bild1">
+  <img src="bild.jpg" alt="Bild" usemap="#bild1">
 </section>
 
 <map name="bild1">
   <area shape="circle" coords="402,209,13" href="https://www.dhge.de" title="DHGE"><!--coords: x, y, radius-->
 </map>
 ```
+
+> Gute Services für Beispielbilder:
+>
+> - [https://via.placeholder.com/500x300](https://via.placeholder.com/300x100)
+> - [https://placekitten.com/500/300](https://placekitten.com/500/300)
+> - [https://baconmockup.com/500/300](https://baconmockup.com/500/300/)
+> - [https://placekeanu.com/500/250](https://placekeanu.com/500/250)
 
 #### Listen
 
@@ -225,13 +235,6 @@ Beispiel für Beschreibungslisten:
   - ``colgroup`` gruppiert Spalten
   - weitere Formatierung sollte mit CSS vorgenommen werden
 
-#### Zeilenumbrüche
-
-- werden erzwungen mit ``<br>``
-- Browser wird bei Leerzeichen einen Zeilenumbruch einfügen, wenn notwendig
-- ``<wbr>``: Word Break - unsichtbare Markierung, wo der Browser ggf. einen Zeilenumbruch einfügen kann
-- ``&shy;``: wie ``<wbr>``, fügt aber einen Bindestrich ein
-
 Beispiel Tabelle:
 
 ```html
@@ -256,8 +259,96 @@ Beispiel Tabelle:
     </tr>
   </tbody>
   <tfoot>
-    <tr><td colspan="3">Woche vom 20.09. bis 24.04.</td></tr>
+    <tr><td colspan="3">Woche vom 20.09. bis 26.09.</td></tr>
 </table>
+```
+
+#### Zeilenumbrüche
+
+- werden erzwungen mit ``<br>``
+- Browser wird bei Leerzeichen einen Zeilenumbruch einfügen, wenn notwendig
+- ``<wbr>``: Word Break - unsichtbare Markierung, wo der Browser ggf. einen Zeilenumbruch einfügen kann
+- ``&shy;``: wie ``<wbr>``, fügt aber einen Bindestrich ein
+
+#### Formulare
+
+- elementar für Webanwendungen $\rightarrow$ ermöglichen Nutzerinteraktion durch Verarbeitung von Eingaben
+- standardisiertes Mittel zur Erfassung, Ansicht und Aufbereitung von Daten die zur Verarbeitung an einen Webserver gesendet werden
+- besonderer Wert ist auf Zugänglichkeit und Benutzerfreundlichkeit zu legen
+- Tag: `form` mit Attributen:
+  - `action`: welches Dokument bei submit die Daten verarbeitet
+  - `id`: eindeutige Bezeichnung des Formulars
+  - `method`: `POST` (Parameter im `http`-Header) oder `GET` (Parameter in der URI)
+  - `name`: Name des Formulars für das auswertende Programm
+  - `accept-charset`: Zeichenkodierung
+  - `target`: Zielfenster
+  - `autocomplete`: Autovervollständigung aktivieren/deaktivieren
+  - `novalidate`: nicht auf Vollständigkeit prüfen (Plausibilität)
+
+#### Formular-Elemente
+
+- `label` (Beschriftung)
+- `input` (Eingabefeld)
+  - Attribute: `name`, `maxlength`, `minlength`, `required`, `pattern`, `value`, `placeholder`, ...
+    - `type` = `text`, `search`, `password`, `tel`, `url`, `email`, `number` (mit `min`, `max`, `step`), `range`
+- `textarea` (mehrzeiliges Textfeld)
+- `button` (Button, Schalter)
+- `select` (Auswahllisten)
+  - `option` (Auswahloption)
+  - `optgroup` (verschachtelte Auswahllisten)
+  - `fieldset` (Gruppierung)
+
+```html
+<form id="bsp" name="Beispiel" action="index.html" method="post">
+  <label for="name1">Name:
+    <input id="name1" type="text" name="name" maxlength="20" minlength="3" required>
+  </label>
+  <label for="suchfeld">Suche:
+    <input id="suchfeld" type="search" list="suchliste">
+    <datalist id="suchliste">
+      <option value="1">HTML</option>
+      <option value="2">CSS</option>
+      <option value="3">JS</option>
+      <option value="4">Perl</option>
+    </datalist>
+  </label>
+  <label for="alter">Alter:
+      <input type="number" id="alter" name="alter" min="0">
+  </label>
+  <br>
+    <label for="tage">Tage:
+      <input type="range" id="tage" name="Tage" min="5" max="42" step="1" value="6">
+  </label>
+  <br>
+  <label for="sturi">Studienrichtung:
+    <fieldset id="sturi">
+      <label for="pi">PI
+        <input type="radio" name="mussGleichSein" id="pi" value="1">
+      </label>
+      <label for="wi">WI
+        <input type="radio" name="mussGleichSein" id="wi" value="2">
+      </label>
+      <label for="ti">TI
+        <input type="radio" name="mussGleichSein" id="ti" value="3">
+      </label>
+  </label>
+  <br>
+    <label for="sonder">Sonderheiten:
+    <fieldset id="sonder">
+      <label for="polster">Polsterstuhl
+        <input type="checkbox" name="sonder" id="polster" value="1">
+      </label>
+      <label for="steckdose">Steckdose
+        <input type="checkbox" name="sonder" id="steckdose" value="2">
+      </label>
+      <label for="loge">Privatloge
+        <input type="checkbox" name="sonder" id="loge" value="3">
+      </label>
+  </label>
+  <label for="farbe">Wähle eine Farbe:
+    <input type="color" id="farbe" name="hintergrund">
+  </label>
+</form>
 ```
 
 ## CSS
