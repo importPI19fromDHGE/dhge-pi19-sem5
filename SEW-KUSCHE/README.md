@@ -550,7 +550,7 @@ Vernünftige Compiler sollten folgende Features besitzen:
 ## Grundlegendes
 
 - Fehler pro LoC bleibt historisch konstant
-- n Module mit Korrektheitswahrscheinlichkeit ergibt `p^n` Gesamt-Korrektheits-Wahrscheinlichkeit <!--TBD MathJax-->
+- n Module mit Korrektheitswahrscheinlichkeit ergibt $p^n$ Gesamt-Korrektheits-Wahrscheinlichkeit
 - **je später ein Fehler erkannt wird, umso teurer!** $\rightarrow$ Fehler so früh wie möglich beheben
 - Vorstufen in der Entwicklung:
   - Testbaares Design mit Modularisierung
@@ -565,10 +565,11 @@ Vernünftige Compiler sollten folgende Features besitzen:
 - für absolute Fehlerfreiheit ist ein mathematischer Beweis notwendig $\rightarrow$ **Verifikation ist der formale Beweis der Programm-Korrektheit**
 - Grundsätzliches Vorgehen:
   - gegeben ist:
-    - formale Verifikation des Inputs: welche Bedingugnen werden erfüllt
-    - TBD
+    - formale Spezifikation des Inputs: welche Bedingugnen werden erfüllt
+    - formale Spezifikation des Outputs: Bedingungen, Abhängigkeit vom Input
+    - formale Spezifikation aller verwendeten Grundfunktionen
   - Beweise für Programmvorgehen vom Anfangszustand Schritt für Schritt, welche Bedingungen für alle Daten in jedem Zustand gelten
-  - für jede Schleife muss eine "Schleifeninvariante" gefunden werden
+  - für jede Schleife muss eine "Schleifeninvariante" gefunden werden: eine Bedingung, die vor und nach **jedem** Schleifendurchlauf gelten muss
 - in der Praxis wird Verifikation kaum verwendet
 
 ## Black Box Test vs. White Box Test
@@ -579,9 +580,12 @@ Vernünftige Compiler sollten folgende Features besitzen:
   - Kein gezielter Test möglich, keine Gesamt-Coverage testen
   - keine Gefahr von Fehlern, die erst in Testumgebung entstehen
   - keine zusätzlichen Debug-Infos
-- Code bekannt
-  - TBD
-  - Tester kennt Quellen, "erbt" Gedanken des Entwicklers, macht dieselben Fehler
+- White Box Test: Code bekannt
+  - Modultests möglich
+  - gezielte Funktionstests mithilfe eigens konstruiertem Input möglich
+  - Codeabdeckung testbar
+  - zeitaufwändiger, da Einarbeitung in Code notwendig
+  - Tester kennt Quellen, "erbt" Gedanken des Entwicklers, macht ggf. dieselben Fehler
 
 ## Modultests vs. Gesamtsystem-Tests
 
