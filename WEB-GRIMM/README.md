@@ -291,7 +291,7 @@ Beispiel Tabelle:
 - `input` (Eingabefeld)
   - Attribute: `name`, `maxlength`, `minlength`, `required`, `pattern`, `value`, `placeholder`, ...
     - `type` = `text`, `search`, `password`, `tel`, `url`, `email`, `number` (mit `min`, `max`, `step`), `range`
-- `textare` (mehrzeiliges Textfeld)
+- `textarea` (mehrzeiliges Textfeld)
 - `button` (Button, Schalter)
 - `select` (Auswahllisten)
   - `option` (Auswahloption)
