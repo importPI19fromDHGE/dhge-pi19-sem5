@@ -432,20 +432,16 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 
 #### Projektentscheidung: Institutionen
 
+<!-- Fachausschuss, Lenkungsausschuss, Lenkungskollegium müssen als Begriffe für die Klausur sitzen -->
+
 - **Fachausschuss:** Kontrollorgan zur fachlichen Beurteilung der erbrachten Leistung (quantitative und qualitative Beurteilung) - vergleichbar mit einer Stabstelle
 - **Lenkungskollegium:** Koordination und Unterstützung (besonders für finanzielle und materielle Bedürfnisse des Projektteams)
 - **Lenkungsausschuss:** Schnittstelle zwischen Führungskräften
 
 $\rightarrow$ können vom Projektleiter als Unterstützer angefordert werden, für Dinge die das Team nicht selbst ausführen kann
+
 $\rightarrow$ hat der Projektleiter diese Dinge zur Verfügung, sinkt das Risiko, dass das Projekt scheitert
 
-- "Nennen und erläutern Sie..." $\rightarrow$ Tabelle machen!
-
-| Institution       | Beschreibung |
-| ----------------- | ------------ |
-| Fachausschuss     | ...          |
-| Lenkungskollegium | ...          |
-| Lenkungsauschuss  | ...          |
 
 ## Faktoren für die Entwicklung eines Projekts
 
@@ -574,11 +570,12 @@ $\rightarrow$ hat der Projektleiter diese Dinge zur Verfügung, sinkt das Risiko
 - Komplexität des Projekts
 - Zusammensetzung des Projektteams (intern/extern-Mix)
 - Bedeutung für das Unternehmen
-- Folie 52 ist informativ!
+
+> Folie 52 ist informativ!
 
 ## Organisation-Zusammenfassung
 
-- Folie 53-54
+> Folie 53-54
 
 # Management Methoden
 
@@ -630,6 +627,8 @@ $\rightarrow$ hat der Projektleiter diese Dinge zur Verfügung, sinkt das Risiko
     - Projektvergabe
     - Förderung
 
+<!-- Klausur: fünf Planungsinhalte erklären können -->
+
 ### Aufgaben der Planungsmethoden
 
 - Lösung
@@ -640,8 +639,8 @@ $\rightarrow$ hat der Projektleiter diese Dinge zur Verfügung, sinkt das Risiko
   - Analyse der Aufgaben
   - Ordnung und Syntese der Aufgaben
 - Prozess
-  - Finden und Herstellen der
-  - **HIER FEHLT NOCH WAS**
+  - Finden und Herstellen der Kausalität von Aufgaben
+  - Zuordnung von Zusammenhängen
 
 ### Planungsmethoden: Termin
 
@@ -664,18 +663,10 @@ $\rightarrow$ hat der Projektleiter diese Dinge zur Verfügung, sinkt das Risiko
 
 ### Planungsmethoden Ergänzung
 
-- Kapital
-  - Eigenkapital/Fremdkapital
-  - kurzfristig/langfristig
-- Material
-  - Rohstoffe ...
-  - Lizenzen
-- Dokumentation
-  - Wissensmanagement
-  - Erfüllung
-- Qualität
-  - Nachhaltigkeit
-  - Präzision
+- Kapital: Eigenkapital, Fremdkapital (kurzfristig/langfristig)
+- Material: Rohstoffe, Lizenzen, ...
+- Dokumentation: Wissensmanagement, Erfüllung
+- Qualität: Nachhaltigkeit, Präzision
 
 ### Planungsergebnis: Darstellung des Projektes
 
@@ -715,6 +706,8 @@ $\rightarrow$ hat der Projektleiter diese Dinge zur Verfügung, sinkt das Risiko
   - spezielle Verfahren der Lager-und Transportoptimierung (JIT, JIS) eingesetzt
 
 ## Phasen des Projektes
+
+<!-- Hinweis: Phasen eines Projektes sollten in der Klausur sitzen! -->
 
 ### Projektablaufplanung
 
@@ -790,14 +783,14 @@ Herstellen eines Mehrheitsinteresses aller Beteiligten und am Projekt Interessie
 Der Projektleiter ist während der Durchführung des Projektes Vorgesetzter des Projektteams und wendet:
 
 - Führungsarten (Aufgabe, Ziel und Motivation)
-- Führungsstile (autoritär, kooperativ, Lazy-Fair)
+- Führungsstile (autoritär, kooperativ, Laissez-faire)
 - Führungstechniken (Management by question, Management by objectives, Management by deligation)
 
 zur Erfüllung der Aufgabe an.
 
 ## SCRUM
 
-siehe [Systemanalyse Semester 3](https://github.com/importPI19fromDHGE/dhge-pi19-sem3/tree/main/SWE-KASCHE#scrum)
+> siehe [Systemanalyse Semester 3](https://github.com/importPI19fromDHGE/dhge-pi19-sem3/tree/main/SWE-KASCHE#scrum)
 
 ## Loops in Projektmanagement Methoden
 
