@@ -303,3 +303,34 @@ Endgeräte sind 802.1Q-fähig und können VLAN-Felder befüllen/interpretieren
 - **VLAN Identifier:** 12 Bit $\rightarrow$ 4096 Netze
 
 #### Spanning Tree
+
+> Klausurrelevant! (grob erklären können)
+
+<!-- hier Bild 4-43. -->
+1. Frame f0, von Host A an unbekanntes Ziel
+2. B1 flutet dieses Paket über alle Ports (außer Quellport) $\rightarrow$ 2 Kopien auf dem Weg zu B2: F1, F2
+3. B2 erhält Kopien und sendet sie an den jeweils anderen Ports wieder aus $\rightarrow$ F1 $\rightarrow$ F4, F2 $\rightarrow$ F3
+4. Pakete kreisen ewig $\rightarrow$ Lösung: Es geht um Redundanz, nicht Kapazitätserhöhung $\rightarrow$ eine Verbindung bleibt erhalten, der Rest wird abgeschaltet
+
+- Redundanzen im Netzwerk $\rightarrow$ 2 Verbindungen sind besser als eine
+  - $\rightarrow$ Probleme mit Flooding/Weiterleitung von Paketen für unbekannte Ziele
+- Pakete haben keine festgelegte Lebensdauer $\rightarrow$ gehen endlos im Kreis
+- Konstruktion einer schleifenfreien Topologie
+- Netzwerk ist theoretisch Graph, Bridges sind Knoten, Verbindungen sind Kanten
+- mit Spannung-Tree wird Graph in einen Baum umgewandelt (da schleifenfrei)
+- Algorithmus: Spanning-Tree
+- Herausforderung: Wurzel finden
+- Austausch von Konfigurationsnachrichten zwischen den Bridges (werden nicht weitergeleitet (Schleifenbildung!))
+- Auswahl der Wurzel des Baumes ist das Ziel dieser Konfigurationsnachricht
+- dazu ist ein eindeutiges Merkmal notwendig, das finden wir in der Mac-Adresse
+- niedrigste Kennung (=Mac-Adresse) wird als Wurzel festgelegt
+- Position von Bridges im Baum (Ebene) wird über die Entfernung bis zur Wurzel (Anzahl Hops) festgelegt
+- Ports, die nicht zum kürzesten Pfad gehören, werden abgeschaltet
+
+**Abhängigkeiten VLAN/STP:**
+
+- jedes VLAN benötigt seinen eigenen Spanning-Tree
+- Broadcast-Traffic soll in VLAN bleiben
+- Schleifen in VLANs sind zu vermeiden
+- **verschiedene** VLANs können Schleifen bilden
+- Konnektivität für seperate VLANs muss auch bei Ausfall möglich sein (solange physische Verbindung vorhanden)
