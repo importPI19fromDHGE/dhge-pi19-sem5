@@ -255,7 +255,51 @@ $\rightarrow$ zur Erfüllung dieser Aufgaben: **Bildung von Frames/Rahmen**
 - Entkopplung der physischen von der logischen Struktur
 - logische Struktur, die auf der physischen aufbaut
 - VLAN, VPN(, Framerelay, ATM)
+- **Gründe für Separierung von L2-Netzen:**
+  - Organisationsstruktur passt nicht zur physischen Verkabelung/Struktur
+  - Belastung/Load: Trennung von verschiedenem Netzwerkverkehr
+  - Minimierung von Broadcast-Traffic (z.B. ARP)
 
 #### VLAN
 
 - virtuelle LANs schaffen, die in Software konfiguriert werden können
+
+**Vorgehensweise zur Einrichtung:**
+
+- Namen der Netzwerke (Farbe)
+- Anzahl der VLANs
+- Welcher Host soll in welches VLAN?
+
+**Voraussetzungen für VLAN an den Bridges:**
+
+- Tabelle in den Bridges: Zuordnung VLANs zu Ports
+- Port kann zu mehreren VLANs gehören
+- in den Paketen muss die Information stehen, zu welchem VLAN ein Paket gehört
+  - 802.3 Ethernet Header musste erweitert werden $\rightarrow$ 302.1Q
+  - Dauer der Ethernet-Frame-Änderung: 3 Jahre; wichtige Fragen:
+    - Was passiert mit alter Hardware?
+    - Wie/wo werden die zusätzlichen Felder eingefügt/weggenommen?
+    - Was passiert mit Rahmen, die schon die maximale Größe haben?
+
+**Variante 1:**
+
+VLAN-Felder werden an Bridges verwendet, hinzugefügt oder weggenommen!
+
+**Variante 2:**
+
+Endgeräte sind 802.1Q-fähig und können VLAN-Felder befüllen/interpretieren
+
+> Mischformen sind auch möglich
+
+1\. V-LAN fähige Bridge fügt VLAN-Information hinzu, letzte Bridge vor dem (nicht VLAN-fähigen) Host entfernt sie (wenn nicht getagged angeliefert)
+
+**Zusätzliche Felder im Ethernet-Header:**
+
+- **VLAN protocol ID:** 0x8100 $\rightarrow$ größer als maximale Länge eines Frames (1500)
+  - wird damit dazu führen, dass fälschlich empfangene VLAN-Frames von Legacy Hardware verworfen werden
+- **Pri:** Priorität; ist im VLAN Header aber hat nichts damit zu tun
+  - harter/weicher/nicht-Echtzeitverkehr
+- **CFI:** Canonical Format Indicator; hat keine relevante Information
+- **VLAN Identifier:** 12 Bit $\rightarrow$ 4096 Netze
+
+#### Spanning Tree
