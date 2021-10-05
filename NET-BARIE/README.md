@@ -334,3 +334,14 @@ Endgeräte sind 802.1Q-fähig und können VLAN-Felder befüllen/interpretieren
 - Schleifen in VLANs sind zu vermeiden
 - **verschiedene** VLANs können Schleifen bilden
 - Konnektivität für seperate VLANs muss auch bei Ausfall möglich sein (solange physische Verbindung vorhanden)
+
+# Link-Aggregation/Trunking
+
+- Zusammenfassung von Links
+- Zweck: Steigerung der Bandbreite
+- zunächst Herstellerspezifisch, dann (2000) iEEE 802.3ad
+- jetzt bei 802.1ax
+- sowohl statisch als auch dynamisch konfigurierbar
+- Protokoll: LACP (Link Aggregation Control Protocol)
+- aktiv: Senden von entsprechenden Kontrollnachrichten
+- passiv: nur Reaktion auf Kontrollnachrichten
