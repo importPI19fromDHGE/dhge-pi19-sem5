@@ -13,13 +13,15 @@ Software-Entwicklungswerkzeuge
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Software-Entwicklungswerkzeuge](#software-entwicklungswerkzeuge)
+- [Klausur](#klausur)
 - [Dokumentation](#dokumentation)
   - [Dokumentationsgeneratoren](#dokumentationsgeneratoren)
   - [Andere Tools](#andere-tools)
 - [Versions-Verwaltungs-Systeme](#versions-verwaltungs-systeme)
   - [Zweck von Versions-Verwaltungs-Systemen](#zweck-von-versions-verwaltungs-systemen)
   - [Aufgaben von Versions-Verwaltungs-Systemen](#aufgaben-von-versions-verwaltungs-systemen)
-  - [Andere Tools für Patches, Versionshandling usw](#andere-tools-f%C3%BCr-patches-versionshandling-usw)
+  - [Andere Tools für Patches, Versionshandling usw](#andere-tools-für-patches-versionshandling-usw)
 - [Make](#make)
   - [Makefile](#makefile)
   - [Autotools](#autotools)
@@ -28,12 +30,12 @@ Software-Entwicklungswerkzeuge
 - [Compiler](#compiler)
   - [Funktionsumfang](#funktionsumfang)
   - [Tools im Compiler-Umfeld](#tools-im-compiler-umfeld)
-    - [Tools für Objects, Libraries, Executables](#tools-f%C3%BCr-objects-libraries-executables)
+    - [Tools für Objects, Libraries, Executables](#tools-für-objects-libraries-executables)
 - [Fehlersuche und Analyse des Programm-Verhaltens](#fehlersuche-und-analyse-des-programm-verhaltens)
   - [Debugger](#debugger)
   - [ltrace und strace](#ltrace-und-strace)
-  - [Was ist der technische Auslöser eines Coredumps?](#was-ist-der-technische-ausl%C3%B6ser-eines-coredumps)
-  - [Mit welchem Programm kann ich mir alle geöffneten Files (im weitestens Sinne) anzeigen lassen?](#mit-welchem-programm-kann-ich-mir-alle-ge%C3%B6ffneten-files-im-weitestens-sinne-anzeigen-lassen)
+  - [Was ist der technische Auslöser eines Coredumps?](#was-ist-der-technische-auslöser-eines-coredumps)
+  - [Mit welchem Programm kann ich mir alle geöffneten Files (im weitestens Sinne) anzeigen lassen?](#mit-welchem-programm-kann-ich-mir-alle-geöffneten-files-im-weitestens-sinne-anzeigen-lassen)
   - [Was macht der Befehl `df`?](#was-macht-der-befehl-df)
   - [Das `/proc` Verzeichnis](#das-proc-verzeichnis)
   - [Das `/sys` Verzeichnis](#das-sys-verzeichnis)
@@ -47,7 +49,7 @@ Software-Entwicklungswerkzeuge
     - [Similar tools for different purposes](#similar-tools-for-different-purposes)
     - [Statische Analyse](#statische-analyse)
     - [Profiling und Tracing](#profiling-und-tracing)
-- [Qualitätssicherung](#qualit%C3%A4tssicherung)
+- [Qualitätssicherung](#qualitätssicherung)
   - [Grundlegendes](#grundlegendes)
   - [Tests vs. Verifikation](#tests-vs-verifikation)
   - [Black Box Test vs. White Box Test](#black-box-test-vs-white-box-test)
@@ -61,6 +63,15 @@ Software-Entwicklungswerkzeuge
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 <!--newpage-->
+
+# Klausur
+
+- Theorieklausur, ca. 5 bis 6 Seiten mit jeweils 5 bis 10 kurzen Fragen
+- kein Code, keine Befehlsdetails
+- Bsp.: Anforderungen an Dokumentation, Bestandteile eines Makefiles
+- Stichpunkte reichen, straffer Zeitrahmen
+- Es gibt wieder Überpunkte<!--:-)-->
+- Themenschwerpunkte sind die Übungen, aber auch Tools wie Versionsverwaltung
 
 # Dokumentation
 
