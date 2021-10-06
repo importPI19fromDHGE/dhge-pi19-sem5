@@ -18,7 +18,7 @@ Projektmanagement
   - [Projektmanagement (Klausurschwerpunkte)](#projektmanagement-klausurschwerpunkte)
 - [Grundlagen](#grundlagen)
   - [Allgemeine Wiederholung](#allgemeine-wiederholung)
-  - [Management Methoden](#management-methoden)
+  - [Allgemeine Management Methoden](#allgemeine-management-methoden)
   - [Projektarten](#projektarten)
 - [Organisation](#organisation)
   - [Ziele eines Projektes](#ziele-eines-projektes)
@@ -43,6 +43,44 @@ Projektmanagement
       - [Was muss beim Projektleiter entschieden werden?](#was-muss-beim-projektleiter-entschieden-werden)
       - [Was muss in der Projektgruppe entschieden werden?](#was-muss-in-der-projektgruppe-entschieden-werden)
       - [Welche formellen Schritte muss jedes Projekt durchlaufen?](#welche-formellen-schritte-muss-jedes-projekt-durchlaufen)
+      - [Projektentscheidung: Institutionen](#projektentscheidung-institutionen)
+  - [Faktoren für die Entwicklung eines Projekts](#faktoren-f%C3%BCr-die-entwicklung-eines-projekts)
+  - [Inhalte eines guten Projektteams](#inhalte-eines-guten-projektteams)
+    - [Unterschied zwischen Leiten und Führen](#unterschied-zwischen-leiten-und-f%C3%BChren)
+  - [Spannungsdreieck](#spannungsdreieck)
+  - [Zusammensetzung eines Projektteams](#zusammensetzung-eines-projektteams)
+  - [Integration in die bestehende Unternehmensorganisation](#integration-in-die-bestehende-unternehmensorganisation)
+    - [Kleiner Daten-Exkurs](#kleiner-daten-exkurs)
+    - [Aufbauorganisation](#aufbauorganisation)
+      - [reine Projektorganisation](#reine-projektorganisation)
+      - [Stabsprojektorganisation](#stabsprojektorganisation)
+      - [Matrix-Projektorganisation](#matrix-projektorganisation)
+      - [Linien-Projektorganisation](#linien-projektorganisation)
+    - [Einfluss auf die Wahl der Projektorganisation](#einfluss-auf-die-wahl-der-projektorganisation)
+  - [Organisation-Zusammenfassung](#organisation-zusammenfassung)
+- [Management Methoden](#management-methoden)
+  - [Projektplanung](#projektplanung)
+    - [Resourcennutzung](#resourcennutzung)
+    - [Problemstellung der Inhalte](#problemstellung-der-inhalte)
+    - [Aufgaben der Planungsmethoden](#aufgaben-der-planungsmethoden)
+    - [Planungsmethoden: Termin](#planungsmethoden-termin)
+    - [Planungsmethoden Ergänzung](#planungsmethoden-erg%C3%A4nzung)
+    - [Planungsergebnis: Darstellung des Projektes](#planungsergebnis-darstellung-des-projektes)
+    - [Elemente der Projektfindung/Risikobetrachtung](#elemente-der-projektfindungrisikobetrachtung)
+  - [Phasen des Projektes](#phasen-des-projektes)
+    - [Projektablaufplanung](#projektablaufplanung)
+    - [Definitionsphase - Was wollen wir erreichen? - Stakeholder-Analyse](#definitionsphase---was-wollen-wir-erreichen---stakeholder-analyse)
+      - [Zielentwicklung](#zielentwicklung)
+      - [Technisches Risiko](#technisches-risiko)
+      - [Strukturplanung](#strukturplanung)
+      - [Terminplanung](#terminplanung)
+    - [Umsetzungsphase](#umsetzungsphase)
+  - [SCRUM](#scrum)
+  - [Loops in Projektmanagement Methoden](#loops-in-projektmanagement-methoden)
+  - [Vorraussetzung des Projektteams](#vorraussetzung-des-projektteams)
+- [Controlling](#controlling)
+  - [Projeksteuerung durch Controlling](#projeksteuerung-durch-controlling)
+  - [Berichtswesen im Controlling Prozess](#berichtswesen-im-controlling-prozess)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -85,6 +123,12 @@ Projektmanagement
 - Brainwriting nach 635 Methode
 - Kompetenz kann "etwas können" oder "etwas dürfen" bedeuten, aus dem Kontext deuten können!
 - Knoten-Netzplan (Ablauf von Projekten) berechnen können (!!!)
+- Institutionen (Projektentscheidung) nennen und beschreiben können
+- Welche Faktoren führen zu Erfolg / Misserfolg?
+- Beispielaufgabe in [Integration in die bestehende Unternehmensorganisation](#integration-in-die-bestehende-unternehmensorganisation)
+- ERP-System (Enterprise-Resource-Planning-System), was ist das? (System zur Abrechnung und Steuerung eines Unternehmens, Bsp.: SAP)
+- Aufgaben eines Projektleiters
+- Loops in Projektmanagement Methoden
 
 # Grundlagen
 
@@ -109,7 +153,7 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 - Teile des Marketings: Preis (Kontrahierungspolitik), Verteilung (Distribution), Produktpolitik, Kommunikation
 - Lean Management: flache Hierarchie
 
-## Management Methoden
+## Allgemeine Management Methoden
 
 - Effektivität (*Ist die Maßnahme zielführend?*) und Effizienz (Aufwand/Nutzen-Verhältnis)
   - wichtig für einheitliche Planungsmethoden
@@ -380,8 +424,402 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 - Formelle Projektdokumentation
 - Daten, die während des Projekts erhoben wurden, aufschreiben
 
-- Auftraggeber wendet sich an den Projektleiter
+- Auftraggeber (intern oder extern) wendet sich an den Projektleiter
 - Projektleiter ist für das gesamte Projekt verantwortlich
-- Teile des Projekts werden von Projekt-Managern bearbeitet
+- Teile des Projekts werden von Projekt-Managern bearbeitet (bei größeren Projekten, bei kleineren kann diese Zwischenstufe weggelassen werden)
 - den Projektmanagern sind jeweils Projekt-Mitarbeiter untergeordnet
 - $\rightarrow$ Folie 39: klassisches Einliniensystem
+
+#### Projektentscheidung: Institutionen
+
+<!-- Fachausschuss, Lenkungsausschuss, Lenkungskollegium müssen als Begriffe für die Klausur sitzen -->
+
+- **Fachausschuss:** Kontrollorgan zur fachlichen Beurteilung der erbrachten Leistung (quantitative und qualitative Beurteilung) - vergleichbar mit einer Stabstelle
+- **Lenkungskollegium:** Koordination und Unterstützung (besonders für finanzielle und materielle Bedürfnisse des Projektteams)
+- **Lenkungsausschuss:** Schnittstelle zwischen Führungskräften
+
+$\rightarrow$ können vom Projektleiter als Unterstützer angefordert werden, für Dinge die das Team nicht selbst ausführen kann
+
+$\rightarrow$ hat der Projektleiter diese Dinge zur Verfügung, sinkt das Risiko, dass das Projekt scheitert
+
+## Faktoren für die Entwicklung eines Projekts
+
+- **Erfolg:**
+  - Förderung durch das Topmanagement
+  - "gutes" Projektteam (Mitarbeiter müssen die üblichen Anforderungen erfüllen)
+  - Einsatz der Methoden (Zeit, materielle und personelle Potentiale)
+- **Misserfolg:**
+  - Konflikte innerhalb und außerhalb des Projektteams (Ursache - Führung)
+  - Zieländerungen während des laufenden Projektes
+  - Führungskompetenz des Projektleiters
+  - Erfolgsdruck
+
+## Inhalte eines guten Projektteams
+
+> Hier ist die Reihenfolge zu beachten
+
+1. Fachliche Kompetenz aller Beteiligten
+2. Führungskompetenz der verantwortlichen Leiter
+3. Flache Strukturen (Einliniensystem mit wenig Vorgesetzten)
+4. Kenntnisse zum Stärken-Schwächen-Profil des Einzelnen
+5. Soft-Skills aller Beteiligten zur Zusammenarbeit
+
+### Unterschied zwischen Leiten und Führen
+
+- **Leiten:** Verwaltungsaufgabe (Prüfen, sind alle Parameter erfüllt?)
+- **Führen:** aktiver Prozess (zielgerichtet Einfluss nehmen, auf die Erfüllung einer Aufgabe / eines Ziels)
+
+## Spannungsdreieck
+
+```text
+    ┏━━━━━━━━┓
+    ┃Qualität┃
+    ┗━━━━━━━━┛
+        │
+    ┏━━━━━━━┓
+    ┃Projekt┃
+    ┗━━━━━━━┛
+    ╱       ╲
+┏━━━━┓    ┏━━━━━━┓
+┃Zeit┃    ┃Kosten┃
+┗━━━━┛    ┗━━━━━━┛
+```
+
+- Kosten: Einsatz und Verfügung von Kapital
+
+## Zusammensetzung eines Projektteams
+
+- **Primär:** auf den Kriterien des "guten Teams"
+- **Sekundär:**
+  - in wie weit externe und interne Experten eingesetzt werden
+  - Arbeitsweise auf Basis der Arbeitszeitverteilung (Vollzeit - Ausschließlich für das Projekt **oder** Teilzeit neben der normalen Arbeit für das Projekt gearbeitet wird)
+- **Job Enrichment:** ein MA arbeitet Teilzeit im Projekt (weil der MA bspw. mit seiner eigentlichen Tätigkeit schneller fertig ist, als andere)
+- mehr Leistung muss anerkannt werden
+
+## Integration in die bestehende Unternehmensorganisation
+
+- Reine Projektorganisation - Funktionalorganisation
+- Stab-Projektorganisation
+- Matrix-Projektorganisation
+- Linien-Projektorganisation
+
+> Aufgabe: Erläutern Sie anhand der sich ergebenden Vor- und Nachteile der einzelnen Formen und ihrer Kenntnisse aus Betriebsorganisation, Integrationsformen eines Projekts.
+
+- Stab-, Matrix- und Linien-Organisation beschäftigen sich nach Notwendigkeit mit Projekten
+
+### Kleiner Daten-Exkurs
+
+- in Unternehmen fallen **immer** Daten an
+  - Data-Mining
+  - je besser das ERP-System ist, desto besser können die Daten aufbereitet werden $\rightarrow$ bessere Entscheidungen können gefällt werden
+
+### Aufbauorganisation
+
+- Reine Projektgruppe
+  - teilautonome Gruppen
+- Linien-Projektgruppe
+  - innerhalb der Organisation direkt unterstellt
+- Stabs-Projekt-Organisation
+  - ein Koordinator greift auf meist Teilzeit festgelegte MA zu
+- Matrix-Projekt-Organisation
+  - eine der Geschäftsleitung direkt unterstellte Projektgruppe
+  - greift auf die Organisation zu
+- Organisationsformen können bei Bedarf auch gemischt werden
+
+#### reine Projektorganisation
+
+- organisiert nach der Spartenorganisation
+- Objekte der Organisation $\rightarrow$ Projekte
+- Sparte = Projekt
+
+#### Stabsprojektorganisation
+
+- basiert auf dem Stabsliniensystem
+- **Nachteile:**
+  - Notwendigkeit einer klaren Aufgabenteilung
+- **Vorteile:**
+  - hohe Flexibilität bei der Gestaltung von Projekten
+  - gutes Kosten-Nutzen Verhältnis durch die Auswahl der notwendigen Bereiche
+
+#### Matrix-Projektorganisation
+
+- basiert auf dem Mehrliniensystem (Matrix)
+- Projektleiter ist in die Struktur direkt integriert
+- PL holt sich MA aus allen Bereichen, in Vollzeit, sind dem PL direkt unterstellt
+- **Vorteile:**
+  - feste Projektteams, sind bereits eingespielt
+  - interne und externe Projekte können durchgeführt werden
+- **Nachteile:**
+  - Betriebsblindheit
+  - Innovation *kann* nachlassen
+  - kostenaufwändig (da Projektleiter Geld kostet)
+
+#### Linien-Projektorganisation
+
+- basiert auf dem Einliniensystem
+- ein Projekt ist einer Abteilung untergeordnet
+- bei abteilungsübergreifenden Projekten muss das Projekt geteilt werden
+  - eine Schnittstelle wird benötigt $\rightarrow$ Lenkungsausschuss
+  - in dieser Komplexität nicht in der Klausur gefragt
+
+### Einfluss auf die Wahl der Projektorganisation
+
+- Größe des Projekts
+- Dauer des Projekts
+- Komplexität des Projekts
+- Zusammensetzung des Projektteams (intern/extern-Mix)
+- Bedeutung für das Unternehmen
+
+> Folie 52 ist informativ!
+
+## Organisation-Zusammenfassung
+
+> Folie 53-54
+
+# Management Methoden
+
+## Projektplanung
+
+### Resourcennutzung
+
+- Einheitliche Planungsmethoden
+  - Herstellen der Vergleichbarkeit
+  - Kommunikation
+- Einheitliche Planungsstandards
+  - Qualitätssicherung
+  - Abrechnung
+- Nutzung geeigneter Projektsoftware
+  - Effizienz
+  - Handswerkszeug zur Bearbeitung der Daten
+- Nutzung von Projekterfahrung
+  - Risikominimierung
+  - Effizenz
+  - KVP
+
+### Problemstellung der Inhalte
+
+> Achtung: Die Felder sind noch komplexer miteinander verknüpft, siehe Folie 56
+
+- **Planungsinhalte**
+  - **Aufgaben**
+    - Lösungs-Konzepte
+    - Projekt-Struktur
+    - Tailoring
+    - Projekt-Prozess
+  - **Personal**
+    - Quantitativ
+    - Qualitativ
+    - Einsatz
+  - **Termin**
+    - Aufgaben
+    - Verfahren (Prozess)
+    - Vergleich
+  - **Ergänzende Planung**
+    - MR
+    - FR
+    - Dokumentation
+    - Qualität
+  - **Planungsergebnisse**
+    - Projektplan
+    - Projektantrag
+    - Projektauftrag
+    - Projektvergabe
+    - Förderung
+
+<!-- Klausur: fünf Planungsinhalte erklären können -->
+
+### Aufgaben der Planungsmethoden
+
+- Lösung
+  - Phasen-Konzepte (Wertanalyse, REFA 6-Stufen-Methode, ...)
+- Struktur
+  - Aufbau der Organisation nach Aufgaben
+- Tailoring
+  - Analyse der Aufgaben
+  - Ordnung und Syntese der Aufgaben
+- Prozess
+  - Finden und Herstellen der Kausalität von Aufgaben
+  - Zuordnung von Zusammenhängen
+
+### Planungsmethoden: Termin
+
+> Achtung: Die Felder sind noch komplexer miteinander verknüpft, siehe Folie 56
+
+- Terminplan
+  - Vorgänge
+    - Welche Vorgänge sollen durchgeführt werden?
+  - Abläufe
+    - Wie ist die Kausalität der Vorgänge?
+  - Dauer der Vorgänge
+    - Welche Dauer haben die Vorgänge?
+    - Welches ist die Gesamtdauer?
+    - Welche Zeitabschnitte werden benötigt (Meilensteine)?
+- FAZ: Frühstmöglicher-Anfangs-Zustand
+- FEX: Frühstmöglicher-End-Zustand
+- SAZ: Spätestmöglicher-Anfangs-Zustand
+- SEZ: Frühstmöglicher-End-Zustand
+- Differenz $\rightarrow$ Puffer
+
+### Planungsmethoden Ergänzung
+
+- Kapital: Eigenkapital, Fremdkapital (kurzfristig/langfristig)
+- Material: Rohstoffe, Lizenzen, ...
+- Dokumentation: Wissensmanagement, Erfüllung
+- Qualität: Nachhaltigkeit, Präzision
+
+### Planungsergebnis: Darstellung des Projektes
+
+- Projektplan
+- Planungsbericht
+- Projektantrag
+- Projektauftrag
+- Projektvergabe
+- Fördermittelantrag
+
+### Elemente der Projektfindung/Risikobetrachtung
+
+- für die Phase der Zielbildung $\rightarrow$ aktive oder reaktive Prozesse
+- für die Problemanalyse $\rightarrow$ Ishikawa, FMEA, ...
+- für Alternativen $\rightarrow$ Kreativitätstechniken - Brainstorming, 6 Hüte von de Bono, Morphologischer Kasten, Mindmapping, ...
+- für die Prognose $\rightarrow$ Szenario-Analyse, Extrapolation
+- für die Bewertung $\rightarrow$ Nutzwertanalyse, Kosten-/Nutzenrechnung, BSC (Balance-Score-Card)
+
+> Folie 65-69 ist informativ!
+
+- **argumentatatives Auswahlverfahren:** pro und kontra
+- **F/E-Bewertungsverfahren:** Forschung und Entwicklung
+
+**Achtung:**
+
+- in der Praxis werden subjektive Verfahren, wie die folgenden vorgezogen:
+  - Schätzungen von Außendienstmitarbeitern oder Befragungen
+  - statistisch-mathematische Verfahren - Trendextrapolation
+  - gleitende Durchschnitte
+  - Regressionsanalysen
+- Mathematische Prognosetechniken finden äußerst zurückhaltende Verwendung, es werden einfachere Methoden bevorzugt
+  - Netzplantechnik
+  - finanzmathematische Verfahren (siehe betriebliche Planungsprozesse)
+    - Zinsmodelle
+    - Kosten/Nutzen-Rechnung
+    - ROI
+  - spezielle Verfahren der Lager-und Transportoptimierung (JIT, JIS) eingesetzt
+
+## Phasen des Projektes
+
+<!-- Hinweis: Phasen eines Projektes sollten in der Klausur sitzen! -->
+
+### Projektablaufplanung
+
+- **Start**
+  - Kick off, Veröffentlichung
+  - Information aller betroffenen Mitarbeiter
+- **Definition**
+  - Ziel und Aufgabe definieren (SMART, 5-W-Regel)
+  - Muss-, Soll-, Kann-Ziele festlegen
+- **Planung**
+  - Koordination, Entscheidung zur Durchführung
+  - Überprüfung der Vollständigkeit aller Informationen
+- **Umsetzung**
+  - Realiserung der Arbeiten
+  - Controlling der Vorgänge und Meilensteine
+- **Bewertung**
+  - Abrechnung der Arbeiten, Dokumentation
+  - Nutzen, Aufwand, Verbesserungen, ...
+
+### Definitionsphase - Was wollen wir erreichen? - Stakeholder-Analyse
+
+Herstellen eines Mehrheitsinteresses aller Beteiligten und am Projekt Interessierten
+
+**Entscheidung zum Projekt:**
+
+- Eigentümer
+- Staat/Gesellschaft
+- Kunden
+- Fremd-Kapitalgeber
+- Konkurrenz
+- Lieferanten
+- Arbeitnehmer
+- Unternehmensleitung
+
+#### Zielentwicklung
+
+- **Drei Dimensionen der Zielentwicklung:**
+  - Termin, bis wann?
+  - Kosten/Ausmaß, Wie viel?
+  - Sache/Content, was?
+- If you can't measure it, you can't manage it
+- nach SMART entwickeln
+- Kreativtechniken erstellen einen Zielkatalog
+- Selektion mittels Entscheidungstechniken (Filterung): Muss, Soll, Kann Ziele
+
+#### Technisches Risiko
+
+- Quellen
+  - technisches, finanzielles, rechtliches, personelles, Risiko
+  - sozialer Bereich
+- Faktoren
+  - Personalprobleme
+  - Kostenentwicklung
+  - Gesetzgebung
+  - Neue Technik/Technologie
+  - Umweltstandards
+
+#### Strukturplanung
+
+- Zusammenfassung aller Entscheidungen der vorangegangen Schritte
+- Zusammenfassung von Teilzielen/Bestandteilen/Vorgängen zu Meilensteinen
+
+#### Terminplanung
+
+- Erstellen einer Übersicht der Arbeitspakete (AP)
+  - Vorgänger
+  - Nachfolger
+  - Parallelprozess
+  - Abhängigkeiten
+
+### Umsetzungsphase
+
+Der Projektleiter ist während der Durchführung des Projektes Vorgesetzter des Projektteams und wendet:
+
+- Führungsarten (Aufgabe, Ziel und Motivation)
+- Führungsstile (autoritär, kooperativ, Laissez-faire)
+- Führungstechniken (Management by question, Management by objectives, Management by deligation)
+
+zur Erfüllung der Aufgabe an.
+
+## SCRUM
+
+> siehe [Systemanalyse Semester 3](https://github.com/importPI19fromDHGE/dhge-pi19-sem3/tree/main/SWE-KASCHE#scrum)
+
+## Loops in Projektmanagement Methoden
+
+- Schnittstellenübereinstimmung ist wichtig
+
+## Vorraussetzung des Projektteams
+
+- ausreichend Personal (keine Überlastung)
+  - werden sonst krank, Qualität/Quantität leiden oder verlassen das Unternehmen
+- exzellentes Betriebsklima
+  - faire Bezahlung
+  - Förderung der Persönlichen Entwicklung
+  - Anerkennung und Integration
+  - Work-Life-Balance
+- exzellente Führung
+- jahrelange Zusammenarbeit
+  - Erfahrung
+
+# Controlling
+
+... ist eine interne Dienstleistung, für das Unternehmen.
+
+## Projeksteuerung durch Controlling
+
+- **Projektcontrolling:**
+  - Projektplanung
+  - Projektkontrolle
+  - Information/Dokumentation
+  - Projektsteuerung
+
+## Berichtswesen im Controlling Prozess
+
+- für jemanden (Kunden, für das Unternehmen (Wissensmanagement), Geschäftsberichte für Aktionäre etc.) wird etwas dokumentiert
