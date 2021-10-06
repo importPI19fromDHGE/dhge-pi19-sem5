@@ -268,7 +268,7 @@ $\rightarrow$ zur Erfüllung dieser Aufgaben: **Bildung von Frames/Rahmen**
 
 - Namen der Netzwerke (Farbe)
 - Anzahl der VLANs
-- Welcher Host soll in welches VLAN?
+- Welcher Host soll in welche VLANs?
 
 **Voraussetzungen für VLAN an den Bridges:**
 
