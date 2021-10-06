@@ -24,15 +24,14 @@ Rechnernetzadministration/Verteilte Systeme
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Rechnernetzadministration/Verteilte Systeme](#rechnernetzadministrationverteilte-systeme)
 - [Literaturempfehlung](#literaturempfehlung)
 - [Einleitung](#einleitung)
   - [Designziele](#designziele)
   - [Wiederholung Grundlagen](#wiederholung-grundlagen)
     - [Netzwerk](#netzwerk)
     - [Klassifizierung von Datennetzen](#klassifizierung-von-datennetzen)
-      - [Räumliche Ausdehnung](#räumliche-ausdehnung)
-      - [Größe/Anzahl der Teilnehmer](#größeanzahl-der-teilnehmer)
+      - [Räumliche Ausdehnung](#r%C3%A4umliche-ausdehnung)
+      - [Größe/Anzahl der Teilnehmer](#gr%C3%B6%C3%9Feanzahl-der-teilnehmer)
       - [Hardware-Sicht](#hardware-sicht)
       - [Logische Sicht](#logische-sicht)
         - [ISO/OSI und TCP/IP](#isoosi-und-tcpip)
@@ -41,7 +40,7 @@ Rechnernetzadministration/Verteilte Systeme
       - [Einschub: Frames/Sicherungsschicht](#einschub-framessicherungsschicht)
         - [Grober Aufbau eines Frames](#grober-aufbau-eines-frames)
         - [Paketkollision](#paketkollision)
-      - [Einschub: Geräte](#einschub-geräte)
+      - [Einschub: Geräte](#einschub-ger%C3%A4te)
     - [Topologien auf der logischen Ebene](#topologien-auf-der-logischen-ebene)
       - [flache Topologie](#flache-topologie)
       - [standortbasiert](#standortbasiert)
