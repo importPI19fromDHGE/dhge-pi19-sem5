@@ -133,6 +133,9 @@ Projektmanagement
 ## Qualitätsmanagement (Klausurschwerpunkte)
 
 - [Ziele und Wirkungen von Qualitätsmanagement](#ziele-und-wirkungen-von-qualitätsmanagement)
+- Qualitätspolitik in die Unternehmenspolitik einordnen können
+- Unterschied zwischen Qualität und Qualitätsmanagement beherrschen
+- mindestens 5 Instrementarieren zur Qualitätsbestimmung kennen
 
 # Grundlagen
 
@@ -852,7 +855,7 @@ zur Erfüllung der Aufgabe an.
 
 ## Qualitätspolitik ist Unternehmenspolitik
 
-**Dies ist ein Dreieck (Spitze oben)**
+> Dies ist ein Dreieck (Spitze oben)
 
 - Vision des Unternehmens (Philosophie): Produkt/DL
 - Unternehmenspolitik: Produkt/DL; Personal, Kunden, Partner; Nachhaltigkeit; **Qualität**
@@ -882,12 +885,74 @@ zur Erfüllung der Aufgabe an.
   - Tabelle (Soll/Ist-Vergleich)
   - Bewertung (Scoring-Modell)
 
-<!-- ## Ermitteln und Festlegen von Qualitätszielen
+## Notwendige Instrumentarien
+
+> Dies ist ein Dreieck (Spitze oben)
+
+- Leitbild: Unternehmensleitbild zur Realisierung von Qualität
+- Struktur: Unternehmensstruktur (Aufbauorganisation)
+- Prozesse: Prozessabläufe im Unternehmen (bspw. innerbetriebliche Logistik)
+- Stellenbeschreibung für alle Mitarbeiter
+- Beurteilung von Leistung und Verhalten der Mitarbeiter
+- Realisierung der Vorgaben (Unternehmenskultur)
+
+**Stellenbeschreibung:**
+
+- Bezeichnung der Stelle
+- Aufgaben (die wichtigen)
+- Ziele (Qualität)
+- Befugnisse
+- Verantwortung (Qualität)
+- Vertretung
+
+$\rightarrow$ bei allen Mitarbeitern Grundlage für TQM (Total-Quality-Management = Qualität in allen Bereichen)
+
+## Rechtliche Grundlagen und Forderungen (Gewährleistung - BGB §431ff)
+
+Management-Qualität, Produkt/DL-Qualität, Qualitätsbedingungen
+$\rightarrow$ Qualität der Produkte/Dienstleistungen
+$\rightarrow$ Grundlage für die Erfüllung der Gewährleistung nach wirtschaftlichen Gesichtspunkten
+
+## Rechtliche Grundlagen und Forderungen (HACCP - hazard analysis and critical control points - Gefahrenanalyse und kritische Kontrollpunkte)
+
+**HACCP:**
+
+- Gefahr: Aufgaben und Ziellstellung $\rightarrow$ um was wir uns kümmern wollen
+- Analyse: Wie funktioniert unsere Produktion?
+- Bewertung: Sind unsere Maschinen geeignet? $\rightarrow$ Schwachstellen finden mit Ishikawa
+- Umsetzung: Schwachstellen ausbessern
+- Controlling: Wurden die Schwachstellen tatsächlich ausgebessert?
+
+> erinnert an den Management-Kreislauf
 
 ## Qualitätsmanagementmethoden und -Techniken
 
-## Erfassen und Bewerten von Qualitätsdaten
+### Qualitätsmanagementsysteme
 
-## Weiterentwicklung des Risikomanagements
+- TQM
+- Kaizen
+- Ishikawa/Ursache Wirkungs-Diagramm
+- EFQM-Modell (European Foundation Quality Management)
+- Six Sigma, ...
 
-## Methoden des Zeit- und Selbstmanagements -->
+### Qualitätsmanagementsysteme - TQM als Grundsatz
+
+Qualität in allen Bereichen einer Organisation zu jeder Zeit und jedem Ort (parmanent), es umfasst:
+
+**Tätigkeiten:**
+
+- Aufzeichnende
+- sichtende
+- organisierende
+- kontrollierende
+- korrigierende
+
+### Klassische Qualitätssicherung vs. TQM
+
+| Klassische Qualitätssicherung                                 | Total-Quality-Management                                                      |
+| ------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| Menschen machen Fehler                                        | Prozesse provozieren Fehler                                                   |
+| Einzelne Mitarbeiter sind für Fehler verantwortlich           | Alle Mitarbeiter sind für Fehler verantwortlich                               |
+| Null Fehler sind nicht realisierbar                           | Null Fehler ist das Ziel                                                      |
+| Einkauf von vielen Lieferanten                                | Partnerschaft mit wenigen Lieferanten ($\rightarrow$ Supply-Chain-Management) |
+| Kunden müssen nehmen, was das Unternehmen an Qualität liefert | Alles ist auf vollkommene Kundenzufriedenheit ausgerichtet                    |
