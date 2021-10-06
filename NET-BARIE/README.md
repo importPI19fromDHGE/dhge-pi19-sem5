@@ -24,14 +24,15 @@ Rechnernetzadministration/Verteilte Systeme
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Rechnernetzadministration/Verteilte Systeme](#rechnernetzadministrationverteilte-systeme)
 - [Literaturempfehlung](#literaturempfehlung)
 - [Einleitung](#einleitung)
   - [Designziele](#designziele)
   - [Wiederholung Grundlagen](#wiederholung-grundlagen)
     - [Netzwerk](#netzwerk)
     - [Klassifizierung von Datennetzen](#klassifizierung-von-datennetzen)
-      - [Räumliche Ausdehnung](#r%C3%A4umliche-ausdehnung)
-      - [Größe/Anzahl der Teilnehmer](#gr%C3%B6%C3%9Feanzahl-der-teilnehmer)
+      - [Räumliche Ausdehnung](#räumliche-ausdehnung)
+      - [Größe/Anzahl der Teilnehmer](#größeanzahl-der-teilnehmer)
       - [Hardware-Sicht](#hardware-sicht)
       - [Logische Sicht](#logische-sicht)
         - [ISO/OSI und TCP/IP](#isoosi-und-tcpip)
@@ -40,7 +41,7 @@ Rechnernetzadministration/Verteilte Systeme
       - [Einschub: Frames/Sicherungsschicht](#einschub-framessicherungsschicht)
         - [Grober Aufbau eines Frames](#grober-aufbau-eines-frames)
         - [Paketkollision](#paketkollision)
-      - [Einschub: Geräte](#einschub-ger%C3%A4te)
+      - [Einschub: Geräte](#einschub-geräte)
     - [Topologien auf der logischen Ebene](#topologien-auf-der-logischen-ebene)
       - [flache Topologie](#flache-topologie)
       - [standortbasiert](#standortbasiert)
@@ -308,7 +309,8 @@ Endgeräte sind 802.1Q-fähig und können VLAN-Felder befüllen/interpretieren
 
 > Klausurrelevant! (grob erklären können)
 
-<!-- hier Bild 4-43. -->
+![Redundante Links](assets/redundant_links.png)<!--width=600px-->
+
 1. Frame f0, von Host A an unbekanntes Ziel
 2. B1 flutet dieses Paket über alle Ports (außer Quellport) $\rightarrow$ 2 Kopien auf dem Weg zu B2: F1, F2
 3. B2 erhält Kopien und sendet sie an den jeweils anderen Ports wieder aus $\rightarrow$ F1 $\rightarrow$ F4, F2 $\rightarrow$ F3
