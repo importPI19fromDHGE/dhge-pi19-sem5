@@ -47,6 +47,8 @@ Rechnernetzadministration/Verteilte Systeme
       - [funktionsgruppenbasierte Topologie](#funktionsgruppenbasierte-topologie)
       - [Overlay-Netzwerke](#overlay-netzwerke)
       - [VLAN](#vlan)
+      - [Spanning Tree](#spanning-tree)
+- [Link-Aggregation/Trunking](#link-aggregationtrunking)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -255,7 +257,94 @@ $\rightarrow$ zur Erfüllung dieser Aufgaben: **Bildung von Frames/Rahmen**
 - Entkopplung der physischen von der logischen Struktur
 - logische Struktur, die auf der physischen aufbaut
 - VLAN, VPN(, Framerelay, ATM)
+- **Gründe für Separierung von L2-Netzen:**
+  - Organisationsstruktur passt nicht zur physischen Verkabelung/Struktur
+  - Belastung/Load: Trennung von verschiedenem Netzwerkverkehr
+  - Minimierung von Broadcast-Traffic (z.B. ARP)
 
 #### VLAN
 
 - virtuelle LANs schaffen, die in Software konfiguriert werden können
+
+**Vorgehensweise zur Einrichtung:**
+
+- Namen der Netzwerke (Farbe)
+- Anzahl der VLANs
+- Welcher Host soll in welche VLANs?
+
+**Voraussetzungen für VLAN an den Bridges:**
+
+- Tabelle in den Bridges: Zuordnung VLANs zu Ports
+- Port kann zu mehreren VLANs gehören
+- in den Paketen muss die Information stehen, zu welchem VLAN ein Paket gehört
+  - 802.3 Ethernet Header musste erweitert werden $\rightarrow$ 302.1Q
+  - Dauer der Ethernet-Frame-Änderung: 3 Jahre; wichtige Fragen:
+    - Was passiert mit alter Hardware?
+    - Wie/wo werden die zusätzlichen Felder eingefügt/weggenommen?
+    - Was passiert mit Rahmen, die schon die maximale Größe haben?
+
+**Variante 1:**
+
+VLAN-Felder werden an Bridges verwendet, hinzugefügt oder weggenommen!
+
+**Variante 2:**
+
+Endgeräte sind 802.1Q-fähig und können VLAN-Felder befüllen/interpretieren
+
+> Mischformen sind auch möglich
+
+1\. V-LAN fähige Bridge fügt VLAN-Information hinzu, letzte Bridge vor dem (nicht VLAN-fähigen) Host entfernt sie (wenn nicht getagged angeliefert)
+
+**Zusätzliche Felder im Ethernet-Header:**
+
+- **VLAN protocol ID:** 0x8100 $\rightarrow$ größer als maximale Länge eines Frames (1500)
+  - wird damit dazu führen, dass fälschlich empfangene VLAN-Frames von Legacy Hardware verworfen werden
+- **Pri:** Priorität; ist im VLAN Header aber hat nichts damit zu tun
+  - harter/weicher/nicht-Echtzeitverkehr
+- **CFI:** Canonical Format Indicator; hat keine relevante Information
+- **VLAN Identifier:** 12 Bit $\rightarrow$ 4096 Netze
+
+#### Spanning Tree
+
+> Klausurrelevant! (grob erklären können)
+
+![Redundante Links](assets/redundant_links.png)<!--width=600px-->
+
+1. Frame f0, von Host A an unbekanntes Ziel
+2. B1 flutet dieses Paket über alle Ports (außer Quellport) $\rightarrow$ 2 Kopien auf dem Weg zu B2: F1, F2
+3. B2 erhält Kopien und sendet sie an den jeweils anderen Ports wieder aus $\rightarrow$ F1 $\rightarrow$ F4, F2 $\rightarrow$ F3
+4. Pakete kreisen ewig $\rightarrow$ Lösung: Es geht um Redundanz, nicht Kapazitätserhöhung $\rightarrow$ eine Verbindung bleibt erhalten, der Rest wird abgeschaltet
+
+- Redundanzen im Netzwerk $\rightarrow$ 2 Verbindungen sind besser als eine
+  - $\rightarrow$ Probleme mit Flooding/Weiterleitung von Paketen für unbekannte Ziele
+- Pakete haben keine festgelegte Lebensdauer $\rightarrow$ gehen endlos im Kreis
+- Konstruktion einer schleifenfreien Topologie
+- Netzwerk ist theoretisch Graph, Bridges sind Knoten, Verbindungen sind Kanten
+- mit Spannung-Tree wird Graph in einen Baum umgewandelt (da schleifenfrei)
+- Algorithmus: Spanning-Tree
+- Herausforderung: Wurzel finden
+- Austausch von Konfigurationsnachrichten zwischen den Bridges (werden nicht weitergeleitet (Schleifenbildung!))
+- Auswahl der Wurzel des Baumes ist das Ziel dieser Konfigurationsnachricht
+- dazu ist ein eindeutiges Merkmal notwendig, das finden wir in der Mac-Adresse
+- niedrigste Kennung (=Mac-Adresse) wird als Wurzel festgelegt
+- Position von Bridges im Baum (Ebene) wird über die Entfernung bis zur Wurzel (Anzahl Hops) festgelegt
+- Ports, die nicht zum kürzesten Pfad gehören, werden abgeschaltet
+
+**Abhängigkeiten VLAN/STP:**
+
+- jedes VLAN benötigt seinen eigenen Spanning-Tree
+- Broadcast-Traffic soll in VLAN bleiben
+- Schleifen in VLANs sind zu vermeiden
+- **verschiedene** VLANs können Schleifen bilden
+- Konnektivität für seperate VLANs muss auch bei Ausfall möglich sein (solange physische Verbindung vorhanden)
+
+# Link-Aggregation/Trunking
+
+- Zusammenfassung von Links
+- Zweck: Steigerung der Bandbreite
+- zunächst Herstellerspezifisch, dann (2000) iEEE 802.3ad
+- jetzt bei 802.1ax
+- sowohl statisch als auch dynamisch konfigurierbar
+- Protokoll: LACP (Link Aggregation Control Protocol)
+- aktiv: Senden von entsprechenden Kontrollnachrichten
+- passiv: nur Reaktion auf Kontrollnachrichten
