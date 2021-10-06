@@ -47,6 +47,8 @@ Rechnernetzadministration/Verteilte Systeme
       - [funktionsgruppenbasierte Topologie](#funktionsgruppenbasierte-topologie)
       - [Overlay-Netzwerke](#overlay-netzwerke)
       - [VLAN](#vlan)
+      - [Spanning Tree](#spanning-tree)
+- [Link-Aggregation/Trunking](#link-aggregationtrunking)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
