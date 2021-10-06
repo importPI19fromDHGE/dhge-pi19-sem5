@@ -130,6 +130,10 @@ Projektmanagement
 - Aufgaben eines Projektleiters
 - Loops in Projektmanagement Methoden
 
+## Qualitätsmanagement (Klausurschwerpunkte)
+
+- [Ziele und Wirkungen von Qualitätsmanagement](#ziele-und-wirkungen-von-qualitätsmanagement)
+
 # Grundlagen
 
 > Die Durchführung eines Projektes besteht aus dem Projekt selbst und dem Projektmanagement
@@ -823,3 +827,67 @@ zur Erfüllung der Aufgabe an.
 ## Berichtswesen im Controlling Prozess
 
 - für jemanden (Kunden, für das Unternehmen (Wissensmanagement), Geschäftsberichte für Aktionäre etc.) wird etwas dokumentiert
+
+# Qualitätsmanagement
+
+## Einführung in das Qualitätsmanagement
+
+- Qualität als zentrale Managementaufgabe
+- Was ist Qualität?
+  - Qualitäten eines Mitarbeiters
+  - erwartete Eigenschaften eines Produkts
+- Was ist Qualitätsmangement
+  - Alles, was wir machen: Maßnahmen zur Durchsetzung der Erwartung
+  - Überprüfung der Maßnahmen auf Sinn, Effizienz und Effektivität $\rightarrow$ Controlling
+
+## Ziele und Wirkungen von Qualitätsmanagement
+
+| Ziele                                                                 | Wirkung                                                                           |
+| --------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| kontinuierliche Organisation zur Überprüfung der Qualität (bspw. TÜV) | frühzeitiges Erkennung von Qualitätsverlusten $\rightarrow$ Verbesserung ableiten |
+|                                                                       | + Möglichkeit der Qualitätssteigerung                                             |
+|                                                                       | + Einsparungen durch weniger Ausschuss                                            |
+|                                                                       | + Kundenbindung durch bessere Qualität                                            |
+| Schulung und Qualifikation der Mitarbeiter                            | Einhaltung von Qualitätsstandards                                                 |
+
+## Qualitätspolitik ist Unternehmenspolitik
+
+**Dies ist ein Dreieck (Spitze oben)**
+
+- Vision des Unternehmens (Philosophie): Produkt/DL
+- Unternehmenspolitik: Produkt/DL; Personal, Kunden, Partner; Nachhaltigkeit; **Qualität**
+- Unternehmensleitbild: Publikation der Unternehmenspolitik
+- Unternehmenskultur: Umsetzung; Realisierung; KVP
+
+## Qualitätsdimensionen
+
+| Qualitätsdimensionen                          | Elemente                                                                                             |
+| --------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| Produkt/Dienstleistungs-Qualität (der Mensch) | wirtschaftliche Merkmale, Knowhow, Konzept, Logistik                                                 |
+| Qualität der Nachhaltigkeit                   | Soziale Beziehungen (Betriebsklima), Ökonomie (Wirtschaftlichkeit), Ökologie (Umweltverträglichkeit) |
+| Verfahrensqualität                            | Aufbauorganisation, Ablauforganisation, Produktionsbedingungen                                       |
+| Technische Qualität                           | Messen (Methoden, Instrumente, Verfahren, ...), Material, Maschinen, Werkzeug, ...                   |
+| Service Qualität                              | Kundendienst, Wartung, Zusammenarbeit                                                                |
+
+> Nachhaltigkeit nach dem 3-Säulen-Modell (siehe unter [Machbarkeitsprüfung](#machbarkeitsprüfung))
+
+## Qualitätsberichte
+
+- verbal
+  - Beschreibung des Sachverhalts/Situation
+    - "Der MA erfüllte die ihm gestellten Aufgaben stets zu unserer vollsten Zufriedenheit" $\rightarrow$ sehr gut aber denkt nicht mit
+    - "Der MA erfüllte seine Aufgaben stets zu unserer vollsten Zufriedenheit" $\rightarrow$ sehr gut und denkt mit
+  - Beschreibung der Verbesserung (Soll/Ist-Vergleich)
+- numerisch
+  - Tabelle (Soll/Ist-Vergleich)
+  - Bewertung (Scoring-Modell)
+
+<!-- ## Ermitteln und Festlegen von Qualitätszielen
+
+## Qualitätsmanagementmethoden und -Techniken
+
+## Erfassen und Bewerten von Qualitätsdaten
+
+## Weiterentwicklung des Risikomanagements
+
+## Methoden des Zeit- und Selbstmanagements -->
