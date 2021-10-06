@@ -16,6 +16,7 @@ Projektmanagement
 - [Klausur (unvollständig)](#klausur-unvollst%C3%A4ndig)
   - [BWL](#bwl)
   - [Projektmanagement (Klausurschwerpunkte)](#projektmanagement-klausurschwerpunkte)
+  - [Qualitätsmanagement (Klausurschwerpunkte)](#qualit%C3%A4tsmanagement-klausurschwerpunkte)
 - [Grundlagen](#grundlagen)
   - [Allgemeine Wiederholung](#allgemeine-wiederholung)
   - [Allgemeine Management Methoden](#allgemeine-management-methoden)
@@ -81,6 +82,19 @@ Projektmanagement
 - [Controlling](#controlling)
   - [Projeksteuerung durch Controlling](#projeksteuerung-durch-controlling)
   - [Berichtswesen im Controlling Prozess](#berichtswesen-im-controlling-prozess)
+- [Qualitätsmanagement](#qualit%C3%A4tsmanagement)
+  - [Einführung in das Qualitätsmanagement](#einf%C3%BChrung-in-das-qualit%C3%A4tsmanagement)
+  - [Ziele und Wirkungen von Qualitätsmanagement](#ziele-und-wirkungen-von-qualit%C3%A4tsmanagement)
+  - [Qualitätspolitik ist Unternehmenspolitik](#qualit%C3%A4tspolitik-ist-unternehmenspolitik)
+  - [Qualitätsdimensionen](#qualit%C3%A4tsdimensionen)
+  - [Qualitätsberichte](#qualit%C3%A4tsberichte)
+  - [Notwendige Instrumentarien](#notwendige-instrumentarien)
+  - [Rechtliche Grundlagen und Forderungen (Gewährleistung - BGB §431ff)](#rechtliche-grundlagen-und-forderungen-gew%C3%A4hrleistung---bgb-%C2%A7431ff)
+  - [Rechtliche Grundlagen und Forderungen (HACCP - hazard analysis and critical control points - Gefahrenanalyse und kritische Kontrollpunkte)](#rechtliche-grundlagen-und-forderungen-haccp---hazard-analysis-and-critical-control-points---gefahrenanalyse-und-kritische-kontrollpunkte)
+  - [Qualitätsmanagementmethoden und -Techniken](#qualit%C3%A4tsmanagementmethoden-und--techniken)
+    - [Qualitätsmanagementsysteme](#qualit%C3%A4tsmanagementsysteme)
+    - [Qualitätsmanagementsysteme - TQM als Grundsatz](#qualit%C3%A4tsmanagementsysteme---tqm-als-grundsatz)
+    - [Klassische Qualitätssicherung vs. TQM](#klassische-qualit%C3%A4tssicherung-vs-tqm)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
