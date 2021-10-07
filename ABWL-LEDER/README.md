@@ -853,7 +853,7 @@ zur Erfüllung der Aufgabe an.
 - Was ist Qualität?
   - Qualitäten eines Mitarbeiters
   - erwartete Eigenschaften eines Produkts
-- Was ist Qualitätsmangement
+- Was ist Qualitätsmanagement
   - Alles, was wir machen: Maßnahmen zur Durchsetzung der Erwartung
   - Überprüfung der Maßnahmen auf Sinn, Effizienz und Effektivität $\rightarrow$ Controlling
 
@@ -892,7 +892,7 @@ zur Erfüllung der Aufgabe an.
 
 - verbal
   - Beschreibung des Sachverhalts/Situation
-    - "Der MA erfüllte die ihm gestellten Aufgaben stets zu unserer vollsten Zufriedenheit" $\rightarrow$ sehr gut aber denkt nicht mit
+    - "Der MA erfüllte die ihm gestellten Aufgaben stets zu unserer vollsten Zufriedenheit" $\rightarrow$ sehr gut, aber denkt nicht mit
     - "Der MA erfüllte seine Aufgaben stets zu unserer vollsten Zufriedenheit" $\rightarrow$ sehr gut und denkt mit
   - Beschreibung der Verbesserung (Soll/Ist-Vergleich)
 - numerisch
@@ -931,7 +931,7 @@ $\rightarrow$ Grundlage für die Erfüllung der Gewährleistung nach wirtschaftl
 
 **HACCP:**
 
-- Gefahr: Aufgaben und Ziellstellung $\rightarrow$ um was wir uns kümmern wollen
+- Gefahr: Aufgaben und Zielstellung $\rightarrow$ um was wir uns kümmern wollen
 - Analyse: Wie funktioniert unsere Produktion?
 - Bewertung: Sind unsere Maschinen geeignet? $\rightarrow$ Schwachstellen finden mit Ishikawa
 - Umsetzung: Schwachstellen ausbessern
@@ -951,7 +951,7 @@ $\rightarrow$ Grundlage für die Erfüllung der Gewährleistung nach wirtschaftl
 
 ### Qualitätsmanagementsysteme - TQM als Grundsatz
 
-Qualität in allen Bereichen einer Organisation zu jeder Zeit und jedem Ort (parmanent), es umfasst:
+Qualität in allen Bereichen einer Organisation zu jeder Zeit und jedem Ort (permanent), es umfasst:
 
 **Tätigkeiten:**
 
