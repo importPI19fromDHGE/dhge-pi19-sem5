@@ -348,3 +348,69 @@ Endgeräte sind 802.1Q-fähig und können VLAN-Felder befüllen/interpretieren
 - Protokoll: LACP (Link Aggregation Control Protocol)
 - aktiv: Senden von entsprechenden Kontrollnachrichten
 - passiv: nur Reaktion auf Kontrollnachrichten
+
+# Prinzipien einer strukturierten Herangehensweise
+
+- Hierarchie
+- Modularität
+- Ausfallsicherheit
+- Flexibilität
+- Sicherheit
+
+## Three Layer Hierarchisches Design (Hallo, Cisco)
+
+- Core
+- Distrubution/Aggregation
+- Access
+- jeder Access-Switch kann eine Broadcast-Domaine darstellen
+
+### Two-Tier Collapsed Core Design
+
+- wie [Three Layer Hierarchisches Design](#three-layer-hierarchisches-design-hallo-cisco) aber:
+- ohne Distribution-Ebene
+- Access-Switches sind direkt mit Core-Routern vollvermascht
+
+### Aufgaben/Eigenschaften Core Layer
+
+- Schneller Transport
+- Hohe Zuverlässigkeit
+- Redundanz/Ausfallsicherheit
+- Fehlertoleranz
+- Niedrige Latenz
+- CPU Last
+- Quality of Service
+- Hop Count
+
+### Aufgaben/Eigenschaften Distribution/Aggregation Layer
+
+- Richtlinien (Policy)
+- Redundanz/Lastverteilung
+- Aggregation LAN/WAN/Adressbereiche
+- Sicherheit/Filterung
+- Quality of Service
+- Zugriffssteuerung
+- Broadcast/Multicast Domains
+- Routing
+
+### Aufgaben/Eigenschaften Access Layer
+
+- Rate-Limiting
+- Power over Ethernet
+- Broadcast-Filterung
+- Quality-of-Service Markierungen
+
+### Switched Hierarchical Design
+
+- **Core:**
+  - Layer 3 Switching in the core
+  - Route Summarization and Load Balancing
+  - Layer 3 Routed
+- **Distribution:**
+  - Layer 3 Boundary, Packet Filtering, Policing, Aggregation of Access
+- **Access:**
+  - Layer 2 Switching in Wiring CLoset
+  - Layer 2 Switched
+
+### Virtuelle Zusammenfassung von Switches
+
+- erlaubt es alle Upstream Links zu nutzen, um die Bandbreite zu erhöhen
