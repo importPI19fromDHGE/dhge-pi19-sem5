@@ -49,6 +49,18 @@ Rechnernetzadministration/Verteilte Systeme
       - [VLAN](#vlan)
       - [Spanning Tree](#spanning-tree)
 - [Link-Aggregation/Trunking](#link-aggregationtrunking)
+- [Prinzipien einer strukturierten Herangehensweise](#prinzipien-einer-strukturierten-herangehensweise)
+  - [Three Layer Hierarchisches Design (Hallo, Cisco)](#three-layer-hierarchisches-design-hallo-cisco)
+    - [Two-Tier Collapsed Core Design](#two-tier-collapsed-core-design)
+    - [Aufgaben/Eigenschaften Core Layer](#aufgabeneigenschaften-core-layer)
+    - [Aufgaben/Eigenschaften Distribution/Aggregation Layer](#aufgabeneigenschaften-distributionaggregation-layer)
+    - [Aufgaben/Eigenschaften Access Layer](#aufgabeneigenschaften-access-layer)
+    - [Switched Hierarchical Design](#switched-hierarchical-design)
+    - [Virtuelle Zusammenfassung von Switches](#virtuelle-zusammenfassung-von-switches)
+    - [Enterprise Campus](#enterprise-campus)
+    - [Enterprise Edge](#enterprise-edge)
+- [Architekturen für große Netze](#architekturen-f%C3%BCr-gro%C3%9Fe-netze)
+  - [Kritikpunkte am 3-Ebenen-Modell](#kritikpunkte-am-3-ebenen-modell)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
