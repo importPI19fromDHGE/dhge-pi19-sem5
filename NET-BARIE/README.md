@@ -363,26 +363,62 @@ Endgeräte sind 802.1Q-fähig und können VLAN-Felder befüllen/interpretieren
 
 # Prinzipien einer strukturierten Herangehensweise
 
-- Hierarchie
-- Modularität
-- Ausfallsicherheit
-- Flexibilität
-- Sicherheit
+- Hierarchie aufbauen
+- Modularität für einfache Erweiterbarkeit
+- Ausfallsicherheit, aber abwägen, wo es wirklich wichtig ist
+- Flexibilität für einfache Änderungen
+- Sicherheit nach außen und innen
 
 ## Three Layer Hierarchisches Design (Hallo, Cisco)
 
-- Core
-- Distrubution/Aggregation
-- Access
-- jeder Access-Switch kann eine Broadcast-Domaine darstellen
+- besteht aus Core-, Distribution- und Access-Schicht
+- jeder Access-Switch kann eine eigene Broadcast-Domaine darstellen, wenn auf der Distribution-Schicht Router verwendet werden
 
-### Two-Tier Collapsed Core Design
+### Access Layer
 
-- wie [Three Layer Hierarchisches Design](#three-layer-hierarchisches-design-hallo-cisco) aber:
-- ohne Distribution-Ebene
-- Access-Switches sind direkt mit Core-Routern vollvermascht
+- verbindet Endgeräte wie PCs, Drucker, IoT-Geräte
+- bietet Zugang zum Netzwerk
 
-### Aufgaben/Eigenschaften Core Layer
+#### Aufgaben und Eigenschaften vom Access Layer
+
+- Rate-Limiting
+- Layer 2 Switching
+- Power over Ethernet
+- Broadcast-Filterung
+- Quality-of-Service Markierungen
+- Port-Sicherheit
+- Zertifikatsbasierter Zugang
+- STP und VLAN
+
+### Distribution Layer
+
+- Teil- oder Voll-Vermaschung
+- Abstraktion zwischen Access- und Core-Schicht
+- hier könnte Ihr Router (oder L3-Switch) stehen (Routing bietet sich in dieser Schicht an)
+- Paketfilter bieten sich in dieser Schicht an
+
+#### Aufgaben und Eigenschaften vom Distribution Layer
+
+- Paketfilterung
+- erstmalig Routing
+- Redundanz
+- Quality of Service
+- VxLAN
+- verbindet Netze, routet Pakete
+- Lastausgleich
+- trennt oder verbindet Broadcast-Domänen
+- Richtlinien (Policy)
+- Aggregation LAN/WAN/Adressbereiche
+- Zugriffssteuerung
+
+### Core Layer
+
+- (teure) Router
+- Access Control
+- Fehlertoleranz sowohl geräteintern als auch durch Redundanz
+- Routen-Verwaltung
+
+#### Aufgaben und Eigenschaften vom Core Layer
 
 - Schneller Transport
 - Hohe Zuverlässigkeit
@@ -393,23 +429,11 @@ Endgeräte sind 802.1Q-fähig und können VLAN-Felder befüllen/interpretieren
 - Quality of Service
 - Hop Count
 
-### Aufgaben/Eigenschaften Distribution/Aggregation Layer
+### Two-Tier Collapsed Core Design
 
-- Richtlinien (Policy)
-- Redundanz/Lastverteilung
-- Aggregation LAN/WAN/Adressbereiche
-- Sicherheit/Filterung
-- Quality of Service
-- Zugriffssteuerung
-- Broadcast/Multicast Domains
-- Routing
-
-### Aufgaben/Eigenschaften Access Layer
-
-- Rate-Limiting
-- Power over Ethernet
-- Broadcast-Filterung
-- Quality-of-Service Markierungen
+- wie [Three Layer Hierarchisches Design](#three-layer-hierarchisches-design-hallo-cisco) aber:
+- ohne Distribution-Ebene
+- Access-Switches sind direkt mit Core-Routern vollvermascht
 
 ### Switched Hierarchical Design
 
@@ -446,6 +470,7 @@ ist der Übergang nach draußen.
 - Zur Erhöhung der Leistung und Ausfallsicherheit, brauche ich mehr Anbindungen zum ISP $\rightarrow$ mehr Edge-Router (auf einer oder beiden Seiten)
   - Mehrere ISPs sind auch möglich
 - Enterprise Edge ist der Übergang nach draußen und drinnen
+- verbindet mehrere Standorte miteinander
 
 # Architekturen für große Netze
 
@@ -459,7 +484,7 @@ ist der Übergang nach draußen.
 - **Komplexität:**
   - zusätzliche Protokolle, um Einschränkungen zu beheben (VxLAN, STP, MST, ...)
 - **Blast Radius:** Was wird durch einen Fehler noch in Mitleidenschaft gezogen?
-- **Berechenbarkeit/Vorhersagbarkeit:** ? (STP + Broadcast)
+- **Berechenbarkeit/Vorhersagbarkeit:** Das Netz verhält sich unter Randbedingungen ggf. unberechenbar, z.B.: Broadcast-Flut, STP-Versagen
 - **Inflexibel:**
   - (Bild) VLAN z.B. nur lokal in einem Pod $\rightarrow$ Hilfsmittel VxLAN $\rightarrow$ Komplexität
 - **Agilität:** virtuelle Netze müssen schnell bereitgestellt werden $\rightarrow$ VLAN $\rightarrow$ STP
