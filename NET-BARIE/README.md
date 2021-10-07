@@ -414,3 +414,40 @@ Endgeräte sind 802.1Q-fähig und können VLAN-Felder befüllen/interpretieren
 ### Virtuelle Zusammenfassung von Switches
 
 - erlaubt es alle Upstream Links zu nutzen, um die Bandbreite zu erhöhen
+
+### Enterprise Campus
+
+- Data Center
+- Campus Core
+- Building Distribution
+- Building Access
+
+### Enterprise Edge
+
+ist der Übergang nach draußen.
+
+- E-Commerce
+- DMZ/Internet
+- Enterprise WAN
+- Remote Access VPN
+- Anbindung von Service Provider Edge und Enterprise Edge
+- Zur Erhöhung der Leistung und Ausfallsicherheit, brauche ich mehr Anbindungen zum ISP $\rightarrow$ mehr Edge-Router (auf einer oder beiden Seiten)
+  - Mehrere ISPs sind auch möglich
+- Enterprise Edge ist der Übergang nach draußen und drinnen
+
+# Architekturen für große Netze
+
+## Kritikpunkte am 3-Ebenen-Modell
+
+- **Skalierbarkeit:**
+  - Hardware: nicht genügend Ports etc.
+  - VLAN: nur 4096 Netze
+  - STP; insbesondere in Kombination mit Aggregation
+  - Broadcast-Traffic (z.B. durch ARP (für IPv6 im Bereich von 10..20s), Flooding)
+- **Komplexität:**
+  - zusätzliche Protokolle, um Einschränkungen zu beheben (VxLAN, STP, MST, ...)
+- **Blast Radius:** Was wird durch einen Fehler noch in Mitleidenschaft gezogen?
+- **Berechenbarkeit/Vorhersagbarkeit:** ? (STP + Broadcast)
+- **Inflexibel:**
+  - (Bild) VLAN z.B. nur lokal in einem Pod $\rightarrow$ Hilfsmittel VxLAN $\rightarrow$ Komplexität
+- **Agilität:** virtuelle Netze müssen schnell bereitgestellt werden $\rightarrow$ VLAN $\rightarrow$ STP
