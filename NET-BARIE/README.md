@@ -375,7 +375,7 @@ Endgeräte sind 802.1Q-fähig und können VLAN-Felder befüllen/interpretieren
 ## Three Layer Hierarchisches Design (Hallo, Cisco)
 
 - besteht aus Core-, Distribution- und Access-Schicht
-- jeder Access-Switch kann eine eigene Broadcast-Domaine darstellen, wenn auf der Distribution-Schicht Router verwendet werden
+- jeder Access-Switch kann eine eigene Broadcast-Domäne darstellen, wenn auf der Distribution-Schicht Router verwendet werden
 
 ### Access Layer
 
