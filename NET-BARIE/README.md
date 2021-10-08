@@ -49,6 +49,21 @@ Rechnernetzadministration/Verteilte Systeme
       - [VLAN](#vlan)
       - [Spanning Tree](#spanning-tree)
 - [Link-Aggregation/Trunking](#link-aggregationtrunking)
+- [Prinzipien einer strukturierten Herangehensweise](#prinzipien-einer-strukturierten-herangehensweise)
+  - [Three Layer Hierarchisches Design (Hallo, Cisco)](#three-layer-hierarchisches-design-hallo-cisco)
+    - [Access Layer](#access-layer)
+      - [Aufgaben und Eigenschaften vom Access Layer](#aufgaben-und-eigenschaften-vom-access-layer)
+    - [Distribution Layer](#distribution-layer)
+      - [Aufgaben und Eigenschaften vom Distribution Layer](#aufgaben-und-eigenschaften-vom-distribution-layer)
+    - [Core Layer](#core-layer)
+      - [Aufgaben und Eigenschaften vom Core Layer](#aufgaben-und-eigenschaften-vom-core-layer)
+    - [Two-Tier Collapsed Core Design](#two-tier-collapsed-core-design)
+    - [Switched Hierarchical Design](#switched-hierarchical-design)
+    - [Virtuelle Zusammenfassung von Switches](#virtuelle-zusammenfassung-von-switches)
+    - [Enterprise Campus](#enterprise-campus)
+    - [Enterprise Edge](#enterprise-edge)
+- [Architekturen für große Netze](#architekturen-f%C3%BCr-gro%C3%9Fe-netze)
+  - [Kritikpunkte am 3-Ebenen-Modell](#kritikpunkte-am-3-ebenen-modell)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -348,3 +363,131 @@ Endgeräte sind 802.1Q-fähig und können VLAN-Felder befüllen/interpretieren
 - Protokoll: LACP (Link Aggregation Control Protocol)
 - aktiv: Senden von entsprechenden Kontrollnachrichten
 - passiv: nur Reaktion auf Kontrollnachrichten
+
+# Prinzipien einer strukturierten Herangehensweise
+
+- Hierarchie aufbauen
+- Modularität für einfache Erweiterbarkeit
+- Ausfallsicherheit, aber abwägen, wo es wirklich wichtig ist
+- Flexibilität für einfache Änderungen
+- Sicherheit nach außen und innen
+
+## Three Layer Hierarchisches Design (Hallo, Cisco)
+
+- besteht aus Core-, Distribution- und Access-Schicht
+- jeder Access-Switch kann eine eigene Broadcast-Domäne darstellen, wenn auf der Distribution-Schicht Router verwendet werden
+
+### Access Layer
+
+- verbindet Endgeräte wie PCs, Drucker, IoT-Geräte
+- bietet Zugang zum Netzwerk
+
+#### Aufgaben und Eigenschaften vom Access Layer
+
+- Rate-Limiting
+- Layer 2 Switching
+- Power over Ethernet
+- Broadcast-Filterung
+- Quality-of-Service Markierungen
+- Port-Sicherheit
+- Zertifikatsbasierter Zugang
+- STP und VLAN
+
+### Distribution Layer
+
+- Teil- oder Voll-Vermaschung
+- Abstraktion zwischen Access- und Core-Schicht
+- hier könnte Ihr Router (oder L3-Switch) stehen (Routing bietet sich in dieser Schicht an)
+- Paketfilter bieten sich in dieser Schicht an
+
+#### Aufgaben und Eigenschaften vom Distribution Layer
+
+- Paketfilterung
+- erstmalig Routing
+- Redundanz
+- Quality of Service
+- VxLAN
+- verbindet Netze, routet Pakete
+- Lastausgleich
+- trennt oder verbindet Broadcast-Domänen
+- Richtlinien (Policy)
+- Aggregation LAN/WAN/Adressbereiche
+- Zugriffssteuerung
+
+### Core Layer
+
+- (teure) Router
+- Access Control
+- Fehlertoleranz sowohl geräteintern als auch durch Redundanz
+- Routen-Verwaltung
+
+#### Aufgaben und Eigenschaften vom Core Layer
+
+- Schneller Transport
+- Hohe Zuverlässigkeit
+- Redundanz/Ausfallsicherheit
+- Fehlertoleranz
+- Niedrige Latenz
+- CPU Last
+- Quality of Service
+- Hop Count
+
+### Two-Tier Collapsed Core Design
+
+- wie [Three Layer Hierarchisches Design](#three-layer-hierarchisches-design-hallo-cisco) aber:
+- ohne Distribution-Ebene
+- Access-Switches sind direkt mit Core-Routern vollvermascht
+
+### Switched Hierarchical Design
+
+- **Core:**
+  - Layer 3 Switching in the core
+  - Route Summarization and Load Balancing
+  - Layer 3 Routed
+- **Distribution:**
+  - Layer 3 Boundary, Packet Filtering, Policing, Aggregation of Access
+- **Access:**
+  - Layer 2 Switching in Wiring Closet
+  - Layer 2 Switched
+
+### Virtuelle Zusammenfassung von Switches
+
+- erlaubt es alle Upstream Links zu nutzen, um die Bandbreite zu erhöhen
+
+### Enterprise Campus
+
+- Data Center
+- Campus Core
+- Building Distribution
+- Building Access
+
+### Enterprise Edge
+
+ist der Übergang nach draußen.
+
+- E-Commerce
+- DMZ/Internet
+- Enterprise WAN
+- Remote Access VPN
+- Anbindung von Service Provider Edge und Enterprise Edge
+- Zur Erhöhung der Leistung und Ausfallsicherheit, brauche ich mehr Anbindungen zum ISP $\rightarrow$ mehr Edge-Router (auf einer oder beiden Seiten)
+  - Mehrere ISPs sind auch möglich
+- Enterprise Edge ist der Übergang nach draußen und drinnen
+- verbindet mehrere Standorte miteinander
+
+# Architekturen für große Netze
+
+## Kritikpunkte am 3-Ebenen-Modell
+
+- **Skalierbarkeit:**
+  - Hardware: nicht genügend Ports etc.
+  - VLAN: nur 4096 Netze
+  - STP; insbesondere in Kombination mit Aggregation
+  - Broadcast-Traffic (z.B. durch ARP (für IPv6 im Bereich von 10..20s), Flooding)
+- **Komplexität:**
+  - zusätzliche Protokolle, um Einschränkungen zu beheben (VxLAN, STP, MST, ...)
+- **Blast Radius:** Was wird durch einen Fehler noch in Mitleidenschaft gezogen?
+- **Berechenbarkeit/Vorhersagbarkeit:** Das Netz verhält sich unter Randbedingungen ggf. unberechenbar, z.B.: Broadcast-Flut, STP-Versagen
+- **Inflexibel:**
+  - (Bild) VLAN z.B. nur lokal in einem Pod $\rightarrow$ Hilfsmittel VxLAN $\rightarrow$ Komplexität
+- **Agilität:** virtuelle Netze müssen schnell bereitgestellt werden $\rightarrow$ VLAN $\rightarrow$ STP
