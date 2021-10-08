@@ -447,7 +447,7 @@ Endgeräte sind 802.1Q-fähig und können VLAN-Felder befüllen/interpretieren
 - **Distribution:**
   - Layer 3 Boundary, Packet Filtering, Policing, Aggregation of Access
 - **Access:**
-  - Layer 2 Switching in Wiring CLoset
+  - Layer 2 Switching in Wiring Closet
   - Layer 2 Switched
 
 ### Virtuelle Zusammenfassung von Switches
