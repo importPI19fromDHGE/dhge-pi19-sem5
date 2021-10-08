@@ -13,6 +13,7 @@ Software-Entwicklungswerkzeuge
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Klausur](#klausur)
 - [Dokumentation](#dokumentation)
   - [Dokumentationsgeneratoren](#dokumentationsgeneratoren)
   - [Andere Tools](#andere-tools)
@@ -61,6 +62,15 @@ Software-Entwicklungswerkzeuge
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 <!--newpage-->
+
+# Klausur
+
+- Theorieklausur, ca. 5 bis 6 Seiten mit jeweils 5 bis 10 kurzen Fragen
+- kein Code, keine Befehlsdetails
+- Bsp.: Anforderungen an Dokumentation, Bestandteile eines Makefiles
+- Stichpunkte reichen, straffer Zeitrahmen
+- Es gibt wieder Überpunkte<!--:-)-->
+- Themenschwerpunkte sind die Übungen, aber auch Tools wie Versionsverwaltung
 
 # Dokumentation
 
