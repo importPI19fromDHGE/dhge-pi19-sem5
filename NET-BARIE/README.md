@@ -491,3 +491,30 @@ ist der Übergang nach draußen.
 - **Inflexibel:**
   - (Bild) VLAN z.B. nur lokal in einem Pod $\rightarrow$ Hilfsmittel VxLAN $\rightarrow$ Komplexität
 - **Agilität:** virtuelle Netze müssen schnell bereitgestellt werden $\rightarrow$ VLAN $\rightarrow$ STP
+
+$\rightarrow$ Kritikpunkte sind teils adressierbar durch eine Änderung der Topologie
+
+$\rightarrow$ weniger Ebenen, mehr Vermaschung, mehr Routing (Idee kommt aus der Leitungsvermittlung, wieder entdeckt von Charles Clos in den 50er Jahren)
+
+$\rightarrow$ wird als Clos oder Spine-Leaf bezeichnet
+
+- Spine $\rightarrow$ andere Bezeichnung für Backbone
+- jedes (Leaf-)Node ist mit jedem (Spine-)Node verbunden $\rightarrow$ voll vermascht
+- Leafs sind untereinandner **nicht** verbunden
+- Spine-Nodes sind untereinander **nicht** verbunden
+- "Top of Rack (ToR) Switch" ist ein Switch, der als Leaf ein Rack mit dem Spine verbindet
+- Frage nach der Kapazität: mehr Spines (mehr Links) $\rightarrow$ STP?
+
+**Aufgabentrennung:**
+
+- Leaves: Anbindung der Endpunkte
+- Spine: Verbinden Leaves miteinander: mehr Spines $\rightarrow$ mehr Durchsatz (statt Kauf des nächsthöheren Core-Routers)
+
+$\rightarrow$ Wir realisieren den Datenaustausch hauptsächlich per Routing, kein STP zwischen Leafs und Spine,
+L2 Bridging bleibt in Richtung der Endgeräte möglich
+
+- VLANs sind zunächst auf den Bereich eines Leafs beschränkt $\rightarrow$ VxLAN
+- alternativ z.B.: TRILL (IETF), SPB (IEEE)
+- Kostenfunktion: gleiches Gewicht für alle Pfade
+- Frage der Auslastung von NW-Verbindungen:
+  - Subscription Ratio = Bandbreite down / Bandbreite up
