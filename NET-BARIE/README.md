@@ -64,6 +64,10 @@ Rechnernetzadministration/Verteilte Systeme
     - [Enterprise Edge](#enterprise-edge)
 - [Architekturen für große Netze](#architekturen-f%C3%BCr-gro%C3%9Fe-netze)
   - [Kritikpunkte am 3-Ebenen-Modell](#kritikpunkte-am-3-ebenen-modell)
+- [SNMP/Netzwerk Management](#snmpnetzwerk-management)
+  - [SNMP](#snmp)
+  - [Netzwerkmanagement](#netzwerkmanagement)
+    - [Wie mache ich Management?](#wie-mache-ich-management)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
