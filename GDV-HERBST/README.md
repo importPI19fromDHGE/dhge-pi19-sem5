@@ -13,6 +13,7 @@ Graphische Datenverarbeitung
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Graphische Datenverarbeitung](#graphische-datenverarbeitung)
 - [Organisatorisches](#organisatorisches)
 - [CAD - Computer Aided Design](#cad---computer-aided-design)
   - [CAD-Grundlagen](#cad-grundlagen)
@@ -31,6 +32,11 @@ Graphische Datenverarbeitung
   - [3D-Objekte](#3d-objekte)
   - [Visualisierung](#visualisierung)
   - [Bildformate](#bildformate)
+- [Grundlagen geometrischer Modellierung](#grundlagen-geometrischer-modellierung)
+  - [grafische Primitive](#grafische-primitive)
+    - [2D-Elemete](#2d-elemete)
+    - [3D-Elemente](#3d-elemente)
+  - [Boolsche Operatoren](#boolsche-operatoren)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -101,3 +107,35 @@ Graphische Datenverarbeitung
 ## Visualisierung
 
 ## Bildformate
+
+# Grundlagen geometrischer Modellierung
+
+## grafische Primitive
+
+### 2D-Elemete
+
+- Punkte, Linien, Polygone, Spline, Bézier-Kurven, Kreise, Rechtecke, Text (mit Fonts)
+- Kreise sind problematisch, da sie eigentlich Polygone mit unendlich vielen Ecken sind $\rightarrow$ müssen in Liniensegmente aufgeteilt werden
+  - Fachbegriff: Segmentierung und Tesselierung
+- Punkte sind auch problematisch: sie sind dimensionslos, man würde ihn nicht sehen $\rightarrow$ prozentual berechnete Größe abhängig von der Bildschirmauflösung
+- Spline und Beziér-Kurve: frei geformte Kurven, die durch Punkte gehen; mathematisch ein Polynom n-ten Grades
+  - muss ebenfalls in Liniensegmente unterteilt werden, mehr noch als Kreise
+    - wenn das einmal geschehen ist, kann die Kurve jedoch **nicht** mehr wiederhergestellt werden
+    - v.a. bei Datenübertragung zu anderen Programmen
+
+### 3D-Elemente
+
+- Quader, Kugel, Zylinder, Kegel, ...
+- Bézier-Fläche / NURBS (Non-Uniform Rational B-Spline and Surfaces), Subdivision Surfaces Modeling / SubD NURBS
+- Metabälle / Blob-Netz (verbindet sich selbstständig mit anderen Objekten mithilfe Verbindungsoberfläche)
+- Problemstellungen:
+  - Parameter, UI-Erstellung, Tesselierung, Interpolation, alternative Modellierungsansätze
+  - Tesselierung genauer: Flächen werden in Dreiecke unterteilt
+- moderne CAD-Systeme sind meist NURBS-Modellierer
+- SubD NURBS in Autodesk Inventor: "Freiform erstellen"
+
+## Boolsche Operatoren
+
+- Vereinigung OR
+- Differenzmenge "A\\B" (NOT?)
+- Schnittmenge AND
