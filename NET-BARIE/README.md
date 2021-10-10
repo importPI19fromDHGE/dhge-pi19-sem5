@@ -24,14 +24,15 @@ Rechnernetzadministration/Verteilte Systeme
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Rechnernetzadministration/Verteilte Systeme](#rechnernetzadministrationverteilte-systeme)
 - [Literaturempfehlung](#literaturempfehlung)
 - [Einleitung](#einleitung)
   - [Designziele](#designziele)
   - [Wiederholung Grundlagen](#wiederholung-grundlagen)
     - [Netzwerk](#netzwerk)
     - [Klassifizierung von Datennetzen](#klassifizierung-von-datennetzen)
-      - [Räumliche Ausdehnung](#r%C3%A4umliche-ausdehnung)
-      - [Größe/Anzahl der Teilnehmer](#gr%C3%B6%C3%9Feanzahl-der-teilnehmer)
+      - [Räumliche Ausdehnung](#räumliche-ausdehnung)
+      - [Größe/Anzahl der Teilnehmer](#größeanzahl-der-teilnehmer)
       - [Hardware-Sicht](#hardware-sicht)
       - [Logische Sicht](#logische-sicht)
         - [ISO/OSI und TCP/IP](#isoosi-und-tcpip)
@@ -40,7 +41,7 @@ Rechnernetzadministration/Verteilte Systeme
       - [Einschub: Frames/Sicherungsschicht](#einschub-framessicherungsschicht)
         - [Grober Aufbau eines Frames](#grober-aufbau-eines-frames)
         - [Paketkollision](#paketkollision)
-      - [Einschub: Geräte](#einschub-ger%C3%A4te)
+      - [Einschub: Geräte](#einschub-geräte)
     - [Topologien auf der logischen Ebene](#topologien-auf-der-logischen-ebene)
       - [flache Topologie](#flache-topologie)
       - [standortbasiert](#standortbasiert)
@@ -59,10 +60,11 @@ Rechnernetzadministration/Verteilte Systeme
       - [Aufgaben und Eigenschaften vom Core Layer](#aufgaben-und-eigenschaften-vom-core-layer)
     - [Two-Tier Collapsed Core Design](#two-tier-collapsed-core-design)
     - [Switched Hierarchical Design](#switched-hierarchical-design)
+    - [Routed Hierarchical Design](#routed-hierarchical-design)
     - [Virtuelle Zusammenfassung von Switches](#virtuelle-zusammenfassung-von-switches)
-    - [Enterprise Campus](#enterprise-campus)
-    - [Enterprise Edge](#enterprise-edge)
-- [Architekturen für große Netze](#architekturen-f%C3%BCr-gro%C3%9Fe-netze)
+- [Architekturen für große Netze](#architekturen-für-große-netze)
+  - [Enterprise Campus](#enterprise-campus)
+  - [Enterprise Edge](#enterprise-edge)
   - [Kritikpunkte am 3-Ebenen-Modell](#kritikpunkte-am-3-ebenen-modell)
 - [SNMP/Netzwerk Management](#snmpnetzwerk-management)
   - [SNMP](#snmp)
@@ -378,6 +380,8 @@ Endgeräte sind 802.1Q-fähig und können VLAN-Felder befüllen/interpretieren
 
 ## Three Layer Hierarchisches Design (Hallo, Cisco)
 
+![Three Layer Hierarchie](assets/three_layer_hier.png)<!--width=600px-->
+
 - besteht aus Core-, Distribution- und Access-Schicht
 - jeder Access-Switch kann eine eigene Broadcast-Domäne darstellen, wenn auf der Distribution-Schicht Router verwendet werden
 
@@ -444,28 +448,32 @@ Endgeräte sind 802.1Q-fähig und können VLAN-Felder befüllen/interpretieren
 
 ### Switched Hierarchical Design
 
-- **Core:**
-  - Layer 3 Switching in the core
-  - Route Summarization and Load Balancing
-  - Layer 3 Routed
-- **Distribution:**
-  - Layer 3 Boundary, Packet Filtering, Policing, Aggregation of Access
-- **Access:**
-  - Layer 2 Switching in Wiring Closet
-  - Layer 2 Switched
+![Switched Hierarchical Design](assets/switched_hier.png)<!--width=600px-->
+
+Bild: Cisco
+
+### Routed Hierarchical Design
+
+![Routed Hierarchical Design](assets/routed_hier.png)<!--width=600px-->
+
+Bild: Cisco
 
 ### Virtuelle Zusammenfassung von Switches
 
-- erlaubt es alle Upstream Links zu nutzen, um die Bandbreite zu erhöhen
+- erlaubt es, alle Upstream Links zu nutzen, welche normalerweise durch STP gesperrt werden würden, um die Bandbreite zu erhöhen
 
-### Enterprise Campus
+# Architekturen für große Netze
+
+![3-Ebenen-Architektur für große Netze](assets/three_layers_scaled.png)<!--width=600px-->
+
+## Enterprise Campus
 
 - Data Center
 - Campus Core
 - Building Distribution
 - Building Access
 
-### Enterprise Edge
+## Enterprise Edge
 
 ist der Übergang nach draußen.
 
@@ -478,8 +486,6 @@ ist der Übergang nach draußen.
   - Mehrere ISPs sind auch möglich
 - Enterprise Edge ist der Übergang nach draußen und drinnen
 - verbindet mehrere Standorte miteinander
-
-# Architekturen für große Netze
 
 ## Kritikpunkte am 3-Ebenen-Modell
 
@@ -543,7 +549,7 @@ L2 Bridging bleibt in Richtung der Endgeräte möglich
 **Agent:**
 
 - sendet Traps asynchron
-- Software, die auf zu managenden <!--🤔--> Geräten läuft
+- Software, die auf zu verwaltenden Geräten läuft
 
 **Ablauf:**
 
