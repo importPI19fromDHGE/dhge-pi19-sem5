@@ -466,6 +466,8 @@ Bild: Cisco
 
 ![3-Ebenen-Architektur für große Netze](assets/three_layers_scaled.png)<!--width=600px-->
 
+Bild: Cisco
+
 ## Enterprise Campus
 
 - Data Center
