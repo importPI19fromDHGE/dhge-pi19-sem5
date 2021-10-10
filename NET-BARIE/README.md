@@ -382,6 +382,8 @@ Endgeräte sind 802.1Q-fähig und können VLAN-Felder befüllen/interpretieren
 
 ![Three Layer Hierarchie](assets/three_layer_hier.png)<!--width=600px-->
 
+Bild: Cisco
+
 - besteht aus Core-, Distribution- und Access-Schicht
 - jeder Access-Switch kann eine eigene Broadcast-Domäne darstellen, wenn auf der Distribution-Schicht Router verwendet werden
 
