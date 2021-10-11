@@ -129,11 +129,11 @@ Projektmanagement
 
 - Projekt und Projektmanagement erläutern können
 - Kennzeichen/Merkmale von Projektmanagement erläutern können (Folie 4)
-- Knotennetzplan
+- Knotennetzplan (Pfeilnetzplan muss **nicht** gekonnt werden)
 - Grundsätze für die Projektplanung (Folie 17)
 - PDCA anwenden und beschreiben können
 - Problemanalyse (Folie 22)
-- Ishikawa
+- Ishikawa (WICHTIG!!!)
 - Brainwriting nach 635 Methode
 - Kompetenz kann "etwas können" oder "etwas dürfen" bedeuten, aus dem Kontext deuten können!
 - Knoten-Netzplan (Ablauf von Projekten) berechnen können (!!!)
@@ -1022,8 +1022,80 @@ Kaizen steht im Zentrum einer Qualitätssicherung. Kaizen wird gemacht, damit di
 - **Seiso (清楚):** Säubere. Der Arbeitsplatz wird von Grund auf gereinigt.
 - **Seiketsu (清潔):** Sauberkeit bewahren - stetiges Aufräumen
 - **Shitsuke (躾):** Selbstdisziplin üben - Ordnung und Sauberkeit aufrechterhalten
-- **Shukan (習慣?):** Bei nachhaltiger Disziplin gehen Ordnung und Sauberkeit in Fleisch und Blut über
+- **Shuukan (習慣):** Bei nachhaltiger Disziplin gehen Ordnung und Sauberkeit in Fleisch und Blut über $\rightarrow$ Gewohnheit
 
-**Kaizen - 7M Checkliste**
+**Kaizen - 7-M-Checkliste**
 
 > siehe Ishikawa
+
+**Kaizen 7-W-Checkliste**
+
+> abgeleitet aus der 5W-Regel für Aufgabenstellungen
+
+- Was ist zu tun?
+- Wer macht es?
+- Warum macht er es?
+- Wie wird es gemacht?
+- Wann wird es gemacht?
+- Wo soll es getan werden?
+- Wieso wird es nicht anders gemacht?
+
+**Kaizen - 3-Mu-Checkliste**
+
+- **Muda (無駄):** Verschwendung, siehe die 7 Verschwendungsarten
+- **Muri (無理):** Überlastung der Mitarbeiter und Maschinen
+- **Mura (斑):** Unregelmäßigkeit der Prozesse
+
+**Planung von Prozessen:**
+
+- Methoden: Netzplantechnik (Knotennetzplan, Pfeilnetzplan), Ganttdiagramm, Workflow, Flussplan
+
+**7 Verschwendungen (Muda):**
+
+- **Muda durch Überproduktion:** mehr als notwendig fertigen
+- **Muda der Bestände:** End-, Halbfertigprodukte, Zulieferteile und Materialien, die als Bestände lagern, sind nicht wertschöpfend
+- **Muda durch Nacharbeit/Fehler:** Fehlerhafte Produkte stören den Produktionsfluss und erfordern teure Nachbesserung
+- **Muda der Bewegung:** Jede Körperbewegung, die nicht zum Wertzuwachs beiträgt, ist unproduktiv <!-- excuse me, what the FUCK -->
+- **Muda in der Herstellung:** Unzureichende Technologie oder Konstruktion
+- **Muda durch Warten:** untätige Hände eines Mitarbeiters; Prozesstaktung nicht optimiert
+- **Muda beim Transport:** Bewegung von Materialien oder Produkten ist nicht wertschöpfend (JIT, JIS)
+- **Verschwendung durch schlechte Ergonomie:** speziell im Hinblick auf Mitarbeiter
+- **Nicht of falsch genutztes Talent**
+
+### European Foundation for Quality Management (EFQM)
+
+TQM - 1988 in Europa von 14 der führenden Unternehmen in EFQM weiterentwickelt.
+Qualität wird in zwei Hälften geteilt:
+
+- **Ergebnisse:** 50%
+  - Mitarbeiterbezogene Ergebnisse: 10%
+  - Kundenbezogene Ergebnisse: 15%
+  - Gesellschaftsbezogene Ergebnisse: 10%
+  - Schlüsselergebnisse: 15%
+- **Befähiger:** 50%
+  - Führung: 10%
+  - Mitarbeiter: 10%
+  - Politik und Strategie: 10%
+  - Ressourcen und Partner: 10%
+  - Prozesse: 10%
+
+**Möglichkeiten der Einbeziehung der Mitarbeiter:**
+
+- Job-enrichment
+- Job-enlargement
+- Jobsharing
+- Teilautonome Arbeitsgruppen
+
+```text
+      ┏━━━━━━━━━━━━━━━━━━┓
+      ┃Management-Prozess┃
+      ┗━━━━━━━━━━━━━━━━━━┛
+      ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃          Kern-Prozess           ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+    ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+    ┏━━━━━━━━━━━━━━━━━━━━━━━┓
+    ┃Unterstützende Prozesse┃
+    ┗━━━━━━━━━━━━━━━━━━━━━━━┛
+```
