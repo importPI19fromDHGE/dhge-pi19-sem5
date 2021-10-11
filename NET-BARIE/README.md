@@ -59,11 +59,16 @@ Rechnernetzadministration/Verteilte Systeme
       - [Aufgaben und Eigenschaften vom Core Layer](#aufgaben-und-eigenschaften-vom-core-layer)
     - [Two-Tier Collapsed Core Design](#two-tier-collapsed-core-design)
     - [Switched Hierarchical Design](#switched-hierarchical-design)
+    - [Routed Hierarchical Design](#routed-hierarchical-design)
     - [Virtuelle Zusammenfassung von Switches](#virtuelle-zusammenfassung-von-switches)
-    - [Enterprise Campus](#enterprise-campus)
-    - [Enterprise Edge](#enterprise-edge)
 - [Architekturen für große Netze](#architekturen-f%C3%BCr-gro%C3%9Fe-netze)
+  - [Enterprise Campus](#enterprise-campus)
+  - [Enterprise Edge](#enterprise-edge)
   - [Kritikpunkte am 3-Ebenen-Modell](#kritikpunkte-am-3-ebenen-modell)
+- [SNMP/Netzwerk Management](#snmpnetzwerk-management)
+  - [SNMP](#snmp)
+  - [Netzwerkmanagement](#netzwerkmanagement)
+    - [Wie mache ich Management?](#wie-mache-ich-management)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -96,7 +101,7 @@ Rechnernetzadministration/Verteilte Systeme
 - besteht aus Hard- und Software
 - durch kabelgebundene und/oder drahtlose Übertragungssysteme verbunden
 - zur Übertragung/Verarbeitung von Informationen
-- digitale Datennetze (es sollen keine Rundfunknetze und Telefonnetze behandelt werden) \rightarrow\rightarrow NGN (Next Generation Networking)
+- digitale Datennetze (es sollen keine Rundfunknetze und Telefonnetze behandelt werden) $\rightarrow$ NGN (Next Generation Networking)
 
 ### Klassifizierung von Datennetzen
 
@@ -374,6 +379,10 @@ Endgeräte sind 802.1Q-fähig und können VLAN-Felder befüllen/interpretieren
 
 ## Three Layer Hierarchisches Design (Hallo, Cisco)
 
+![Three Layer Hierarchie](assets/three_layer_hier.png)<!--width=600px-->
+
+Bild: Cisco
+
 - besteht aus Core-, Distribution- und Access-Schicht
 - jeder Access-Switch kann eine eigene Broadcast-Domäne darstellen, wenn auf der Distribution-Schicht Router verwendet werden
 
@@ -440,28 +449,34 @@ Endgeräte sind 802.1Q-fähig und können VLAN-Felder befüllen/interpretieren
 
 ### Switched Hierarchical Design
 
-- **Core:**
-  - Layer 3 Switching in the core
-  - Route Summarization and Load Balancing
-  - Layer 3 Routed
-- **Distribution:**
-  - Layer 3 Boundary, Packet Filtering, Policing, Aggregation of Access
-- **Access:**
-  - Layer 2 Switching in Wiring Closet
-  - Layer 2 Switched
+![Switched Hierarchical Design](assets/switched_hier.png)<!--width=600px-->
+
+Bild: Cisco
+
+### Routed Hierarchical Design
+
+![Routed Hierarchical Design](assets/routed_hier.png)<!--width=600px-->
+
+Bild: Cisco
 
 ### Virtuelle Zusammenfassung von Switches
 
-- erlaubt es alle Upstream Links zu nutzen, um die Bandbreite zu erhöhen
+- erlaubt es, alle Upstream Links zu nutzen, welche normalerweise durch STP gesperrt werden würden, um die Bandbreite zu erhöhen
 
-### Enterprise Campus
+# Architekturen für große Netze
+
+![3-Ebenen-Architektur für große Netze](assets/three_layers_scaled.png)<!--width=600px-->
+
+Bild: Cisco
+
+## Enterprise Campus
 
 - Data Center
 - Campus Core
 - Building Distribution
 - Building Access
 
-### Enterprise Edge
+## Enterprise Edge
 
 ist der Übergang nach draußen.
 
@@ -474,8 +489,6 @@ ist der Übergang nach draußen.
   - Mehrere ISPs sind auch möglich
 - Enterprise Edge ist der Übergang nach draußen und drinnen
 - verbindet mehrere Standorte miteinander
-
-# Architekturen für große Netze
 
 ## Kritikpunkte am 3-Ebenen-Modell
 
@@ -491,3 +504,110 @@ ist der Übergang nach draußen.
 - **Inflexibel:**
   - (Bild) VLAN z.B. nur lokal in einem Pod $\rightarrow$ Hilfsmittel VxLAN $\rightarrow$ Komplexität
 - **Agilität:** virtuelle Netze müssen schnell bereitgestellt werden $\rightarrow$ VLAN $\rightarrow$ STP
+
+$\rightarrow$ Kritikpunkte sind teils adressierbar durch eine Änderung der Topologie
+
+$\rightarrow$ weniger Ebenen, mehr Vermaschung, mehr Routing (Idee kommt aus der Leitungsvermittlung, wieder entdeckt von Charles Clos in den 50er Jahren)
+
+$\rightarrow$ wird als Clos oder Spine-Leaf bezeichnet
+
+- Spine $\rightarrow$ andere Bezeichnung für Backbone
+- jede (Leaf-)Node ist mit jeder (Spine-)Node verbunden $\rightarrow$ voll vermascht
+- Leafs sind untereinandner **nicht** verbunden
+- Spine-Nodes sind untereinander **nicht** verbunden
+- "Top of Rack (ToR) Switch" ist ein Switch, der als Leaf ein Rack mit dem Spine verbindet
+- Frage nach der Kapazität: mehr Spines (mehr Links) $\rightarrow$ STP?
+
+**Aufgabentrennung:**
+
+- Leaves: Anbindung der Endpunkte
+- Spine: Verbinden Leaves miteinander: mehr Spines $\rightarrow$ mehr Durchsatz (statt Kauf des nächsthöheren Core-Routers)
+
+$\rightarrow$ Wir realisieren den Datenaustausch hauptsächlich per Routing, kein STP zwischen Leafs und Spine,
+L2 Bridging bleibt in Richtung der Endgeräte möglich
+
+- VLANs sind zunächst auf den Bereich eines Leafs beschränkt $\rightarrow$ VxLAN
+- alternativ z.B.: TRILL (IETF), SPB (IEEE)
+- Kostenfunktion: gleiches Gewicht für alle Pfade
+- Frage der Auslastung von NW-Verbindungen:
+  - Subscription Ratio = Bandbreite down / Bandbreite up
+
+# SNMP/Netzwerk Management
+
+## SNMP
+
+- **SNMP:** **S**imple **N**etwork **M**anagement **P**rotocol
+- Protokoll, das Informationen von Geräten/Diensten im Netzwerk abholt (1988)
+- Menge an Operationen zur Abfrage des Status und/oder Änderung des Status von Geräten im Netzwerk
+- standardisiert von der IETF: RFC1157 (Version 1)
+- die aktuellste Version 3 hat sich noch nicht überall durchgesetzt
+- Version 2 ist am meisten verbreitet
+
+**Manager:**
+
+- Server, auf dem die Management-Software läuft
+- NMS: Network Management Station
+- pollt die Agents nach Traps $\rightarrow$ Art und Weise, auf die der Angefragte Bescheid gibt, dass Informationen vorliegen
+
+**Agent:**
+
+- sendet Traps asynchron
+- Software, die auf zu verwaltenden Geräten läuft
+
+**Ablauf:**
+
+1. Ereignis tritt beim Agent ein
+2. Agent sendet Trap an NMS
+3. NMS sendet Query an Agent
+4. Agent reagiert auf die Query, mit Nachricht an NMS
+
+**Frage:** "Welcher Agent kann was/hat welche Fähigkeiten?"
+
+- **SMI:** Struktur of Management Information
+  - definiert managed Objekte und deren Verhalten
+- **MIB:** Management Information Base
+
+**MIB-$\textrm{II}$:** <!--🔥😈🔥--> Informationen zur Netzwerkschnittstelle (MTU, Geschwindigkeit, Menge Transfer Daten), Ort, Kontaktdaten
+
+- MIB-$\textrm{II}$ muss implementiert sein und andere können implementiert werden
+- **RMON:** Remote Monitoring
+  - V1: Paketstatistik für Netzwerk
+  - V2: Paket & Applikationsstatistik
+  - kann dann zum NMS weitergeleitet werden
+  - dazu: Probe: sammelt erforderliche Daten und sendet diese an NMS; hat MIB
+
+## Netzwerkmanagement
+
+**FCAPS:** ISO-Standard für Netzwerkmanagement
+
+- **F**ault Management: Fehlererkennung, Fehlerlogging, Benachrichtigung der Nutzer
+  - 3 Schritte zur Behebung:
+    1. Diagnose/Eingrenzung
+    2. Problembehebung
+    3. Dokumentation (Schritte zur Problemlösung)
+- **C**onfiguration Management: Überwachung des Netzwerks, Sammeln von Informationen zur Konfiguration
+  - Versionen von Betriebssystemen, Firmware, Software
+  - Interfaces (Geschwindigkeit, Auslastung, Anzahl)
+  - Prozessoren, Speicher, HDD...
+- **A**ccounting Management: Netzwerk/Rechner-ressourcen "fair" nutzen
+- **P**erformance Management: Leistungsdaten erheben und auswerten
+  - Dazu 3 Schritte:
+    1. Daten erheben
+    2. Normalzustand/Baseline ermitteln
+    3. Warnschwellen einrichten
+- **S**ecurity Management:
+  1. Zugriffsbeschränkung
+  2. Zugriffsüberwachung
+  - $\rightarrow$ z.B. Firewall, IPS, AV, WU, Policies $\rightarrow$ physische Sicherheit
+
+### Wie mache ich Management?
+
+**Aktivitätslevel:**
+
+- inaktiv: kein Monitoring, keine Handlungsaktivität
+- reaktiv: kein Monitoring, wenn Symptone $\rightarrow$ dann Reaktion
+- interaktiv: Monitoring, dann Handeln (Troubleshooting)
+- proaktiv: Monitoring, nicht nur problembezogen, sondern mit Ursachen (Sahnehäubchen: Automatische Fehlerbehebung)
+  - Trendanalyse: proaktive Aktität hängt von Monitoring und Analyse der Daten ab
+  - Latenzen/Antwortzeiten im Blick behalten
+  - Fehlerbehebung: detaillierte (aber nicht zu detaillierte) Fehlermeldungen
