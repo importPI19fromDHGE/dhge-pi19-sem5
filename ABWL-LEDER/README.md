@@ -1137,3 +1137,51 @@ $
 - Verfahrensanweisung
 
 $\rightarrow$ Festlegung von: Normen und Werten der Arbeit
+
+### Benchmarkvergleiche - Benchmark - Nutzen
+
+- Vergleich innerhalb einer Branche zu verschiedenen Kennzahlen des ökonomischen Erfolgs. (Umsatz/MA, Rohertrag/MA, Gewinn/m^2, Eigenkapitalanteil, ...)
+- Vergleich innerhalb eines Themenfeldes zu verschiedenen Kennzahlen (Ausbildungsmethoden, Ausgaben zum BGM pro MA, ...)
+- Vergleich politischer Zielstellungen (Frauenquote, Recyclingquote)
+- Vergleich der Innovationsfähigkeit (Patente/Beschäftigten, Ertrag/Patent)
+- Vergleich der Servicebereitschaft (Reklamation/pro Euro UMS, Abwicklungszeit für Reklamationen, Warenverfügbarkeit)
+- ...
+
+## Weiterentwicklung des Risikomanagements
+
+- Managementmethoden (Befragungen, Auswertungen, Analysen)
+- Die Methode der Scoring-Modelle ist die Nutzwertanalyse
+- Für unterschiedliche Bewertungen gibt es unterschiedliche Namen.
+- **Bsp.:**
+  - Produkte/Dienstleistungen $\rightarrow$ Nutzwertanalyse
+  - Personal $\rightarrow$ Mitarbeiterprofil, Bewerberprofil, ...
+- Das Scoring-Model zeigt immer Kriterien zum Sachverhaltung dessen Einschätzung
+
+## Nutzwertanalyse
+
+Woran erkennt man, dass man ein Mitarbeiter zufrieden ist?
+
+**Kriterien:**
+
+- Fühlen Sie sich wohl am Arbeitsplatz? $\rightarrow$ ja, nein
+- Was würden Sie am Arbeitsplatz verbessern, dass Sie zufrieden sind? $\rightarrow$ konkrete Antworten
+- Schätzen Sie ihren Arbeitsplatz ein? $\rightarrow$ 1-10; bspw.:
+  - Ergonomie? $\rightarrow$ 4
+  - Belastung? $\rightarrow$ 5
+  - Arbeitsumfeld? $\rightarrow$ 3
+  - Sauberkeit $\rightarrow$ 1
+  - Lärmbelästigung $\rightarrow$ 2
+<!-- So ein Schwachsinn Alter, warum redet man nicht einfach mal mit den Leuten? -->
+<!-- Zeigt aber mal wieder schön, dass der Mensch für eine Firma nicht mehr als eine Zahl ist -->
+
+**Interne Audits (Kontinuität, Vergleichbarkeit):**
+
+Die Mitarbeiterbeurteilung stellt fest:
+
+- Leistungsstand des Mitarbeiters
+  - Zeugnis: "Der Mitarbeiter erfüllt die ihm übertragenen Aufgaben zu unserer vollsten Zufriedenheit."
+  - Note: 2
+- Verhalten des Mitarbeiters
+  - "Das Verhalten des Mitarbeiters gegenüber Vorgesetzten, Kollegen, Mitarbeitern, Kunden war vorbildlich."
+- Entwicklung des Mitarbeiters
+  - Darstellung der qualitativen Verbesserung in den übertragenen Arbeitsaufgaben und Verantwortung (z.B. Karriere) des Mitarbeiters durch die Beurteilung
