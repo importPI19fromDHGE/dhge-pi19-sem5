@@ -150,6 +150,9 @@ Projektmanagement
 - Qualitätspolitik in die Unternehmenspolitik einordnen können
 - Unterschied zwischen Qualität und Qualitätsmanagement beherrschen
 - mindestens 5 Instrementarieren zur Qualitätsbestimmung kennen
+- in Kaizen mindestens folgende Techniken: PDCA, Ishikawa, 5/7-W-Regel der Aufgabenstellung
+- Bedeutung von TQM
+- Managementkreislauf in seiner Anwendung beherrschen
 
 # Grundlagen
 
@@ -1115,3 +1118,22 @@ Qualität wird in zwei Hälften geteilt:
 9. Bewertung der Leistung
 10. Verbesserung
 
+## Erfassen und Bewerten von Qualitätsdaten
+
+- Zusammenhaung von Aufbau- und Ablauforganisation
+
+### Knotennetzplan
+
+$
+FAZ + Dauer = FEZ \\
+SEZ - Dauer = SAZ = 0
+$
+
+### Dokumentation des Qualitätsmanagement
+
+- Handbücher
+- Dokumentenlenkung
+- Prozessbeschreibung
+- Verfahrensanweisung
+
+$\rightarrow$ Festlegung von: Normen und Werten der Arbeit
