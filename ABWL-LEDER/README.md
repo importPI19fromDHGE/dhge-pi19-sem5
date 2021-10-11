@@ -106,7 +106,7 @@ Projektmanagement
 
 <!-- md2apkg ignore-card -->
 
-- SWOT Analyse
+- SWOT Analyse (nach Folie 66 - Qualitätsmanagement)
 - Kundenorientierung (die Kurzfassung reicht)
 - Center Organisation
 - Berechnung des Personalbedarfs
@@ -153,6 +153,7 @@ Projektmanagement
 - in Kaizen mindestens folgende Techniken: PDCA, Ishikawa, 5/7-W-Regel der Aufgabenstellung
 - Bedeutung von TQM
 - Managementkreislauf in seiner Anwendung beherrschen
+- Eisenhower, Pareto und ABC beherrschen
 
 # Grundlagen
 
@@ -1157,7 +1158,7 @@ $\rightarrow$ Festlegung von: Normen und Werten der Arbeit
   - Personal $\rightarrow$ Mitarbeiterprofil, Bewerberprofil, ...
 - Das Scoring-Model zeigt immer Kriterien zum Sachverhaltung dessen Einschätzung
 
-## Nutzwertanalyse
+### Nutzwertanalyse
 
 Woran erkennt man, dass man ein Mitarbeiter zufrieden ist?
 
@@ -1171,7 +1172,7 @@ Woran erkennt man, dass man ein Mitarbeiter zufrieden ist?
   - Arbeitsumfeld? $\rightarrow$ 3
   - Sauberkeit $\rightarrow$ 1
   - Lärmbelästigung $\rightarrow$ 2
-<!-- So ein Schwachsinn Alter, warum redet man nicht einfach mal mit den Leuten? -->
+<!-- So ein Schwachsinn Alter; warum redet man nicht einfach mal mit den Leuten? -->
 <!-- Zeigt aber mal wieder schön, dass der Mensch für eine Firma nicht mehr als eine Zahl ist -->
 
 **Interne Audits (Kontinuität, Vergleichbarkeit):**
@@ -1180,8 +1181,23 @@ Die Mitarbeiterbeurteilung stellt fest:
 
 - Leistungsstand des Mitarbeiters
   - Zeugnis: "Der Mitarbeiter erfüllt die ihm übertragenen Aufgaben zu unserer vollsten Zufriedenheit."
-  - Note: 2
 - Verhalten des Mitarbeiters
   - "Das Verhalten des Mitarbeiters gegenüber Vorgesetzten, Kollegen, Mitarbeitern, Kunden war vorbildlich."
 - Entwicklung des Mitarbeiters
   - Darstellung der qualitativen Verbesserung in den übertragenen Arbeitsaufgaben und Verantwortung (z.B. Karriere) des Mitarbeiters durch die Beurteilung
+
+### Fehlerursachenanalyse, Fehlerprophylaxe, Fehlerkorrektur (Methoden)
+
+- **Ursachen finden:** Ishikawa
+- **Wichtigkeit/Dringlichkeit:** Eisenhower
+- **Aufwand/Wichtigkeit:** ABC-Analyse, Pareto-Regel
+- **Fehler $\rightarrow$ Lösung:** FMEA
+- **Fehlerzusammenhänge:** Fehlerbaum
+
+### Alpenmethode
+
+1. **A**ufgaben, Termine und geplante Aktivitäten notieren
+2. **L**änge schätzen
+3. **P**ufferzeiten einplanen
+4. **E**ntscheidungen treffen
+5. **N**achkontrolle
