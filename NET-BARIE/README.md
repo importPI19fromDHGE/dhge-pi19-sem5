@@ -512,7 +512,7 @@ $\rightarrow$ weniger Ebenen, mehr Vermaschung, mehr Routing (Idee kommt aus der
 $\rightarrow$ wird als Clos oder Spine-Leaf bezeichnet
 
 - Spine $\rightarrow$ andere Bezeichnung für Backbone
-- jedes (Leaf-)Node ist mit jedem (Spine-)Node verbunden $\rightarrow$ voll vermascht
+- jede (Leaf-)Node ist mit jeder (Spine-)Node verbunden $\rightarrow$ voll vermascht
 - Leafs sind untereinandner **nicht** verbunden
 - Spine-Nodes sind untereinander **nicht** verbunden
 - "Top of Rack (ToR) Switch" ist ein Switch, der als Leaf ein Rack mit dem Spine verbindet
