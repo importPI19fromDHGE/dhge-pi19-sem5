@@ -1075,7 +1075,7 @@ Kaizen steht im Zentrum einer Qualitätssicherung. Kaizen wird gemacht, damit di
 - **Muda durch Warten:** untätige Hände eines Mitarbeiters; Prozesstaktung nicht optimiert
 - **Muda beim Transport:** Bewegung von Materialien oder Produkten ist nicht wertschöpfend (JIT, JIS)
 - **Verschwendung durch schlechte Ergonomie:** speziell im Hinblick auf Mitarbeiter
-- **Nicht of falsch genutztes Talent**
+- **Nicht oder falsch genutztes Talent**
 
 ### European Foundation for Quality Management (EFQM)
 
@@ -1171,7 +1171,7 @@ $\rightarrow$ Festlegung von: Normen und Werten der Arbeit
 
 ### Nutzwertanalyse
 
-Woran erkennt man, dass man ein Mitarbeiter zufrieden ist?
+Woran erkennt man, dass ein Mitarbeiter zufrieden ist?
 
 **Kriterien:**
 
@@ -1183,6 +1183,7 @@ Woran erkennt man, dass man ein Mitarbeiter zufrieden ist?
   - Arbeitsumfeld? $\rightarrow$ 3
   - Sauberkeit $\rightarrow$ 1
   - Lärmbelästigung $\rightarrow$ 2
+
 <!-- So ein Schwachsinn Alter; warum redet man nicht einfach mal mit den Leuten? -->
 <!-- Zeigt aber mal wieder schön, dass der Mensch für eine Firma nicht mehr als eine Zahl ist -->
 
