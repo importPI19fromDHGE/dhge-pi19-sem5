@@ -970,3 +970,60 @@ Qualität in allen Bereichen einer Organisation zu jeder Zeit und jedem Ort (per
 | Null Fehler sind nicht realisierbar                           | Null Fehler ist das Ziel                                                      |
 | Einkauf von vielen Lieferanten                                | Partnerschaft mit wenigen Lieferanten ($\rightarrow$ Supply-Chain-Management) |
 | Kunden müssen nehmen, was das Unternehmen an Qualität liefert | Alles ist auf vollkommene Kundenzufriedenheit ausgerichtet                    |
+
+> Kundenorientierung $\rightarrow$ Der Kunde ist uns wichtig
+
+### Qualitätsmanagementsysteme - Kaizen (改善)
+
+- japanisch: "kai" (改) = Veränderung, Wandel; "zen" (善) = zum Besseren $\rightarrow$ "Veränderung zum Besseren"
+
+**Grundlagen des Kaizen:**
+
+- Prozessorientierung
+- Kunden-Lieferantenbeziehungen
+- Total-Quality-Management
+- Verbesserung & Standardisierung (PDCA-Zyklus - Plan Do Check Act)
+- die 5-S-Bewegungen
+- die 7-M-Checkliste
+- die 7-W-Checkliste
+- die 3-Mu-Checkliste
+- die 7 Verschwendungsarten
+- Just in time (JIT)
+- Just in sequence
+- Total Productive Maintenance
+
+Kaizen steht im Zentrum einer Qualitätssicherung. Kaizen wird gemacht, damit die Praxis besser wird.
+
+- Prozessorientierung, Kunden-/Lieferantenbeziehung, TQM, Verbesserung+Standardisierung (PDCA) $\rightarrow$ Kaizen
+
+**Der Management Kreislauf (für neue Sachen):**
+
+- Plan
+  - Prozess planen - Plan umfasst das Erkennen von Verbesserungspotentialen, Aufgaben und Zielstellung, die Analyse des aktuellen Zustands (HR, MR, FR) und das Entwickeln eines neuen Konzeptes (Plan)
+  - Aufgabe-/Zielstellung
+  - Analyse/Planung
+  - Entscheidungen treffen
+- Do
+  - das Ausprobieren, Testen und praktisches Optimieren des Konzeptes mit schnell realisierbaren, einfachen Mitteln, Erfassen/Sammeln der anfallenden Daten
+  - Realisierung/Umsetzung
+  - ausprobieren, testen, Daten sammeln
+- Check
+  - Überprüfen und Analyse der gesammelten Daten, bei Erfolg für die Umsetzung als Standard freigegeben
+  - Soll-Ist Vergleich $\rightarrow$ Controlling, Standards festlegen
+- Act
+  - der neue Standard wird in der Organisation komplett angewendet und fixiert, Daten werden regelmäßig auf Einhaltung überprüft (Audits)
+  - vollständige Realisierung
+  - Daten sammeln für Audits $\rightarrow$ Controlling, für die weitere Entwicklung (KVP)
+
+**Kaizen - 5S**
+
+- **Seiri (整理):** Sortiere aus. Alles, was nicht benötigt wird aussortieren
+- **Seiton (整頓):** Stelle ordentlich hin. Was gebraucht wird, bekommt einen unter ergonomischen Gesichtspunkten, definierten und gekennzeichneten festen Platz
+- **Seiso (清楚):** Säubere. Der Arbeitsplatz wird von Grund auf gereinigt.
+- **Seiketsu (清潔):** Sauberkeit bewahren - stetiges Aufräumen
+- **Shitsuke (躾):** Selbstdisziplin üben - Ordnung und Sauberkeit aufrechterhalten
+- **Shukan (習慣?):** Bei nachhaltiger Disziplin gehen Ordnung und Sauberkeit in Fleisch und Blut über
+
+**Kaizen - 7M Checkliste**
+
+> siehe Ishikawa
