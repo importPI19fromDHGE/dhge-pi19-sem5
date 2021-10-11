@@ -95,6 +95,17 @@ Projektmanagement
     - [Qualitätsmanagementsysteme](#qualit%C3%A4tsmanagementsysteme)
     - [Qualitätsmanagementsysteme - TQM als Grundsatz](#qualit%C3%A4tsmanagementsysteme---tqm-als-grundsatz)
     - [Klassische Qualitätssicherung vs. TQM](#klassische-qualit%C3%A4tssicherung-vs-tqm)
+    - [Qualitätsmanagementsysteme - Kaizen (改善)](#qualit%C3%A4tsmanagementsysteme---kaizen-%E6%94%B9%E5%96%84)
+    - [European Foundation for Quality Management (EFQM)](#european-foundation-for-quality-management-efqm)
+    - [Gliederung nach ISO 9001-2015](#gliederung-nach-iso-9001-2015)
+  - [Erfassen und Bewerten von Qualitätsdaten](#erfassen-und-bewerten-von-qualit%C3%A4tsdaten)
+    - [Knotennetzplan](#knotennetzplan)
+    - [Dokumentation des Qualitätsmanagement](#dokumentation-des-qualit%C3%A4tsmanagement)
+    - [Benchmarkvergleiche - Benchmark - Nutzen](#benchmarkvergleiche---benchmark---nutzen)
+  - [Weiterentwicklung des Risikomanagements](#weiterentwicklung-des-risikomanagements)
+    - [Nutzwertanalyse](#nutzwertanalyse)
+    - [Fehlerursachenanalyse, Fehlerprophylaxe, Fehlerkorrektur (Methoden)](#fehlerursachenanalyse-fehlerprophylaxe-fehlerkorrektur-methoden)
+    - [Alpenmethode](#alpenmethode)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
