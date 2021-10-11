@@ -101,7 +101,7 @@ Rechnernetzadministration/Verteilte Systeme
 - besteht aus Hard- und Software
 - durch kabelgebundene und/oder drahtlose Übertragungssysteme verbunden
 - zur Übertragung/Verarbeitung von Informationen
-- digitale Datennetze (es sollen keine Rundfunknetze und Telefonnetze behandelt werden) \rightarrow\rightarrow NGN (Next Generation Networking)
+- digitale Datennetze (es sollen keine Rundfunknetze und Telefonnetze behandelt werden) $\rightarrow$ NGN (Next Generation Networking)
 
 ### Klassifizierung von Datennetzen
 
