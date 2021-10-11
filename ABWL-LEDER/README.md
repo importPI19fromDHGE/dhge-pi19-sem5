@@ -1087,15 +1087,31 @@ Qualität wird in zwei Hälften geteilt:
 - Teilautonome Arbeitsgruppen
 
 ```text
-      ┏━━━━━━━━━━━━━━━━━━┓
-      ┃Management-Prozess┃
-      ┗━━━━━━━━━━━━━━━━━━┛
-      ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃          Kern-Prozess           ┃
-┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-    ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
-    ┏━━━━━━━━━━━━━━━━━━━━━━━┓
-    ┃Unterstützende Prozesse┃
-    ┗━━━━━━━━━━━━━━━━━━━━━━━┛
+       ┏━━━━━━━━━━━━━━━━━━┓
+       ┃Management-Prozess┃
+       ┗━━━━━━━━━━━━━━━━━━┛
+       ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃          Kern-Prozess          ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+     ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+     ┏━━━━━━━━━━━━━━━━━━━━━━━┓
+     ┃Unterstützende Prozesse┃
+     ┗━━━━━━━━━━━━━━━━━━━━━━━┛
 ```
+
+- Qualität-Prozess-Mitarbeiter $\rightarrow$ PDCA
+
+### Gliederung nach ISO 9001-2015
+
+1. Anwendungsbereich
+2. Normative Verweisungen
+3. Begriffe
+4. Kontext der Organisation
+5. Führung
+6. Planung
+7. Unterstützung
+8. Betrieb
+9. Bewertung der Leistung
+10. Verbesserung
+
