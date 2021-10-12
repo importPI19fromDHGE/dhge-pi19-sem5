@@ -13,7 +13,8 @@ Entwicklung von Webanwendungen
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Prüfungsleistung](#pr%C3%BCfungsleistung)
+- [Entwicklung von Webanwendungen](#entwicklung-von-webanwendungen)
+- [Prüfungsleistung](#prüfungsleistung)
 - [Geschichte des Internets](#geschichte-des-internets)
 - [Technologien](#technologien)
   - [Was ist eine Webanwendung?](#was-ist-eine-webanwendung)
@@ -25,11 +26,12 @@ Entwicklung von Webanwendungen
       - [Bilder](#bilder)
       - [Listen](#listen)
       - [Tabellen](#tabellen)
-      - [Zeilenumbrüche](#zeilenumbr%C3%BCche)
+      - [Zeilenumbrüche](#zeilenumbrüche)
       - [Formulare](#formulare)
       - [Formular-Elemente](#formular-elemente)
     - [Universal Attribute](#universal-attribute)
   - [CSS](#css)
+    - [Syntax](#syntax)
     - [Farben](#farben)
   - [JS](#js)
 - [PHP und Datenbanken](#php-und-datenbanken)
@@ -365,6 +367,12 @@ Beispiel Tabelle:
     </select>
   </label>
   <br><br>
+  <label for="anmerkungen">Anmerkungen:
+    <textarea cols="80" rows="15" name="anmerkungen" id="anm">
+      Ich bin eine Textbox
+    </textarea>
+  </label>
+  <br><br>
   <input type="submit" value="Absenden" name="senden">
   <input type="reset" value="Zurücksetzen" name="löschen">
 </form>
@@ -387,13 +395,21 @@ Beispiel Tabelle:
 
 ## CSS
 
+- Cascading Style Sheet
+- Trennung der Darstellung vom Inhalt
+
 **Einbindung**
 
 - inline CSS (`style="..."`)
 - `<style></style>` im HTML
 - externes CSS einbinden (`<link rel="stylesheet" href="style.css">`)
 
-**Aufbau**
+### Syntax
+
+- Eigenschaften werden in Regelsätzen gespeichert
+- arbeitet anhand von Selektoren
+- case-sensitiv
+- Kommentare: ``/*...*/``
 
 ```css
 selector{
@@ -411,7 +427,7 @@ selector{
 
 > Alphakanal auch möglich: `#ff7f50ff`, `rgba(0,128,0,42)`, ...
 
-**HSV-Farbmodell**
+**HSL-Farbmodell**
 
 - **h**ue, **s**aturation, **l**ightness
 - `hsl(200,100%,50%)`, `hsla(200,100%,50%,1)`
