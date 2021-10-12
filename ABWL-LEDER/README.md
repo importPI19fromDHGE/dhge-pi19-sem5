@@ -95,6 +95,23 @@ Projektmanagement
     - [Qualitätsmanagementsysteme](#qualit%C3%A4tsmanagementsysteme)
     - [Qualitätsmanagementsysteme - TQM als Grundsatz](#qualit%C3%A4tsmanagementsysteme---tqm-als-grundsatz)
     - [Klassische Qualitätssicherung vs. TQM](#klassische-qualit%C3%A4tssicherung-vs-tqm)
+    - [Qualitätsmanagementsysteme - Kaizen (改善)](#qualit%C3%A4tsmanagementsysteme---kaizen-%E6%94%B9%E5%96%84)
+      - [Der Management Kreislauf (für neue Sachen)](#der-management-kreislauf-f%C3%BCr-neue-sachen)
+      - [Kaizen - 5S](#kaizen---5s)
+      - [Kaizen - 7-M-Checkliste](#kaizen---7-m-checkliste)
+      - [Kaizen 7-W-Checkliste](#kaizen-7-w-checkliste)
+      - [Kaizen - 3-Mu-Checkliste](#kaizen---3-mu-checkliste)
+      - [7 Verschwendungen (Muda)](#7-verschwendungen-muda)
+    - [European Foundation for Quality Management (EFQM)](#european-foundation-for-quality-management-efqm)
+    - [Gliederung nach ISO 9001-2015](#gliederung-nach-iso-9001-2015)
+  - [Erfassen und Bewerten von Qualitätsdaten](#erfassen-und-bewerten-von-qualit%C3%A4tsdaten)
+    - [Knotennetzplan](#knotennetzplan)
+    - [Dokumentation des Qualitätsmanagement](#dokumentation-des-qualit%C3%A4tsmanagement)
+    - [Benchmarkvergleiche - Benchmark - Nutzen](#benchmarkvergleiche---benchmark---nutzen)
+  - [Weiterentwicklung des Risikomanagements](#weiterentwicklung-des-risikomanagements)
+    - [Nutzwertanalyse](#nutzwertanalyse)
+    - [Fehlerursachenanalyse, Fehlerprophylaxe, Fehlerkorrektur (Methoden)](#fehlerursachenanalyse-fehlerprophylaxe-fehlerkorrektur-methoden)
+    - [Alpenmethode](#alpenmethode)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -106,7 +123,7 @@ Projektmanagement
 
 <!-- md2apkg ignore-card -->
 
-- SWOT Analyse
+- SWOT Analyse (nach Folie 66 - Qualitätsmanagement)
 - Kundenorientierung (die Kurzfassung reicht)
 - Center Organisation
 - Berechnung des Personalbedarfs
@@ -129,11 +146,11 @@ Projektmanagement
 
 - Projekt und Projektmanagement erläutern können
 - Kennzeichen/Merkmale von Projektmanagement erläutern können (Folie 4)
-- Knotennetzplan
+- Knotennetzplan (Pfeilnetzplan muss **nicht** gekonnt werden)
 - Grundsätze für die Projektplanung (Folie 17)
 - PDCA anwenden und beschreiben können
 - Problemanalyse (Folie 22)
-- Ishikawa
+- Ishikawa (WICHTIG!!!)
 - Brainwriting nach 635 Methode
 - Kompetenz kann "etwas können" oder "etwas dürfen" bedeuten, aus dem Kontext deuten können!
 - Knoten-Netzplan (Ablauf von Projekten) berechnen können (!!!)
@@ -150,6 +167,11 @@ Projektmanagement
 - Qualitätspolitik in die Unternehmenspolitik einordnen können
 - Unterschied zwischen Qualität und Qualitätsmanagement beherrschen
 - mindestens 5 Instrementarieren zur Qualitätsbestimmung kennen
+- in Kaizen mindestens folgende Techniken: PDCA, Ishikawa, 5/7-W-Regel der Aufgabenstellung
+- Bedeutung von TQM
+- Managementkreislauf in seiner Anwendung beherrschen
+- Eisenhower, Pareto und ABC beherrschen
+- vorgegebene Nutzwertanalyse einschätzen können
 
 # Grundlagen
 
@@ -970,3 +992,229 @@ Qualität in allen Bereichen einer Organisation zu jeder Zeit und jedem Ort (per
 | Null Fehler sind nicht realisierbar                           | Null Fehler ist das Ziel                                                      |
 | Einkauf von vielen Lieferanten                                | Partnerschaft mit wenigen Lieferanten ($\rightarrow$ Supply-Chain-Management) |
 | Kunden müssen nehmen, was das Unternehmen an Qualität liefert | Alles ist auf vollkommene Kundenzufriedenheit ausgerichtet                    |
+
+> Kundenorientierung $\rightarrow$ Der Kunde ist uns wichtig
+
+### Qualitätsmanagementsysteme - Kaizen (改善)
+
+> japanisch: "kai" (改) = Veränderung, Wandel; "zen" (善) = zum Besseren $\rightarrow$ **"Veränderung zum Besseren"**
+
+**Grundlagen des Kaizen:**
+
+- Prozessorientierung
+- Kunden-Lieferantenbeziehungen
+- Total-Quality-Management
+- Verbesserung & Standardisierung (PDCA-Zyklus - Plan Do Check Act)
+- die 5-S-Bewegungen
+- die 7-M-Checkliste
+- die 7-W-Checkliste
+- die 3-Mu-Checkliste
+- die 7 Verschwendungsarten
+- Just in time (JIT)
+- Just in sequence
+- Total Productive Maintenance
+
+Kaizen steht im Zentrum einer Qualitätssicherung. Kaizen wird gemacht, damit die Praxis besser wird.
+
+#### Der Management Kreislauf (für neue Sachen)
+
+- Plan
+  - Prozess planen - Plan umfasst das Erkennen von Verbesserungspotentialen, Aufgaben und Zielstellung, die Analyse des aktuellen Zustands (HR, MR, FR) und das Entwickeln eines neuen Konzeptes (Plan)
+  - Aufgabe-/Zielstellung
+  - Analyse/Planung
+  - Entscheidungen treffen
+- Do
+  - das Ausprobieren, Testen und praktisches Optimieren des Konzeptes mit schnell realisierbaren, einfachen Mitteln, Erfassen/Sammeln der anfallenden Daten
+  - Realisierung/Umsetzung
+  - ausprobieren, testen, Daten sammeln
+- Check
+  - Überprüfen und Analyse der gesammelten Daten, bei Erfolg für die Umsetzung als Standard freigegeben
+  - Soll-Ist Vergleich $\rightarrow$ Controlling, Standards festlegen
+- Act
+  - der neue Standard wird in der Organisation komplett angewendet und fixiert, Daten werden regelmäßig auf Einhaltung überprüft (Audits)
+  - vollständige Realisierung
+  - Daten sammeln für Audits $\rightarrow$ Controlling, für die weitere Entwicklung (KVP)
+
+#### Kaizen - 5S
+
+- **Seiri (整理):** Sortiere aus. Alles, was nicht benötigt wird aussortieren
+- **Seiton (整頓):** Stelle ordentlich hin. Was gebraucht wird, bekommt einen unter ergonomischen Gesichtspunkten, definierten und gekennzeichneten festen Platz
+- **Seiso (清楚):** Säubere. Der Arbeitsplatz wird von Grund auf gereinigt.
+- **Seiketsu (清潔):** Sauberkeit bewahren - stetiges Aufräumen
+- **Shitsuke (躾):** Selbstdisziplin üben - Ordnung und Sauberkeit aufrechterhalten
+- **Shuukan (習慣):** Bei nachhaltiger Disziplin gehen Ordnung und Sauberkeit in Fleisch und Blut über $\rightarrow$ Gewohnheit
+
+#### Kaizen - 7-M-Checkliste
+
+> [siehe Ishikawa](#ishikawa)
+
+#### Kaizen 7-W-Checkliste
+
+> abgeleitet aus der 5W-Regel für Aufgabenstellungen
+
+- Was ist zu tun?
+- Wer macht es?
+- Warum macht er es?
+- Wie wird es gemacht?
+- Wann wird es gemacht?
+- Wo soll es getan werden?
+- Wieso wird es nicht anders gemacht?
+
+#### Kaizen - 3-Mu-Checkliste
+
+- **Muda (無駄):** Verschwendung, siehe die 7 Verschwendungsarten
+- **Muri (無理):** Überlastung der Mitarbeiter und Maschinen
+- **Mura (斑):** Unregelmäßigkeit der Prozesse
+
+**Planung von Prozessen:**
+
+- Methoden: Netzplantechnik (Knotennetzplan, Pfeilnetzplan), Ganttdiagramm, Workflow, Flussplan
+
+#### 7 Verschwendungen (Muda)
+
+- **Muda durch Überproduktion:** mehr als notwendig fertigen
+- **Muda der Bestände:** End-, Halbfertigprodukte, Zulieferteile und Materialien, die als Bestände lagern, sind nicht wertschöpfend
+- **Muda durch Nacharbeit/Fehler:** Fehlerhafte Produkte stören den Produktionsfluss und erfordern teure Nachbesserung
+- **Muda der Bewegung:** Jede Körperbewegung, die nicht zum Wertzuwachs beiträgt, ist unproduktiv <!-- excuse me, what the FUCK -->
+- **Muda in der Herstellung:** Unzureichende Technologie oder Konstruktion
+- **Muda durch Warten:** untätige Hände eines Mitarbeiters; Prozesstaktung nicht optimiert
+- **Muda beim Transport:** Bewegung von Materialien oder Produkten ist nicht wertschöpfend (JIT, JIS)
+- **Verschwendung durch schlechte Ergonomie:** speziell im Hinblick auf Mitarbeiter
+- **Nicht oder falsch genutztes Talent**
+
+### European Foundation for Quality Management (EFQM)
+
+TQM - 1988 in Europa von 14 der führenden Unternehmen in EFQM weiterentwickelt.
+Qualität wird in zwei Hälften geteilt:
+
+- **Ergebnisse:** 50%
+  - Mitarbeiterbezogene Ergebnisse: 10%
+  - Kundenbezogene Ergebnisse: 15%
+  - Gesellschaftsbezogene Ergebnisse: 10%
+  - Schlüsselergebnisse: 15%
+- **Befähiger:** 50%
+  - Führung: 10%
+  - Mitarbeiter: 10%
+  - Politik und Strategie: 10%
+  - Ressourcen und Partner: 10%
+  - Prozesse: 10%
+
+**Möglichkeiten der Einbeziehung der Mitarbeiter:**
+
+- Job-enrichment
+- Job-enlargement
+- Jobsharing
+- Teilautonome Arbeitsgruppen
+
+```text
+       ┏━━━━━━━━━━━━━━━━━━┓
+       ┃Management-Prozess┃
+       ┗━━━━━━━━━━━━━━━━━━┛
+       ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃          Kern-Prozess          ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+     ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑
+     ┏━━━━━━━━━━━━━━━━━━━━━━━┓
+     ┃Unterstützende Prozesse┃
+     ┗━━━━━━━━━━━━━━━━━━━━━━━┛
+```
+
+- Qualität-Prozess-Mitarbeiter $\rightarrow$ PDCA
+
+### Gliederung nach ISO 9001-2015
+
+1. Anwendungsbereich
+2. Normative Verweisungen
+3. Begriffe
+4. Kontext der Organisation
+5. Führung
+6. Planung
+7. Unterstützung
+8. Betrieb
+9. Bewertung der Leistung
+10. Verbesserung
+
+## Erfassen und Bewerten von Qualitätsdaten
+
+- Zusammenhaung von Aufbau- und Ablauforganisation
+
+### Knotennetzplan
+
+$$
+FAZ + Dauer = FEZ \\
+SEZ - Dauer = SAZ = 0
+$$
+
+### Dokumentation des Qualitätsmanagement
+
+- Handbücher
+- Dokumentenlenkung
+- Prozessbeschreibung
+- Verfahrensanweisung
+
+$\rightarrow$ Festlegung von: Normen und Werten der Arbeit
+
+### Benchmarkvergleiche - Benchmark - Nutzen
+
+- Vergleich innerhalb einer Branche zu verschiedenen Kennzahlen des ökonomischen Erfolgs. (Umsatz/MA, Rohertrag/MA, Gewinn/m^2, Eigenkapitalanteil, ...)
+- Vergleich innerhalb eines Themenfeldes zu verschiedenen Kennzahlen (Ausbildungsmethoden, Ausgaben zum BGM pro MA, ...)
+- Vergleich politischer Zielstellungen (Frauenquote, Recyclingquote)
+- Vergleich der Innovationsfähigkeit (Patente/Beschäftigten, Ertrag/Patent)
+- Vergleich der Servicebereitschaft (Reklamation/pro Euro UMS, Abwicklungszeit für Reklamationen, Warenverfügbarkeit)
+- ...
+
+## Weiterentwicklung des Risikomanagements
+
+- Managementmethoden (Befragungen, Auswertungen, Analysen)
+- Die Methode der Scoring-Modelle ist die Nutzwertanalyse
+- Für unterschiedliche Bewertungen gibt es unterschiedliche Namen.
+- **Bsp.:**
+  - Produkte/Dienstleistungen $\rightarrow$ Nutzwertanalyse
+  - Personal $\rightarrow$ Mitarbeiterprofil, Bewerberprofil, ...
+- Das Scoring-Model zeigt immer Kriterien zum Sachverhaltung dessen Einschätzung
+
+### Nutzwertanalyse
+
+Woran erkennt man, dass ein Mitarbeiter zufrieden ist?
+
+**Kriterien:**
+
+- Fühlen Sie sich wohl am Arbeitsplatz? $\rightarrow$ ja, nein
+- Was würden Sie am Arbeitsplatz verbessern, dass Sie zufrieden sind? $\rightarrow$ konkrete Antworten
+- Schätzen Sie ihren Arbeitsplatz ein? $\rightarrow$ 1-10; bspw.:
+  - Ergonomie? $\rightarrow$ 4
+  - Belastung? $\rightarrow$ 5
+  - Arbeitsumfeld? $\rightarrow$ 3
+  - Sauberkeit $\rightarrow$ 1
+  - Lärmbelästigung $\rightarrow$ 2
+
+<!-- So ein Schwachsinn Alter; warum redet man nicht einfach mal mit den Leuten? -->
+<!-- Zeigt aber mal wieder schön, dass der Mensch für ein Unternehmen nicht mehr als eine Zahl ist -->
+
+**Interne Audits (Kontinuität, Vergleichbarkeit):**
+
+Die Mitarbeiterbeurteilung stellt fest:
+
+- Leistungsstand des Mitarbeiters
+  - Zeugnis: "Der Mitarbeiter erfüllt die ihm übertragenen Aufgaben zu unserer vollsten Zufriedenheit."
+- Verhalten des Mitarbeiters
+  - "Das Verhalten des Mitarbeiters gegenüber Vorgesetzten, Kollegen, Mitarbeitern, Kunden war vorbildlich."
+- Entwicklung des Mitarbeiters
+  - Darstellung der qualitativen Verbesserung in den übertragenen Arbeitsaufgaben und Verantwortung (z.B. Karriere) des Mitarbeiters durch die Beurteilung
+
+### Fehlerursachenanalyse, Fehlerprophylaxe, Fehlerkorrektur (Methoden)
+
+- **Ursachen finden:** Ishikawa
+- **Wichtigkeit/Dringlichkeit:** Eisenhower
+- **Aufwand/Wichtigkeit:** ABC-Analyse, Pareto-Regel
+- **Fehler $\rightarrow$ Lösung:** FMEA
+- **Fehlerzusammenhänge:** Fehlerbaum
+
+### Alpenmethode
+
+1. **A**ufgaben, Termine und geplante Aktivitäten notieren
+2. **L**änge schätzen
+3. **P**ufferzeiten einplanen
+4. **E**ntscheidungen treffen
+5. **N**achkontrolle
