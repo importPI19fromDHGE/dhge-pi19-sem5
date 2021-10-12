@@ -16,6 +16,7 @@ Systemprogrammierung / Verteilte Systeme
 - [Systemprogrammierung](#systemprogrammierung)
   - [Lernziele/Themenschwerpunkte](#lernzielethemenschwerpunkte)
   - [Parallele Programmierung](#parallele-programmierung)
+    - [Prozesssteuerung](#prozesssteuerung)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
