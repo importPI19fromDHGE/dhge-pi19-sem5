@@ -28,7 +28,7 @@ Systemprogrammierung / Verteilte Systeme
 
 <!-- md2apkg ignore-card -->
 
-- Probleme und Lösungen bei Parallelem Ressourcenzugriff kennen
+- Probleme und Lösungen bei parallelem Ressourcenzugriff kennen
   - z.B. Deadlock, Seiteneffekte, Semaphore, atomare Operationen, kritischer Abschnitt
 - Parallele Programme lesen und verstehen können
   - z.B. Prozessse
@@ -38,7 +38,7 @@ Systemprogrammierung / Verteilte Systeme
   - z.B. Signale
 - Praktische Realisierung dieser Konzepte am Beispiel von Unix/Linux umsetzen können
 - Problematischen Code hinsichtlich parallelem Zugriff erkennen
-- Die Fähigkeit erwerben eigenständig Parallelitäts- und Kommunikationskonstrukte auszuwählen und zu implementieren
+- Die Fähigkeit erwerben, eigenständig Parallelitäts- und Kommunikationskonstrukte auszuwählen und zu implementieren
 
 > Prüfungsleistung: Klausur (ohne Hilfsmittel)
 ## Literaturempfehlung
