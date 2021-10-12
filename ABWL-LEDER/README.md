@@ -990,7 +990,7 @@ Qualität in allen Bereichen einer Organisation zu jeder Zeit und jedem Ort (per
 
 ### Qualitätsmanagementsysteme - Kaizen (改善)
 
-- japanisch: "kai" (改) = Veränderung, Wandel; "zen" (善) = zum Besseren $\rightarrow$ "Veränderung zum Besseren"
+> japanisch: "kai" (改) = Veränderung, Wandel; "zen" (善) = zum Besseren $\rightarrow$ **"Veränderung zum Besseren"**
 
 **Grundlagen des Kaizen:**
 
@@ -1011,7 +1011,7 @@ Kaizen steht im Zentrum einer Qualitätssicherung. Kaizen wird gemacht, damit di
 
 - Prozessorientierung, Kunden-/Lieferantenbeziehung, TQM, Verbesserung+Standardisierung (PDCA) $\rightarrow$ Kaizen
 
-**Der Management Kreislauf (für neue Sachen):**
+#### Der Management Kreislauf (für neue Sachen)
 
 - Plan
   - Prozess planen - Plan umfasst das Erkennen von Verbesserungspotentialen, Aufgaben und Zielstellung, die Analyse des aktuellen Zustands (HR, MR, FR) und das Entwickeln eines neuen Konzeptes (Plan)
@@ -1030,7 +1030,7 @@ Kaizen steht im Zentrum einer Qualitätssicherung. Kaizen wird gemacht, damit di
   - vollständige Realisierung
   - Daten sammeln für Audits $\rightarrow$ Controlling, für die weitere Entwicklung (KVP)
 
-**Kaizen - 5S**
+#### Kaizen - 5S
 
 - **Seiri (整理):** Sortiere aus. Alles, was nicht benötigt wird aussortieren
 - **Seiton (整頓):** Stelle ordentlich hin. Was gebraucht wird, bekommt einen unter ergonomischen Gesichtspunkten, definierten und gekennzeichneten festen Platz
@@ -1039,11 +1039,11 @@ Kaizen steht im Zentrum einer Qualitätssicherung. Kaizen wird gemacht, damit di
 - **Shitsuke (躾):** Selbstdisziplin üben - Ordnung und Sauberkeit aufrechterhalten
 - **Shuukan (習慣):** Bei nachhaltiger Disziplin gehen Ordnung und Sauberkeit in Fleisch und Blut über $\rightarrow$ Gewohnheit
 
-**Kaizen - 7-M-Checkliste**
+#### Kaizen - 7-M-Checkliste
 
-> siehe Ishikawa
+> [siehe Ishikawa](#ishikawa)
 
-**Kaizen 7-W-Checkliste**
+#### Kaizen 7-W-Checkliste
 
 > abgeleitet aus der 5W-Regel für Aufgabenstellungen
 
@@ -1055,7 +1055,7 @@ Kaizen steht im Zentrum einer Qualitätssicherung. Kaizen wird gemacht, damit di
 - Wo soll es getan werden?
 - Wieso wird es nicht anders gemacht?
 
-**Kaizen - 3-Mu-Checkliste**
+#### Kaizen - 3-Mu-Checkliste
 
 - **Muda (無駄):** Verschwendung, siehe die 7 Verschwendungsarten
 - **Muri (無理):** Überlastung der Mitarbeiter und Maschinen
@@ -1065,7 +1065,7 @@ Kaizen steht im Zentrum einer Qualitätssicherung. Kaizen wird gemacht, damit di
 
 - Methoden: Netzplantechnik (Knotennetzplan, Pfeilnetzplan), Ganttdiagramm, Workflow, Flussplan
 
-**7 Verschwendungen (Muda):**
+#### 7 Verschwendungen (Muda)
 
 - **Muda durch Überproduktion:** mehr als notwendig fertigen
 - **Muda der Bestände:** End-, Halbfertigprodukte, Zulieferteile und Materialien, die als Bestände lagern, sind nicht wertschöpfend
@@ -1136,10 +1136,10 @@ Qualität wird in zwei Hälften geteilt:
 
 ### Knotennetzplan
 
-$
+$$
 FAZ + Dauer = FEZ \\
 SEZ - Dauer = SAZ = 0
-$
+$$
 
 ### Dokumentation des Qualitätsmanagement
 
@@ -1185,7 +1185,7 @@ Woran erkennt man, dass ein Mitarbeiter zufrieden ist?
   - Lärmbelästigung $\rightarrow$ 2
 
 <!-- So ein Schwachsinn Alter; warum redet man nicht einfach mal mit den Leuten? -->
-<!-- Zeigt aber mal wieder schön, dass der Mensch für eine Firma nicht mehr als eine Zahl ist -->
+<!-- Zeigt aber mal wieder schön, dass der Mensch für ein Unternehmen nicht mehr als eine Zahl ist -->
 
 **Interne Audits (Kontinuität, Vergleichbarkeit):**
 
