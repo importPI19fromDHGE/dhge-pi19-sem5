@@ -171,6 +171,7 @@ Projektmanagement
 - Bedeutung von TQM
 - Managementkreislauf in seiner Anwendung beherrschen
 - Eisenhower, Pareto und ABC beherrschen
+- vorgegebene Nutzwertanalyse einschätzen können
 
 # Grundlagen
 
