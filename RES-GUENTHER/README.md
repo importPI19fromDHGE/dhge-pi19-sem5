@@ -13,7 +13,9 @@ Systemprogrammierung / Verteilte Systeme
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Platzhalter](#platzhalter)
+- [Systemprogrammierung](#systemprogrammierung)
+  - [Lernziele/Themenschwerpunkte](#lernzielethemenschwerpunkte)
+  - [Parallele Programmierung](#parallele-programmierung)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
