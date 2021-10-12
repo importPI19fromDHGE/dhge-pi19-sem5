@@ -299,7 +299,7 @@ Beispiel Tabelle:
   - `fieldset` (Gruppierung)
 
 ```html
-<form id="bsp" name="Beispiel" action="index.html" method="post">
+<form id="bsp" name="Beispiel" action="index.html" method="post" enctype="multipart/form-data">
   <label for="name1">Name:
     <input id="name1" type="text" name="name" maxlength="20" minlength="3" required>
   </label>
@@ -313,11 +313,11 @@ Beispiel Tabelle:
     </datalist>
   </label>
   <label for="alter">Alter:
-      <input type="number" id="alter" name="alter" min="0">
+    <input type="number" id="alter" name="alter" min="0">
   </label>
   <br>
-    <label for="tage">Tage:
-      <input type="range" id="tage" name="Tage" min="5" max="42" step="1" value="6">
+  <label for="tage">Tage:
+    <input type="range" id="tage" name="Tage" min="5" max="42" step="1" value="6">
   </label>
   <br>
   <label for="sturi">Studienrichtung:
@@ -333,7 +333,7 @@ Beispiel Tabelle:
       </label>
   </label>
   <br>
-    <label for="sonder">Sonderheiten:
+  <label for="sonder">Sonderheiten:
     <fieldset id="sonder">
       <label for="polster">Polsterstuhl
         <input type="checkbox" name="sonder" id="polster" value="1">
@@ -348,10 +348,71 @@ Beispiel Tabelle:
   <label for="farbe">Wähle eine Farbe:
     <input type="color" id="farbe" name="hintergrund">
   </label>
+  <label for="passbild">Passbild:
+    <input type="file" id="passbild" name="passbild" accept="image/*" multiple>
+    <!-- enctype="multipart/form-data" nötig, sonst wird nur der Dateiname übertragen -->
+  </label>
+  <label for="gebDat">Geburtsdatum:
+    <input type="date" id="gebDat" name="gebDat">
+  </label>
+  <label for="essen">Essen:
+    <select id="essen" name="essen">
+      <option>alles</option>
+      <option>vegetarisch</option>
+      <option>vegan</option>
+    </select>
+  </label>
+  <br><br>
+  <input type="submit" value="Absenden" name="senden">
+  <input type="reset" value="Zurücksetzen" name="löschen">
 </form>
 ```
 
+### Universal Attribute
+
+- `id`: eindeutiger Identifikator für Elemente (als Link, CSS-Selektor)
+- `class`: Kennzeichnung zusammengehöriger Elemente (CSS-Selektor)
+- `accesskey`: Taste zum Anspringen des Elementes
+- `contenteditable`: Inhalt kann verändert werden
+- `dir`: ltr/rtl-Layout
+- `hidden`: Element wird ausgeblendet
+- `draggable`: Element kann gedragt werden
+- `dropzone`
+- `lang`: Sprache festlegen
+- `style`: inline CSS (meiden!)
+- `tabindex`: Tab-Reihenfolge
+- `title`: Elementenbeschreibung $\rightarrow$ Tooltip
+
 ## CSS
+
+**Einbindung**
+
+- inline CSS (`style="..."`)
+- `<style></style>` im HTML
+- externes CSS einbinden (`<link rel="stylesheet" href="style.css">`)
+
+**Aufbau**
+
+```css
+selector{
+  property: value;
+}
+```
+
+### Farben
+
+**RGB-Farbmodell**
+
+- hex: `#ff7f50`
+- dezimal: `rgb(0,128,0)`
+- prozentual: `rgb(60%, 20%, 40%)`
+
+> Alphakanal auch möglich: `#ff7f50ff`, `rgba(0,128,0,42)`, ...
+
+**HSV-Farbmodell**
+
+- **h**ue, **s**aturation, **l**ightness
+- `hsl(200,100%,50%)`, `hsla(200,100%,50%,1)`
 
 ## JS
 
