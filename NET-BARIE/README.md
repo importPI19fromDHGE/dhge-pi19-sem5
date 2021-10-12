@@ -69,6 +69,9 @@ Rechnernetzadministration/Verteilte Systeme
   - [SNMP](#snmp)
   - [Netzwerkmanagement](#netzwerkmanagement)
     - [Wie mache ich Management?](#wie-mache-ich-management)
+- [Netzwerksimulation mit GNS3](#netzwerksimulation-mit-gns3)
+  - [Motivation](#motivation)
+  - [Emulation vs Simulation](#emulation-vs-simulation)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -611,3 +614,20 @@ L2 Bridging bleibt in Richtung der Endgeräte möglich
   - Trendanalyse: proaktive Aktität hängt von Monitoring und Analyse der Daten ab
   - Latenzen/Antwortzeiten im Blick behalten
   - Fehlerbehebung: detaillierte (aber nicht zu detaillierte) Fehlermeldungen
+
+# Netzwerksimulation mit GNS3
+
+## Motivation
+
+- erlaubt Simulation von sehr teurer Hardware, kann echte Hardware abbilden
+- erlaubt Experimente isoliert von der Produktivumgebung
+- simuliertes Netz kann mit realem Netz verbunden werden
+- Training für Zertifizierungen
+- FOSS, herstellerübergreifend, große Community
+- Images für Cisco Geräte muss man sich *organisieren*, nur mit lokaler Installation ausführbar
+- modularer Aufbau bestehend aus GUI und Server auf VM
+
+## Emulation vs Simulation
+
+- Emulation: bezieht sich auf Hardware; Router-OS wird geladen
+- Simulation: Eigenschaften und Funktionalität wird nachgebildet, kein Geräte-OS benötigt
