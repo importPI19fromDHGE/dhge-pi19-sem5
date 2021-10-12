@@ -1016,8 +1016,6 @@ Qualität in allen Bereichen einer Organisation zu jeder Zeit und jedem Ort (per
 
 Kaizen steht im Zentrum einer Qualitätssicherung. Kaizen wird gemacht, damit die Praxis besser wird.
 
-- Prozessorientierung, Kunden-/Lieferantenbeziehung, TQM, Verbesserung+Standardisierung (PDCA) $\rightarrow$ Kaizen
-
 #### Der Management Kreislauf (für neue Sachen)
 
 - Plan
