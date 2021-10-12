@@ -24,14 +24,15 @@ Rechnernetzadministration/Verteilte Systeme
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Rechnernetzadministration/Verteilte Systeme](#rechnernetzadministrationverteilte-systeme)
 - [Literaturempfehlung](#literaturempfehlung)
 - [Einleitung](#einleitung)
   - [Designziele](#designziele)
   - [Wiederholung Grundlagen](#wiederholung-grundlagen)
     - [Netzwerk](#netzwerk)
     - [Klassifizierung von Datennetzen](#klassifizierung-von-datennetzen)
-      - [Räumliche Ausdehnung](#r%C3%A4umliche-ausdehnung)
-      - [Größe/Anzahl der Teilnehmer](#gr%C3%B6%C3%9Feanzahl-der-teilnehmer)
+      - [Räumliche Ausdehnung](#räumliche-ausdehnung)
+      - [Größe/Anzahl der Teilnehmer](#größeanzahl-der-teilnehmer)
       - [Hardware-Sicht](#hardware-sicht)
       - [Logische Sicht](#logische-sicht)
         - [ISO/OSI und TCP/IP](#isoosi-und-tcpip)
@@ -40,7 +41,7 @@ Rechnernetzadministration/Verteilte Systeme
       - [Einschub: Frames/Sicherungsschicht](#einschub-framessicherungsschicht)
         - [Grober Aufbau eines Frames](#grober-aufbau-eines-frames)
         - [Paketkollision](#paketkollision)
-      - [Einschub: Geräte](#einschub-ger%C3%A4te)
+      - [Einschub: Geräte](#einschub-geräte)
     - [Topologien auf der logischen Ebene](#topologien-auf-der-logischen-ebene)
       - [flache Topologie](#flache-topologie)
       - [standortbasiert](#standortbasiert)
@@ -61,7 +62,7 @@ Rechnernetzadministration/Verteilte Systeme
     - [Switched Hierarchical Design](#switched-hierarchical-design)
     - [Routed Hierarchical Design](#routed-hierarchical-design)
     - [Virtuelle Zusammenfassung von Switches](#virtuelle-zusammenfassung-von-switches)
-- [Architekturen für große Netze](#architekturen-f%C3%BCr-gro%C3%9Fe-netze)
+- [Architekturen für große Netze](#architekturen-für-große-netze)
   - [Enterprise Campus](#enterprise-campus)
   - [Enterprise Edge](#enterprise-edge)
   - [Kritikpunkte am 3-Ebenen-Modell](#kritikpunkte-am-3-ebenen-modell)
@@ -69,6 +70,9 @@ Rechnernetzadministration/Verteilte Systeme
   - [SNMP](#snmp)
   - [Netzwerkmanagement](#netzwerkmanagement)
     - [Wie mache ich Management?](#wie-mache-ich-management)
+- [Netzwerksimulation mit GNS3](#netzwerksimulation-mit-gns3)
+  - [Motivation](#motivation)
+  - [Emulation vs Simulation](#emulation-vs-simulation)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -611,3 +615,20 @@ L2 Bridging bleibt in Richtung der Endgeräte möglich
   - Trendanalyse: proaktive Aktität hängt von Monitoring und Analyse der Daten ab
   - Latenzen/Antwortzeiten im Blick behalten
   - Fehlerbehebung: detaillierte (aber nicht zu detaillierte) Fehlermeldungen
+
+# Netzwerksimulation mit GNS3
+
+## Motivation
+
+- erlaubt Simulation von sehr teurer Hardware, kann echte Hardware abbilden
+- erlaubt Experimente isoliert von der Produktivumgebung
+- simuliertes Netz kann mit realem Netz verbunden werden
+- Training für Zertifizierungen
+- FOSS, herstellerübergreifend, große Community
+- Images für Cisco Geräte muss man sich *organisieren*, nur mit lokaler Installation ausführbar
+- modularer Aufbau bestehend aus GUI und Server auf VM
+
+## Emulation vs Simulation
+
+- Emulation: bezieht sich auf Hardware; Router-OS wird geladen
+- Simulation: Eigenschaften und Funktionalität wird nachgebildet, kein Geräte-OS benötigt
