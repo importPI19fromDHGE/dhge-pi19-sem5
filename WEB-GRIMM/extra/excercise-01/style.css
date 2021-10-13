@@ -1,0 +1,72 @@
+body {
+	background-color: yellow;
+}
+
+h2 {
+	color: red;
+}
+
+p {
+	color: blue;
+}
+
+*{
+	font-family: 'Comic Sans', 'Comic Sans MS', 'Chalkboard', 'ChalkboardSE-Regular', 'Marker Felt', 'Purisa', 'URW Chancery L', sans-serif;
+}
+
+#title{
+	color: greenyellow;
+	text-shadow: 2px 2px green;
+
+}
+
+.some-special-header{
+	text-decoration: underline wavy;
+}
+
+main > p{
+	text-shadow: 2px 2px 5px red;
+}
+
+p + p{
+	text-transform: uppercase;
+}
+
+section ul{
+	border: dashed 4px red;
+	border-radius: 1em;
+}
+
+li::marker {
+	content: "➼ ";
+	color: red;
+}
+
+ul > li{
+	color: lightseagreen;
+	list-style: none;
+}
+
+ul > li:first-child{
+	color: rosybrown;
+}
+
+ul > li:last-child{
+	color:hotpink;
+}
+
+ul > li:nth-child(odd){
+	background-color: darkmagenta;
+}
+
+ul > li:nth-child(even){
+	background-color: darkorange;
+}
+
+h1:hover, h2:hover, h3:hover, p:hover, li:hover{
+	background-color: red !important;
+}
+
+p::first-letter{
+	font-size: 2rem;
+}

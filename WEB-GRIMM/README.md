@@ -121,6 +121,7 @@ Beispiel-Skelett:
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="anonymous" />
     <meta name="description" content="404 - not found" />
+    <meta name="color-scheme" content="light dark">
     <title></title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="icon" href="images/favicon.png" />
@@ -323,31 +324,31 @@ Beispiel Tabelle:
     <input type="range" id="tage" name="Tage" min="5" max="42" step="1" value="6">
   </label>
   <br>
-  <label for="sturi">Studienrichtung:
-    <fieldset id="sturi">
-      <label for="pi">PI
-        <input type="radio" name="mussGleichSein" id="pi" value="1">
-      </label>
-      <label for="wi">WI
-        <input type="radio" name="mussGleichSein" id="wi" value="2">
-      </label>
-      <label for="ti">TI
-        <input type="radio" name="mussGleichSein" id="ti" value="3">
-      </label>
-  </label>
+  <fieldset>
+    <legend>Studienrichtung</legend>
+    <label for="pi">PI
+      <input type="radio" name="mussGleichSein" id="pi" value="1">
+    </label>
+    <label for="wi">WI
+      <input type="radio" name="mussGleichSein" id="wi" value="2">
+    </label>
+    <label for="ti">TI
+      <input type="radio" name="mussGleichSein" id="ti" value="3">
+    </label>
+  </fieldset>
   <br>
-  <label for="sonder">Sonderheiten:
-    <fieldset id="sonder">
-      <label for="polster">Polsterstuhl
-        <input type="checkbox" name="sonder" id="polster" value="1">
-      </label>
-      <label for="steckdose">Steckdose
-        <input type="checkbox" name="sonder" id="steckdose" value="2">
-      </label>
-      <label for="loge">Privatloge
-        <input type="checkbox" name="sonder" id="loge" value="3">
-      </label>
-  </label>
+  <fieldset>
+    <legend>Sonderheiten</legend>
+    <label for="polster">Polsterstuhl
+      <input type="checkbox" name="sonder" id="polster" value="1">
+    </label>
+    <label for="steckdose">Steckdose
+      <input type="checkbox" name="sonder" id="steckdose" value="2">
+    </label>
+    <label for="loge">Privatloge
+      <input type="checkbox" name="sonder" id="loge" value="3">
+    </label>
+  </fieldset>
   <label for="farbe">Wähle eine Farbe:
     <input type="color" id="farbe" name="hintergrund">
   </label>
@@ -394,7 +395,7 @@ Beispiel Tabelle:
 
 ## CSS
 
-- Cascading Style Sheet
+- **C**ascading **S**tyle **S**heet
 - Trennung der Darstellung vom Inhalt
 
 **Einbindung**
@@ -430,6 +431,53 @@ selector{
 
 - **h**ue, **s**aturation, **l**ightness
 - `hsl(200,100%,50%)`, `hsla(200,100%,50%,1)`
+
+### Einheiten
+
+- Ganz- oder Fließkommazahlen (Dezimalzeichen ist der Punkt)
+- Maßeinheit direkt direkt nach der Zahl (ohne Leerzeichen)
+- Physische Maße: Zoll (`in`), Zentimeter (`cm`), Pixel (`px`)
+- relative Längenmaße:
+  - `em`: Schriftgröße des Elements
+  - `ex`: Größe von x
+  - `vw`/`vh`: Prozent der Viewportbreite/-höhe (Anzeigebereich)
+  - `vmin`/`vmax`: minimales/maximales Maß des Viewports
+  - `%`: Prozentual im Verhältnis zum übergeordnetem Element
+- Winkelmaße: Grad (`deg`), Radiant (`rad`)
+- Zeit: Sekunden (`s`), Millisekunden (`ms`)
+
+### Selektoren
+
+- Typselektor: HTML-Element (`body`, `h1`, `p`, `li`, ...)
+- Universalselektor: `*`
+- Klassenselektor: `.` als Prefix (`.column`, `.btn`, ...)
+- ID-Selektor: `#` als Prefix (`#header`, `#footer`, ...)
+
+> Wichtig: **Cascading** $\rightarrow$ spezifischere Selektoren überschreiben Unspezifischere (`typ` < `.class` < `#id` < inline CSS)
+
+#### Kombinierte Selektoren
+
+- Nachfahrenkombinator: `p em{...}` (alle untergeordneten Elemente, unabhängig von der Tiefe)
+- Kindkombinator: `ul > li{...}` (nur direkte Kindelemente)
+- Nachbarkombinator: `h1 + p{...}` (direkter Nachfolger)
+- Geschwisterkombinator `h1 ~ p{...}` (für Element auf gleicher Ebene)
+
+#### Pseudoselektoren
+
+**Pseudoklassen:** beziehen sich auf Eigenschaften der HTML-Element
+
+- `:empty`, `:first-child`, `:last-child`, `:nth-child()`
+- `:hover`, `:link`, `:visited`, `:active`, `:focus`
+- `:disabled`, `:enabled`, `:checked`
+- `:valid`, `:invalid`, `:optional`, `:in-range`, `:out-of-range`
+- nicht alle Pseudo-Klassen funktionieren mit allen Elementen!
+
+**Pseudoelemente**
+
+- `::first-line`, `::first-letter`
+- `::before`, `::after`
+- `::backdrop`
+- `::selection`, `::placeholder`, `::marker`
 
 ## JS
 
