@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="anonymous" />
+    <meta name="description" content="404 - not found" />
+    <title></title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="images/favicon.png" />
+  </head>
+
+  <body>
+    <form id="anmeldung" name="Anmeldung" action="" method="post">
+        <label for="nachname">Nachname:
+            <input id="nachname" type="text" name="nachname" maxlength="42" minlength="1" required>
+        </label>
+        <br>
+        <label for="vorname">Vorname:
+            <input id="vorname" type="text" name="vorname" maxlength="42" minlength="1" required>
+        </label>
+        <br>
+        <label for="anschrift">Anschrift:
+            <input id="anschrift" type="text" name="anschrift" maxlength="100" minlength="5" required>
+        </label>
+        <br>
+        <label for="mail">E-Mail:
+            <input id="mail" type="emal" name="mail" maxlength="50" minlength="5" required>
+        </label>
+        <br>
+        <label for="phone">Telefonnummer:
+            <input id="phone" type="tel" name="phone" maxlength="21" minlength="3" required>
+        </label>
+        <br>
+        <label for="gebdat">Geburtsdatum:
+            <input id="gebdat" type="date" name="gebdat" required>
+        </label>
+        <br>
+        <label for="nachname">Nutzername:
+            <input id="username" type="text" name="username" maxlength="42" minlength="3" value="3v1lHaxx0r42" required>
+        </label>
+        <br>
+        <label for="pass">Passwort:
+            <input id="pass" type="password" name="pass" maxlength="128" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\+\-_!\?\=\$\.:,;<>\[\]\(\)]).{8,}" title="Mindestens 8 Zeichen, Groß- und Klein-Buchstaben sowie Sonderzeichen" required>
+        </label>
+        <br><br>
+        <input type="submit" value="Absenden" name="senden">
+        <input type="reset" value="Zurücksetzen" name="löschen">
+    </form>
+  </body>
+</html>

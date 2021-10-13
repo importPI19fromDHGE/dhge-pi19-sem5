@@ -28,7 +28,14 @@ Entwicklung von Webanwendungen
       - [Zeilenumbrüche](#zeilenumbr%C3%BCche)
       - [Formulare](#formulare)
       - [Formular-Elemente](#formular-elemente)
+    - [Universal Attribute](#universal-attribute)
   - [CSS](#css)
+    - [Syntax](#syntax)
+    - [Farben](#farben)
+    - [Einheiten](#einheiten)
+    - [Selektoren](#selektoren)
+      - [Kombinierte Selektoren](#kombinierte-selektoren)
+      - [Pseudoselektoren](#pseudoselektoren)
   - [JS](#js)
 - [PHP und Datenbanken](#php-und-datenbanken)
 - [Moderne Webentwicklung mit Frameworks](#moderne-webentwicklung-mit-frameworks)
@@ -118,6 +125,7 @@ Beispiel-Skelett:
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="anonymous" />
     <meta name="description" content="404 - not found" />
+    <meta name="color-scheme" content="light dark">
     <title></title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="icon" href="images/favicon.png" />
@@ -299,7 +307,7 @@ Beispiel Tabelle:
   - `fieldset` (Gruppierung)
 
 ```html
-<form id="bsp" name="Beispiel" action="index.html" method="post">
+<form id="bsp" name="Beispiel" action="index.html" method="post" enctype="multipart/form-data">
   <label for="name1">Name:
     <input id="name1" type="text" name="name" maxlength="20" minlength="3" required>
   </label>
@@ -313,45 +321,167 @@ Beispiel Tabelle:
     </datalist>
   </label>
   <label for="alter">Alter:
-      <input type="number" id="alter" name="alter" min="0">
+    <input type="number" id="alter" name="alter" min="0">
   </label>
   <br>
-    <label for="tage">Tage:
-      <input type="range" id="tage" name="Tage" min="5" max="42" step="1" value="6">
+  <label for="tage">Tage:
+    <input type="range" id="tage" name="Tage" min="5" max="42" step="1" value="6">
   </label>
   <br>
-  <label for="sturi">Studienrichtung:
-    <fieldset id="sturi">
-      <label for="pi">PI
-        <input type="radio" name="mussGleichSein" id="pi" value="1">
-      </label>
-      <label for="wi">WI
-        <input type="radio" name="mussGleichSein" id="wi" value="2">
-      </label>
-      <label for="ti">TI
-        <input type="radio" name="mussGleichSein" id="ti" value="3">
-      </label>
-  </label>
+  <fieldset>
+    <legend>Studienrichtung</legend>
+    <label for="pi">PI
+      <input type="radio" name="mussGleichSein" id="pi" value="1">
+    </label>
+    <label for="wi">WI
+      <input type="radio" name="mussGleichSein" id="wi" value="2">
+    </label>
+    <label for="ti">TI
+      <input type="radio" name="mussGleichSein" id="ti" value="3">
+    </label>
+  </fieldset>
   <br>
-    <label for="sonder">Sonderheiten:
-    <fieldset id="sonder">
-      <label for="polster">Polsterstuhl
-        <input type="checkbox" name="sonder" id="polster" value="1">
-      </label>
-      <label for="steckdose">Steckdose
-        <input type="checkbox" name="sonder" id="steckdose" value="2">
-      </label>
-      <label for="loge">Privatloge
-        <input type="checkbox" name="sonder" id="loge" value="3">
-      </label>
-  </label>
+  <fieldset>
+    <legend>Sonderheiten</legend>
+    <label for="polster">Polsterstuhl
+      <input type="checkbox" name="sonder" id="polster" value="1">
+    </label>
+    <label for="steckdose">Steckdose
+      <input type="checkbox" name="sonder" id="steckdose" value="2">
+    </label>
+    <label for="loge">Privatloge
+      <input type="checkbox" name="sonder" id="loge" value="3">
+    </label>
+  </fieldset>
   <label for="farbe">Wähle eine Farbe:
     <input type="color" id="farbe" name="hintergrund">
   </label>
+  <label for="passbild">Passbild:
+    <input type="file" id="passbild" name="passbild" accept="image/*" multiple>
+    <!-- enctype="multipart/form-data" nötig, sonst wird nur der Dateiname übertragen -->
+  </label>
+  <label for="gebDat">Geburtsdatum:
+    <input type="date" id="gebDat" name="gebDat">
+  </label>
+  <label for="essen">Essen:
+    <select id="essen" name="essen">
+      <option>alles</option>
+      <option>vegetarisch</option>
+      <option>vegan</option>
+    </select>
+  </label>
+  <br><br>
+  <label for="anmerkungen">Anmerkungen:
+    <textarea cols="80" rows="15" name="anmerkungen" id="anm">
+      Ich bin eine Textbox
+    </textarea>
+  </label>
+  <br><br>
+  <input type="submit" value="Absenden" name="senden">
+  <input type="reset" value="Zurücksetzen" name="löschen">
 </form>
 ```
 
+### Universal Attribute
+
+- `id`: eindeutiger Identifikator für Elemente (als Link, CSS-Selektor)
+- `class`: Kennzeichnung zusammengehöriger Elemente (CSS-Selektor)
+- `accesskey`: Taste zum Anspringen des Elementes
+- `contenteditable`: Inhalt kann verändert werden
+- `dir`: ltr/rtl-Layout
+- `hidden`: Element wird ausgeblendet
+- `draggable`: Element kann gedragt werden
+- `dropzone`
+- `lang`: Sprache festlegen
+- `style`: inline CSS (meiden!)
+- `tabindex`: Tab-Reihenfolge
+- `title`: Elementenbeschreibung $\rightarrow$ Tooltip
+
 ## CSS
+
+- **C**ascading **S**tyle **S**heet
+- Trennung der Darstellung vom Inhalt
+
+**Einbindung**
+
+- inline CSS (`style="..."`)
+- `<style></style>` im HTML
+- externes CSS einbinden (`<link rel="stylesheet" href="style.css">`)
+
+### Syntax
+
+- Eigenschaften werden in Regelsätzen gespeichert
+- arbeitet anhand von Selektoren
+- case-sensitiv
+- Kommentare: ``/*...*/``
+
+```css
+selector{
+  property: value;
+}
+```
+
+### Farben
+
+**RGB-Farbmodell**
+
+- hex: `#ff7f50`
+- dezimal: `rgb(0,128,0)`
+- prozentual: `rgb(60%, 20%, 40%)`
+
+> Alphakanal auch möglich: `#ff7f50ff`, `rgba(0,128,0,42)`, ...
+
+**HSL-Farbmodell**
+
+- **h**ue, **s**aturation, **l**ightness
+- `hsl(200,100%,50%)`, `hsla(200,100%,50%,1)`
+
+### Einheiten
+
+- Ganz- oder Fließkommazahlen (Dezimalzeichen ist der Punkt)
+- Maßeinheit direkt direkt nach der Zahl (ohne Leerzeichen)
+- Physische Maße: Zoll (`in`), Zentimeter (`cm`), Pixel (`px`)
+- relative Längenmaße:
+  - `em`: Schriftgröße des Elements
+  - `ex`: Größe von x
+  - `vw`/`vh`: Prozent der Viewportbreite/-höhe (Anzeigebereich)
+  - `vmin`/`vmax`: minimales/maximales Maß des Viewports
+  - `%`: Prozentual im Verhältnis zum übergeordnetem Element
+- Winkelmaße: Grad (`deg`), Radiant (`rad`)
+- Zeit: Sekunden (`s`), Millisekunden (`ms`)
+
+### Selektoren
+
+- Typselektor: HTML-Element (`body`, `h1`, `p`, `li`, ...)
+- Universalselektor: `*`
+- Klassenselektor: `.` als Prefix (`.column`, `.btn`, ...)
+- ID-Selektor: `#` als Prefix (`#header`, `#footer`, ...)
+
+> Wichtig: **Cascading** $\rightarrow$ spezifischere Selektoren überschreiben Unspezifischere (`typ` < `.class` < `#id` < inline CSS)
+
+#### Kombinierte Selektoren
+
+- Nachfahrenkombinator: `p em{...}` (alle untergeordneten Elemente, unabhängig von der Tiefe)
+- Kindkombinator: `ul > li{...}` (nur direkte Kindelemente)
+- Nachbarkombinator: `h1 + p{...}` (direkter Nachfolger)
+- Geschwisterkombinator `h1 ~ p{...}` (für Element auf gleicher Ebene)
+
+#### Pseudoselektoren
+
+**Pseudoklassen:** beziehen sich auf Eigenschaften der HTML-Element
+
+- `:empty`, `:first-child`, `:last-child`, `:nth-child()`
+- `:hover`, `:link`, `:visited`, `:active`, `:focus`
+- `:disabled`, `:enabled`, `:checked`
+- `:valid`, `:invalid`, `:optional`, `:in-range`, `:out-of-range`
+- nicht alle Pseudo-Klassen funktionieren mit allen Elementen!
+
+**Pseudoelemente**
+
+- `::first-line`, `::first-letter`
+- `::before`, `::after`
+- `::backdrop`
+- `::selection`, `::placeholder`, `::marker`
 
 ## JS
 
