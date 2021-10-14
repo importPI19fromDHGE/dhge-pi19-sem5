@@ -490,6 +490,7 @@ selector{
 - für ``nth-child()`` können Folgen berechnet werden
 - Syntax: ``An+B``, wobei A und B zu ersetzen sind
 - Beispiel: ``tr:nth-child(2n+1)`` wählt jede zweite Tabellenzeile, und zwar die ungeraden
+- Dokumentation: [Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child)
 
 ## JS
 
