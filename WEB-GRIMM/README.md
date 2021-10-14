@@ -36,6 +36,7 @@ Entwicklung von Webanwendungen
     - [Selektoren](#selektoren)
       - [Kombinierte Selektoren](#kombinierte-selektoren)
       - [Pseudoselektoren](#pseudoselektoren)
+    - [Berechnungen](#berechnungen)
   - [JS](#js)
 - [PHP und Datenbanken](#php-und-datenbanken)
 - [Moderne Webentwicklung mit Frameworks](#moderne-webentwicklung-mit-frameworks)
@@ -406,7 +407,7 @@ Beispiel Tabelle:
 
 - inline CSS (`style="..."`)
 - `<style></style>` im HTML
-- externes CSS einbinden (`<link rel="stylesheet" href="style.css">`)
+- externes CSS einbinden (`<link rel="stylesheet" type="text/css" href="style.css">` im ``<head>``)
 
 ### Syntax
 
@@ -452,12 +453,13 @@ selector{
 
 ### Selektoren
 
-- Typselektor: HTML-Element (`body`, `h1`, `p`, `li`, ...)
+- Typselektor: HTML-Element (`body`, `h1`, `p`, `li`, ...) $\rightarrow$ wirken für alle Elemente diesen Typs
 - Universalselektor: `*`
-- Klassenselektor: `.` als Prefix (`.column`, `.btn`, ...)
-- ID-Selektor: `#` als Prefix (`#header`, `#footer`, ...)
+- Klassenselektor: `.` als Prefix (`.column`, `.btn`, ...) $\rightarrow$ wirken für alle Elemente mit bestimmten Klassen-Attribut
+- ID-Selektor: `#` als Prefix (`#header`, `#footer`, ...) $\rightarrow$ wirkt für ein Element mit einer bestimmten ID
 
-> Wichtig: **Cascading** $\rightarrow$ spezifischere Selektoren überschreiben Unspezifischere (`typ` < `.class` < `#id` < inline CSS)
+> Wichtig: **Cascading** $\rightarrow$ spezifischere Selektoren überschreiben Unspezifischere (`*` < `typ` < `.class` < `#id` < inline CSS)
+> für gleichrangige Selektoren gilt: das zuletzt definierte überschreibt das zuerst definierte
 
 #### Kombinierte Selektoren
 
@@ -482,6 +484,13 @@ selector{
 - `::before`, `::after`
 - `::backdrop`
 - `::selection`, `::placeholder`, `::marker`
+
+### Berechnungen
+
+- für ``nth-child()`` können Folgen berechnet werden
+- Syntax: ``An+B``, wobei A und B zu ersetzen sind
+- Beispiel: ``tr:nth-child(2n+1)`` wählt jede zweite Tabellenzeile, und zwar die ungeraden
+- Dokumentation: [Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child)
 
 ## JS
 
