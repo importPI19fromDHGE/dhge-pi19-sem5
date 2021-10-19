@@ -13,6 +13,7 @@ Graphische Datenverarbeitung
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Graphische Datenverarbeitung](#graphische-datenverarbeitung)
 - [Organisatorisches](#organisatorisches)
 - [CAD - Computer Aided Design](#cad---computer-aided-design)
   - [CAD-Grundlagen](#cad-grundlagen)
@@ -52,17 +53,25 @@ Graphische Datenverarbeitung
 - **CAD:** Computer Aided Design (Computergestützte Entwicklung von Produkten)
   - **MCAD:** Mechanical CAD
   - **ECAD:** Electronic CAD
+  - Beispiele für Applikationen: System-Simulationen (thermisch, aerodynamisch, Materialdatenbanken, Recycling, ...)
 - **CAE:** Computer Aided Engineering (Produktentwicklung mit Simulation)
 - **ERP:** Enterprise Resource Planing (Kaufmännische Produktentwicklung)
 - **PPS:** Production Planning System (in der Produktion verwendet)
 - **PDM/PLM** Produktdatenmanagement/Product Lifecycle Management
+  - anwendungsbezogene Funktionen
+  - anwendungsübergreifende Funktionen: Import/Export, Archivierung und Backups, ...
+  - Produktdaten: Modelle, ...
+  - Metadaten: Daten, die Produktdaten näher beschreiben, z.B. Datenzugriffslog
 - **Mechatronik:** Mechanik + Elektronik + Softwareentwicklung?
 - **e-collaboration:** elektronische Zusammenarbeit bei der Produktentwicklung
 - **Rapid-Prototyping** (additive manufacturing): Digitales Modell in reales Produkt überführen (Prototyping: 3D-Druck)
 - **PEP:** Produktentwicklungsprozess (genormt nach DIN)
 - Industrie 4.0 (Digitalisierung als 4. industrielle Revolution) / IoT / Digitaler Zwilling / Digitale Transformation / ...
+- integriertes Produktdatenmodell: Datenmodell, was komplettes Produkt beschreibt
+- Tendenzen bei Herstellern: Abo-Modelle, Abdeckung des gesamten PLM, Angebot in unterschiedlichen Preissegmenten, cloudbasierte Angebote
 
 <!-- ziemlich viele einfache Begriffe, aber wir haben sehr viel Zeit damit verbracht (in BAckstage soll ein Glossar landen) -->
+<!-- das Glossar ist jetzt auch nicht so der Burner, LG Max -->
 
 ## CAD-Technik
 
