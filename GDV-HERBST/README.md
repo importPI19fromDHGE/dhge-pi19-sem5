@@ -28,7 +28,6 @@ Graphische Datenverarbeitung
   - [Farbgebung](#farbgebung)
   - [CG-Technik](#cg-technik)
   - [Standards](#standards)
-  - [2D-Elemente](#2d-elemente)
   - [3D-Objekte](#3d-objekte)
   - [Visualisierung](#visualisierung)
   - [Bildformate](#bildformate)
@@ -74,6 +73,13 @@ Graphische Datenverarbeitung
 - Industrie 4.0 (Digitalisierung als 4. industrielle Revolution) / IoT / Digitaler Zwilling / Digitale Transformation / ...
 - integriertes Produktdatenmodell: Datenmodell, was komplettes Produkt beschreibt
 - Tendenzen bei Herstellern: Abo-Modelle, Abdeckung des gesamten PLM, Angebot in unterschiedlichen Preissegmenten, cloudbasierte Angebote
+- komplexe Geometrien sind aus "Features", deutsch "Formelemente\[n\]" aufgebaut $\rightarrow$ Fasen, Bohrungen, ...
+  - bestehen wiederum aus Flächenelementen aus Kanten und Vertices, die eine Hüllengeometrie erstellen
+- Historiengraph (Modellbaum) beschreibt die vollständige Geometrie und auch die "Entstehungsgeschichte" der Objekte, enthält "Know-how des Konstrukteurs"
+- NURBS: Non-Uniform Rational B-Spline; Übetragung von Splines in den Raum $\rightarrow$ Flächenbeschreibung
+  - heutige CAD-Systeme sind NURBS-Modellierer
+- TrueType: Fonts, ausschließlich mit Splines beschrieben
+- "Metabälle": Tropfenform als Modell-Basis, Partikelsysteme
 
 <!-- ziemlich viele einfache Begriffe, aber wir haben sehr viel Zeit damit verbracht (in BAckstage soll ein Glossar landen) -->
 <!-- das Glossar ist jetzt auch nicht so der Burner, LG Max -->
@@ -107,8 +113,6 @@ Graphische Datenverarbeitung
 ## CG-Technik
 
 ## Standards
-
-## 2D-Elemente
 
 ## 3D-Objekte
 
