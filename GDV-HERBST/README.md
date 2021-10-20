@@ -27,10 +27,14 @@ Graphische Datenverarbeitung
   - [Farbgebung](#farbgebung)
   - [CG-Technik](#cg-technik)
   - [Standards](#standards)
-  - [2D-Elemente](#2d-elemente)
   - [3D-Objekte](#3d-objekte)
   - [Visualisierung](#visualisierung)
   - [Bildformate](#bildformate)
+- [Grundlagen geometrischer Modellierung](#grundlagen-geometrischer-modellierung)
+  - [grafische Primitive](#grafische-primitive)
+    - [2D-Elemete](#2d-elemete)
+    - [3D-Elemente](#3d-elemente)
+  - [Boolsche Operatoren](#boolsche-operatoren)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -52,17 +56,32 @@ Graphische Datenverarbeitung
 - **CAD:** Computer Aided Design (Computergestützte Entwicklung von Produkten)
   - **MCAD:** Mechanical CAD
   - **ECAD:** Electronic CAD
+  - Beispiele für Applikationen: System-Simulationen (thermisch, aerodynamisch, Materialdatenbanken, Recycling, ...)
 - **CAE:** Computer Aided Engineering (Produktentwicklung mit Simulation)
 - **ERP:** Enterprise Resource Planing (Kaufmännische Produktentwicklung)
 - **PPS:** Production Planning System (in der Produktion verwendet)
 - **PDM/PLM** Produktdatenmanagement/Product Lifecycle Management
+  - anwendungsbezogene Funktionen
+  - anwendungsübergreifende Funktionen: Import/Export, Archivierung und Backups, ...
+  - Produktdaten: Modelle, ...
+  - Metadaten: Daten, die Produktdaten näher beschreiben, z.B. Datenzugriffslog
 - **Mechatronik:** Mechanik + Elektronik + Softwareentwicklung?
 - **e-collaboration:** elektronische Zusammenarbeit bei der Produktentwicklung
 - **Rapid-Prototyping** (additive manufacturing): Digitales Modell in reales Produkt überführen (Prototyping: 3D-Druck)
 - **PEP:** Produktentwicklungsprozess (genormt nach DIN)
 - Industrie 4.0 (Digitalisierung als 4. industrielle Revolution) / IoT / Digitaler Zwilling / Digitale Transformation / ...
+- integriertes Produktdatenmodell: Datenmodell, was komplettes Produkt beschreibt
+- Tendenzen bei Herstellern: Abo-Modelle, Abdeckung des gesamten PLM, Angebot in unterschiedlichen Preissegmenten, cloudbasierte Angebote
+- komplexe Geometrien sind aus "Features", deutsch "Formelemente\[n\]" aufgebaut $\rightarrow$ Fasen, Bohrungen, ...
+  - bestehen wiederum aus Flächenelementen aus Kanten und Vertices, die eine Hüllengeometrie erstellen
+- Historiengraph (Modellbaum) beschreibt die vollständige Geometrie und auch die "Entstehungsgeschichte" der Objekte, enthält "Know-how des Konstrukteurs"
+- NURBS: Non-Uniform Rational B-Spline; Übetragung von Splines in den Raum $\rightarrow$ Flächenbeschreibung
+  - heutige CAD-Systeme sind NURBS-Modellierer
+- TrueType: Fonts, ausschließlich mit Splines beschrieben
+- "Metabälle": Tropfenform als Modell-Basis, Partikelsysteme
 
 <!-- ziemlich viele einfache Begriffe, aber wir haben sehr viel Zeit damit verbracht (in BAckstage soll ein Glossar landen) -->
+<!-- das Glossar ist jetzt auch nicht so der Burner, LG Max -->
 
 ## CAD-Technik
 
@@ -94,10 +113,40 @@ Graphische Datenverarbeitung
 
 ## Standards
 
-## 2D-Elemente
-
 ## 3D-Objekte
 
 ## Visualisierung
 
 ## Bildformate
+
+# Grundlagen geometrischer Modellierung
+
+## grafische Primitive
+
+### 2D-Elemete
+
+- Punkte, Linien, Polygone, Spline, Bézier-Kurven, Kreise, Rechtecke, Text (mit Fonts)
+- Kreise sind problematisch, da sie eigentlich Polygone mit unendlich vielen Ecken sind $\rightarrow$ müssen in Liniensegmente aufgeteilt werden
+  - Fachbegriff: Segmentierung und Tesselierung
+- Punkte sind auch problematisch: sie sind dimensionslos, man würde ihn nicht sehen $\rightarrow$ prozentual berechnete Größe abhängig von der Bildschirmauflösung
+- Spline und Beziér-Kurve: frei geformte Kurven, die durch Punkte gehen; mathematisch ein Polynom n-ten Grades
+  - muss ebenfalls in Liniensegmente unterteilt werden, mehr noch als Kreise
+    - wenn das einmal geschehen ist, kann die Kurve jedoch **nicht** mehr wiederhergestellt werden
+    - v.a. bei Datenübertragung zu anderen Programmen
+
+### 3D-Elemente
+
+- Quader, Kugel, Zylinder, Kegel, ...
+- Bézier-Fläche / NURBS (Non-Uniform Rational B-Spline and Surfaces), Subdivision Surfaces Modeling / SubD NURBS
+- Metabälle / Blob-Netz (verbindet sich selbstständig mit anderen Objekten mithilfe Verbindungsoberfläche)
+- Problemstellungen:
+  - Parameter, UI-Erstellung, Tesselierung, Interpolation, alternative Modellierungsansätze
+  - Tesselierung genauer: Flächen werden in Dreiecke unterteilt
+- moderne CAD-Systeme sind meist NURBS-Modellierer
+- SubD NURBS in Autodesk Inventor: "Freiform erstellen"
+
+## Boolsche Operatoren
+
+- Vereinigung OR
+- Differenzmenge "A\\B" (NOT?)
+- Schnittmenge AND
