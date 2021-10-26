@@ -1,0 +1,36 @@
+# Unternehmensführung
+
+- Unternehmen: rechtlich, wirtschaftlich und finanziell organisierte Einheit
+  - spezieller Betriebstyp
+  - Marktwirtschaftliches System
+  - Erwerbswirtschaftliches Prinzip
+  - auf Basis des Privateigentums
+  - wirtschaftliche Autonomie
+- Ressourcen: HR + FR + MR
+  - *Leiharbeiter zählen zu HR (nicht ganz eindeutig, aber für Klausur durch Mehrheit so festgelegt)*
+- Kompetenzen: fachlich (Qualifikation), methodisch (Ordnung der Arbeit/Führung) und persönlich (Zusammenarbeit mit Menschen)
+  - Inhalt: Fähigkeiten (entwickelt), Fertigkeiten (erlernt), Wissen, Erfahrung (aus Wiederholung mit unterschiedlichen Bedingungen)
+- Vision $\rightarrow$ Unternehmenspolitik $\rightarrow$ Unternehmensleitbild (Aufgeschriebene Politik zur Kommunikation; **SOLL**) $\rightarrow$ Unternehmenskultur (*Das was tatsächlich stattfindet*; **IST**)
+  - passt SOLL und IST zusammen, wird die höchste Leistungsfähigkeit erreicht
+  - Einflussfaktoren auf die Unternehmenspolitik:
+    - Wirtschaftsordnung: soziale Marktwirtschaft
+    - Politische Ordnung: Föderalismus
+    - Gesellschaftsordnung: Kapitalismus
+    - Rechtsordnung: Verfassungs-, Straf-, Privatrecht, Öffentliches Recht, ...
+  - Inhalt eines Leitbildes: Know-how (F&E, KVP), Ökonomie (solides Unternehmen), Umwelt (Ressourcen), Soziale Beziehungen (Partner, Kunden, Mitarbeiter)
+    - KVP: Markt (Kunden, Wettbewerb); technisch, technologischer Fortschritt
+    - gesellschaftliche Verantwortung: Nachhaltigkeit (3 Säulen Modell: soz.Bez. $\leftrightarrow$ Ökonomie $\leftrightarrow$ Ökologie)
+- Managementkreislauf: Basis = Ziel/Aufgabe
+  - Planing: Analyse und Planung (HR, MR, FR)
+  - Organizing: Organisieren (Wahl der Mittel, Prioritäten, Koordination)
+  - Staffing: Personalwirtschaft (Personaleinsatz, Kombination von Organisation und Personal $\rightarrow$ Entscheiden)
+  - Directing: Mitarbeiterführung (Realisierung der Prozesse)
+  - Controlling: Kontrolle, Steuerung, Regelung
+- PDCA: Methode zur Implementation etwas Neuem im Unternehmen
+  - Plan: Aufgabe definieren, Analysieren, Planen, Entscheidungen
+  - Do: Ausprobieren, Testen $\rightarrow$ Daten
+  - Check: Analyse der Daten (Loop zu Do $\rightarrow$ so lange Probieren, bis SOLL==IST)
+  - Act: Realisierung, Daten sammeln ($\rightarrow$ Controlling $\rightarrow$ Verbesserung)
+- Controlling: kontinuierliche Lenkung, Steuerung und Regelung, um ein Ziel zu erreichen
+  - Kontrolle im Vergleich nur einmalige Überprüfung, ab Ziel/Aufgabe erfüllt
+- Instrumente der Aufbauorganisation sind zu beherrschen (Folie 46)

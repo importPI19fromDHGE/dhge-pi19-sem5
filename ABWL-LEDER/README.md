@@ -119,10 +119,11 @@ Projektmanagement
 
 # Klausur (unvollständig)
 
-## BWL
+## BWL (Klausurschwerpunkte)
 
 <!-- md2apkg ignore-card -->
 
+- Instrumente der Aufbauorganisation sind zu beherrschen (Folie 46)
 - SWOT Analyse (nach Folie 66 - Qualitätsmanagement)
 - Kundenorientierung (die Kurzfassung reicht)
 - Center Organisation
