@@ -22,6 +22,24 @@ Systemprogrammierung / Verteilte Systeme
 
 <!--newpage-->
 
+# Klausur 
+
+## Wiederholungsfragen zu Beginn der Veranstaltung
+
+Zu Beginn wird gefragt, aus welchen Inhalten der letzten Veranstaltungen Klausurfragen konstruiert werden können.
+Erfahrungsgemäß ist das am Ende ein großer Teil der Klausur.
+
+### PIA 27/10/21
+
+<!--Dokumentaufbau besprechen-->
+
+- Mit make Kerne auslasten? Parameter -j
+- Was sind Deadlock und wie können Sie behoben werden?
+- Philosophenproblem nacherzählen und erklären -> Nicht genug Ressourcen
+- Gedankenspiele Anzahl Philosophen, Anzahl Stäbchen 5/2, 10/10, 10/5
+
+<!--newpage-->
+
 # Systemprogrammierung
 
 ## Lernziele/Themenschwerpunkte
