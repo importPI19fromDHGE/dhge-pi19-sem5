@@ -13,7 +13,6 @@ Systemprogrammierung / Verteilte Systeme
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Systemprogrammierung / Verteilte Systeme](#systemprogrammierung--verteilte-systeme)
 - [Systemprogrammierung](#systemprogrammierung)
   - [Lernziele/Themenschwerpunkte](#lernzielethemenschwerpunkte)
   - [Literaturempfehlung](#literaturempfehlung)
