@@ -13,10 +13,13 @@ Systemprogrammierung / Verteilte Systeme
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Systemprogrammierung / Verteilte Systeme](#systemprogrammierung--verteilte-systeme)
 - [Systemprogrammierung](#systemprogrammierung)
   - [Lernziele/Themenschwerpunkte](#lernzielethemenschwerpunkte)
+  - [Literaturempfehlung](#literaturempfehlung)
   - [Parallele Programmierung](#parallele-programmierung)
     - [Prozesssteuerung](#prozesssteuerung)
+    - [Systemaufruf fork()](#systemaufruf-fork)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -41,6 +44,7 @@ Systemprogrammierung / Verteilte Systeme
 - Die Fähigkeit erwerben, eigenständig Parallelitäts- und Kommunikationskonstrukte auszuwählen und zu implementieren
 
 > Prüfungsleistung: Klausur (ohne Hilfsmittel)
+
 ## Literaturempfehlung
 
 <!-- md2apkg ignore-card -->
@@ -67,3 +71,15 @@ Systemprogrammierung / Verteilte Systeme
 
 - im Hintergrund ausführen: `.\anton &` `.\berta &`
 - Prozesse anzeigen: `jobs -l`, `top`, `htop`, `ps`
+
+### Systemaufruf fork()
+
+- Zweck: es wird eine exakte Kopie des Aufrufers als Kindprozess erzeugt
+- Kindprozess übernimmt Code, Daten inkl. Befehlszähler, Dateideskriptoren, ...
+
+**Auswertung des Rückgabewerts**
+
+- 3 mögliche Rückgabewerte
+  - `>0`: die PID des Kindprozesses
+  - `0`: es wurde eben geforkt und wir sind das Kind
+  - `-1`: Fehler
