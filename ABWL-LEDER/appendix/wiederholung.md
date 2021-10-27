@@ -34,3 +34,33 @@
 - Controlling: kontinuierliche Lenkung, Steuerung und Regelung, um ein Ziel zu erreichen
   - Kontrolle im Vergleich nur einmalige Überprüfung, ab Ziel/Aufgabe erfüllt
 - Instrumente der Aufbauorganisation sind zu beherrschen (Folie 46)
+- Stellenbeschreibung ist Grundlage des eigenständigen Handelns eines Mitarbeiters
+- Organigram: Aufbaustruktur eines Unternehmens <!-- Geschäftsleitung nicht vergessen! (GL -> BL -> AL -> MA)-->
+- Informationsfluss: formelle und informelle Wege
+  - Top-Down: Vorgaben, autoritär, MbR (Management by Results)
+  - Bottom-Up: Realitätsprüfung
+  - wenn beides aufeinander trifft: kooperative Verhandlungen ("Gegenstromprinzip", Management by Objectives)
+  - *Bottom-Up und Top-Down Darstellung und Erklärung könnte dran kommen*
+- Verantwortung: Folie 57
+- Centerorganisation
+  - Investment-Center: ROI
+  - Profit-Center: Profit machen
+  - Cost-Center: Buchhaltung, Verwaltung, ... (notwendige Kosten -> Kostenminimierung)
+  - Umsatzcenter: Vertrieb (erbringt Umsatz)
+- Linienorganisationen kennen (sind alles funktionale Organisationen; Sparten und Matrix sollte man noch kennen)
+- Einliniensystem soll man zeichnen können (aus Beschreibung)
+- Vor- und Nachteile der Organisationsformen
+- Personalplanung
+  - qualitativ: fachlich, methodisch, persönlich
+  - quantitativ: Menge, Zeit, Ort
+  - -> Hauptaufgaben des Personalwesens: Sicherstellen zu vertretbaren Preisen
+  - Folie 76: Verbindung in der Planung = Kosten
+  - 77 nur zum Überblick
+  - Arbeitsvertrag durch: schriftlich, mündlich, konkludentes Handeln (letzte beiden innerhalb eines Monats schriftlich vereinbaren)
+  - In Klausur kommt immer eine Personalberechnung dran! Vorwärtskalkulation auch möglich!
+  - künstliche Fluktuation = Kündigung
+  - natürliche Fluktuation = Rente
+  - unbesetzte Stelle = Vakanz
+  - Setzbedarf = durch Gesetze festgelegter Bedarf (Datenschutzbeauftragten, ...)
+  - Qualitative Planung: notwendige Kompetenzen beziehen sich auf die Stelle
+  - Potenzial eines MA = Leistungsvermögen
