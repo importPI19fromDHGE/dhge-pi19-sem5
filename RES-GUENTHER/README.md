@@ -58,8 +58,9 @@ Systemprogrammierung / Verteilte Systeme
 
 > **Fünf-Philosophen-Problem**
 >
-> Es können immer nur zwei Philosophen speisen
-> ...
+> [siehe Wikipedia](https://de.wikipedia.org/wiki/Philosophenproblem)
+>
+> Es können immer nur maximal zwei Philosophen gleichzeitig speisen
 
 ### Prozesssteuerung
 
