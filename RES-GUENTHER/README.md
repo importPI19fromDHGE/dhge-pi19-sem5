@@ -25,7 +25,7 @@ Systemprogrammierung / Verteilte Systeme
 
 <!--newpage-->
 
-# Klausur 
+# Klausur
 
 ## Wiederholungsfragen zu Beginn der Veranstaltung
 
