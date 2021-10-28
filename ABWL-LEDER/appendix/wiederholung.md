@@ -64,3 +64,51 @@
   - Setzbedarf = durch Gesetze festgelegter Bedarf (Datenschutzbeauftragten, ...)
   - Qualitative Planung: notwendige Kompetenzen beziehen sich auf die Stelle
   - Potenzial eines MA = Leistungsvermögen
+
+## Personalmarketing
+
+<!-- mMn eher miese Anwendung des Marketingmixes -->
+
+- Produktpolitik: Kompetenzen
+- Preispolitik: Entgelt
+- Kommunikationspolitik: Transparenz gegenüber MA
+- Distributionspolitik: Einsatz der MA
+
+## Förderung von MA
+
+- betriebliche Notwendigkeit
+- Wille
+- Potential
+
+## CI
+
+- wie verhält sich das Unternehmen am Markt/ in der Wirtschaft
+- Vertrauen <!--...?-->
+
+## xxx
+
+- Drei Methoden der Personalbeschaffung erläutern können
+- Vor- und Nachteile externer Beschaffung
+  - Vorteile: keine Nachbesetzung, neues Wissen, keine Ausbildungskosten, mehr Auswahl
+  - Nachteile: längere Einarbeitungszeit,
+- Personalfreisetzung intern/extern je ein Beispiel
+- Kündigungsgründe und -arten unterscheiden
+- Instrumente der Freisetzung (Tabelle) soll gekonnt werden
+
+# Unternehmensführung
+
+- "Aus diesem Teil braucht man nicht viel"
+- Internes/Externes Rechnungswesen unterscheiden können
+  - Gebrauch von Kennzahlen (Notwendigkeit anhand drei Kriterien begründen; Folie 3)
+    - Vergleichbarkeit, Einfach, Verständlich
+- Du Pont-System = ältestes auf Basis von ROI
+- ZVEI: Risikobetrachtung
+- RL - System
+- Balance Score Card darf man kennen (Vor-/Nachteile kennen!)
+  - Ziel/Aufgabe -> Kunde (Auswirkung auf den Kaufpreis), FR (Kapital für Investition), MR (Investition), HR (Schulung) <!--FR, MR, HR im Zusammenhang!!! -> 9 Punkte in Klausur -->
+  - Senkung Ausschuss durch neue Maschine
+- Extern RW: Bilanz, GuV, ...
+- Intern RW: Kosten-/Leistungsrechnung, Preiskalkulation, ...
+- S 16, 17, 18-31 informativ
+- Voll- und Teilkostenrechnung erklären können
+-
