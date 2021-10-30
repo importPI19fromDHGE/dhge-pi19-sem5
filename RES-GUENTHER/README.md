@@ -82,3 +82,21 @@ Systemprogrammierung / Verteilte Systeme
   - `>0`: die PID des Kindprozesses
   - `0`: es wurde eben geforkt und wir sind das Kind
   - `-1`: Fehler
+
+```C
+#include<stdio.h>
+#include<unistd.h>
+
+int main()
+{
+    fork();
+    getpid(); // MY PID
+    getppid(); //Parent PID
+    childpid=fork(); //..
+    printf("Hallo, ich bin ein Prozess!\n");
+    fflush(stdout);
+    return 0;
+}
+```
+
+
