@@ -236,3 +236,60 @@ int someFunction(int par1, ///< parameter 1
 - `c++filt`: Auflösung eines bestimmten Namens in einer Binary
 - `ar`: Anzeige und Manipulation von Objekten in einer Library
 - `size`: gibt Größe der Code- und Datenbereiche in einer Binary an
+
+## Fehlersuche und Analyse des Programm-Verhaltens
+
+### Debugger
+
+> Damit der Debugger symbolische Informationen (Variablen- und Funktions-Namen,
+> Zeilennummern) liefern und die Typen von Variablen und Funktionsparametern kennen
+> und richtig anzeigen kann, muss der **Code mit Debug-Info compiliert** worden sein.
+
+**Übliche Ansichten**
+
+- Aktuelle Position im Source, aktueller Assembler-Code
+- Aktueller Call-Stack (Funktionen inkl. Argument-Werten und Zeilennummern der Aufrufe)
+- Werte aller lokalen und globalen Variablen (lokale Variablen für alle Ebenen im Call-Stack)
+- Registerinhalte, *"rohe"* Speicherinhalte (hex/dez/text)
+
+#### Fähigkeiten
+
+- **Breakpoints** (Continue to next Breakpoint, Run to Cursor)
+- Single **Stepping** (Source oder Assembler) $\rightarrow$ Step over/into/out
+- **Watchpoints** (Programm läuft bis sich eine bestimmte Variable ändert)
+- **Ändern** von Variablen und Speicherbereichen
+
+> Debugger unterscheiden sich vorallem in der Datendarstellung
+
+#### Betriebsmodi
+
+- Post-mortem Debugging: Analysieren einer "Leiche" (`core dump` laden)
+- Anhängen an einen bereits laufenden Prozess: nützlich, wenn Programm erst nach langer Laufzeit Fehler zeigt
+- Starten einer Binary mit Debugger: gängigste Methode in der Entwicklung
+
+### `ltrace` und `strace`
+
+- `ltrace` untersucht Library-Calls (hängt sich in den Dynamic-Linking-Mechanismus)
+- `strace` untersucht System-Calls (zeichnet Schnittstelle zwischen Programm und Kernel auf)
+- andere Schwerpunkte als Debugger:
+  - funktionieren immer, auch ohne Debug-Symbole usw.
+  - zeitliche Geschichte von Start bis Fehler (nicht nur Snapshot, wie bei `core dump`)
+  - kein Stacktrace, aber mit Debug-Info Aufruf im Source ermittelbar
+  - auch für Multithreaded-Programme (ein chronologischer Log oder für jeden Prozess eigenen)
+    - $\rightarrow$ Race Conditions und Verklemmungen zwischen Prozessen erkennen
+  - erste Performance-Analyse: Dauer einzelner Aufrufe $\rightarrow$ Anzahl und Gesamtdauer der Aufrufe
+
+### `lsof`
+
+Listet alle von einem Prozess aktuell geöffneten Files
+
+- aktuelles Arbeitsverzeichnis
+- aktuelles Root-Verzeichnis
+- File des Executable selbst
+- normale I/O-Files, inkl. Dirs, Pipes, Devices, Sockets, Netzwerkverbindungen, ...
+- mit `mmap` geladene Files (Shared Libraries, Shared-Memory-Segmente)
+
+## `/proc`- und `/sys`-Verzeichnisse
+
+- `/proc`: alle Prozesse und Informationen zu diesen
+- `/sys`: Informationen zum System (Kernel Parameter, ...)
