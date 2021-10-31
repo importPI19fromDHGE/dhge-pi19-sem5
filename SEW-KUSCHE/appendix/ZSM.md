@@ -145,5 +145,23 @@
 
 - **Variablen**-Definition: z.B. `hfiles=circ.h color.h graobj.h rect.h`
 - Verwendung in Befehlen oder Targets: z.B. `main.o: main.cpp $(hfiles)`
-- sollten für Gruppen von Files (`.o`/`.h`-Files), Befehle (Compiler, Linker) und Optionen (Compiler-Optionen, Suchpfade für System-Header und Libs)
+- sollten für Gruppen von Files (`.o`/`.h`-Files), Befehle (Compiler, Linker) und Optionen (Compiler-Optionen, Suchpfade für System-Header und Libs) definiert werden $\rightarrow$ einfache Anpassung
 - standardisierte Namen haben sich eingebürgert: z.B. `CC`, `CFLAGS`, ...
+
+### Makefile erstellen
+
+- manuell
+- mit Hilfe von Dependency-Generatoren
+- von der Entwicklungsumgebung
+- CLI-Tools zur Generierung
+
+### Autotools
+
+- sollen helfen, portable Software und portable Makefiles zu erstellen $\rightarrow$ Nutzer soll den geladenen Source-Code konfigurieren können
+- Entwickler baut Makefile-Gerüste und ein Konfigurationsfile (plattformabhängige Konfigurationen)
+- ein Tool findet nicht-portable Konstrukte im C/C++ Code
+- Autotools erstellen ein `configure`-Script
+- Nutzer startet das Skript $\rightarrow$ führt automatische Tests auf dem lokalen System aus, um Probleme und Inkompatibilitäten zu finden
+- danach wird ein Makefile generiert und ein C-Headerfile $\rightarrow$ steuert plattformabhängige Code-Strukturen mit Makros
+- `libtool`: Tool zum Erzeugen und Linken von Shared Libraries, es soll es auf verschiedenen Plattformen vereinheitlichen
+- `gettext`: Tool zum Internationalisieren aller Texte in einem Programm
