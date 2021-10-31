@@ -34,3 +34,85 @@
 - **Source Formatter:** Umformatieren des Source (einheitliche Einrückung, Zwischenräume, ...)
   - zur Durchsetzung eines firmenweit einheitlichen Stils
   - lesbarmachen fremder und alter Sourcen
+
+## Versionsverwaltung (think `git`)
+
+- Verwaltung und Archivierung aller Dateien eines Software-Produkts in allen Ständen
+- Buchführung über jede einzelne Änderung in jeder einzelnen Datei
+  - Optimierte Speicherung: Nur die Deltas jeder Änderung, nicht jedesmal die komplette Datei, und zwar rückwärts (aktuelle Version im Volltext)
+
+> **Reproduzierbarkeit und Nachverfolgbarkeit**
+
+### Aufgaben einer Versionsverwaltung
+
+- Versionsgeschichte: Wer (Auto) hat wann (Datum) was (Änderung) geändert?
+- Konsistente Versionsnummerierung (x.y.z)
+- Labeling/Tagging von Ständen
+- Kommentar der Änderung $\rightarrow$ Verweise in den Bugtracker
+- Rekonstruktion alter Stände
+- Anzeigen der Änderungen zwischen mehreren Ständen
+
+#### Branches
+
+- `head`, `main` oder `trunk` (aktueller Hauptentwicklungs-Branch)
+  - Release- und Wartungs-Branches (nur Fixes, keine Neuentwicklungen)
+  - Plattform- oder Kundenbranches (Sonderversion anderer Branches)
+  - Feature Development Branches (experimentelle Entwicklungen)
+- Anzeige der verschiedenen Branches im Idealfall als Graph bzw. Baum
+- Automatisches Mergen von einzelnen Änderungen aus dem `head`-Branch oder einem Wartungs-Branch in andere Branches
+  - Zurück-Mergen aller Entwicklungen (vor allem bei Feature Branches) nach `head` oder Resynchronisation mit `head` in beide Richtungen (Übernahme aller Neuerungen von `head`)
+
+#### Sperrverwaltung
+
+> Welche Files werden aktuell gerade geändert (sind ausgecheckt), von wem?
+
+- Konkurrierende Veränderungen verhindern oder mergen!
+- nicht von allen VCS genutzt
+- beim Checkout einer Datei wird die Bearbeitung für Andere gesperrt
+- Vorteil: keine Merge Konflikte
+- Nachteil: für große, verteilte Entwicklergruppen nicht praktisch
+
+### Terminologie einer Versionsverwaltung
+
+- **Repository:** Ablage aller Files und Verwaltungsdaten
+- **Checkout:** Herauskopieren einer Datei zwecks Änderung, evtl. mit Sperre
+- **Checkin/Commit:** Speichern einer geänderten Datei, Anlegen einer neuen Version
+- **Merge:** Übernahme von Änderungen aus einer Branch in einen andere bzw. aus einem verteilten Repository in ein anderes
+  - Im Idealfall (nicht kollidierende Änderungen) vollautomatisch, sonst mit händischer Unterstützung
+  - *Sonderfall "Three Way Merge": Änderungen zwischen zwei Files in einen drittes File einarbeiten*
+
+### Funktionsumfang einer Versionsverwaltung
+
+- Verwaltung mehrerer Projekte
+- Datenbank (Vorteil oder Nachteil???) (rein text-basiert ist besser)
+- Netzwerk-Zugriff, Client-Server-Architektur
+- Commandline-Zugriff (für automatische Checkouts für die Builds) sowie Zugriff mit GUI (Versionsbaum)
+- Client-Plugins für IDEs
+- Web-Interface
+- Remote Checkout/Checkin/Clone (über `https` oder anderes "firewall-gängiges" und sicheres Protokoll)
+- Rechte-Verwaltung (wer darf was ändern?)
+- Verwaltung auch von Binär-Dateien
+- Hooks für eigene Programme/Skripte bei Checkin und Checkout (z.B. automatische Qualitätssicherung, Verständigung des Projektleiters, ...)
+- Export-/Import-Fähigkeiten der Versionsgeschichte
+- "Blame Tool": Anzeige von Fileinhalt mit Version, Datum, Autor neben jeder Zeile
+
+#### Verteilte Versionsverwaltung
+
+- kein zentrales Repository mehr $\rightarrow$ Dateien und Verwaltungsinformation (Versionsgeschichte) auf mehrere Standorte verteilt
+- nicht jeder Standort benötigt das komplette Repository
+  - Lokale Checkins und Checkouts ohne Server-Verbindung möglich
+  - $\rightarrow$ Sperren-freies Arbeiten und nachträglicher Abgleich/Merge mit anderen Standorten
+
+#### Andere Tool zur Versionsverwaltung
+
+**`diff` und `merge`**
+
+- Vergleichen zweier Datein/Verzeichnisse
+- Ausgabe zeilenweiser Unterschiede in verschiedenen Formaten
+- möglichst automatisches Abgleichen von Unterschieden
+
+**`patch`**
+
+- Tool um Änderungen in Source-Code-Verzeichnissen einzuspielen (vgl. 3-Way-Merge)
+- `diff`-Output als Input $\rightarrow$ Einspielen der Änderungen in lokalem Verzeichnis
+- nicht einspielbare Änderungen werden zum händischen Nachziehen abgelegt
