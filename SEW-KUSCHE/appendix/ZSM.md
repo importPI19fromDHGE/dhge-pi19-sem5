@@ -116,3 +116,34 @@
 - Tool um Änderungen in Source-Code-Verzeichnissen einzuspielen (vgl. 3-Way-Merge)
 - `diff`-Output als Input $\rightarrow$ Einspielen der Änderungen in lokalem Verzeichnis
 - nicht einspielbare Änderungen werden zum händischen Nachziehen abgelegt
+
+## Make
+
+- `make` automatisiert das Compilieren (großer) Projekte
+- erzeugt intern Abhängigkeitsgraphen der gewünschten Output-Files von den dazu notwendigen Input-Files
+- prüft, welche der benötigten Files überhaupt noch fehlen und vergleicht das File-Datum aller vorhandenen, direkt voneinander abhängigen Files
+  - *`make` arbeitet nur nach File-Datum, aber greift nicht auf die File-Inhalte zu*
+  - *$\rightarrow$ nicht auf `C`/`C++` beschränkt, sondern kann für beliebige Aufgaben verwendet werden, bei denen ein Programm einen Outputfile X aus Inputfiles Y1, ... erzeugt*
+  - *auch zum Installieren, Aufräumen, Testen, Doku erstellen usw. verwendet*
+- baut nur genau das neu, was notwendig ist/geändert wurde
+- erkennt Abhängigkeiten der Files $\rightarrow$ kann voneinander Unabhängige parallel compilieren
+- kann sich selbst rekursiv aufrufen $\rightarrow$ kann Unterverzeichnisse, Teilprojekte, ... erzeugen
+- Konfiguration über `Makefile` $\rightarrow$ eines pro Projekt (bei größeren Projekten eventuell pro Verzeichnis)
+
+### Aufbau eines Makefiles
+
+- **Abhängigkeiten:** `target: prerequisites` bzw. `erzeugter File: dazu notwendige Files`
+  - z.B. `main.o: main.c mytypes.h mylib.h`
+  - Patterns, Wildcards usw. werden ebenfalls unterstützt
+  - Pseudo-Targets, die keinem File entsprechen: `all`, `clean`, `doc`, `test`, ...
+- zu jeder Abhängigkeit folgen optional **Befehle** (Compiler-Aufruf, Install-Befehl, ...)
+  - mit ECHTEM Tab eingerückt; an Shell zur Ausführung übergeben
+  - Output mit `@`-Prefix unterdrücken (z.B. `@g++ -c main.cpp`)
+- Eine Abhängigkeit und dazugehörige Befehle werden als **Regel** (Rule) bezeichnet
+
+#### Variablen in Makefiles
+
+- **Variablen**-Definition: z.B. `hfiles=circ.h color.h graobj.h rect.h`
+- Verwendung in Befehlen oder Targets: z.B. `main.o: main.cpp $(hfiles)`
+- sollten für Gruppen von Files (`.o`/`.h`-Files), Befehle (Compiler, Linker) und Optionen (Compiler-Optionen, Suchpfade für System-Header und Libs)
+- standardisierte Namen haben sich eingebürgert: z.B. `CC`, `CFLAGS`, ...
