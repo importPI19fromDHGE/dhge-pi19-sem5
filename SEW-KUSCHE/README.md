@@ -119,14 +119,14 @@ Software-Entwicklungswerkzeuge
 
 - Verwaltung / Archivierung aller Dateien eines Software-Produkts in allen Ständen
 - Buchführung über jede einzelne Änderung jeder einzelnen Datei
-- \rightarrow\rightarrow **Reproduzierbarkeit** und **Nachvollziehbarkeit**
+- $\rightarrow$ **Reproduzierbarkeit** und **Nachvollziehbarkeit**
 
 ## Aufgaben von Versions-Verwaltungs-Systemen
 
 - Versionsgeschichte: Wer (Autor) hat wann (Datum) was (Änderung) geändert? Entweder eines einzelnen Files / Verzeichnisses oder des gesamten Projekts!
-- konsistente Versions-Nummerierung x.y.z (heute nicht mehr so, z.B. in `git`: Hashes \rightarrow\rightarrow Blockchain)
+- konsistente Versions-Nummerierung x.y.z (heute nicht mehr so, z.B. in `git`: Hashes $\rightarrow$ Blockchain)
 - Labeling / Tagging von Ständen: z.B. "Weihnachts-Beta-Release"
-- Änderungen begründen \rightarrow\rightarrow Querverweis in den Bugtracker / Ticket-System!
+- Änderungen begründen $\rightarrow$ Querverweis in den Bugtracker / Ticket-System!
 - Rekonstruktion alter Stände (nach Datum oder Versionsnummer)
 - Anzeige aller Änderungen zwischen zwei Ständen (grafisch!)
 - Verwaltung von Branches:
@@ -180,8 +180,8 @@ Software-Entwicklungswerkzeuge
     - Kein zentrales Repository mehr, Dateien und Verwaltungsinformation (Versionsgeschichte) auf mehrere Standorte verteilt
     - Nicht jeder Standort benötigt das komplette Repository
     - Lokale Checkins und Checkouts ohne Server-Verbindung möglich
-      - \rightarrow\rightarrow Sperren-freies Arbeiten
-      - \rightarrow\rightarrow nachträglicher Abgleich / Merge mit anderen Standorten
+      - $\rightarrow$ Sperren-freies Arbeiten
+      - $\rightarrow$ nachträglicher Abgleich / Merge mit anderen Standorten
 - **Was wird eingecheckt?**
   - Alle Sourcen (incl. Makefiles, Icons, ...)
   - Die Entwicklungs-Tools (Compiler, ...)
@@ -219,9 +219,9 @@ Software-Entwicklungswerkzeuge
 - Es erzeugt intern einen Abhängigkeitsgraph der gewünschten Output-Files von den dazu notwendigen Input-Files
 - Es prüft, welche der benötigten Files überhaupt noch fehlen, und vergleicht das File-Datum aller vorhandenen direkt voneinander abhängigen Files (potentielles Problem bei Netz-Laufwerken usw. mit ungenauen Uhren!)
 - Es baut genau das neu, was notwendig ist / geändert wurde (und nicht mehr!)
-- Es kennt Abhängigkeiten (welcher File braucht zum Bauen welche Input-Files?) \rightarrow\rightarrow Es kann voneinander unabhängige Files parallel compilieren! (\rightarrow\rightarrow schneller!)
-- Es kann sich selbst rekursiv aufrufen \rightarrow\rightarrow Es kann Unterverzeichnisse, Teilprojekte, ... erzeugen
-- `make` arbeitet nur nach File-Datum, aber greift nicht auf die File-Inhalte zu \rightarrow\rightarrow Es ist nicht auf C/C++ beschränkt, sondern kann für beliebige Aufgaben verwendet werden, bei denen ein Programm einen Outputfile X aus Inputfiles Y1, ... erzeugt. \rightarrow\rightarrow Es wird nicht nur zum Compilieren verwendet, sondern auch zum Installieren, Aufräumen, Testen, Doku erstellen, .tar-Archiv erstellen, ...
+- Es kennt Abhängigkeiten (welcher File braucht zum Bauen welche Input-Files?) $\rightarrow$ Es kann voneinander unabhängige Files parallel compilieren! $\rightarrow$ schneller!)
+- Es kann sich selbst rekursiv aufrufen $\rightarrow$ Es kann Unterverzeichnisse, Teilprojekte, ... erzeugen
+- `make` arbeitet nur nach File-Datum, aber greift nicht auf die File-Inhalte zu $\rightarrow$ Es ist nicht auf C/C++ beschränkt, sondern kann für beliebige Aufgaben verwendet werden, bei denen ein Programm einen Outputfile X aus Inputfiles Y1, ... erzeugt. $\rightarrow$ Es wird nicht nur zum Compilieren verwendet, sondern auch zum Installieren, Aufräumen, Testen, Doku erstellen, .tar-Archiv erstellen, ...
 - Gesteuert wird make vom “Makefile”. Dieser wird pro Projekt (bei größeren Projekten eventuell pro Verzeichnis) erstellt
 - man kann parallele Rechenarbeit daran erkennen, dass bei einer Messung mit ``time`` die Userspace-Zeit die Realzeit übertrifft
 
@@ -284,7 +284,7 @@ clean:
 - ein Tool findet nicht-portable Konstrukte im C/C++ Code
 - Autotools erstellen ein `configure`-Script
 - Nutzer startet dann `configure`
-- `configure` führt automatische Tests auf dem lokalen System aus, um Probleme und Inkompatiblitäten zu finden
+- `configure` führt automatische Tests auf dem lokalen System aus, um Probleme und Inkompatibilitäten zu finden
 - danach wird ein Makefile generiert und ein C-Headerfile
 - dieser C-Headerfile steuert plattformabhängige Code-Strukturen mit Makros
 - `libtool` ist ein Tool zum Erzeugen und Linken von Shared Libraries, es soll es auf verschiedenen Plattformen vereinheitlichen
@@ -345,7 +345,7 @@ Vernünftige Compiler sollten folgende Features besitzen:
 - Feedback-Optimierung ("Profile Guided Optimization"), damit für die meistgenutzten Programm-Abläufe und -Strukturen optimiert wird
   - typischer Programmablauf wird durchgefuehrt $\rightarrow$ Profil wird erstellt
   - Programm wird erneut mit diesem Profil gebaut
-- Optimierung beim Linken ("Link-time Optimization") \rightarrow\rightarrow Optimierung über Filegrenzen hinweg
+- Optimierung beim Linken ("Link-time Optimization") $\rightarrow$ Optimierung über Filegrenzen hinweg
 - Bei der Fehlersuche sollte mit Compiler-Optimierungen kompiliert werden, da dadurch mehr Fehler gefunden werden können
 - Precompiled Header beschleunigen zwar das Kompilieren großer Projekte, machen aber teilweise noch viel Ärger wegen unausgereifter Implementierungen
 
