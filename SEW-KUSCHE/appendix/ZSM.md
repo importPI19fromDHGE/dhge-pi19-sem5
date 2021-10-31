@@ -169,11 +169,70 @@ int someFunction(int par1, ///< parameter 1
 
 ### Autotools
 
-- sollen helfen, portable Software und portable Makefiles zu erstellen $\rightarrow$ Nutzer soll den geladenen Source-Code konfigurieren können
-- Entwickler baut Makefile-Gerüste und ein Konfigurationsfile (plattformabhängige Konfigurationen)
+- sollen helfen, **portable Software und portable Makefiles zu erstellen** $\rightarrow$ Nutzer soll den geladenen Source-Code konfigurieren können
+- Entwickler baut **Makefile-Gerüste und ein Konfigurationsfile** (plattformabhängige Konfigurationen)
 - ein Tool findet nicht-portable Konstrukte im C/C++ Code
 - Autotools erstellen ein `configure`-Script
 - Nutzer startet das Skript $\rightarrow$ führt automatische Tests auf dem lokalen System aus, um Probleme und Inkompatibilitäten zu finden
 - danach wird ein Makefile generiert und ein C-Headerfile $\rightarrow$ steuert plattformabhängige Code-Strukturen mit Makros
 - `libtool`: Tool zum Erzeugen und Linken von Shared Libraries, es soll es auf verschiedenen Plattformen vereinheitlichen
 - `gettext`: Tool zum Internationalisieren aller Texte in einem Programm
+
+## Compiler
+
+### Funktionsumfang
+
+
+#### Präprozessor:
+
+- Ausgabe der Abhängigkeiten
+- mit Linker: Umdefinieren von Header-, Lib-Verzeichnissen, ...
+- Ausgabe der vom Präprozessor verarbeiteten Quellen mit Beibehaltung von Formatierung, Kommentaren und Verweis auf Quell-Zeile (für Probleme in Makros und Headern)
+- Liste definierter Makros
+
+#### Debugging
+
+- Warnings für *"dubiose Konstrukte"* (mögliche Programmierfehler)
+- Standardkonformität des Codes prüfen lassen
+- Debug-Output für optimierten Code
+- Separierung von Executable und Debug-Symbolen (Debug Symbole können in seperater Datei gespeichert werden)
+- Erzeugung zusätzlicher Laufzeitprüfungen
+
+#### Optimierung
+
+- Reduzierter C++-Runtime (keine Exceptions, ...)
+- Genaue Festlegung von Zielhardware (Befehlssatz und Optimierung für Eigenheiten von Rechenwerken)
+- Profiling und Coverage-Analyse
+- Feedback-Optimierung (*"Profile Guided Optimization"*), damit für die meistgenutzten Programm-Abläufe und -Strukturen optimiert wird
+  - typischer Programmablauf wird durchgeführt $\rightarrow$ Profil wird erstellt
+  - Programm wird erneut mit diesem Profil gebaut
+- Optimierung beim Linken (*"Link-time Optimization"*) $\rightarrow$ Optimierung über Filegrenzen hinweg
+
+#### Sonstiges
+
+- verschiedene Zeichensätze (Unicode, ISO Latin, ...)
+- wählbarer `char`-Typ (`signed`/`unsigned`)
+- Ausgabe der Assembler-Sourcen
+- *"Strict inlining mode"* für Inline-Assembler
+
+### Praxistipps
+
+- Code für alle Plattformen vom selben Compiler bauen lassen
+- keine Kompilate unterschiedlicher Compiler zusammenlinken
+- Compiler finden mehr Fehler bei aktivierter Optimierung
+- Cross-Compiler bauen Code für andere Zielplattformen
+
+### Tools im Compiler-Umfeld
+
+- **Compiler-Compiler:** Erzeugen Code für Syntaxanalyse
+- **Compiler-Caches:** z.B. `ccache`
+- **verteiltes Kompilieren:** z.B. mit `distcc` $\rightarrow$ große Projekte können über mehrere Computer verteilt gebaut werden
+
+#### Tools für Objects, Libraries, Executables
+
+- `strip`: löscht nicht benötigte Symbole und Debug-Infos aus einer Binary
+- `ld`: Linker
+- `nm`: Symbole anzeigen
+- `c++filt`: Auflösung eines bestimmten Namens in einer Binary
+- `ar`: Anzeige und Manipulation von Objekten in einer Library
+- `size`: gibt Größe der Code- und Datenbereiche in einer Binary an
