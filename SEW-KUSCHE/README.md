@@ -284,7 +284,7 @@ clean:
 - ein Tool findet nicht-portable Konstrukte im C/C++ Code
 - Autotools erstellen ein `configure`-Script
 - Nutzer startet dann `configure`
-- `configure` führt automatische Tests auf dem lokalen System aus, um Probleme und Inkompatiblitäten zu finden
+- `configure` führt automatische Tests auf dem lokalen System aus, um Probleme und Inkompatibilitäten zu finden
 - danach wird ein Makefile generiert und ein C-Headerfile
 - dieser C-Headerfile steuert plattformabhängige Code-Strukturen mit Makros
 - `libtool` ist ein Tool zum Erzeugen und Linken von Shared Libraries, es soll es auf verschiedenen Plattformen vereinheitlichen
