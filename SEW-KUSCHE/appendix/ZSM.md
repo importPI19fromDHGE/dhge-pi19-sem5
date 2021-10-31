@@ -28,6 +28,18 @@
   - Automatische Erzeugung von Listen und Inhaltsverzeichnissen, Abhängigkeitslisten, ...
   - Erzeugen HTML, LaTeX (PDF), RTF, ...
 
+#### Doxygen
+
+- Doxygen interessiert sich nicht für alle Kommentare
+- Kommentare sollten `///` oder `/**` sein
+- Parameter werden i.d.R. mit `//<` dahinter kommentiert, bspw.:
+
+```cpp
+/// this function does something
+int someFunction(int par1, ///< parameter 1
+                 int par2) ///< parameter 2
+```
+
 ### Andere Doku-Tools
 
 - **Pretty Printer:** generiert HTML aus Source (Syntaxhighlighting: markierte Keywords usw.) $\rightarrow$ bessere Darstellung auf Webseiten
