@@ -294,9 +294,50 @@ Listet alle von einem Prozess aktuell geöffneten Files
 - `/proc`: alle Prozesse und Informationen zu diesen
 - `/sys`: Informationen zum System (Kernel Parameter, ...)
 
-## Typische C/C++ Fehler
+### Typische C/C++ Fehler
 
 - **falsche Pointer:** `NULL`-Pointer, uninitialisierte Pointer
 - **Arrays und Pointer-Arithmetrik:** Verletzung von Array-Grenzen, fehlendes `\0`, Integer-Overflow, uninitialisierte Variablen
 - **Dynamischer Speicher:** *"use-after-free"*, doppeltes `free` bzw. `free` auf ungültige Daten, Mischung von `C`/`C++` (`malloc` + `delete`), *memory-leaks*, *Fragmentierung*
-- **Sonstiges:**
+- **Sonstiges:** fehlerhafte Casts, variadische Funktionen
+
+<!-- ASAN & Valgrind etc missing? -->
+
+## Profiling
+
+- Untersuchung des zeitlichen Programmverhaltens
+- $\rightarrow$ Statistiken zu Anzahl der Funktionsaufrufe, Ausführungszeit von Codeabschnitten, Coverage (*Welcher `if`-Zweig nie/selten?*)
+
+### Profiling: Funktionsweise
+
+- **Instrumentierte Profiler:** fügen Messcode für Code-Blöcke und Funktionen ein $\rightarrow$ exakte Messung, aber verändertes Zeitverhalten durch Overhead (z.B. `gcov`)
+- **Sampling Profiler:** Code bleibt unverändert $\rightarrow$ regelmäßiges Unterbrechen und extrahieren von Debug-Infos
+  - geringer Overhead, aber geringe Genauigkeit $\rightarrow$ Mindestlaufzeit für statistische Relevanz notwendig; keine garantierte Aussage über ungenutzten Code
+  - "blind" für Codestellen mit höherer Priorität als der Profiler (Interrupt-Handler, Codestellen mit gesperrten
+Interrupts)
+
+> `gprof` ist Mix aus Instrumentiert (Für Aufrufzähler) und Sampling (für Laufzeit)
+
+### Ziele von Profiling
+
+- Hotspots erkennen (stark frequentierte bzw. zeitintensive Codeblöcke) $\rightarrow$ größtes Potential für Optimierung
+- Feedback für Optimierungen
+- Abdeckungsgrad von Tests feststellen
+
+### Tracing
+
+Tracer suchen exakte Aussagen zu einzelnen Ereignissen.
+
+> - Warum trat ein Deadlock auf?
+> - Warum wurde die Echtzeit-Anforderung nicht eingehalten?
+> - Warum war in einem bestimmten Moment der Interrupt so lange blockiert?
+
+### Tracing: Funktionsweise
+
+Tracer speichern gesamten Log (in Puffer, um I/O zu vermeiden) relevanter Ereignisse mit exakten Zeitpunkten.
+
+- **Interrupts**, Software-Interrupts, Pagefaults, **Signale**
+- **Task- und Threadwechsel**, Erzeugen und Beenden von Threads
+- System Calls, I/O, Timer-Aktivitäten
+- Interprozess-Kommunikation, Locking
+- vom Benutzer im Programm oder Betriebssystem explizit gesetzte Trace-Punkte
