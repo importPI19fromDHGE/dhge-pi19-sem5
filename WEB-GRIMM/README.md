@@ -29,6 +29,7 @@ Entwicklung von Webanwendungen
       - [Formulare](#formulare)
       - [Formular-Elemente](#formular-elemente)
     - [Universal Attribute](#universal-attribute)
+    - [Positionierungselemente](#positionierungselemente)
   - [CSS](#css)
     - [Syntax](#syntax)
     - [Farben](#farben)
@@ -398,6 +399,16 @@ Beispiel Tabelle:
 - `style`: inline CSS (meiden!)
 - `tabindex`: Tab-Reihenfolge
 - `title`: Elementenbeschreibung $\rightarrow$ Tooltip
+
+### Positionierungselemente
+
+- HTML-Elemente sind entweder Blöcke oder inline
+  - Blöcke erzeugen Newline
+- alle HTML-Elemente werden von Boxen umgeben (innen nach außen)
+  - Content
+  - Padding
+  - Border
+  - Margin
 
 ## CSS
 
