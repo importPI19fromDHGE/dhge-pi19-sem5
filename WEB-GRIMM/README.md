@@ -13,7 +13,8 @@ Entwicklung von Webanwendungen
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Prüfungsleistung](#pr%C3%BCfungsleistung)
+- [Entwicklung von Webanwendungen](#entwicklung-von-webanwendungen)
+- [Prüfungsleistung](#prüfungsleistung)
 - [Geschichte des Internets](#geschichte-des-internets)
 - [Technologien](#technologien)
   - [Was ist eine Webanwendung?](#was-ist-eine-webanwendung)
@@ -25,7 +26,7 @@ Entwicklung von Webanwendungen
       - [Bilder](#bilder)
       - [Listen](#listen)
       - [Tabellen](#tabellen)
-      - [Zeilenumbrüche](#zeilenumbr%C3%BCche)
+      - [Zeilenumbrüche](#zeilenumbrüche)
       - [Formulare](#formulare)
       - [Formular-Elemente](#formular-elemente)
     - [Universal Attribute](#universal-attribute)
@@ -37,6 +38,7 @@ Entwicklung von Webanwendungen
       - [Kombinierte Selektoren](#kombinierte-selektoren)
       - [Pseudoselektoren](#pseudoselektoren)
     - [Berechnungen](#berechnungen)
+    - [Attributselektoren](#attributselektoren)
   - [JS](#js)
 - [PHP und Datenbanken](#php-und-datenbanken)
 - [Moderne Webentwicklung mit Frameworks](#moderne-webentwicklung-mit-frameworks)
@@ -463,6 +465,7 @@ selector{
 
 #### Kombinierte Selektoren
 
+- Verbundselektoren: `*.class`
 - Nachfahrenkombinator: `p em{...}` (alle untergeordneten Elemente, unabhängig von der Tiefe)
 - Kindkombinator: `ul > li{...}` (nur direkte Kindelemente)
 - Nachbarkombinator: `h1 + p{...}` (direkter Nachfolger)
@@ -490,7 +493,17 @@ selector{
 - für ``nth-child()`` können Folgen berechnet werden
 - Syntax: ``An+B``, wobei A und B zu ersetzen sind
 - Beispiel: ``tr:nth-child(2n+1)`` wählt jede zweite Tabellenzeile, und zwar die ungeraden
+  - es gibt auch ``even`` und ``odd``
 - Dokumentation: [Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child)
+
+### Attributselektoren
+
+- Syntax: `[Attributname=Wert]` oder `[Attribut]`
+- Beispiel: `p[andre] {}` wählt alle `<p>`-Tags, die das André-Attribut haben (also `<p andre>`)
+- `^=`: beginnt mit
+- `$=`: endet mit
+- `*=`: enthält
+- "OR"-Verknüpfung im HTML: `<p andre="andre klaus grimm">`
 
 ## JS
 
