@@ -464,7 +464,7 @@ selector{
 
 #### Kombinierte Selektoren
 
-- Verbundselektoren: `*.class`
+- Verbundselektoren: `*.class`, `h2#title.classA.classB`
 - Nachfahrenkombinator: `p em{...}` (alle untergeordneten Elemente, unabhängig von der Tiefe)
 - Kindkombinator: `ul > li{...}` (nur direkte Kindelemente)
 - Nachbarkombinator: `h1 + p{...}` (direkter Nachfolger)
@@ -498,11 +498,14 @@ selector{
 ### Attributselektoren
 
 - Syntax: `[Attributname=Wert]` oder `[Attribut]`
-- Beispiel: `p[andre] {}` wählt alle `<p>`-Tags, die das André-Attribut haben (also `<p andre>`)
+- Beispiel: `p[andre]{}` wählt alle `<p>`-Tags, die das André-Attribut haben (also `<p andre>`)
 - `^=`: beginnt mit
 - `$=`: endet mit
-- `*=`: enthält
+- `*=`: enthält genauen Wert
+- `~=`: enthält genauen Wert (mit Leerzeichen getrennt, vgl. class)
+- `|=`: enthält genauen Wert oder mit Wert beginnend gefolgt von "-" (mit Leerzeichen getrennten, vgl. class)
 - "OR"-Verknüpfung im HTML: `<p andre="andre klaus grimm">`
+- [siehe MSDN für bessere Erklärungen](https://developer.mozilla.org/de/docs/Web/CSS/Attribute_selectors#%C3%BCbersicht)
 
 ## JS
 
