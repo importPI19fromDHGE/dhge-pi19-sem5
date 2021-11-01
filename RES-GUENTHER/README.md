@@ -27,19 +27,34 @@ Systemprogrammierung / Verteilte Systeme
 
 # Klausur
 
+<!-- md2apkg ignore-card -->
+
 ## Wiederholungsfragen zu Beginn der Veranstaltung
+
+<!-- md2apkg ignore-card -->
 
 Zu Beginn wird gefragt, aus welchen Inhalten der letzten Veranstaltungen Klausurfragen konstruiert werden können.
 Erfahrungsgemäß ist das am Ende ein großer Teil der Klausur.
 
 ### PIA 27/10/21
 
-<!--Dokumentaufbau besprechen-->
+<!-- md2apkg ignore-card -->
 
-- Mit make Kerne auslasten? Parameter -j
-- Was sind Deadlock und wie können Sie behoben werden?
-- Philosophenproblem nacherzählen und erklären -> Nicht genug Ressourcen
-- Gedankenspiele Anzahl Philosophen, Anzahl Stäbchen 5/2, 10/10, 10/5
+#### Mit make Kerne auslasten
+
+Parameter -j
+
+#### Was sind Deadlocks und wie können Sie behoben werden
+
+...
+
+### Philosophenproblem nacherzählen und erklären
+
+Nicht genug Ressourcen, Deadlock kann entstehen
+
+#### Gedankenspiele Anzahl Philosophen/Anzahl Stäbchen 5/2, 10/10, 10/5 beantworten können
+
+...
 
 <!--newpage-->
 
