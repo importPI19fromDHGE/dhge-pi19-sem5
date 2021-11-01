@@ -1,4 +1,4 @@
-# Zusammenfassung: Softwareentwicklungswerkzeuge
+# SEW
 
 ## Dokumentation
 
@@ -178,12 +178,17 @@ int someFunction(int par1, ///< parameter 1
 - `libtool`: Tool zum Erzeugen und Linken von Shared Libraries, es soll es auf verschiedenen Plattformen vereinheitlichen
 - `gettext`: Tool zum Internationalisieren aller Texte in einem Programm
 
+### Alternativen zu `make`
+
+- `jam`: nur für `C`/`C++` $\rightarrow$ scannt Source nach Abhängigkeiten (weniger explizite Angaben als `make`)
+- `ant`: Standard Java Build Tool
+
 ## Compiler
 
 ### Funktionsumfang
 
 
-#### Präprozessor:
+#### Präprozessor
 
 - Ausgabe der Abhängigkeiten
 - mit Linker: Umdefinieren von Header-, Lib-Verzeichnissen, ...
@@ -357,3 +362,46 @@ Tracer speichern gesamten Log (in Puffer, um I/O zu vermeiden) relevanter Ereign
 - **Doku & Hilfe:** nutzenbringender Informationsgehalt; Verständlichkeit; Vollständigkeit; Admin-Doku
 - **Effizienz, Performance, Ressourcen-Verbrauch:** Skalierbarkeit! $\rightarrow$ Dimensionierungs-Whitepaper
 - **Zertifizierung**
+
+### Vorstufen in der Entwicklung
+
+> Fehler pro LoC bleibt historisch konstant.
+>
+> Je später ein Fehler erkannt wird, umso teurer!
+
+- **Testbares Design:** Modularisierung im Hinblick auf Modultests
+- **Programmierhandbuch:** Verbot fehleranfälliger Programmkonstrukte
+- **Qualitäts-Tools:** Unit-Tests, Linter, Coverage, ...
+- **"Defensive" Programmierung:** Eingabenprüfung, Asserts
+- **Code-Reviews:** 4- bis 6-Augen-Prinzip
+
+### (Test vs) Verifikation
+
+> *"Tests können nur die Anwesenheit von Fehlern beweisen, nie deren Abwesenheit!"*
+
+- Verifikation = formaler Beweis der Programm-Korrektheit
+- formale Spezifikation von Input (Anfangszustand), Output (Endzustand) und verwendeten Grundfunktionen
+- Bei größeren Programmen: Spezifikation für jede Funktion in sich beweisen
+- Programmverifikation erfordert sehr hohen Aufwand und sehr hohe Qualifikationen
+- oft blind gegen "externe" Ereignisse (I/O-Fehler, Speichermangel, ...) und gegen nicht spezifikationskonforme Grundoperationen (Hardware-Bugs, ...)
+
+> **Die Verifikation kann den Test nicht ersetzen!**
+
+### Black Box Test
+
+> Keine Kennntnis des internen Aufbaus, kein Zugriff auf den Source
+
+- Programm ist unmodifiziert im Auslieferungszustand $\rightarrow$ stets **Test des Gesamtsystems**
+- es wird genau das getestet, was der Kunde bekommt und wie es sich bei ihm verhält
+- keine Gefahr von Fehlern die durch die Testumgebung neu eingebracht werden oder verschwinden
+- aber: Testabedeckung meist gering
+  - kein gezieltes Testen bestimmter Code-Stellen; unterer Programm-Module
+  - keine Zusätzlichen Debug-Infos $\rightarrow$ Lokalisierung von Fehlern schwierig
+
+### White Box Test
+
+> Test in Kenntnis des Source
+
+- gezieltes Testen (durch konstruierten Input) und Modul-weises Testen möglich
+- aber: Einarbeiten in den Source kostet Zeit!
+  - Tester kennt den Source, "erbt" damit die Gedanken des Entwicklers (gleiche Denkfehler, übersehen gleicher Fälle)
