@@ -341,3 +341,19 @@ Tracer speichern gesamten Log (in Puffer, um I/O zu vermeiden) relevanter Ereign
 - System Calls, I/O, Timer-Aktivitäten
 - Interprozess-Kommunikation, Locking
 - vom Benutzer im Programm oder Betriebssystem explizit gesetzte Trace-Punkte
+
+## Qualitätssicherung
+
+### Was ist Qualität?
+
+- Erfüllung der **geforderten Funktionalität:** Pflichtenheft/Produkt-Spezifikation
+- **Fehlerfreiheit**
+- **Robustheit:** geordnete Reaktion auf fehlerhafte Eingaben und Systemfehler; Sauberes Wiederaufsetzen nach Absturz
+- **Stabilität:** Hochlast- und Langzeitverhalten; Verhalten bei großen Datenmengen
+- Einhaltung relevanter **Standards:** Netz-Protokolle, Dokumente, Integration in andere Software
+- Erfüllung **rechtlicher Vorgaben:** Datenschutz und -sicherheit; Protokollierungs- und Archivierungspflichten
+- **Bedienbarkeit:** Optik, Intuitives Verhalten, Verständlichkeit, sprachliche Fehlerfreiheit
+- **Administrierbarkeit:** Installation, Updates, mitgelieferte Tools
+- **Doku & Hilfe:** nutzenbringender Informationsgehalt; Verständlichkeit; Vollständigkeit; Admin-Doku
+- **Effizienz, Performance, Ressourcen-Verbrauch:** Skalierbarkeit! $\rightarrow$ Dimensionierungs-Whitepaper
+- **Zertifizierung**
