@@ -289,7 +289,14 @@ Listet alle von einem Prozess aktuell geöffneten Files
 - normale I/O-Files, inkl. Dirs, Pipes, Devices, Sockets, Netzwerkverbindungen, ...
 - mit `mmap` geladene Files (Shared Libraries, Shared-Memory-Segmente)
 
-## `/proc`- und `/sys`-Verzeichnisse
+### `/proc`- und `/sys`-Verzeichnisse
 
 - `/proc`: alle Prozesse und Informationen zu diesen
 - `/sys`: Informationen zum System (Kernel Parameter, ...)
+
+## Typische C/C++ Fehler
+
+- **falsche Pointer:** `NULL`-Pointer, uninitialisierte Pointer
+- **Arrays und Pointer-Arithmetrik:** Verletzung von Array-Grenzen, fehlendes `\0`, Integer-Overflow, uninitialisierte Variablen
+- **Dynamischer Speicher:** *"use-after-free"*, doppeltes `free` bzw. `free` auf ungültige Daten, Mischung von `C`/`C++` (`malloc` + `delete`), *memory-leaks*, *Fragmentierung*
+- **Sonstiges:**
