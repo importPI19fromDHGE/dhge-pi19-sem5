@@ -443,3 +443,46 @@ Tracer speichern gesamten Log (in Puffer, um I/O zu vermeiden) relevanter Ereign
 - Regressionstests (*alle automatischen Tests vor Release erneut ausführen*)
 - Doku und Hilfe
 - Installations-, Deinstallations-, Upgrade-Tests
+
+### Unit Tests
+
+> Tests von möglichst kleine Code-Stücken (z.B. Funktionen) auf konformes Verhalten
+
+- Motivation: zeitnahe Fehlerfindung, gesamte Code-Abdeckung, genaue Lokalisierung
+- laufen automatisch, erfordern Tooling
+- hoher Einmal-Aufwand, geringer laufender Aufwand
+- Positive Nebeneffekte: Prüfung der Spezifikation und des Feinentwurfes
+- Ein Testfall pro Verhalten einer Funktion $\rightarrow$ ein Testfall pro Codefall
+- Ein Testfall für jeden bekannten Bug
+- Erstellung zeitnah/gleichzeitig zum Code (nicht durch QA $\rightarrow$ Betriebsblindheit)
+- werden in der Versionsverwaltung mit eingecheckt
+
+#### Unit Tests: Werkzeuge
+
+> `JUnit`, `CUnit`, `CppUnit`, `CppTest`, `GoogleTest`, u.v.m.
+
+- Test-Makros: rufen zu testende Funktion auf, prüfen auf Ergebnis und Nebenwirkungen $\rightarrow$ Protokoll
+- Test-Setup und Test-Teardown: Anlegen und Aufräumen von frischen, leeren Test-Environments für jeden Test
+- Testverwaltung und -ausführung: jeder Test im Framework registriert
+  - Test-Suite: 1 pro Modul / Klasse
+    - Tests: 1 pro Funktion / Methode
+      - Testfälle: 1 pro Funktionalität
+- Auswertungs-Skript: generieren und präsentiert Statistiken, Fehlerlisten, Unterschiede zum vorherigen Lauf
+
+#### Unit Tests: Besonderheiten und Probleme
+
+**Black Box oder White Box**
+
+- grundsätzlich als Black Box Test (nur nach Spezifikation)
+- erweitert durch White Box Tests (vervollständigen für Code-Coverage)
+
+**TDD**
+
+- Extremfall Test-Driven Development: Tests sind Spezifikation, werden zuerst geschrieben
+
+**Probleme von Unit Tests**
+
+- für GUI und Multithreaded Code schlecht geeignet
+- sind isoliert, darf nur zu testende Funktion aus dem Produktivcode verwenden
+  - Aufruf von Realcode wird umgeleitet zu Stubs mit selber Schnittstelle, aber nur Simulationen
+- Stubs und Mocks haben hohen Aufwand, sind ungetestet, divergieren vom Realcode
