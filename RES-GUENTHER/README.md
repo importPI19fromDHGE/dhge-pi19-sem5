@@ -20,6 +20,8 @@ Systemprogrammierung / Verteilte Systeme
       - [Was sind Deadlocks und wie können Sie behoben werden](#was-sind-deadlocks-und-wie-k%C3%B6nnen-sie-behoben-werden)
     - [Philosophenproblem nacherzählen und erklären](#philosophenproblem-nacherz%C3%A4hlen-und-erkl%C3%A4ren)
       - [Gedankenspiele Anzahl Philosophen/Anzahl Stäbchen 5/2, 10/10, 10/5 beantworten können](#gedankenspiele-anzahl-philosophenanzahl-st%C3%A4bchen-52-1010-105-beantworten-k%C3%B6nnen)
+    - [PIA 02/11/21](#pia-021121)
+      - [](#)
 - [Systemprogrammierung](#systemprogrammierung)
   - [Lernziele/Themenschwerpunkte](#lernzielethemenschwerpunkte)
   - [Literaturempfehlung](#literaturempfehlung)
