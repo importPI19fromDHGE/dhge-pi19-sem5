@@ -13,7 +13,8 @@ Entwicklung von Webanwendungen
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Prüfungsleistung](#pr%C3%BCfungsleistung)
+- [Entwicklung von Webanwendungen](#entwicklung-von-webanwendungen)
+- [Prüfungsleistung](#prüfungsleistung)
 - [Geschichte des Internets](#geschichte-des-internets)
 - [Technologien](#technologien)
   - [Was ist eine Webanwendung?](#was-ist-eine-webanwendung)
@@ -25,7 +26,7 @@ Entwicklung von Webanwendungen
       - [Bilder](#bilder)
       - [Listen](#listen)
       - [Tabellen](#tabellen)
-      - [Zeilenumbrüche](#zeilenumbr%C3%BCche)
+      - [Zeilenumbrüche](#zeilenumbrüche)
       - [Formulare](#formulare)
       - [Formular-Elemente](#formular-elemente)
     - [Universal Attribute](#universal-attribute)
@@ -39,6 +40,9 @@ Entwicklung von Webanwendungen
       - [Pseudoselektoren](#pseudoselektoren)
     - [Berechnungen](#berechnungen)
     - [Attributselektoren](#attributselektoren)
+    - [Beispiel-CSS](#beispiel-css)
+    - [Flex-Container](#flex-container)
+    - [Grid-Container](#grid-container)
   - [JS](#js)
 - [PHP und Datenbanken](#php-und-datenbanken)
 - [Moderne Webentwicklung mit Frameworks](#moderne-webentwicklung-mit-frameworks)
@@ -518,8 +522,71 @@ selector{
 - "OR"-Verknüpfung im HTML: `<p andre="andre klaus grimm">`
 - [siehe MSDN für bessere Erklärungen](https://developer.mozilla.org/de/docs/Web/CSS/Attribute_selectors#%C3%BCbersicht)
 
+### Beispiel-CSS
+
+<!-- md2apkg ignore-card -->
+<!--🤮-->
+
+```css
+* {
+  font-family: Verdana, sans-serif;
+}
+h2 {
+  color: rgb(5, 80, 51);
+}
+#main-title {
+  background-color: darkslategray;
+  color: floralwhite;
+  padding: .5em;
+  border-radius: .8em .8em 0 0;
+  margin-bottom: 1cm;
+}
+#main-foot {
+  border: solid 2px darkslategray;
+  border-radius: 0 0 .8em .8em;
+  padding: 1em;
+
+  flex-direction: row;
+}
+#mein-kontakt {
+  position: absolute;
+  top: 1em;
+  left: 20px;
+}
+#flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; /*horizontale Ausrichtung*/
+  flex-wrap: wrap; /*Der Bandscheibenvorfall*/
+  align-items: center;
+  height: 20vh;
+  width: 70vw;
+  border: 1px solid black;
+}
+```
+
+### Flex-Container
+
+### Grid-Container
+
+- können HTML als Raster formatieren
+
+```css
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /*Annzahl der Spalten in Fractions, Platz wird aufgeteilt*/
+  grid-template-rows: 1fr 2fr 1fr;
+  justify-content: center;
+  height: 40vh;
+  width: 80vw;
+  margin: 0 auto;
+}
+```
+
 ## JS
 
 # PHP und Datenbanken
 
 # Moderne Webentwicklung mit Frameworks
+
+<!--Haha, LOL-->
