@@ -68,7 +68,25 @@ Nicht genug Ressourcen, Deadlock kann entstehen
 
 <!-- md2apkg ignore-card -->
 
-#### 
+#### Was ist fork
+
+(nicht die englische Übersetzung)
+Benedict: Prozese aufspalten, Vater, Kind Prozess
+
+#### Haupteigenschaft fork-Prozesse
+
+PID - Prozess ID zu Identifikation
+
+#### Differenzieren zwischen Vater- und Kindprozess
+
+Kindprozess mit getppid() -> Ist die getpid() des Vaters
+PID des Prozess in getppid wiederfinden
+
+#### Rückgabekategorien fork
+
+`>0`: die PID des Kindprozesses
+`0`: es wurde eben geforkt und wir sind das Kind
+`-1`: Fehler
 
 <!--newpage-->
 
