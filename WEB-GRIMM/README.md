@@ -573,7 +573,7 @@ h2 {
 ```css
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr; /*Annzahl der Spalten in Fractions, Platz wird aufgeteilt*/
+  grid-template-columns: 1fr 2fr 1fr; /*Anzahl der Spalten in Fractions, Platz wird aufgeteilt*/
   grid-template-rows: 1fr 2fr 1fr;
   justify-content: center;
   height: 40vh;
