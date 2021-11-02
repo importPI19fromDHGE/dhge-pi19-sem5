@@ -178,6 +178,11 @@ int someFunction(int par1, ///< parameter 1
 - `libtool`: Tool zum Erzeugen und Linken von Shared Libraries, es soll es auf verschiedenen Plattformen vereinheitlichen
 - `gettext`: Tool zum Internationalisieren aller Texte in einem Programm
 
+### Probleme von `make`
+
+- Vielzahl verbreiteter inkompatibler `make`-Implementierungen/Erweiterungen
+- Standardisierung nach POSIX in der Praxis zu wenig mächtig
+
 ### Alternativen zu `make`
 
 - `jam`: nur für `C`/`C++` $\rightarrow$ scannt Source nach Abhängigkeiten (weniger explizite Angaben als `make`)
@@ -405,3 +410,36 @@ Tracer speichern gesamten Log (in Puffer, um I/O zu vermeiden) relevanter Ereign
 - gezieltes Testen (durch konstruierten Input) und Modul-weises Testen möglich
 - aber: Einarbeiten in den Source kostet Zeit!
   - Tester kennt den Source, "erbt" damit die Gedanken des Entwicklers (gleiche Denkfehler, übersehen gleicher Fälle)
+
+### Modultests
+
+**Bottom-Up-Tests**
+
+- das zu testende Modul ruft nur bereits gestestete, korrekte Module auf
+- nur das Testprogramm wird selbst geschrieben
+
+**Testen mit Stubs**
+
+- Tests nur mit isolierten Funktionen
+- alles andere wird durch "Stubs" ersetzt $\rightarrow$ Dummys, Hilfsprogramme speziell zum Testen
+
+### manuelle vs. automatische Tests
+
+- automatisierte Ausführung und Auswertung, gleich in Datenbank, oft bei Checkin/Nightly Build $\rightarrow$ zuverlässiger
+  - berücksichtigen nur wenige Nutzerfehler; hoher initialer Aufwand
+- anderes (Optik, Sprachliches, ...) ist schwer automatisierbar $\rightarrow$ händische Tests notwendig
+  - konstant hohen Dauer-Aufwand (bei jeder Version wieder)
+
+> Am Ende beides wichtig und sinnvoll!
+
+## Test-Checkliste
+
+- Funktionalitäts-Tests
+- Randfälle, Stabilität, Robustheit
+- GUI-Kontrolle
+  - Software-Ergonomie
+  - Schönheitskontrolle
+- Last-Tests, Echtdatentests
+- Regressionstests (*alle automatischen Tests vor Release erneut ausführen*)
+- Doku und Hilfe
+- Installations-, Deinstallations-, Upgrade-Tests
