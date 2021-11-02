@@ -13,19 +13,26 @@ Systemprogrammierung / Verteilte Systeme
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Systemprogrammierung / Verteilte Systeme](#systemprogrammierung--verteilte-systeme)
 - [Klausur](#klausur)
   - [Wiederholungsfragen zu Beginn der Veranstaltung](#wiederholungsfragen-zu-beginn-der-veranstaltung)
     - [PIA 27/10/21](#pia-271021)
       - [Mit make Kerne auslasten](#mit-make-kerne-auslasten)
-      - [Was sind Deadlocks und wie können Sie behoben werden](#was-sind-deadlocks-und-wie-k%C3%B6nnen-sie-behoben-werden)
-    - [Philosophenproblem nacherzählen und erklären](#philosophenproblem-nacherz%C3%A4hlen-und-erkl%C3%A4ren)
-      - [Gedankenspiele Anzahl Philosophen/Anzahl Stäbchen 5/2, 10/10, 10/5 beantworten können](#gedankenspiele-anzahl-philosophenanzahl-st%C3%A4bchen-52-1010-105-beantworten-k%C3%B6nnen)
+      - [Was sind Deadlocks und wie können Sie behoben werden](#was-sind-deadlocks-und-wie-können-sie-behoben-werden)
+    - [Philosophenproblem nacherzählen und erklären](#philosophenproblem-nacherzählen-und-erklären)
+      - [Gedankenspiele Anzahl Philosophen/Anzahl Stäbchen 5/2, 10/10, 10/5 beantworten können](#gedankenspiele-anzahl-philosophenanzahl-stäbchen-52-1010-105-beantworten-können)
+    - [Was ist ein Fork?](#was-ist-ein-fork)
+    - [Welche Rückgabewerte hat fork()](#welche-rückgabewerte-hat-fork)
+    - [Eigenschaften eines Prozesses](#eigenschaften-eines-prozesses)
+    - [Differenzierung zwischen Vater- und Kind-Prozess](#differenzierung-zwischen-vater--und-kind-prozess)
+    - [Was passiert, wenn man in Schleifen forkt](#was-passiert-wenn-man-in-schleifen-forkt)
 - [Systemprogrammierung](#systemprogrammierung)
   - [Lernziele/Themenschwerpunkte](#lernzielethemenschwerpunkte)
   - [Literaturempfehlung](#literaturempfehlung)
   - [Parallele Programmierung](#parallele-programmierung)
     - [Prozesssteuerung](#prozesssteuerung)
     - [Systemaufruf fork()](#systemaufruf-fork)
+    - [Semaphore](#semaphore)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -63,6 +70,19 @@ Nicht genug Ressourcen, Deadlock kann entstehen
 ...
 
 <!--newpage-->
+
+### Was ist ein Fork?
+
+### Welche Rückgabewerte hat fork()
+
+### Eigenschaften eines Prozesses
+
+### Differenzierung zwischen Vater- und Kind-Prozess
+
+### Was passiert, wenn man in Schleifen forkt
+
+- Kinder forken ebenfalls
+- Prozesse vermehren sich expotentiell
 
 # Systemprogrammierung
 
@@ -105,6 +125,8 @@ Nicht genug Ressourcen, Deadlock kann entstehen
 >
 > Es können immer nur maximal zwei Philosophen gleichzeitig speisen
 
+- Code, der Deadlocks verursachen kann, wird "kritischer Code" / kritischer Pfad genannt
+
 ### Prozesssteuerung
 
 **Mehrere Prozesse starten:**
@@ -113,6 +135,8 @@ Nicht genug Ressourcen, Deadlock kann entstehen
 - Prozesse anzeigen: `jobs -l`, `top`, `htop`, `ps`
 
 ### Systemaufruf fork()
+
+**Klausurrelevant**
 
 - Zweck: es wird eine exakte Kopie des Aufrufers als Kindprozess erzeugt
 - Kindprozess übernimmt Code, Daten inkl. Befehlszähler, Dateideskriptoren, ...
@@ -140,4 +164,19 @@ int main()
 }
 ```
 
+### Semaphore
 
+[weiterführende Informationen](https://openbook.rheinwerk-verlag.de/linux_unix_programmierung/Kap09-004.htm)
+
+- Vorgehenssynchronisation zwischen mehreren Prozessen
+- sperrt z.B. kritische Codebereiche
+  - binär: darf / darf nicht benutzen
+  - zählend: x Prozesse dürfen, darüber nicht
+- System-V Semaphoren haben drei Funktionen:
+  - `semget()`: Erzeugt eine neue Semaphore oder öffnet eine vorhandene
+  - `semctl()`
+  - `semop()`
+- zwei Operationen:
+  - P-Operation: "Passieren": regelt Betreten kritischen Codes
+  - V-Operation: "Verlassen": regelt Verlassen kritischen Codes
+- Programmierung: Semaphoren müssen deklariert, initialisiert und dann verwendet werden
