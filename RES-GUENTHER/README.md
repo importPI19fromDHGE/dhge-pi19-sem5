@@ -13,6 +13,13 @@ Systemprogrammierung / Verteilte Systeme
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Klausur](#klausur)
+  - [Wiederholungsfragen zu Beginn der Veranstaltung](#wiederholungsfragen-zu-beginn-der-veranstaltung)
+    - [PIA 27/10/21](#pia-271021)
+      - [Mit make Kerne auslasten](#mit-make-kerne-auslasten)
+      - [Was sind Deadlocks und wie können Sie behoben werden](#was-sind-deadlocks-und-wie-k%C3%B6nnen-sie-behoben-werden)
+    - [Philosophenproblem nacherzählen und erklären](#philosophenproblem-nacherz%C3%A4hlen-und-erkl%C3%A4ren)
+      - [Gedankenspiele Anzahl Philosophen/Anzahl Stäbchen 5/2, 10/10, 10/5 beantworten können](#gedankenspiele-anzahl-philosophenanzahl-st%C3%A4bchen-52-1010-105-beantworten-k%C3%B6nnen)
 - [Systemprogrammierung](#systemprogrammierung)
   - [Lernziele/Themenschwerpunkte](#lernzielethemenschwerpunkte)
   - [Literaturempfehlung](#literaturempfehlung)
@@ -21,6 +28,39 @@ Systemprogrammierung / Verteilte Systeme
     - [Systemaufruf fork()](#systemaufruf-fork)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<!--newpage-->
+
+# Klausur
+
+<!-- md2apkg ignore-card -->
+
+## Wiederholungsfragen zu Beginn der Veranstaltung
+
+<!-- md2apkg ignore-card -->
+
+Zu Beginn wird gefragt, aus welchen Inhalten der letzten Veranstaltungen Klausurfragen konstruiert werden können.
+Erfahrungsgemäß ist das am Ende ein großer Teil der Klausur.
+
+### PIA 27/10/21
+
+<!-- md2apkg ignore-card -->
+
+#### Mit make Kerne auslasten
+
+Parameter -j
+
+#### Was sind Deadlocks und wie können Sie behoben werden
+
+...
+
+### Philosophenproblem nacherzählen und erklären
+
+Nicht genug Ressourcen, Deadlock kann entstehen
+
+#### Gedankenspiele Anzahl Philosophen/Anzahl Stäbchen 5/2, 10/10, 10/5 beantworten können
+
+...
 
 <!--newpage-->
 
