@@ -16,6 +16,8 @@
 - Kommentare werden bei Code-Änderungen mit angepasst (externe files werden meist vergessen)
 - Doku ist Bestandteil der Software und wird mit dieser versioniert
 - bei Open-Source-Projekten sollte die Doku plattformunabhängig sein (ohne spezielle Software lesbar)
+- Office ist **kein** sinnvolles Werkzeug für Dokumentationen!
+  - Querverweise schwierig, feste Formatierung, nicht sinnvoll versionsverwaltbar, proprietäre Formate, ...
 - Formate: LaTeX, TeXinfo, Docbook, AsciiDoc, Markdown
 
 ### Dokumentationsgeneratoren
@@ -182,6 +184,7 @@ int someFunction(int par1, ///< parameter 1
 
 - Vielzahl verbreiteter inkompatibler `make`-Implementierungen/Erweiterungen
 - Standardisierung nach POSIX in der Praxis zu wenig mächtig
+  - trotzdem relativ einheitlicher Stil etabliert (GNU Makefile Conventions, ...)
 
 ### Alternativen zu `make`
 
@@ -191,7 +194,6 @@ int someFunction(int par1, ///< parameter 1
 ## Compiler
 
 ### Funktionsumfang
-
 
 #### Präprozessor
 
