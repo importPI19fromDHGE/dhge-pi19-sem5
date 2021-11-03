@@ -33,6 +33,8 @@ Systemprogrammierung / Verteilte Systeme
     - [Prozesssteuerung](#prozesssteuerung)
     - [Systemaufruf fork()](#systemaufruf-fork)
     - [Semaphore](#semaphore)
+    - [Interprozesskommunikation](#interprozesskommunikation)
+      - [Pipes](#pipes)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -126,6 +128,7 @@ Nicht genug Ressourcen, Deadlock kann entstehen
 > Es können immer nur maximal zwei Philosophen gleichzeitig speisen
 
 - Code, der Deadlocks oder Race Conditions verursachen kann, wird **"kritischer Code"** / kritischer Pfad genannt
+- kritische Abschnitte müssen vom Programmierer definiert werden
 
 ### Prozesssteuerung
 
@@ -180,3 +183,29 @@ int main()
   - P-Operation: "Passieren": regelt Betreten kritischen Codes
   - V-Operation: "Verlassen": regelt Verlassen kritischen Codes
 - Programmierung: Semaphoren müssen deklariert, initialisiert und dann verwendet werden
+
+### Interprozesskommunikation
+
+- Motivation: Verhinderung von
+  - gleichzeitigen Schreibzugriffen
+  - Verhungern von Prozessen
+  - Deadlocks
+
+#### Pipes
+
+- *Rohre* zwischen Prozessen, in denen Nachrichten transportiert werden können
+- nur in eine Richtung
+- Pipes können nur zwischen Prozessen mit gemeinsamen Vorfahren eingerichtet werden
+- Ablauf:
+  - Vaterprozess erzeugt Pipe
+  - Vaterprozess erzeugt Sohnprozess mit `fork()`
+  - Sohnprozess erbt Pipe
+- Programmierung:
+  - inkludierung von `sys/unistd.h`
+  - `int pipe(int fd[2])`
+    - `fd[0]` zum Lesen
+    - `fd[1]` zum Schreiben
+  - Lese-Operation: `read()`
+    - wurden alle Leseseiten einer Pipe bereits gelesen, liefert `read()` EOF
+  - Schreib-Operation: `write()`
+  - Schließ-Operation: `close()`
