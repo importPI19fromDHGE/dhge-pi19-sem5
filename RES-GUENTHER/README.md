@@ -96,6 +96,11 @@ PID des Prozess in getppid wiederfinden
 `0`: es wurde eben geforkt und wir sind das Kind
 `-1`: Fehler
 
+#### Was passiert, wenn man in Schleifen forkt
+
+- Kinder forken ebenfalls
+- Prozesse vermehren sich potentiell
+
 ### PIA 03/11/21
 
 #### Wozu Semaphoren
