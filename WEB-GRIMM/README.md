@@ -13,7 +13,8 @@ Entwicklung von Webanwendungen
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Prüfungsleistung](#pr%C3%BCfungsleistung)
+- [Entwicklung von Webanwendungen](#entwicklung-von-webanwendungen)
+- [Prüfungsleistung](#prüfungsleistung)
 - [Geschichte des Internets](#geschichte-des-internets)
 - [Technologien](#technologien)
   - [Was ist eine Webanwendung?](#was-ist-eine-webanwendung)
@@ -25,7 +26,7 @@ Entwicklung von Webanwendungen
       - [Bilder](#bilder)
       - [Listen](#listen)
       - [Tabellen](#tabellen)
-      - [Zeilenumbrüche](#zeilenumbr%C3%BCche)
+      - [Zeilenumbrüche](#zeilenumbrüche)
       - [Formulare](#formulare)
       - [Formular-Elemente](#formular-elemente)
     - [Universal Attribute](#universal-attribute)
@@ -42,6 +43,7 @@ Entwicklung von Webanwendungen
     - [Beispiel-CSS](#beispiel-css)
     - [Flex-Container](#flex-container)
     - [Grid-Container](#grid-container)
+    - [Media-Queries](#media-queries)
   - [JS](#js)
 - [PHP und Datenbanken](#php-und-datenbanken)
 - [Moderne Webentwicklung mit Frameworks](#moderne-webentwicklung-mit-frameworks)
@@ -581,6 +583,22 @@ h2 {
   margin: 0 auto;
 }
 ```
+
+- Linien in Zeilen / Spalten kann man Namen geben: ``grid-template-coloumns: [vorne] fit-content [mitte] 2fr [hinten] 3fr``
+- negative Zahlen in bspw. ``grid-coloumn`` zählen von rechts nach links (d.h. vom Ende aus)
+- man kann alternativ die ganze Tabelle auf einmal definieren:
+
+```css
+grid-template-areas: "head head head head"
+                     "nav main main main"
+                     "nav main main main"
+                     "foot foot foot foot"
+                     ;
+```
+
+### Media-Queries
+
+- Deklaration: ``@media (bedingung) {style}``
 
 ## JS
 
