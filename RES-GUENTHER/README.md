@@ -91,6 +91,30 @@ PID des Prozess in getppid wiederfinden
 `0`: es wurde eben geforkt und wir sind das Kind
 `-1`: Fehler
 
+### PIA 03/11/21
+
+#### Wozu Semaphoren
+
+Deadlock vermeiden, exklusiven Zugriff auf Ressourcen verwalten; Programmabarbeitung übergreifend verwalten
+Kritischer Abschnitt - 2 Prozesse greifen auf gleiche Ressource zu; gleichzeitiger Zugriff führt zu unvorhersehbaren Ergebnissen
+Daher Interprozesskommunikation notwendig
+
+#### Semaphoren unterscheiden
+
+Binäre Semaphoren - Zählende Semaphoren
+Phasen Frei/Blockiert - Anzahl Ressourcen verwaltbar
+
+##### Semaphoren benutzen
+
+Deklaration
+Initialisierung
+Verwendung (Operation)
+
+#### Wann werden Semaphoren- Operationen aufgerufen
+
+P - Vor dem kritischen Abschnitt LOCK
+V - Nach dem kritischen Abschnitt UNLOCK
+
 <!--newpage-->
 
 # Systemprogrammierung
