@@ -125,7 +125,7 @@ Nicht genug Ressourcen, Deadlock kann entstehen
 >
 > Es können immer nur maximal zwei Philosophen gleichzeitig speisen
 
-- Code, der Deadlocks verursachen kann, wird "kritischer Code" / kritischer Pfad genannt
+- Code, der Deadlocks oder Race Conditions verursachen kann, wird **"kritischer Code"** / kritischer Pfad genannt
 
 ### Prozesssteuerung
 
@@ -174,8 +174,8 @@ int main()
   - zählend: x Prozesse dürfen, darüber nicht
 - System-V Semaphoren haben drei Funktionen:
   - `semget()`: Erzeugt eine neue Semaphore oder öffnet eine vorhandene
-  - `semctl()`
-  - `semop()`
+  - `semctl()`: manipuliert Semaphorenmengen
+  - `semop()`: führt eine Reihe Operationen auf einem Set Semaphoren aus
 - zwei Operationen:
   - P-Operation: "Passieren": regelt Betreten kritischen Codes
   - V-Operation: "Verlassen": regelt Verlassen kritischen Codes
