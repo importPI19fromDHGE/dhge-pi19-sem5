@@ -95,14 +95,14 @@ PID des Prozess in getppid wiederfinden
 
 #### Wozu Semaphoren
 
-Deadlock vermeiden, exklusiven Zugriff auf Ressourcen verwalten; Programmabarbeitung übergreifen verwalten
+Deadlock vermeiden, exklusiven Zugriff auf Ressourcen verwalten; Programmabarbeitung übergreifend verwalten
 Kritischer Abschnitt - 2 Prozesse greifen auf gleiche Ressource zu; gleichzeitiger Zugriff führt zu unvorhersehbaren Ergebnissen
 Daher Interprozesskommunikation notwendig
 
 #### Semaphoren unterscheiden
 
 Binäre Semaphoren - Zählende Semaphoren
-Frei/Blockiert - ???TODO
+Phasen Frei/Blockiert - Anzahl Ressourcen verwaltbar
 
 ##### Semaphoren benutzen
 
@@ -110,7 +110,7 @@ Deklaration
 Initialisierung
 Verwendung (Operation)
 
-#### Wann werden Semaphoren- Operationen aufgerufen (LOCK/UNLOCK)
+#### Wann werden Semaphoren- Operationen aufgerufen
 
 P - Vor dem kritischen Abschnitt LOCK
 V - Nach dem kritischen Abschnitt UNLOCK
