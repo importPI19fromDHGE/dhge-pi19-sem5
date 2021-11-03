@@ -25,6 +25,7 @@ Systemprogrammierung / Verteilte Systeme
       - [Haupteigenschaft fork-Prozesse](#haupteigenschaft-fork-prozesse)
       - [Differenzieren zwischen Vater- und Kindprozess](#differenzieren-zwischen-vater--und-kindprozess)
       - [Rückgabekategorien fork](#r%C3%BCckgabekategorien-fork)
+      - [Was passiert, wenn man in Schleifen forkt](#was-passiert-wenn-man-in-schleifen-forkt)
     - [PIA 03/11/21](#pia-031121)
       - [Wozu Semaphoren](#wozu-semaphoren)
       - [Semaphoren unterscheiden](#semaphoren-unterscheiden)
