@@ -1,5 +1,7 @@
 # HTML
+
 ## Grundgerüst
+
 ```html
 <!DOCTYPE html>
 <html lang="de">
@@ -21,6 +23,7 @@
 ```
 
 ## Head
+
 ```html
 <meta charset=UTF-8>
 <meta name="description" content="Seite">
@@ -31,19 +34,21 @@
 ```
 
 ## Listentypen
+
 - sortiert -> ol
 - unsoritert -> ul
 - Beschreibungsliste -> dl
 
 ## Tabellen
-```html
+
 - <table>
 - Zeile: <tr>
 - Zelle: <td>
 - Kopfzelle: <th>
 - <th> scope-Attribut: Zeilen- oder Spaltenkopf
-```
+
 ## Formulare
+
 ```html
 <form action=submit.html id=form1>
     <label for="name">Name:
@@ -51,15 +56,18 @@
     </label>
     ...
 ```
+
 - ID und Name bestenfalls identisch halten
-- ```html<fieldset>``` -> Formularelemente gruppieren
-- ```html<button>``` -> clientseitige Aktion, submit, reset
+- <fieldset> -> Formularelemente gruppieren
+- <button> -> clientseitige Aktion, submit, reset
 
 ### Input
+
 - type: text, email, tel, password, url, search, number, range, radio, checkbox, hidden, file, color, date, button
 - weitere Attribute: maxlength, minlength, required, pattern, value, placeholder
 
 ### Select
+
 - Ausswahlliste in Formularen
 - Elemente innerhalb des Body mit <option>
 - verschachtelte Auswahlliste <optgroup>
@@ -67,6 +75,7 @@
 - Attribut für <option>: selected
 
 ## Universalattribute
+
 - id
 - class
 - accesskey -> Taste zum Anspringen des Elementes
@@ -80,7 +89,9 @@
 - title -> Elementbeschreibung
 
 # CSS
+
 ## Farben
+
 - RGB (0..255)
 - hexadezimal
 - dezimal rgb(0,128,0)
@@ -88,18 +99,21 @@
 - Transparenz mit 2 Stellen mehr bei heza & rgba vierter Wert zwischen 0 und 1
 
 ## Einheiten
+
 - physische Einheiten: Zoll (in), Zentimeter (cm), Pixel (px)
 - relative Einheiten: em (Schriftgröße), ex (Größe von x), vw (Viewportbreite), vh (Viewporthöhe), vmin & vmax (kleinerer/größerer Wert), %, fr (Anteile)
 - Winkel: Grad (deg), Radiant (rad)
 - Zeit: Sekunden (s), Millisekunden (ms)
 
 ## Selectoren
+
 - Typselektor -> HTML-Element
 - Universalselektor -> *
 - Klassenselektor -> beginnt mit Punkt
 - ID-Selektor -> beginnt mit Raute
 
 ### Attributselektoren
+
 - [Attributname]
 - [name=wert]
 - Zeichenkette enthält Wert, durch Leerzeichen getrennt [name~=wert]
@@ -110,6 +124,7 @@
     - enthält Zeichenkette -> [name*=wert]
 
 ### Pseudoklassen
+
 - auf Eigenschaften der HTML-Elemente bezogen
 - :empty, :first-child, :last-child, :nth-child()
 - :link, :visited, :hover, :active, :focus
@@ -117,6 +132,7 @@
 - :valid, :invalid, :in-range, :out-of-range
 
 ### Pseudoelemente
+
 - beginnen mit ::
 - ::first-line, ::first-letter
 - ::before, ::after
@@ -124,31 +140,38 @@
 - ::selection, ::placeholder
 
 ### Verbundsselektoren
+
 - *.classname
 - Kombinatoren:
-    - Kindkombinator: Element > Kind z.B. p > em
-    - Nachfahrenkombinator: Element Kind z.B. p em
-    - Nachbarkombinator: Element + Kind z.B. h1 + p
-    - Geschwisterkombinator: alle Elemente, die auf gl Ebene folgen z.B. h1 ~ p
+    - Kindkombinator: Element > Kind z.B. p > em -> eine Ebene drunter
+    - Nachfahrenkombinator: Element Kind z.B. p em -> 
+    - Nachbarkombinator: Element + Kind z.B. h1 + p -> Auf gleicher Ebene, was direkt daneben steht
+    - Geschwisterkombinator: alle Elemente, die auf gl Ebene folgen z.B. h1 ~ p -> alle, die auf der gleichen Ebene liegen
 
 ## Display Eigenschaft 
+
 - none -> Element ist nicht vorhanden
+
 ### Inline Box
+
 - display: inline
 - Breite der Box durch Inhalt bestimmt
 
 ### Block Box
+
 - display: block
 - Anordnung untereinander
 - gesamte Breite des Elternelements
 - für viele Textelemente Standard
 
 ### Flex Box
+
 - display: flex
-- flex-direction
+- flex-direction row/row-reverse/column/column-reverse
 - horizontalte oder vertikale Ausrichtung
 
 ### Grid
+
 - display: grid
 - grid-template-columns: legt Spalten & deren Aufteilung fest
 - grid-template-areas: Bestimmung Zelle zu welchem Bereich gehört
@@ -158,3 +181,30 @@
 - Zuweisung der Zeilen/Spalten
     - grid-row: start/end
     - grid-column: start/end
+
+## Media Querries
+
+- Medienabfragen
+- Darstellung eines Dokumentes für verschiedene Ausgabemedien festlegen
+- mit ```css @media (max-width: 500px){HTML-Element CSS Code einfügen mit Änderungen}```
+
+## Ein paar Befehle..
+
+- z-index -> Ebenensystem
+- Listen Zeichen weg: text-decoration
+- justify-content (Ausrichtung) center/space-between/space-evenly/space-around/end/...
+- font-family
+- transition: Attirbutname Dauer Art(linear, ease..)
+- ubung3/style.css kürzen + ausdrucken für grid
+- border: 1px solid/dotted/dashed black
+- border-radius: 0 5px 2px 2px
+- text-align
+
+
+#### Klausur
+
+- allg. Fragen zu Technologien im Web
+- keine Geschichte
+- HTML spezifische Fragen
+    - Stück Quellcode erläutern/ergänzen
+- Bücher & Aufzeichnungen dürfen verwendet werden
