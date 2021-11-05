@@ -2,7 +2,7 @@
 
 ## Dokumentation
 
-- Unterscheidung zwischen interner Doku (Entwickler-/Tester-Doku) und externer Doku (Endnutzer)
+- Unterscheidung zwischen **interner Doku (Entwickler-/Tester-Doku)** und **externer Doku (Endnutzer)**
 - in agilen Teams interne Doku durch Entwicklern geschrieben
 - interne Dokumentation sollte direkt mit Quellcode festgehalten werden
   - dokumentiert gleichzeitig Code
@@ -14,8 +14,8 @@
 
 - Code **muss** dokumentiert werden
 - Kommentare werden bei Code-Änderungen mit angepasst (externe files werden meist vergessen)
-- Doku ist Bestandteil der Software und wird mit dieser versioniert
-- bei Open-Source-Projekten sollte die Doku plattformunabhängig sein (ohne spezielle Software lesbar)
+- Doku ist **Bestandteil der Software** und wird mit dieser versioniert
+- bei Open-Source-Projekten sollte die Doku **plattformunabhängig** sein (ohne spezielle Software lesbar)
 - Office ist **kein** sinnvolles Werkzeug für Dokumentationen!
   - Querverweise schwierig, feste Formatierung, nicht sinnvoll versionsverwaltbar, proprietäre Formate, ...
 - Formate: LaTeX, TeXinfo, Docbook, AsciiDoc, Markdown
@@ -25,7 +25,7 @@
 - Zweck: Erzeugung kommentierter Klassenreferenzen
 - Beispiele: `doxygen`, `javadoc`, `robodoc`, ...
 - Fähigkeiten:
-  - Extraktion der Doku aus dem Code und speziellen Kommentaren im Source
+  - Extraktion der Doku aus dem Code und **speziellen Kommentaren im Source**
   - Spezielle Formatierung von Funktionsparametern- und Returnwert-Doku
   - Automatische Erzeugung von Listen und Inhaltsverzeichnissen, Abhängigkeitslisten, ...
   - Erzeugen HTML, LaTeX (PDF), RTF, ...
@@ -313,6 +313,14 @@ Listet alle von einem Prozess aktuell geöffneten Files
 - **Arrays und Pointer-Arithmetrik:** Verletzung von Array-Grenzen, fehlendes `\0`, Integer-Overflow, uninitialisierte Variablen
 - **Dynamischer Speicher:** *"use-after-free"*, doppeltes `free` bzw. `free` auf ungültige Daten, Mischung von `C`/`C++` (`malloc` + `delete`), *memory-leaks*, *Fragmentierung*
 - **Sonstiges:** fehlerhafte Casts, variadische Funktionen
+
+### Speicherfehler
+
+- **Memory-Leaks:** Referenz auf dynamisch reservierten Speicher geht verloren $\rightarrow$ Speicherbedarf wächst ständig bis Prozessabbruch
+- **Memory-Fragmentation:** kein echter Programmfehler $\rightarrow$ ungünstige Speichernutzung
+  - Folge unterschiedlich großer `malloc` und `free` Befehle $\rightarrow$ keine größeren Speicherblöcke mehr verfügbar
+
+> **Adress Sanitizer:** über jedes Byte im gesamten Adressraum wird Buch geführt ob (un)gültig; jeder Pointerzugriff wird geprüft
 
 <!-- ASAN & Valgrind etc missing? -->
 
