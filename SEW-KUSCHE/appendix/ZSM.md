@@ -221,7 +221,7 @@ int someFunction(int par1, ///< parameter 1
   - Programm wird erneut mit diesem Profil gebaut
 - Optimierung beim Linken (*"Link-time Optimization"*) $\rightarrow$ Optimierung über Filegrenzen hinweg
 
-#### Sonstiges
+#### Sonstige Funktionen eines Compilers
 
 - verschiedene Zeichensätze (Unicode, ISO Latin, ...)
 - wählbarer `char`-Typ (`signed`/`unsigned`)
@@ -320,9 +320,27 @@ Listet alle von einem Prozess aktuell geöffneten Files
 - **Memory-Fragmentation:** kein echter Programmfehler $\rightarrow$ ungünstige Speichernutzung
   - Folge unterschiedlich großer `malloc` und `free` Befehle $\rightarrow$ keine größeren Speicherblöcke mehr verfügbar
 
-> **Adress Sanitizer:** über jedes Byte im gesamten Adressraum wird Buch geführt ob (un)gültig; jeder Pointerzugriff wird geprüft
+#### Speicherfehler-Tools
 
-<!-- ASAN & Valgrind etc missing? -->
+- **Adress Sanitizer:** über jedes Byte im gesamten Adressraum wird Buch geführt ob (un)gültig; jeder Pointerzugriff wird geprüft
+- **Memory Sanitizer:** erkennt Lesezugriffe auf Speicherbereiche, die zuvor nicht initialisiert wurden
+- **Leak Sanitizer:** liefert am Ende der Ausführung Liste dynamisch angelegter und nicht mehr freigegebenen Speicherstrukturen
+- **Thread-Sanitizer:** erkennt Data Races (Zugriffe verschiedener Threads auf gemeinsamen Speicher $\rightarrow$ zufällig, Scheduler abhängig!)
+
+#### Valgrind
+
+- verarbeitet unmodifizierten Code
+- nicht direkt am Prozessor, nur interpretiert $\rightarrow$ *"x86 Emulator"*
+  - erkennt alle Speicherzugriffe mit tatsächlicher Adresse
+
+**Plugins**
+
+> Einfügen von zusätzlichem Code für weitere Funktionen
+
+- `memcheck`: erstetzt `malloc` und `free` (ähnl. zu vielen weiteren `malloc`-Ersetzung-Tools)
+  - Buchführung über allokierte Speicherbereiche
+  - Pointer-Zugriff Prüfung $\rightarrow$ gültig, initialisiert, Daten-Typ?
+  - hoher Overhead, nur dyn. Speicher, keine Pointer-Speicherblock-Zuordnung
 
 ## Profiling
 
