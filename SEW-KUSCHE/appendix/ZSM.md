@@ -68,13 +68,14 @@ int someFunction(int par1, ///< parameter 1
 
 #### Branches
 
-- `head`, `main` oder `trunk` (aktueller Hauptentwicklungs-Branch)
-  - Release- und Wartungs-Branches (nur Fixes, keine Neuentwicklungen)
-  - Plattform- oder Kundenbranches (Sonderversion anderer Branches)
+- Übliche Branch-Struktur:
+  - Hauptentwicklungs-Branch: `head`, `main` oder `trunk`
+  - Release- und Wartungs-Branches (keine Neuentwicklungen!)
   - Feature Development Branches (experimentelle Entwicklungen)
-- Anzeige der verschiedenen Branches im Idealfall als Graph bzw. Baum
-- Automatisches Mergen von einzelnen Änderungen aus dem `head`-Branch oder einem Wartungs-Branch in andere Branches
-  - Zurück-Mergen aller Entwicklungen (vor allem bei Feature Branches) nach `head` oder Resynchronisation mit `head` in beide Richtungen (Übernahme aller Neuerungen von `head`)
+  - Plattform- oder Kundenbranches (Sonderversionen anderer Branches)
+- Anzeigen der verschiedenen Branches als Graph bzw. Baum
+- mit **Merges** werden einzelne Änderungen zwischen Branches übernommen
+  - Alle Richtungen möglich `feature` $\rightarrow$ `head` (Feature Fertig); `main` $\rightarrow$ `feature`("Zurück-Mergen", Resynchronisation mit `head`)
 
 #### Sperrverwaltung
 
