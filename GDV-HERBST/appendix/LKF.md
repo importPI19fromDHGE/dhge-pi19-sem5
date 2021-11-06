@@ -60,7 +60,9 @@ Mittelpunkt des Produktentstehungsprozesses
 ## Wie unterscheiden Sie Objektraum und Bildraum?
 
 Objektraum: Definition von 2D- und/oder 3D-Geometrie (Objektdaten im CAD)
+
 Bildraum: Verarbeitung von (2D-)Bildinformationen (Pixel)
+
 (Glossar)
 
 ## Was verstehen Sie unter "Computervision"?
@@ -68,7 +70,7 @@ Bildraum: Verarbeitung von (2D-)Bildinformationen (Pixel)
 - Analyse und Objekterkennung in Bildern
 - Umwandlung in Objektdaten (Bildraum -> Objektraum)
   - z.B. OCR
-  - "Hey, das ist doch eine Katze!" - KI
+  - autonomes Fahrzeug erkennt Objekte um sich herum anhand von Kameras
 
 ## Was stellen Sie sich unter Objektraum vor?
 
@@ -88,7 +90,8 @@ Bildraum: Verarbeitung von (2D-)Bildinformationen (Pixel)
 (Folie 26, Skript A anschauen)
 
 PPS: BWL-Sicht
-PDM: Technische Sicht
+
+PDM (Produktdatenmanagement): Technische Sicht
 
 ## Was kennzeichnet ein integriertes Produktdatenmodell?
 
@@ -145,7 +148,8 @@ Metadaten enthalten die
 ## Wofür steht die Anforderung der Rückverfolgbarkeit bei PDM-Systemen?
 
 Wann wurde was von wem auf welche Weise hergestellt oder modifiziert? (vgl. Git blame)
-Außderem: Gründe für Änderungen, Lieferant
+
+Außerdem: Gründe für Änderungen, Lieferant
 
 ## Nennen Sie Beispiele für Applikationen im Zusammenhang mit CAE/CAD.
 
