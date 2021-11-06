@@ -2,10 +2,22 @@
 
 ## Wofür steht CAD und wofür CAE?
 
-Computer Aided Design (CAD)
-Computer Aided Engineering
+computer-aided Design (CAD)
+computer-aided Engineering (CAE)
+
+### Wofür steht computer-aided Design (CAD)
+
+- computergestützte Erstellung von Modellen (2D, 3D)
+- Unterstützung von konstruktiven Aufgaben mittels EDV
+
+### Wofür steht computer-aided Engineering?
+
+- alle Varianten der Rechner-Unterstützung von Arbeitsprozessen in der Technik (Wikipedia)
+- Analyse der entworfenen Visualisierung
 
 ## Auf welche Prozess des Produktlebenszyklusses konzentrieren wir uns im Kurs?
+
+- 
 
 ## Was versteht man unter "Mechatronik"?
 
