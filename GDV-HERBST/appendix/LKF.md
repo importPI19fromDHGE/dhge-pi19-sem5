@@ -15,7 +15,7 @@ computer-aided Engineering (CAE)
 - alle Varianten der Rechner-Unterstützung von Arbeitsprozessen in der Technik (Wikipedia)
 - Analyse der entworfenen Visualisierung
 
-## Auf welche Prozess des Produktlebenszyklusses konzentrieren wir uns im Kurs?
+## Auf welchen Prozess des Produktlebenszyklusses konzentrieren wir uns im Kurs?
 
 - Produktentstehungsprozess
   - Produktentwicklung
