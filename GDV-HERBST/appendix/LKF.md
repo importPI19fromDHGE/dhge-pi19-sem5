@@ -145,8 +145,17 @@ Metadaten beziehen sich auf den Entwicklungsprozess
 
 ## Wofür steht die Anforderung der Rückverfolgbarkeit bei PDM-Systemen?
 
+Wann wurde was von wem auf welche Weise hergestellt oder modifiziert? (vgl. Git blame)
+Außderem: Gründe für Änderungen, Lieferant
+
 ## Nennen Sie Beispiele für Applikationen im Zusammenhang mit CAE/CAD.
---- ENDE ---
+
+- AutoCAD
+- Autodesk Inventor
+- Solid Works
+- Siemens NX
+- CATIA
+
 ## Welche Betriebssysteme stehen für CAD-Systeme bevorzugt zur Verfügung?
 
 ## Nennen Sie bekannte bzw. große Hersteller für CAD-Systeme.
