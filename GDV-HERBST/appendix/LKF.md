@@ -25,7 +25,7 @@ computer-aided Engineering (CAE)
 
 Verbindung Mechanik (MCAD) mit Elektronik (ECAD) und Software
 
-## Wofür steh PDM/PLM?
+## Wofür steht PDM/PLM?
 
 Product-Lifecycle-Management(PLM)
 Produktdatenmanagement (PDM)
@@ -41,18 +41,49 @@ Unternehmen erhoffen sich vom PLM eine verbesserte Kontrolle über die diversen 
 - Wegfall redundanter Datenerfassungen im Unternehmen
 
 [Source](https://www.gain.de/plm-system-product-lifecycle-management/)
+[further reading](https://4-plm.de/plm-consulting/)
 
 ## Was ist ein "Virtuelles Produkt"?
 
+Mittelpunkt des Produktentstehungsprozesses
+
+- die rechnerinterne Repräsentation der Summe der Eigenschaften eines Produkts,
+- zur ganzheitlichen Analyse und Simulation des Produktverhaltens erforderlich
+  - insbesondere die Abbildung des Produktverhaltens in den einzelnen Phasen des Produktzyklus
+
 ## Erklären Sie den sogenannten "digitalen Zwilling"!
+
+- digitale Abbildung bzw. Repräsentanz eines realen Objektes oder Prozesses
+  - inklusive Geometrie-, Kinematik-und Logikdaten
+- Kommunikation zwischen realen und virtuellem Objekt
 
 ## Wie unterscheiden Sie Objektraum und Bildraum?
 
+Objektraum: Definition von 2D- und/oder 3D-Geometrie (Objektdaten im CAD)
+Bildraum: Verarbeitung von (2D-)Bildinformationen (Pixel)
+(Glossar)
+
 ## Was verstehen Sie unter "Computervision"?
+
+- Analyse und Objekterkennung in Bildern
+- Umwandlung in Objektdaten (Bildraum -> Objektraum)
+  - z.B. OCR
+  - "Hey, das ist doch eine Katze!" - KI
 
 ## Was stellen Sie sich unter Objektraum vor?
 
+interne/geometrische Repräsentation von Objekten
+  - CAD-Daten, z.B. .obj
+
+vgl: Objektraum->Bildraum : Computergrafik (3DS Max, Inventor Anzeigen des Modells)
+
 ## Wofür stehen PPS und PDM?
+
+PPS-System (Produktionsplanungs- und Steuerungssystem)
+- ist ein Computerprogramm oder ein System aus Computerprogrammen
+- den Anwender bei der Produktionsplanung und -steuerung unterstützt
+- und die damit verbundene Datenverwaltung übernimmt.
+(Folie 26, Skript A anschauen)
 
 ## Was kennzeichnet ein integriertes Produktdatenmodell?
 
