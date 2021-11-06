@@ -72,7 +72,7 @@ Bildraum: Verarbeitung von (2D-)Bildinformationen (Pixel)
 
 ## Was stellen Sie sich unter Objektraum vor?
 
-interne/geometrische Repräsentation von Objekten
+- interne/geometrische Repräsentation von Objekten
   - CAD-Daten, z.B. .obj
 
 vgl: Objektraum->Bildraum : Computergrafik (3DS Max, Inventor Anzeigen des Modells)
@@ -80,6 +80,7 @@ vgl: Objektraum->Bildraum : Computergrafik (3DS Max, Inventor Anzeigen des Model
 ## Wofür stehen PPS und PDM?
 
 PPS-System (Produktionsplanungs- und Steuerungssystem)
+
 - ist ein Computerprogramm oder ein System aus Computerprogrammen
 - den Anwender bei der Produktionsplanung und -steuerung unterstützt
 - und die damit verbundene Datenverwaltung übernimmt.
@@ -136,6 +137,7 @@ z.B. 3D-CAD-Modell
 
 Metadaten enthalten die beschreibenden und klassifizierenden
 Attribute sowie die zur Verwaltung notwendigen Informationen wie
+
 - Ersteller
 - Erstelldatum
 - Dokumentstatus
