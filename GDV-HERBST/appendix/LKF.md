@@ -83,20 +83,70 @@ PPS-System (Produktionsplanungs- und Steuerungssystem)
 - ist ein Computerprogramm oder ein System aus Computerprogrammen
 - den Anwender bei der Produktionsplanung und -steuerung unterstützt
 - und die damit verbundene Datenverwaltung übernimmt.
+
 (Folie 26, Skript A anschauen)
+
+PPS: BWL-Sicht
+PDM: Technische Sicht
 
 ## Was kennzeichnet ein integriertes Produktdatenmodell?
 
+- Produktdefinition
+- Produktrepräsentation
+- Produktpräsentation (Darstellung der Repräsentation)
+
+- Applikationen(CAD,CAE,CAM,CAx) an PDM-System angeschlossen
+- Daten liegen in PDM, System, gemeinsamer Zugriff über Benutzeroberfläche
+- vgl. 3-Schichten-Architektur
+
+(Folie 21f., Skript A)
+
 ## Nennen Sie Beispiele für anwendungsbezogene und anwendungsübergreifende Funktionen eines PDM-Systems.
+
+### anwendungsbezogene Funktionen eines PDM-Systems
+
+- CAD-Datenverwaltung
+- Arbeitsplanverwaltung
+- Projektplanungsdaten
+- NC-Code-Verwaltung
+- Werkzeug und Betriebsmittelverwaltung
+- Methodenmanagement
+
+### anwendungsübergreifende Funktionen eines PDM-Systems
+
+- Benutzerverwaltung
+- Datenschutz
+- Datensicherheit
+- Archivierung
+- Änderungs-und Freigabemanagement
 
 ## Wofür steht der Begriff "vault" im Zusammenhang mit PDM-/PLM-Systemen?
 
+data vault: Zusammenfassung aller Engineering-Daten
+
+- Produktdaten
+- Metadaten
+
+inklusive Zugriffssteuerung (Datenkonsistenz gewährleisten)
+
 ## Erklären Sie die Unterscheidung in Produktdaten und Metadaten im Zusammenhang mit PDM-PLM-Systemen.
+
+Produktdaten sind die "tatsächlichen" Daten des Produkts, notwendige zur Herstellung des Produkts.
+z.B. 3D-CAD-Modell
+
+Metadaten enthalten die beschreibenden und klassifizierenden
+Attribute sowie die zur Verwaltung notwendigen Informationen wie
+- Ersteller
+- Erstelldatum
+- Dokumentstatus
+- Versionierung
+
+Metadaten beziehen sich auf den Entwicklungsprozess
 
 ## Wofür steht die Anforderung der Rückverfolgbarkeit bei PDM-Systemen?
 
 ## Nennen Sie Beispiele für Applikationen im Zusammenhang mit CAE/CAD.
-
+--- ENDE ---
 ## Welche Betriebssysteme stehen für CAD-Systeme bevorzugt zur Verfügung?
 
 ## Nennen Sie bekannte bzw. große Hersteller für CAD-Systeme.
