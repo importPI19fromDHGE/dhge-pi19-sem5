@@ -6,11 +6,11 @@
 
 #### Sie kennen die Instrumente der Erstellung einer Ablauforganisation
 
-- TODO
+- **Kommentar: wahrscheinlich ist Aufbauorganisation gemeint?**
 
 #### Sie können Aufgabenanalyse und –Synthese zum Erstellen der Inhalte einer Ablauforganisation erläutern
 
-- TODO
+- **Kommentar: ebenso?**
 
 #### Sie können Verantwortung an einem Beispiel erläutern und kennen die Kompetenzen einer Stelle
 
@@ -226,3 +226,7 @@
 #### Sie kennen die Instrumente des Marketing und deren Inhalt
 
 - TODO
+
+# Lernkontrollfragen Projektmanagement
+
+# Lernkontrollfragen Qualitätsmanagement
