@@ -132,13 +132,14 @@ PDM: Technische Sicht
 > Produktdaten sind die "tatsächlichen" Daten des Produkts, notwendige zur Herstellung des Produkts.
 > z.B. 3D-CAD-Modell
 
-Metadaten enthalten die beschreibenden und klassifizierenden
-Attribute sowie die zur Verwaltung notwendigen Informationen wie
+Metadaten enthalten die
 
-- Ersteller
-- Erstelldatum
-- Dokumentstatus
-- Versionierung
+- beschreibenden und
+- klassifizierenden Attribute sowie die zur Verwaltung notwendigen Informationen wie
+  - Ersteller
+  - Erstelldatum
+  - Dokumentstatus
+  - Versionierung
 
 > Metadaten beziehen sich auf den Entwicklungsprozess
 
