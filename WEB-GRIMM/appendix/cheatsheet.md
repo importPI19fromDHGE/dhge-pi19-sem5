@@ -1,11 +1,39 @@
+# Technologien für Web-Anwendungen
+
+- HTML 5 -> Beschreibung der Struktur der Webseiten
+- CSS 3 -> Formatierung/Aussehen
+- Java /EMCA -Script -> Interaktion
+- DOM / Ajax -> Manipulation des Seiteninhalts
+- Flash -> obsulete
+- XML -> Datenaustausch
+- PHP
+- Ruby (on Rails)
+- Java Applet
+- ASP.net
+- ColdFusion
+
 # HTML
+
+## Werkzeuge
+
+- Texteditor
+- What You See Is What You Get - Editor
+
+### hilfreiche Funktionen
+
+- Autovervollständigung
+- Syntaxhighlighting
+- Einrückungsautomatik
+- Projektverwaltung
+- Verwaltung von Code Snippets
+- Debugger bzw. Prüfung des HTML/CSS-Codes
 
 ## Grundgerüst
 
 ```html
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Definition des Dokumententypens-->
 <html lang="de">
-    <head>
+    <head> <!-- Dateikopf-->
     </head>
     <body>
         <header></header>
@@ -30,8 +58,22 @@
 <meta name="keywords" content="HTML, CSS">
 <meta name="author" content="John Doe">
 <link rel="stylesheet" href="styles.css">
+<script>...</script>
 <title>Titel</title>
 ```
+## Links
+
+- a -> anchor
+- href=dokument ODER =#ziel ODER =dokument#ziel
+- href="" -> Seite neuladen
+- href="#" || href="#top" -> Seitenanfang
+- download -> bei href angegebene Datei soll heruntergeladen werden
+- target -> wo Linkziel öffnen
+    - _blank -> neue Seite
+    - _self -> selbes Fenster
+    - _parent -> im Elternfenster
+    - _top -> im obersten Fenster
+    - Fenstername
 
 ## Listentypen
 
@@ -202,7 +244,19 @@
 - border-radius: 0 5px 2px 2px
 - text-align
 
+# JavaScript
+    
+- z.B. To Do Liste, Button zum Einfügen eines Elementes
+- Form html Tag mit "onsubmit=addTodo()"
 
+## Function Syntax
+
+```javascript
+    function addTodo(){
+        todolist.innerHTML += `... $(todofield.value) `; //HTML-Element ID (hier ul) erhält Fktionsaufruf (bei Btn Aufruf) jedes Mal neu HTML-Code zwischen ``
+    //todofield.value Wert der in dem HTML Element mit HTML ID (hier von Input Feld) todofield vorhanden ist
+    todofield.value ="Hallo" //im Inputfield wird nach Btnklick "Hallo" eingefügt}
+```
 #### Klausur
 
 - allg. Fragen zu Technologien im Web
