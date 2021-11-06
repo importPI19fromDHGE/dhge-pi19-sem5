@@ -371,7 +371,6 @@
 
 ## Einführung in das Qualitätsmanagement
 
-
 ### Sie können die Qualitätspolitik in die Unternehmenspolitik einordnen!
 
 - TODO
@@ -383,7 +382,6 @@
 ### Sie kennen min. 5 Instrumentarien zur Qualitätsbestimmung!
 
 ## Qualitätsmanagementmethoden und -Techniken
-
 
 ### Sie kennen die Bedeutung von TQM!
 
