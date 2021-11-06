@@ -115,7 +115,7 @@ Daher Interprozesskommunikation notwendig
 Binäre Semaphoren - Zählende Semaphoren
 Phasen Frei/Blockiert - Anzahl Ressourcen verwaltbar
 
-##### Semaphoren benutzen
+#### Semaphoren benutzen
 
 Deklaration
 Initialisierung
