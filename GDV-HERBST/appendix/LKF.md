@@ -17,11 +17,30 @@ computer-aided Engineering (CAE)
 
 ## Auf welche Prozess des Produktlebenszyklusses konzentrieren wir uns im Kurs?
 
-- 
+- Produktentstehungsprozess
+  - Produktentwicklung
+    - Produktentwurf
 
 ## Was versteht man unter "Mechatronik"?
 
+Verbindung Mechanik (MCAD) mit Elektronik (ECAD) und Software
+
+## Wofür steh PDM/PLM?
+
+Product-Lifecycle-Management(PLM)
+Produktdatenmanagement (PDM)
+PDM $\subset$ PLM
+
 ## Was ist das Ziel eines PDM- bzw. PLM-Systems?
+
+Unternehmen erhoffen sich vom PLM eine verbesserte Kontrolle über die diversen Prozesse, die in jedem Teil eines Lebenszyklus erforderlich sind, und damit auch transparente Aufwände und Erträge. (Wikipedia)
+
+- Verkürzung des Zyklus in bestimmten Teil-Bereichen
+- Optimierung der Effizienz der Herstellung
+- Verminderung von Kosten
+- Wegfall redundanter Datenerfassungen im Unternehmen
+
+[Source](https://www.gain.de/plm-system-product-lifecycle-management/)
 
 ## Was ist ein "Virtuelles Produkt"?
 
