@@ -17,7 +17,7 @@ jobs:
           node-version: '14'
       - run: npm install -g md2apkg
       - run: mkdir output
-      - run: for f in [A-Z]*[A-Z]-[A-Z]*[A-Z]/README.md; do d=$(echo ${f} | awk -F/ '{print $1}'); md2apkg -o output/${d}.apkg ${f}; done
+      - run: for f in [A-Z]*[A-Z]-[A-Z]*[A-Z]/(README|appendix/LKF).md; do d=$(echo ${f} | awk -F/ '{print $1}'); md2apkg -o output/${d}.apkg ${f}; done
       - uses: actions/upload-artifact@master # upload pdfs as an artifact
         with:
           name: output
