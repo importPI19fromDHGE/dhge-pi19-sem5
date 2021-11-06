@@ -5,7 +5,7 @@
 computer-aided Design (CAD)
 computer-aided Engineering (CAE)
 
-### Wofür steht computer-aided Design (CAD)
+### Wofür steht computer-aided Design (CAD)?
 
 - computergestützte Erstellung von Modellen (2D, 3D)
 - Unterstützung von konstruktiven Aufgaben mittels EDV
@@ -27,13 +27,13 @@ Verbindung Mechanik (MCAD) mit Elektronik (ECAD) und Software
 
 ## Wofür steht PDM/PLM?
 
-Product-Lifecycle-Management(PLM)
-Produktdatenmanagement (PDM)
-PDM $\subset$ PLM
+- Product-Lifecycle-Management(PLM)
+- Produktdatenmanagement (PDM)
+- PDM $\subset$ PLM
 
 ## Was ist das Ziel eines PDM- bzw. PLM-Systems?
 
-Unternehmen erhoffen sich vom PLM eine verbesserte Kontrolle über die diversen Prozesse, die in jedem Teil eines Lebenszyklus erforderlich sind, und damit auch transparente Aufwände und Erträge. (Wikipedia)
+>Unternehmen erhoffen sich vom PLM eine verbesserte Kontrolle über die diversen Prozesse, die in jedem Teil eines Lebenszyklus erforderlich sind, und damit auch transparente Aufwände und Erträge. ([Wikipedia](https://de.wikipedia.org/wiki/Product-Lifecycle-Management))
 
 - Verkürzung des Zyklus in bestimmten Teil-Bereichen
 - Optimierung der Effizienz der Herstellung
@@ -54,7 +54,7 @@ Mittelpunkt des Produktentstehungsprozesses
 ## Erklären Sie den sogenannten "digitalen Zwilling"!
 
 - digitale Abbildung bzw. Repräsentanz eines realen Objektes oder Prozesses
-  - inklusive Geometrie-, Kinematik-und Logikdaten
+  - inklusive Geometrie-, Kinematik- und Logikdaten
 - Kommunikation zwischen realen und virtuellem Objekt
 
 ## Wie unterscheiden Sie Objektraum und Bildraum?
@@ -75,11 +75,12 @@ Bildraum: Verarbeitung von (2D-)Bildinformationen (Pixel)
 - interne/geometrische Repräsentation von Objekten
   - CAD-Daten, z.B. .obj
 
-vgl: Objektraum->Bildraum : Computergrafik (3DS Max, Inventor Anzeigen des Modells)
+> vgl: Objektraum->Bildraum : Computergrafik (3DS Max, Inventor Anzeigen des Modells)
 
 ## Wofür stehen PPS und PDM?
 
-PPS-System (Produktionsplanungs- und Steuerungssystem)
+> PPS-System (Produktionsplanungs- und Steuerungssystem)
+
 
 - ist ein Computerprogramm oder ein System aus Computerprogrammen
 - den Anwender bei der Produktionsplanung und -steuerung unterstützt
@@ -96,7 +97,7 @@ PDM: Technische Sicht
 - Produktrepräsentation
 - Produktpräsentation (Darstellung der Repräsentation)
 
-- Applikationen(CAD,CAE,CAM,CAx) an PDM-System angeschlossen
+- Applikationen (CAD,CAE,CAM,CAx) an PDM-System angeschlossen
 - Daten liegen in PDM, System, gemeinsamer Zugriff über Benutzeroberfläche
 - vgl. 3-Schichten-Architektur
 
@@ -123,17 +124,13 @@ PDM: Technische Sicht
 
 ## Wofür steht der Begriff "vault" im Zusammenhang mit PDM-/PLM-Systemen?
 
-data vault: Zusammenfassung aller Engineering-Daten
-
-- Produktdaten
-- Metadaten
-
-inklusive Zugriffssteuerung (Datenkonsistenz gewährleisten)
+- data vault: Zusammenfassung aller Engineering-Daten (Produkt- und Metadaten)
+- inklusive Zugriffssteuerung (Datenkonsistenz gewährleisten)
 
 ## Erklären Sie die Unterscheidung in Produktdaten und Metadaten im Zusammenhang mit PDM-PLM-Systemen.
 
-Produktdaten sind die "tatsächlichen" Daten des Produkts, notwendige zur Herstellung des Produkts.
-z.B. 3D-CAD-Modell
+> Produktdaten sind die "tatsächlichen" Daten des Produkts, notwendige zur Herstellung des Produkts.
+> z.B. 3D-CAD-Modell
 
 Metadaten enthalten die beschreibenden und klassifizierenden
 Attribute sowie die zur Verwaltung notwendigen Informationen wie
@@ -143,7 +140,7 @@ Attribute sowie die zur Verwaltung notwendigen Informationen wie
 - Dokumentstatus
 - Versionierung
 
-Metadaten beziehen sich auf den Entwicklungsprozess
+> Metadaten beziehen sich auf den Entwicklungsprozess
 
 ## Wofür steht die Anforderung der Rückverfolgbarkeit bei PDM-Systemen?
 
