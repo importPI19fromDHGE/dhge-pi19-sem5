@@ -2,6 +2,9 @@
 
 ## Wofür steht CAD und wofür CAE?
 
+Computer Aided Design (CAD)
+Computer Aided Engineering
+
 ## Auf welche Prozess des Produktlebenszyklusses konzentrieren wir uns im Kurs?
 
 ## Was versteht man unter "Mechatronik"?
@@ -66,6 +69,6 @@
 
 ## Wie wird Truetype-Font geometrisch beschrieben?
 
-## Worum handelt es sich bei sog. "meatballs"?
+## Worum handelt es sich bei sog. "metaballs"?
 
 ## Was versteht man unter "Subdivision Surface Modeling"?
