@@ -81,7 +81,6 @@ Bildraum: Verarbeitung von (2D-)Bildinformationen (Pixel)
 
 > PPS-System (Produktionsplanungs- und Steuerungssystem)
 
-
 - ist ein Computerprogramm oder ein System aus Computerprogrammen
 - den Anwender bei der Produktionsplanung und -steuerung unterstützt
 - und die damit verbundene Datenverwaltung übernimmt.
