@@ -98,7 +98,7 @@ PID des Prozess in getppid wiederfinden
 
 #### Rückgabekategorien fork
 
-```
+```txt
 >0: die PID des Kindprozesses
 0: es wurde eben geforkt und wir sind das Kind
 -1: Fehler
