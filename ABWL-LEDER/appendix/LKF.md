@@ -159,7 +159,7 @@
 
 - Informationsfunktion: Informationsaustausch zw. Kapitalgeber und Management - vergangenheitsbasiert (dient möglicher Prognose)
 - Ausschützungsbemessungsfunktion: Gewinnermittlung & Gewinnverwendung
-- Im Rahmen der Insolvenz: Signal für Überschuldung & Vermögen des SChuldners < den Verbindlichkeiten des Schuldners
+- Im Rahmen der Insolvenz: Signal für Überschuldung und Vermögen des Schuldners < den Verbindlichkeiten des Schuldners
 - Entscheidungsanreizsystem: Bilanzpolitik - Beeinflussung von Entscheidungen (Bsp. Kapitalvergabe, Top-Management, Anlagestrategien..)
 
 - Entscheidungsgrundlage für: Unternehmensexterne, Top-Management, Betriebsrat
