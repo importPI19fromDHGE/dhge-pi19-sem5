@@ -16,7 +16,7 @@
 
 - übertragene & angenommene Pflicht der Aufgabenerfüllung
 - Verantwortung wird vom Vorgesetzten (Delegation, Zielvereinbarung, Stellenbeschreibung) an MA übergeben
-    - MA hat die Pflicht (-> Verantwortung) zur Aufgaben-/Zielerfüllung
+  - MA hat die Pflicht (-> Verantwortung) zur Aufgaben-/Zielerfüllung
 
 - Kompetenzen einer Stelle
   - Weisung
@@ -24,7 +24,7 @@
   - Verfügung
   - Vertretung
   - Information
-  
+
 #### Sie beherrschen den Überblick über die Organisationsformen
 
 - Liniensystem
@@ -36,22 +36,22 @@
   - Sparten-Organisation (-> Center-Organisation)
   - Matrix-Organisation (-> Center-Organisation)
 - Organisationsformen [Sekundärorganisation]
-  - Center-Organisation    
+  - Center-Organisation
 
 #### Sie kennen die drei Linienorganisationen
 
 - Einliniensystem
   - Verrichtungszentralisation
   - Vollkompetenz
-  - Einfachunterstellung 
+  - Einfachunterstellung
 - Mehrliniensystem [Funktionssystem]
   - Verrichtungszentralisation
   - Voll- und Teilkompetenz
-  - Mehrfachunterstellung 
+  - Mehrfachunterstellung
 - Stabsliniensystem
   - Verrichtungszentralisation
   - Voll- und Teilkompetenz
-  - Einfachunterstellung 
+  - Einfachunterstellung
 
 #### Sie beherrschen die Darstellung und Erläuterung folgender Formen
 
@@ -78,7 +78,7 @@
     - Profit-Center -> Erfolgsorientiert [Gewinn]
     - Cost-Center -> Kostenorientiert [Kostenminimierung]
     - Revenue-Center -> Umsatzorientiert [Umsatz]
-    - Investment-Center -> Gewinnverwendung [ROI] 
+    - Investment-Center -> Gewinnverwendung [ROI]
 
 #### Sie können Vor- und Nachteile aus den Strukturen ableiten
 
