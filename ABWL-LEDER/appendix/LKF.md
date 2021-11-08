@@ -14,26 +14,71 @@
 
 #### Sie können Verantwortung an einem Beispiel erläutern und kennen die Kompetenzen einer Stelle
 
-- TODO
+- übertragene & angenommene Pflicht der Aufgabenerfüllung
+- Verantwortung wird vom Vorgesetzten (Delegation, Zielvereinbarung, Stellenbeschreibung) an MA übergeben
+  - MA hat die Pflicht ($\rightarrow$ Verantwortung) zur Aufgaben-/Zielerfüllung
+
+- Kompetenzen einer Stelle
+  - Weisung
+  - Entscheidung
+  - Verfügung
+  - Vertretung
+  - Information
 
 #### Sie beherrschen den Überblick über die Organisationsformen
 
-- TODO
+- Liniensystem
+  - Einliniensystem ($\rightarrow$ Funktional-Organisation, $\rightarrow$ Sparten-Organisation)
+  - Mehrliniensystem ($\rightarrow$ Funktional-Organisation, $\rightarrow$ Sparten-Organisation, $\rightarrow$ Matrix-Organisation)
+  - Stabsliniensystem ($\rightarrow$ Funktional-Organisation, $\rightarrow$ Sparten-Organisation, $\rightarrow$ Matrix-Organisation)
+- Organisationsform \[Primärorganisation\]
+  - Funktional-Organisation ($\rightarrow$ Center-Organisation)
+  - Sparten-Organisation ($\rightarrow$ Center-Organisation)
+  - Matrix-Organisation ($\rightarrow$ Center-Organisation)
+- Organisationsformen \[Sekundärorganisation\]
+  - Center-Organisation
 
 #### Sie kennen die drei Linienorganisationen
 
-- TODO
+- Einliniensystem
+  - Verrichtungszentralisation
+  - Vollkompetenz
+  - Einfachunterstellung
+- Mehrliniensystem \[Funktionssystem\]
+  - Verrichtungszentralisation
+  - Voll- und Teilkompetenz
+  - Mehrfachunterstellung
+- Stabsliniensystem
+  - Verrichtungszentralisation
+  - Voll- und Teilkompetenz
+  - Einfachunterstellung
 
 #### Sie beherrschen die Darstellung und Erläuterung folgender Formen
 
 - Funktionalorganisation
-  - TODO
+  - nach Verrichtungen \[Bereiche\]
+  - Verrichtungszentralisation
+  - Vollkompetenz
+  - Einfachunterstellung
 - Spartenorganisation
-  - TODO
+  - Kombination zentraler & dezentraler Einheiten
+  - Objektdezentralisation
+  - Vollkompetenz
+  - Einfachunterstellung
+  - Objekte können sein: nach Produkten, nach Regionen, nach Kunden
 - Matrixorganisation
-  - TODO
+  - Kombination zentraler & dezentraler Einheiten
+  - Zentralabteilungen
+  - Dezentrale Abteilungen
+  - Doppelunterstellung
+  - Voll- und Teilkompetenz
 - Centerorganisation
-  - TODO
+  - abgeleitet von Spartenorganisation
+  - Sparten für definierte Kenngrößen:
+    - Profit-Center $\rightarrow$ Erfolgsorientiert \[Gewinn\]
+    - Cost-Center $\rightarrow$ Kostenorientiert \[Kostenminimierung\]
+    - Revenue-Center $\rightarrow$ Umsatzorientiert \[Umsatz\]
+    - Investment-Center $\rightarrow$ Gewinnverwendung \[ROI\]
 
 #### Sie können Vor- und Nachteile aus den Strukturen ableiten
 
