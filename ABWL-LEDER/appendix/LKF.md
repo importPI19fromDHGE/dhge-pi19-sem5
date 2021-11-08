@@ -167,65 +167,146 @@
 
 #### Sie kennen die Einteilung der Investitionen und können deren Inhalt darstellen
 
-- TODO
+- Objektbezug
+  - Sachinvestitionen (Gebäude, Maschinen, Roh- und Hilfsstoffe $\rightarrow$ Realinvestitionen): Abschreibung auf Nutzungsdauer, technische & wirtschaftliche Nutzungsdauer können differieren
+  - Finanzinvestitionen (Bankguthaben, festverzinsliche Wertpapiere, gewährtes Darlehn $\rightarrow$ Normalinvestition): Bewertung notwendig (Wertminderung)
+  - immaterielle Investitionen (Software & Patente $\rightarrow$ Abschreibung auf Nutzungsdauer): Ausbildung, Fortbildung, Marketing $\rightarrow$ Bekannheitsgrad
+- Hierarchie/Entscheidungsebenen
+  - strategisch: im Top-Management entschieden, lange Laufzeiten (3-5 Jahre), Gebäude, Maschinenkomplexe,...
+  - taktisch: im Middle-Management entschieden, mittelfristige Laufzeiten (1-3 Jahre), Ausrüstung
+  - operativ: im Low-Management entschieden, kurzfristige Laufzeiten, routinemäßige Anschaffungen
+- Häufigkeit des Anfallens
+  - einzelne: einmalig, ohne Wdh
+  - als Folge: häufig anfallend, wiederholend
+  - als Kette: wiederholend, Bedingtkeit
+- Umfang (Größenordnung)
+  - Routine: geringer Zeitaufwand, Ersatz von Material, GWGs (Geringwertiges Wirtschaftsgut) & Schreibmaterialbestellung
+  - Unternehmenspolitisch: hoher Zeitaufwand, Bedeutend für die Leistungsfähigkeit, Ausrüstung
+- der zu erzielenden Wirkung
+  - Nettoinvestition: Gründung oder Erweiterung
+  - Reinvestition: Ersatz, Rationalisierung, Umstellung, Diversifikation oder Sicherung
 
 #### Sie können die Vorgehensweise bei einer Investition beschreiben
 
-- TODO
+- Marktanalyse (SWOT, Notwendigkeitsprüfung)
+- Entscheidung zur Investition (Umfang & Art der Investition, notwendige Kapitalstruktur)
+- Angebote (Lastenheft & Ausschreibung, Bereitstellung des Kapitals und Zuschlag)
+- Realisierung (Umsetzung, Abnahme der Investition)
 
 #### Sie kennen die Ursache einer Finanzierung und deren begrifflichen Inhalt
 
-- TODO
+- Investition ist notwendig oder erwünscht $\rightarrow$ Abstimmung $\rightarrow$ Finanzierungsmöglichkeiten evaluieren
+- entweder realisierbare Investionen (mit endgültigen Investitionsbedarf & Investitionsprogramm) oder nicht realisierbare Investition
+- Größe des Kapitalbedarfs?
+- Finanzierungsarten?
+- Kostenoptimale Finanzierung?
 
 #### Sie können die Kriterien der Einteilung der Betrachtung von Finanzierungen darstellen
 
-- TODO
+- Fristenbezogen
+  - Unbefristet (Kontokorrent)
+  - Befristet (Kredit): kurz-, mittel- oder langfristig
+- Kapitalarten
+  - Eigenkapital
+  - Fremdkapital
+- Kapitalherkunft
+  - Außenfinanzierung: Beteiligungen, Fremdfinanzierung
+  - Innenfinanzierung: aus Erträgen, Freisetzungen
 
 #### Sie kennen die Strukturkennzahlen und können diese erläutern
 
-- TODO
+- Eigenkapitalanteil = Eigenkapital * 100 / Gesamtkapital
+- Rücklagenquote = Rücklagen * 100 / Eigenkapital
+- Selbstfinanzierungsgrad = Gewinnrücklagen * 100 / Gesamtkapital
+- Anpassungskoeffizient = Fremdkapital * 100 / Gesamtkapital
+- Verschuldungskoeffizient = Fremdkapital * 100 / Gesamtkapital
 
 ### Protektionswirtschaft
 
 #### Sie kennen Inhalt, Ziel und Formen der Protektionswirtschaft
 
-- TODO
+- Ziel
+  - Schutzfunktion: einzelne Sektoren einer Volkswirtschaft vor Importkonkurrenz zu schützen
+  - Förderung: eigenen Exportwirtschaft Vorteile auf dem internationalen Markt verschaffen
+- TODO **Kommentar: Inhalt und Formen S. 24-26.. ich bin faul**
 
 ### Marketing
 
-- TODO
-
 #### Sie können Marketing erläuternd darstellen
 
-- TODO
+- mit dem Marketing wird der Bedarf an Produkten/DL bekannt gegeben
+- ein Bild vom Unternehmen/Institution/Behörde/...
+- ein Bild von der Leistung/Leistungsfähigkeit...
+- ein Bild von den Produkten...
+- oder eine Kombination daraus...
+  .. vermitteln
 
 #### Sie kennen das AIDA-Prinzip und können dies erläutern
 
-- TODO
+- **A**ention: Wecken von Aufmerksamkeit
+- **I**nterest: Interesse wecken
+- **D**esire: Wunsch nach Produkt/DL hervorrufen
+- **A**ction: Kunde soll kaufen
 
 #### Sie beherrschen die Markteinteilung durch Bedarf und Nachfrage
 
-- TODO
+- Polypol: viele Nachfrager, viele Anbieter
+- Oligopol: wenig Anbieter, viele Nachfrager oder viele Anbieter, wenig Nachfrager
+- Monopol: ein Anbieter, viele Nachfrager oder viele Anbieter, ein Nachfrager
 
 #### Sie kennen die Phasen des Lebenszyklus eines Produktes/Dienstleistung und können diese bewerten
 
-- TODO
+- Entwicklungsphase (Prototyp, Funktionsmuster,..)
+- Einführungsphase (Produkt Launch, Messeneuheit,..)
+- Wachstumsphase (steigender Bedarf durch Nachfrage)
+- Reifephase (Nachfrage aufgrund gesicherter Erwartung)
+- Sättigungsphase (erste Angebote zur Steigerung der Attraktivität)
+- Degenerationsphase (Abverkauf)
 
 #### Sie können den Unterschied zwischen Pull- und Push-Marketing erläutern
 
-- TODO
+- TODO **Kommentar: S. 38, kanns nicht erklären, Kopf langsam Matsch**
 
 #### Sie kennen die Möglichkeiten der Preisgestaltung und können diese erläutern
 
-- TODO
+- Einfluss auf den Preis: 
+  - Kostenorientierung (Kalkulation)
+  - Gewinnchance (SWOT)
+  - Kundenakzeptanz (Nachfrage und Bedarf)
+  - Konkurrenzorientierung (Markt, Reaktion/Aktion): Durchschnittspreis Standort/Region (Branchenpreis), Richtpreis (Preisführer)
+
+- Preisobergrenze von Kunden & Konkurrenz bestimmt
+- Verkaufspreis: Schwankung um die Akzeptanz
+- Preisuntergrenze von Kosten und Existenz bestimmt
+
+- Preisdifferienzierung nach Raum, Zeit, Menge, Person
+
+- offensive Preispolitik: Hochpreispoltiik (aufwendiges Verkaufsambiente und/oder hochwertige Ware), Niedrigpreispolitik (Discount)+
+- defensive Preispolitik: kein Engagement im Preiskampf (Anpassen der Preise an Wettbewerb und/oder Überzeugung durch Leistung), Herstellerempfehlung (Markenprodukt)
+
+- TODO **Kommentar: bitte um Kürzung oder Trennung, S. 39-48**
 
 #### Sie beherrschen die Darstellung und Nutzen der Preiselastizität
 
-- TODO
+- Das verhältnis aus dem Quotienten der Veränderung der Nachfrage zur absoluten Nachfrage und dem Quotienten der Preisveränderung zum absoluten Preis bildet die Preiselastizität
+- Mathematisch sinkt der Preis mit zunehmender Menge $\rightarrow$ Preiselastizität gibt an wie schnell der Preis sinkt
 
 #### Sie kennen die Instrumente des Marketing und deren Inhalt
 
-- TODO
+- Produkt-/Dienstleistungspolitik
+  - Produkt-/Dienstleistungsportfolio
+  - Breite & Tiefe des Sortiments
+  - Aktualität 
+- Distributionspolitik
+  - Vertrieb
+  - Bereitstellung und Logistik
+  - Pflege der Kundenbeziehungen
+- Kommunikationspolitik
+  - Werbung
+  - Einsatz der Werbemittel/-Träger und Zielgruppenansprache 
+- Preispolitik
+  - Preis der Produkte/DL
+  - Angebot und Nachfrage 
 
 # Lernkontrollfragen Projektmanagement
 
