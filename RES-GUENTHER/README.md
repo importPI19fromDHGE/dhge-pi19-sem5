@@ -18,14 +18,6 @@ Systemprogrammierung / Verteilte Systeme
   - [Wiederholungsfragen zu Beginn der Veranstaltung](#wiederholungsfragen-zu-beginn-der-veranstaltung)
     - [PIA 27/10/21](#pia-271021)
       - [Mit make Kerne auslasten](#mit-make-kerne-auslasten)
-      - [Was sind Deadlocks und wie können Sie behoben werden](#was-sind-deadlocks-und-wie-können-sie-behoben-werden)
-    - [Philosophenproblem nacherzählen und erklären](#philosophenproblem-nacherzählen-und-erklären)
-      - [Gedankenspiele Anzahl Philosophen/Anzahl Stäbchen 5/2, 10/10, 10/5 beantworten können](#gedankenspiele-anzahl-philosophenanzahl-stäbchen-52-1010-105-beantworten-können)
-    - [Was ist ein Fork?](#was-ist-ein-fork)
-    - [Welche Rückgabewerte hat fork()](#welche-rückgabewerte-hat-fork)
-    - [Eigenschaften eines Prozesses](#eigenschaften-eines-prozesses)
-    - [Differenzierung zwischen Vater- und Kind-Prozess](#differenzierung-zwischen-vater--und-kind-prozess)
-    - [Was passiert, wenn man in Schleifen forkt](#was-passiert-wenn-man-in-schleifen-forkt)
 - [Systemprogrammierung](#systemprogrammierung)
   - [Lernziele/Themenschwerpunkte](#lernzielethemenschwerpunkte)
   - [Literaturempfehlung](#literaturempfehlung)
@@ -70,6 +62,59 @@ Nicht genug Ressourcen, Deadlock kann entstehen
 #### Gedankenspiele Anzahl Philosophen/Anzahl Stäbchen 5/2, 10/10, 10/5 beantworten können
 
 ...
+
+### PIA 02/11/21
+
+<!-- md2apkg ignore-card -->
+
+#### Was ist fork
+
+(nicht die englische Übersetzung)
+Benedict: Prozese aufspalten, Vater, Kind Prozess
+
+#### Haupteigenschaft fork-Prozesse
+
+PID - Prozess ID zu Identifikation
+
+#### Differenzieren zwischen Vater- und Kindprozess
+
+Kindprozess mit getppid() -> Ist die getpid() des Vaters
+PID des Prozess in getppid wiederfinden
+
+#### Rückgabekategorien fork
+
+`>0`: die PID des Kindprozesses
+`0`: es wurde eben geforkt und wir sind das Kind
+`-1`: Fehler
+
+#### Was passiert, wenn man in Schleifen forkt
+
+- Kinder forken ebenfalls
+- Prozesse vermehren sich potentiell
+
+### PIA 03/11/21
+
+#### Wozu Semaphoren
+
+Deadlock vermeiden, exklusiven Zugriff auf Ressourcen verwalten; Programmabarbeitung übergreifend verwalten
+Kritischer Abschnitt - 2 Prozesse greifen auf gleiche Ressource zu; gleichzeitiger Zugriff führt zu unvorhersehbaren Ergebnissen
+Daher Interprozesskommunikation notwendig
+
+#### Semaphoren unterscheiden
+
+Binäre Semaphoren - Zählende Semaphoren
+Phasen Frei/Blockiert - Anzahl Ressourcen verwaltbar
+
+#### Semaphoren benutzen
+
+Deklaration
+Initialisierung
+Verwendung (Operation)
+
+#### Wann werden Semaphoren- Operationen aufgerufen
+
+P - Vor dem kritischen Abschnitt LOCK
+V - Nach dem kritischen Abschnitt UNLOCK
 
 <!--newpage-->
 

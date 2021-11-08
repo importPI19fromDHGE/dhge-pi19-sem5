@@ -29,6 +29,7 @@ Entwicklung von Webanwendungen
       - [Formulare](#formulare)
       - [Formular-Elemente](#formular-elemente)
     - [Universal Attribute](#universal-attribute)
+    - [Positionierungselemente](#positionierungselemente)
   - [CSS](#css)
     - [Syntax](#syntax)
     - [Farben](#farben)
@@ -37,6 +38,11 @@ Entwicklung von Webanwendungen
       - [Kombinierte Selektoren](#kombinierte-selektoren)
       - [Pseudoselektoren](#pseudoselektoren)
     - [Berechnungen](#berechnungen)
+    - [Attributselektoren](#attributselektoren)
+    - [Beispiel-CSS](#beispiel-css)
+    - [Flex-Container](#flex-container)
+    - [Grid-Container](#grid-container)
+    - [Media-Queries](#media-queries)
   - [JS](#js)
 - [PHP und Datenbanken](#php-und-datenbanken)
 - [Moderne Webentwicklung mit Frameworks](#moderne-webentwicklung-mit-frameworks)
@@ -398,6 +404,16 @@ Beispiel Tabelle:
 - `tabindex`: Tab-Reihenfolge
 - `title`: Elementenbeschreibung $\rightarrow$ Tooltip
 
+### Positionierungselemente
+
+- HTML-Elemente sind entweder Blöcke oder inline
+  - Blöcke erzeugen Newline
+- alle HTML-Elemente werden von Boxen umgeben (innen nach außen)
+  - Content
+  - Padding
+  - Border
+  - Margin
+
 ## CSS
 
 - **C**ascading **S**tyle **S**heet
@@ -463,6 +479,7 @@ selector{
 
 #### Kombinierte Selektoren
 
+- Verbundselektoren: `*.class`, `h2#title.classA.classB`
 - Nachfahrenkombinator: `p em{...}` (alle untergeordneten Elemente, unabhängig von der Tiefe)
 - Kindkombinator: `ul > li{...}` (nur direkte Kindelemente)
 - Nachbarkombinator: `h1 + p{...}` (direkter Nachfolger)
@@ -490,10 +507,102 @@ selector{
 - für ``nth-child()`` können Folgen berechnet werden
 - Syntax: ``An+B``, wobei A und B zu ersetzen sind
 - Beispiel: ``tr:nth-child(2n+1)`` wählt jede zweite Tabellenzeile, und zwar die ungeraden
+  - es gibt auch ``even`` und ``odd``
 - Dokumentation: [Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child)
+
+### Attributselektoren
+
+- Syntax: `[Attributname=Wert]` oder `[Attribut]`
+- Beispiel: `p[andre]{}` wählt alle `<p>`-Tags, die das André-Attribut haben (also `<p andre>`)
+- `^=`: beginnt mit
+- `$=`: endet mit
+- `*=`: enthält genauen Wert
+- `~=`: enthält genauen Wert (mit Leerzeichen getrennt, vgl. class)
+- `|=`: enthält genauen Wert oder mit Wert beginnend gefolgt von "-" (mit Leerzeichen getrennten, vgl. class)
+- "OR"-Verknüpfung im HTML: `<p andre="andre klaus grimm">`
+- [siehe MSDN für bessere Erklärungen](https://developer.mozilla.org/de/docs/Web/CSS/Attribute_selectors#%C3%BCbersicht)
+
+### Beispiel-CSS
+
+<!-- md2apkg ignore-card -->
+<!--🤮-->
+
+```css
+* {
+  font-family: Verdana, sans-serif;
+}
+h2 {
+  color: rgb(5, 80, 51);
+}
+#main-title {
+  background-color: darkslategray;
+  color: floralwhite;
+  padding: .5em;
+  border-radius: .8em .8em 0 0;
+  margin-bottom: 1cm;
+}
+#main-foot {
+  border: solid 2px darkslategray;
+  border-radius: 0 0 .8em .8em;
+  padding: 1em;
+
+  flex-direction: row;
+}
+#mein-kontakt {
+  position: absolute;
+  top: 1em;
+  left: 20px;
+}
+#flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; /*horizontale Ausrichtung*/
+  flex-wrap: wrap; /*Der Bandscheibenvorfall*/
+  align-items: center;
+  height: 20vh;
+  width: 70vw;
+  border: 1px solid black;
+}
+```
+
+### Flex-Container
+
+### Grid-Container
+
+- können HTML als Raster formatieren
+
+```css
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /*Anzahl der Spalten in Fractions, Platz wird aufgeteilt*/
+  grid-template-rows: 1fr 2fr 1fr;
+  justify-content: center;
+  height: 40vh;
+  width: 80vw;
+  margin: 0 auto;
+}
+```
+
+- Linien in Zeilen / Spalten kann man Namen geben: ``grid-template-coloumns: [vorne] fit-content [mitte] 2fr [hinten] 3fr``
+- negative Zahlen in bspw. ``grid-coloumn`` zählen von rechts nach links (d.h. vom Ende aus)
+- man kann alternativ die ganze Tabelle auf einmal definieren:
+
+```css
+grid-template-areas: "head head head head"
+                     "nav main main main"
+                     "nav main main main"
+                     "foot foot foot foot"
+                     ;
+```
+
+### Media-Queries
+
+- Deklaration: ``@media (bedingung) {style}``
 
 ## JS
 
 # PHP und Datenbanken
 
 # Moderne Webentwicklung mit Frameworks
+
+<!--Haha, LOL-->
