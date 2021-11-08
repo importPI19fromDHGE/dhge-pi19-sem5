@@ -29,7 +29,7 @@ Systemprogrammierung / Verteilte Systeme
     - [PIA 03/11/21](#pia-031121)
       - [Wozu Semaphoren](#wozu-semaphoren)
       - [Semaphoren unterscheiden](#semaphoren-unterscheiden)
-        - [Semaphoren benutzen](#semaphoren-benutzen)
+      - [Semaphoren benutzen](#semaphoren-benutzen)
       - [Wann werden Semaphoren- Operationen aufgerufen](#wann-werden-semaphoren--operationen-aufgerufen)
 - [Systemprogrammierung](#systemprogrammierung)
   - [Lernziele/Themenschwerpunkte](#lernzielethemenschwerpunkte)
@@ -115,7 +115,7 @@ Daher Interprozesskommunikation notwendig
 Binäre Semaphoren - Zählende Semaphoren
 Phasen Frei/Blockiert - Anzahl Ressourcen verwaltbar
 
-##### Semaphoren benutzen
+#### Semaphoren benutzen
 
 Deklaration
 Initialisierung
