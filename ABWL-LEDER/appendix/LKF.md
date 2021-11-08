@@ -16,7 +16,7 @@
 
 - übertragene & angenommene Pflicht der Aufgabenerfüllung
 - Verantwortung wird vom Vorgesetzten (Delegation, Zielvereinbarung, Stellenbeschreibung) an MA übergeben
-  - MA hat die Pflicht (-> Verantwortung) zur Aufgaben-/Zielerfüllung
+  - MA hat die Pflicht ($\rightarrow$ Verantwortung) zur Aufgaben-/Zielerfüllung
 
 - Kompetenzen einer Stelle
   - Weisung
@@ -28,14 +28,14 @@
 #### Sie beherrschen den Überblick über die Organisationsformen
 
 - Liniensystem
-  - Einliniensystem (-> Ftunktional-Organisation, -> Sparten-Organisation)
-  - Mehrliniensystem (->Funktional-Organisation, -> Sparten-Organisation, -> Matrix-Organisation)
-  - Stabsliniensystem (->Funktional-Organisation, -> Sparten-Organisation, -> Matrix-Organisation)
-- Organisationsform [Primärorganisation]
-  - Funktional-Organisation (-> Center-Organisation)
-  - Sparten-Organisation (-> Center-Organisation)
-  - Matrix-Organisation (-> Center-Organisation)
-- Organisationsformen [Sekundärorganisation]
+  - Einliniensystem ($\rightarrow$ Funktional-Organisation, $\rightarrow$ Sparten-Organisation)
+  - Mehrliniensystem ($\rightarrow$ Funktional-Organisation, $\rightarrow$ Sparten-Organisation, $\rightarrow$ Matrix-Organisation)
+  - Stabsliniensystem ($\rightarrow$ Funktional-Organisation, $\rightarrow$ Sparten-Organisation, $\rightarrow$ Matrix-Organisation)
+- Organisationsform \[Primärorganisation\]
+  - Funktional-Organisation ($\rightarrow$ Center-Organisation)
+  - Sparten-Organisation ($\rightarrow$ Center-Organisation)
+  - Matrix-Organisation ($\rightarrow$ Center-Organisation)
+- Organisationsformen \[Sekundärorganisation\]
   - Center-Organisation
 
 #### Sie kennen die drei Linienorganisationen
@@ -44,7 +44,7 @@
   - Verrichtungszentralisation
   - Vollkompetenz
   - Einfachunterstellung
-- Mehrliniensystem [Funktionssystem]
+- Mehrliniensystem \[Funktionssystem\]
   - Verrichtungszentralisation
   - Voll- und Teilkompetenz
   - Mehrfachunterstellung
@@ -56,7 +56,7 @@
 #### Sie beherrschen die Darstellung und Erläuterung folgender Formen
 
 - Funktionalorganisation
-  - nach Verrichtungen [Bereiche]
+  - nach Verrichtungen \[Bereiche\]
   - Verrichtungszentralisation
   - Vollkompetenz
   - Einfachunterstellung
@@ -75,10 +75,10 @@
 - Centerorganisation
   - abgeleitet von Spartenorganisation
   - Sparten für definierte Kenngrößen:
-    - Profit-Center -> Erfolgsorientiert [Gewinn]
-    - Cost-Center -> Kostenorientiert [Kostenminimierung]
-    - Revenue-Center -> Umsatzorientiert [Umsatz]
-    - Investment-Center -> Gewinnverwendung [ROI]
+    - Profit-Center $\rightarrow$ Erfolgsorientiert \[Gewinn\]
+    - Cost-Center $\rightarrow$ Kostenorientiert \[Kostenminimierung\]
+    - Revenue-Center $\rightarrow$ Umsatzorientiert \[Umsatz\]
+    - Investment-Center $\rightarrow$ Gewinnverwendung \[ROI\]
 
 #### Sie können Vor- und Nachteile aus den Strukturen ableiten
 
