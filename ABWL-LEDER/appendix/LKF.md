@@ -136,10 +136,10 @@
   - wichtigsten Informationsquellen: Bilanz und die Gewinn- und Verlustrechnung
   - nicht die Gesamtkapitalrentabilität, sondern die Eigenkapitalrentabilität im Fokus
 - RL-Kennzahlensystem
-  -  Rentabilitäts-Liquiditäts-Kennzahlensystem
-  -  relativ wenige Kennzahlen
-  -  Ziel: sachlogische Zusammenhänge abbilden
-  -  Spitze des Kennzahlensystems: Liquidität und Rentabilität
+  - Rentabilitäts-Liquiditäts-Kennzahlensystem
+  - relativ wenige Kennzahlen
+  - Ziel: sachlogische Zusammenhänge abbilden
+  - Spitze des Kennzahlensystems: Liquidität und Rentabilität
 - Kennzahlen-Cockpit
   - z.B. BSC
   - Darstellungsform der Verknüpfung verschiedener Kennzahlen
