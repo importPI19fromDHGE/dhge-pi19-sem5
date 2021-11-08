@@ -153,7 +153,7 @@
   - Einschätzung und Ausblick des Unternehmens (Lagebericht)
 - internes Rechnungswesen
   - Kosten-Leistungs-Rechnung (KLAR)
-  - Selbstkosten der Produkte & DL mit Preiskalkulation der Produkt & DL 
+  - Selbstkosten der Produkte & DL mit Preiskalkulation der Produkt & DL
 
 #### Sie kennen die Funktionen des Externen Rechnungswesen
 
