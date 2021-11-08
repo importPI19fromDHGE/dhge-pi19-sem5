@@ -93,6 +93,7 @@ Benedict: Prozese aufspalten, Vater, Kind Prozess
 #### Haupteigenschaft fork-Prozesse
 
 PID - Prozess ID zu Identifikation
+<!-- Max hier ergänzen wenn du magst ### Eigenschaften eines Prozesses -->
 
 #### Differenzieren zwischen Vater- und Kindprozess
 
@@ -101,9 +102,18 @@ PID des Prozess in getppid wiederfinden
 
 #### Rückgabekategorien fork
 
-`>0`: die PID des Kindprozesses
-`0`: es wurde eben geforkt und wir sind das Kind
-`-1`: Fehler
+```
+>0: die PID des Kindprozesses
+0: es wurde eben geforkt und wir sind das Kind
+-1: Fehler
+```
+
+### Differenzierung zwischen Vater- und Kind-Prozess
+
+Rückgabewert fork() im Vater ist getpid() vom Kind
+Rückgabewert fork() im Kind ist 0
+getppid() vom Kind ist getpid() vom Vater
+getppid() vom Vater ist die aufrufende Shell
 
 #### Was passiert, wenn man in Schleifen forkt
 
@@ -135,19 +145,6 @@ P - Vor dem kritischen Abschnitt LOCK
 V - Nach dem kritischen Abschnitt UNLOCK
 
 <!--newpage-->
-
-### Was ist ein Fork?
-
-### Welche Rückgabewerte hat fork()
-
-### Eigenschaften eines Prozesses
-
-### Differenzierung zwischen Vater- und Kind-Prozess
-
-### Was passiert, wenn man in Schleifen forkt
-
-- Kinder forken ebenfalls
-- Prozesse vermehren sich expotentiell
 
 # Systemprogrammierung
 
