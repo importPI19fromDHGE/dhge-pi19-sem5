@@ -41,6 +41,7 @@
 
 ### Personalplanung, –Bedarf, – Deckung, –Entwicklung
 
+
 #### Sie kennen die grundsätzlichen Inhalte der Personalplanung
 
 - quantitativ: Recruiting, Kosten, Anpassung
@@ -152,6 +153,60 @@ Vorteile | Nachteile
 wenig Aufwand für die Suche | Neubesetzung der alten Stelle
 MA kennt Unternehmensstruktur | Betriebsblindheit
 Kenntnisse über MA | evtl. Weiterbildungskosten
+
+=======
+- TODO
+
+#### Sie kennen die grundsätzlichen Inhalte der Personalplanung
+
+- TODO
+
+#### Sie kennen die Planungszeiträume und die Auswirkungen auf andere Pläne
+
+- TODO
+
+#### Sie können die Gründe des quantitativen Personaleinsatzes unterscheiden
+
+- TODO
+
+#### Sie kennen die Inhalte des quantitativen Personaleinsatzes
+
+- TODO
+
+#### Sie kennen die drei Methoden zur Berechnung des quantitativen Personaleinsatzes und können diese erläutern
+
+- TODO
+
+#### Sie kennen die Einflussgrößen auf die Personalkosten, die Bestandteile und deren Einteilung
+
+- TODO
+
+#### Sie kennen den Inhalt der qualitativen Personalplanung und können diesen erläutern
+
+- TODO
+
+#### Sie können Personalentwicklungsmaßnahmen in Bezug auf den Arbeitsplatz darstellen und den Personaleinsatz nach Zeiträumen definieren
+
+- TODO
+
+#### Sie kennen Medien und Kanäle der Personalbeschaffung
+
+- TODO
+
+#### Sie kennen die Wirkung des CI auf die Personalbeschaffung und dessen ausschlaggebenden Bestandteile
+
+- TODO
+
+#### Sie kennen notwendige Tätigkeiten bei der Auswahl von Bewerbern
+
+- TODO
+
+#### Sie kennen die Einflussfaktoren zur Bestimmung einer Auswahlmethode
+
+- TODO
+
+#### Sie können Vor- und Nachteile interner und externer Personalbeschaffung darstellen
+
 
 ### Unternehmensethik (?)
 
