@@ -69,10 +69,10 @@
 - **Analogie-Schlussmethode** z.B. Für 100 Aufträge benötigt man 10 MA, also für 150 Aufträge 15 MA
 - betriebliche Vorgänge werden mit einem Zeitaufwand verbunden und einem notwendigen Personalbedarf gegenübergestellt
 
--  **Berechnung des Personalbedarfs**
--  gegenwärtige vorhandene Stellen laut Ermittlungsmethode + neue Bedarfsstellen im Planungszeitraum - entfallende Stellen im Planungszeitraum = Bruttopersonalbedarf
--  gegenwärtiger Personalbestand + feststehende Personalzugänge - feststehende Personalabgänge = fortgeschriebener Personalbedarf
--  Bruttopersonalbedarf - fortgeschriebener Personalbestand = Nettopersonalbedarf
+- **Berechnung des Personalbedarfs**
+- gegenwärtige vorhandene Stellen laut Ermittlungsmethode + neue Bedarfsstellen im Planungszeitraum - entfallende Stellen im Planungszeitraum = Bruttopersonalbedarf
+- gegenwärtiger Personalbestand + feststehende Personalzugänge - feststehende Personalabgänge = fortgeschriebener Personalbedarf
+- Bruttopersonalbedarf - fortgeschriebener Personalbestand = Nettopersonalbedarf
 
 - **Kommentar: Was ist Nr. 3? TODO**
 
@@ -80,11 +80,11 @@
 
 - Einflussgrößen: Entstehung, Art, Entwicklung und Beeinflussung
 - Bestandteile: Lohn-/Gehaltskosten, Lohnzusatzkosten, Personalbeschaffungskosten, Personalverwaltungskosten, Personalentwicklungskosten, sonstige Personalkosten
-- Einteilung: 
+- Einteilung:
   - direkte Kosten: Lohn, Gehalt, Lohnzusatz
   - Indirekte Kosten: Personal-Beschaffung, Personal-Entwicklung, Personal-Verwaltung
   - Weitere: Weiterbildung, Consulting, ...
-   
+
 #### Sie kennen die Inhalte der qualitativen Personalplanung und können diesen erläutern
 
 - fachliche, methodische, persönliche Kompetenzen
@@ -100,7 +100,7 @@
   - Langfristig [strategisch]: Entwicklung Stellen und AP, PE der MA
   - Mittelfristig [taktisch]: Grundsätzlicher Arbeitsplatz, Schulungen
   - Kurzfristig [operativ]: Zuordnung zum Arbeitsplatz, Vertretungen
-  - Disposition [operativ]: Personaleinsatzplan 
+  - Disposition [operativ]: Personaleinsatzplan
 
 #### Sie kennen Medien und Kanäle der Personalbeschaffung
 
