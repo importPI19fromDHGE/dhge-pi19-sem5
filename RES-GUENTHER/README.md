@@ -257,7 +257,7 @@ int main()
   - Vaterprozess erzeugt Sohnprozess mit `fork()`
   - Sohnprozess erbt Pipe
 - Programmierung:
-  - inkludierung von `sys/unistd.h`
+  - Inkludierung von `sys/unistd.h`
   - `int pipe(int fd[2])`
     - `fd[0]` zum Lesen
     - `fd[1]` zum Schreiben
