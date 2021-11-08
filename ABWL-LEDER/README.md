@@ -130,6 +130,7 @@ Projektmanagement
 - Auftragszeit berechnen
 - KVP (Kontinuierlicher Verbesserungsprozess)
 - interne vs. externe Mitarbeiter-Beschaffung
+- Überblick über die Kennzahlensysteme
 - ZVEI basiert auf ROI (Grundlage Dupont), unterteilt in 4 Sektoren (2 Ertragskraft, 2 Risiko); keine Berechnungen können, nur beschreiben
 - RL: Darstellung (gelb) Bilanz, Controlling (zur Leistungserbringung)
 - Dashboard interpretieren
