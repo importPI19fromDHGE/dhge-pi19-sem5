@@ -117,49 +117,99 @@
 
 #### Sie kennen die Notwendigkeit von Kennzahlen zur Führung von Prozessen
 
-- TODO
+- Problemerkennung
+- Situationsbewertung
+- Darstellung von Zusammenhängen und Abhängigkeiten
+- Grundlage für Entscheidungen
+- Kontrolle von Entscheidungen
+- Benchmark/Vergleich
+- Zusammenfassung: **Vergleichbarkeit, Verständlichkeit, Benutzerfreundlichkeit**
 
 #### Sie kennen die vier wesentlichen Kennzahlensysteme und können diese erläutern
 
-- TODO
+- DuPont-Kennzahlensystem
+  - ältestes Kennzahlensystem, Grundlage für den Rest
+  - Fokus auf ROI
+  - verwendeten Kennzahlen überwiegend aus dem betrieblichen Rechnungswesen, Vergleichbarkeit
+  - ausschließlich rückblickenden Betrachtung monetärer Größen
+- ZVEI-Kennzahlensystem
+  - wichtigsten Informationsquellen: Bilanz und die Gewinn- und Verlustrechnung
+  - nicht die Gesamtkapitalrentabilität, sondern die Eigenkapitalrentabilität im Fokus
+- RL-Kennzahlensystem
+  -  Rentabilitäts-Liquiditäts-Kennzahlensystem
+  -  relativ wenige Kennzahlen
+  -  Ziel: sachlogische Zusammenhänge abbilden
+  -  Spitze des Kennzahlensystems: Liquidität und Rentabilität
+- Kennzahlen-Cockpit
+  - z.B. BSC
+  - Darstellungsform der Verknüpfung verschiedener Kennzahlen
+  - Zielverfolgungssystem für ein Unternehmen
 
 #### Sie kennen den Unterschied des externen und internen Rechnungswesen und können dessen Zusammenhang erläutern
 
-- TODO
+- externes Rechnungswesen
+  - Bilanz
+  - Erfolgsrechnung (Gewinn- und Verlustrechnung)
+  - Einschätzung und Ausblick des Unternehmens (Lagebericht)
+- internes Rechnungswesen
+  - Kosten-Leistungs-Rechnung (KLAR)
+  - Selbstkosten der Produkte & DL mit Preiskalkulation der Produkt & DL 
 
 #### Sie kennen die Funktionen des Externen Rechnungswesen
 
-- TODO
+- Informationsfunktion: Informationsaustausch zw. Kapitalgeber und Management - vergangenheitsbasiert (dient möglicher Prognose)
+- Ausschützungsbemessungsfunktion: Gewinnermittlung & Gewinnverwendung
+- Im Rahmen der Insolvenz: Signal für Überschuldung & Vermögen des SChuldners < den Verbindlichkeiten des Schuldners
+- Entscheidungsanreizsystem: Bilanzpolitik - Beeinflussung von Entscheidungen (Bsp. Kapitalvergabe, Top-Management, Anlagestrategien..)
+
+- Entscheidungsgrundlage für: Unternehmensexterne, Top-Management, Betriebsrat
+- Ziel: Vergangenheitsorientierte Dokumentation und Rechenschaftslegung
+- gesetzliche Regelung: beachten handels- und steuerrechtlicher Regelungen
+- Objekt der erfassten Daten: das ganze Unternehmen
+- Zeitaum der erfassten Daten: ein Jahr (im Allgemeinen)
+- Instrumente: Bilanz, Gewinn- und Verlustrechnung, Lagebericht, Kapitalfluss, Eigenkapitalspiegel
 
 #### Sie können die Bedeutung des externen Rechnungswesen erläutern
 
-- TODO
+- TODO **Kommentar: wieder etwas irritiert, was er hören will.. irgendwo S. 18-26 ist die Wahrheit**
 
 ### Internes Rechnungswesen
 
 #### Sie kennen die Funktionen des internen Rechnungswesen
 
-- TODO
+- Entscheidungsgrundlage für: Unternehmensintnerne, Management, Betriebsrat, MA
+- Ziel: Planung & Steuerung der betrieblichen Prozesse (meist mittels ERP-System)
+- gesetzliche Regelung: Grundsatz ist die doppelte Buchführung, Einzelvorschriften in der Darstellung (z.B. Abschreibung)
+- Objekt der erfassten Daten: von einzelnen Unternehmensbereichen (Abteilung, Gruppe, Bereich..) bis zum Gesamtunternehmen
+- Zeitraum der erfassten Daten: unterjährig $\rightarrow$ Kostenleistungsrechnung (KLR), mehrjährig $\rightarrow$ Investitionsrechnung (Abschreibung gesamt)
+- Instrumente: KLAR, Investitionsrechnung, Finanzrechnung (Bonität)
 
 #### Sie können die Funktion der BSC erläutern
 
-- TODO
+- Verbindungsglied zwischen Strategiefindung und -umsetzung
+- traditionelle finanzielle Kennzahlen durch eine Kunden-, eine interne Prozess- und eine Lern- und Entwicklungsperspektive ergänzt
 
 #### Sie kennen mindestens drei Vor- und Nachteile der BSC und können diese erläutern
 
-- TODO
+Vorteile | Nachteile
+---------|----------
+schneller, pointierter Blick auf wichtige Fakten | beliebige Wahl der Kennzahlen & Interpretationen
+Flexibilität, Anpassung an jedes Unternehmen durch Fülle an Kennzahlen mögl. | Vernachlässigung langfristiger Gewinne zu Gunsten kurzfristiger Gewinne, bei kompletter Ausrichtung auf Kennzahlen
+einfache Programmierbarkeit und Aufnahme in die EDV bei Rechnersystemen | Kennzahleninflation, bei zu vielen Kennzahlen stehen Nutzen und Erstellungsaufwand nicht in Relation
 
 #### Sie können die Vollkostenrechnung erläuternd darstellen
 
-- TODO
+- Erfassung aller Kosten und deren Zuordnung zum Produkt oder Dienstleistung
+- feste Kosten, festes gewünschtes Einkommen, fester Preis
 
 #### Sie können die Teilkostenrechnung erläuternd darstellen
 
-- TODO
+- Aufteilung der Kosten nach Zurechenbarkeit $\rightarrow$ fix-Kosten / variable Kosten
+- nachdem gewünschtes Einkommen & feste Kosten erreicht $\rightarrow$ Berücksichtigung variabler Kosten mit neuem (günstigerem) Preis
 
 #### Sie kennen die Kontenklassen des allgemeinen Industriekontenrahmens
 
-- TODO
+- TODO **Kommentar: S. 35-36, würde ich aber rauslassen.. würde bei uns im Unterricht auch geskipped**
 
 ## Skript 3
 
