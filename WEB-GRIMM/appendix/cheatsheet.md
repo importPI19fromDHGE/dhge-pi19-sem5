@@ -36,6 +36,7 @@
     <head> <!-- Dateikopf-->
     </head>
     <body>
+        <script src=""></script>
         <header></header>
         <nav></nav>
         <main>
@@ -58,7 +59,6 @@
 <meta name="keywords" content="HTML, CSS">
 <meta name="author" content="John Doe">
 <link rel="stylesheet" href="styles.css">
-<script>...</script>
 <title>Titel</title>
 ```
 ## Links
@@ -246,9 +246,46 @@
 
 # JavaScript
     
+- JavaScript-Engine
+    - chrome: V8
+    - firefox: SpiderMonkey
+- Node -> Nutzung von JS ohne Browser    
 - z.B. To Do Liste, Button zum Einfügen eines Elementes
 - Form html Tag mit "onsubmit=addTodo()"
 
+## Datentypen
+
+- String
+- Number
+- Boolean    
+- Symbol
+- undefined
+- BigInt
+    
+### komplexe Datentypen
+    
+- Array
+- Object
+- function    
+- null
+    
+## Operatoren
+    
+- klassische C-Operatoren
+- ** ist für das potenzieren
+- == -> formatiert ggf. Datentypen um Gleichheit zu erreichen 23 == '23' -> true (!=)
+- 23 === '23' -> false (!==)
+
+## DOM - Document Object Model
+    
+```javascript
+    getElementById();
+    getElementByName();
+    getElementByTagName(); //z.B. <p>
+    querySelector(); //gibt erstes Element, das dem angegebenen CSS-Selektor entspricht
+    querySelectorAll(); //gibt alle Elemente, die dem angegebenen CSS-Selektor entsprechen
+```
+    
 ## Function Syntax
 
 ```javascript
@@ -257,6 +294,22 @@
     //todofield.value Wert der in dem HTML Element mit HTML ID (hier von Input Feld) todofield vorhanden ist
     todofield.value ="Hallo" //im Inputfield wird nach Btnklick "Hallo" eingefügt}
 ```
+    
+## Unterschied JavaScript & ECMA-Script
+    
+- ECMA-Script -> Standard
+- JavaScript (& andere Scriptsprachen) -> setzen diesen Standard um
+    
+## Variablen
+```javascript  
+let variable; //undefined
+variable = 2; //number    
+variable = 'string';    
+use strict; //strenger Modus    
+const variable = 45;
+const Pi = 3.1415;    
+```    
+    
 #### Klausur
 
 - allg. Fragen zu Technologien im Web
