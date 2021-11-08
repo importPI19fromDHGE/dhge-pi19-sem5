@@ -41,57 +41,117 @@
 
 ### Personalplanung, –Bedarf, – Deckung, –Entwicklung
 
-- TODO
-
 #### Sie kennen die grundsätzlichen Inhalte der Personalplanung
 
-- TODO
+- quantitativ: Recruiting, Kosten, Anpassung
+- qualitativ: Einsatz, Kosten, Entwicklung
 
 #### Sie kennen die Planungszeiträume und die Auswirkungen auf andere Pläne
 
-- TODO
+- strategisch: >3/5Jahre, langfristig, grundlegende Ziele
+- taktisch: >1 bis 3/5 Jahre, mittelfristig, Teilziele
+- operativ: kurzfristig, Prozess-Steuerung
 
 #### Sie können die Gründe des quantitativen Personaleinsatzes unterscheiden
 
-- TODO
+- Ersatz-Bedarf: Natürliche und künstliche Fluktuation
+- Neu-Bedarf: Expansion, neue Prozesse
+- Mehr-Bedarf: Saisonale, Strukturveränderungen
+- Reserve-Bedearf: Ausfallbedarfe, Befristeter Bedarf
+- Nachhol-Bedarf: Unbesetzte Kapazitäten, neue Aufgaben
 
 #### Sie kennen die Inhalte des quantitativen Personaleinsatzes
 
-- TODO
+- TODO **Kommentar: Folie 78? Bin mir unsicher, was darauf die richtige Antwort ist**
 
 #### Sie kennen die drei Methoden zur Berechnung des quantitativen Personaleinsatzes und können diese erläutern
 
-- TODO
+- **Analogie-Schlussmethode** z.B. Für 100 Aufträge benötigt man 10 MA, also für 150 Aufträge 15 MA
+- betriebliche Vorgänge werden mit einem Zeitaufwand verbunden und einem notwendigen Personalbedarf gegenübergestellt
+
+-  **Berechnung des Personalbedarfs**
+-  gegenwärtige vorhandene Stellen laut Ermittlungsmethode + neue Bedarfsstellen im Planungszeitraum - entfallende Stellen im Planungszeitraum = Bruttopersonalbedarf
+-  gegenwärtiger Personalbestand + feststehende Personalzugänge - feststehende Personalabgänge = fortgeschriebener Personalbedarf
+-  Bruttopersonalbedarf - fortgeschriebener Personalbestand = Nettopersonalbedarf
+
+- **Kommentar: Was ist Nr. 3? TODO**
 
 #### Sie kennen die Einflussgrößen auf die Personalkosten, die Bestandteile und deren Einteilung
 
-- TODO
+- Einflussgrößen: Entstehung, Art, Entwicklung und Beeinflussung
+- Bestandteile: Lohn-/Gehaltskosten, Lohnzusatzkosten, Personalbeschaffungskosten, Personalverwaltungskosten, Personalentwicklungskosten, sonstige Personalkosten
+- Einteilung: 
+  - direkte Kosten: Lohn, Gehalt, Lohnzusatz
+  - Indirekte Kosten: Personal-Beschaffung, Personal-Entwicklung, Personal-Verwaltung
+  - Weitere: Weiterbildung, Consulting, ...
+   
+#### Sie kennen die Inhalte der qualitativen Personalplanung und können diesen erläutern
 
-#### Sie kennen den Inhalt der qualitativen Personalplanung und können diesen erläutern
-
-- TODO
+- fachliche, methodische, persönliche Kompetenzen
+- notwendige, vorhandene, künftige Kompetenzen
+- Kenntnis der Potenziale der MA (Definition vorhandener Potentiale der MA)
+- Anforderungsprofile für eine Stelle (Definition der notwendigen Anforderungen einer Stelle)
+- Abgleich des Bedarfs (Soll-IST-Vergleich)
 
 #### Sie können Personalentwicklungsmaßnahmen in Bezug auf den Arbeitsplatz darstellen und den Personaleinsatz nach Zeiträumen definieren
 
-- TODO
+- TODO **Kommentar: Personalentwicklungsmaßnahmen irgendwo zwiscehn S. 113 bis S. 124, bin mir unschlüssig**
+- Personaleinsatz - Zeiträume
+  - Langfristig [strategisch]: Entwicklung Stellen und AP, PE der MA
+  - Mittelfristig [taktisch]: Grundsätzlicher Arbeitsplatz, Schulungen
+  - Kurzfristig [operativ]: Zuordnung zum Arbeitsplatz, Vertretungen
+  - Disposition [operativ]: Personaleinsatzplan 
 
 #### Sie kennen Medien und Kanäle der Personalbeschaffung
 
-- TODO
+- Social Media
+- Anzeigen in Werbeträgern
+- Kontakte zu Bewerben
+- Präsenz auf Messen
+- Zusammenarbeit mit Bildungsträgern
+- Vorhandene MA
 
 #### Sie kennen die Wirkung des CI auf die Personalbeschaffung und dessen ausschlaggebenden Bestandteile
 
-- TODO
+- Corporate Identity wirkt nach innen & außen
+- Bestandteile: Corporate Behaviour, Corporate Communication
+- als Orientierung, wie sich das Unternehmen am Markt/Gesellschaft verhält
 
 #### Sie kennen notwendige Tätigkeiten bei der Auswahl von Bewerbern
 
-- TODO
+- Speichern
+- Abfragen
+- Kommunizieren
+- Aufbereiten
+- Zusagen
+- Absagen
+- Kosten
+- Controlling
 
 #### Sie kennen die Einflussfaktoren zur Bestimmung einer Auswahlmethode
 
-- TODO
+- Arbeitsmarkt
+- Präferenz des Unternehmens
+- Anforderungsprofil
+- Unternehmensstandort
+- Budget
+- Zeit
 
 #### Sie können Vor- und Nachteile interner und externer Personalbeschaffung darstellen
+
+**externe Personalbeschaffung**
+Vorteile | Nachteile
+---------|-----------
+nicht intern nachbesetzen | Einarbeitungszeit
+neues Wissen | kaum/keine Kenntnisse über MA
+schnell verfügbar, keine Ausbildungskosten | Aufwand der Suche
+
+**interne Personalbeschaffung**
+Vorteile | Nachteile
+---------|-----------
+wenig Aufwand für die Suche | Neubesetzung der alten Stelle
+MA kennt Unternehmensstruktur | Betriebsblindheit
+Kenntnisse über MA | evtl. Weiterbildungskosten
 
 ### Unternehmensethik (?)
 
