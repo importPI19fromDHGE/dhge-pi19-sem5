@@ -34,7 +34,7 @@
 
 ## Welche Betriebssysteme stehen für CAD-Systeme bevorzugt zur Verfügung?
 
-Windows, macOS, Linux als Ausnahme.
+Windows, macOS (Linux als Ausnahme)
 
 ## Nennen Sie bekannte bzw. große Hersteller für CAD-Systeme.
 
@@ -51,7 +51,7 @@ Windows, macOS, Linux als Ausnahme.
 ## Beschreiben Sie die Herangehensweise für die Geometriebeschreibung mittels CSG.
 
 - CSG $\rightarrow$ Constructive Solid Geometry
-- Platzierung von graphischen Primitiven, sodass sie eine Schnittmenge ergeben $\rightarrow$ verknüpfung mit booleschen Operatoren
+- Platzierung von graphischen Primitiven, sodass sie eine Schnittmenge ergeben \rightarrow\rightarrow Verknüpfung mit booleschen Operatoren
 
 ## Was sind Feature im Zusammenhang mit CAD-Modellen?
 
@@ -60,13 +60,13 @@ Windows, macOS, Linux als Ausnahme.
 - manipulieren Komponenten
 - sind Kindelemente von Komponenten
 
-## Welche Booleschen Operatoren kennen Sie im Zusammenhanf mit CSG?
+## Welche Booleschen Operatoren kennen Sie im Zusammenhang mit CSG?
 
 - Vereinigung, Differenzmenge, Schnittmenge
 
 ## Beschreiben Sie die geometrische Nutzung boolescher Operationen in CAD und CG.
 
-- Kombination graphischer Primitive zur Bildung komplexer Geomatrien
+- Kombination graphischer Primitive zur Bildung komplexer Geometrien
 
 ## Aus welchen geometrischen Elementen ist eine komplexe Geometrie aufgebaut?
 
