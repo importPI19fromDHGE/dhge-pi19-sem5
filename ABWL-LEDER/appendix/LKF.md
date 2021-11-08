@@ -172,24 +172,6 @@
 #### Sie können die Bedeutung des externen Rechnungswesen erläutern
 
 - TODO **Kommentar: wieder etwas irritiert, was er hören will.. irgendwo S. 18-26 ist die Wahrheit**
-=======
-- TODO
-
-#### Sie kennen die vier wesentlichen Kennzahlensysteme und können diese erläutern
-
-- TODO
-
-#### Sie kennen den Unterschied des externen und internen Rechnungswesen und können dessen Zusammenhang erläutern
-
-- TODO
-
-#### Sie kennen die Funktionen des Externen Rechnungswesen
-
-- TODO
-
-#### Sie können die Bedeutung des externen Rechnungswesen erläutern
-
-- TODO
 
 ### Internes Rechnungswesen
 
@@ -228,26 +210,6 @@ einfache Programmierbarkeit und Aufnahme in die EDV bei Rechnersystemen | Kennza
 #### Sie kennen die Kontenklassen des allgemeinen Industriekontenrahmens
 
 - TODO **Kommentar: S. 35-36, würde ich aber rauslassen.. würde bei uns im Unterricht auch geskipped**
-
-#### Sie können die Funktion der BSC erläutern
-
-- TODO
-
-#### Sie kennen mindestens drei Vor- und Nachteile der BSC und können diese erläutern
-
-- TODO
-
-#### Sie können die Vollkostenrechnung erläuternd darstellen
-
-- TODO
-
-#### Sie können die Teilkostenrechnung erläuternd darstellen
-
-- TODO
-
-#### Sie kennen die Kontenklassen des allgemeinen Industriekontenrahmens
-
-- TODO
 
 ## Skript 3
 
