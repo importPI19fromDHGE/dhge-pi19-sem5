@@ -269,7 +269,7 @@
 
 #### Sie kennen die Möglichkeiten der Preisgestaltung und können diese erläutern
 
-- Einfluss auf den Preis: 
+- Einfluss auf den Preis:
   - Kostenorientierung (Kalkulation)
   - Gewinnchance (SWOT)
   - Kundenakzeptanz (Nachfrage und Bedarf)
@@ -296,17 +296,17 @@
 - Produkt-/Dienstleistungspolitik
   - Produkt-/Dienstleistungsportfolio
   - Breite & Tiefe des Sortiments
-  - Aktualität 
+  - Aktualität
 - Distributionspolitik
   - Vertrieb
   - Bereitstellung und Logistik
   - Pflege der Kundenbeziehungen
 - Kommunikationspolitik
   - Werbung
-  - Einsatz der Werbemittel/-Träger und Zielgruppenansprache 
+  - Einsatz der Werbemittel/-Träger und Zielgruppenansprache
 - Preispolitik
   - Preis der Produkte/Dienstleistungen
-  - Angebot und Nachfrage 
+  - Angebot und Nachfrage
 
 # Lernkontrollfragen Projektmanagement
 
