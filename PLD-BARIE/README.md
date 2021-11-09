@@ -172,7 +172,7 @@ Als PLD (Programmable Logic Device) werden **elektronische Bauelemente** bezeich
 
 ## Abgrenzung zu anderen Technologien
 
-**ASIC (application-specific integrated circuit)**
+**ASIC (application-specific integrated circuit)**:
 
 - integrierter Schaltkreis
 - für bestimmten Anwendungsfall entworfen und optimiert
@@ -182,7 +182,7 @@ Als PLD (Programmable Logic Device) werden **elektronische Bauelemente** bezeich
 
 - wie ASIC, nur dass diese Bauteile am Markt verkauft werden (mehrere Kunden)
 
-**Mikrocontroller (uC)**
+**Mikrocontroller (uC)**:
 
 - elektronische Bauteile, die Prozessor und Peripheriefunktionen enthalten
 - Funktion wird durch Software verwirklicht
@@ -201,3 +201,38 @@ Als PLD (Programmable Logic Device) werden **elektronische Bauelemente** bezeich
 |Hohe Stückzahlen möglich|++|++|++|+|
 
 > lt. Folien aus: Gehrke; Winzker; Urbanski; Woitowitz: *Digitaltechnik*. Springer Vieweg; 2018
+
+# VHDL - Very High Speed Integrated Circuit Hardware Description Language
+
+## VHDL-Modelle
+
+### Architecture
+
+### Entity
+
+### Configuration
+
+## Packages / Bibliotheken
+
+## Datentypen
+
+## Typumwandlungen
+
+## Operatoren
+
+## Signale
+
+## Components
+
+## Processes
+
+## Testen mit VHDL
+
+- VHDL bietet die Möglichkeiten, eine sogenannte **Testbench** zu erstellen
+  - für ein zu testendes Design (DUT - design under test) wird ein dafür passender Stimulus programmiert
+  - Der Stimulus generiert die Inputs, für die das Design getestet werden soll
+  - die durch das DUT zurückgelieferten Outputs können auf ihre Richtigkeit getestet werden, und zwar durch:
+    - Betrachten der Outputs des Simulations-Tools (Wellenform)
+    - Programmieren eines Output-Checkers
+
+## JTAG
