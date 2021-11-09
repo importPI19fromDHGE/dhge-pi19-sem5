@@ -163,10 +163,10 @@
 - Entscheidungsanreizsystem: Bilanzpolitik - Beeinflussung von Entscheidungen (Bsp. Kapitalvergabe, Top-Management, Anlagestrategien..)
 
 - Entscheidungsgrundlage für: Unternehmensexterne, Top-Management, Betriebsrat
-- Ziel: Vergangenheitsorientierte Dokumentation und Rechenschaftslegung
+- Ziel: vergangenheitsorientierte Dokumentation und Rechenschaftslegung
 - gesetzliche Regelung: beachten handels- und steuerrechtlicher Regelungen
 - Objekt der erfassten Daten: das ganze Unternehmen
-- Zeitaum der erfassten Daten: ein Jahr (im Allgemeinen)
+- Zeitraum der erfassten Daten: ein Jahr (im Allgemeinen)
 - Instrumente: Bilanz, Gewinn- und Verlustrechnung, Lagebericht, Kapitalfluss, Eigenkapitalspiegel
 
 #### Sie können die Bedeutung des externen Rechnungswesen erläutern
@@ -177,7 +177,7 @@
 
 #### Sie kennen die Funktionen des internen Rechnungswesen
 
-- Entscheidungsgrundlage für: Unternehmensintnerne, Management, Betriebsrat, MA
+- Entscheidungsgrundlage für: Unternehmensinterne, Management, Betriebsrat, MA
 - Ziel: Planung & Steuerung der betrieblichen Prozesse (meist mittels ERP-System)
 - gesetzliche Regelung: Grundsatz ist die doppelte Buchführung, Einzelvorschriften in der Darstellung (z.B. Abschreibung)
 - Objekt der erfassten Daten: von einzelnen Unternehmensbereichen (Abteilung, Gruppe, Bereich..) bis zum Gesamtunternehmen
