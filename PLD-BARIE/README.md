@@ -74,9 +74,7 @@ Als PLD (Programmable Logic Device) werden **elektronische Bauelemente** bezeich
 |Günstig|Teuer|
 |Allgemein gehalten|spezialisiert|
 
-## Unterscheidungskriterien
-
-### Art der Programmierung
+## Unterscheidung nach Art der Programmierung
 
 |Programmierungsart|Beschreibung|Merkmale|
 |---|---|---|
@@ -100,3 +98,91 @@ Als PLD (Programmable Logic Device) werden **elektronische Bauelemente** bezeich
 ||||
 |**(S)RAM**|(static) random-access memory|löschbar, wiederbeschreibbar, **flüchtig**|
 |||flüchtig $\rightarrow$ Strom weg, Inhalt weg|
+
+## Unterscheidung nach internem Aufbau / Komplexität
+
+### SPLD - Simple Programmable Logic Device
+
+> Hinweis: SPLD kam als Bezeichnung nicht in der Vorlesung vor, kann aber als Klassenbezeichnung für PAL, PLA und GAL verwendet werden.
+> further reading: <http://www.informatik.uni-ulm.de/ni/Lehre/SS01/TI/folien/pld.pdf>
+
+#### PAL - Programmable Array Logic
+
+- nach DNF aufgebaut (erste Stufe ist UND-Matrix, zweite Stufe ist ODER-Matrix)
+- UND-Matrix ist als Array programmierbar
+  - es kann also bestimmt werden, welche Eingangsvariablen UND-verknüpft werden sollen
+- ODER-Matrix ist fest vorgegeben
+- auf EEPROM-Basis
+
+#### GAL - General Array Logic
+
+- selbes Kernprinzip wie PAL (1. Stufe = programmierbares UND, zweite Stufe festes ODER) $\rightarrow$ Realisierung DNF
+- besitzen jedoch zusätzlich konfigurierbare Ausganszellen (OLMC)
+  - OLMC = *output logic macrocell*
+  - durch diese können u.A. die Ausgangssignale umgeleitet und wieder in die UND-Matrix zurückgeleitet werden
+- auf EEPROM-Basis
+
+> Zusatzinfo aus <https://k1.spdns.de/Develop/Hardware/K1-Bus%2068008%20CPU%20board%20with%20DRAM/GALs%20und%20so/PLD_Vers.pdf>
+> OLMCs können als Eingang, kombinatorischer Ausgang, Tristate-Ausgang, Tristate-Ausgang im Registermodus und als Resgisterausgang konfiguriert werden
+
+#### PLA - Programmable Logic Array
+
+- zusätzlich zu der programmierbaren UND-Matrix ist bei PLAs auch die ODER-Matrix programmierbar
+- dies führt zu einer höheren Flexibilität
+- auf EEPROM-Basis
+
+### CPLD - Complex Programmable Logic Device
+
+- bei CPLDs sind mehrere (S)PLDs über eine programmierbare Verbindungsmatrix miteinander verbunden
+  - die frei programmierbare UND & ODER - Matrix wird zudem um sogenannte Makrozellen ergänzt, welche zusätzliche Logiken implementieren können
+- Ansteuerung der einzelnen Bausteine von Außen daher sowohl über Verbindungsmatrix als auch direkt möglich
+- einfach interne Verdrahtung $\rightarrow$ Signallaufzeiten vorhersagbarar als bei *FPGA*
+- auf EEPROM-Basis
+
+**Leistungsparameter:**
+
+- Anzahl der Makrozellen
+- Max I/Os
+- Max. Taktfrequenz
+- Anzahl der Logikelemente
+- Verzögerungszeit pin-to-pin
+
+### FPGA - Field Programmable Gate Array
+
+- im Gegensatz zu vorab genannten Technologien, die auf logischer Matrix beruhen $\rightarrow$ Look-Up-Tables (LUTs) als zentrales Element der FPGAs
+- sind ein Feld aus Logikblöcken und I/O-Blöcken die über ein Verbindungsnetzwerk verschaltet sind
+- in jedem Logikblock: LUT und Steuerfunktionen
+- oftmals auf SRAM-Basis  $\rightarrow$ müssen nach Wegfall der Spannung neu programmiert werden
+  - Programmierung kann in einigen Modellen aber auf EEPROM- oder Flash-Chips vorgehalten werden
+
+## Abgrenzung zu anderen Technologien
+
+**ASIC (application-specific integrated circuit)**
+
+- integrierter Schaltkreis
+- für bestimmten Anwendungsfall entworfen und optimiert
+- nach Kundenanforderung entworfen und nur an diesen geliefert
+
+**ASSP (application specific standard product)**:
+
+- wie ASIC, nur dass diese Bauteile am Markt verkauft werden (mehrere Kunden)
+
+**Mikrocontroller (uC)**
+
+- elektronische Bauteile, die Prozessor und Peripheriefunktionen enthalten
+- Funktion wird durch Software verwirklicht
+
+### Vergleich
+
+||ASIC|ASSP|uC|FPGA|
+|---|---|---|---|---|
+|Hohe Flexibilität|+|-|+|++|
+|Geringe Entwicklungszeit|--|+|++|O|
+|Geringe Entwicklungskosten|--|+|++|O|
+|Geringe Stückkosten|++|+|++|O|
+|Rechenleistung|++|++|O|+|
+|Verlustleistung|++|++|O|O|
+|Geringe Stückzahlen möglich|--|++|++|++|
+|Hohe Stückzahlen möglich|++|++|++|+|
+
+> lt. Folien aus: Gehrke; Winzker; Urbanski; Woitowitz: *Digitaltechnik*. Springer Vieweg; 2018
