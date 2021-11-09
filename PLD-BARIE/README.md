@@ -63,7 +63,16 @@ Für die Schaltung würde dies bedeuten, dass die Signale zunächst durch UND un
 
 # PLDs: Programmable Logic Devices
 
+## Einordnung und Abgrenzung zum Mikrocontroller
+
 Als PLD (Programmable Logic Device) werden **elektronische Bauelemente** bezeichnet, die in **integrierten Schaltungen** verwendet werden. Sie werden von logischen Gattern dadurch abgegrenzt, dass ihre Funktion konfigurierbar ist (daher *programmable*).
+
+|Mikroprozessor|PLD|
+|---|---|
+|EVA-Prinzip|EVA-Prinzip|
+|Sequenzielle Verarbeitung $\rightarrow$ eher langsam|Parallele Verarbeitung $\rightarrow$ eher schnell|
+|Günstig|Teuer|
+|Allgemein gehalten|spezialisiert|
 
 ## Unterscheidungskriterien
 
