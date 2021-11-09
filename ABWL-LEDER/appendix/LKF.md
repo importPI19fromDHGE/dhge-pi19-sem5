@@ -152,7 +152,7 @@
   - Erfolgsrechnung (Gewinn- und Verlustrechnung)
   - Einschätzung und Ausblick des Unternehmens (Lagebericht)
 - internes Rechnungswesen
-  - Kosten-Leistungs-Rechnung (KLAR)
+  - Kosten-Leistungs-Rechnung (KLR)
   - Selbstkosten der Produkte & DL mit Preiskalkulation der Produkt & DL
 
 #### Sie kennen die Funktionen des Externen Rechnungswesen
@@ -182,7 +182,7 @@
 - gesetzliche Regelung: Grundsatz ist die doppelte Buchführung, Einzelvorschriften in der Darstellung (z.B. Abschreibung)
 - Objekt der erfassten Daten: von einzelnen Unternehmensbereichen (Abteilung, Gruppe, Bereich..) bis zum Gesamtunternehmen
 - Zeitraum der erfassten Daten: unterjährig $\rightarrow$ Kostenleistungsrechnung (KLR), mehrjährig $\rightarrow$ Investitionsrechnung (Abschreibung gesamt)
-- Instrumente: KLAR, Investitionsrechnung, Finanzrechnung (Bonität)
+- Instrumente: KLR, Investitionsrechnung, Finanzrechnung (Bonität)
 
 #### Sie können die Funktion der BSC erläutern
 
