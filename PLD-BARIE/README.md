@@ -60,3 +60,34 @@ Für die Schaltung würde dies bedeuten, dass die Signale zunächst durch UND un
 - die LUT werden in SRAM-Zellen hinterlegt und könnend ann durch Ansteuerung der Eingänge ausgelesen werden
 
 > weitere Infos: <https://de.wikipedia.org/wiki/Field_Programmable_Gate_Array#Aufbau_und_Struktur>
+
+# PLDs: Programmable Logic Devices
+
+Als PLD (Programmable Logic Device) werden **elektronische Bauelemente** bezeichnet, die in **integrierten Schaltungen** verwendet werden. Sie werden von logischen Gattern dadurch abgegrenzt, dass ihre Funktion konfigurierbar ist (daher *programmable*).
+
+## Unterscheidungskriterien
+
+### Art der Programmierung
+
+|Programmierungsart|Beschreibung|Merkmale|
+|---|---|---|
+|**Fuse**|Verbindungen, die nach der Produktion bestehen, werden **aufgetrennt**|Auftrennen ist dauerhaft $\rightarrow$ nur einmal konfigurierbar|
+||dies geschieht z.B. durch Laser oder elektrische Energie||
+||||
+|**Antifuse**|Konfiguration geschieht durch das **Herstellen von Verbindungen**|dauerhaft $\rightarrow$ nur einmal konfigurierbar|
+||durch Laser, Metallmasken, elektrische Energie||
+||||
+|**EPROM**|erasable programmable read-only memory|löschbar, wiederbeschreibbar, nicht flüchtig|
+||nichtflüchtiger Speicher|spezielle Geräte zur Konfiguration benötigt|
+||durch UV-Licht löschbar|wird kaum bis gar nicht mehr verwendet|
+||danach neuprogrammierbar||
+||||
+|**EEPROM**|electrically erasable programmable read-only memory|löschbar, wiederbeschreibbar, nicht flüchtig|
+||elektrisch löschbarer Speicher|wort- und byteweise löschbar|
+||besteht aus Matrix von Feldeffekttransistoren||
+||||
+|**Flash-EEPROM**|Sonderform der EEPROMs|löschbar, wiederbeschreibbar, nicht flüchtig|
+|||nur blockweise löschbar, nicht auf byte- oder Wortgröße|
+||||
+|**(S)RAM**|(static) random-access memory|löschbar, wiederbeschreibbar, **flüchtig**|
+|||flüchtig $\rightarrow$ Strom weg, Inhalt weg|
