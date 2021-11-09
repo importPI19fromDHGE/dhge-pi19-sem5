@@ -176,12 +176,12 @@
   - taktisch: im Middle-Management entschieden, mittelfristige Laufzeiten (1-3 Jahre), Ausrüstung
   - operativ: im Low-Management entschieden, kurzfristige Laufzeiten, routinemäßige Anschaffungen
 - Häufigkeit des Anfallens
-  - einzelne: einmalig, ohne Wdh
+  - einzelne: einmalig, ohne Wdh.
   - als Folge: häufig anfallend, wiederholend
   - als Kette: wiederholend, Bedingtkeit
 - Umfang (Größenordnung)
   - Routine: geringer Zeitaufwand, Ersatz von Material, GWGs (Geringwertiges Wirtschaftsgut) & Schreibmaterialbestellung
-  - Unternehmenspolitisch: hoher Zeitaufwand, Bedeutend für die Leistungsfähigkeit, Ausrüstung
+  - Unternehmenspolitisch: hoher Zeitaufwand, bedeutend für die Leistungsfähigkeit, Ausrüstung
 - der zu erzielenden Wirkung
   - Nettoinvestition: Gründung oder Erweiterung
   - Reinvestition: Ersatz, Rationalisierung, Umstellung, Diversifikation oder Sicherung
@@ -226,15 +226,15 @@
 #### Sie kennen Inhalt, Ziel und Formen der Protektionswirtschaft
 
 - Ziel
-  - Schutzfunktion: einzelne Sektoren einer Volkswirtschaft vor Importkonkurrenz zu schützen
-  - Förderung: eigenen Exportwirtschaft Vorteile auf dem internationalen Markt verschaffen
+  - Schutzfunktion: einzelne Sektoren einer Volkswirtschaft vor Importkonkurrenz schützen
+  - Förderung: eigener Exportwirtschaft Vorteile auf dem internationalen Markt verschaffen
 - TODO **Kommentar: Inhalt und Formen S. 24-26.. ich bin faul**
 
 ### Marketing
 
 #### Sie können Marketing erläuternd darstellen
 
-- mit dem Marketing wird der Bedarf an Produkten/DL bekannt gegeben
+- mit dem Marketing wird der Bedarf an Produkten/Dienstleistungen bekannt gegeben
 - ein Bild vom Unternehmen/Institution/Behörde/...
 - ein Bild von der Leistung/Leistungsfähigkeit...
 - ein Bild von den Produkten...
@@ -243,9 +243,9 @@
 
 #### Sie kennen das AIDA-Prinzip und können dies erläutern
 
-- **A**ention: Wecken von Aufmerksamkeit
+- **A**ttention: Wecken von Aufmerksamkeit
 - **I**nterest: Interesse wecken
-- **D**esire: Wunsch nach Produkt/DL hervorrufen
+- **D**esire: Wunsch nach Produkt/Dienstleistung hervorrufen
 - **A**ction: Kunde soll kaufen
 
 #### Sie beherrschen die Markteinteilung durch Bedarf und Nachfrage
@@ -289,7 +289,7 @@
 #### Sie beherrschen die Darstellung und Nutzen der Preiselastizität
 
 - Das verhältnis aus dem Quotienten der Veränderung der Nachfrage zur absoluten Nachfrage und dem Quotienten der Preisveränderung zum absoluten Preis bildet die Preiselastizität
-- Mathematisch sinkt der Preis mit zunehmender Menge $\rightarrow$ Preiselastizität gibt an wie schnell der Preis sinkt
+- Mathematisch sinkt der Preis mit zunehmender Menge $\rightarrow$ Preiselastizität gibt an, wie schnell der Preis sinkt
 
 #### Sie kennen die Instrumente des Marketing und deren Inhalt
 
@@ -305,7 +305,7 @@
   - Werbung
   - Einsatz der Werbemittel/-Träger und Zielgruppenansprache 
 - Preispolitik
-  - Preis der Produkte/DL
+  - Preis der Produkte/Dienstleistungen
   - Angebot und Nachfrage 
 
 # Lernkontrollfragen Projektmanagement
