@@ -27,6 +27,20 @@ Theorie und Praxis programmierbarer logischer Schaltungen
     - [FPGA - Field Programmable Gate Array](#fpga---field-programmable-gate-array)
   - [Abgrenzung zu anderen Technologien](#abgrenzung-zu-anderen-technologien)
     - [Vergleich](#vergleich)
+- [VHDL - Very High Speed Integrated Circuit Hardware Description Language](#vhdl---very-high-speed-integrated-circuit-hardware-description-language)
+  - [VHDL-Modelle](#vhdl-modelle)
+    - [Architecture](#architecture)
+    - [Entity](#entity)
+    - [Configuration](#configuration)
+  - [Packages / Bibliotheken](#packages--bibliotheken)
+  - [Datentypen](#datentypen)
+  - [Typumwandlungen](#typumwandlungen)
+  - [Operatoren](#operatoren)
+  - [Signale](#signale)
+  - [Components](#components)
+  - [Processes](#processes)
+  - [Testen mit VHDL](#testen-mit-vhdl)
+  - [JTAG](#jtag)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
