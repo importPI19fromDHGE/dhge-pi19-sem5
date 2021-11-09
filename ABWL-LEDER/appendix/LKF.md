@@ -158,7 +158,7 @@
 #### Sie kennen die Funktionen des Externen Rechnungswesen
 
 - Informationsfunktion: Informationsaustausch zw. Kapitalgeber und Management - vergangenheitsbasiert (dient möglicher Prognose)
-- Ausschützungsbemessungsfunktion: Gewinnermittlung & Gewinnverwendung
+- Ausschüttungsbemessungsfunktion: Gewinnermittlung & Gewinnverwendung
 - Im Rahmen der Insolvenz: Signal für Überschuldung und Vermögen des Schuldners < den Verbindlichkeiten des Schuldners
 - Entscheidungsanreizsystem: Bilanzpolitik - Beeinflussung von Entscheidungen (Bsp. Kapitalvergabe, Top-Management, Anlagestrategien..)
 
