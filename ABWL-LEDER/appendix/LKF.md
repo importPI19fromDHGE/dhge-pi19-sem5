@@ -178,7 +178,7 @@
 - Häufigkeit des Anfallens
   - einzelne: einmalig, ohne Wdh.
   - als Folge: häufig anfallend, wiederholend
-  - als Kette: wiederholend, Bedingtkeit
+  - als Kette: wiederholend, Bedingtheit
 - Umfang (Größenordnung)
   - Routine: geringer Zeitaufwand, Ersatz von Material, GWGs (Geringwertiges Wirtschaftsgut) & Schreibmaterialbestellung
   - Unternehmenspolitisch: hoher Zeitaufwand, bedeutend für die Leistungsfähigkeit, Ausrüstung
