@@ -13,7 +13,8 @@ Entwicklung von Webanwendungen
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Prüfungsleistung](#pr%C3%BCfungsleistung)
+- [Entwicklung von Webanwendungen](#entwicklung-von-webanwendungen)
+- [Prüfungsleistung](#prüfungsleistung)
 - [Geschichte des Internets](#geschichte-des-internets)
 - [Technologien](#technologien)
   - [Was ist eine Webanwendung?](#was-ist-eine-webanwendung)
@@ -25,7 +26,7 @@ Entwicklung von Webanwendungen
       - [Bilder](#bilder)
       - [Listen](#listen)
       - [Tabellen](#tabellen)
-      - [Zeilenumbrüche](#zeilenumbr%C3%BCche)
+      - [Zeilenumbrüche](#zeilenumbrüche)
       - [Formulare](#formulare)
       - [Formular-Elemente](#formular-elemente)
     - [Universal Attribute](#universal-attribute)
@@ -600,6 +601,20 @@ grid-template-areas: "head head head head"
 - Deklaration: ``@media (bedingung) {style}``
 
 ## JS
+
+- mittels `<script>`-Tag
+- inline im Tag oder mit `<script src="müll.js">`
+- Ausführung im Browser mit bspw. Chromiums V8 oder Firefox' SpiderMonkey
+- Ausführung auch unabhängig vom Browser mit Node (nicht Node.js)
+- grundsätzlich C-like Sprache
+- Variablendeklaration: ``var Bezeichner`` oder nur ``Bezeichner``
+  - mit Scope: ``let Bezeichner``
+- case-sensitiv
+- implizite Datentypen und Umwandlungen
+- "Dodo-Modus": `use strict`
+- Vergleiche:
+  - ``==``: vergleicht auf denselben Wert, aber castet implizit
+  - ``===`` vergleicht auf denselben Wert und denselben Datentyp
 
 # PHP und Datenbanken
 
