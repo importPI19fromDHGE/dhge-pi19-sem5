@@ -11,7 +11,22 @@ Theorie und Praxis programmierbarer logischer Schaltungen
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Platzhalter](#platzhalter)
+- [Wiederholung Digitaltechnik](#wiederholung-digitaltechnik)
+  - [Disjunktive Normalform (DNF)](#disjunktive-normalform-dnf)
+  - [Konjunktive Normalform](#konjunktive-normalform)
+  - [Look-Up-Tables (LUT)](#look-up-tables-lut)
+- [PLDs: Programmable Logic Devices](#plds-programmable-logic-devices)
+  - [Einordnung und Abgrenzung zum Mikrocontroller](#einordnung-und-abgrenzung-zum-mikrocontroller)
+  - [Unterscheidung nach Art der Programmierung](#unterscheidung-nach-art-der-programmierung)
+  - [Unterscheidung nach internem Aufbau / Komplexität](#unterscheidung-nach-internem-aufbau--komplexit%C3%A4t)
+    - [SPLD - Simple Programmable Logic Device](#spld---simple-programmable-logic-device)
+      - [PAL - Programmable Array Logic](#pal---programmable-array-logic)
+      - [GAL - General Array Logic](#gal---general-array-logic)
+      - [PLA - Programmable Logic Array](#pla---programmable-logic-array)
+    - [CPLD - Complex Programmable Logic Device](#cpld---complex-programmable-logic-device)
+    - [FPGA - Field Programmable Gate Array](#fpga---field-programmable-gate-array)
+  - [Abgrenzung zu anderen Technologien](#abgrenzung-zu-anderen-technologien)
+    - [Vergleich](#vergleich)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
