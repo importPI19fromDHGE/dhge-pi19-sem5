@@ -219,10 +219,13 @@
 
 #### Sie kennen Inhalt, Ziel und Formen der Protektionswirtschaft
 
-- Ziel
-  - Schutzfunktion: einzelne Sektoren einer Volkswirtschaft vor Importkonkurrenz schützen
-  - Förderung: eigener Exportwirtschaft Vorteile auf dem internationalen Markt verschaffen
-- TODO **Kommentar: Inhalt und Formen S. 24-26.. ich bin faul**
+> Form der Handelspolitik, geprägt durch staatliche Maßnahmen um die eigene Volkswirtschaft durch Handelshemmnisse zu schützen und Exportwirtschaft zu fördern.
+
+- **Schutzfunktion:** einzelne Sektoren einer Volkswirtschaft vor Importkonkurrenz zu schützen
+  - Zölle, Abgaben und/oder Preise auf bestimmte Waren/DL durch Land(DE)/Region(EU) aus wirtschaftlichem (tarifär) oder politischem Interesse (nicht tarifär)
+- **Förderung:** eigenen Exportwirtschaft Vorteile auf dem internationalen Markt verschaffen
+  - Erweiterung des Waren-/DL-Austausches zwischen bilateralen (zwei) oder multilaterale (mehreren) Handelspartnern
+  - Maßnahmen zur Schaffung neuer Märkte oder politische Unterstützung einer Entwicklung
 
 ### Marketing
 
