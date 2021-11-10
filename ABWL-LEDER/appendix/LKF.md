@@ -268,7 +268,7 @@
 #### Sie kennen die Möglichkeiten der Preisgestaltung und können diese erläutern
 
 - Einfluss auf den Preis:
-  - Kostenorientierung (Kalkulation)
+  - Kostenorientierung (Kalkulation $\rightarrow$ Teil-, Vollkostenrechnung)
   - Gewinnchance (SWOT)
   - Kundenakzeptanz (Nachfrage und Bedarf)
   - Konkurrenzorientierung (Markt, Reaktion/Aktion): Durchschnittspreis Standort/Region (Branchenpreis), Richtpreis (Preisführer)
