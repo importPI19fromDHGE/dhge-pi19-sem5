@@ -203,15 +203,9 @@
 
 #### Sie können die Kriterien der Einteilung der Betrachtung von Finanzierungen darstellen
 
-- Fristenbezogen
-  - Unbefristet (Kontokorrent)
-  - Befristet (Kredit): kurz-, mittel- oder langfristig
-- Kapitalarten
-  - Eigenkapital
-  - Fremdkapital
-- Kapitalherkunft
-  - Außenfinanzierung: Beteiligungen, Fremdfinanzierung
-  - Innenfinanzierung: aus Erträgen, Freisetzungen
+- **Fristenbezogen:** unbefristet (Kontokorrent), befristet (Kredit $\rightarrow$ kurz-, mittel- oder langfristig)
+- **Kapitalarten:** Eigen-/Fremdkapital
+- **Kapitalherkunft:** Außenfinanzierung (Beteiligungen, Fremdfinanzierung), Innenfinanzierung (Erträge, Freisetzungen)
 
 #### Sie kennen die Strukturkennzahlen und können diese erläutern
 
