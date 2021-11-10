@@ -207,7 +207,7 @@
 - **Kapitalarten:** Eigen-/Fremdkapital
 - **Kapitalherkunft:** Außenfinanzierung (Beteiligungen, Fremdfinanzierung), Innenfinanzierung (Erträge, Freisetzungen)
 
-#### Sie kennen die Strukturkennzahlen und können diese erläutern
+#### Sie kennen die Strukturkennzahlen und können diese erläutern (INFORMATIV)
 
 - Eigenkapitalanteil = Eigenkapital * 100 / Gesamtkapital
 - Rücklagenquote = Rücklagen * 100 / Eigenkapital
