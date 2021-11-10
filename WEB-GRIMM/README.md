@@ -601,6 +601,12 @@ grid-template-areas: "head head head head"
 
 ## JS
 
+### Fancy-Input Beispiel
+
+In diesem Beispiel wird JavaScript verwendet, um das Label eines Inputs dynamisch zu verändern.
+
+[Das Beispiel ist hier zu finden](https://github.com/importPI19fromDHGE/web-fancy-label-as-placeholder)
+
 # PHP und Datenbanken
 
 # Moderne Webentwicklung mit Frameworks
