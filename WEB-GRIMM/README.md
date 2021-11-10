@@ -44,6 +44,7 @@ Entwicklung von Webanwendungen
     - [Grid-Container](#grid-container)
     - [Media-Queries](#media-queries)
   - [JS](#js)
+    - [Fancy-Input Beispiel](#fancy-input-beispiel)
 - [PHP und Datenbanken](#php-und-datenbanken)
 - [Moderne Webentwicklung mit Frameworks](#moderne-webentwicklung-mit-frameworks)
 
