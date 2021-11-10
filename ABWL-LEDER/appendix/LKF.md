@@ -247,9 +247,9 @@
 
 #### Sie beherrschen die Markteinteilung durch Bedarf und Nachfrage
 
-- Polypol: viele Nachfrager, viele Anbieter
-- Oligopol: wenig Anbieter, viele Nachfrager oder viele Anbieter, wenig Nachfrager
-- Monopol: ein Anbieter, viele Nachfrager oder viele Anbieter, ein Nachfrager
+- **Polypol:** viele Nachfrager, viele Anbieter
+- **Oligopol:** wenig Anbieter, viele Nachfrager oder viele Anbieter, wenig Nachfrager
+- **Monopol:** ein Anbieter, viele Nachfrager oder viele Anbieter, ein Nachfrager
 
 #### Sie kennen die Phasen des Lebenszyklus eines Produktes/Dienstleistung und können diese bewerten
 
