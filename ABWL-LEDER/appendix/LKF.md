@@ -188,10 +188,10 @@
 
 #### Sie können die Vorgehensweise bei einer Investition beschreiben
 
-- Marktanalyse (SWOT, Notwendigkeitsprüfung)
-- Entscheidung zur Investition (Umfang & Art der Investition, notwendige Kapitalstruktur)
-- Angebote (Lastenheft & Ausschreibung, Bereitstellung des Kapitals und Zuschlag)
-- Realisierung (Umsetzung, Abnahme der Investition)
+1. **Marktanalyse** (SWOT, Notwendigkeitsprüfung)
+2. **Entscheidung zur Investition** (Umfang & Art der Investition, notwendige Kapitalstruktur)
+3. **Angebote** (Lastenheft & Ausschreibung, Bereitstellung des Kapitals und Zuschlag)
+4. **Realisierung** (Umsetzung, Abnahme der Investition)
 
 #### Sie kennen die Ursache einer Finanzierung und deren begrifflichen Inhalt
 
