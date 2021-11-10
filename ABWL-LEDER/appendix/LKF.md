@@ -281,7 +281,7 @@
 
 - Preisdifferienzierung nach Raum, Zeit, Menge, Person
 
-- offensive Preispolitik: Hochpreispoltiik (aufwendiges Verkaufsambiente und/oder hochwertige Ware), Niedrigpreispolitik (Discount)+
+- **offensive Preispolitik:** **Hochpreispoltik** (aufwendiges Verkaufsambiente und/oder hochwertige Ware), **Niedrigpreispolitik** (Discount)
 - defensive Preispolitik: kein Engagement im Preiskampf (Anpassen der Preise an Wettbewerb und/oder Überzeugung durch Leistung), Herstellerempfehlung (Markenprodukt)
 
 - TODO **Kommentar: bitte um Kürzung oder Trennung, S. 39-48**
