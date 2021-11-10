@@ -265,7 +265,8 @@
 
 #### Sie können den Unterschied zwischen Pull- und Push-Marketing erläutern
 
-- TODO **Kommentar: S. 38, kanns nicht erklären, Kopf langsam Matsch**
+- **Push-Marketing:** Interesse wecken $\rightarrow$ Kunden zum Kauf animieren (Traditionelle Werbung)
+- **Pull-Marketing:** Orientierung an den Bedürfnissen des Marktes $\rightarrow$ Interesse der Kunden nutzen (Nachfrage decken)
 
 #### Sie kennen die Möglichkeiten der Preisgestaltung und können diese erläutern
 
