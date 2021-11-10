@@ -288,7 +288,7 @@
 
 #### Sie beherrschen die Darstellung und Nutzen der Preiselastizität
 
-- Das verhältnis aus dem Quotienten der Veränderung der Nachfrage zur absoluten Nachfrage und dem Quotienten der Preisveränderung zum absoluten Preis bildet die Preiselastizität
+- Das Verhältnis aus dem Quotienten der Veränderung der Nachfrage zur absoluten Nachfrage und dem Quotienten der Preisveränderung zum absoluten Preis bildet die Preiselastizität
 - Mathematisch sinkt der Preis mit zunehmender Menge $\rightarrow$ Preiselastizität gibt an, wie schnell der Preis sinkt
 
 #### Sie kennen die Instrumente des Marketing und deren Inhalt
