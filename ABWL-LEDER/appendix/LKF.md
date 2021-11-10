@@ -284,7 +284,7 @@
 
 - TODO **Kommentar: bitte um Kürzung oder Trennung, S. 39-48**
 
-#### Sie beherrschen die Darstellung und Nutzen der Preiselastizität
+#### Sie beherrschen die Darstellung und Nutzen der Preiselastizität (INFORMATIV)
 
 - Das Verhältnis aus dem Quotienten der Veränderung der Nachfrage zur absoluten Nachfrage und dem Quotienten der Preisveränderung zum absoluten Preis bildet die Preiselastizität
 - Mathematisch sinkt der Preis mit zunehmender Menge $\rightarrow$ Preiselastizität gibt an, wie schnell der Preis sinkt
