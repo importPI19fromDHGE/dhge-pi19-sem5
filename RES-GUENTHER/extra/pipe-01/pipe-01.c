@@ -14,7 +14,6 @@ int main() {
     pid_t cpid; // declare a variable for our child PID
     char buf; // buffer where we'll write our message
 
-
     cpid = fork(); // create child process
     if (cpid < 0) { // handle process creation error
         perror("fork");
