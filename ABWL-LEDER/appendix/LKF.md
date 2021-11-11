@@ -322,65 +322,144 @@ einfache Programmierbarkeit und Aufnahme in die EDV bei Rechnersystemen | Kennza
 
 #### Sie kennen die Einteilung der Investitionen und können deren Inhalt darstellen
 
-- TODO
+- Objektbezug
+  - Sachinvestitionen (Gebäude, Maschinen, Roh- und Hilfsstoffe $\rightarrow$ Realinvestitionen): Abschreibung auf Nutzungsdauer, technische & wirtschaftliche Nutzungsdauer können differieren
+  - Finanzinvestitionen (Bankguthaben, festverzinsliche Wertpapiere, gewährtes Darlehn $\rightarrow$ Normalinvestition): Bewertung notwendig (Wertminderung)
+  - immaterielle Investitionen (Software & Patente $\rightarrow$ Abschreibung auf Nutzungsdauer): Ausbildung, Fortbildung, Marketing $\rightarrow$ Bekannheitsgrad
+- Hierarchie/Entscheidungsebenen
+  - strategisch: im Top-Management entschieden, lange Laufzeiten (3-5 Jahre), Gebäude, Maschinenkomplexe,...
+  - taktisch: im Middle-Management entschieden, mittelfristige Laufzeiten (1-3 Jahre), Ausrüstung
+  - operativ: im Low-Management entschieden, kurzfristige Laufzeiten, routinemäßige Anschaffungen
+- Häufigkeit des Anfallens
+  - einzelne: einmalig, ohne Wdh.
+  - als Folge: häufig anfallend, wiederholend
+  - als Kette: wiederholend, Bedingtheit
+- Umfang (Größenordnung)
+  - Routine: geringer Zeitaufwand, Ersatz von Material, GWGs (Geringwertiges Wirtschaftsgut) & Schreibmaterialbestellung
+  - Unternehmenspolitisch: hoher Zeitaufwand, bedeutend für die Leistungsfähigkeit, Ausrüstung
+- der zu erzielenden Wirkung
+  - Nettoinvestition: Gründung oder Erweiterung
+  - Reinvestition: Ersatz, Rationalisierung, Umstellung, Diversifikation oder Sicherung
 
 #### Sie können die Vorgehensweise bei einer Investition beschreiben
 
-- TODO
+1. **Marktanalyse** (SWOT, Notwendigkeitsprüfung)
+2. **Entscheidung zur Investition** (Umfang & Art der Investition, notwendige Kapitalstruktur)
+3. **Angebote** (Lastenheft & Ausschreibung, Bereitstellung des Kapitals und Zuschlag)
+4. **Realisierung** (Umsetzung, Abnahme der Investition)
 
 #### Sie kennen die Ursache einer Finanzierung und deren begrifflichen Inhalt
 
-- TODO
+- Investition ist notwendig oder erwünscht $\rightarrow$ Abstimmung $\rightarrow$ Finanzierungsmöglichkeiten evaluieren
+- entweder realisierbare Investionen (mit endgültigen Investitionsbedarf & Investitionsprogramm) oder nicht realisierbare Investition
+- Größe des Kapitalbedarfs?
+- Finanzierungsarten?
+- Kostenoptimale Finanzierung?
 
 #### Sie können die Kriterien der Einteilung der Betrachtung von Finanzierungen darstellen
 
-- TODO
+- **Fristenbezogen:** unbefristet (Kontokorrent), befristet (Kredit $\rightarrow$ kurz-, mittel- oder langfristig)
+- **Kapitalarten:** Eigen-/Fremdkapital
+- **Kapitalherkunft:** Außenfinanzierung (Beteiligungen, Fremdfinanzierung), Innenfinanzierung (Erträge, Freisetzungen)
 
-#### Sie kennen die Strukturkennzahlen und können diese erläutern
+#### Sie kennen die Strukturkennzahlen und können diese erläutern (INFORMATIV)
 
-- TODO
+- Eigenkapitalanteil = Eigenkapital * 100 / Gesamtkapital
+- Rücklagenquote = Rücklagen * 100 / Eigenkapital
+- Selbstfinanzierungsgrad = Gewinnrücklagen * 100 / Gesamtkapital
+- Anpassungskoeffizient = Fremdkapital * 100 / Gesamtkapital
+- Verschuldungskoeffizient = Fremdkapital * 100 / Gesamtkapital
 
 ### Protektionswirtschaft
 
 #### Sie kennen Inhalt, Ziel und Formen der Protektionswirtschaft
 
-- TODO
+> Form der Handelspolitik, geprägt durch staatliche Maßnahmen um die eigene Volkswirtschaft durch Handelshemmnisse zu schützen und Exportwirtschaft zu fördern.
+
+- **Schutzfunktion:** einzelne Sektoren einer Volkswirtschaft vor Importkonkurrenz zu schützen
+  - Zölle, Abgaben und/oder Preise auf bestimmte Waren/DL durch Land(DE)/Region(EU) aus wirtschaftlichem (tarifär) oder politischem Interesse (nicht tarifär)
+- **Förderung:** eigenen Exportwirtschaft Vorteile auf dem internationalen Markt verschaffen
+  - Erweiterung des Waren-/DL-Austausches zwischen bilateralen (zwei) oder multilaterale (mehreren) Handelspartnern
+  - Maßnahmen zur Schaffung neuer Märkte oder politische Unterstützung einer Entwicklung
 
 ### Marketing
 
-- TODO
-
 #### Sie können Marketing erläuternd darstellen
 
-- TODO
+- mit dem Marketing wird der Bedarf an Produkten/Dienstleistungen bekannt gegeben
+- ein Bild vom Unternehmen/Institution/Behörde/...
+- ein Bild von der Leistung/Leistungsfähigkeit...
+- ein Bild von den Produkten...
+- oder eine Kombination daraus...
+  .. vermitteln
 
 #### Sie kennen das AIDA-Prinzip und können dies erläutern
 
-- TODO
+- **A**ttention: Wecken von Aufmerksamkeit
+- **I**nterest: Interesse wecken
+- **D**esire: Wunsch nach Produkt/Dienstleistung hervorrufen
+- **A**ction: Kunde soll kaufen
 
 #### Sie beherrschen die Markteinteilung durch Bedarf und Nachfrage
 
-- TODO
+- **Polypol:** viele Nachfrager, viele Anbieter
+- **Oligopol:** wenig Anbieter, viele Nachfrager oder viele Anbieter, wenig Nachfrager
+- **Monopol:** ein Anbieter, viele Nachfrager oder viele Anbieter, ein Nachfrager
 
 #### Sie kennen die Phasen des Lebenszyklus eines Produktes/Dienstleistung und können diese bewerten
 
-- TODO
+- Entwicklungsphase (Prototyp, Funktionsmuster,..)
+- Einführungsphase (Produkt Launch, Messeneuheit,..)
+- Wachstumsphase (steigender Bedarf durch Nachfrage)
+- Reifephase (Nachfrage aufgrund gesicherter Erwartung)
+- Sättigungsphase (erste Angebote zur Steigerung der Attraktivität)
+- Degenerationsphase (Abverkauf)
 
 #### Sie können den Unterschied zwischen Pull- und Push-Marketing erläutern
 
-- TODO
+- **Push-Marketing:** Interesse wecken $\rightarrow$ Kunden zum Kauf animieren (Traditionelle Werbung)
+- **Pull-Marketing:** Orientierung an den Bedürfnissen des Marktes $\rightarrow$ Interesse der Kunden nutzen (Nachfrage decken)
 
 #### Sie kennen die Möglichkeiten der Preisgestaltung und können diese erläutern
 
-- TODO
+- Einfluss auf den Preis:
+  - Kostenorientierung (Kalkulation $\rightarrow$ Teil-, Vollkostenrechnung)
+  - Gewinnchance (SWOT)
+  - Kundenakzeptanz (Nachfrage und Bedarf)
+  - Konkurrenzorientierung (Markt, Reaktion/Aktion): Durchschnittspreis Standort/Region (Branchenpreis), Richtpreis (Preisführer)
 
-#### Sie beherrschen die Darstellung und Nutzen der Preiselastizität
+- Preisobergrenze von Kunden & Konkurrenz bestimmt
+- Verkaufspreis: Schwankung um die Akzeptanz
+- Preisuntergrenze von Kosten und Existenz bestimmt
 
-- TODO
+- Preisdifferienzierung nach Raum, Zeit, Menge, Person
+
+- **offensive Preispolitik:** **Hochpreispoltik** (aufwendiges Verkaufsambiente und/oder hochwertige Ware), **Niedrigpreispolitik** (Discount)
+- **defensive Preispolitik:** kein Engagement im Preiskampf (Anpassen der Preise an Wettbewerb und/oder Überzeugung durch Leistung), Herstellerempfehlung (Markenprodukt)
+
+- TODO **Kommentar: bitte um Kürzung oder Trennung, S. 39-48**
+
+#### Sie beherrschen die Darstellung und Nutzen der Preiselastizität (INFORMATIV)
+
+- Das Verhältnis aus dem Quotienten der Veränderung der Nachfrage zur absoluten Nachfrage und dem Quotienten der Preisveränderung zum absoluten Preis bildet die Preiselastizität
+- Mathematisch sinkt der Preis mit zunehmender Menge $\rightarrow$ Preiselastizität gibt an, wie schnell der Preis sinkt
 
 #### Sie kennen die Instrumente des Marketing und deren Inhalt
 
-- TODO
+- Produkt-/Dienstleistungspolitik
+  - Produkt-/Dienstleistungsportfolio
+  - Breite & Tiefe des Sortiments
+  - Aktualität
+- Distributionspolitik
+  - Vertrieb
+  - Bereitstellung und Logistik
+  - Pflege der Kundenbeziehungen
+- Kommunikationspolitik
+  - Werbung
+  - Einsatz der Werbemittel/-Träger und Zielgruppenansprache
+- Preispolitik
+  - Preis der Produkte/Dienstleistungen
+  - Angebot und Nachfrage
 
 # Lernkontrollfragen Projektmanagement
 
