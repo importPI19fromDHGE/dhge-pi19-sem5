@@ -53,7 +53,7 @@ Theorie und Praxis programmierbarer logischer Schaltungen
 - logischer Ausdruck, der in der oberen Ebene ausschließlich aus ODER-Verknüpfungen besteht
 - Stufen:
   - 1.Stufe: UND-Verknüpfungen (Konjunktionen)
-  - 2.Stufe: ODER-Verküpfungen
+  - 2.Stufe: ODER-Verknüpfungen
 
 **Beispiel:**
 
@@ -86,7 +86,7 @@ Für die Schaltung würde dies bedeuten, dass die Signale zunächst durch UND un
 - der Abruf dieser Informationen ist u.U. schneller bzw. flexibler als diese zur Laufzeit zu berechnen
 - Für FPGAs werden LUT verwendet, um Binärfunktionen zu hinterlegen
 - somit können (fast) beliebige physische Gatter simuliert werden
-- die LUT werden in SRAM-Zellen hinterlegt und könnend ann durch Ansteuerung der Eingänge ausgelesen werden
+- die LUT werden in SRAM-Zellen hinterlegt und könnend dann durch Ansteuerung der Eingänge ausgelesen werden
 
 > weitere Infos: <https://de.wikipedia.org/wiki/Field_Programmable_Gate_Array#Aufbau_und_Struktur>
 
@@ -152,7 +152,7 @@ Als PLD (Programmable Logic Device) werden **elektronische Bauelemente** bezeich
 - auf EEPROM-Basis
 
 > Zusatzinfo aus <https://k1.spdns.de/Develop/Hardware/K1-Bus%2068008%20CPU%20board%20with%20DRAM/GALs%20und%20so/PLD_Vers.pdf>
-> OLMCs können als Eingang, kombinatorischer Ausgang, Tristate-Ausgang, Tristate-Ausgang im Registermodus und als Resgisterausgang konfiguriert werden
+> OLMCs können als Eingang, kombinatorischer Ausgang, Tristate-Ausgang, Tristate-Ausgang im Registermodus und als Registerausgang konfiguriert werden
 
 #### PLA - Programmable Logic Array
 
@@ -165,7 +165,7 @@ Als PLD (Programmable Logic Device) werden **elektronische Bauelemente** bezeich
 - bei CPLDs sind mehrere (S)PLDs über eine programmierbare Verbindungsmatrix miteinander verbunden
   - die frei programmierbare UND & ODER - Matrix wird zudem um sogenannte Makrozellen ergänzt, welche zusätzliche Logiken implementieren können
 - Ansteuerung der einzelnen Bausteine von Außen daher sowohl über Verbindungsmatrix als auch direkt möglich
-- einfach interne Verdrahtung $\rightarrow$ Signallaufzeiten vorhersagbarar als bei *FPGA*
+- einfach interne Verdrahtung $\rightarrow$ Signallaufzeiten besser vorhersagbar als bei *FPGA*
 - auf EEPROM-Basis
 
 **Leistungsparameter:**
