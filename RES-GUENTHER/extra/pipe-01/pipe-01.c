@@ -14,6 +14,12 @@ int main() {
     pid_t cpid; // declare a variable for our child PID
     char buf; // buffer where we'll write our message
 
+    // open pipe, abort on error
+    if (pipe(pipefd) == -1) {
+        perror("pipe");
+        exit(EXIT_FAILURE);
+    }
+
     cpid = fork(); // create child process
     if (cpid < 0) { // handle process creation error
         perror("fork");
