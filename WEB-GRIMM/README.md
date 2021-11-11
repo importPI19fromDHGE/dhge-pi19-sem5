@@ -44,6 +44,7 @@ Entwicklung von Webanwendungen
     - [Grid-Container](#grid-container)
     - [Media-Queries](#media-queries)
   - [JS](#js)
+    - [Fancy-Input Beispiel](#fancy-input-beispiel)
 - [PHP und Datenbanken](#php-und-datenbanken)
 - [Moderne Webentwicklung mit Frameworks](#moderne-webentwicklung-mit-frameworks)
 
@@ -600,6 +601,12 @@ grid-template-areas: "head head head head"
 - Deklaration: ``@media (bedingung) {style}``
 
 ## JS
+
+### Fancy-Input Beispiel
+
+In diesem Beispiel wird JavaScript verwendet, um das Label eines Inputs dynamisch zu verändern.
+
+Das Beispiel ist im Ordner `extra/fancy-input` zu finden.
 
 # PHP und Datenbanken
 
