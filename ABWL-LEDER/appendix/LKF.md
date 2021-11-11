@@ -469,7 +469,6 @@ einfache Programmierbarkeit und Aufnahme in die EDV bei Rechnersystemen | Kennza
 
 - **Projekt:** risikobehafteter, hoch komplexer Gegenstand einer Handlung (Ziel/Aufgabe)
 mit begrenzten Ressourcen (HR, MR, FR) in einem bestimmten Zeitrahmen
-
 - **Projektmanagement:** Organisation von Ablauf, Abrechnung und Dokumentation der Umsetzung eines Projektes
 
 ### Sie kennen die sieben Merkmale die ein Projekt kennzeichnen!
