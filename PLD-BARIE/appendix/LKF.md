@@ -163,10 +163,10 @@ END ARCHITECTURE data_flow;
 
 1. Entity-Namen aus der Architecture entnehmen
 2. Betrachten, wie mit den Werten in der Entity gearbeitet wird
-  a. Signale für Entity nicht von Belang
-  b. nicht deklarierte Bezeichner müssen also aus der Entity kommen
-  c. Bezeichner, die auf Signale zuweisen -> müssen IN-Ports sein, Typ feststellen
-  d. Bezeichner, auf die zugewiesen wird --> Out-Port, Typ feststellen.
+  - Signale für Entity nicht von Belang
+  - nicht deklarierte Bezeichner müssen also aus der Entity kommen
+  - Bezeichner, die auf Signale zuweisen -> müssen IN-Ports sein, Typ feststellen
+  - Bezeichner, auf die zugewiesen wird --> Out-Port, Typ feststellen.
 
 
 
