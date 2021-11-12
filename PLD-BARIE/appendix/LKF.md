@@ -4,13 +4,13 @@
 
 Disjunktive Normalform:
 
-1.  Stufe: UND-Verknüpfungen (Konjunktionen)
-2.  Stufe: ODER-Verknüpfungen (Disjunktionen)
+1. Stufe: UND-Verknüpfungen (Konjunktionen)
+2. Stufe: ODER-Verknüpfungen (Disjunktionen)
 
 ## Welche Möglichkeiten kennen Sie, um die Funktionalität von Programmierbaren Logikbausteinen zu spezifizieren?
 
--  Art der Programmierung / Interner Aufbau?
--  Technische Kennzahlen (Makrozellen, Taktfrequenz, I/Os)
+- Art der Programmierung / Interner Aufbau?
+- Technische Kennzahlen (Makrozellen, Taktfrequenz, I/Os)
 
 ## Wie unterscheiden sich ASIC / ASSP / FPGA in der Anwendung?
 
@@ -37,11 +37,11 @@ Unterschiede:
   - Die Lese- und Schreibzugriffe des Speichers sind mit dem Systemtakt des Rechners synchronisiert
   - Üblicher DRAM seit 2000 SDRAM
 
--SRAM (**S**tatic **R**andom **A**ccess **M**emory)
+- SRAM (**S**tatic **R**andom **A**ccess **M**emory)
   - Flüchtiger Speicher: Strom aus, Inhalt weg
   - 6 Transistoren, kein Refresh nötig (Vgl. DRAM)
 
--Flash-EEPROM
+- Flash-EEPROM
   - Sog. Flash-Speicher
   - Nicht-flüchtig
   - „Electronically Erasable Read only memory”
@@ -130,6 +130,7 @@ When option_2 => output_signal <= value_2;
 When others => output_signal <= value_3;
 end case;
 ´´´
+
 ## Entity - Architecture
 
 ### Geben Sie zu einer Architecture die passende Entity Deklaration an.
@@ -157,14 +158,15 @@ ARCHITECTURE data_flow OF aoi4 IS
        z <= temp1 NOR temp2;
 END ARCHITECTURE data_flow;
 ´´´
+
 ### Geben Sie die notwendigen Schritte an, um aus einer Architecture die passende Entity Deklaration anzugeben.
 
-1.	Entity-Namen aus der Architecture entnehmen
-2.	Betrachten, wie mit den Werten in der Entity gearbeitet wird
-a.	Signale für Entity nicht von Belang
-b.	nicht deklarierte Bezeichner müssen also aus der Entity kommen
-c.	Bezeichner, die auf Signale zuweisen -> müssen IN-Ports sein, Typ feststellen
-d.	Bezeichner, auf die zugewiesen wird --> Out-Port, Typ feststellen.
+1. Entity-Namen aus der Architecture entnehmen
+2. Betrachten, wie mit den Werten in der Entity gearbeitet wird
+  a. Signale für Entity nicht von Belang
+  b. nicht deklarierte Bezeichner müssen also aus der Entity kommen
+  c. Bezeichner, die auf Signale zuweisen -> müssen IN-Ports sein, Typ feststellen
+  d. Bezeichner, auf die zugewiesen wird --> Out-Port, Typ feststellen.
 
 
 
