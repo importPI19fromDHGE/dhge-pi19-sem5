@@ -18,16 +18,16 @@ Disjunktive Normalform:
 
 ## Wie unterscheiden sich Programmierbare Logikbausteine von Mikroprozessoren?
 
-- Tabelle TODO
-
-Gemeinsamkeit:
-EVA
+Gemeinsamkeit: EVA
 
 Unterschiede:
-MP: Sequenzielle Verarbeitung				PLD: Parallele Verarbeitung
-Eher langsam						Eher schnell
-Günstig							Teuer
-Allgemeine Funktion					Spezialisierte Funktion
+
+| Mikroprozessor                | Programmierbare Logikbausteine        |
+| ----------------------------- | ------------------------------------- |
+| Sequenzielle Verarbeitung     | Parallele Verarbeitung                |
+| Eher langsam                  | Eher schnell                          |
+| Günstig	                    | Teuer                                 |
+| Allgemeine Funktion           | Spezialisierte Funktion               |
 
 ##	Welche Arten von Speicher sind in einem FPGA integriert? Beschreiben Sie kurz deren Eigenschaften.
 
@@ -83,7 +83,7 @@ Richtige Antwort ist TODO, denn TODO
 
 Signale in Prozessen werden immer erst ganz am Ende des Prozesses wirksam.
 
-- TODO
+- TODO Bild
 
 ## Wie verhalten sich die Zuweisungen bei Variablen? Wann/wo können Variablen verwendet werden?
 
