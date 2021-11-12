@@ -111,7 +111,7 @@ Falsch, Signale ja, Variablen nein
 
 ## VHDL: Machen Sie aus einer if-Anweisung eine case-Anweisung (oder umgekehrt).
 
-´´´VHDL
+```VHDL
 if Expression_1 then
 Output_signal <= Value1;
 elsif Expression_2 then
@@ -119,23 +119,23 @@ Output_signal <= Value2;
 else Expression_3 then
 Output_signal <= Value3;
 end if;
-´´´
+```
 
 <!-- md2apkg split -->
 
-´´´txt
+```txt
 case control_expression is
 when option_1 =>output_signal <= value_1;
 When option_2 => output_signal <= value_2;
 When others => output_signal <= value_3;
 end case;
-´´´
+```
 
 ## Entity - Architecture
 
 ### Geben Sie zu einer Architecture die passende Entity Deklaration an.
 
-´´´VHDL
+```VHDL
 ENTITY aoi4 IS
 PORT(
         a : IN std_logic;
@@ -144,11 +144,11 @@ PORT(
         d : IN std_logic;
         z : OUT std_logic);
 END ENTITY aoi4;
-´´´
+```
 
 <!-- md2apkg split -->
 
-´´´VHDL
+```VHDL
 ARCHITECTURE data_flow OF aoi4 IS
  SIGNAL temp1, temp2 : std_logic;
 
@@ -157,7 +157,7 @@ ARCHITECTURE data_flow OF aoi4 IS
        temp2 <= c AND d;
        z <= temp1 NOR temp2;
 END ARCHITECTURE data_flow;
-´´´
+```
 
 ### Geben Sie die notwendigen Schritte an, um aus einer Architecture die passende Entity Deklaration anzugeben.
 
