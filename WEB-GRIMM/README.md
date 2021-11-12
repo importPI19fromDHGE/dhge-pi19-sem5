@@ -46,6 +46,7 @@ Entwicklung von Webanwendungen
     - [Media-Queries](#media-queries)
   - [JS](#js)
 - [PHP und Datenbanken](#php-und-datenbanken)
+  - [Datenbankschnittstellen](#datenbankschnittstellen)
 - [Moderne Webentwicklung mit Frameworks](#moderne-webentwicklung-mit-frameworks)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -675,6 +676,24 @@ $mitarbeiter = array(
 foreach($mitarbeiter as $person)
   echo "<li>".$ma[0]." ".$ma[1]."</li>";
 ```
+
+- Arraylänge berechnen: ``count()``
+- Element in Array suchen: ``in_array("weiß", $farben);``
+- Prüfen, ob Array-Index existiert: ``array_key_exists("fr", $wochentage)``
+- sortieren von Arrays mit ``sort($mitarbeiter)`` bzw. ``rsort($mitarbeiter)`` (reverse)
+  - Achtung: case-sensitiv nach ASCII
+  - Achtung: es werden KEINE neuen Indizes vergeben
+- Ausgabe der Zeit: ``date("d-m-Y H:i:s", time());``
+- Umwandlung einer Zeit in den Unix-Timestamp: ``strtotime("11 November 2011 11:11")``
+- Abfragen von Formularinhalten: ``print_r($_POST);``
+  - Formularinhalte sind in einem assoziativen Array gespeichert
+
+## Datenbankschnittstellen
+
+- verschiedenes im Angebot: ``mysqli``, ``PDO``
+- Bsp.: ``$dbh = new PDO($connectionstring, $user, $pw);``
+- Connection-String: ``$connectionstring = "mysql:host=localhorst;dbname=dhge";``
+- Um unangekündigten Besuch vom Datenschutzbeauftragten zu vermeiden, sollte man Exception Handling einbauen, sodass der Server im Fehlerfall nicht die Verbindungsdaten leakt
 
 # Moderne Webentwicklung mit Frameworks
 
