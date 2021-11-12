@@ -14,7 +14,9 @@ Disjunktive Normalform:
 
 ## Wie unterscheiden sich ASIC / ASSP / FPGA in der Anwendung?
 
-- 2 Bilder einfügen TODO
+![Vergleich](assets/PLDtypen.png)<!--width=200px-->
+
+![Tabelle](assets/Bild2.png)<!--width=200px-->
 
 ## Wie unterscheiden sich Programmierbare Logikbausteine von Mikroprozessoren?
 
@@ -66,7 +68,7 @@ Keine Ahnung
 
 UND-Matrix malen, Punkte verbinden
 
-- TODO Bild
+![Matrix](assets/UNDMatrix.png)<!--width=200px-->
 
 ## Was meint der Begriff „Programmierbare Logik“?
 
@@ -83,7 +85,7 @@ Richtige Antwort ist TODO, denn TODO
 
 Signale in Prozessen werden immer erst ganz am Ende des Prozesses wirksam.
 
-- TODO Bild
+![Signale](assets/SignaleinProzessen.png)<!--width=200px-->
 
 ## Wie verhalten sich die Zuweisungen bei Variablen? Wann/wo können Variablen verwendet werden?
 
@@ -123,7 +125,7 @@ end if;
 
 <!-- md2apkg split -->
 
-```txt
+```VHDL
 case control_expression is
 when option_1 =>output_signal <= value_1;
 When option_2 => output_signal <= value_2;
