@@ -26,10 +26,10 @@ Unterschiede:
 | ----------------------------- | ------------------------------------- |
 | Sequenzielle Verarbeitung     | Parallele Verarbeitung                |
 | Eher langsam                  | Eher schnell                          |
-| Günstig	                    | Teuer                                 |
+| Günstig                     | Teuer                                 |
 | Allgemeine Funktion           | Spezialisierte Funktion               |
 
-##	Welche Arten von Speicher sind in einem FPGA integriert? Beschreiben Sie kurz deren Eigenschaften.
+## Welche Arten von Speicher sind in einem FPGA integriert? Beschreiben Sie kurz deren Eigenschaften.
 
 - SDRAM (**S**ynchronous **D**ynamic **R**andom **A**ccess **M**emory)
   - flüchtig
@@ -46,7 +46,7 @@ Unterschiede:
   - Nicht-flüchtig
   - „Electronically Erasable Read only memory”
 
-##	Über welche Schnittstelle wird ein FPGA in der Schaltung programmiert? Beschreiben Sie kurz die Funktion dieser Schnittstelle.
+## Über welche Schnittstelle wird ein FPGA in der Schaltung programmiert? Beschreiben Sie kurz die Funktion dieser Schnittstelle.
 
 JTAG
 
