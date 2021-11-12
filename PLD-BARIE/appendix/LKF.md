@@ -62,7 +62,7 @@ Daher wird beim Entwurf normalerweise zu jedem Modul eine Testbench erstellt. Mi
 ## Sind alle VHDL-Anweisungen für die Verwendung in einer zu synthetisierenden Schaltung geeignet? Wenn ja, warum? Wenn nein, warum nicht?
 
 Keine Ahnung
-[zustandsgesteuerte FlipFlops]
+zustandsgesteuerte FlipFlops?
 
 ## Geben Sie die grafische Darstellung der Programmierung der folgenden Gleichung in einem PLA an…(Antwort: Bild der UND-Matrix).
 
