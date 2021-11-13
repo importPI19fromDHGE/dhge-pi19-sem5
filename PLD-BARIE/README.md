@@ -371,7 +371,7 @@ use ieee.std_logic_1164.all;
 - nebenläufige Ausführung zu anderen Prozessen oder Signalzuweisungen: alle Prozesse laufen gleichzeitig (daher Implikationen für Signale)
 - Prozesse sind immer aktiv und werden kontinuierlich ausgeführt
 - werden in ``ARCHITECTURE``definiert
-- laufen ab, wenn sich ein Signal in der Senistivity List ändert, oder nach ``wait``-Statement: **nicht beides!**
+- laufen ab, wenn sich ein Signal in der Sensitivity List ändert, oder nach ``wait``-Statement: **nicht beides!**
 
 **Beispiel:**
 
@@ -401,8 +401,8 @@ end;
 ## Signale
 
 - Signale sind in VHDL die "Zustände der Leitungen" $\rightarrow$ Zwischenergebnisse
-- sie werden innerhalb der Architecture deklariert (siehe Beispiel unten)
-- in der ``ENTITY`` beschriebene Ports stehen in der zugeordneten ``ARCHITECTURE`` als Signale zur Verfügung und müssen nicht neu deklariert werden
+- sie werden innerhalb der Architecture deklariert (siehe Beispiel unten): **interne Signale**
+- in der ``ENTITY`` beschriebene Ports stehen in der zugeordneten ``ARCHITECTURE`` als Signale zur Verfügung und müssen nicht neu deklariert werden: **externe Signale**
 
 **Verwendung:**
 
@@ -453,7 +453,70 @@ begin
 end process;
 ````
 
+## Port Maps
+
 ## Components
+
+> entnommen aus: <http://www.informatik.uni-ulm.de/ni/Lehre/SS03/ProSemFPGA/VHDL-Grundlagen.pdf>
+
+- Machen letzten Endes den Unterschied zwischen einen Strukturmodell und einem Verhaltensmodell aus
+
+**Verhaltensmodell**
+
+- keine externen Komponenten angegeben
+- beschreibt einfach nur, wie sich eine Einheit verhält: welche Ausgangssignale aufgrund welcher Eingangssignale
+
+Beispiel:
+
+```vhdl
+ENTITY halfAdder IS
+  PORT (
+    X, Y : IN Bit;
+    SUM, COUT : OUT Bit);
+END halfAdder;
+
+ARCHITECTURE behavioural OF halfAdder IS
+BEGIN
+  SUM <= X XOR Y ;
+  COUT <= X AND Y ;
+END behavioural ;
+```
+
+**Strukturmodell**
+
+- beschreibt ein Modell aus mehreren Komponenten und ihren Verbindungen untereinander
+- jede Unterkomponente muss in der Architekturbeschreibung dazu vor der Verwendung bekannt gemacht werden (Schlüsselwort ``component``)
+
+Beispiel:
+
+```vhdl
+ENTITY fullAdder IS
+  PORT (
+    X, Y, CIN : IN Bit;
+    SUM, COUT : OUT Bit);
+END fullAdder;
+
+ARCHITECTURE structural OF fullAdder IS
+  SIGNAL S1, S2, S3;
+  COMPONENT halfAdder
+    PORT (
+      X, Y : IN Bit;
+      SUM, COUT : OUT Bit);
+  END COMPONENT;
+BEGIN
+  U1 : halfAdder  PORT MAP (X, Y, S1, S2);
+  U2 : halfAdder  PORT MAP (S1, CIN, SUM, S3);
+  COUT <= S2 OR S3;
+END structural;
+```
+
+## Arrays
+
+## if
+
+## case
+
+## ATTRIBUTE KEEP
 
 ## Testen mit VHDL
 
