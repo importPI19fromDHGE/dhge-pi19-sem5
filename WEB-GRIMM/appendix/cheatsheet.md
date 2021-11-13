@@ -269,7 +269,7 @@
 ## Operatoren
     
 - klassische C-Operatoren
-- ** ist für das potenzieren
+- ** ist für das Potenzieren
 - == -> formatiert ggf. Datentypen um Gleichheit zu erreichen 23 == '23' -> true (!=)
 - 23 === '23' -> false (!==)
 
