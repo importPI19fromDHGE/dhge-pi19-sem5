@@ -237,7 +237,7 @@ Beispiel:
 ```vhdl
 entity beispielname is
   port ( a : in std_logic;
-         b : in std_logic; 
+         b : in std_logic;
          q : out std_logic) ;
 end beispielname;
 ```
@@ -269,7 +269,7 @@ Verwendung:
 
 ```vhdl
 -- packages std und work brauchen keine library-Anweisung:
--- std liefert Standardfunktionen 
+-- std liefert Standardfunktionen
 use std.textio.all;
 -- mit work können eigene Pakete verwendet werden
 -- diese müssen bereits in der Arbeitsbibliothek hinterlegt sein
@@ -277,7 +277,7 @@ use work.eigenesPaket.all;
 -- für darüber hinausgehende Pakete muss library verwendet werden
 -- so z.B. für Datentypen aus dem iee-Standard
 library ieee;
-use ieee.std_logic_1164.all; 
+use ieee.std_logic_1164.all;
 ```
 
 ## Datentypen
@@ -379,7 +379,7 @@ use ieee.std_logic_1164.all;
 -- mit sensitivity-list
 
 architecture architecture_name of entity_name is
-begin 
+begin
   optional_prozess_name : process (a,b,c) -- Ausführung bei Änderung der Signale a,b,c
   begin
     q <= (a and b) or c;
@@ -388,7 +388,7 @@ end;
 
 -- mit wait statement
 architecture architecture_name of entity_name is
-begin 
+begin
   optional_prozess_name : process
   begin
     wait until a = `1`;
@@ -443,8 +443,8 @@ end;
 
 ````vhdl
 optional_prozess_name : process (a)
-  -- Deklaration und Zuweisung mit := 
-  variable variable_name : integer := 1; 
+  -- Deklaration und Zuweisung mit :=
+  variable variable_name : integer := 1;
 begin
   variable_name := variable_name + 2;
   variable_name := variable_name + 4;
