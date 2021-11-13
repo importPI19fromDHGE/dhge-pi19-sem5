@@ -83,13 +83,10 @@
 
 ## Tabellen
 
-```html
-- <table>
-- Zeile: <tr>
-- Zelle: <td>
-- Kopfzelle: <th>
-- <th> scope-Attribut: Zeilen- oder Spaltenkopf
-```
+- `<table>`
+- Zeile: `<tr>`
+- Zelle: `<td>`
+- Kopfzelle: `<th>` (`scope`-Attribut: Zeilen- oder Spaltenkopf)
 
 ## Formulare
 
