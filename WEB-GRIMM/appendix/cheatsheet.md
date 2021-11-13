@@ -77,9 +77,9 @@
 
 ## Listentypen
 
-- sortiert -> ol
-- unsoritert -> ul
-- Beschreibungsliste -> dl
+- sortiert -> `ol`
+- unsoritert -> `ul`
+- Beschreibungsliste -> `dl`
 
 ## Tabellen
 
