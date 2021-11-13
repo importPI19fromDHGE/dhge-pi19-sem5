@@ -276,11 +276,11 @@
 ## DOM - Document Object Model
     
 ```javascript
-    getElementById();
-    getElementByName();
-    getElementByTagName(); //z.B. <p>
-    querySelector(); //gibt erstes Element, das dem angegebenen CSS-Selektor entspricht
-    querySelectorAll(); //gibt alle Elemente, die dem angegebenen CSS-Selektor entsprechen
+document.getElementById();
+document.getElementByName();
+document.getElementByTagName(); //z.B. <p>
+document.querySelector(); //gibt erstes Element, das dem angegebenen CSS-Selektor entspricht
+document.querySelectorAll(); //gibt alle Elemente, die dem angegebenen CSS-Selektor entsprechen
 ```
     
 ## Function Syntax
