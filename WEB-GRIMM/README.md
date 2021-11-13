@@ -45,6 +45,7 @@ Entwicklung von Webanwendungen
     - [Grid-Container](#grid-container)
     - [Media-Queries](#media-queries)
   - [JS](#js)
+    - [Fancy-Input Beispiel](#fancy-input-beispiel)
 - [PHP und Datenbanken](#php-und-datenbanken)
   - [Datenbankschnittstellen](#datenbankschnittstellen)
 - [Moderne Webentwicklung mit Frameworks](#moderne-webentwicklung-mit-frameworks)
@@ -616,6 +617,12 @@ grid-template-areas: "head head head head"
 - Vergleiche:
   - ``==``: vergleicht auf denselben Wert, aber castet implizit
   - ``===`` vergleicht auf denselben Wert und denselben Datentyp
+
+### Fancy-Input Beispiel
+
+In diesem Beispiel wird JavaScript verwendet, um das Label eines Inputs dynamisch zu verändern.
+
+Das Beispiel ist im Ordner `extra/fancy-input` zu finden.
 
 # PHP und Datenbanken
 

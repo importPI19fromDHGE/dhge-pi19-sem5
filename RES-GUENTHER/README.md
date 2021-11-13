@@ -25,6 +25,7 @@ Systemprogrammierung / Verteilte Systeme
       - [Haupteigenschaft fork-Prozesse](#haupteigenschaft-fork-prozesse)
       - [Differenzieren zwischen Vater- und Kindprozess](#differenzieren-zwischen-vater--und-kindprozess)
       - [Rückgabekategorien fork](#r%C3%BCckgabekategorien-fork)
+    - [Differenzierung zwischen Vater- und Kind-Prozess](#differenzierung-zwischen-vater--und-kind-prozess)
       - [Was passiert, wenn man in Schleifen forkt](#was-passiert-wenn-man-in-schleifen-forkt)
     - [PIA 03/11/21](#pia-031121)
       - [Wozu Semaphoren](#wozu-semaphoren)
@@ -37,6 +38,9 @@ Systemprogrammierung / Verteilte Systeme
   - [Parallele Programmierung](#parallele-programmierung)
     - [Prozesssteuerung](#prozesssteuerung)
     - [Systemaufruf fork()](#systemaufruf-fork)
+    - [Semaphore](#semaphore)
+    - [Interprozesskommunikation](#interprozesskommunikation)
+      - [Pipes](#pipes)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -85,6 +89,7 @@ Benedict: Prozese aufspalten, Vater, Kind Prozess
 #### Haupteigenschaft fork-Prozesse
 
 PID - Prozess ID zu Identifikation
+<!-- Max hier ergänzen wenn du magst ### Eigenschaften eines Prozesses -->
 
 #### Differenzieren zwischen Vater- und Kindprozess
 
@@ -93,9 +98,18 @@ PID des Prozess in getppid wiederfinden
 
 #### Rückgabekategorien fork
 
-`>0`: die PID des Kindprozesses
-`0`: es wurde eben geforkt und wir sind das Kind
-`-1`: Fehler
+```txt
+>0: die PID des Kindprozesses
+0: es wurde eben geforkt und wir sind das Kind
+-1: Fehler
+```
+
+### Differenzierung zwischen Vater- und Kind-Prozess
+
+Rückgabewert fork() im Vater ist getpid() vom Kind
+Rückgabewert fork() im Kind ist 0
+getppid() vom Kind ist getpid() vom Vater
+getppid() vom Vater ist die aufrufende Shell
 
 #### Was passiert, wenn man in Schleifen forkt
 
@@ -169,6 +183,9 @@ V - Nach dem kritischen Abschnitt UNLOCK
 >
 > Es können immer nur maximal zwei Philosophen gleichzeitig speisen
 
+- Code, der Deadlocks oder Race Conditions verursachen kann, wird **"kritischer Code"** / kritischer Pfad genannt
+- kritische Abschnitte müssen vom Programmierer definiert werden
+
 ### Prozesssteuerung
 
 **Mehrere Prozesse starten:**
@@ -177,6 +194,8 @@ V - Nach dem kritischen Abschnitt UNLOCK
 - Prozesse anzeigen: `jobs -l`, `top`, `htop`, `ps`
 
 ### Systemaufruf fork()
+
+**Klausurrelevant**
 
 - Zweck: es wird eine exakte Kopie des Aufrufers als Kindprozess erzeugt
 - Kindprozess übernimmt Code, Daten inkl. Befehlszähler, Dateideskriptoren, ...
@@ -204,4 +223,45 @@ int main()
 }
 ```
 
+### Semaphore
 
+[weiterführende Informationen](https://openbook.rheinwerk-verlag.de/linux_unix_programmierung/Kap09-004.htm)
+
+- Vorgehenssynchronisation zwischen mehreren Prozessen
+- sperrt z.B. kritische Codebereiche
+  - binär: darf / darf nicht benutzen
+  - zählend: x Prozesse dürfen, darüber nicht
+- System-V Semaphoren haben drei Funktionen:
+  - `semget()`: Erzeugt eine neue Semaphore oder öffnet eine vorhandene
+  - `semctl()`: manipuliert Semaphorenmengen
+  - `semop()`: führt eine Reihe Operationen auf einem Set Semaphoren aus
+- zwei Operationen:
+  - P-Operation: "Passieren": regelt Betreten kritischen Codes
+  - V-Operation: "Verlassen": regelt Verlassen kritischen Codes
+- Programmierung: Semaphoren müssen deklariert, initialisiert und dann verwendet werden
+
+### Interprozesskommunikation
+
+- Motivation: Verhinderung von
+  - gleichzeitigen Schreibzugriffen
+  - Verhungern von Prozessen
+  - Deadlocks
+
+#### Pipes
+
+- *Rohre* zwischen Prozessen, in denen Nachrichten transportiert werden können
+- nur in eine Richtung
+- Pipes können nur zwischen Prozessen mit gemeinsamen Vorfahren eingerichtet werden
+- Ablauf:
+  - Vaterprozess erzeugt Pipe
+  - Vaterprozess erzeugt Sohnprozess mit `fork()`
+  - Sohnprozess erbt Pipe
+- Programmierung:
+  - Inkludierung von `sys/unistd.h`
+  - `int pipe(int fd[2])`
+    - `fd[0]` zum Lesen
+    - `fd[1]` zum Schreiben
+  - Lese-Operation: `read()`
+    - wurden alle Leseseiten einer Pipe bereits gelesen, liefert `read()` EOF
+  - Schreib-Operation: `write()`
+  - Schließ-Operation: `close()`
