@@ -153,8 +153,8 @@
 
 ### Attributselektoren
 
-- [Attributname]
-- [name=wert]
+- `[Attributname]`
+- `[name=wert]`
 - Zeichenkette enthält Wert, durch Leerzeichen getrennt [name~=wert]
 - Attributwert beginnt mit angegebener Zeichenkette, vom Rest mit Bindestrich getrennt [name|=wert]
 - Teilübereinstimmung:
