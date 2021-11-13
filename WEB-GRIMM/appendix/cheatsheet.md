@@ -307,7 +307,7 @@ const variable = 45;
 const Pi = 3.1415;    
 ```    
     
-#### Klausur
+### Klausur
 
 - allg. Fragen zu Technologien im Web
 - keine Geschichte
