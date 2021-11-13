@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
     if  (argc>1 && strcmp(argv[1],"server")==0){
         isServer=true;
     }
-    struct sockaddr_un addr,caddr;
+    struct sockaddr_un addr;
     char message[2000];
     int struct_length = sizeof(addr);
 
@@ -48,8 +48,8 @@ int main(int argc, char *argv[])
             printf("Couldn't bind to the port\n");
             return -1;
         }
-        int struct_length = sizeof(caddr);
-        if (recvfrom(socketint, (char *)message, sizeof(message), 0,(struct sockaddr*)&caddr, &struct_length) < 0){
+        int struct_length = sizeof(addr);
+        if (recvfrom(socketint, (char *)message, sizeof(message), 0,(struct sockaddr*)&addr, &struct_length) < 0){
             printf("Couldn't receive\n");
             return -1;
         }
