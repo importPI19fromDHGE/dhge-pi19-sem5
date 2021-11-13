@@ -17,7 +17,7 @@
 ## Werkzeuge
 
 - Texteditor
-- What You See Is What You Get - Editor
+- WYSIWYG - Editor (What You See Is What You Get)
 
 ### hilfreiche Funktionen
 
