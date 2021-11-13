@@ -133,11 +133,9 @@
 
 ## Farben
 
-- RGB (0..255)
-- hexadezimal
-- dezimal rgb(0,128,0)
-- prozentual: rgb(60%, 20%, 40%)
-- Transparenz mit 2 Stellen mehr bei heza & rgba vierter Wert zwischen 0 und 1
+- RGB: dezimal (dezimal `rgb(255,0,128)` oder prozentual `rgb(100%,0%,50%)`
+- hexadezimal (`#ff0080`)
+- Transparenz mit 2 Stellen mehr bei hexa & `rgba` (vierter Wert zwischen 0 und 1)
 
 ## Einheiten
 
