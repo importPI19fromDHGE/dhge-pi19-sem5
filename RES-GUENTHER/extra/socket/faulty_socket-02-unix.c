@@ -10,8 +10,8 @@
 #include <arpa/inet.h>
 #include <errno.h>
 
-#define SOCKET_NAME_S "serv234.socket"
-#define SOCKET_NAME_C "client123.socket"
+#define SOCKET_NAME_S "/tmp/serv234.socket"
+#define SOCKET_NAME_C "/tmp/client123.socket"
 int main(int argc, char *argv[])
 {
     printf("start \n");
