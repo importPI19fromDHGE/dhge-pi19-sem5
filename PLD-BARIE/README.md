@@ -220,25 +220,236 @@ Als PLD (Programmable Logic Device) werden **elektronische Bauelemente** bezeich
 
 ## VHDL-Modelle
 
+### Entity
+
+- beschreibt die Ein- und Ausgänge einer Struktur
+- Struktur selbst ist in dieser Beschreibung eine BlackBox
+  - das Innenleben wird nicht beschrieben
+- Schnittstellen werden in ``port`` beschrieben
+  - dabei Namensgebung und Richtung der Verbindung (in/out)
+
+Beispiel:
+
+```vhdl
+entity beispielname is
+  port ( a : in std_logic;
+         b : in std_logic; 
+         q : out std_logic) ;
+end beispielname;
+```
+
 ### Architecture
 
-### Entity
+- Architecture ist die Verhaltensbeschreibung
+- was passiert im Inneren der BlackBox?
+
+Beispiel:
+
+```vhdl
+architecture behave of entityName is
+begin
+  q <= a and b;
+end;
+```
 
 ### Configuration
 
+- sind für uns nicht relevant
+- Konzept zur Erweiterung der basalen Möglichkeiten in VHDL
+
 ## Packages / Bibliotheken
+
+- Bibliotheken werden in VHDL ``packages`` genannt
+
+Verwendung:
+
+```vhdl
+-- packages std und work brauchen keine library-Anweisung:
+-- std liefert Standardfunktionen 
+use std.textio.all;
+-- mit work können eigene Pakete verwendet werden
+-- diese müssen bereits in der Arbeitsbibliothek hinterlegt sein
+use work.eigenesPaket.all;
+-- für darüber hinausgehende Pakete muss library verwendet werden
+-- so z.B. für Datentypen aus dem iee-Standard
+library ieee;
+use ieee.std_logic_1164.all; 
+```
 
 ## Datentypen
 
+- ``INTEGER``
+  - ganze Zahlen, in der Standardbibliothek
+- ``STD_LOGIC``
+  - Mögliche Werte:
+    - U : uninitalized
+    - X : unknown
+    - 0 : low
+    - 1 : high
+    - Z : high impedance
+    - W : weak unknown
+    - L : weak low
+    - H : weak high
+    - \- : don´t care
+  - aus ieee-library
+- ``STD_LOGIC_VECTOR``
+  - std_logic als Vektor
+  - ieee-library
+- ``SIGNED``
+  - positive oder negative Ganzzahlen
+- ``UNSIGNED``
+  - positive Ganzzahlen
+- ``BIT``
+  - einzelnes Bit
+
+> weitere Datentypen möglich, aber für uns nicht relevant
+
 ## Typumwandlungen
+
+- Teilweise nur über Umwege möglich
+- ``STD_LOGIC_VECTOR``
+  - per ``signed(x)`` zu ``SIGNED``
+  - per ``unsigned(x)`` zu ``UNSIGNED``
+- ``UNSIGNED``
+  - per ``to_integer(x)`` zu ``INTEGER``
+  - per ``std_logic_vector(x)`` zu ``STD_LOGIC_VECTOR``
+- ``INTEGER``
+  - per ``to_unsigned(x,N)`` zu ``unsigned``
+    - N ist dabei Wortbreite
+  - per ``to_signed(x,N)`` zu ``SIGNED``
+- ``SIGNED``
+  - per ``to_integer(x)`` zu ``INTEGER``
+  - per ``std_logic_vector(x)`` zu ``STD_LOGIC_VECTOR``
 
 ## Operatoren
 
-## Signale
+### Logische Operatoren
 
-## Components
+- ``and`` $\rightarrow$ UND-Verknüpfung
+- ``or`` $\rightarrow$ ODER-Verknüpfung
+- ``nand`` $\rightarrow$ NICHT-UND-Verknüpfung
+- ``nor`` $\rightarrow$ NICHT-ODER-Verknüpfung
+- ``xor`` $\rightarrow$ EXKLUSIVES-ODER-Verknüpfung
+- ``nor`` $\rightarrow$ Invertierung
+
+- gelten für ``STD_LOGIC``, ``STD_LOGIC_VECTOR``, ``SIGNED`` und ``UNSIGNED``
+- sind synthetisierbar
+
+### Arithmetische Operatoren
+
+- für numerische Datentypen, immer synthetisierbar:
+  - ``+`` $\rightarrow$ Addition
+  - ``-`` $\rightarrow$ Subtraktion
+  - ``*`` $\rightarrow$ Multiplikation
+  - ``abs`` $\rightarrow$ Absolutwert
+- für numerische Datentypen, Synthese abhängig vom verwendeten Programm:
+  - ``/`` $\rightarrow$ Division
+  - ``mod`` $\rightarrow$ Qotient der Ganzzahldivision
+  - ``rem`` $\rightarrow$ Rest der Ganzzahldivision
+- für ``INTEGER``-Datentypen, nur für Konstanten synthetisierbar:
+  ``**`` $\rightarrow$ Potenzierung
+
+### Vergleichsoperatoren
+
+- für beliebige Datentypen, Synthetisierbar
+  - ``=`` $\rightarrow$ Gleich
+  - ``/=`` $\rightarrow$ Ungleich
+- für numerische Datentypen, Synthetisierbar
+  - ``>`` $\rightarrow$ Größer
+  - ``<`` $\rightarrow$ Kleiner
+  - ``>=`` $\rightarrow$ Größer-gleich
+  - ``<=`` $\rightarrow$ Kleiner-gleich
 
 ## Processes
+
+- Prozesse in VHDL werden verwendet um Zustandsänderungen von Signalen zu erreichen
+- um das Arbeiten mit Schleifen u.ä. zu ermöglichen, laufen Prozesse sequentiell ab
+- nebenläufige Ausführung zu anderen Prozessen oder Signalzuweisungen: alle Prozesse laufen gleichzeitig (daher Implikationen für Signale)
+- Prozesse sind immer aktiv und werden kontinuierlich ausgeführt
+- werden in ``ARCHITECTURE``definiert
+- laufen ab, wenn sich ein Signal in der Senistivity List ändert, oder nach ``wait``-Statement: **nicht beides!**
+
+**Beispiel:**
+
+```vhdl
+-- mit sensitivity-list
+
+architecture architecture_name of entity_name is
+begin 
+  optional_prozess_name : process (a,b,c) -- Ausführung bei Änderung der Signale a,b,c
+  begin
+    q <= (a and b) or c;
+  end process;
+end;
+
+-- mit wait statement
+architecture architecture_name of entity_name is
+begin 
+  optional_prozess_name : process
+  begin
+    wait until a = `1`;
+    q <= (a and b) or c;
+  end process;
+end;
+
+```
+
+## Signale
+
+- Signale sind in VHDL die "Zustände der Leitungen" $\rightarrow$ Zwischenergebnisse
+- sie werden innerhalb der Architecture deklariert (siehe Beispiel unten)
+- in der ``ENTITY`` beschriebene Ports stehen in der zugeordneten ``ARCHITECTURE`` als Signale zur Verfügung und müssen nicht neu deklariert werden
+
+**Verwendung:**
+
+```vhdl
+-- Deklaration:
+signal signal_name : signaltyp;
+
+-- Deklaration mit Zuweisung:
+signal signal_name : signaltyp := initialisationswert;
+
+-- Lokales Signal in Architecture
+
+architecture behave of entityName is
+  signal s : bit := `0`;
+begin
+  q <= a and s;
+end;
+
+```
+
+**Besonderheit:**
+
+- VHDL arbeitet (meist) parallel, nicht sequenziell
+- Problem bei der Verwendung von Signalen in (sequenziellen) Prozessen:
+- bei Verwendung von Signalen innerhalb eines Prozesses werden diese nicht während der Prozesslaufzeit aktualisiert
+  - es wird der Signalwert verwendet, der bei Prozessbeginn zur Verfügung steht
+  - nur die letzte Zuweisung an das Signal wird bei Prozessende oder -unterbrechung tatsächlich geschrieben
+  - Signale dürfen von beliebig viele Prozessen gelesen, aber in nur einem Prozess geschrieben werden
+
+## Variablen
+
+- können **NUR** in Prozessen verwendet werden
+- existieren auch nur in demselben Prozess $\rightarrow$ nur lokal
+- Deklaration nach ``process`` aber vor ``begin``
+- Wertänderungen sind augenblicklich und können daher im Gegensatz zu Signalen für die sequenzielle Abarbeitung genutzt werden
+
+**Beispiel:**
+
+````vhdl
+optional_prozess_name : process (a)
+  -- Deklaration und Zuweisung mit := 
+  variable variable_name : integer := 1; 
+begin
+  variable_name := variable_name + 2;
+  variable_name := variable_name + 4;
+-- Wert von variable_name sollte jetzt 7 sein
+  a <= variable_name;
+end process;
+````
+
+## Components
 
 ## Testen mit VHDL
 
