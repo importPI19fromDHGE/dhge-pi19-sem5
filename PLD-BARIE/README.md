@@ -42,7 +42,12 @@ Theorie und Praxis programmierbarer logischer Schaltungen
   - [Processes](#processes)
   - [Signale](#signale)
   - [Variablen](#variablen)
+  - [Port Maps](#port-maps)
   - [Components](#components)
+  - [Arrays](#arrays)
+  - [if](#if)
+  - [case](#case)
+  - [ATTRIBUTE KEEP](#attribute-keep)
   - [Testen mit VHDL](#testen-mit-vhdl)
   - [JTAG](#jtag)
 
