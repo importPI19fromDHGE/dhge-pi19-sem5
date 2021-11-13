@@ -96,37 +96,37 @@ Für die Schaltung würde dies bedeuten, dass die Signale zunächst durch UND un
 
 Als PLD (Programmable Logic Device) werden **elektronische Bauelemente** bezeichnet, die in **integrierten Schaltungen** verwendet werden. Sie werden von logischen Gattern dadurch abgegrenzt, dass ihre Funktion konfigurierbar ist (daher *programmable*).
 
-|Mikroprozessor|PLD|
-|---|---|
-|EVA-Prinzip|EVA-Prinzip|
-|Sequenzielle Verarbeitung $\rightarrow$ eher langsam|Parallele Verarbeitung $\rightarrow$ eher schnell|
-|Günstig|Teuer|
-|Allgemein gehalten|spezialisiert|
+| Mikroprozessor                                       | PLD                                               |
+| ---------------------------------------------------- | ------------------------------------------------- |
+| EVA-Prinzip                                          | EVA-Prinzip                                       |
+| Sequenzielle Verarbeitung $\rightarrow$ eher langsam | Parallele Verarbeitung $\rightarrow$ eher schnell |
+| Günstig                                              | Teuer                                             |
+| Allgemein gehalten                                   | spezialisiert                                     |
 
 ## Unterscheidung nach Art der Programmierung
 
-|Programmierungsart|Beschreibung|Merkmale|
-|---|---|---|
-|**Fuse**|Verbindungen, die nach der Produktion bestehen, werden **aufgetrennt**|Auftrennen ist dauerhaft $\rightarrow$ nur einmal konfigurierbar|
-||dies geschieht z.B. durch Laser oder elektrische Energie||
-||||
-|**Antifuse**|Konfiguration geschieht durch das **Herstellen von Verbindungen**|dauerhaft $\rightarrow$ nur einmal konfigurierbar|
-||durch Laser, Metallmasken, elektrische Energie||
-||||
-|**EPROM**|erasable programmable read-only memory|löschbar, wiederbeschreibbar, nicht flüchtig|
-||nichtflüchtiger Speicher|spezielle Geräte zur Konfiguration benötigt|
-||durch UV-Licht löschbar|wird kaum bis gar nicht mehr verwendet|
-||danach neuprogrammierbar||
-||||
-|**EEPROM**|electrically erasable programmable read-only memory|löschbar, wiederbeschreibbar, nicht flüchtig|
-||elektrisch löschbarer Speicher|wort- und byteweise löschbar|
-||besteht aus Matrix von Feldeffekttransistoren||
-||||
-|**Flash-EEPROM**|Sonderform der EEPROMs|löschbar, wiederbeschreibbar, nicht flüchtig|
-|||nur blockweise löschbar, nicht auf byte- oder Wortgröße|
-||||
-|**(S)RAM**|(static) random-access memory|löschbar, wiederbeschreibbar, **flüchtig**|
-|||flüchtig $\rightarrow$ Strom weg, Inhalt weg|
+| Programmierungsart | Beschreibung                                                           | Merkmale                                                         |
+| ------------------ | ---------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| **Fuse**           | Verbindungen, die nach der Produktion bestehen, werden **aufgetrennt** | Auftrennen ist dauerhaft $\rightarrow$ nur einmal konfigurierbar |
+|                    | dies geschieht z.B. durch Laser oder elektrische Energie               |                                                                  |
+|                    |                                                                        |                                                                  |
+| **Antifuse**       | Konfiguration geschieht durch das **Herstellen von Verbindungen**      | dauerhaft $\rightarrow$ nur einmal konfigurierbar                |
+|                    | durch Laser, Metallmasken, elektrische Energie                         |                                                                  |
+|                    |                                                                        |                                                                  |
+| **EPROM**          | erasable programmable read-only memory                                 | löschbar, wiederbeschreibbar, nicht flüchtig                     |
+|                    | nichtflüchtiger Speicher                                               | spezielle Geräte zur Konfiguration benötigt                      |
+|                    | durch UV-Licht löschbar                                                | wird kaum bis gar nicht mehr verwendet                           |
+|                    | danach neuprogrammierbar                                               |                                                                  |
+|                    |                                                                        |                                                                  |
+| **EEPROM**         | electrically erasable programmable read-only memory                    | löschbar, wiederbeschreibbar, nicht flüchtig                     |
+|                    | elektrisch löschbarer Speicher                                         | wort- und byteweise löschbar                                     |
+|                    | besteht aus Matrix von Feldeffekttransistoren                          |                                                                  |
+|                    |                                                                        |                                                                  |
+| **Flash-EEPROM**   | Sonderform der EEPROMs                                                 | löschbar, wiederbeschreibbar, nicht flüchtig                     |
+|                    |                                                                        | nur blockweise löschbar, nicht auf byte- oder Wortgröße          |
+|                    |                                                                        |                                                                  |
+| **(S)RAM**         | (static) random-access memory                                          | löschbar, wiederbeschreibbar, **flüchtig**                       |
+|                    |                                                                        | flüchtig $\rightarrow$ Strom weg, Inhalt weg                     |
 
 ## Unterscheidung nach internem Aufbau / Komplexität
 
@@ -203,16 +203,16 @@ Als PLD (Programmable Logic Device) werden **elektronische Bauelemente** bezeich
 
 ### Vergleich
 
-||ASIC|ASSP|uC|FPGA|
-|---|---|---|---|---|
-|Hohe Flexibilität|+|-|+|++|
-|Geringe Entwicklungszeit|--|+|++|O|
-|Geringe Entwicklungskosten|--|+|++|O|
-|Geringe Stückkosten|++|+|++|O|
-|Rechenleistung|++|++|O|+|
-|Verlustleistung|++|++|O|O|
-|Geringe Stückzahlen möglich|--|++|++|++|
-|Hohe Stückzahlen möglich|++|++|++|+|
+|                             | ASIC | ASSP | uC  | FPGA |
+| --------------------------- | ---- | ---- | --- | ---- |
+| Hohe Flexibilität           | +    | -    | +   | ++   |
+| Geringe Entwicklungszeit    | --   | +    | ++  | O    |
+| Geringe Entwicklungskosten  | --   | +    | ++  | O    |
+| Geringe Stückkosten         | ++   | +    | ++  | O    |
+| Rechenleistung              | ++   | ++   | O   | +    |
+| Verlustleistung             | ++   | ++   | O   | O    |
+| Geringe Stückzahlen möglich | --   | ++   | ++  | ++   |
+| Hohe Stückzahlen möglich    | ++   | ++   | ++  | +    |
 
 > lt. Folien aus: Gehrke; Winzker; Urbanski; Woitowitz: *Digitaltechnik*. Springer Vieweg; 2018
 
