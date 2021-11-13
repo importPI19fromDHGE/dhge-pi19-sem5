@@ -63,16 +63,16 @@
 ```
 ## Links
 
-- a -> anchor
-- href=dokument ODER =#ziel ODER =dokument#ziel
-- href="" -> Seite neuladen
-- href="#" || href="#top" -> Seitenanfang
-- download -> bei href angegebene Datei soll heruntergeladen werden
-- target -> wo Linkziel öffnen
-    - _blank -> neue Seite
-    - _self -> selbes Fenster
-    - _parent -> im Elternfenster
-    - _top -> im obersten Fenster
+- `a` -> anchor
+- `href=dokument` ODER `=#ziel` ODER `=dokument#ziel`
+- `href=""` -> Seite neuladen
+- `href="#"` || `href="#top"` -> Seitenanfang
+- `download` -> bei href angegebene Datei soll heruntergeladen werden
+- `target` -> wo Linkziel öffnen
+    - `_blank` -> neue Seite
+    - `_self` -> selbes Fenster
+    - `_parent` -> im Elternfenster
+    - `_top` -> im obersten Fenster
     - Fenstername
 
 ## Listentypen
