@@ -105,7 +105,7 @@
 ### Input
 
 - type: text, email, tel, password, url, search, number, range, radio, checkbox, hidden, file, color, date, button
-- weitere Attribute: maxlength, minlength, required, pattern, value, placeholder
+- weitere Attribute: maxlength, minlength, min, max, required, pattern, value, placeholder
 
 ### Select
 
