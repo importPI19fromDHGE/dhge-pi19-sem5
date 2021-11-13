@@ -674,7 +674,7 @@ Mehrdimensionale Arrays:
 ```php
 $mitarbeiter = array(
   array("Rv", "Novae"),
-  array("Max", "ZeroPoint"),
+  array("ZeroPoint", "Max"),
   array("Steve", "2955"),
   array("nuker", "xy")
 )
