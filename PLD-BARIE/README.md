@@ -46,7 +46,7 @@ Theorie und Praxis programmierbarer logischer Schaltungen
     - [Positionszuordnung (positional port map)](#positionszuordnung-positional-port-map)
   - [Components](#components)
   - [Arrays](#arrays)
-  - [if](#if)
+  - [if-statements](#if-statements)
   - [case](#case)
   - [ATTRIBUTE KEEP](#attribute-keep)
   - [Testen mit VHDL](#testen-mit-vhdl)
