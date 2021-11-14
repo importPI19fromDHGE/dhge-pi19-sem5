@@ -91,7 +91,7 @@
 ## Formulare
 
 ```html
-<form action=submit.html id=form1>
+<form action="" id=form1 method="GET">
     <label for="name">Name:
         <input id=name type=text name=name required>
     </label>
@@ -100,11 +100,10 @@
 
 - ID und Name bestenfalls identisch halten
 - <fieldset> -> Formularelemente gruppieren
-- <button> -> clientseitige Aktion, submit, reset
 
 ### Input
 
-- type: text, email, tel, password, url, search, number, range, radio, checkbox, hidden, file, color, date, button
+- type: text, email, tel, password, url, search, number, range, radio, checkbox, hidden, file, color, date, submit, reset
 - weitere Attribute: maxlength, minlength, min, max, required, pattern, value, placeholder
 
 ### Select
@@ -114,6 +113,93 @@
 - verschachtelte Auswahlliste <optgroup>
 - Attribute: name, size, multiple
 - Attribut für <option>: selected
+    
+### Beispiel
+  
+```html    
+            <form id="annmeldSem5" name="annmeldSem5" 
+                  method="GET" action="" enctype="multipart/form-data">
+                <label for="name">Name: 
+                  <input name="vorname" id="name" 
+                  maxlength="10" value="Hilde">
+                </label>
+                <label for="suche">Suchen: 
+                    <input type="search" name="suche" id="suche" 
+                        maxlength="10" placeholder="Suchbegriff" list="liste">
+                    <datalist id="liste">
+                        <option>HTML</option>
+                        <option>CSS</option>
+                    </datalist>
+                </label>
+                <label for="alter">Alter:
+                    <input type="number" id="alter" name="alter" 
+                       min="0" step="2">
+                </label><br><br>
+                <label for="tage">Tage: 
+                    <input type="range" id="tage" name="tage" 
+                      min="5" max="15" step="2" value="5">
+                </label><br>
+                
+                
+                
+                <fieldset id="sturi">
+                    <legend>Studienrichtung: </legend>
+                    <label for="pi">PI 
+                        <input type="radio" name="sturi" id="pi" value="1">
+                    </label>
+                    <label for="wi">WI 
+                        <input type="radio" name="sturi" id="wi" value="2">
+                    </label>
+                </fieldset>
+                
+                <label for="sonder">Sonderheiten: 
+                        <fieldset id="sonder" >
+                            <label for="polster">Polsterstuhl 
+                                <input type="checkbox" name="sonder" 
+                                   id="polster" value="1">
+                            </label>
+                            <label for="steckdose">Steckdose 
+                                <input type="checkbox" name="sonder" 
+                                    id="steckdose" value="2">
+                            </label>
+                        </fieldset>
+                <br>
+                <label for="farbe">Hintergrund-Farbe:
+                    <input type="color" id="farbe" name="hintergrund"
+                      value="#0066FF">
+                </label>
+                <br><br>
+
+                <label for="zahlung">Zahlungsbeleg: 
+                    <input type="file" id="zahlung" name="zahlung"
+                      multiple accept="image/*">
+                </label>
+                <BR>
+                <label for="imaDat">Datum der Imatrikulation:
+                    <input type="date" id="imaDat" name="imaDat" 
+                           min="1999-09-01" max="2050-12-31">
+                </label>
+                <br><br>
+                <label for="geschl">Geschlecht:
+                    <select name="geschl" id="geschl" size="2" 
+                            multiple>
+                        <option value="1">weiblich</option>
+                        <option value="2">männlich</option>
+                        <option value="3">divers</option>
+                    </select>
+                </label>
+                <br><br>
+
+                <label for="anmerkungen">Anmerkungen: <br>
+                    <textarea cols="80" rows="20" name="anmerkungen" id="anmerkungen">Beispiel
+                    </textarea>
+                </label>
+
+                <br><br>
+                <input type="submit" value="Senden">
+                <input type="reset" value="Löschen">
+            </form>   
+```                 
 
 ## Universalattribute
 
@@ -262,7 +348,6 @@
 - Array
 - Object
 - function    
-- null
     
 ## Operatoren
     
@@ -296,6 +381,7 @@ document.querySelectorAll(); //gibt alle Elemente, die dem angegebenen CSS-Selek
 - JavaScript (& andere Scriptsprachen) -> setzen diesen Standard um
     
 ## Variablen
+                    
 ```javascript  
 let variable; //undefined
 variable = 2; //number    
