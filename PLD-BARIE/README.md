@@ -460,6 +460,54 @@ end process;
 
 ## Port Maps
 
+- werden genutzt, um Ports zu Signalen zuzuordnen
+- um für verallgemeinerte Bauteile (siehe Components) die tatsächlichen Signale auf die bereitgestellten Schnittstellen des Bauteils zu mappen
+- dies kann in den beiden folgenden Formaten geschehen:
+
+**Namenszuordnung (nominal port map):**
+
+- Zuordnung der Signale zu den Ports per Namen
+
+```vhdl
+-- Entity wird hier nicht beschrieben: IN-Signale sind C,D,E,F (integer)
+-- und OUT ist Z (integer)
+
+architecture behave of add_everything is
+  component add_something
+    port (a,b : in integer;
+            q : out integer);
+  end component;
+  signal m1, m2: integer; 
+
+begin 
+instanz_1: add_something port map (C => a, D=> b, m1 => q);
+instanz_2: add_something port map (E => a, F=> b, m2 => q);
+instanz_3: add_something port map (m1 => a, m2=> b, z => q);
+end behave;
+```
+
+### Positionszuordnung (positional port map)
+
+- Zuordnung funktioniert auich per Position (erstes bis letztes, weniger Schreibarbeit)
+
+```vhdl
+-- Entity wird hier nicht beschrieben: IN-Signale sind C,D,E,F (integer)
+-- und OUT ist Z (integer)
+
+architecture behave of add_everything is
+  component add_something
+    port (a,b : in integer;
+            q : out integer);
+  end component;
+  signal m1, m2: integer; 
+
+begin 
+instanz_1: add_something port map (C,D,m1);
+instanz_2: add_something port map (E,F,m2);
+instanz_3: add_something port map (m1,m2,z);
+end behave;
+```
+
 ## Components
 
 > entnommen aus: <http://www.informatik.uni-ulm.de/ni/Lehre/SS03/ProSemFPGA/VHDL-Grundlagen.pdf>
