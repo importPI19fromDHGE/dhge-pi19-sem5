@@ -4,13 +4,39 @@
 
 ### Produktionsfaktoren, betriebliche Funktionsbereiche
 
-#### Sie kennen die Instrumente der Erstellung einer Ablauforganisation
+#### Unterschied Aufbauorganisation und Ablauforganisation
 
-- **Kommentar: wahrscheinlich ist Aufbauorganisation gemeint?**
+**Aufbauorganisation**
+
+Struktur des Unternehmens mit seinen Hierarchien
+
+**Ablauforganisation**
+
+Organisation der Durchführung von Prozessen
+
+#### Sie kennen die Instrumente der Erstellung einer Aufbauorganisation
+
+- Stelllenbeschreibung
+  - Aufgaben, Anforderungen
+- Organigramm
+- Information
+  - Top-Down
+  - Bottom-Up
+
+#### Sie kennen vier Ablauforganisationen, eine davon können Sie berechnen
+
+- Netzplantechnik ($\rightarrow$ Knotennetzplan)
+- Ganttdiagramm
+- Flussdiagramm
+- Workflow
+
+#### Sie können Aufgabenanalyse und –Synthese zum Erstellen der Inhalte einer Aufbauorganisation erläutern
+
+- TODO
 
 #### Sie können Aufgabenanalyse und –Synthese zum Erstellen der Inhalte einer Ablauforganisation erläutern
 
-- **Kommentar: ebenso?**
+- TODO
 
 #### Sie können Verantwortung an einem Beispiel erläutern und kennen die Kompetenzen einer Stelle
 
@@ -589,7 +615,26 @@ einfache Programmierbarkeit und Aufnahme in die EDV bei Rechnersystemen | Kennza
 
 ### Sie kennen Führungsarten, Führungsstile und drei Führungstechniken mit denen ein Projektleiter das Projekt führen kann und sind in der Lage diese zu beschreiben!
 
-- TODO
+TODO: Ich glaub das ist allgemein und nicht nur für Projektmanagement?
+
+**Führungsarten**
+
+- Motivation
+- Aufgaben
+- Ziele
+
+**Führungsstile**
+
+- autoritär
+- kooperativ
+- Laissez Faire
+
+**Führungstechniken**
+
+- Management by Objective (MbO) $\rightarrow$ Ziele $\rightarrow$ Vereinbarung $\rightarrow$ kooperativ
+- Management by Question (MbQ) $\rightarrow$ Fragen
+- Management by Delegation (MbD) $\rightarrow$ Aufgaben übergeben
+- Management by Results (MbR) $\rightarrow$ Ziele $\rightarrow$ Anordnung $\rightarrow$ autoritär
 
 ## Controlling
 
@@ -627,6 +672,18 @@ einfache Programmierbarkeit und Aufnahme in die EDV bei Rechnersystemen | Kennza
 
 ### Sie beherrschen den Managementkreislauf in seiner Anwendung!
 
+**Allgemein:**
+
+1. Aufgabe/Ziel
+2. Planung/Organisation
+3. Entscheiden/Koordination
+4. Realisierung
+5. Controlling
+
+**Bei Neuem:**
+
+Siehe [Für den KVP können sie den Managementkreislauf anwenden!](#für-den-kvp-können-sie-den-managementkreislauf-anwenden)
+
 ## Erfassen und Bewerten von Qualitätsdaten
 
 - TODO
@@ -645,6 +702,8 @@ einfache Programmierbarkeit und Aufnahme in die EDV bei Rechnersystemen | Kennza
 
 ### Für den KVP können sie den Managementkreislauf anwenden!
 
+- PDCA!
+
 ## Weiterentwicklung des Risikomanagements
 
 ### Sie sind in der Lage an Hand einer Ausgangssituation eine SWOT-Analyse durch zuführen!
@@ -653,7 +712,12 @@ einfache Programmierbarkeit und Aufnahme in die EDV bei Rechnersystemen | Kennza
 
 ### Sie können ISHIKAWA [Ursache-Wirkungsdiagramm] an Hand einer Fehlersituation anwenden!
 
-- TODO
+- Wir wollen ein Problem lösen
+- Was müssen wir untersuchen, um das Problem zu lösen?
+- $\rightarrow$ die 7-M!
+- $\rightarrow$ Methode, Maschine, Mensch, Mileau, Messen, Management, Material
+
+> In solch einer Anwendungsaufgabe, müssen im Text beschriebene Fehler den M's zugeordnet werden! (Punktzahl der Aufgabe beachten!)
 
 ### Sie können das Risiko-Management an Hand des Ampelsystems erklären.
 
