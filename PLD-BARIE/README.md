@@ -43,6 +43,7 @@ Theorie und Praxis programmierbarer logischer Schaltungen
   - [Signale](#signale)
   - [Variablen](#variablen)
   - [Port Maps](#port-maps)
+    - [Positionszuordnung (positional port map)](#positionszuordnung-positional-port-map)
   - [Components](#components)
   - [Arrays](#arrays)
   - [if](#if)
