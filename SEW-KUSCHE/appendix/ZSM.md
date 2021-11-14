@@ -159,7 +159,7 @@ int someFunction(int par1, ///< parameter 1
 #### Variablen in Makefiles
 
 - **Variablen**-Definition: z.B. `hfiles=circ.h color.h graobj.h rect.h`
-- Verwendung in Befehlen oder Targets: z.B. ```main.o: main.cpp &#36;(hfiles)```
+- Verwendung in Befehlen oder Targets: z.B. ```main.o: main.cpp $(hfiles)```
 - sollten für **Gruppen von Files** (`.o`/`.h`-Files), **Befehle** (Compiler, Linker) und **Optionen** (Compiler-Optionen, Suchpfade für System-Header und Libs) definiert werden $\rightarrow$ einfache Anpassung
 - **standardisierte Namen** haben sich eingebürgert: z.B. `CC`, `CFLAGS`, ...
 
