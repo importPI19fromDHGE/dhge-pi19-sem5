@@ -283,7 +283,7 @@
 
 ### Block Box
 
-- display: block
+- `display: block`
 - Anordnung untereinander
 - gesamte Breite des Elternelements
 - für viele Textelemente Standard
