@@ -612,8 +612,8 @@ if <condition_1> then
 elsif <condition_2> then
   statements;
 else
-  statements; 
-end if; 
+  statements;
+end if;
 ```
 
 ## case
@@ -622,6 +622,7 @@ end if;
   - ein bestimmtes Ereignis: ``when `42` =>``
   - eine Range: ``when 7 to 11 =>``
   - mehrere Werte: ``when 1|3|7 =>``
+
 Syntax:
 
 ````vhdl
