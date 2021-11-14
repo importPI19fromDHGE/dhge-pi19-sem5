@@ -265,7 +265,7 @@
 
 ### Verbundsselektoren
 
-- *.classname
+- p.classname
 - Kombinatoren:
   - Kindkombinator: Element > Kind z.B. p > em -> eine Ebene drunter
   - Nachfahrenkombinator: Element Kind z.B. p em ->
