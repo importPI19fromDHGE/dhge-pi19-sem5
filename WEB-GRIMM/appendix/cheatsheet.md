@@ -61,6 +61,7 @@
 <link rel="stylesheet" href="styles.css">
 <title>Titel</title>
 ```
+
 ## Links
 
 - `a` -> anchor
@@ -69,11 +70,11 @@
 - `href="#"` || `href="#top"` -> Seitenanfang
 - `download` -> bei href angegebene Datei soll heruntergeladen werden
 - `target` -> wo Linkziel öffnen
-    - `_blank` -> neue Seite
-    - `_self` -> selbes Fenster
-    - `_parent` -> im Elternfenster
-    - `_top` -> im obersten Fenster
-    - Fenstername
+  - `_blank` -> neue Seite
+  - `_self` -> selbes Fenster
+  - `_parent` -> im Elternfenster
+  - `_top` -> im obersten Fenster
+  - Fenstername
 
 ## Listentypen
 
@@ -99,7 +100,7 @@
 ```
 
 - ID und Name bestenfalls identisch halten
-- <fieldset> -> Formularelemente gruppieren
+- `<fieldset>` $\rightarrow$ Formularelemente gruppieren
 
 ### Input
 
@@ -109,97 +110,95 @@
 ### Select
 
 - Ausswahlliste in Formularen
-- Elemente innerhalb des Body mit <option>
-- verschachtelte Auswahlliste <optgroup>
+- Elemente innerhalb des Body mit `<option>`
+- verschachtelte Auswahlliste `<optgroup>`
 - Attribute: name, size, multiple
-- Attribut für <option>: selected
-    
-### Beispiel
-  
-```html    
-            <form id="annmeldSem5" name="annmeldSem5" 
-                  method="GET" action="" enctype="multipart/form-data">
-                <label for="name">Name: 
-                  <input name="vorname" id="name" 
-                  maxlength="10" value="Hilde">
-                </label>
-                <label for="suche">Suchen: 
-                    <input type="search" name="suche" id="suche" 
-                        maxlength="10" placeholder="Suchbegriff" list="liste">
-                    <datalist id="liste">
-                        <option>HTML</option>
-                        <option>CSS</option>
-                    </datalist>
-                </label>
-                <label for="alter">Alter:
-                    <input type="number" id="alter" name="alter" 
-                       min="0" step="2">
-                </label><br><br>
-                <label for="tage">Tage: 
-                    <input type="range" id="tage" name="tage" 
-                      min="5" max="15" step="2" value="5">
-                </label><br>
-                
-                
-                
-                <fieldset id="sturi">
-                    <legend>Studienrichtung: </legend>
-                    <label for="pi">PI 
-                        <input type="radio" name="sturi" id="pi" value="1">
-                    </label>
-                    <label for="wi">WI 
-                        <input type="radio" name="sturi" id="wi" value="2">
-                    </label>
-                </fieldset>
-                
-                <label for="sonder">Sonderheiten: 
-                        <fieldset id="sonder" >
-                            <label for="polster">Polsterstuhl 
-                                <input type="checkbox" name="sonder" 
-                                   id="polster" value="1">
-                            </label>
-                            <label for="steckdose">Steckdose 
-                                <input type="checkbox" name="sonder" 
-                                    id="steckdose" value="2">
-                            </label>
-                        </fieldset>
-                <br>
-                <label for="farbe">Hintergrund-Farbe:
-                    <input type="color" id="farbe" name="hintergrund"
-                      value="#0066FF">
-                </label>
-                <br><br>
+- Attribut für `<option>`: selected
 
-                <label for="zahlung">Zahlungsbeleg: 
-                    <input type="file" id="zahlung" name="zahlung"
-                      multiple accept="image/*">
-                </label>
-                <BR>
-                <label for="imaDat">Datum der Imatrikulation:
-                    <input type="date" id="imaDat" name="imaDat" 
-                           min="1999-09-01" max="2050-12-31">
-                </label>
-                <br><br>
-                <label for="geschl">Geschlecht:
-                    <select name="geschl" id="geschl" size="2" 
-                            multiple>
-                        <option value="1">weiblich</option>
-                        <option value="2">männlich</option>
-                        <option value="3">divers</option>
-                    </select>
-                </label>
-                <br><br>
+### Formular-Beispiel
 
-                <label for="anmerkungen">Anmerkungen: <br>
-                    <textarea cols="80" rows="20" name="anmerkungen" id="anmerkungen">Beispiel
-                    </textarea>
-                </label>
+```html
+<form id="annmeldSem5" name="annmeldSem5"
+        method="GET" action="" enctype="multipart/form-data">
+    <label for="name">Name:
+        <input name="vorname" id="name"
+        maxlength="10" value="Hilde">
+    </label>
+    <label for="suche">Suchen:
+        <input type="search" name="suche" id="suche"
+            maxlength="10" placeholder="Suchbegriff" list="liste">
+        <datalist id="liste">
+            <option>HTML</option>
+            <option>CSS</option>
+        </datalist>
+    </label>
+    <label for="alter">Alter:
+        <input type="number" id="alter" name="alter"
+            min="0" step="2">
+    </label><br><br>
+    <label for="tage">Tage:
+        <input type="range" id="tage" name="tage"
+            min="5" max="15" step="2" value="5">
+    </label><br>
 
-                <br><br>
-                <input type="submit" value="Senden">
-                <input type="reset" value="Löschen">
-            </form>   
-```                 
+    <fieldset id="sturi">
+        <legend>Studienrichtung: </legend>
+        <label for="pi">PI
+            <input type="radio" name="sturi" id="pi" value="1">
+        </label>
+        <label for="wi">WI
+            <input type="radio" name="sturi" id="wi" value="2">
+        </label>
+    </fieldset>
+
+    <label for="sonder">Sonderheiten:
+            <fieldset id="sonder" >
+                <label for="polster">Polsterstuhl
+                    <input type="checkbox" name="sonder"
+                        id="polster" value="1">
+                </label>
+                <label for="steckdose">Steckdose
+                    <input type="checkbox" name="sonder"
+                        id="steckdose" value="2">
+                </label>
+            </fieldset>
+    <br>
+    <label for="farbe">Hintergrund-Farbe:
+        <input type="color" id="farbe" name="hintergrund"
+            value="#0066FF">
+    </label>
+    <br><br>
+
+    <label for="zahlung">Zahlungsbeleg:
+        <input type="file" id="zahlung" name="zahlung"
+            multiple accept="image/*">
+    </label>
+    <BR>
+    <label for="imaDat">Datum der Imatrikulation:
+        <input type="date" id="imaDat" name="imaDat"
+                min="1999-09-01" max="2050-12-31">
+    </label>
+    <br><br>
+    <label for="geschl">Geschlecht:
+        <select name="geschl" id="geschl" size="2"
+                multiple>
+            <option value="1">weiblich</option>
+            <option value="2">männlich</option>
+            <option value="3">divers</option>
+        </select>
+    </label>
+    <br><br>
+
+    <label for="anmerkungen">Anmerkungen: <br>
+        <textarea cols="80" rows="20" name="anmerkungen" id="anmerkungen">Beispiel
+        </textarea>
+    </label>
+
+    <br><br>
+    <input type="submit" value="Senden">
+    <input type="reset" value="Löschen">
+</form>
+```
 
 ## Universalattribute
 
@@ -209,7 +208,7 @@
 - contenteditable -> Inhalt kann verändert werden
 - hidden -> Element ausgeblendet
 - draggable -> kann das Element gezogen werden?
-- lang 
+- lang
 - spellcheck -> browserinterne Rechtschreibprüfung aktivieren
 - style (böse)
 - tabindex -> Tabulatorreihenfolge
@@ -244,9 +243,9 @@
 - Zeichenkette enthält Wert, durch Leerzeichen getrennt [name~=wert]
 - Attributwert beginnt mit angegebener Zeichenkette, vom Rest mit Bindestrich getrennt [name|=wert]
 - Teilübereinstimmung:
-    - beginnt mit Zeichenkette -> [name^=wert]
-    - endet mit Zeichenkette -> [name$=wert]
-    - enthält Zeichenkette -> [name*=wert]
+  - beginnt mit Zeichenkette -> [name^=wert]
+  - endet mit Zeichenkette -> [name$=wert]
+  - enthält Zeichenkette -> [name*=wert]
 
 ### Pseudoklassen
 
@@ -268,12 +267,12 @@
 
 - *.classname
 - Kombinatoren:
-    - Kindkombinator: Element > Kind z.B. p > em -> eine Ebene drunter
-    - Nachfahrenkombinator: Element Kind z.B. p em -> 
-    - Nachbarkombinator: Element + Kind z.B. h1 + p -> Auf gleicher Ebene, was direkt daneben steht
-    - Geschwisterkombinator: alle Elemente, die auf gl Ebene folgen z.B. h1 ~ p -> alle, die auf der gleichen Ebene liegen
+  - Kindkombinator: Element > Kind z.B. p > em -> eine Ebene drunter
+  - Nachfahrenkombinator: Element Kind z.B. p em ->
+  - Nachbarkombinator: Element + Kind z.B. h1 + p -> Auf gleicher Ebene, was direkt daneben steht
+  - Geschwisterkombinator: alle Elemente, die auf gl Ebene folgen z.B. h1 ~ p -> alle, die auf der gleichen Ebene liegen
 
-## Display Eigenschaft 
+## Display Eigenschaft
 
 - none -> Element ist nicht vorhanden
 
@@ -304,11 +303,11 @@
 - automatische Erzeugung
 - repeat(auto-fill, minmax(wert,wert))
 - Zuweisung der Zeilen/Spalten
-    - grid-row: start/end
-    - grid-column: start/end
-                    
-#### Beispiel
-                   
+  - grid-row: start/end
+  - grid-column: start/end
+
+#### Grid Beispiel
+
 ```css
 body {
     font-family: Calibri, Geneva, Tahoma, sans-serif;
@@ -320,11 +319,11 @@ body {
                             "nav main main aside"
                             "foot foot foot foot";
 }
-                    
+
 header {
     grid-area: head;
-}                    
-```                    
+}
+```
 
 ## Media Querries
 
@@ -342,14 +341,14 @@ header {
 - border: 1px solid/dotted/dashed black
 - border-radius: 0 5px 2px 2px
 - text-align
-- order                    
+- order
 
 # JavaScript
-    
+
 - JavaScript-Engine
-    - chrome: V8
-    - firefox: SpiderMonkey
-- Node -> Nutzung von JS ohne Browser    
+  - chrome: V8
+  - firefox: SpiderMonkey
+- Node -> Nutzung von JS ohne Browser
 - z.B. To Do Liste, Button zum Einfügen eines Elementes
 - Form html Tag mit "onsubmit=addTodo()"
 
@@ -357,26 +356,26 @@ header {
 
 - String
 - Number
-- Boolean    
+- Boolean
 - Symbol
 - undefined
 - BigInt
-    
+
 ### komplexe Datentypen
-    
+
 - Array
 - Object
-- function    
-    
+- function
+
 ## Operatoren
-    
+
 - klassische C-Operatoren
 - ** ist für das Potenzieren
 - == -> formatiert ggf. Datentypen um Gleichheit zu erreichen 23 == '23' -> true (!=)
 - 23 === '23' -> false (!==)
 
 ## DOM - Document Object Model
-    
+
 ```javascript
 document.getElementById();
 document.getElementByName();
@@ -384,7 +383,7 @@ document.getElementByTagName(); //z.B. <p>
 document.querySelector(); //gibt erstes Element, das dem angegebenen CSS-Selektor entspricht
 document.querySelectorAll(); //gibt alle Elemente, die dem angegebenen CSS-Selektor entsprechen
 ```
-    
+
 ## Function Syntax
 
 ```javascript
@@ -393,27 +392,27 @@ document.querySelectorAll(); //gibt alle Elemente, die dem angegebenen CSS-Selek
     //todofield.value Wert der in dem HTML Element mit HTML ID (hier von Input Feld) todofield vorhanden ist
     todofield.value ="Hallo" //im Inputfield wird nach Btnklick "Hallo" eingefügt}
 ```
-    
+
 ## Unterschied JavaScript & ECMA-Script
-    
+
 - ECMA-Script -> Standard
 - JavaScript (& andere Scriptsprachen) -> setzen diesen Standard um
-    
+
 ## Variablen
-                    
-```javascript  
+
+```javascript
 let variable; //undefined
-variable = 2; //number    
-variable = 'string';    
-use strict; //strenger Modus    
+variable = 2; //number
+variable = 'string';
+use strict; //strenger Modus
 const variable = 45;
-const Pi = 3.1415;    
-```    
-    
+const Pi = 3.1415;
+```
+
 ### Klausur
 
 - allg. Fragen zu Technologien im Web
 - keine Geschichte
 - HTML spezifische Fragen
-    - Stück Quellcode erläutern/ergänzen
+  - Stück Quellcode erläutern/ergänzen
 - Bücher & Aufzeichnungen dürfen verwendet werden
