@@ -274,7 +274,7 @@
 
 ## Display Eigenschaft
 
-- none -> Element ist nicht vorhanden
+- `none` -> Element wird nicht dargestellt und es wird kein Platz reserviert
 
 ### Inline Box
 
