@@ -306,6 +306,25 @@
 - Zuweisung der Zeilen/Spalten
     - grid-row: start/end
     - grid-column: start/end
+                    
+#### Beispiel
+                   
+```css
+body {
+    font-family: Calibri, Geneva, Tahoma, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: 2fr 4fr 4fr 1fr;
+    grid-template-areas:    "head head head head"
+                            "nav main main aside"
+                            "nav main main aside"
+                            "foot foot foot foot";
+}
+                    
+header {
+    grid-area: head;
+}                    
+```                    
 
 ## Media Querries
 
@@ -320,10 +339,10 @@
 - justify-content (Ausrichtung) center/space-between/space-evenly/space-around/end/...
 - font-family
 - transition: Attirbutname Dauer Art(linear, ease..)
-- ubung3/style.css kürzen + ausdrucken für grid
 - border: 1px solid/dotted/dashed black
 - border-radius: 0 5px 2px 2px
 - text-align
+- order                    
 
 # JavaScript
     
