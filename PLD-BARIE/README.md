@@ -457,7 +457,7 @@ begin
 -- Wert von variable_name sollte jetzt 7 sein
   a <= variable_name;
 end process;
-````
+```
 
 ## Port Maps
 
@@ -634,7 +634,7 @@ case <signal or variable> is
   when others =>
     statements;
 end case;
-````
+```
 
 ## ATTRIBUTE KEEP
 
