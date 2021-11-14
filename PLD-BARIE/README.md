@@ -594,9 +594,46 @@ type std_logic_vector is array (natural range <>) od std_logic;
 signal s: std_logic_vector (0 to 12);
 ```
 
-## if
+## if-statements
+
+- benutzbar in:
+  - Process
+  - Function
+  - Procedure
+- Mehrfachvergabe von Konditionen möglich, nur die erste wird aber ausgeführt
+- ``elsif`` und ``else`` sind optional
+- als condition kann jeder Wahrheitswert verwendet werden
+
+Syntax:
+
+```vhdl
+if <condition_1> then
+  statements;
+elsif <condition_2> then
+  statements;
+else
+  statements; 
+end if; 
+```
 
 ## case
+
+- Choices können sein:
+  - ein bestimmtes Ereignis: ``when `42` =>``
+  - eine Range: ``when 7 to 11 =>``
+  - mehrere Werte: ``when 1|3|7 =>``
+Syntax:
+
+````vhdl
+case <signal or variable> is
+  when <choice> =>
+    statements;
+  when <other choice> =>
+    statements;
+  when others =>
+    statements;
+end case;
+````
 
 ## ATTRIBUTE KEEP
 
