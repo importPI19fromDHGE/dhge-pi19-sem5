@@ -493,27 +493,69 @@ einfache Programmierbarkeit und Aufnahme in die EDV bei Rechnersystemen | Kennza
 
 ### Sie können den Unterschied zwischen Projekt und Projektmanagement erklären!
 
-- TODO
+- **Projekt:** risikobehafteter, hoch komplexer Gegenstand einer Handlung (Ziel/Aufgabe) mit begrenzten Ressourcen (HR, MR, FR) in einem bestimmten Zeitrahmen
+- **Projektmanagement:** Organisation von Ablauf, Abrechnung und Dokumentation der Umsetzung eines Projektes
 
 ### Sie kennen die sieben Merkmale die ein Projekt kennzeichnen!
 
-- TODO
+- Finanzieller Rahmen
+- Personeller Rahmen
+- Begrenzte materielle Verfügbarkeit
+- Erst- oder Einmaligkeit/Vergebenes Ziel
+- Begrenzte Dauer
+- Hohe Komplexität
+- Risiko der Unerreichbarkeit
 
 ### Sie können die vier Grundsätze der Projektplanung erklären!
 
-- TODO
+- Einheitliche Planungsmethoden
+  - Herstellen der Vergleichbarkeit
+  - Kommunikation
+- Einheitliche Planungsstandards
+  - Qualitätssicherung
+  - Abrechnung
+- Nutzung geeigneter Projektsoftware
+  - Effizienz
+  - Handswerkszeug zur Bearbeitung der Daten
+- Nutzung von Projekterfahrung
+  - Risikominimierung
+  - Effizenz
+  - KVP
 
 ## Themengebiete
 
 ### Sie sind in der Lage die Arten der Projekte in ihren Themengebieten zu trennen und darzustellen!
 
-- TODO
+- ausrichtungsbezogen:
+  - revolutionär: neue Idee; gewollte Schritte, bewusst angeregt (z.B. Glühbirne)
+  - evolutionär: kleine ungewollte Schritte $\rightarrow$ Weiterentwicklung einer Idee (Entwicklung) oder Verbesserung/Optimierung einer Idee (Rationalisierung)
+    - z.B.: Sensomotorik beim Menschen
+  - expansiv: Vergrößern/Ausweiten einer Idee (Objekte)
+    - z.B.: zusätzliche Produktionsanlagen bauen, neue Märkte erschließen
+  - Forschung: z.B. Trial and Error
+  - Entwicklung: z.B. Rennrad als Weiterentwicklung des "normalen" Fahrrads
+- ausstattungsbezogen:
+  - personell: eine/mehrere Personen
+  - Vollzeit: begrenzte hauptamtliche Tätigkeit
+  - Teilzeit: parallel zur derzeitigen Tätigkeit
+- trägerbezogen:
+  - eigene Projekte: im eigenen Unternehmen
+  - fremde Projekte: für ein anders Unternehmen bzw. durch ein anderes Unternehmen
+  - Mischprojekte: eigene und fremde Kräfte wirken gemeinsam
+- funktionsbezogen:
+  - Materialwirtschaft: Supply Chain Management (bspw.: Schreiner muss Holz beschaffen)
+  - Fertigung: ein Projekt zur Optimierung der Produktion (bspw. energiersparenderer Prozess)
+  - Marketing (Preis-, Verteilungs- Produkt-, Kommunikationspolitik)
+  - Verwaltung: Umstellung von Fax auf ein Vorgangsbearbeitungssystem (Echtzeitsystem)
+  - Kombination
 
 ## Organisation
 
 ### Sie kennen die Zeitabschnitte/Planungszeiträume von Projekten!
 
-- TODO
+- strategisch (> 3/5 Jahre): langfristige, grundlegende Ziele
+- taktisch (< 3/5 Jahre, >1 Jahr): mittelfristige Teilziele
+- operativ (<1 Jahr): kurzfristige Prozesssteuerung
 
 ### Sie kennen die zwei Abschnitte der Projektumsetzung!
 
