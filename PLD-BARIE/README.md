@@ -477,7 +477,7 @@ architecture behave of add_everything is
     port (a,b : in integer;
             q : out integer);
   end component;
-  signal m1, m2: integer; 
+  signal m1, m2: integer;
 
 begin 
 instanz_1: add_something port map (C => a, D=> b, m1 => q);
@@ -499,7 +499,7 @@ architecture behave of add_everything is
     port (a,b : in integer;
             q : out integer);
   end component;
-  signal m1, m2: integer; 
+  signal m1, m2: integer;
 
 begin 
 instanz_1: add_something port map (C,D,m1);
