@@ -351,8 +351,7 @@ Listet alle von einem Prozess aktuell geöffneten Files
 - **Instrumentierte Profiler:** fügen Messcode für Code-Blöcke und Funktionen ein $\rightarrow$ exakte Messung, aber verändertes Zeitverhalten durch Overhead (z.B. `gcov`)
 - **Sampling Profiler:** *Code bleibt unverändert* $\rightarrow$ regelmäßiges Unterbrechen und Extrahieren von Debug-Infos
   - *geringer Overhead, aber geringe Genauigkeit* $\rightarrow$ Mindestlaufzeit für statistische Relevanz notwendig; keine garantierte Aussage über ungenutzten Code
-  - "blind" für Codestellen mit höherer Priorität als der Profiler (Interrupt-Handler, Codestellen mit gesperrten
-Interrupts)
+  - "blind" für Codestellen mit höherer Priorität als der Profiler (Interrupt-Handler, Codestellen mit gesperrten Interrupts)
 
 > `gprof` ist Mix aus Instrumentiert (für Aufrufzähler) und Sampling (für Laufzeit)
 
