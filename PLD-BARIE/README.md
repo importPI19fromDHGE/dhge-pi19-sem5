@@ -567,6 +567,32 @@ END structural;
 
 ## Arrays
 
+- können verwendet werden in:
+  - Package
+  - Entity
+  - Architecture
+  - Process
+  - Procedure
+  - Function
+- enthalten mehrere Elemente **des selben Datentyps**
+- zwei Arten: **Constrained** (feste Grenzen) und **Unsconstrained** (keine feste Größe und Grenze)
+  - nur Arrays mit festen Grenzen sidn synthetisierbar
+- müssen vorher als **Typ** deklariert werden
+
+Beispiele:
+
+```vhdl
+-- constrained array (8-Bit-Array)
+type examble_label is array (0 to 7) of bit;
+
+-- unconstrained array
+-- kommt so aus der ieee-lib, daher können wir es verwenden
+type std_logic_vector is array (natural range <>) od std_logic;
+
+-- um unconstrained Arrays zu deklarieren, muss der Bereich festegelegt werden
+signal s: std_logic_vector (0 to 12);
+```
+
 ## if
 
 ## case
