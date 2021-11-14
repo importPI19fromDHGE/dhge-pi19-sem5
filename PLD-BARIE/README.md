@@ -647,3 +647,9 @@ end case;
     - Programmieren eines Output-Checkers
 
 ## JTAG
+
+- ist eine weit verbreitete Technologie zum Programmieren, Debuggen und Testen von Prozessoren und FPGAs
+- nutzt 4 Signale (Test Access-Port / TAP) die an den Grenzen der Bauteile bereit gestellt werden
+- verschiedene Bauteile werden über diese serielle Schnittstelle miteinander verbunden (JTAG-Chaining)
+  - so kann geprüft werden, ob Verbindungen bestehen oder nicht
+- erleichtert das Testen von Bauteilen, die aus Ball-Grid-Array basieren -> kein direkter physischer Zugang nötig
