@@ -479,7 +479,7 @@ architecture behave of add_everything is
   end component;
   signal m1, m2: integer;
 
-begin 
+begin
 instanz_1: add_something port map (C => a, D=> b, m1 => q);
 instanz_2: add_something port map (E => a, F=> b, m2 => q);
 instanz_3: add_something port map (m1 => a, m2=> b, z => q);
@@ -495,13 +495,15 @@ end behave;
 -- und OUT ist Z (integer)
 
 architecture behave of add_everything is
+-- Komponente in die Architektur einführen
   component add_something
     port (a,b : in integer;
             q : out integer);
   end component;
   signal m1, m2: integer;
 
-begin 
+begin
+-- Koponente instanziieren und die Signale mappen
 instanz_1: add_something port map (C,D,m1);
 instanz_2: add_something port map (E,F,m2);
 instanz_3: add_something port map (m1,m2,z);
