@@ -278,7 +278,7 @@
 
 ### Inline Box
 
-- display: inline
+- `display: inline`
 - Breite der Box durch Inhalt bestimmt
 
 ### Block Box
