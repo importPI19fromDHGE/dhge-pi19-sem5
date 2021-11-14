@@ -372,7 +372,7 @@ use ieee.std_logic_1164.all;
 
 ## Processes
 
-- Prozesse in VHDL werden verwendet um Zustandsänderungen von Signalen zu erreichen
+- Prozesse in VHDL werden verwendet, um Zustandsänderungen von Signalen zu erreichen
 - um das Arbeiten mit Schleifen u.ä. zu ermöglichen, laufen Prozesse sequentiell ab
 - nebenläufige Ausführung zu anderen Prozessen oder Signalzuweisungen: alle Prozesse laufen gleichzeitig (daher Implikationen für Signale)
 - Prozesse sind immer aktiv und werden kontinuierlich ausgeführt
@@ -447,7 +447,7 @@ end;
 
 **Beispiel:**
 
-````vhdl
+```vhdl
 optional_prozess_name : process (a)
   -- Deklaration und Zuweisung mit :=
   variable variable_name : integer := 1;
@@ -489,7 +489,7 @@ end behave;
 
 ### Positionszuordnung (positional port map)
 
-- Zuordnung funktioniert auich per Position (erstes bis letztes, weniger Schreibarbeit)
+- Zuordnung funktioniert auch per Position (erstes bis letztes, weniger Schreibarbeit)
 
 ```vhdl
 -- Entity wird hier nicht beschrieben: IN-Signale sind C,D,E,F (integer)
@@ -504,7 +504,7 @@ architecture behave of add_everything is
   signal m1, m2: integer;
 
 begin
--- Koponente instanziieren und die Signale mappen
+-- Komponente instanziieren und die Signale mappen
 instanz_1: add_something port map (C,D,m1);
 instanz_2: add_something port map (E,F,m2);
 instanz_3: add_something port map (m1,m2,z);
@@ -577,14 +577,14 @@ END structural;
   - Function
 - enthalten mehrere Elemente **des selben Datentyps**
 - zwei Arten: **Constrained** (feste Grenzen) und **Unsconstrained** (keine feste Größe und Grenze)
-  - nur Arrays mit festen Grenzen sidn synthetisierbar
+  - nur Arrays mit festen Grenzen sind synthetisierbar
 - müssen vorher als **Typ** deklariert werden
 
 Beispiele:
 
 ```vhdl
 -- constrained array (8-Bit-Array)
-type examble_label is array (0 to 7) of bit;
+type example_label is array (0 to 7) of bit;
 
 -- unconstrained array
 -- kommt so aus der ieee-lib, daher können wir es verwenden
@@ -625,7 +625,7 @@ end if;
 
 Syntax:
 
-````vhdl
+```vhdl
 case <signal or variable> is
   when <choice> =>
     statements;
