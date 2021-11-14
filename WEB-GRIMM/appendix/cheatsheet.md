@@ -331,7 +331,7 @@ header {
 - Darstellung eines Dokumentes für verschiedene Ausgabemedien festlegen
 - mit ```css @media (max-width: 500px){HTML-Element CSS Code einfügen mit Änderungen}```
 
-## Ein paar Befehle..
+## Ein paar Attribute...
 
 - z-index -> Ebenensystem
 - Listen Zeichen weg: text-decoration
