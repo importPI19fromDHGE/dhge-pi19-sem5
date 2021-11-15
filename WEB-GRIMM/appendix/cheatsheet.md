@@ -387,10 +387,21 @@ document.querySelectorAll(); //gibt alle Elemente, die dem angegebenen CSS-Selek
 ## Function Syntax
 
 ```javascript
-    function addTodo(){
-        todolist.innerHTML += `... $(todofield.value) `; //HTML-Element ID (hier ul) erhält Fktionsaufruf (bei Btn Aufruf) jedes Mal neu HTML-Code zwischen ``
-    //todofield.value Wert der in dem HTML Element mit HTML ID (hier von Input Feld) todofield vorhanden ist
-    todofield.value ="Hallo" //im Inputfield wird nach Btnklick "Hallo" eingefügt}
+// Klasse eines Elementes togglen (selector, class)
+function toggleClass(selector, _class){
+	// Element aus DOM auswählen
+	const el = document.querySelector(selector);
+	// Abbruch, wenn kein passendes Element gefunden
+	if(!el) return;
+	// Besitzt das Element die Klasse?
+	if(el.classList.contains(_class)){
+		// ja -> Klasse entfernen
+		el.classList.remove(_class);
+	}else{
+		// nein ->Klasse hinzufügen
+		el.classList.add(_class);
+	}
+}
 ```
 
 ## Unterschied JavaScript & ECMA-Script
