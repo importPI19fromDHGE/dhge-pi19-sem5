@@ -389,18 +389,18 @@ document.querySelectorAll(); //gibt alle Elemente, die dem angegebenen CSS-Selek
 ```javascript
 // Klasse eines Elementes togglen (selector, class)
 function toggleClass(selector, _class){
-	// Element aus DOM auswählen
-	const el = document.querySelector(selector);
-	// Abbruch, wenn kein passendes Element gefunden
-	if(!el) return;
-	// Besitzt das Element die Klasse?
-	if(el.classList.contains(_class)){
-		// ja -> Klasse entfernen
-		el.classList.remove(_class);
-	}else{
-		// nein ->Klasse hinzufügen
-		el.classList.add(_class);
-	}
+  // Element aus DOM auswählen
+  const el = document.querySelector(selector);
+  // Abbruch, wenn kein passendes Element gefunden
+  if(!el) return;
+  // Besitzt das Element die Klasse?
+  if(el.classList.contains(_class)){
+    // ja -> Klasse entfernen
+    el.classList.remove(_class);
+  }else{
+    // nein ->Klasse hinzufügen
+    el.classList.add(_class);
+  }
 }
 ```
 
