@@ -13,18 +13,19 @@ Systemprogrammierung / Verteilte Systeme
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Systemprogrammierung / Verteilte Systeme](#systemprogrammierung--verteilte-systeme)
 - [Klausur](#klausur)
   - [Wiederholungsfragen zu Beginn der Veranstaltung](#wiederholungsfragen-zu-beginn-der-veranstaltung)
     - [PIA 27/10/21](#pia-271021)
       - [Mit make Kerne auslasten](#mit-make-kerne-auslasten)
-      - [Was sind Deadlocks und wie können Sie behoben werden](#was-sind-deadlocks-und-wie-k%C3%B6nnen-sie-behoben-werden)
-    - [Philosophenproblem nacherzählen und erklären](#philosophenproblem-nacherz%C3%A4hlen-und-erkl%C3%A4ren)
-      - [Gedankenspiele Anzahl Philosophen/Anzahl Stäbchen 5/2, 10/10, 10/5 beantworten können](#gedankenspiele-anzahl-philosophenanzahl-st%C3%A4bchen-52-1010-105-beantworten-k%C3%B6nnen)
+      - [Was sind Deadlocks und wie können Sie behoben werden](#was-sind-deadlocks-und-wie-können-sie-behoben-werden)
+    - [Philosophenproblem nacherzählen und erklären](#philosophenproblem-nacherzählen-und-erklären)
+      - [Gedankenspiele Anzahl Philosophen/Anzahl Stäbchen 5/2, 10/10, 10/5 beantworten können](#gedankenspiele-anzahl-philosophenanzahl-stäbchen-52-1010-105-beantworten-können)
     - [PIA 02/11/21](#pia-021121)
       - [Was ist fork](#was-ist-fork)
       - [Haupteigenschaft fork-Prozesse](#haupteigenschaft-fork-prozesse)
       - [Differenzieren zwischen Vater- und Kindprozess](#differenzieren-zwischen-vater--und-kindprozess)
-      - [Rückgabekategorien fork](#r%C3%BCckgabekategorien-fork)
+      - [Rückgabekategorien fork](#rückgabekategorien-fork)
     - [Differenzierung zwischen Vater- und Kind-Prozess](#differenzierung-zwischen-vater--und-kind-prozess)
       - [Was passiert, wenn man in Schleifen forkt](#was-passiert-wenn-man-in-schleifen-forkt)
     - [PIA 03/11/21](#pia-031121)
@@ -32,6 +33,7 @@ Systemprogrammierung / Verteilte Systeme
       - [Semaphoren unterscheiden](#semaphoren-unterscheiden)
       - [Semaphoren benutzen](#semaphoren-benutzen)
       - [Wann werden Semaphoren- Operationen aufgerufen](#wann-werden-semaphoren--operationen-aufgerufen)
+    - [PIA 15/11/21](#pia-151121)
 - [Systemprogrammierung](#systemprogrammierung)
   - [Lernziele/Themenschwerpunkte](#lernzielethemenschwerpunkte)
   - [Literaturempfehlung](#literaturempfehlung)
@@ -41,6 +43,7 @@ Systemprogrammierung / Verteilte Systeme
     - [Semaphore](#semaphore)
     - [Interprozesskommunikation](#interprozesskommunikation)
       - [Pipes](#pipes)
+      - [Sockets](#sockets)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -49,6 +52,10 @@ Systemprogrammierung / Verteilte Systeme
 # Klausur
 
 <!-- md2apkg ignore-card -->
+
+- nur behandelter Stoff
+- kein Programmcode
+- Fragen zu bestehendem Code
 
 ## Wiederholungsfragen zu Beginn der Veranstaltung
 
@@ -139,6 +146,17 @@ Verwendung (Operation)
 
 P - Vor dem kritischen Abschnitt LOCK
 V - Nach dem kritischen Abschnitt UNLOCK
+
+### PIA 15/11/21
+
+- Eine Ursache, warum zwei nacheinander gestartete PIDs auseinanderliegen
+- zwei Arten der IPC
+- Was passiert, wenn der Wertebereich für PIDs erschöpft ist? (2 Möglichkeiten)
+- wie zeigt man eine PID auf dem Terminal an?
+- Was ist passiert, wenn die Kind-PID kleiner ist als die vom Vater
+- Rückgabewerte von Fork
+- Wie verhindert man einen Deadlock im Code?
+- Unterschied zwischen Pipes und Sockets
 
 <!--newpage-->
 
@@ -265,3 +283,8 @@ int main()
     - wurden alle Leseseiten einer Pipe bereits gelesen, liefert `read()` EOF
   - Schreib-Operation: `write()`
   - Schließ-Operation: `close()`
+
+#### Sockets
+
+- IPC auf lokalem Rechner (Unix-Domäne) oder über das Internet (Internet-Domäne)
+- Ein Port ist eine Spezifikation zur Addressierung eines Prozesses auf einem Host
