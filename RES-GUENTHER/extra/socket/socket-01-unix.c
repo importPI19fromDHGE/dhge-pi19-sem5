@@ -1,3 +1,7 @@
+/* Dieses File ist keine valide Lösung für socket-01-unix.c
+Es ist als Exkurs in die AF_UNIX Sockets zur IPC zu verstehen.
+siehe PR #87, lange Diskussion, weitere Infos
+*/
 #include <sys/wait.h>
 #include <stdio.h>
 #include <stdlib.h>
