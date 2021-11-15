@@ -310,7 +310,7 @@ Flächenverteilungsmodellierung
 
 ## Umrechnung CMY in RGB normalerweise nicht verlustfrei. Warum?
 
-- Liegt am Farbprofil
+- liegt am Farbprofil
 - Farbmanagement deaktivieren um Farbprofile nicht zu berücksichtigen
 - dementsprechend dann verlustfrei
 
