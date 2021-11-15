@@ -292,7 +292,7 @@ Flächenverteilungsmodellierung
 
 - unterschiedliche Technologien, wie man zur Farbe kommt
 - additive Farbmischung für Monitore
-- subtraktive Farbmischung (man sieht nur die reflektierten Farbanteile für Zeitungsdruck
+- subtraktive Farbmischung (man sieht nur die reflektierten Farbanteile für Zeitungsdruck)
 
 ## Erklären Sie additive und subtraktive Farbmischung
 
