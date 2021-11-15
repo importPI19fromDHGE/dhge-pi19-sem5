@@ -275,7 +275,7 @@ Flächenverteilungsmodellierung
 
 ## Worum handelt es sich im physikalischen Sinne, wenn wir von Licht sprechen?
 
-- elektromagnetische Energie
+- elektromagnetische Welle
 
 ## Erklären Sie die Begriffe "Farbton" und "Sättigung" genauer.
 
