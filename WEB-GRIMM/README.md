@@ -698,7 +698,7 @@ foreach($mitarbeiter as $person)
 
 - verschiedenes im Angebot: ``mysqli``, ``PDO``
 - Bsp.: ``$dbh = new PDO($connectionstring, $user, $pw);``
-- Connection-String: ``$connectionstring = "mysql:host=localhorst;dbname=dhge";``
+- Connection-String: ``$connectionstring = "mysql:host=localhost;dbname=dhge";``
 - Um unangekündigten Besuch vom Datenschutzbeauftragten zu vermeiden, sollte man Exception Handling einbauen, sodass der Server im Fehlerfall nicht die Verbindungsdaten leakt
 
 # Moderne Webentwicklung mit Frameworks
