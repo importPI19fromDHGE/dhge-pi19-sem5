@@ -13,19 +13,18 @@ Systemprogrammierung / Verteilte Systeme
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Systemprogrammierung / Verteilte Systeme](#systemprogrammierung--verteilte-systeme)
 - [Klausur](#klausur)
   - [Wiederholungsfragen zu Beginn der Veranstaltung](#wiederholungsfragen-zu-beginn-der-veranstaltung)
     - [PIA 27/10/21](#pia-271021)
       - [Mit make Kerne auslasten](#mit-make-kerne-auslasten)
-      - [Was sind Deadlocks und wie können Sie behoben werden](#was-sind-deadlocks-und-wie-können-sie-behoben-werden)
-    - [Philosophenproblem nacherzählen und erklären](#philosophenproblem-nacherzählen-und-erklären)
-      - [Gedankenspiele Anzahl Philosophen/Anzahl Stäbchen 5/2, 10/10, 10/5 beantworten können](#gedankenspiele-anzahl-philosophenanzahl-stäbchen-52-1010-105-beantworten-können)
+      - [Was sind Deadlocks und wie können Sie behoben werden](#was-sind-deadlocks-und-wie-k%C3%B6nnen-sie-behoben-werden)
+    - [Philosophenproblem nacherzählen und erklären](#philosophenproblem-nacherz%C3%A4hlen-und-erkl%C3%A4ren)
+      - [Gedankenspiele Anzahl Philosophen/Anzahl Stäbchen 5/2, 10/10, 10/5 beantworten können](#gedankenspiele-anzahl-philosophenanzahl-st%C3%A4bchen-52-1010-105-beantworten-k%C3%B6nnen)
     - [PIA 02/11/21](#pia-021121)
       - [Was ist fork](#was-ist-fork)
       - [Haupteigenschaft fork-Prozesse](#haupteigenschaft-fork-prozesse)
       - [Differenzieren zwischen Vater- und Kindprozess](#differenzieren-zwischen-vater--und-kindprozess)
-      - [Rückgabekategorien fork](#rückgabekategorien-fork)
+      - [Rückgabekategorien fork](#r%C3%BCckgabekategorien-fork)
     - [Differenzierung zwischen Vater- und Kind-Prozess](#differenzierung-zwischen-vater--und-kind-prozess)
       - [Was passiert, wenn man in Schleifen forkt](#was-passiert-wenn-man-in-schleifen-forkt)
     - [PIA 03/11/21](#pia-031121)
