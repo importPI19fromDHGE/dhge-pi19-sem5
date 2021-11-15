@@ -17,7 +17,7 @@ einen Server realisiert (Client/Server Differenzierung per Parameterübergabe)
 #include <netinet/in.h>
 
 #define PORT 3400
-#define BUFSIZE 1024
+#define BUFSIZE 1024 // größe unseres buffers
 
 int main(int argc, char *argv[]){
 	int sockfd;
@@ -32,8 +32,8 @@ int main(int argc, char *argv[]){
 
 	// Server-Socket konfigurieren
 	servaddr.sin_family = AF_INET; // IPv4
-	servaddr.sin_addr.s_addr = INADDR_ANY;
-	servaddr.sin_port = htons(PORT);
+	servaddr.sin_addr.s_addr = INADDR_ANY; // erlaube jede incoming message
+	servaddr.sin_port = htons(PORT); // konvertiere von host zu network byte order
 
 	if(argc == 2 && strcmp(argv[1], "server") == 0) {
 		// Server-Socket an Port binden
@@ -46,12 +46,13 @@ int main(int argc, char *argv[]){
 
 		int len = sizeof(cliaddr);
 
+		// warte, bis client eine nachricht sendet; schreibe sie in buffer
 		int n = recvfrom(sockfd, (char *)buffer, BUFSIZE, 0, (struct sockaddr *) &cliaddr, &len);
 		buffer[n] = '\0';
 		printf("Nachricht vom Client: %s\n", buffer);
 	}else{
 		char *msg = "Hallo Server!";
-		// Nachricht an Server-Socket senden
+		// sende den Inhalt von msg an den server (schreibe ihn in den socket)
 		sendto(sockfd, (const char *) msg, strlen(msg), 0, (const struct sockaddr *) &servaddr, sizeof(servaddr));
 		printf("Nachricht gesendet.\n");
 	}
