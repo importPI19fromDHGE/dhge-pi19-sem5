@@ -264,6 +264,9 @@ Flächenverteilungsmodellierung
 
 ## Welche Zellen im menschlichen Auge sind für die Farbwahrnehmung verantwortlich?
 
+- **Zapfen** sind im menschlichen Auge für die **Farbwahrnehmung** verantwortlich
+- **Stäbchen** sind für die Wahrnehmung von **Grautönen** (Hell-Dunkel-Sehen)
+
 ## Mit welchen biologischen Argumenten wird die Drei-Farben-Theorie begründet.
 
 - es gibt mindestens drei unterschiedliche Rezeptoren, die auf unterschiedliche Wellenbereiche reagieren
