@@ -140,6 +140,42 @@ Verwendung (Operation)
 P - Vor dem kritischen Abschnitt LOCK
 V - Nach dem kritischen Abschnitt UNLOCK
 
+### PIA 15/11/21
+
+zweck pipe
+
+IPC Prozess A -> B
+
+Wie kommt es, dass Sie von P. A zu Pr. B einen Kanal haben?
+Inbesondere mit fork()?
+
+vgl. Sockets (File)
+
+Antwort: --> Kernel
+
+Was passiert, wenn ich forke?
+Kindprozess  ab Forkstelle -> Filedeskriptoren (auch Pipe), Variablen, etc. werden kopiert 
+Nicht kopiert werden: PID
+
+--> Nur Prozesse, die verwandt sind, können kommunizieren
+
+
+Operationen auf einer Pipe
+
+write(pipefd[0],buffer)
+read
+
+Parameter/Variable 
+Read: Aus Kernel in unseren buffer schreiben; von Pipe lesen
+
+Bidirektional: 
+Pipe umdrehen
+
+Was bedeutet close?
+
+Seite schließen:
+Schreibseite schließen: EOF anhängen
+
 <!--newpage-->
 
 # Systemprogrammierung
