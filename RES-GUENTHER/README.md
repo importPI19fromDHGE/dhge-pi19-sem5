@@ -163,7 +163,7 @@ V - Nach dem kritischen Abschnitt UNLOCK
 
 <!-- md2apkg ignore-card -->
 
-Bekannte Fragen: 
+Bekannte Fragen:
 
 **Rückgabewerte Fork**
 
@@ -179,7 +179,8 @@ Bekannte Fragen:
 IPC Prozess A -> B
 
 #### Wie kommt es, dass Sie von P. A zu Pr. B einen Kanal haben? Inbesondere mit fork()?
-<!-- TODO Frage klar definieren --> 
+
+<!-- TODO Frage klar definieren -->
 <!-- Antwort Studi: vgl. Sockets (File) -->
 
 - Kernel buffert das Geschriebene solange, bis es gelesen wird.
@@ -187,16 +188,16 @@ IPC Prozess A -> B
 #### Was passiert, wenn ich forke?
 
 - Ab fork() entsteht Kindprozess
-- Filedeskriptoren (auch Pipe), Variablen, etc. werden kopiert 
-- Nicht kopiert werden: PID <!-- DUH -->
+- Filedeskriptoren (auch Pipe), Variablen, etc. werden kopiert
+- Nicht kopiert werden: PID<!-- DUH -->
 
 $\rightarrow$ Prozesse, die verwandt sind, können über vor fork() angelegte Pipes kommunizieren.
 
 #### Welche Operationen auf einer Pipe kennen Sie? Beschreiben Sie deren Funktion
 
 - `write(pipefd[0],buffer)`
-  - Write: Aus Programm auf die Pipe schreiben, in den Kernelbuffer 
-- `read(pipefd[1],buffer)` 
+  - Write: Aus Programm auf die Pipe schreiben, in den Kernelbuffer
+- `read(pipefd[1],buffer)`
   - Read: Aus Kernelbuffer in Programmbuffer schreiben; aus Sicht des Programms von Pipe lesen
 
 #### Wie können Sie bidirektionale IPC ermöglichen?
@@ -209,7 +210,7 @@ $\rightarrow$ Prozesse, die verwandt sind, können über vor fork() angelegte Pi
 
 - Der Filedeskriptor wird gelöscht und steht nicht mehr zur Verfügung
 - Dadurch ist das dahinterliegende File (everything is a file) nicht mehr trivial erreichbar
-  -  Es sei denn ein Prozess hat das File jetzt gerade noch geöffnet.
+  - Es sei denn ein Prozess hat das File jetzt gerade noch geöffnet.
 
 Bei Pipes:
 
@@ -218,9 +219,9 @@ Bei Pipes:
 
 <!-- **PIDs differieren stark, was ist passiert?**  -->
 
-<!-- #### Was passiert, wenn der Wertebereich für PIDs erschöpft ist? (2 Möglichkeiten) TODO --> 
+<!-- #### Was passiert, wenn der Wertebereich für PIDs erschöpft ist? (2 Möglichkeiten) TODO -->
 
-#### Was ist passiert, wenn PID vom Kind < PID Vater 
+#### Was ist passiert, wenn PID vom Kind < PID Vater
 
 - PID Tabelle war voll, es wurden freigegebene kleinere PID genutzt
 
@@ -234,7 +235,7 @@ Bei Pipes:
 #### Wer/was definiert/ist kritischer Abschnitt?
 
 - TODO saubere Erklärung
--  ... Programmverhalten
+- ... Programmverhalten
 - Es ist ein Codebereich, der nur in einer definierten Anzahl von Prozessen zur Verfügung steht (stehen sollte)
 - Zugriffskonzepte, Semaphoren
 - Entwickler müssen im Programm dafür sorgen tragen
@@ -252,13 +253,13 @@ Bei Pipes:
 - Pipes
 - Sockets
 
-#### Unterschied Pipe Socket 
+#### Unterschied Pipe Socket
 
 - Pipes
   - Unix-Domaine exklusiv, gleiches Rechensystem
   - unidirektional
 - Socket
-  - Unix/Internetdomäne 
+  - Unix/Internetdomäne
   - bidirektional
 
 <!--newpage-->
