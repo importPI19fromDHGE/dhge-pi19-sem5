@@ -1,3 +1,42 @@
+- [Technologien für Web-Anwendungen](#technologien-für-web-anwendungen)
+- [HTML](#html)
+  - [Grundgerüst](#grundgerüst)
+  - [Head](#head)
+  - [Links](#links)
+  - [Listentypen](#listentypen)
+  - [Tabellen](#tabellen)
+  - [Formulare](#formulare)
+    - [Input](#input)
+    - [Select](#select)
+    - [Formular-Beispiel](#formular-beispiel)
+  - [Universalattribute](#universalattribute)
+- [CSS](#css)
+  - [Farben](#farben)
+  - [Box Model](#box-model)
+  - [Einheiten](#einheiten)
+  - [Selectoren](#selectoren)
+    - [Attributselektoren](#attributselektoren)
+    - [Pseudoklassen](#pseudoklassen)
+    - [Pseudoelemente](#pseudoelemente)
+    - [Verbundsselektoren](#verbundsselektoren)
+  - [`display` Eigenschaft](#display-eigenschaft)
+    - [`inline` Box](#inline-box)
+    - [`block` Box](#block-box)
+    - [`flex` Box](#flex-box)
+    - [`grid`](#grid)
+      - [Grid Beispiel](#grid-beispiel)
+  - [Media Queries](#media-queries)
+  - [Ein paar Attribute...](#ein-paar-attribute)
+- [JavaScript](#javascript)
+  - [Datentypen](#datentypen)
+    - [komplexe Datentypen](#komplexe-datentypen)
+  - [Operatoren](#operatoren)
+  - [DOM - Document Object Model](#dom---document-object-model)
+  - [Function Syntax](#function-syntax)
+  - [Unterschied JavaScript & ECMA-Script](#unterschied-javascript--ecma-script)
+  - [Variablen](#variablen)
+    - [Klausur](#klausur)
+
 # Technologien für Web-Anwendungen
 
 - Definition Webanwendung: Anwendung, plattformunabhängig im Browser, nutzt HTTP
@@ -21,9 +60,9 @@
 ## Grundgerüst
 
 ```html
-<!DOCTYPE html> <!-- Definition des Dokumententypens-$\rightarrow$
+<!DOCTYPE html> <!-- Definition des Dokumententypens -->
 <html lang="de">
-    <head> <!-- Dateikopf-$\rightarrow$
+    <head> <!-- Dateikopf -->
     </head>
     <body>
         <header></header>
@@ -37,14 +76,15 @@
         </main>
         <footer></footer>
         <aside></aside>
-        <script src=""></script> <!--Skripte werden am Besten am Dateiende geladen-$\rightarrow$
+        <script src=""></script> <!--Skripte werden am Besten am Dateiende geladen-->
     </body>
+</html>
 ```
 
 ## Head
 
 ```html
-<meta charset=UTF-8>
+<meta charset="UTF-8">
 <meta name="description" content="Seite">
 <meta name="keywords" content="HTML, CSS">
 <meta name="author" content="John Doe">
@@ -170,44 +210,57 @@
 
 ## Universalattribute
 
-- `id`
-- `class`
+- `id` $\rightarrow$ eineindeutig
+- `class` $\rightarrow$ kann mehrmals vergeben werden
 - `accesskey` $\rightarrow$ Taste zum Anspringen des Elementes
 - `contenteditable` $\rightarrow$ Inhalt kann verändert werden
 - `hidden` $\rightarrow$ Element ausgeblendet
 - `draggable` $\rightarrow$ kann das Element gezogen werden?
-- `lang`
+- `lang` $\rightarrow$ Sprache für Elemente überschreiben
 - `spellcheck` $\rightarrow$ browserinterne Rechtschreibprüfung aktivieren
 - `style` $\rightarrow$ inline-css *(böse)*
-- `tabindex` $\rightarrow$ Tabulatorreihenfolge
+- `tabindex` $\rightarrow$ Tabulatorreihenfolge, lfd. Nummer
 - `title` $\rightarrow$ Elementbeschreibung
 
 # CSS
 
+- direkt am HTML-Element (inline $\rightarrow$ `style=""`)
+- internes Stylesheet (`<style></style>`)
+- externes Stylesheet einbinden (`<link rel="stylesheet" href="../style.css">`)
+
 ## Farben
 
-- RGB: dezimal (dezimal `rgb(255,0,128)` oder prozentual `rgb(100%,0%,50%)`
+- RGB: dezimal (dezimal `rgb(255, 0, 128)` oder prozentual `rgb(100%, 0%, 50%)`
 - hexadezimal (`#ff0080`)
-- Transparenz mit 2 Stellen mehr bei hexa & `rgba` (vierter Wert zwischen 0 und 1)
+- Transparenz mit 2 Stellen mehr bei `hexa` & `rgba` (alpha Wert zwischen 0 und 1)#
+
+## Box Model
+
+![Box Model](assets/box_model.png)<!--width=600px-->
+
+- Content: The content of the box, where text and images appear
+- Padding: Clears an area around the content. The padding is transparent
+- Border: A border that goes around the padding and content
+- Margin: Clears an area outside the border. The margin is transparent
 
 ## Einheiten
 
 - physische Einheiten: Zoll (`in`), Zentimeter (`cm`), Pixel (`px`)
-- relative Einheiten: `em` (Schriftgröße), `ex` (Größe von x), `vw` (Viewportbreite), `vh` (Viewporthöhe), `vmin` & `vmax` (kleinerer/größerer Wert), `%`, `fr` (Anteile)
+- relative Einheiten: `em` (Schriftgröße), `ex` (Höhe kleiner Buchstaben), `vw` (Viewportbreite), `vh` (Viewporthöhe), `vmin` & `vmax` (kleinerer/größerer Wert), `%`, `fr` (Anteile), `rem` (`em` relativ zum parent)
 - Winkel: Grad (`deg`), Radiant (`rad`)
 - Zeit: Sekunden (`s`), Millisekunden (`ms`)
 
 ## Selectoren
 
-- Typselektor $\rightarrow$ HTML-Element (`p`, `h1`, ...)
-- Universalselektor $\rightarrow$ `*`
+- Universalselektor $\rightarrow$ addressiert alles: `*`
+- Typselektor $\rightarrow$ addressiert HTML-Element (`p`, `h1`, ...)
 - Klassenselektor $\rightarrow$ beginnt mit Punkt (`.class`)
 - ID-Selektor $\rightarrow$ beginnt mit Raute (`#id`)
 
 ### Attributselektoren
 
-- `[Attributname]`
-- `[name=wert]`
+- Attribut existiert $\rightarrow$ `[Attributname]`
+- Attribut hat Wert $\rightarrow$ `[name=wert]`
 - Zeichenkette enthält Wert, durch Leerzeichen getrennt `[name~=wert]`
 - Attributwert beginnt mit angegebener Zeichenkette, vom Rest mit Bindestrich getrennt `[name|=wert]`
 - Teilübereinstimmung:
@@ -218,67 +271,71 @@
 ### Pseudoklassen
 
 - auf Eigenschaften der HTML-Elemente bezogen
-- `:empty`, `:first-child`, `:last-child`, `:nth-child()`
-- `:link`, `:visited`, `:hover`, `:active`, `:focus`
+- Bezogen auf Kindelemente: `:empty`, `:first-child`, `:last-child`, `:nth-child()`
+- `:link` (alle NICHT besuchten), `:visited`, `:hover`, `:active`, `:focus`
 - `:disabled`, `:enabled`, `:checked`
 - `:valid`, `:invalid`, `:in-range`, `:out-of-range`
 
 ### Pseudoelemente
 
-- beginnen mit ::
-- ::first-line, ::first-letter
-- ::before, ::after
-- ::backdrop
-- ::selection, ::placeholder
+- beginnen mit `::`
+- `::first-line`, `::first-letter`
+- `::before`, `::after`
+- `::backdrop`: Box mit Größe vom Viewport
+- `::selection`, `::placeholder`
 
 ### Verbundsselektoren
 
-- p.classname
+- `p#id.classname[name=wert]::first-letter:hover`
 - Kombinatoren:
-  - Kindkombinator: Element > Kind z.B. p > em $\rightarrow$ eine Ebene drunter
-  - Nachfahrenkombinator: Element Kind z.B. p em $\rightarrow$
-  - Nachbarkombinator: Element + Kind z.B. h1 + p $\rightarrow$ Auf gleicher Ebene, was direkt daneben steht
-  - Geschwisterkombinator: alle Elemente, die auf gl Ebene folgen z.B. h1 ~ p $\rightarrow$ alle, die auf der gleichen Ebene liegen
+  - Kindkombinator: `Element > Kind` z.B. `p > em` $\rightarrow$ genau eine Ebene darunter
+  - Nachfahrenkombinator: `Element Kind` z.B. `p em` $\rightarrow$ beliebige Ebene darunter
+  - Nachbarkombinator: `Element + Kind` z.B. `h1 + p` $\rightarrow$ Auf gleicher Ebene, was direkt daneben steht
+  - Geschwisterkombinator: alle Elemente, die auf gleicher Ebene folgen z.B. `h1 ~ p` $\rightarrow$ alle, die auf der gleichen Ebene liegen
 
-## Display Eigenschaft
+## `display` Eigenschaft
 
 - `none` $\rightarrow$ Element wird nicht dargestellt und es wird kein Platz reserviert
+- `hidden` $\rightarrow$ Element wird nicht dargestellt, aber es wird Platz reserviert
+- `visible` $\rightarrow$ Element wird dargestellt und es wird Platz reserviert <!--was auch sonst-->
 
-### Inline Box
+### `inline` Box
 
+- bricht nichts um
+- Images sind standardmäßig `inline`
 - `display: inline`
 - Breite der Box durch Inhalt bestimmt
 
-### Block Box
+### `block` Box
 
 - `display: block`
 - Anordnung untereinander
 - gesamte Breite des Elternelements
 - für viele Textelemente Standard
 
-### Flex Box
+### `flex` Box
 
-- display: flex
-- flex-direction row/row-reverse/column/column-reverse
-- horizontalte oder vertikale Ausrichtung
+- `display: flex`
+- `flex-direction: row | row-reverse | column | column-reverse`
+- horizontale oder vertikale Ausrichtung
 
-### Grid
+### `grid`
 
-- display: grid
-- grid-template-columns: legt Spalten & deren Aufteilung fest
-- grid-template-areas: Bestimmung Zelle zu welchem Bereich gehört
-- grid-area: Bereich festlegen, in dem ein Element angezeigt wird
+- `display: grid`
+- `grid-template-columns`: legt Spalten & deren Aufteilung fest
+- `grid-template-areas`: Bestimmung Zelle zu welchem Bereich gehört
+- `grid-area`: Bereich festlegen, in dem ein Element angezeigt wird
 - automatische Erzeugung
-- repeat(auto-fill, minmax(wert,wert))
+- `repeat(auto-fill, minmax(wert,wert))`
 - Zuweisung der Zeilen/Spalten
-  - grid-row: start/end
-  - grid-column: start/end
+  - `grid-row`: start/end
+  - `grid-column`: start/end
 
 #### Grid Beispiel
 
 ```css
 body {
-    font-family: Calibri, Geneva, Tahoma, sans-serif;
+    font-family: Calibri, Times New Roman, Tahoma, sans-serif;
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 1fr;
     grid-template-rows: 2fr 4fr 4fr 1fr;
@@ -293,54 +350,53 @@ header {
 }
 ```
 
-## Media Querries
+## Media Queries
 
-- Medienabfragen
-- Darstellung eines Dokumentes für verschiedene Ausgabemedien festlegen
-- mit ```css @media (max-width: 500px){HTML-Element CSS Code einfügen mit Änderungen}```
+- Darstellung eines Dokumentes für verschiedene Ausgabemedien festlegen (rEspOnsIve DeSIgn)
+- mit css `@media (max-width: 500px){/* some css for small screens */}`
+- `@media print { /* some css for print layout */}`
 
 ## Ein paar Attribute...
 
-- z-index $\rightarrow$ Ebenensystem
-- Listen Zeichen weg: text-decoration
-- justify-content (Ausrichtung) center/space-between/space-evenly/space-around/end/...
-- font-family
-- transition: Attirbutname Dauer Art(linear, ease..)
-- border: 1px solid/dotted/dashed black
-- border-radius: 0 5px 2px 2px
-- text-align
-- order
+- `z-index` $\rightarrow$ Ebenensystem
+- `text-decoration`
+- `justify-content` (Ausrichtung) `center | space-between | space-evenly | space-around | end | ...` <!--wäre bei display:flex sinnvoll-->
+- `font-family` <!--weil das ja klar ist-->
+- `transition: Attributname Dauer Art (linear, ease, ...)`
+- `border: 1px solid|dotted|dashed black`
+- `border-radius: 0 5px 2px 2px`
+- `text-align`
+- `order`
 
 # JavaScript
 
 - JavaScript-Engine
-  - chrome: V8
-  - firefox: SpiderMonkey
+  - Chrome: V8
+  - Firefox: SpiderMonkey
 - Node $\rightarrow$ Nutzung von JS ohne Browser
-- z.B. To Do Liste, Button zum Einfügen eines Elementes
-- Form html Tag mit "onsubmit=addTodo()"
 
 ## Datentypen
 
-- String
-- Number
-- Boolean
-- Symbol
-- undefined
-- BigInt
+- `String`
+- `Number`
+- `Boolean`
+- `Symbol`
+- `undefined`
+- `BigInt`
+- `null`
 
 ### komplexe Datentypen
 
-- Array
-- Object
-- function
+- `Array`
+- `Object`
+- `function`
 
 ## Operatoren
 
 - klassische C-Operatoren
-- ** ist für das Potenzieren
-- == $\rightarrow$ formatiert ggf. Datentypen um Gleichheit zu erreichen 23 == '23' $\rightarrow$ true (!=)
-- 23 === '23' $\rightarrow$ false (!==)
+- `**` ist für das Potenzieren
+- `==` $\rightarrow$ formatiert ggf. Datentypen um Gleichheit zu erreichen 23 == '23' $\rightarrow$ true (!=)
+- `23 === '23'` $\rightarrow$ `false` (`!==`)
 
 ## DOM - Document Object Model
 
