@@ -160,15 +160,6 @@ V - Nach dem kritischen Abschnitt UNLOCK
 
 ### PIA 15/11/21
 
-- Eine Ursache, warum zwei nacheinander gestartete PIDs auseinanderliegen
-- zwei Arten der IPC
-- Was passiert, wenn der Wertebereich für PIDs erschöpft ist? (2 Möglichkeiten)
-- wie zeigt man eine PID auf dem Terminal an?
-- Was ist passiert, wenn die Kind-PID kleiner ist als die vom Vater
-- Rückgabewerte von Fork
-- Wie verhindert man einen Deadlock im Code?
-- Unterschied zwischen Pipes und Sockets
-
 <!-- md2apkg ignore-card -->
 
 Bekannte Fragen: 
@@ -226,13 +217,15 @@ Bei Pipes:
 
 <!-- **PIDs differieren stark, was ist passiert?**  -->
 
+<!-- #### Was passiert, wenn der Wertebereich für PIDs erschöpft ist? (2 Möglichkeiten) TODO --> 
+
 #### Was ist passiert, wenn PID vom Kind < PID Vater 
 
 - PID Tabelle war voll, es wurden freigegebene kleinere PID genutzt
 
 <!-- bitte obiges inhaltlich prüfen TODO -->
 
-#### Wie können sie sich die PID von Prozessen anzeigen lassen?
+#### Wie können sie sich die PID von Prozessen (auf dem Terminal) anzeigen lassen?
 
 - htop / anderer Taskmanager für Betriebssystem, alle Prozesse
 - `getpid()` für ein Programm
@@ -252,6 +245,11 @@ Bei Pipes:
 - Prozess killen
 - ggf. auch über Pipes (Implementierung notwendig)
 - Sockets benutzen ♻️ <!-- na mal sehen ob das in LaTeX und anki probleme macht -->
+
+#### Nennen Sie zwei Arten der IPC
+
+- Pipes
+- Sockets
 
 #### Unterschied Pipe Socket 
 
