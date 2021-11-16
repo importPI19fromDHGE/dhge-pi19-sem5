@@ -54,6 +54,7 @@ Systemprogrammierung / Verteilte Systeme
     - [Semaphore](#semaphore)
     - [Interprozesskommunikation](#interprozesskommunikation)
       - [Pipes](#pipes)
+      - [Sockets](#sockets)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
