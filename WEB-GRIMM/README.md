@@ -195,7 +195,7 @@ Beispiel-Skelett:
 - ``target``-Attribut um festzulegen, wie der Browser die Seite öffnen soll
   - eher nicht verwenden, Freiheit der Entscheidung dem User überlassen, zudem teilweise unsicher
   - ``<a href="Ziel" target="_self">`` - auf der selben Seite öffnen
-  - ``<a href="Ziel" target="_blank">`` - auf neuer Seite öffnen
+  - ``<a href="Ziel" target="_blank">`` - auf neuer Seite (in neuem Tab) öffnen
 - ``title``-Attribut: Linkbeschreibung, für Tooltips und Screenreader
 - ``type``-Attribut: MIME-Typ angeben, um Ausführung der Datei zu spezifizieren
 
