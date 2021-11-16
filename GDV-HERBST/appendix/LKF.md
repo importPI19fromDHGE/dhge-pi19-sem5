@@ -271,8 +271,7 @@ Windows, macOS (Linux als Ausnahme)
 
 - es gibt mindestens drei unterschiedliche Rezeptoren, die auf unterschiedliche Wellenbereiche reagieren
 - Erregungszustand des Auges über die drei Rezeptoren abbilden können
-- auch andere Ansätze schon bekannt: z.B. Farbe Gelb hinzufügen
-(da mit der 3 Farben-Theorie allein nicht alle sichtbaren Farben generiert werden können)
+- auch andere Ansätze schon bekannt: z.B. Farbe Gelb hinzufügen (da mit der 3 Farben-Theorie allein nicht alle sichtbaren Farben generiert werden können)
 
 ## Worum handelt es sich im physikalischen Sinne, wenn wir von Licht sprechen?
 
