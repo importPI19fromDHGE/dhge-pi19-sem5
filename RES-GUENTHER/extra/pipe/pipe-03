@@ -31,8 +31,6 @@ int main(){
 		exit(EXIT_FAILURE);
 	}
 
-	setbuf(stdout, NULL);
-
 	if(pid == 0){ // Kindprozess
 		close(fdpc[1]); // nicht benötigtes Schreib-Ende der PC-Pipe schließen
 		close(fdcp[0]); // nicht benötigtes Lese-Ende der CP-Pipe schließen
