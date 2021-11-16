@@ -50,6 +50,8 @@ Entwicklung von Webanwendungen
     - [Fancy-Input Beispiel](#fancy-input-beispiel)
 - [PHP und Datenbanken](#php-und-datenbanken)
   - [Datenbankschnittstellen](#datenbankschnittstellen)
+  - [Stringoperationen](#stringoperationen)
+  - [Sessions](#sessions)
 - [Moderne Webentwicklung mit Frameworks](#moderne-webentwicklung-mit-frameworks)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -726,6 +728,8 @@ Das Beispiel ist im Ordner `extra/fancy-input` zu finden.
   - sind immer dynamisch
   - appenden mit ``$name[] = "Franziska";``
   - es gibt auch assoziative Array, also mit benannten Indizes:
+- Funktionen unterstützen Standard-Parameter wie in C++
+- Javadoc-artige Kommentare werden unterstützt
 
 ```php
 $wochentage = array(
@@ -777,6 +781,24 @@ foreach($mitarbeiter as $person)
 - Bsp.: ``$dbh = new PDO($connectionstring, $user, $pw);``
 - Connection-String: ``$connectionstring = "mysql:host=localhost;dbname=dhge";``
 - Um unangekündigten Besuch vom Datenschutzbeauftragten zu vermeiden, sollte man Exception Handling einbauen, sodass der Server im Fehlerfall nicht die Verbindungsdaten leakt
+
+## Stringoperationen
+
+- ``strpos(haystack, needle [, offset])``: sucht ``needle`` in ``haystack``, ggf. nach Offset. Gibt Zeichenindex vom Wortbeginn aus, oder ``false``.
+- ``substr(haystack, needle [, length])``: sucht ``needle`` in ``haystack`` und gibt den String ab da aus, ggf. nur ``length`` Zeichen, oder ``false``.
+- ``str_replace(needle, replace, haystack)``: sucht ``needle`` in ``haystack`` und ersetzt sie durch ``replace``. Case-sensitiv.
+  - case-insensitive Funktion: ``str_ireplace(...)``
+- ``nl2br(src)``: wandelt ``\n`` in ``src`` zu ``<br>`` und gibt diesen String zurück
+
+## Sessions
+
+- Daten wie Session ID werden im Browser permanent gespeichert, um den Nutzer zu identifizieren
+  - Zweck: u.a. unnötige Logins vermeiden
+- Session erzeugen: ``session_start()``
+  - darf nur einmal auf dem Seitenkomplex<!--manche Profs würden das _Website_ nennen--> vorkommen
+- Daten werden in ``$_SESSION``-Array gespeichert
+  - Bsp.: ``$_SESSION["name"] = Franz;``
+- ``session_destroy()`` löscht die Session
 
 # Moderne Webentwicklung mit Frameworks
 
