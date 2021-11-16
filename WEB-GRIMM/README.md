@@ -651,7 +651,7 @@ Das Beispiel ist im Ordner `extra/fancy-input` zu finden.
   - sind immer dynamisch
   - appenden mit ``$name[] = "Franziska";``
   - es gibt auch assoziative Array, also mit benannten Indizes:
-- Funktionen unterstützen Standard-Parameter wie in C
+- Funktionen unterstützen Standard-Parameter wie in C++
 - Javadoc-artige Kommentare werden unterstützt
 
 ```php
