@@ -260,11 +260,11 @@ Windows, macOS (Linux als Ausnahme)
 
 ## Was versteht man unter "Subdivision Surface Modeling"?
 
-Flächenverteilungsmodellierung
+- Flächenverteilungsmodellierung
 
 ## Welche Zellen im menschlichen Auge sind für die Farbwahrnehmung verantwortlich?
 
-- **Zapfen** sind im menschlichen Auge für die **Farbwahrnehmung** verantwortlich
+- **Zäpfchen** sind im menschlichen Auge für die **Farbwahrnehmung** verantwortlich
 - **Stäbchen** sind für die Wahrnehmung von **Grautönen** (Hell-Dunkel-Sehen)
 
 ## Mit welchen biologischen Argumenten wird die Drei-Farben-Theorie begründet.
@@ -272,10 +272,11 @@ Flächenverteilungsmodellierung
 - es gibt mindestens drei unterschiedliche Rezeptoren, die auf unterschiedliche Wellenbereiche reagieren
 - Erregungszustand des Auges über die drei Rezeptoren abbilden können
 - auch andere Ansätze schon bekannt: z.B. Farbe Gelb hinzufügen
+(da mit der 3 Farben-Theorie allein nicht alle sichtbaren Farben generiert werden können)
 
 ## Worum handelt es sich im physikalischen Sinne, wenn wir von Licht sprechen?
 
-- elektromagnetische Welle
+- elektromagnetische Energie ("Welle" wäre auch richtig)
 
 ## Erklären Sie die Begriffe "Farbton" und "Sättigung" genauer.
 
@@ -286,15 +287,18 @@ Flächenverteilungsmodellierung
 
 ## Was beschreibt das CIE-Farbwertdiagramm?
 
-- alle Farben, die man sehen kann
+- alle Farben, die der Mensch sehen kann
 
 ## Woher kommen die Unterschiede im Farbraum z.B. für den Zeitungsdruck & typische Monitore?
 
 - unterschiedliche Technologien, wie man zur Farbe kommt
 - additive Farbmischung für Monitore
-- subtraktive Farbmischung (man sieht nur die reflektierten Farbanteile für Zeitungsdruck)
+- subtraktive Farbmischung (man sieht nur die reflektierten Farbanteile) $\rightarrow$ für Zeitungsdruck
 
 ## Erklären Sie additive und subtraktive Farbmischung
+
+- additiv: Farben leuchten selbst, wenn alle leuchten erhalten wir weiß, wenn keine leuchten schwarz
+- subtraktiv: Farben sind auf reflektiertes Licht hingewiesen, verwenden daher Komplementärfarben von RGB $\rightarrow$ CMY
 
 ## Welche Typen von Lichtquellen werden beispielhaft unterschieden? Warum werden unterschiedliche Typen definiert?
 
@@ -308,6 +312,14 @@ Flächenverteilungsmodellierung
 
 ## Wie erfolgt die Umrechnung vom CMY- in das RGB-Farbmodell?
 
+- Farbwerte werden invertiert
+
+$$
+R = 255 \cdot (1-C) \\
+G = 255 \cdot (1-M) \\
+B = 255 \cdot (1-Y)
+$$
+
 ## Umrechnung CMY in RGB normalerweise nicht verlustfrei. Warum?
 
 - liegt am Farbprofil
@@ -317,6 +329,16 @@ Flächenverteilungsmodellierung
 ## Erklären Sie die Unterschiede zwischen Farbmodell, Farbraum und Farbprofil. (und Verbindungen der einzelnen Sachen)
 
 ## Aus welchen Reflexionsanteilen setzt sich das Beleuchtungsmodell nach Phong zusammen? Wie werden die Faktoren für reale Materialien ermittelt?
+
+- diffuse Reflektion
+- spekuläre Reflektion
+- ambiente Reflektion
+
+**TODO: Wie ordnet man die Dinge hier zu?**
+
+- ideal spiegelnd
+- gerichtet diffus
+- ideal diffus
 
 ## Wie werden die Berechnungsverfahren wie Phong, Metal, Blinn usw. aus technischer Sicht bezeichnet?
 
