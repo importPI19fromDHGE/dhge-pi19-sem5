@@ -51,6 +51,12 @@ Systemprogrammierung / Verteilte Systeme
 
 <!-- md2apkg ignore-card -->
 
+- 60 min, keine Hilfsmittel
+- Multiple Choice Fragen möglich
+- nur behandelter Stoff
+- kein Programmcode
+- Fragen zu bestehendem Code
+
 ## Wiederholungsfragen zu Beginn der Veranstaltung
 
 <!-- md2apkg ignore-card -->
@@ -143,39 +149,98 @@ V - Nach dem kritischen Abschnitt UNLOCK
 
 ### PIA 15/11/21
 
-zweck pipe
+<!-- md2apkg ignore-card -->
+
+Bekannte Fragen: 
+
+**Rückgabewerte Fork**
+
+- Was gibt fork zurück, wenn Kind nicht gestartet hat?
+  - -1
+- fork() gibt 23 zurück - was ist passiert?
+  - Kind hat PID 23, wir sind Vater.
+- fork() gibt 0 zurück.
+  - Wir sind Kindprozess eines Fork.
+
+#### Zweck pipe
 
 IPC Prozess A -> B
 
-Wie kommt es, dass Sie von P. A zu Pr. B einen Kanal haben?
-Inbesondere mit fork()?
+#### Wie kommt es, dass Sie von P. A zu Pr. B einen Kanal haben? Inbesondere mit fork()?
+<!-- TODO Frage klar definieren --> 
+<!-- Antwort Studi: vgl. Sockets (File) -->
 
-vgl. Sockets (File)
+- Kernel buffert das Geschriebene solange, bis es gelesen wird.
 
-Antwort: --> Kernel
+#### Was passiert, wenn ich forke?
 
-Was passiert, wenn ich forke?
-Kindprozess  ab Forkstelle -> Filedeskriptoren (auch Pipe), Variablen, etc. werden kopiert 
-Nicht kopiert werden: PID
+- Ab fork() entsteht Kindprozess
+- Filedeskriptoren (auch Pipe), Variablen, etc. werden kopiert 
+- Nicht kopiert werden: PID <!-- DUH -->
 
---> Nur Prozesse, die verwandt sind, können kommunizieren
+$\rightarrow$ Prozesse, die verwandt sind, können über vor fork() angelegte Pipes kommunizieren.
 
+#### Welche Operationen auf einer Pipe kennen Sie? Beschreiben Sie deren Funktion
 
-Operationen auf einer Pipe
+- `write(pipefd[0],buffer)`
+  - Write: Aus Programm auf die Pipe schreiben, in den Kernelbuffer 
+- `read(pipefd[1],buffer)` 
+  - Read: Aus Kernelbuffer in Programmbuffer schreiben; aus Sicht des Programms von Pipe lesen
 
-write(pipefd[0],buffer)
-read
+#### Wie können Sie bidirektionale IPC ermöglichen?
 
-Parameter/Variable 
-Read: Aus Kernel in unseren buffer schreiben; von Pipe lesen
+- Pipe umdrehen <!-- LOL -->, ggf. mit Zugriffskonzept (Semaphore)
+- 2 Pipes verwenden
+- Socket benutzen
 
-Bidirektional: 
-Pipe umdrehen
+#### Was bedeutet close generell / bei Pipe?
 
-Was bedeutet close?
+- Der Filedeskriptor wird gelöscht und steht nicht mehr zur Verfügung
+- Dadurch ist das dahinterliegende File (everything is a file) nicht mehr trivial erreichbar
+  -  Es sei denn ein Prozess hat das File jetzt gerade noch geöffnet.
 
-Seite schließen:
-Schreibseite schließen: EOF anhängen
+Bei Pipes:
+
+- Seite einer Pipe schließen
+  - Schreibseite schließen: EOF senden
+
+<!-- **PIDs differieren stark, was ist passiert?**  -->
+
+#### Was ist passiert, wenn PID vom Kind < PID Vater 
+
+- PID Tabelle war voll, es wurden freigegebene kleinere PID genutzt
+
+<!-- bitte obiges inhaltlich prüfen TODO -->
+
+#### Wie können sie sich die PID von Prozessen anzeigen lassen?
+
+- htop / anderer Taskmanager für Betriebssystem, alle Prozesse
+- `getpid()` für ein Programm
+
+#### Wer/was definiert/ist kritischer Abschnitt?
+
+- TODO saubere Erklärung
+-  ... Programmverhalten
+- Es ist ein Codebereich, der nur in einer definierten Anzahl von Prozessen zur Verfügung steht (stehen sollte)
+- Zugriffskonzepte, Semaphoren
+- Entwickler müssen im Programm dafür sorgen tragen
+
+#### Deadlock verhindern/auflösen
+
+- Reboot
+- Auf Ressource verzichten (Signale an Prozess senden)
+- Prozess killen
+- ggf. auch über Pipes (Implementierung notwendig)
+- Sockets benutzen ♻️ <!-- na mal sehen ob das in LaTeX und anki probleme macht -->
+
+#### Unterschied Pipe Socket 
+
+- Pipes
+  - Unix-Domaine exklusiv, gleiches Rechensystem
+  - unidirektional
+- Socket
+  - Unix/Internetdomäne 
+  - bidirektional
 
 <!--newpage-->
 
