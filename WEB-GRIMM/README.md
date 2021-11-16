@@ -160,6 +160,41 @@ Beispiel-Skelett:
   - Attribut "lang" gibt die Dokumentensprache an
 - in ``<head>...</head>`` wird der Dateikopf beschrieben
   - hier Metainformationen über die Website
+  - wird auf der Seite nicht dargestellt
+  - Informationen werden durch Browser, Suchmaschinen und Crawler benutzt
+- in ``<body> ... </body>`` wird der "Hauptteil" der Seite beschrieben
+- Kommentare mit ``<!-- Kommentar -->``
+
+### Text-Formatierung
+
+> Hinweis: diese Tags werden zwar von vielen Browsern noch dargestellt, sind aber eigentlich veraltet und sollten nicht mehr verwendet werden
+
+- ``<b> ... </b>`` um Text fett zu formatieren
+- ``<u> ... </u>`` um Text zu unterstreichen
+- ``<i> ... </i>`` für Kursivschreibung
+- ``<font> ... </font>`` mit folgenden Attributen:
+  - color - Schriftfarbe
+  - face - Schriftart
+  - size - Schriftgröße
+
+### Hyperlinks
+
+- werden in ``<a> Linktext </a>`` definiert
+- durch ``href``-Attribut wird das Linkziel festgelegt: ``<a href="https://www.dhge.de"> Hier gehts zur DHGE </a>``
+- URLs können relativ oder absolut sein:
+  - Absolute URLs für externe Ziele (wie DHGE-Beispiel)
+  - relative URLS für lokale Ziele: ``<a href="index.html">Nach Hause</a>``
+  - spezielle Verweise:
+  - ``<a href=""> RELOOOAD </a>`` - Seite neu laden
+  - ``<a href="#"> Nach oben </a>`` - Zum Seitenbeginn springen
+  - ``<a href="#id"> gimme this </a>`` - Zum Seitenelement mit der angegebenen ID springen
+- ``download``-Attribut um anzugeben, dass Linkziel heruntergeladen werden soll
+- ``target``-Attribut um festzulegen, wie der Browser die Seite öffnen soll
+  - eher nicht verwenden, Freiheit der Entscheidung dem User überlassen, zudem teilweise unsicher
+  - ``<a href="Ziel" target="_self">`` - auf der selben Seite öffnen
+  - ``<a href="Ziel" target="_blank">`` - auf neuer Seite öffnen
+- ``title``-Attribut: Linkbeschreibung, für Tooltips und Screenreader
+- ``type``-Attribut: MIME-Typ angeben, um Ausführung der Datei zu spezifizieren
 
 ### HTML 5
 
@@ -177,14 +212,22 @@ Beispiel-Skelett:
 
 #### Bilder
 
+- Tag: ``<img>`` $\rightarrow$ kein schließendes Tag!
 - Attribute:
-  - `ismap`: serverseitige Image Map, bei Klick werden Mauskoordinaten an Server gesendet
-  - `usemap`: in Verbindung mit Map-Tag
+  - ``src`` : Pfad zur Bilddatei - veraltet, besser: ``srcset``
+  - ``alt`` : Bildbeschreibung für Screenreader oder falls Datei nicht gefunden: **wichtig!**
+  - ``height`` und ``width``: Höhe und Breite des Bildes angeben
+  - ``ismap``: serverseitige Image Map, bei Klick werden Mauskoordinaten an Server gesendet
+    - ``<img>``-Tag muss dafür innerhalb eines ``<a>``-Tags stehen
+    - zudem muss das auswertende Skript verlinkt werden
+  - ``usemap``: in Verbindung mit Map-Tag
+  - responsive Bilder mit Attribut ``srcset``
+    - wählt Bilder je nach Größe des Viewports aus, lädt ggf. nach falls sich Viewport ändert
+    - best practice unter <https://www.mediaevent.de/html/srcset.html>
 - Map-Tag:
   - ``<map name="NAME">``
   - in Verbindung mit ``<img usemap ...>``
   - Definition einer verweissensitiven Fläche, die mit Sprungziel verknüpft ist
-- TBD: responsive Bilder
 
 Beispiel mit ``usemap``:
 
@@ -214,7 +257,13 @@ Beispiel mit ``usemap``:
   - nummeriert
   - ``start``-Attribut gibt Startwert für Nummerierung an
   - ``reversed``-Atttribut für umgekehrte Zählrichtung
-  - ``type``-Tag für die Art der Aufzählungszeichen (arabisch, römisch, ...)
+  - ``type``-Tag für die Art der Aufzählungszeichen
+    - ``1`` für arabische Ziffern (Standard)
+    - ``A`` für Großbuchstaben
+    - ``a`` für Kleinbuchstaben
+    - ``I`` für große römische Zahlen
+    - ``i`` für kleine römische Zahlen
+  - ``value`` um den Startwert des ersten Eintrags festzulegen
 - ungeordnete Listen:
   - Reihenfolge nicht wichtig
   - ``type``-Attribut (deprecated)
@@ -226,11 +275,18 @@ Beispiel mit ``usemap``:
 Beispiel für Listen:
 
 ```html
+<!--Ungeordnet-->
 <ul>
   <li>Listenpunkt 1</li>
   <li>Listenpunkt 2</li>
   <li>Listenpunkt 3</li>
 </ul>
+
+<!--Geordnet-->
+<ol>
+    <li value ="100"> Item Nummer 100 </li>
+    <li> Item Nummer 101 </li>
+</ol>
 ```
 
 Beispiel für Beschreibungslisten:
@@ -249,7 +305,7 @@ Beispiel für Beschreibungslisten:
 #### Tabellen
 
 - strukturierte Datensammlung
-- Anwendug in z.B. Kalender, Stundenpläne, Fahrpläne, ...
+- Anwendung in z.B. Kalendern, Stundenplänen, Fahrplänen, ...
 - Tag ``<table>``
   - Zeile mit ``<tr>``
   - Zelle mit ``<td>``
@@ -270,6 +326,7 @@ Beispiel Tabelle:
 
 ```html
 <table>
+  <caption>Stundenplan PI19</caption>
   <thead>
     <tr>
       <th>Zeit</th>
@@ -313,7 +370,7 @@ Beispiel Tabelle:
   - `name`: Name des Formulars für das auswertende Programm
   - `accept-charset`: Zeichenkodierung
   - `target`: Zielfenster
-  - `autocomplete`: Autovervollständigung aktivieren/deaktivieren
+  - `autocomplete="on|off"`: Autovervollständigung aktivieren/deaktivieren
   - `novalidate`: nicht auf Vollständigkeit prüfen (Plausibilität)
 
 #### Formular-Elemente
@@ -324,7 +381,10 @@ Beispiel Tabelle:
     - `type` = `text`, `search`, `password`, `tel`, `url`, `email`, `number` (mit `min`, `max`, `step`), `range`
 - `textarea` (mehrzeiliges Textfeld)
 - `button` (Button, Schalter)
+  - `type` = ``button|submit|reset``
 - `select` (Auswahllisten)
+  - `size` Anzahl angezeigter Elemente
+  - `multiple` Mehrfachauswahl
   - `option` (Auswahloption)
   - `optgroup` (verschachtelte Auswahllisten)
   - `fieldset` (Gruppierung)
