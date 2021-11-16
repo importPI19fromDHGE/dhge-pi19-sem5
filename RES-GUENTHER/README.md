@@ -160,6 +160,15 @@ V - Nach dem kritischen Abschnitt UNLOCK
 
 ### PIA 15/11/21
 
+- Eine Ursache, warum zwei nacheinander gestartete PIDs auseinanderliegen
+- zwei Arten der IPC
+- Was passiert, wenn der Wertebereich für PIDs erschöpft ist? (2 Möglichkeiten)
+- wie zeigt man eine PID auf dem Terminal an?
+- Was ist passiert, wenn die Kind-PID kleiner ist als die vom Vater
+- Rückgabewerte von Fork
+- Wie verhindert man einen Deadlock im Code?
+- Unterschied zwischen Pipes und Sockets
+
 <!-- md2apkg ignore-card -->
 
 Bekannte Fragen: 
