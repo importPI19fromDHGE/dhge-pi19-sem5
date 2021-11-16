@@ -44,7 +44,9 @@ Entwicklung von Webanwendungen
     - [Grid-Container](#grid-container)
     - [Media-Queries](#media-queries)
   - [JS](#js)
+    - [Fancy-Input Beispiel](#fancy-input-beispiel)
 - [PHP und Datenbanken](#php-und-datenbanken)
+  - [Datenbankschnittstellen](#datenbankschnittstellen)
 - [Moderne Webentwicklung mit Frameworks](#moderne-webentwicklung-mit-frameworks)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -615,7 +617,103 @@ grid-template-areas: "head head head head"
 
 ## JS
 
+- mittels `<script>`-Tag
+- inline im Tag oder mit `<script src="müll.js">`
+- Ausführung im Browser mit bspw. Chromiums V8 oder Firefox' SpiderMonkey
+- Ausführung auch unabhängig vom Browser mit Node (nicht Node.js)
+- grundsätzlich C-like Sprache
+- Variablendeklaration: ``var Bezeichner`` oder nur ``Bezeichner``
+  - mit Scope: ``let Bezeichner``
+- case-sensitiv
+- implizite Datentypen und Umwandlungen
+- "Dodo-Modus": `use strict`
+- Vergleiche:
+  - ``==``: vergleicht auf denselben Wert, aber castet implizit
+  - ``===`` vergleicht auf denselben Wert und denselben Datentyp
+
+### Fancy-Input Beispiel
+
+In diesem Beispiel wird JavaScript verwendet, um das Label eines Inputs dynamisch zu verändern.
+
+Das Beispiel ist im Ordner `extra/fancy-input` zu finden.
+
 # PHP und Datenbanken
+
+- Einbettung mit:
+
+```html
+<?php
+
+?>
+```
+
+- Anzeige von Buildoptionen: ``phpinfo();``
+- Variablendeklaration mit ``$lowerKamelBezeichner``
+- Datentypen: Integer, Float, Double, Boolean
+- ``var_dump()`` gibt Datentyp und Inhalt aus $\rightarrow$ evtl. hilfreich für Debugging
+- erwähnenswerte Operatoren:
+  - ``.``: Punktoperator verknüpft Strings: ``echo "Hallo".$fullName."!"``
+  - logische Operatoren ausgeschrieben, z.B. ``AND``, ``OR``; Ausnahme: Not-Operator bleibt ``!``
+  - ``pow($basis, $exp)``
+  - ``sqrt($i)``
+- Fallen beim impliziten Casten: ``strpos()`` gibt im Fehlerfall ``false`` zurück, was implizit auf ``int`` gecastet werden kann
+  - hier hilft der ``===``-Operator
+- switch-cases müssen mit ``break;`` beendet werden
+- Arrays: ``$name = array("Franz", "Xaver", "Viktor", "Jochen");``
+  - sind immer dynamisch
+  - appenden mit ``$name[] = "Franziska";``
+  - es gibt auch assoziative Array, also mit benannten Indizes:
+
+```php
+$wochentage = array(
+  "so" => "Montag",
+  "mo" => "Dienstag",
+  "di" => "Es ist Mittwoch, meine Kerle"
+  /*>:)*/
+)
+```
+
+- For-each-Schleifen: ``foreach($namen as $person)`` und für assoziative Arrays: ``foreach($wochentage as $kurz => $lang)``
+- Array-Elemente mit Trennzeichen ausgeben: ``echo "Namen: ".implode(", ", $namen).<br>``
+  - Achtung: der Punkt ist kein Bestandteil von Objektorientierung, siehe oben
+- das geht auch umgedreht:
+
+```php
+$farben = "rot, gelb, weiß, blau";
+$farbenArray = explode(", ", $farben);
+```
+
+Mehrdimensionale Arrays:
+
+```php
+$mitarbeiter = array(
+  array("Rv", "Novae"),
+  array("ZeroPoint", "Max"),
+  array("Steve", "2955"),
+  array("nuker", "xy")
+)
+
+foreach($mitarbeiter as $person)
+  echo "<li>".$ma[0]." ".$ma[1]."</li>";
+```
+
+- Arraylänge berechnen: ``count()``
+- Element in Array suchen: ``in_array("weiß", $farben);``
+- Prüfen, ob Array-Index existiert: ``array_key_exists("fr", $wochentage)``
+- sortieren von Arrays mit ``sort($mitarbeiter)`` bzw. ``rsort($mitarbeiter)`` (reverse)
+  - Achtung: case-sensitiv nach ASCII
+  - Achtung: es werden KEINE neuen Indizes vergeben
+- Ausgabe der Zeit: ``date("d-m-Y H:i:s", time());``
+- Umwandlung einer Zeit in den Unix-Timestamp: ``strtotime("11 November 2011 11:11")``
+- Abfragen von Formularinhalten: ``print_r($_POST);``
+  - Formularinhalte sind in einem assoziativen Array gespeichert
+
+## Datenbankschnittstellen
+
+- verschiedenes im Angebot: ``mysqli``, ``PDO``
+- Bsp.: ``$dbh = new PDO($connectionstring, $user, $pw);``
+- Connection-String: ``$connectionstring = "mysql:host=localhost;dbname=dhge";``
+- Um unangekündigten Besuch vom Datenschutzbeauftragten zu vermeiden, sollte man Exception Handling einbauen, sodass der Server im Fehlerfall nicht die Verbindungsdaten leakt
 
 # Moderne Webentwicklung mit Frameworks
 

@@ -1,0 +1,25 @@
+.fancy-input {
+    margin: 1em 0;
+    position: relative;
+}
+
+.fancy-input label {
+    position: absolute;
+    top: -.6em;
+    left: .5em;
+    background-color: white;
+    font-size: 0.8em;
+    padding: 0 0.5em;
+    transition: all .3s ease;
+}
+
+.fancy-input input {
+    padding: 0.5em;
+}
+
+.like-placeholder {
+    color: #666 !important;
+    font-size: 1em !important;
+    top: .5em !important;
+    left: .5em !important;
+}
