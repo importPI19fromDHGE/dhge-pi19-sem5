@@ -391,4 +391,4 @@ int main()
 #### Sockets
 
 - IPC auf lokalem Rechner (Unix-Domäne) oder über das Internet (Internet-Domäne)
-- Ein Port ist eine Spezifikation zur Addressierung eines Prozesses auf einem Host  
+- Ein Port ist eine Spezifikation zur Addressierung eines Prozesses auf einem Host
