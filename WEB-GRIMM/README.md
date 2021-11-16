@@ -125,15 +125,22 @@ Beispiel-Skelett:
 
 ```html
 <!DOCTYPE html>
+<!--DOCTYPE ist kein HTML-Tag! sondern DTD (document type definition)-->
 <html lang="en">
   <head>
+    <!--verwendeter Zeichensatz-->
     <meta charset="utf-8" />
+    <!--kann Funktion eines HTTP-Response-Headers erfüllen-->
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Größe der Darstellung auf Displaygröße des Devices anpassen-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Name des Autors-->
     <meta name="author" content="anonymous" />
+    <!--Beschreibung des Inhalts der Seite-->
     <meta name="description" content="404 - not found" />
+    <!--Seite stellt zwei Farbschemata zur Verfügung, bevorzugt hell -->
     <meta name="color-scheme" content="light dark">
-    <title></title>
+    <title>Hier steht der Titel der Seite</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="icon" href="images/favicon.png" />
   </head>
@@ -144,6 +151,13 @@ Beispiel-Skelett:
   </body>
 </html>
 ```
+
+### HTML-Struktur
+
+- ``<html>`` ist sogenanntes Wurzeltag
+  - Attribut "lang" gibt die Dokumentensprache an
+- in ``<head>...</head>`` wird der Dateikopf beschrieben
+  - hier Metainformationen über die Website
 
 ### HTML 5
 
