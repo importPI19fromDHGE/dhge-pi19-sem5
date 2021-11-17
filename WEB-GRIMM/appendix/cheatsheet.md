@@ -64,23 +64,23 @@
 
 ## Links
 
-- `a` -> anchor
+- `a` $\rightarrow$ anchor
 - `href=dokument` ODER `=#ziel` ODER `=dokument#ziel`
-- `href=""` -> Seite neuladen
-- `href="#"` || `href="#top"` -> Seitenanfang
-- `download` -> bei href angegebene Datei soll heruntergeladen werden
-- `target` -> wo Linkziel öffnen
-  - `_blank` -> neue Seite
-  - `_self` -> selbes Fenster
-  - `_parent` -> im Elternfenster
-  - `_top` -> im obersten Fenster
+- `href=""` $\rightarrow$ Seite neuladen
+- `href="#"` || `href="#top"` $\rightarrow$ Seitenanfang
+- `download` $\rightarrow$ bei href angegebene Datei soll heruntergeladen werden
+- `target` $\rightarrow$ wo Linkziel öffnen
+  - `_blank` $\rightarrow$ neue Seite
+  - `_self` $\rightarrow$ selbes Fenster
+  - `_parent` $\rightarrow$ im Elternfenster
+  - `_top` $\rightarrow$ im obersten Fenster
   - Fenstername
 
 ## Listentypen
 
-- sortiert -> `ol`
-- unsoritert -> `ul`
-- Beschreibungsliste -> `dl`
+- sortiert $\rightarrow$ `ol`
+- unsoritert $\rightarrow$ `ul`
+- Beschreibungsliste $\rightarrow$ `dl`
 
 ## Tabellen
 
@@ -325,7 +325,7 @@ header {
 }
 ```
 
-## Media Querries
+## Media Queries
 
 - Medienabfragen
 - Darstellung eines Dokumentes für verschiedene Ausgabemedien festlegen
@@ -346,58 +346,51 @@ header {
 # JavaScript
 
 - JavaScript-Engine
-  - chrome: V8
-  - firefox: SpiderMonkey
-- Node -> Nutzung von JS ohne Browser
+  - Chrome: V8
+  - Firefox: SpiderMonkey
+- Node $\rightarrow$ Nutzung von JS ohne Browser
+  - erlaubt serverseitige Nutzung
+  - z.B. Datenbankzugriffe, Kryptographie, kritische Systeme <!--😈-->
 - z.B. To Do Liste, Button zum Einfügen eines Elementes
-- Form html Tag mit "onsubmit=addTodo()"
+- Form `html` Tag mit ``"onsubmit=addTodo()"``
 
 ## Datentypen
 
-- String
-- Number
-- Boolean
-- Symbol
-- undefined
-- BigInt
-
-### komplexe Datentypen
-
-- Array
-- Object
-- function
+- String, Number, Boolean, undefined, BigInt
+- Array, Object, Function
 
 ## Operatoren
 
 - klassische C-Operatoren
-- ** ist für das Potenzieren
-- == -> formatiert ggf. Datentypen um Gleichheit zu erreichen 23 == '23' -> true (!=)
-- 23 === '23' -> false (!==)
+- ``**`` ist für das Potenzieren
+- ``==`` $\rightarrow$ formatiert ggf. Datentypen um Gleichheit zu erreichen ``23 == '23'`` -> ``true`` (``!=``)
+- ``23 === '23'`` $\rightarrow$ ``false`` (``!==``)
 
 ## DOM - Document Object Model
 
 ```javascript
-document.getElementById();
-document.getElementByName();
-document.getElementByTagName(); //z.B. <p>
-document.querySelector(); //gibt erstes Element, das dem angegebenen CSS-Selektor entspricht
-document.querySelectorAll(); //gibt alle Elemente, die dem angegebenen CSS-Selektor entsprechen
+document.getElementById(); // document.getElementById('div1')
+document.getElementsByName();
+document.getElementsByTagName(); // z.B. <p> --> document.getElementsByTagName('p')
+document.getElementsByClassName(); // returnt viele
+document.querySelector(); // gibt erstes Element, das dem angegebenen CSS-Selektor entspricht, z.B.: document.querySelector('#franz');
+document.querySelectorAll(); // gibt alle Elemente, die dem angegebenen CSS-Selektor entsprechen
 ```
 
 ## Function Syntax
 
 ```javascript
-// Klasse eines Elementes togglen (selector, class)
-function toggleClass(selector, _class){
+// Zweck der Funktion: Klasse eines Elementes togglen (selector, class)
+function toggleClass(selector, _class) {
   // Element aus DOM auswählen
   const el = document.querySelector(selector);
   // Abbruch, wenn kein passendes Element gefunden
-  if(!el) return;
+  if (!el) return;
   // Besitzt das Element die Klasse?
-  if(el.classList.contains(_class)){
+  if (el.classList.contains(_class)) {
     // ja -> Klasse entfernen
     el.classList.remove(_class);
-  }else{
+  } else {
     // nein ->Klasse hinzufügen
     el.classList.add(_class);
   }
@@ -406,24 +399,21 @@ function toggleClass(selector, _class){
 
 ## Unterschied JavaScript & ECMA-Script
 
-- ECMA-Script -> Standard
-- JavaScript (& andere Scriptsprachen) -> setzen diesen Standard um
+- ECMA-Script $\rightarrow$ Scripting Language Specification
+- JavaScript (& andere Scriptsprachen) $\rightarrow$ setzen diesen Standard um
 
 ## Variablen
 
 ```javascript
-let variable; //undefined
-variable = 2; //number
+let variable; // undefined
+variable = 2; // number
 variable = 'string';
-use strict; //strenger Modus
+'use strict'; // strenger Modus
 const variable = 45;
 const Pi = 3.1415;
 ```
 
-### Klausur
-
-- allg. Fragen zu Technologien im Web
-- keine Geschichte
-- HTML spezifische Fragen
-  - Stück Quellcode erläutern/ergänzen
-- Bücher & Aufzeichnungen dürfen verwendet werden
+- ``let``: begrenzt Scope auf Block, dürfen nicht re-declared werden
+- ``var``: function-Scope, global Scope
+- ``const``: Block-Scope, nur einmal zuweisbar
+- Bezeichner: eindeutig innerhalb des Scopes, beginnen mit Buchstabe, Unterstrich oder Dollar; case-sensitiv, dürfen keine anderen Sonderzeichen enthalten
