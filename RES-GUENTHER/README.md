@@ -34,7 +34,7 @@ Systemprogrammierung / Verteilte Systeme
       - [Wann werden Semaphoren- Operationen aufgerufen](#wann-werden-semaphoren--operationen-aufgerufen)
     - [PIA 15/11/21](#pia-151121)
       - [Zweck pipe](#zweck-pipe)
-      - [Wie kommt es, dass Sie von P. A zu Pr. B einen Kanal haben? Inbesondere mit fork()?](#wie-kommt-es-dass-sie-von-p-a-zu-pr-b-einen-kanal-haben-inbesondere-mit-fork)
+      - [Wie kommt der Kanal zwischen Prozess A und B zustande, inbesondere mit fork()?](#wie-kommt-der-kanal-zwischen-prozess-a-und-b-zustande-inbesondere-mit-fork)
       - [Was passiert, wenn ich forke?](#was-passiert-wenn-ich-forke)
       - [Welche Operationen auf einer Pipe kennen Sie? Beschreiben Sie deren Funktion](#welche-operationen-auf-einer-pipe-kennen-sie-beschreiben-sie-deren-funktion)
       - [Wie können Sie bidirektionale IPC ermöglichen?](#wie-k%C3%B6nnen-sie-bidirektionale-ipc-erm%C3%B6glichen)
