@@ -189,7 +189,7 @@ IPC Prozess A -> B
 #### Was passiert, wenn ich forke?
 
 - Ab fork() entsteht Kindprozess
-- Filedeskriptoren (auch Pipe), Variablen, etc. werden kopiert
+- gesamter Speicher des Prozesses, inklusive Filedeskriptoren (auch Pipes), Variablen, etc. werden kopiert
 - Nicht kopiert werden: PID<!-- DUH -->
 
 $\rightarrow$ Prozesse, die verwandt sind, können über vor fork() angelegte Pipes kommunizieren.
@@ -257,7 +257,7 @@ Bei Pipes:
 #### Unterschied Pipe Socket
 
 - Pipes
-  - Unix-Domaine exklusiv, gleiches Rechensystem
+  - Unix-Domaine exklusiv, d.h. gleiches Rechensystem
   - unidirektional
 - Socket
   - Unix/Internetdomäne
