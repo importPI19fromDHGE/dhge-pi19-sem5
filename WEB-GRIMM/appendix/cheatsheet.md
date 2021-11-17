@@ -1,60 +1,90 @@
+- [Technologien für Web-Anwendungen](#technologien-für-web-anwendungen)
+- [HTML](#html)
+  - [Grundgerüst](#grundgerüst)
+  - [Head](#head)
+  - [Links](#links)
+  - [Listentypen](#listentypen)
+  - [Tabellen](#tabellen)
+  - [Formulare](#formulare)
+    - [Input](#input)
+    - [Select](#select)
+    - [Formular-Beispiel](#formular-beispiel)
+  - [Universalattribute](#universalattribute)
+- [CSS](#css)
+  - [Farben](#farben)
+  - [Box Model](#box-model)
+  - [Einheiten](#einheiten)
+  - [Selectoren](#selectoren)
+    - [Attributselektoren](#attributselektoren)
+    - [Pseudoklassen](#pseudoklassen)
+    - [Pseudoelemente](#pseudoelemente)
+    - [Verbundsselektoren](#verbundsselektoren)
+  - [`display` Eigenschaft](#display-eigenschaft)
+    - [`inline` Box](#inline-box)
+    - [`block` Box](#block-box)
+    - [`flex` Box](#flex-box)
+    - [`grid`](#grid)
+      - [Grid Beispiel](#grid-beispiel)
+  - [Media Queries](#media-queries)
+  - [Ein paar Attribute...](#ein-paar-attribute)
+- [JavaScript](#javascript)
+  - [Datentypen](#datentypen)
+    - [komplexe Datentypen](#komplexe-datentypen)
+  - [Operatoren](#operatoren)
+  - [DOM - Document Object Model](#dom---document-object-model)
+  - [Function Syntax](#function-syntax)
+  - [Unterschied JavaScript & ECMA-Script](#unterschied-javascript--ecma-script)
+  - [Variablen](#variablen)
+    - [Klausur](#klausur)
+
 # Technologien für Web-Anwendungen
 
-- HTML 5 -> Beschreibung der Struktur der Webseiten
-- CSS 3 -> Formatierung/Aussehen
-- Java /EMCA -Script -> Interaktion
-- DOM / Ajax -> Manipulation des Seiteninhalts
-- Flash -> obsulete
-- XML -> Datenaustausch
-- PHP
-- Ruby (on Rails)
-- Java Applet
-- ASP.net
-- ColdFusion
+- Definition Webanwendung: Anwendung, plattformunabhängig im Browser, nutzt HTTP
+- HTML 5 $\rightarrow$ Hyper Text Markup Language $\rightarrow$ Auszeichnungssprache, Beschreibung der Struktur der Webseiten; Ursprung aus der Forschung
+  - semantisches HTML: Gliedern der Webseite mit ``<header>``, ``<main>``, ``<aside>``, ...
+- CSS 3 $\rightarrow$ beschreibt Formatierung/Aussehen, zusätzliche Effekte und Visualisierung
+- Java /ECMA -Script $\rightarrow$ Interaktion, client-seitig ausgeführt
+- DOM $\rightarrow$ Document Object Model $\rightarrow$ Manipulation des Seiteninhalts, Schnittstelle zwischen HTML und Javascript
+  - Elementbaum wird manipuliert, gelesen, erweitert
+  - jeder HTML-Tag ist ein Knoten unter dem Root-Element
+- Ajax $\rightarrow$ dynamisches Nachladen von Inhalten vom Server
+- XML $\rightarrow$ eXtensible Markup Language $\rightarrow$ Datenaustauschformat
+- PHP $\rightarrow$ HTML-Präprozessor, wird serverseitig vor dem Ausliefern der fertigen HTML-Seite ausgeführt
+  - Client erhält Ergebnis der Skriptausführung
+  - kann in HTML eingebettet werden
+  - Skriptsprache
+  - "PHP: Hypertext Preprocessor"
 
 # HTML
-
-## Werkzeuge
-
-- Texteditor
-- WYSIWYG - Editor (What You See Is What You Get)
-
-### hilfreiche Funktionen
-
-- Autovervollständigung
-- Syntaxhighlighting
-- Einrückungsautomatik
-- Projektverwaltung
-- Verwaltung von Code Snippets
-- Debugger bzw. Prüfung des HTML/CSS-Codes
 
 ## Grundgerüst
 
 ```html
-<!DOCTYPE html> <!-- Definition des Dokumententypens-->
+<!DOCTYPE html> <!-- Definition des Dokumententypens -->
 <html lang="de">
-    <head> <!-- Dateikopf-->
+    <head> <!-- Dateikopf -->
     </head>
     <body>
-        <script src=""></script>
         <header></header>
         <nav></nav>
         <main>
             <article>
-                Mit eigenem header, Überschrift, footer...
+                Mit eigenem Header, Überschrift, Footer...
                 <section>
                 </section>
             </article>
         </main>
         <footer></footer>
         <aside></aside>
+        <script src=""></script> <!--Skripte werden am Besten am Dateiende geladen-->
     </body>
+</html>
 ```
 
 ## Head
 
 ```html
-<meta charset=UTF-8>
+<meta charset="UTF-8">
 <meta name="description" content="Seite">
 <meta name="keywords" content="HTML, CSS">
 <meta name="author" content="John Doe">
@@ -64,23 +94,22 @@
 
 ## Links
 
-- `a` $\rightarrow$ anchor
-- `href=dokument` ODER `=#ziel` ODER `=dokument#ziel`
+- `a` $\rightarrow$ anchor aka Hyperlinks
+- `href="dokument.html"` ODER `="#ziel"` ODER `="dokument#ziel"`
 - `href=""` $\rightarrow$ Seite neuladen
-- `href="#"` || `href="#top"` $\rightarrow$ Seitenanfang
+- `href="#"` oder `href="#top"` $\rightarrow$ Seitenanfang
 - `download` $\rightarrow$ bei href angegebene Datei soll heruntergeladen werden
 - `target` $\rightarrow$ wo Linkziel öffnen
-  - `_blank` $\rightarrow$ neue Seite
+  - `_blank` $\rightarrow$ neue Seite bzw. Tab
   - `_self` $\rightarrow$ selbes Fenster
   - `_parent` $\rightarrow$ im Elternfenster
   - `_top` $\rightarrow$ im obersten Fenster
-  - Fenstername
 
 ## Listentypen
 
-- sortiert $\rightarrow$ `ol`
-- unsoritert $\rightarrow$ `ul`
-- Beschreibungsliste $\rightarrow$ `dl`
+- sortiert $\rightarrow$ `ol` > `li`
+- unsortiert $\rightarrow$ `ul` > `li`
+- Beschreibungsliste $\rightarrow$ `dl` > `dt`, `dd`
 
 ## Tabellen
 
@@ -88,229 +117,225 @@
 - Zeile: `<tr>`
 - Zelle: `<td>`
 - Kopfzelle: `<th>` (`scope`-Attribut: Zeilen- oder Spaltenkopf)
+- Fußzeile: `<tfoot>`; Kopfzeile: `<thead>`
+- Caption: `<caption>` Beschriftung oder Überschrift einer Tabelle (mittig darüber)
+- `<colspan>`: verbindet Spalten
+- `<rowspan>`: verbindet Zeilen
+- `<colgroup>`: Gruppieren von Spalten
 
 ## Formulare
 
 ```html
-<form action="" id=form1 method="GET">
+<form action="/form_handler.php" id="form1" method="POST">
     <label for="name">Name:
-        <input id=name type=text name=name required>
+        <input id="name" type="text" name="name" required>
     </label>
     ...
 ```
 
-- ID und Name bestenfalls identisch halten
-- `<fieldset>` $\rightarrow$ Formularelemente gruppieren
+- `id` und `name` bestenfalls identisch halten
+- `<fieldset>` $\rightarrow$ Formularelemente gruppieren $\rightarrow$ semantische Gliederung, hübscher Frame darum gezeichnet
 
 ### Input
 
-- type: text, email, tel, password, url, search, number, range, radio, checkbox, hidden, file, color, date, submit, reset
-- weitere Attribute: maxlength, minlength, min, max, required, pattern, value, placeholder
+- type: `text`, `email`, `tel`, `password`, `url`, `search`, `number`, `range`, `radio`, `checkbox`, `hidden`, `file`, `color`, `date`, `submit`, `reset`
+- weitere Attribute: `maxlength`, `minlength`, `min`, `max`, `required`, `pattern`, `value`, `placeholder`
 
 ### Select
 
-- Ausswahlliste in Formularen
+- sind Dropdown-Menüs
+- Ausswahlliste in Formularen `<select>`
 - Elemente innerhalb des Body mit `<option>`
 - verschachtelte Auswahlliste `<optgroup>`
-- Attribute: name, size, multiple
-- Attribut für `<option>`: selected
+- Attribute: `name`, `size`, `multiple`
+- Attribut für `<option>`: `selected`
 
 ### Formular-Beispiel
 
 ```html
-<form id="annmeldSem5" name="annmeldSem5"
-        method="GET" action="" enctype="multipart/form-data">
-    <label for="name">Name:
-        <input name="vorname" id="name"
-        maxlength="10" value="Hilde">
-    </label>
-    <label for="suche">Suchen:
-        <input type="search" name="suche" id="suche"
-            maxlength="10" placeholder="Suchbegriff" list="liste">
-        <datalist id="liste">
-            <option>HTML</option>
-            <option>CSS</option>
-        </datalist>
-    </label>
-    <label for="alter">Alter:
-        <input type="number" id="alter" name="alter"
-            min="0" step="2">
-    </label><br><br>
-    <label for="tage">Tage:
-        <input type="range" id="tage" name="tage"
-            min="5" max="15" step="2" value="5">
-    </label><br>
+<form id="annmeldSem5" name="annmeldSem5" method="GET" action="/form_handler.php" enctype="multipart/form-data">
+  <label for="name">Name:
+    <input name="vorname" id="name" maxlength="10" value="Hilde">
+  </label>
+  <label for="suche">Suchen:
+    <input type="search" name="suche" id="suche"
+      maxlength="10" placeholder="Suchbegriff" list="liste">
+    <datalist id="liste">
+      <option>HTML</option>
+      <option>CSS</option>
+    </datalist>
+  </label>
 
-    <fieldset id="sturi">
-        <legend>Studienrichtung: </legend>
-        <label for="pi">PI
-            <input type="radio" name="sturi" id="pi" value="1">
+  <fieldset id="sturi">
+    <legend>Studienrichtung: </legend>
+    <label for="pi">PI
+      <input type="radio" name="sturi" id="pi" value="1">
+    </label>
+    <label for="wi">WI
+      <input type="radio" name="sturi" id="wi" value="2">
+    </label>
+  </fieldset>
+
+  <label for="sonder">Sonderheiten:
+      <fieldset id="sonder" >
+        <label for="polster">Polsterstuhl
+          <input type="checkbox" name="sonder"
+            id="polster" value="1">
         </label>
-        <label for="wi">WI
-            <input type="radio" name="sturi" id="wi" value="2">
-        </label>
-    </fieldset>
+      </fieldset>
+  </label>
+  <br>
 
-    <label for="sonder">Sonderheiten:
-            <fieldset id="sonder" >
-                <label for="polster">Polsterstuhl
-                    <input type="checkbox" name="sonder"
-                        id="polster" value="1">
-                </label>
-                <label for="steckdose">Steckdose
-                    <input type="checkbox" name="sonder"
-                        id="steckdose" value="2">
-                </label>
-            </fieldset>
-    <br>
-    <label for="farbe">Hintergrund-Farbe:
-        <input type="color" id="farbe" name="hintergrund"
-            value="#0066FF">
-    </label>
-    <br><br>
+  <label for="zahlung">Zahlungsbeleg:
+    <input type="file" id="zahlung" name="zahlung"
+      multiple accept="image/*">
+  </label>
+  <BR>
+  <label for="imaDat">Datum der Imatrikulation:
+    <input type="date" id="imaDat" name="imaDat"
+        min="1999-09-01" max="2050-12-31">
+  </label>
+  <br>
 
-    <label for="zahlung">Zahlungsbeleg:
-        <input type="file" id="zahlung" name="zahlung"
-            multiple accept="image/*">
-    </label>
-    <BR>
-    <label for="imaDat">Datum der Imatrikulation:
-        <input type="date" id="imaDat" name="imaDat"
-                min="1999-09-01" max="2050-12-31">
-    </label>
-    <br><br>
-    <label for="geschl">Geschlecht:
-        <select name="geschl" id="geschl" size="2"
-                multiple>
-            <option value="1">weiblich</option>
-            <option value="2">männlich</option>
-            <option value="3">divers</option>
-        </select>
-    </label>
-    <br><br>
+  <label for="anmerkungen">Anmerkungen: <br>
+    <textarea cols="80" rows="20" name="anmerkungen" id="anmerkungen">Beispiel
+    </textarea>
+  </label>
 
-    <label for="anmerkungen">Anmerkungen: <br>
-        <textarea cols="80" rows="20" name="anmerkungen" id="anmerkungen">Beispiel
-        </textarea>
-    </label>
-
-    <br><br>
-    <input type="submit" value="Senden">
-    <input type="reset" value="Löschen">
+  <br><br>
+  <input type="submit" value="Senden">
+  <input type="reset" value="Löschen">
 </form>
 ```
 
 ## Universalattribute
 
-- id
-- class
-- accesskey -> Taste zum Anspringen des Elementes
-- contenteditable -> Inhalt kann verändert werden
-- hidden -> Element ausgeblendet
-- draggable -> kann das Element gezogen werden?
-- lang
-- spellcheck -> browserinterne Rechtschreibprüfung aktivieren
-- style (böse)
-- tabindex -> Tabulatorreihenfolge
-- title -> Elementbeschreibung
+- `id` $\rightarrow$ eineindeutig
+- `class` $\rightarrow$ kann mehrmals vergeben werden
+- `accesskey` $\rightarrow$ Taste zum Anspringen des Elementes
+- `contenteditable` $\rightarrow$ Inhalt kann verändert werden
+- `hidden` $\rightarrow$ Element ausgeblendet
+- `draggable` $\rightarrow$ kann das Element gezogen werden?
+- `lang` $\rightarrow$ Sprache für Elemente überschreiben
+- `spellcheck` $\rightarrow$ browserinterne Rechtschreibprüfung aktivieren
+- `style` $\rightarrow$ inline-css *(böse)*
+- `tabindex` $\rightarrow$ Tabulatorreihenfolge, lfd. Nummer
+- `title` $\rightarrow$ Elementbeschreibung
 
 # CSS
 
+- direkt am HTML-Element (inline $\rightarrow$ `style=""`)
+- internes Stylesheet (`<style></style>`)
+- externes Stylesheet einbinden (`<link rel="stylesheet" href="../style.css">`)
+
 ## Farben
 
-- RGB: dezimal (dezimal `rgb(255,0,128)` oder prozentual `rgb(100%,0%,50%)`
+- RGB: dezimal (dezimal `rgb(255, 0, 128)` oder prozentual `rgb(100%, 0%, 50%)`
 - hexadezimal (`#ff0080`)
-- Transparenz mit 2 Stellen mehr bei hexa & `rgba` (vierter Wert zwischen 0 und 1)
+- Transparenz mit 2 Stellen mehr bei `hexa` & `rgba` (alpha Wert zwischen 0 und 1)#
+
+## Box Model
+
+![Box Model](assets/box_model.png)<!--width=600px-->
+
+- Content: The content of the box, where text and images appear
+- Padding: Clears an area around the content. The padding is transparent
+- Border: A border that goes around the padding and content
+- Margin: Clears an area outside the border. The margin is transparent
 
 ## Einheiten
 
-- physische Einheiten: Zoll (in), Zentimeter (cm), Pixel (px)
-- relative Einheiten: em (Schriftgröße), ex (Größe von x), vw (Viewportbreite), vh (Viewporthöhe), vmin & vmax (kleinerer/größerer Wert), %, fr (Anteile)
-- Winkel: Grad (deg), Radiant (rad)
-- Zeit: Sekunden (s), Millisekunden (ms)
+- physische Einheiten: Zoll (`in`), Zentimeter (`cm`), Pixel (`px`)
+- relative Einheiten: `em` (Schriftgröße), `ex` (Höhe kleiner Buchstaben), `vw` (Viewportbreite), `vh` (Viewporthöhe), `vmin` & `vmax` (kleinerer/größerer Wert), `%`, `fr` (Anteile), `rem` (`em` relativ zum parent)
+- Winkel: Grad (`deg`), Radiant (`rad`)
+- Zeit: Sekunden (`s`), Millisekunden (`ms`)
 
 ## Selectoren
 
-- Typselektor -> HTML-Element
-- Universalselektor -> *
-- Klassenselektor -> beginnt mit Punkt
-- ID-Selektor -> beginnt mit Raute
+- Universalselektor $\rightarrow$ addressiert alles: `*`
+- Typselektor $\rightarrow$ addressiert HTML-Element (`p`, `h1`, ...)
+- Klassenselektor $\rightarrow$ beginnt mit Punkt (`.class`)
+- ID-Selektor $\rightarrow$ beginnt mit Raute (`#id`)
 
 ### Attributselektoren
 
-- `[Attributname]`
-- `[name=wert]`
-- Zeichenkette enthält Wert, durch Leerzeichen getrennt [name~=wert]
-- Attributwert beginnt mit angegebener Zeichenkette, vom Rest mit Bindestrich getrennt [name|=wert]
+- Attribut existiert $\rightarrow$ `[Attributname]`
+- Attribut hat Wert $\rightarrow$ `[name=wert]`
+- Zeichenkette enthält Wert, durch Leerzeichen getrennt `[name~=wert]`
+- Attributwert beginnt mit angegebener Zeichenkette, vom Rest mit Bindestrich getrennt `[name|=wert]`
 - Teilübereinstimmung:
-  - beginnt mit Zeichenkette -> [name^=wert]
-  - endet mit Zeichenkette -> [name$=wert]
-  - enthält Zeichenkette -> [name*=wert]
+  - beginnt mit Zeichenkette $\rightarrow$ `[name^=wert]`
+  - endet mit Zeichenkette $\rightarrow$ `[name$=wert]`
+  - enthält Zeichenkette $\rightarrow$ `[name*=wert]`
 
 ### Pseudoklassen
 
 - auf Eigenschaften der HTML-Elemente bezogen
-- :empty, :first-child, :last-child, :nth-child()
-- :link, :visited, :hover, :active, :focus
-- :disabled, :enabled, :checked
-- :valid, :invalid, :in-range, :out-of-range
+- Bezogen auf Kindelemente: `:empty`, `:first-child`, `:last-child`, `:nth-child()`
+- `:link` (alle NICHT besuchten), `:visited`, `:hover`, `:active`, `:focus`
+- `:disabled`, `:enabled`, `:checked`
+- `:valid`, `:invalid`, `:in-range`, `:out-of-range`
 
 ### Pseudoelemente
 
-- beginnen mit ::
-- ::first-line, ::first-letter
-- ::before, ::after
-- ::backdrop
-- ::selection, ::placeholder
+- beginnen mit `::`
+- `::first-line`, `::first-letter`
+- `::before`, `::after`
+- `::backdrop`: Box mit Größe vom Viewport
+- `::selection`, `::placeholder`
 
 ### Verbundsselektoren
 
-- p.classname
+- `p#id.classname[name=wert]::first-letter:hover`
 - Kombinatoren:
-  - Kindkombinator: Element > Kind z.B. p > em -> eine Ebene drunter
-  - Nachfahrenkombinator: Element Kind z.B. p em ->
-  - Nachbarkombinator: Element + Kind z.B. h1 + p -> Auf gleicher Ebene, was direkt daneben steht
-  - Geschwisterkombinator: alle Elemente, die auf gl Ebene folgen z.B. h1 ~ p -> alle, die auf der gleichen Ebene liegen
+  - Kindkombinator: `Element > Kind` z.B. `p > em` $\rightarrow$ genau eine Ebene darunter
+  - Nachfahrenkombinator: `Element Kind` z.B. `p em` $\rightarrow$ beliebige Ebene darunter
+  - Nachbarkombinator: `Element + Kind` z.B. `h1 + p` $\rightarrow$ Auf gleicher Ebene, was direkt daneben steht
+  - Geschwisterkombinator: alle Elemente, die auf gleicher Ebene folgen z.B. `h1 ~ p` $\rightarrow$ alle, die auf der gleichen Ebene liegen
 
-## Display Eigenschaft
+## `display` Eigenschaft
 
-- `none` -> Element wird nicht dargestellt und es wird kein Platz reserviert
+- `none` $\rightarrow$ Element wird nicht dargestellt und es wird kein Platz reserviert
+- `hidden` $\rightarrow$ Element wird nicht dargestellt, aber es wird Platz reserviert
+- `visible` $\rightarrow$ Element wird dargestellt und es wird Platz reserviert <!--was auch sonst-->
 
-### Inline Box
+### `inline` Box
 
+- bricht nichts um
+- Images sind standardmäßig `inline`
 - `display: inline`
 - Breite der Box durch Inhalt bestimmt
 
-### Block Box
+### `block` Box
 
 - `display: block`
 - Anordnung untereinander
 - gesamte Breite des Elternelements
 - für viele Textelemente Standard
 
-### Flex Box
+### `flex` Box
 
-- display: flex
-- flex-direction row/row-reverse/column/column-reverse
-- horizontalte oder vertikale Ausrichtung
+- `display: flex`
+- `flex-direction: row | row-reverse | column | column-reverse`
+- horizontale oder vertikale Ausrichtung
 
-### Grid
+### `grid`
 
-- display: grid
-- grid-template-columns: legt Spalten & deren Aufteilung fest
-- grid-template-areas: Bestimmung Zelle zu welchem Bereich gehört
-- grid-area: Bereich festlegen, in dem ein Element angezeigt wird
+- `display: grid`
+- `grid-template-columns`: legt Spalten & deren Aufteilung fest
+- `grid-template-areas`: Bestimmung Zelle zu welchem Bereich gehört
+- `grid-area`: Bereich festlegen, in dem ein Element angezeigt wird
 - automatische Erzeugung
-- repeat(auto-fill, minmax(wert,wert))
+- `repeat(auto-fill, minmax(wert,wert))`
 - Zuweisung der Zeilen/Spalten
-  - grid-row: start/end
-  - grid-column: start/end
+  - `grid-row`: start/end
+  - `grid-column`: start/end
 
 #### Grid Beispiel
 
 ```css
 body {
-    font-family: Calibri, Geneva, Tahoma, sans-serif;
+    font-family: Calibri, Times New Roman, Tahoma, sans-serif;
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 1fr;
     grid-template-rows: 2fr 4fr 4fr 1fr;
@@ -327,21 +352,21 @@ header {
 
 ## Media Queries
 
-- Medienabfragen
-- Darstellung eines Dokumentes für verschiedene Ausgabemedien festlegen
-- mit ```css @media (max-width: 500px){HTML-Element CSS Code einfügen mit Änderungen}```
+- Darstellung eines Dokumentes für verschiedene Ausgabemedien festlegen (rEspOnsIve DeSIgn)
+- mit css `@media (max-width: 500px){/* some css for small screens */}`
+- `@media print { /* some css for print layout */}`
 
 ## Ein paar Attribute...
 
-- z-index -> Ebenensystem
-- Listen Zeichen weg: text-decoration
-- justify-content (Ausrichtung) center/space-between/space-evenly/space-around/end/...
-- font-family
-- transition: Attirbutname Dauer Art(linear, ease..)
-- border: 1px solid/dotted/dashed black
-- border-radius: 0 5px 2px 2px
-- text-align
-- order
+- `z-index` $\rightarrow$ Ebenensystem
+- `text-decoration`
+- `justify-content` (Ausrichtung) `center | space-between | space-evenly | space-around | end | ...` <!--wäre bei display:flex sinnvoll-->
+- `font-family` <!--weil das ja klar ist-->
+- `transition: Attributname Dauer Art (linear, ease, ...)`
+- `border: 1px solid|dotted|dashed black`
+- `border-radius: 0 5px 2px 2px`
+- `text-align`
+- `order`
 
 # JavaScript
 
