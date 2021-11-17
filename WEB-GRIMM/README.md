@@ -80,9 +80,7 @@ Entwicklung von Webanwendungen
 - 2005: Youtube geht ins Netz
   - $\rightarrow$ erstmals von Web 2.0 gesprochen (Inhalte kommen primär von den Nutzern)
 
-# Technologien
-
-## Was ist eine Webanwendung?
+# Was ist eine Webanwendung?
 
 - Web = World Wide Web $\rightarrow$ Teil des Internets
 - Client-Server-Anwendung (Client = Browser)
@@ -90,7 +88,7 @@ Entwicklung von Webanwendungen
 - Nutzung des Hypertext Transfer Protocol (`http`)
 - Interaktion mit dem Nutzer
 
-## Client-Technologien
+# Client-Technologien
 
 - HTML 5 $\rightarrow$ Beschreibung der Struktur der Webseiten
 - CSS 3 $\rightarrow$ Formatierung / Aussehen
@@ -99,7 +97,7 @@ Entwicklung von Webanwendungen
 - Flash $\rightarrow$ obsolet
 - JSON, XML(SVG, MathML, RSS, GraphML, ...) $\rightarrow$ Datenaustausch
 
-## Server
+# Server-Technologien
 
 - PHP
 - NodeJS
@@ -108,14 +106,14 @@ Entwicklung von Webanwendungen
 - ASP.NET
 - ColdFusion
 
-## HTML
+# HTML
 
 - 1991 publiziert durch Entwickler Burners-Lee
 - verbreitet sich rasend schnell als ~~"Programmiersprache"~~ (Auszeichnungssprache) des Internets
 - letzte Version: HTML 5.2 (14. Dezember 2017)
 - Arbeitsentwurf für 5.3 seit 18. Oktober 2018
 
-### HTML-Syntax
+## HTML-Syntax
 
 - Auszeichnung von Textelementen durch Tags
 - ``<tag>Text</tag>``
@@ -147,7 +145,7 @@ Beispiel-Skelett:
 </html>
 ```
 
-### HTML 5
+## HTML 5
 
 - Schwerpunkt auf Gliederung der Seite $\rightarrow$ bessere Übersicht bei vielen Elementen
   - ``<header></header>`` $\rightarrow$ Logo und Überschrift
@@ -161,7 +159,7 @@ Beispiel-Skelett:
 - Screenreader können flüssiger lesen
 - weitere Neuerungen für Multimedia, Formulare
 
-#### Bilder
+### Bilder
 
 - Attribute:
   - `ismap`: serverseitige Image Map, bei Klick werden Mauskoordinaten an Server gesendet
@@ -192,7 +190,7 @@ Beispiel mit ``usemap``:
 > - [https://baconmockup.com/500/300](https://baconmockup.com/500/300/)
 > - [https://placekeanu.com/500/250](https://placekeanu.com/500/250)
 
-#### Listen
+### Listen
 
 - es gibt sortierte (``ol``), unsortierte (``ul``) und Beschreibungs-Listen (``dl``)
 - Listenelemente tragen das ``li``-Tag
@@ -232,7 +230,7 @@ Beispiel für Beschreibungslisten:
 </dl>
 ```
 
-#### Tabellen
+### Tabellen
 
 - strukturierte Datensammlung
 - Anwendug in z.B. Kalender, Stundenpläne, Fahrpläne, ...
@@ -280,14 +278,14 @@ Beispiel Tabelle:
 </table>
 ```
 
-#### Zeilenumbrüche
+### Zeilenumbrüche
 
 - werden erzwungen mit ``<br>``
 - Browser wird bei Leerzeichen einen Zeilenumbruch einfügen, wenn notwendig
 - ``<wbr>``: Word Break - unsichtbare Markierung, wo der Browser ggf. einen Zeilenumbruch einfügen kann
 - ``&shy;``: wie ``<wbr>``, fügt aber einen Bindestrich ein
 
-#### Formulare
+### Formulare
 
 - elementar für Webanwendungen $\rightarrow$ ermöglichen Nutzerinteraktion durch Verarbeitung von Eingaben
 - standardisiertes Mittel zur Erfassung, Ansicht und Aufbereitung von Daten die zur Verarbeitung an einen Webserver gesendet werden
@@ -302,7 +300,7 @@ Beispiel Tabelle:
   - `autocomplete`: Autovervollständigung aktivieren/deaktivieren
   - `novalidate`: nicht auf Vollständigkeit prüfen (Plausibilität)
 
-#### Formular-Elemente
+### Formular-Elemente
 
 - `label` (Beschriftung)
 - `input` (Eingabefeld)
@@ -391,7 +389,7 @@ Beispiel Tabelle:
 </form>
 ```
 
-### Universal Attribute
+## Universal Attribute
 
 - `id`: eindeutiger Identifikator für Elemente (als Link, CSS-Selektor)
 - `class`: Kennzeichnung zusammengehöriger Elemente (CSS-Selektor)
@@ -406,7 +404,7 @@ Beispiel Tabelle:
 - `tabindex`: Tab-Reihenfolge
 - `title`: Elementenbeschreibung $\rightarrow$ Tooltip
 
-### Positionierungselemente
+## Positionierungselemente
 
 - HTML-Elemente sind entweder Blöcke oder inline
   - Blöcke erzeugen Newline
@@ -416,70 +414,100 @@ Beispiel Tabelle:
   - Border
   - Margin
 
-## CSS
+# CSS
 
 - **C**ascading **S**tyle **S**heet
+- Standard des W3C (World Wide Web Consortium)
+  - erstmals 1996 standardisiert
+  - aktuell Version 3
 - Trennung der Darstellung vom Inhalt
+  - Darstellungsmerkmale der HTML-Elemente werden beschrieben (Farbe, Größe, Position)
 
 **Einbindung**
 
 - inline CSS (`style="..."`)
-- `<style></style>` im HTML
+- `<style></style>` im HTML-Header
 - externes CSS einbinden (`<link rel="stylesheet" type="text/css" href="style.css">` im ``<head>``)
 
-### Syntax
+## Syntax
 
 - Eigenschaften werden in Regelsätzen gespeichert
-- arbeitet anhand von Selektoren
-- case-sensitiv
+- arbeitet anhand von Selektoren/Selektorenlisten
+- Basissyntax: ``selektor{ eigenschaft1: wert; eigenschaft2: wert;}``
+- Klassen- und ID-Bezeichner sind **case-sensitiv**
 - Kommentare: ``/*...*/``
 
 ```css
-selector{
-  property: value;
+h3{
+  color: yellow;
+  font-size: 2em;
 }
 ```
 
-### Farben
+## Farben
 
 **RGB-Farbmodell**
 
 - hex: `#ff7f50`
 - dezimal: `rgb(0,128,0)`
 - prozentual: `rgb(60%, 20%, 40%)`
-
-> Alphakanal auch möglich: `#ff7f50ff`, `rgba(0,128,0,42)`, ...
+- Alphakanal auch möglich: `#ff7f50ff`, `rgba(0,128,0,42)`, ...
+  - der vierte Wert bestimmt dabei die Deckkraft
+    - hex: 00 (transparent) bis ff (volle Deckung)
+    - dez: 0 (transparent) bis 1 (volle Deckung)
 
 **HSL-Farbmodell**
 
 - **h**ue, **s**aturation, **l**ightness
+- hue für Farbton: 0 - 360
+- saturation für Sättigung: 0-100 (Prozentangabe)
+- lightness für Helligkeit: 0-100 (Prozentangabe)
+  - 50 ist normale Helligkeit
+- Alphakanal auch hier möglich
 - `hsl(200,100%,50%)`, `hsla(200,100%,50%,1)`
 
-### Einheiten
+**CMYK-Modell**
+
+- Farbauswahl hier naach standardisierten Namen
+
+> Palette unter <https://wiki.selfhtml.org/wiki/Grafik/Farbe/Farbpaletten#Farbnamen>
+
+## Einheiten
+
+**Zahlen:**
 
 - Ganz- oder Fließkommazahlen (Dezimalzeichen ist der Punkt)
-- Maßeinheit direkt direkt nach der Zahl (ohne Leerzeichen)
-- Physische Maße: Zoll (`in`), Zentimeter (`cm`), Pixel (`px`)
+- Null vor dem Punkt ist optional
+- Maßeinheit direkt nach der Zahl (ohne Leerzeichen)
+- Maßeinheit für 0 optional
+
+**Physische Längenmaße:**
+
+- Zoll (`in`), Zentimeter (`cm`), Pixel (`px`)
 - relative Längenmaße:
   - `em`: Schriftgröße des Elements
   - `ex`: Größe von x
   - `vw`/`vh`: Prozent der Viewportbreite/-höhe (Anzeigebereich)
   - `vmin`/`vmax`: minimales/maximales Maß des Viewports
   - `%`: Prozentual im Verhältnis zum übergeordnetem Element
+
+**weitere Maße:**
+
 - Winkelmaße: Grad (`deg`), Radiant (`rad`)
 - Zeit: Sekunden (`s`), Millisekunden (`ms`)
 
-### Selektoren
+## Selektoren
 
 - Typselektor: HTML-Element (`body`, `h1`, `p`, `li`, ...) $\rightarrow$ wirken für alle Elemente diesen Typs
 - Universalselektor: `*`
 - Klassenselektor: `.` als Prefix (`.column`, `.btn`, ...) $\rightarrow$ wirken für alle Elemente mit bestimmten Klassen-Attribut
 - ID-Selektor: `#` als Prefix (`#header`, `#footer`, ...) $\rightarrow$ wirkt für ein Element mit einer bestimmten ID
+  - **wichtig:** Unterschiede zwischen CSS- und HTML5-Spezifikationen zur ID-Benamung beachten
 
 > Wichtig: **Cascading** $\rightarrow$ spezifischere Selektoren überschreiben Unspezifischere (`*` < `typ` < `.class` < `#id` < inline CSS)
 > für gleichrangige Selektoren gilt: das zuletzt definierte überschreibt das zuerst definierte
 
-#### Kombinierte Selektoren
+### Kombinierte Selektoren
 
 - Verbundselektoren: `*.class`, `h2#title.classA.classB`
 - Nachfahrenkombinator: `p em{...}` (alle untergeordneten Elemente, unabhängig von der Tiefe)
@@ -487,9 +515,9 @@ selector{
 - Nachbarkombinator: `h1 + p{...}` (direkter Nachfolger)
 - Geschwisterkombinator `h1 ~ p{...}` (für Element auf gleicher Ebene)
 
-#### Pseudoselektoren
+### Pseudoselektoren
 
-**Pseudoklassen:** beziehen sich auf Eigenschaften der HTML-Element
+**Pseudoklassen:** beziehen sich auf Eigenschaften der HTML-Elemente $\rightarrow$ Abfrage eines besonderen Zustandes
 
 - `:empty`, `:first-child`, `:last-child`, `:nth-child()`
 - `:hover`, `:link`, `:visited`, `:active`, `:focus`
@@ -504,7 +532,7 @@ selector{
 - `::backdrop`
 - `::selection`, `::placeholder`, `::marker`
 
-### Berechnungen
+## Berechnungen
 
 - für ``nth-child()`` können Folgen berechnet werden
 - Syntax: ``An+B``, wobei A und B zu ersetzen sind
@@ -512,7 +540,7 @@ selector{
   - es gibt auch ``even`` und ``odd``
 - Dokumentation: [Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child)
 
-### Attributselektoren
+## Attributselektoren
 
 - Syntax: `[Attributname=Wert]` oder `[Attribut]`
 - Beispiel: `p[andre]{}` wählt alle `<p>`-Tags, die das André-Attribut haben (also `<p andre>`)
@@ -524,7 +552,78 @@ selector{
 - "OR"-Verknüpfung im HTML: `<p andre="andre klaus grimm">`
 - [siehe MSDN für bessere Erklärungen](https://developer.mozilla.org/de/docs/Web/CSS/Attribute_selectors#%C3%BCbersicht)
 
-### Beispiel-CSS
+## Beispiele 1
+
+<!-- md2apkg ignore-card -->
+<!--🤮-->
+
+```css
+/*Typselektor: jeder Textabsatz hat die angegebene Farbe & Sxhriftgröße von 2em*/
+p{
+  color: rgb(14, 5, 173);
+  font-size: 2em;
+}
+
+/*Universalselektor: jeder Textabsatz ist 3em eingerückt*/
+*{ margin: 3em}
+
+/*Klassenselektor: alle Elemente aus klasse1 und klasse2 haben gelben Hintergrund*/
+.klasse1.klasse2{
+  background: yellow
+}
+
+/*ID-Selektor: Schrift für Element mit "wichtig"-ID ist fett*/
+#wichtig { font-weight: bold}
+
+/*Attributselektor: alle Elemente mit title-Attribut haben schwarze Schrift*/
+[title] {color: black}
+
+/*Attributselektor: alle Elemente mit title-Attribut, die im Titel-Wert "test" beinhalten haben grüne Schrift */
+[title*="test"] {color: green}
+
+/*Pseudoklassen: alle ersten Eintrage einer Liste grün, alle anderen rot*/
+li{color:red;}
+li:first-child{color:green;}
+
+```
+
+## Flex-Container
+
+- eindimensionales Layout Modell:
+  - behandelt Spalte oder Zeile, nie beide auf einmal
+- das kann zu unerwünschten Ergebnisses führen, wenn aufgrund eines kleinen Viewports Elemente verschoben werden (siehe Beispiele 2)
+
+> weitere Ausführungen sparen wir uns an der Stelle. Wirklich gut zu dem Thema Flex vs. Grid vs. Box: <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout>
+
+## Grid-Container
+
+- können HTML als Raster formatieren
+
+```css
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /*Anzahl der Spalten in Fractions, Platz wird aufgeteilt*/
+  grid-template-rows: 1fr 2fr 1fr;
+  justify-content: center;
+  height: 40vh;
+  width: 80vw;
+  margin: 0 auto;
+}
+```
+
+- Linien in Zeilen / Spalten kann man Namen geben: ``grid-template-coloumns: [vorne] fit-content [mitte] 2fr [hinten] 3fr``
+- negative Zahlen in bspw. ``grid-coloumn`` zählen von rechts nach links (d.h. vom Ende aus)
+- man kann alternativ die ganze Tabelle auf einmal definieren:
+
+```css
+grid-template-areas: "head head head head"
+                     "nav main main main"
+                     "nav main main main"
+                     "foot foot foot foot"
+                     ;
+```
+
+## Beispiele 2
 
 <!-- md2apkg ignore-card -->
 <!--🤮-->
@@ -567,41 +666,32 @@ h2 {
 }
 ```
 
-### Flex-Container
+## Media-Queries
 
-### Grid-Container
-
-- können HTML als Raster formatieren
-
-```css
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr; /*Anzahl der Spalten in Fractions, Platz wird aufgeteilt*/
-  grid-template-rows: 1fr 2fr 1fr;
-  justify-content: center;
-  height: 40vh;
-  width: 80vw;
-  margin: 0 auto;
-}
-```
-
-- Linien in Zeilen / Spalten kann man Namen geben: ``grid-template-coloumns: [vorne] fit-content [mitte] 2fr [hinten] 3fr``
-- negative Zahlen in bspw. ``grid-coloumn`` zählen von rechts nach links (d.h. vom Ende aus)
-- man kann alternativ die ganze Tabelle auf einmal definieren:
-
-```css
-grid-template-areas: "head head head head"
-                     "nav main main main"
-                     "nav main main main"
-                     "foot foot foot foot"
-                     ;
-```
-
-### Media-Queries
-
+- eingeführt, um Websiten responsiver zu gestalten und auf das Betrachtungsmedium besser anzupassen
+- kann Elemente bei zu kleiner Displagrößer verstecken und umformatieren
 - Deklaration: ``@media (bedingung) {style}``
 
-## JS
+> Mehr dazu: <https://www.w3schools.com/css/css_rwd_mediaqueries.asp> daher auch das Beispiel:
+
+```css
+ /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...} 
+```
+
+# JS
 
 - mittels `<script>`-Tag
 - inline im Tag oder mit `<script src="müll.js">`
@@ -617,7 +707,7 @@ grid-template-areas: "head head head head"
   - ``==``: vergleicht auf denselben Wert, aber castet implizit
   - ``===`` vergleicht auf denselben Wert und denselben Datentyp
 
-### Fancy-Input Beispiel
+## Fancy-Input Beispiel
 
 In diesem Beispiel wird JavaScript verwendet, um das Label eines Inputs dynamisch zu verändern.
 
