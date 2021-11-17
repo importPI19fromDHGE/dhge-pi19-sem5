@@ -226,8 +226,6 @@ Bei Pipes:
 
 - PID Tabelle war voll, es wurden freigegebene kleinere PID genutzt
 
-<!-- bitte obiges inhaltlich prüfen TODO -->
-
 #### Wie können sie sich die PID von Prozessen (auf dem Terminal) anzeigen lassen?
 
 - htop / anderer Taskmanager für Betriebssystem, alle Prozesse
