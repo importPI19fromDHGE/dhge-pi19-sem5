@@ -179,11 +179,11 @@ Bekannte Fragen:
 
 IPC Prozess A -> B
 
-#### Wie kommt es, dass Sie von P. A zu Pr. B einen Kanal haben? Inbesondere mit fork()?
+#### Wie kommt der Kanal zwischen Prozess A und B zustande, inbesondere mit fork()?
 
-<!-- TODO Frage klar definieren -->
 <!-- Antwort Studi: vgl. Sockets (File) -->
 
+- ``fork()`` kopiert auch File-Deskriptoren, somit haben beide Prozesse einen Pipe-Kanal, insofern die Pipe vor dem Forken definiert wurde
 - Kernel buffert das Geschriebene solange, bis es gelesen wird.
 
 #### Was passiert, wenn ich forke?
@@ -235,11 +235,9 @@ Bei Pipes:
 
 #### Wer/was definiert/ist kritischer Abschnitt?
 
-- TODO saubere Erklärung
-- ... Programmverhalten
-- Es ist ein Codebereich, der nur in einer definierten Anzahl von Prozessen zur Verfügung steht (stehen sollte)
-- Zugriffskonzepte, Semaphoren
-- Entwickler müssen im Programm dafür sorgen tragen
+- Es ist ein Codebereich, der nur in einer definierten Anzahl von Prozessen gleichzeitig zur Verfügung steht (stehen sollte)
+- realisiert durch Zugriffskonzepte, Semaphoren, andere Sperrkonzepte
+- Entwickler müssen im Programm dafür Sorge tragen und den kritischen Abschnitt definieren
 
 #### Deadlock verhindern/auflösen
 
