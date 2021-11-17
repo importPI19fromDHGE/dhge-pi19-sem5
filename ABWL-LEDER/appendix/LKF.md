@@ -32,7 +32,8 @@ Organisation der Durchführung von Prozessen
 
 #### Sie können Aufgabenanalyse und –Synthese zum Erstellen der Inhalte einer Aufbauorganisation erläutern
 
-- TODO
+- Aufgabenanalyse: Teilaufgaben bilden
+- Aufgabensynthese: Teilaufgaben zu Aufgabenkomplexen zusammenfassen
 
 #### Sie können Aufgabenanalyse und –Synthese zum Erstellen der Inhalte einer Ablauforganisation erläutern
 
@@ -79,32 +80,37 @@ Organisation der Durchführung von Prozessen
   - Voll- und Teilkompetenz
   - Einfachunterstellung
 
-#### Sie beherrschen die Darstellung und Erläuterung folgender Formen
+#### Sie beherrschen die Darstellung und Erläuterung der Funktionalorganisation
 
-- Funktionalorganisation
-  - nach Verrichtungen \[Bereiche\]
-  - Verrichtungszentralisation
-  - Vollkompetenz
-  - Einfachunterstellung
-- Spartenorganisation
-  - Kombination zentraler & dezentraler Einheiten
-  - Objektdezentralisation
-  - Vollkompetenz
-  - Einfachunterstellung
-  - Objekte können sein: nach Produkten, nach Regionen, nach Kunden
-- Matrixorganisation
-  - Kombination zentraler & dezentraler Einheiten
-  - Zentralabteilungen
-  - Dezentrale Abteilungen
-  - Doppelunterstellung
-  - Voll- und Teilkompetenz
-- Centerorganisation
-  - abgeleitet von Spartenorganisation
-  - Sparten für definierte Kenngrößen:
-    - Profit-Center $\rightarrow$ Erfolgsorientiert \[Gewinn\]
-    - Cost-Center $\rightarrow$ Kostenorientiert \[Kostenminimierung\]
-    - Revenue-Center $\rightarrow$ Umsatzorientiert \[Umsatz\]
-    - Investment-Center $\rightarrow$ Gewinnverwendung \[ROI\]
+- nach Verrichtungen \[Bereiche\]
+- Verrichtungszentralisation
+- Vollkompetenz
+- Einfachunterstellung
+
+#### Sie beherrschen die Darstellung und Erläuterung der Spartenorganisation
+
+- Kombination zentraler & dezentraler Einheiten
+- Objektdezentralisation
+- Vollkompetenz
+- Einfachunterstellung
+- Objekte können sein: nach Produkten, nach Regionen, nach Kunden
+
+#### Sie beherrschen die Darstellung und Erläuterung der Matrixorganisation
+
+- Kombination zentraler & dezentraler Einheiten
+- Zentralabteilungen
+- Dezentrale Abteilungen
+- Doppelunterstellung
+- Voll- und Teilkompetenz
+
+#### Sie beherrschen die Darstellung und Erläuterung der Centerorganisation
+
+- abgeleitet von Spartenorganisation
+- Sparten für definierte Kenngrößen:
+  - Profit-Center $\rightarrow$ Erfolgsorientiert \[Gewinn\]
+  - Cost-Center $\rightarrow$ Kostenorientiert \[Kostenminimierung\]
+  - Revenue-Center $\rightarrow$ Umsatzorientiert \[Umsatz\]
+  - Investment-Center $\rightarrow$ Gewinnverwendung \[ROI\]
 
 #### Sie können Vor- und Nachteile aus den Strukturen ableiten
 
