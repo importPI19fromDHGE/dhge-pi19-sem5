@@ -21,6 +21,9 @@ Entwicklung von Webanwendungen
   - [Server](#server)
   - [HTML](#html)
     - [HTML-Syntax](#html-syntax)
+    - [HTML-Struktur](#html-struktur)
+    - [Text-Formatierung](#text-formatierung)
+    - [Hyperlinks](#hyperlinks)
     - [HTML 5](#html-5)
       - [Bilder](#bilder)
       - [Listen](#listen)
@@ -47,6 +50,8 @@ Entwicklung von Webanwendungen
     - [Fancy-Input Beispiel](#fancy-input-beispiel)
 - [PHP und Datenbanken](#php-und-datenbanken)
   - [Datenbankschnittstellen](#datenbankschnittstellen)
+  - [Stringoperationen](#stringoperationen)
+  - [Sessions](#sessions)
 - [Moderne Webentwicklung mit Frameworks](#moderne-webentwicklung-mit-frameworks)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -125,15 +130,22 @@ Beispiel-Skelett:
 
 ```html
 <!DOCTYPE html>
+<!--DOCTYPE ist kein HTML-Tag! sondern DTD (document type definition)-->
 <html lang="en">
   <head>
+    <!--verwendeter Zeichensatz-->
     <meta charset="utf-8" />
+    <!--kann Funktion eines HTTP-Response-Headers erfüllen-->
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Größe der Darstellung auf Displaygröße des Devices anpassen-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Name des Autors-->
     <meta name="author" content="anonymous" />
+    <!--Beschreibung des Inhalts der Seite-->
     <meta name="description" content="404 - not found" />
+    <!--Seite stellt zwei Farbschemata zur Verfügung, bevorzugt hell -->
     <meta name="color-scheme" content="light dark">
-    <title></title>
+    <title>Hier steht der Titel der Seite</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="icon" href="images/favicon.png" />
   </head>
@@ -145,7 +157,49 @@ Beispiel-Skelett:
 </html>
 ```
 
-## HTML 5
+### HTML-Struktur
+
+- ``<html>`` ist sogenanntes Wurzeltag
+  - Attribut "lang" gibt die Dokumentensprache an
+- in ``<head>...</head>`` wird der Dateikopf beschrieben
+  - hier Metainformationen über die Website
+  - wird auf der Seite nicht dargestellt
+  - Informationen werden durch Browser, Suchmaschinen und Crawler benutzt
+- in ``<body> ... </body>`` wird der "Hauptteil" der Seite beschrieben
+- Kommentare mit ``<!-- Kommentar -->``
+
+### Text-Formatierung
+
+> Hinweis: diese Tags werden zwar von vielen Browsern noch dargestellt, sind aber eigentlich veraltet und sollten nicht mehr verwendet werden
+
+- ``<b> ... </b>`` um Text fett zu formatieren
+- ``<u> ... </u>`` um Text zu unterstreichen
+- ``<i> ... </i>`` für Kursivschreibung
+- ``<font> ... </font>`` mit folgenden Attributen:
+  - color - Schriftfarbe
+  - face - Schriftart
+  - size - Schriftgröße
+
+### Hyperlinks
+
+- werden in ``<a> Linktext </a>`` definiert
+- durch ``href``-Attribut wird das Linkziel festgelegt: ``<a href="https://www.dhge.de"> Hier gehts zur DHGE </a>``
+- URLs können relativ oder absolut sein:
+  - Absolute URLs für externe Ziele (wie DHGE-Beispiel)
+  - relative URLS für lokale Ziele: ``<a href="index.html">Nach Hause</a>``
+  - spezielle Verweise:
+  - ``<a href=""> RELOOOAD </a>`` - Seite neu laden
+  - ``<a href="#"> Nach oben </a>`` - Zum Seitenbeginn springen
+  - ``<a href="#id"> gimme this </a>`` - Zum Seitenelement mit der angegebenen ID springen
+- ``download``-Attribut um anzugeben, dass Linkziel heruntergeladen werden soll
+- ``target``-Attribut um festzulegen, wie der Browser die Seite öffnen soll
+  - eher nicht verwenden, Freiheit der Entscheidung dem User überlassen, zudem teilweise unsicher
+  - ``<a href="Ziel" target="_self">`` - auf der selben Seite öffnen
+  - ``<a href="Ziel" target="_blank">`` - auf neuer Seite (in neuem Tab) öffnen
+- ``title``-Attribut: Linkbeschreibung, für Tooltips und Screenreader
+- ``type``-Attribut: MIME-Typ angeben, um Ausführung der Datei zu spezifizieren
+
+### HTML 5
 
 - Schwerpunkt auf Gliederung der Seite $\rightarrow$ bessere Übersicht bei vielen Elementen
   - ``<header></header>`` $\rightarrow$ Logo und Überschrift
@@ -161,14 +215,22 @@ Beispiel-Skelett:
 
 ### Bilder
 
+- Tag: ``<img>`` $\rightarrow$ kein schließendes Tag!
 - Attribute:
-  - `ismap`: serverseitige Image Map, bei Klick werden Mauskoordinaten an Server gesendet
-  - `usemap`: in Verbindung mit Map-Tag
+  - ``src`` : Pfad zur Bilddatei - veraltet, besser: ``srcset``
+  - ``alt`` : Bildbeschreibung für Screenreader oder falls Datei nicht gefunden: **wichtig!**
+  - ``height`` und ``width``: Höhe und Breite des Bildes angeben
+  - ``ismap``: serverseitige Image Map, bei Klick werden Mauskoordinaten an Server gesendet
+    - ``<img>``-Tag muss dafür innerhalb eines ``<a>``-Tags stehen
+    - zudem muss das auswertende Skript verlinkt werden
+  - ``usemap``: in Verbindung mit Map-Tag
+  - responsive Bilder mit Attribut ``srcset``
+    - wählt Bilder je nach Größe des Viewports aus, lädt ggf. nach falls sich Viewport ändert
+    - best practice unter <https://www.mediaevent.de/html/srcset.html>
 - Map-Tag:
   - ``<map name="NAME">``
   - in Verbindung mit ``<img usemap ...>``
   - Definition einer verweissensitiven Fläche, die mit Sprungziel verknüpft ist
-- TBD: responsive Bilder
 
 Beispiel mit ``usemap``:
 
@@ -198,7 +260,13 @@ Beispiel mit ``usemap``:
   - nummeriert
   - ``start``-Attribut gibt Startwert für Nummerierung an
   - ``reversed``-Atttribut für umgekehrte Zählrichtung
-  - ``type``-Tag für die Art der Aufzählungszeichen (arabisch, römisch, ...)
+  - ``type``-Tag für die Art der Aufzählungszeichen
+    - ``1`` für arabische Ziffern (Standard)
+    - ``A`` für Großbuchstaben
+    - ``a`` für Kleinbuchstaben
+    - ``I`` für große römische Zahlen
+    - ``i`` für kleine römische Zahlen
+  - ``value`` um den Startwert des ersten Eintrags festzulegen
 - ungeordnete Listen:
   - Reihenfolge nicht wichtig
   - ``type``-Attribut (deprecated)
@@ -210,11 +278,18 @@ Beispiel mit ``usemap``:
 Beispiel für Listen:
 
 ```html
+<!--Ungeordnet-->
 <ul>
   <li>Listenpunkt 1</li>
   <li>Listenpunkt 2</li>
   <li>Listenpunkt 3</li>
 </ul>
+
+<!--Geordnet-->
+<ol>
+    <li value ="100"> Item Nummer 100 </li>
+    <li> Item Nummer 101 </li>
+</ol>
 ```
 
 Beispiel für Beschreibungslisten:
@@ -233,7 +308,7 @@ Beispiel für Beschreibungslisten:
 ### Tabellen
 
 - strukturierte Datensammlung
-- Anwendug in z.B. Kalender, Stundenpläne, Fahrpläne, ...
+- Anwendung in z.B. Kalendern, Stundenplänen, Fahrplänen, ...
 - Tag ``<table>``
   - Zeile mit ``<tr>``
   - Zelle mit ``<td>``
@@ -254,6 +329,7 @@ Beispiel Tabelle:
 
 ```html
 <table>
+  <caption>Stundenplan PI19</caption>
   <thead>
     <tr>
       <th>Zeit</th>
@@ -297,7 +373,7 @@ Beispiel Tabelle:
   - `name`: Name des Formulars für das auswertende Programm
   - `accept-charset`: Zeichenkodierung
   - `target`: Zielfenster
-  - `autocomplete`: Autovervollständigung aktivieren/deaktivieren
+  - `autocomplete="on|off"`: Autovervollständigung aktivieren/deaktivieren
   - `novalidate`: nicht auf Vollständigkeit prüfen (Plausibilität)
 
 ### Formular-Elemente
@@ -308,7 +384,10 @@ Beispiel Tabelle:
     - `type` = `text`, `search`, `password`, `tel`, `url`, `email`, `number` (mit `min`, `max`, `step`), `range`
 - `textarea` (mehrzeiliges Textfeld)
 - `button` (Button, Schalter)
+  - `type` = ``button|submit|reset``
 - `select` (Auswahllisten)
+  - `size` Anzahl angezeigter Elemente
+  - `multiple` Mehrfachauswahl
   - `option` (Auswahloption)
   - `optgroup` (verschachtelte Auswahllisten)
   - `fieldset` (Gruppierung)
@@ -739,6 +818,8 @@ Das Beispiel ist im Ordner `extra/fancy-input` zu finden.
   - sind immer dynamisch
   - appenden mit ``$name[] = "Franziska";``
   - es gibt auch assoziative Array, also mit benannten Indizes:
+- Funktionen unterstützen Standard-Parameter wie in C++
+- Javadoc-artige Kommentare werden unterstützt
 
 ```php
 $wochentage = array(
@@ -790,6 +871,24 @@ foreach($mitarbeiter as $person)
 - Bsp.: ``$dbh = new PDO($connectionstring, $user, $pw);``
 - Connection-String: ``$connectionstring = "mysql:host=localhost;dbname=dhge";``
 - Um unangekündigten Besuch vom Datenschutzbeauftragten zu vermeiden, sollte man Exception Handling einbauen, sodass der Server im Fehlerfall nicht die Verbindungsdaten leakt
+
+## Stringoperationen
+
+- ``strpos(haystack, needle [, offset])``: sucht ``needle`` in ``haystack``, ggf. nach Offset. Gibt Zeichenindex vom Wortbeginn aus, oder ``false``.
+- ``substr(haystack, needle [, length])``: sucht ``needle`` in ``haystack`` und gibt den String ab da aus, ggf. nur ``length`` Zeichen, oder ``false``.
+- ``str_replace(needle, replace, haystack)``: sucht ``needle`` in ``haystack`` und ersetzt sie durch ``replace``. Case-sensitiv.
+  - case-insensitive Funktion: ``str_ireplace(...)``
+- ``nl2br(src)``: wandelt ``\n`` in ``src`` zu ``<br>`` und gibt diesen String zurück
+
+## Sessions
+
+- Daten wie Session ID werden im Browser permanent gespeichert, um den Nutzer zu identifizieren
+  - Zweck: u.a. unnötige Logins vermeiden
+- Session erzeugen: ``session_start()``
+  - darf nur einmal auf dem Seitenkomplex<!--manche Profs würden das _Website_ nennen--> vorkommen
+- Daten werden in ``$_SESSION``-Array gespeichert
+  - Bsp.: ``$_SESSION["name"] = Franz;``
+- ``session_destroy()`` löscht die Session
 
 # Moderne Webentwicklung mit Frameworks
 
