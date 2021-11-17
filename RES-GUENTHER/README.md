@@ -32,6 +32,19 @@ Systemprogrammierung / Verteilte Systeme
       - [Semaphoren unterscheiden](#semaphoren-unterscheiden)
       - [Semaphoren benutzen](#semaphoren-benutzen)
       - [Wann werden Semaphoren- Operationen aufgerufen](#wann-werden-semaphoren--operationen-aufgerufen)
+    - [PIA 15/11/21](#pia-151121)
+      - [Zweck pipe](#zweck-pipe)
+      - [Wie kommt der Kanal zwischen Prozess A und B zustande, inbesondere mit fork()?](#wie-kommt-der-kanal-zwischen-prozess-a-und-b-zustande-inbesondere-mit-fork)
+      - [Was passiert, wenn ich forke?](#was-passiert-wenn-ich-forke)
+      - [Welche Operationen auf einer Pipe kennen Sie? Beschreiben Sie deren Funktion](#welche-operationen-auf-einer-pipe-kennen-sie-beschreiben-sie-deren-funktion)
+      - [Wie können Sie bidirektionale IPC ermöglichen?](#wie-k%C3%B6nnen-sie-bidirektionale-ipc-erm%C3%B6glichen)
+      - [Was bedeutet close generell / bei Pipe?](#was-bedeutet-close-generell--bei-pipe)
+      - [Was ist passiert, wenn PID vom Kind < PID Vater](#was-ist-passiert-wenn-pid-vom-kind--pid-vater)
+      - [Wie können sie sich die PID von Prozessen (auf dem Terminal) anzeigen lassen?](#wie-k%C3%B6nnen-sie-sich-die-pid-von-prozessen-auf-dem-terminal-anzeigen-lassen)
+      - [Wer/was definiert/ist kritischer Abschnitt?](#werwas-definiertist-kritischer-abschnitt)
+      - [Deadlock verhindern/auflösen](#deadlock-verhindernaufl%C3%B6sen)
+      - [Nennen Sie zwei Arten der IPC](#nennen-sie-zwei-arten-der-ipc)
+      - [Unterschied Pipe Socket](#unterschied-pipe-socket)
 - [Systemprogrammierung](#systemprogrammierung)
   - [Lernziele/Themenschwerpunkte](#lernzielethemenschwerpunkte)
   - [Literaturempfehlung](#literaturempfehlung)
@@ -41,6 +54,7 @@ Systemprogrammierung / Verteilte Systeme
     - [Semaphore](#semaphore)
     - [Interprozesskommunikation](#interprozesskommunikation)
       - [Pipes](#pipes)
+      - [Sockets](#sockets)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -49,6 +63,12 @@ Systemprogrammierung / Verteilte Systeme
 # Klausur
 
 <!-- md2apkg ignore-card -->
+
+- 60 min, keine Hilfsmittel
+- Multiple Choice Fragen möglich
+- nur behandelter Stoff
+- kein Programmcode
+- Fragen zu bestehendem Code
 
 ## Wiederholungsfragen zu Beginn der Veranstaltung
 
@@ -139,6 +159,105 @@ Verwendung (Operation)
 
 P - Vor dem kritischen Abschnitt LOCK
 V - Nach dem kritischen Abschnitt UNLOCK
+
+### PIA 15/11/21
+
+<!-- md2apkg ignore-card -->
+
+Bekannte Fragen:
+
+**Rückgabewerte Fork**
+
+- Was gibt fork zurück, wenn Kind nicht gestartet hat?
+  - -1
+- fork() gibt 23 zurück - was ist passiert?
+  - Kind hat PID 23, wir sind Vater.
+- fork() gibt 0 zurück.
+  - Wir sind Kindprozess eines Fork.
+
+#### Zweck pipe
+
+IPC Prozess A -> B
+
+#### Wie kommt der Kanal zwischen Prozess A und B zustande, inbesondere mit fork()?
+
+<!-- Antwort Studi: vgl. Sockets (File) -->
+
+- ``fork()`` kopiert auch File-Deskriptoren, somit haben beide Prozesse einen Pipe-Kanal, insofern die Pipe vor dem Forken definiert wurde
+- Kernel buffert das Geschriebene solange, bis es gelesen wird.
+
+#### Was passiert, wenn ich forke?
+
+- Ab fork() entsteht Kindprozess
+- gesamter Speicher des Prozesses, inklusive Filedeskriptoren (auch Pipes), Variablen, etc. werden kopiert
+- Nicht kopiert werden: PID<!-- DUH -->
+
+$\rightarrow$ Prozesse, die verwandt sind, können über vor fork() angelegte Pipes kommunizieren.
+
+#### Welche Operationen auf einer Pipe kennen Sie? Beschreiben Sie deren Funktion
+
+- `write(pipefd[0],buffer)`
+  - Write: Aus Programm auf die Pipe schreiben, in den Kernelbuffer
+- `read(pipefd[1],buffer)`
+  - Read: Aus Kernelbuffer in Programmbuffer schreiben; aus Sicht des Programms von Pipe lesen
+
+#### Wie können Sie bidirektionale IPC ermöglichen?
+
+- Pipe umdrehen <!-- LOL -->, ggf. mit Zugriffskonzept (Semaphore)
+- 2 Pipes verwenden
+- Socket benutzen
+
+#### Was bedeutet close generell / bei Pipe?
+
+- Der Filedeskriptor wird gelöscht und steht nicht mehr zur Verfügung
+- Dadurch ist das dahinterliegende File (everything is a file) nicht mehr trivial erreichbar
+  - Es sei denn ein Prozess hat das File jetzt gerade noch geöffnet.
+
+Bei Pipes:
+
+- Seite einer Pipe schließen
+  - Schreibseite schließen: EOF senden
+
+<!-- **PIDs differieren stark, was ist passiert?**  -->
+
+<!-- #### Was passiert, wenn der Wertebereich für PIDs erschöpft ist? (2 Möglichkeiten) TODO -->
+
+#### Was ist passiert, wenn PID vom Kind < PID Vater
+
+- PID Tabelle war voll, es wurden freigegebene kleinere PID genutzt
+
+#### Wie können sie sich die PID von Prozessen (auf dem Terminal) anzeigen lassen?
+
+- htop / anderer Taskmanager für Betriebssystem, alle Prozesse
+- `getpid()` für ein Programm
+
+#### Wer/was definiert/ist kritischer Abschnitt?
+
+- Es ist ein Codebereich, der nur in einer definierten Anzahl von Prozessen gleichzeitig zur Verfügung steht (stehen sollte)
+- realisiert durch Zugriffskonzepte, Semaphoren, andere Sperrkonzepte
+- Entwickler müssen im Programm dafür Sorge tragen und den kritischen Abschnitt definieren
+
+#### Deadlock verhindern/auflösen
+
+- Reboot
+- Auf Ressource verzichten (Signale an Prozess senden)
+- Prozess killen
+- ggf. auch über Pipes (Implementierung notwendig)
+- Sockets benutzen ♻️ <!-- na mal sehen ob das in LaTeX und anki probleme macht -->
+
+#### Nennen Sie zwei Arten der IPC
+
+- Pipes
+- Sockets
+
+#### Unterschied Pipe Socket
+
+- Pipes
+  - Unix-Domaine exklusiv, d.h. gleiches Rechensystem
+  - unidirektional
+- Socket
+  - Unix/Internetdomäne
+  - bidirektional
 
 <!--newpage-->
 
@@ -265,3 +384,8 @@ int main()
     - wurden alle Leseseiten einer Pipe bereits gelesen, liefert `read()` EOF
   - Schreib-Operation: `write()`
   - Schließ-Operation: `close()`
+
+#### Sockets
+
+- IPC auf lokalem Rechner (Unix-Domäne) oder über das Internet (Internet-Domäne)
+- Ein Port ist eine Spezifikation zur Addressierung eines Prozesses auf einem Host
