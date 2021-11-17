@@ -211,18 +211,18 @@ Organisation der Durchführung von Prozessen
 #### Sie können Vor- und Nachteile interner und externer Personalbeschaffung darstellen
 
 **externe Personalbeschaffung**
-Vorteile | Nachteile
----------|-----------
-nicht intern nachbesetzen | Einarbeitungszeit
-neues Wissen | kaum/keine Kenntnisse über MA
-schnell verfügbar, keine Ausbildungskosten | Aufwand der Suche
+| Vorteile                                   | Nachteile                     |
+| ------------------------------------------ | ----------------------------- |
+| nicht intern nachbesetzen                  | Einarbeitungszeit             |
+| neues Wissen                               | kaum/keine Kenntnisse über MA |
+| schnell verfügbar, keine Ausbildungskosten | Aufwand der Suche             |
 
 **interne Personalbeschaffung**
-Vorteile | Nachteile
----------|-----------
-wenig Aufwand für die Suche | Neubesetzung der alten Stelle
-MA kennt Unternehmensstruktur | Betriebsblindheit
-Kenntnisse über MA | evtl. Weiterbildungskosten
+| Vorteile                      | Nachteile                     |
+| ----------------------------- | ----------------------------- |
+| wenig Aufwand für die Suche   | Neubesetzung der alten Stelle |
+| MA kennt Unternehmensstruktur | Betriebsblindheit             |
+| Kenntnisse über MA            | evtl. Weiterbildungskosten    |
 
 ### Unternehmensethik (?)
 
@@ -322,11 +322,11 @@ Kenntnisse über MA | evtl. Weiterbildungskosten
 
 #### Sie kennen mindestens drei Vor- und Nachteile der BSC und können diese erläutern
 
-Vorteile | Nachteile
----------|----------
-schneller, pointierter Blick auf wichtige Fakten | beliebige Wahl der Kennzahlen & Interpretationen
-Flexibilität, Anpassung an jedes Unternehmen durch Fülle an Kennzahlen mögl. | Vernachlässigung langfristiger Gewinne zu Gunsten kurzfristiger Gewinne, bei kompletter Ausrichtung auf Kennzahlen
-einfache Programmierbarkeit und Aufnahme in die EDV bei Rechnersystemen | Kennzahleninflation, bei zu vielen Kennzahlen stehen Nutzen und Erstellungsaufwand nicht in Relation
+| Vorteile                                                                     | Nachteile                                                                                                          |
+| ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| schneller, pointierter Blick auf wichtige Fakten                             | beliebige Wahl der Kennzahlen & Interpretationen                                                                   |
+| Flexibilität, Anpassung an jedes Unternehmen durch Fülle an Kennzahlen mögl. | Vernachlässigung langfristiger Gewinne zu Gunsten kurzfristiger Gewinne, bei kompletter Ausrichtung auf Kennzahlen |
+| einfache Programmierbarkeit und Aufnahme in die EDV bei Rechnersystemen      | Kennzahleninflation, bei zu vielen Kennzahlen stehen Nutzen und Erstellungsaufwand nicht in Relation               |
 
 #### Sie können die Vollkostenrechnung erläuternd darstellen
 
@@ -559,89 +559,213 @@ einfache Programmierbarkeit und Aufnahme in die EDV bei Rechnersystemen | Kennza
 
 ### Sie kennen die zwei Abschnitte der Projektumsetzung!
 
-- TODO
+- Projektfindung/-vorbereitung
+- Projektrealisierung
 
 ### Sie können den PDCA als Führungsmethodik am konkreten Beispiel anwenden!
 
-- TODO
+- Plan
+- Do
+- Check
+- Act
 
 ### Sie kennen die vier Abschnitte des Gesamtprozesses der Projektumsetzung!
 
-- TODO
+- Prozessvorbereitung
+  - Problemermittlung
+  - Problemanalyse
+  - Alternativen
+  - Erfolgseinschätzung
+  - Entscheidung
+- Projektplanung
+  - Aufgabenplanung
+  - Personalplanung
+  - Terminplanung
+  - Ergänzungen
+  - Planungsergebnisse
+- Projektgestaltung
+  - Projektauslösung
+  - Projektarbeiten
+  - Projektsteuerung
+- Projekteinführung
+  - Lösungseinführung
+  - Abschlussarbeiten
 
 ### Sie können zwei Methoden zum Finden von Fehlern/Problemen erläutern!
 
-- TODO
+- Ishikawa (Ursache-Wirkungs-Diagramm) (7M!)
+- FMEA (Formblatt mit Punktesystem)
 
 ### Sie kennen mind. drei Kreativtechniken mit denen man Ideen entwickeln kann!
 
-- TODO
+- Brainstorming
+- Brainwriting (mit 635 Methode)
+- Morphologischer Kasten (Konfigurator)
+- Mindmapping (graphische Darstellung von Sachverhalten)
+- Bionic (Inspiration für die Problemlösung in der Natur suchen)
 
 ### Sie können die Risiken bei der Umsetzung an einem Ampelsystem erläutern und die Bedeutung und den Inhalt der Nachhaltigkeit darstellen!
 
-- TODO
+- TODO:
 
 ### Sie kennen die fünf notwendigen Anforderungen an den Projektleiter!
 
-- TODO
+- TODO:
 
 ### Sie kennen die Entwicklung von Gruppen [Gruppen-/Teambildung]!
 
-- TODO
+1. Kennenlernen, Zusammenstellung $\rightarrow$ Forming
+2. Rangordnung, Rollen festlegen \rightarrow\rightarrow Storming
+3. Qualität und Quantität oder Aufgabenerfüllung $\rightarrow$ Norming
+4. Doing, Erfüllung, höchste Leistungsfähigkeit $\rightarrow$ Performing
+5. Verabschiedung, Auflösung \rightarrow\rightarrow Adjourning
 
 ### Sie kennen die Institutionen zur Unterstützung eines Projektes!
 
-- TODO
+- **Fachausschuss:** Kontrollorgan zur fachlichen Beurteilung der erbrachten Leistung (quantitative und qualitative Beurteilung) - vergleichbar mit einer Stabstelle
+- **Lenkungskollegium:** Koordination und Unterstützung (besonders für finanzielle und materielle Bedürfnisse des Projektteams)
+- **Lenkungsausschuss:** Schnittstelle zwischen Führungskräften
+
+$\rightarrow$ können vom Projektleiter als Unterstützer angefordert werden, für Dinge die das Team nicht selbst ausführen kann
+
+$\rightarrow$ hat der Projektleiter diese Dinge zur Verfügung, sinkt das Risiko, dass das Projekt scheitert
 
 ### Sie kennen die vier Organisationsformen der Struktur einer Projektgruppe!
 
-- TODO
+- Reine Projektgruppe
+  - teilautonome Gruppen
+- Linien-Projektgruppe
+  - innerhalb der Organisation direkt unterstellt
+- Stabs-Projekt-Organisation
+  - ein Koordinator greift auf meist Teilzeit festgelegte MA zu
+- Matrix-Projekt-Organisation
+  - eine der Geschäftsleitung direkt unterstellte Projektgruppe
+  - greift auf die Organisation zu
+- Organisationsformen können bei Bedarf auch gemischt werden
 
 ### Sie können den Einfluss verschiedener Faktoren auf die Entwicklung eines Projektes erklären!
 
-- TODO
+- **Erfolg:**
+  - Förderung durch das Topmanagement
+  - "gutes" Projektteam (Mitarbeiter müssen die üblichen Anforderungen erfüllen)
+  - Einsatz der Methoden (Zeit, materielle und personelle Potentiale)
+- **Misserfolg:**
+  - Konflikte innerhalb und außerhalb des Projektteams (Ursache - Führung)
+  - Zieländerungen während des laufenden Projektes
+  - Führungskompetenz des Projektleiters
+  - Erfolgsdruck
 
 ### Sie wissen in welchem Spannungsfeld sich ein Projekt befindet und können das am Beispiel darstellen!
 
-- TODO
+- das Spannungsdreieck!
+
+```text
+    ┏━━━━━━━━┓
+    ┃Qualität┃
+    ┗━━━━━━━━┛
+        │
+    ┏━━━━━━━┓
+    ┃Projekt┃
+    ┗━━━━━━━┛
+    ╱       ╲
+┏━━━━┓    ┏━━━━━━┓
+┃Zeit┃    ┃Kosten┃
+┗━━━━┛    ┗━━━━━━┛
+```
 
 ## Management Methoden
 
 ### Sie kennen die fünf Planungsinhalte eines Projektes!
 
-- TODO
+- **Aufgaben**
+  - Lösungs-Konzepte
+  - Projekt-Struktur
+  - Tailoring
+  - Projekt-Prozess
+- **Personal**
+  - Quantitativ
+  - Qualitativ
+  - Einsatz
+- **Termin**
+  - Aufgaben
+  - Verfahren (Prozess)
+  - Vergleich
+- **Ergänzende Planung**
+  - MR
+  - FR
+  - Dokumentation
+  - Qualität
+- **Planungsergebnisse**
+  - Projektplan
+  - Projektantrag
+  - Projektauftrag
+  - Projektvergabe
+  - Förderung
 
 ### Sie kennen die Inhalte der Bestimmung der HR!
 
-- TODO
+1. Fachliche Kompetenz aller Beteiligten
+2. Führungskompetenz der verantwortlichen Leiter
+3. Flache Strukturen (Einliniensystem mit wenig Vorgesetzten)
+4. Kenntnisse zum Stärken-Schwächen-Profil des Einzelnen
+5. Soft-Skills aller Beteiligten zur Zusammenarbeit
 
 ### Sie können den Knotennetzplan berechnen und Optimierungen begründen!
 
-- TODO
+- Üben!
 
 ### Sie können ein Projekt an Hand der sechs Elemente eines Planungsergebnisses darstellen!
 
-- TODO
+- Projektplan
+- Projektantrag
+- Projektauftrag
+- Projektvergabe
+- Förderung
 
 ### Sie beherrschen die fünf Phasen des Findens eines Projektes!
 
-- TODO
+- für die Phase der Zielbildung $\rightarrow$ aktive oder reaktive Prozesse
+- für die Problemanalyse $\rightarrow$ Ishikawa, FMEA, ...
+- für Alternativen $\rightarrow$ Kreativitätstechniken - Brainstorming, 6 Hüte von de Bono, Morphologischer Kasten, Mindmapping, ...
+- für die Prognose $\rightarrow$ Szenario-Analyse, Extrapolation
+- für die Bewertung $\rightarrow$ Nutzwertanalyse, Kosten-/Nutzenrechnung, BSC (Balance-Score-Card)
 
-### Sie können an Hand der DWOT-Analyse Lösungsansätze für ein Projekt finden!
+### Sie können an Hand der SWOT-Analyse Lösungsansätze für ein Projekt finden!
 
-- TODO
+- Üben!
 
 ### Sie beherrschen die Nutzwertanalyse zur Bewertung von Lösungsmöglichkeiten!
 
-- TODO
+- Fragen mit Punkten bewerten $\rightarrow$ zusammenrechnen (WOW)
 
 ### Sie kennen die fünf Phasen des Ablaufs eines Projektes!
 
-- TODO
+- **Start**
+  - Kick off, Veröffentlichung
+  - Information aller betroffenen Mitarbeiter
+- **Definition**
+  - Ziel und Aufgabe definieren (SMART, 5-W-Regel)
+  - Muss-, Soll-, Kann-Ziele festlegen
+- **Planung**
+  - Koordination, Entscheidung zur Durchführung
+  - Überprüfung der Vollständigkeit aller Informationen
+- **Umsetzung**
+  - Realiserung der Arbeiten
+  - Controlling der Vorgänge und Meilensteine
+- **Bewertung**
+  - Abrechnung der Arbeiten, Dokumentation
+  - Nutzen, Aufwand, Verbesserungen, ...
 
 ### Sie können die Interessenlage der acht Beteiligten an einem Firmenprojekt erläutern!
 
-- TODO
+- Eigentümer
+- Staat/Gesellschaft
+- Kunden
+- Fremd-Kapitalgeber
+- Konkurrenz
+- Lieferanten
+- Arbeitnehmer
+- Unternehmensleitung
 
 ### Sie können eine Zielstellung nach ihren Bedingungen und Dimensionen darstellen und deren zwingenden Zusammenhang darstellen!
 
@@ -649,11 +773,15 @@ einfache Programmierbarkeit und Aufnahme in die EDV bei Rechnersystemen | Kennza
 
 ### Sie sind in der Lage innerhalb der Operationalisierung einzelne Ziele nach muss, soll und kann zu bestimmen!
 
-- TODO
+- Üben!
 
 ### Sie kennen die fünf grundsätzlichen Risiken eines Projektes und können deren Wertigkeit bestimmen!
 
-- TODO
+- Personalprobleme
+- Kostenentwicklung
+- Gesetzgebung
+- Neue Technik/Technologie
+- Umweltstandards
 
 ### Sie kennen Führungsarten, Führungsstile und drei Führungstechniken mit denen ein Projektleiter das Projekt führen kann und sind in der Lage diese zu beschreiben!
 
@@ -682,11 +810,14 @@ TODO: Ich glaub das ist allgemein und nicht nur für Projektmanagement?
 
 ### Sie kennen die vier Elemente des Projektcontrollings und können diese Inhaltlich darstellen!
 
-- TODO
+- Projektplanung
+- Projektkontrolle
+- Information/Dokumentation
+- Projektsteuerung
 
 ### Sie sind in der Lage das Berichtswesen des Controllings mit eigenen drei Argumenten zu begründen!
 
-- TODO
+- für jemanden (Kunden, für das Unternehmen (Wissensmanagement), Geschäftsberichte für Aktionäre etc.) wird etwas dokumentiert
 
 # Lernkontrollfragen Qualitätsmanagement
 
@@ -694,11 +825,21 @@ TODO: Ich glaub das ist allgemein und nicht nur für Projektmanagement?
 
 ### Sie können die Qualitätspolitik in die Unternehmenspolitik einordnen!
 
-- TODO
+> Dies ist ein Dreieck (Spitze oben)
+
+- Vision des Unternehmens (Philosophie): Produkt/DL
+- Unternehmenspolitik: Produkt/DL; Personal, Kunden, Partner; Nachhaltigkeit; **Qualität**
+- Unternehmensleitbild: Publikation der Unternehmenspolitik
+- Unternehmenskultur: Umsetzung; Realisierung; KVP
 
 ### Sie beherrschen den Unterschied zwischen Qualität und Qualitätsmanagement!
 
-- TODO
+- Was ist Qualität?
+  - Qualitäten eines Mitarbeiters
+  - erwartete Eigenschaften eines Produkts
+- Was ist Qualitätsmanagement
+  - Alles, was wir machen: Maßnahmen zur Durchsetzung der Erwartung
+  - Überprüfung der Maßnahmen auf Sinn, Effizienz und Effektivität $\rightarrow$ Controlling
 
 ### Sie kennen min. 5 Instrumentarien zur Qualitätsbestimmung!
 
@@ -706,15 +847,43 @@ TODO: Ich glaub das ist allgemein und nicht nur für Projektmanagement?
 
 ### Sie kennen die Bedeutung von TQM!
 
-- TODO
+- Total-Quality-Management = Qualität in allen Bereichen
 
-### Sie kennen aus dem Qualitätssystem KAIZEN mind. folgende Techniken (PDCA),ISHIKAWA, 5/7 W-Regel der Aufgabenstellung
+### Sie kennen aus dem Qualitätssystem KAIZEN mind. folgende Techniken: PDCA, ISHIKAWA, 5/7 W-Regel der Aufgabenstellung
 
-- TODO
+**PDCA**
+
+- **Plan**
+  - Prozess planen – Plan umfasst Aufgaben/Zielstellung das Erkennen von Verbesserungspotentialen, Aufgaben und Zielstellung, die Analyse des aktuellen Zustands [HR, MR, FR], das Entwickeln eines neuen Konzeptes [Plan] und Entscheidungen
+- **Do**
+  - das Ausprobieren, Testen und praktisches Optimieren des Konzeptes mit schnellrealisierbaren, einfachen Mitteln, Erfassen/sammeln der anfallenden Daten
+- **Check** Überprüfen und Analyse der gesammelten Daten, bei Erfolg für die Umsetzung als Standard freigegeben, fehelender Erfolg Wiederholung von DO [Loop, Schleife, ...]
+- **Act**
+  - der neue Standard wird auf in der Organisation komplett eingeführt, festgeschrieben der Daten, regelmäßig auf Einhaltung überprüft (Audits)
+
+**Kaizen - 5S**
+
+- **Seiri (整理):** Sortiere aus. Alles, was nicht benötigt wird aussortieren
+- **Seiton (整頓):** Stelle ordentlich hin. Was gebraucht wird, bekommt einen unter ergonomischen Gesichtspunkten, definierten und gekennzeichneten festen Platz
+- **Seiso (清楚):** Säubere. Der Arbeitsplatz wird von Grund auf gereinigt.
+- **Seiketsu (清潔):** Sauberkeit bewahren - stetiges Aufräumen
+- **Shitsuke (躾):** Selbstdisziplin üben - Ordnung und Sauberkeit aufrechterhalten
+- **Shuukan (習慣):** Bei nachhaltiger Disziplin gehen Ordnung und Sauberkeit in Fleisch und Blut über $\rightarrow$ Gewohnheit
+
+**Kaizen 7-W-Checkliste**
+
+> abgeleitet aus der 5W-Regel für Aufgabenstellungen
+
+- Was ist zu tun?
+- Wer macht es?
+- Warum macht er es?
+- Wie wird es gemacht?
+- Wann wird es gemacht?
+- Wo soll es getan werden?
 
 ### Sie beherrschen den Managementkreislauf in seiner Anwendung!
 
-**Allgemein:**
+**allgemein**
 
 1. Aufgabe/Ziel
 2. Planung/Organisation
@@ -724,19 +893,22 @@ TODO: Ich glaub das ist allgemein und nicht nur für Projektmanagement?
 
 **Bei Neuem:**
 
-Siehe [Für den KVP können sie den Managementkreislauf anwenden!](#für-den-kvp-können-sie-den-managementkreislauf-anwenden)
+PDCA!
 
 ## Erfassen und Bewerten von Qualitätsdaten
 
-- TODO
-
 ### Sie kennen mind. 3 Möglichkeiten der Darstellung von Prozessen und können den Vorgangsknotennetzplan anwenden!
 
-- TODO
+- Netzplantechnik (Knotennetzplan, Pfeilnetzplan)
+- Gantt Diagramm
+- Workflow
+- Flussplan
 
 ### Sie kennen die grundlegenden Möglichkeiten einer Aufbauorganisation!
 
-- TODO
+- Matrixorganisation
+- Funktional-Organisation
+- Sparten-Organisation
 
 ### Sie können den Inhalt und Funktion einer Aufbauorganisation beschreiben!
 
@@ -750,7 +922,11 @@ Siehe [Für den KVP können sie den Managementkreislauf anwenden!](#für-den-kvp
 
 ### Sie sind in der Lage an Hand einer Ausgangssituation eine SWOT-Analyse durch zuführen!
 
-- TODO
+| -       |     | Stärken                                        | Schwächen                                      |
+| ------- | --- | ---------------------------------------------- | ---------------------------------------------- |
+| -       |     | ...                                            | ...                                            |
+| Chancen | ... | Ergebnisse, Lösungen, Umgang mit der Situation | Ergebnisse, Lösungen, Umgang mit der Situation |
+| Risiken | ... | Ergebnisse, Lösungen, Umgang mit der Situation | Ergebnisse, Lösungen, Umgang mit der Situation |
 
 ### Sie können ISHIKAWA [Ursache-Wirkungsdiagramm] an Hand einer Fehlersituation anwenden!
 
@@ -765,11 +941,16 @@ Siehe [Für den KVP können sie den Managementkreislauf anwenden!](#für-den-kvp
 
 ## Methoden des Zeit- und Selbstmanagements
 
-- TODO
+### Sie kennen mindestens 3 Methoden des Zeit- und Selbstmanagement!
 
-### Sie kennen mindesten 3 Methoden des Zeit- und Selbstmanagement!
-
-- TODO
+- ABC Analyse
+- Pareto-Regel
+- Alpenmethode
+  1. **A**ufgaben, Termine und geplante Aktivitäten notieren
+  2. **L**änge schätzen
+  3. **P**ufferzeiten einplanen
+  4. **E**ntscheidungen treffen
+  5. **N**achkontrolle
 
 ### Sie beherrschen die Methode nach Eisenhower und können diese erklären und anwenden!
 
@@ -777,4 +958,4 @@ Siehe [Für den KVP können sie den Managementkreislauf anwenden!](#für-den-kvp
 
 ### Sie können eine Aufgabenstellung in ihrem Ablauf mittels Managementkreislauf darstellen!
 
-- TODO
+- Üben!
