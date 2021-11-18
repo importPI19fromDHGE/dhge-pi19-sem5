@@ -116,6 +116,6 @@ fn messaging_loop(addr: std::net::SocketAddr, socket_read_handle: UdpSocket) -> 
         let (_amt, _src) = socket_read_handle.recv_from(&mut buf)?;
 
         // print the message
-        println!("Message: {}", str::from_utf8(&buf).unwrap());
+        print!("Message: {}", str::from_utf8(&buf).unwrap());
     }
 }
