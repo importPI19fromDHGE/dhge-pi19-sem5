@@ -53,7 +53,7 @@ fn server() {
     );
 
     // now that we know who the client is, we can enter the messaging loop
-    messaging_loop(src, socket).unwrap();
+    messaging_loop(src, socket);
 }
 
 // initialize the client side
