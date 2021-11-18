@@ -547,7 +547,7 @@ h3{
 
 **CMYK-Modell**
 
-- Farbauswahl hier naach standardisierten Namen
+- Farbauswahl hier nach standardisierten Namen
 
 > Palette unter <https://wiki.selfhtml.org/wiki/Grafik/Farbe/Farbpaletten#Farbnamen>
 
