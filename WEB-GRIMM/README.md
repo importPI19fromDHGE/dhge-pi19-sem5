@@ -751,7 +751,7 @@ h2 {
 - kann Elemente bei zu kleiner Displagrößer verstecken und umformatieren
 - Deklaration: ``@media (bedingung) {style}``
 
-> Mehr dazu: <https://www.w3schools.com/css/css_rwd_mediaqueries.asp> daher auch das Beispiel:
+> Mehr dazu: [W3Schools](https://www.w3schools.com/css/css_rwd_mediaqueries.asp) daher auch das Beispiel:
 
 ```css
  /* Extra small devices (phones, 600px and down) */
