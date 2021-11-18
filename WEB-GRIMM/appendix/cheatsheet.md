@@ -119,8 +119,8 @@
 - Kopfzelle: `<th>` (`scope`-Attribut: Zeilen- oder Spaltenkopf)
 - Fußzeile: `<tfoot>`; Kopfzeile: `<thead>`
 - Caption: `<caption>` Beschriftung oder Überschrift einer Tabelle (mittig darüber)
-- `<colspan>`: verbindet Spalten
-- `<rowspan>`: verbindet Zeilen
+- `colspan`: verbindet Spalten (Attribut)
+- `rowspan`: verbindet Zeilen (Attribut)
 - `<colgroup>`: Gruppieren von Spalten
 
 ## Formulare
