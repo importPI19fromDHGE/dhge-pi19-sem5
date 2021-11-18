@@ -230,24 +230,6 @@ Organisation der Durchführung von Prozessen
 | MA kennt Unternehmensstruktur | Betriebsblindheit             |
 | Kenntnisse über MA            | evtl. Weiterbildungskosten    |
 
-### Unternehmensethik (?)
-
-#### Sie kennen die vier Merkmale und deren Inhalte als Grundlage der Unternehmensethik
-
-- TODO
-
-#### Sie können Unternehmensethik beschreiben und vier der wichtigsten Grundwerte nennen
-
-- TODO
-
-#### Sie können den Zusammenhang zwischen Mensch, menschlichem Handeln, Werten darstellen
-
-- TODO
-
-#### Sie können den Antrieb zum Handeln aus der Unternehmensethik erläutern
-
-- TODO
-
 ## Skript 2
 
 ### Externes Rechnungswesen
