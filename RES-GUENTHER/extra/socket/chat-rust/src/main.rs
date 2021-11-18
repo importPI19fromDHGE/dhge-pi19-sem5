@@ -83,7 +83,7 @@ fn client() -> std::io::Result<()> {
 fn messaging_loop(addr: std::net::SocketAddr, socket_read_handle: UdpSocket) -> io::Result<()> {
     // copy the passed socket handle, so we don't run into scope/threading issues
     // Rust is a little pedantic when it comes to that
-    // we are stilling using the same socket though, we are just creating another independantly owned HANDLE
+    // we are stilling using the same socket though, we are just creating another independently owned HANDLE
     let socket_write_handle = socket_read_handle.try_clone().unwrap();
 
     // UI thread
