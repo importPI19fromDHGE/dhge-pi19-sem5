@@ -598,7 +598,9 @@ Organisation der Durchführung von Prozessen
 
 ### Sie kennen die fünf notwendigen Anforderungen an den Projektleiter!
 
-- TODO:
+- fachliche, soziale, methodische Kompetenzen
+- Führungskompetenzen (Methoden der Führung)
+- ToDo: Add more
 
 ### Sie kennen die Entwicklung von Gruppen [Gruppen-/Teambildung]!
 
