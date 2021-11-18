@@ -12,7 +12,7 @@ use std::thread;
 // to make sure everything is ok or end the program if it isn't
 // ideally errors should be handled more gracefully
 
-// hardcore the client and server addresses
+// hardcode the client and server addresses
 const SERVER_ADDR: &str = "127.0.0.1:6000";
 const CLIENT_ADDR: &str = "127.0.0.1:6001";
 // hardcode a buffer size of 4096 bytes
