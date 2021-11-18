@@ -772,25 +772,97 @@ h2 {
 
 # JS
 
-- mittels `<script>`-Tag
+## Historie
+
+- 1995 durch Netscape eingeführt (ursprünglich LiveScript)
+- Standardisierung durch ECMA als ECMAScript
+- ähnlich zu C(++) - kaum Ähnlichkeit zu Java
+
+## Basics
+
+- wird clientseitig ausgeführt
+- Anwendungen:
+  - clientseitige Datenvalidierung
+  - Dialogfenster
+  - Nachladen von Daten ohne Reload der Seite
+  - Autovervollständigung/Suchvorschläge
+  - Manipulation von Websites per DOM
+
+## Verwendung im Browser / mit HTML
+
+- Einbinden von JavaScript Code in HTML mittels `<script>`-Tag
 - inline im Tag oder mit `<script src="müll.js">`
 - Ausführung im Browser mit bspw. Chromiums V8 oder Firefox' SpiderMonkey
 - Ausführung auch unabhängig vom Browser mit Node (nicht Node.js)
-- grundsätzlich C-like Sprache
-- Variablendeklaration: ``var Bezeichner`` oder nur ``Bezeichner``
+
+## Eigenschaften
+
+- Bezeichner:
+  - keine Leerzeichen
+  - muss mit Buchstaben beginnen
+  - nur Ziffern, Buchstaben und `_`
+  - keine reservierten Bezeichner
+- Variablen:
+  - ``var Bezeichner`` oder nur ``Bezeichner``
   - mit Scope: ``let Bezeichner``
-- case-sensitiv
-- implizite Datentypen und Umwandlungen
-- "Dodo-Modus": `use strict`
+  - case-sensitiv
+  - implizite Datentypen und Umwandlungen
+  - "Dodo-Modus": `use strict` $\rightarrow$ keine undeklarierten Variablen
 - Vergleiche:
   - ``==``: vergleicht auf denselben Wert, aber castet implizit
   - ``===`` vergleicht auf denselben Wert und denselben Datentyp
+
+Beispiele für Verzweigungen:
+
+```js
+/*if-else*/
+
+if (bedingung){
+  /*do something*/;
+}
+else if (andereBedingung){
+  /*do somethin different*/;
+}
+else{
+  /*cry*/;
+}
+
+/*switch*/
+
+switch (bedingung) {
+  case "fall_1":
+    /*do things*/;
+    break;
+  case "fall_2":
+    /*more things*/;
+    break;
+  default: 
+    /*everything else*/;
+    break;
+}
+/*break nicht vergessen! sonst wird alles danach auch ausgeführt, bis zum nächsten break*/
+```
 
 ## Fancy-Input Beispiel
 
 In diesem Beispiel wird JavaScript verwendet, um das Label eines Inputs dynamisch zu verändern.
 
 Das Beispiel ist im Ordner `extra/fancy-input` zu finden.
+
+# Exkurs: DOM
+
+- DOM (Document Object Model) ist eine Programmierschnittstelle für HTML- und XML-Dokumente
+- stellt diese Dokumente als Baumstruktur dar
+  - jeder Knoten ist ein Objekt im Dokument (Textabschnitte, Überschriften, Tabellen)
+  - es existieren Eltern- und Kindknoten (hierarchischer Aufbau)
+- anhand dieser Strukturierung kann auf bestimmte Objekte des Dokuments zugegriffen werden
+  - diese kann man dann auslesen, verändern, löschen,...
+- Unterscheidung zwischen:
+  - Elementknoten $\rightarrow$ die hierarchisch miteiander verbundenen Knoten
+  - Attributknoten $\rightarrow$ Eigenschaften von Elementknoten
+  - Textknoten $\rightarrow$ Textinhalt eines Elementknotens
+
+> schönes Beispiel: [selfHTML:DOM-Manipluation](https://wiki.selfhtml.org/wiki/JavaScript/Tutorials/DOM/DOM-Manipulation)
 
 # PHP und Datenbanken
 
