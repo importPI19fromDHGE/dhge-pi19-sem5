@@ -707,10 +707,11 @@ $\rightarrow$ hat der Projektleiter diese Dinge zur Verfügung, sinkt das Risiko
 ### Sie können ein Projekt an Hand der sechs Elemente eines Planungsergebnisses darstellen!
 
 - Projektplan
+- Planungsbericht
 - Projektantrag
 - Projektauftrag
 - Projektvergabe
-- Förderung
+- Förderungsmittelantrag
 
 ### Sie beherrschen die fünf Phasen des Findens eines Projektes!
 
