@@ -672,7 +672,7 @@ li:first-child{color:green;}
   - behandelt Spalte oder Zeile, nie beide auf einmal
 - das kann zu unerwünschten Ergebnisses führen, wenn aufgrund eines kleinen Viewports Elemente verschoben werden (siehe Beispiele 2)
 
-> weitere Ausführungen sparen wir uns an der Stelle. Wirklich gut zu dem Thema Flex vs. Grid vs. Box: <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout>
+> weitere Ausführungen sparen wir uns an der Stelle. Wirklich gut zu dem Thema Flex vs. Grid vs. Box: [Mozilla Doku](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout)
 
 ## Grid-Container
 
