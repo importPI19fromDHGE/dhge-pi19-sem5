@@ -841,7 +841,7 @@ switch (bedingung) {
   case "fall_2":
     /*more things*/;
     break;
-  default: 
+  default:
     /*everything else*/;
     break;
 }
