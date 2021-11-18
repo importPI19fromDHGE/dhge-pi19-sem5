@@ -439,6 +439,6 @@ const Pi = 3.1415;
 ```
 
 - ``let``: begrenzt Scope auf Block, dürfen nicht re-declared werden
-- ``var``: function-Scope, global Scope
+- ``var``: function-Scope, global Scope ([Hoisting!](https://de.wikipedia.org/wiki/Hoisting))
 - ``const``: Block-Scope, nur einmal zuweisbar
 - Bezeichner: eindeutig innerhalb des Scopes, beginnen mit Buchstabe, Unterstrich oder Dollar; case-sensitiv, dürfen keine anderen Sonderzeichen enthalten
