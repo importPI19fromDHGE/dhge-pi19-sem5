@@ -374,55 +374,49 @@ header {
   - Chrome: V8
   - Firefox: SpiderMonkey
 - Node $\rightarrow$ Nutzung von JS ohne Browser
+  - erlaubt serverseitige Nutzung
+  - z.B. Datenbankzugriffe, Kryptographie, kritische Systeme <!--😈-->
+- z.B. To Do Liste, Button zum Einfügen eines Elementes
+- Form `html` Tag mit ``"onsubmit=addTodo()"``
 
 ## Datentypen
 
-- `String`
-- `Number`
-- `Boolean`
-- `Symbol`
-- `undefined`
-- `BigInt`
-- `null`
-
-### komplexe Datentypen
-
-- `Array`
-- `Object`
-- `function`
+- String, Number, Boolean, undefined, BigInt
+- Array, Object, Function
 
 ## Operatoren
 
 - klassische C-Operatoren
-- `**` ist für das Potenzieren
-- `==` $\rightarrow$ formatiert ggf. Datentypen um Gleichheit zu erreichen 23 == '23' $\rightarrow$ true (!=)
-- `23 === '23'` $\rightarrow$ `false` (`!==`)
+- ``**`` ist für das Potenzieren
+- ``==`` $\rightarrow$ formatiert ggf. Datentypen um Gleichheit zu erreichen ``23 == '23'`` -> ``true`` (``!=``)
+- ``23 === '23'`` $\rightarrow$ ``false`` (``!==``)
 
 ## DOM - Document Object Model
 
 ```javascript
-document.getElementById();
-document.getElementByName();
-document.getElementByTagName(); //z.B. <p>
-document.querySelector(); //gibt erstes Element, das dem angegebenen CSS-Selektor entspricht
-document.querySelectorAll(); //gibt alle Elemente, die dem angegebenen CSS-Selektor entsprechen
+document.getElementById(); // document.getElementById('div1')
+document.getElementsByName();
+document.getElementsByTagName(); // z.B. <p> --> document.getElementsByTagName('p')
+document.getElementsByClassName(); // returnt viele
+document.querySelector(); // gibt erstes Element, das dem angegebenen CSS-Selektor entspricht, z.B.: document.querySelector('#franz');
+document.querySelectorAll(); // gibt alle Elemente, die dem angegebenen CSS-Selektor entsprechen
 ```
 
 ## Function Syntax
 
 ```javascript
-// Klasse eines Elementes togglen (selector, class)
-function toggleClass(selector, _class){
+// Zweck der Funktion: Klasse eines Elementes togglen (selector, class)
+function toggleClass(selector, _class) {
   // Element aus DOM auswählen
   const el = document.querySelector(selector);
   // Abbruch, wenn kein passendes Element gefunden
-  if(!el) return;
+  if (!el) return;
   // Besitzt das Element die Klasse?
-  if(el.classList.contains(_class)){
-    // ja $\rightarrow$ Klasse entfernen
+  if (el.classList.contains(_class)) {
+    // ja -> Klasse entfernen
     el.classList.remove(_class);
-  }else{
-    // nein $\rightarrow$Klasse hinzufügen
+  } else {
+    // nein ->Klasse hinzufügen
     el.classList.add(_class);
   }
 }
@@ -430,24 +424,21 @@ function toggleClass(selector, _class){
 
 ## Unterschied JavaScript & ECMA-Script
 
-- ECMA-Script $\rightarrow$ Standard
+- ECMA-Script $\rightarrow$ Scripting Language Specification
 - JavaScript (& andere Scriptsprachen) $\rightarrow$ setzen diesen Standard um
 
 ## Variablen
 
 ```javascript
-let variable; //undefined
-variable = 2; //number
+let variable; // undefined
+variable = 2; // number
 variable = 'string';
-use strict; //strenger Modus
+'use strict'; // strenger Modus
 const variable = 45;
 const Pi = 3.1415;
 ```
 
-### Klausur
-
-- allg. Fragen zu Technologien im Web
-- keine Geschichte
-- HTML spezifische Fragen
-  - Stück Quellcode erläutern/ergänzen
-- Bücher & Aufzeichnungen dürfen verwendet werden
+- ``let``: begrenzt Scope auf Block, dürfen nicht re-declared werden
+- ``var``: function-Scope, global Scope ([Hoisting!](https://de.wikipedia.org/wiki/Hoisting))
+- ``const``: Block-Scope, nur einmal zuweisbar
+- Bezeichner: eindeutig innerhalb des Scopes, beginnen mit Buchstabe, Unterstrich oder Dollar; case-sensitiv, dürfen keine anderen Sonderzeichen enthalten
