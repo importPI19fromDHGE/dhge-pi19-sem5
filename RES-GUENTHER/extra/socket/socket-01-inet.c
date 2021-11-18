@@ -24,24 +24,26 @@ int main(int argc, char *argv[]){
 	char buffer[BUFSIZE];
 	struct sockaddr_in servaddr, cliaddr;
 
-	// Socket erstellen
+	// Socket erstellen und auf Fehler prüfen
+	// Mögliche Fehler: Speicherfehler, Socket schon vorhanden, keine Rechte
 	if((sockfd = socket(AF_INET, SOCK_DGRAM, 0)) < 0 ) {
 		perror("socket creation failed");
 		exit(EXIT_FAILURE);
 	}
 
-	// Server-Socket konfigurieren
+	// Server-Socket konfigurieren über struct
 	servaddr.sin_family = AF_INET; // IPv4
-	servaddr.sin_addr.s_addr = INADDR_ANY; // erlaube jede incoming message
+	servaddr.sin_addr.s_addr = INADDR_ANY; // erlaube jede incoming message (von jedem Interface)
 	servaddr.sin_port = htons(PORT); // Port (konvertiere von host zu network byte order)
 
+	// Paramter prüfen -> Soll ein Server gestartet werden?
 	if(argc == 2 && strcmp(argv[1], "server") == 0) {
-		// Server-Socket an Port binden
+		// Server-Socket an Port binden und auf Fehler prüfen
 		if(bind(sockfd, (const struct sockaddr *)&servaddr, sizeof(servaddr)) < 0 ){
 			perror("bind failed");
 			exit(EXIT_FAILURE);
 		}
-
+		// Debug-Ausgabe für Konsole
 		printf("Hallo, ich bin der Server.\n");
 
 		int len = sizeof(cliaddr);
@@ -50,6 +52,7 @@ int main(int argc, char *argv[]){
 		int n = recvfrom(sockfd, (char *)buffer, BUFSIZE, 0, (struct sockaddr *) &cliaddr, &len);
 		// Nachricht im Buffer als String terminieren
 		buffer[n] = '\0';
+		// Nachricht auf Konsole ausgeben
 		printf("Nachricht vom Client: %s\n", buffer);
 	}else{
 		char *msg = "Hallo Server!";
