@@ -824,11 +824,9 @@ Beispiele für Verzweigungen:
 
 if (bedingung){
   /*do something*/;
-}
-else if (andereBedingung){
+} else if (andereBedingung){
   /*do somethin different*/;
-}
-else{
+} else {
   /*cry*/;
 }
 
