@@ -70,11 +70,11 @@ fn client() {
         .expect("Could not send message!");
 
     // enter the messaging loop
-    messaging_loop(SERVER_ADDR.parse().unwrap(), socket).unwrap();
+    messaging_loop(SERVER_ADDR.parse::<std::net::SocketAddr>().unwrap(), socket);
 }
 
 // once client/server is set up and ready, we can start chatting in here
-fn messaging_loop(addr: std::net::SocketAddr, socket_read_handle: UdpSocket) -> io::Result<()> {
+fn messaging_loop(addr: std::net::SocketAddr, socket_read_handle: UdpSocket){
     // copy the passed socket handle, so we don't run into scope/threading issues
     // Rust is a little pedantic when it comes to that
     // we are stilling using the same socket though, we are just creating another independently owned HANDLE
@@ -107,7 +107,7 @@ fn messaging_loop(addr: std::net::SocketAddr, socket_read_handle: UdpSocket) -> 
         let mut buf = [0; BUFFER_SIZE];
 
         // wait for a message from the sender
-        let (_amt, _src) = socket_read_handle.recv_from(&mut buf)?;
+        let (_amt, _src) = socket_read_handle.recv_from(&mut buf).unwrap();
 
         // print the message
         print!("Message: {}", str::from_utf8(&buf).unwrap());
