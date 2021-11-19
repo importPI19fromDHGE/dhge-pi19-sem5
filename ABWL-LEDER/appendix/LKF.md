@@ -848,11 +848,11 @@ $\rightarrow$ hat der Projektleiter diese Dinge zur Verfügung, sinkt das Risiko
 
 ### Sie beherrschen die fünf Phasen des Findens eines Projektes!
 
-- für die Phase der Zielbildung $\rightarrow$ aktive oder reaktive Prozesse
-- für die Problemanalyse $\rightarrow$ Ishikawa, FMEA, ...
-- für Alternativen $\rightarrow$ Kreativitätstechniken - Brainstorming, 6 Hüte von de Bono, Morphologischer Kasten, Mindmapping, ...
-- für die Prognose $\rightarrow$ Szenario-Analyse, Extrapolation
-- für die Bewertung $\rightarrow$ Nutzwertanalyse, Kosten-/Nutzenrechnung, BSC (Balance-Score-Card)
+- **Zielbildung:** aktive oder reaktive Prozesse
+- **Problemanalyse:** Ishikawa, FMEA, ...
+- **Alternativen:** Kreativitätstechniken (Brainstorming, Mindmapping, ...)
+- **Prognose:** Szenario-Analyse, Extrapolation
+- **Bewertung:** Nutzwertanalyse, Kosten-/Nutzenrechnung, BSC
 
 ### Sie können an Hand der SWOT-Analyse Lösungsansätze für ein Projekt finden!
 
