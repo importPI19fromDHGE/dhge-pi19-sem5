@@ -725,9 +725,29 @@ Nachteile
 - Mindmapping (graphische Darstellung von Sachverhalten)
 - Bionic (Inspiration für die Problemlösung in der Natur suchen)
 
-### Sie können die Risiken bei der Umsetzung an einem Ampelsystem erläutern und die Bedeutung und den Inhalt der Nachhaltigkeit darstellen!
+### Sie können die Risiken bei der Umsetzung an einem Ampelsystem erläutern!
 
-- TODO: **Jonathan**: PM II.pdf Folie 34, Qualitätsmanagement.pdf Seite 76 noch mal
+Kombination von Wahrscheinlichkeit des Stattfindens und Auswirkung/Ausmaß $\rightarrow$ Zuordnung einer Ampelfarbe:
+
+**Bedeutung der Ampelfarben:**
+
+- Grün: akzeptiert
+- Gelb: kritisch
+- Rot: inakzeptabel
+
+**Wahrscheinlichkeiten:**
+
+- häufig > wahrscheinlich > gelegentlich > entfernt vorstellbar > unwahrscheinlich > unvorstellbar
+
+### Sie können die Bedeutung und den Inhalt der Nachhaltigkeit darstellen!
+
+$$\begin{matrix}
+\text{Soziale Bez.}&&\text{Ökonomie}\\
+\qquad\searrow&&\swarrow\qquad\\
+&\textbf{Nachhaltigkeit}\\
+&\uparrow\\
+&\text{Ökologie}
+\end{matrix}$$
 
 ### Sie kennen die fünf notwendigen Anforderungen an den Projektleiter!
 
