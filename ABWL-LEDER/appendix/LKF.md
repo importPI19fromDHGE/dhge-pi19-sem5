@@ -840,7 +840,10 @@ $\rightarrow$ hat der Projektleiter diese Dinge zur Verfügung, sinkt das Risiko
 
 ### Sie können den Knotennetzplan berechnen und Optimierungen begründen!
 
-- Üben!
+- **Vorwärtskalkulation:** größter `FEZ` der Vorgänger wird `FAZ`; `FEZ` = `FAZ` + `Dauer`
+- **Rückwärtskalkulation:** `SEZ` wird kleinster `SAZ` der Nachfolger; `Puffer` = `FAZ` - `SAZ` bzw. `FEZ` - `SEZ`
+
+> **Kritischer Weg:** Knoten ohne Pufferzeiten
 
 ### Sie können ein Projekt an Hand der sechs Elemente eines Planungsergebnisses darstellen!
 
