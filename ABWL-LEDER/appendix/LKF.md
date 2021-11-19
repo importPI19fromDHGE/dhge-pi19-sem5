@@ -164,10 +164,12 @@ Organisation der Durchführung von Prozessen
 - Ermittlung des Bedarfs an Stellen
 
 <!--
+
 - **Berechnung des Personalbedarfs**
 - gegenwärtige vorhandene Stellen laut Ermittlungsmethode + neue Bedarfsstellen im Planungszeitraum - entfallende Stellen im Planungszeitraum = Bruttopersonalbedarf
 - gegenwärtiger Personalbestand + feststehende Personalzugänge - feststehende Personalabgänge = fortgeschriebener Personalbedarf
 - Bruttopersonalbedarf - fortgeschriebener Personalbestand = Nettopersonalbedarf
+
 --->
 #### Sie kennen die Einflussgrößen auf die Personalkosten, die Bestandteile und deren Einteilung
 
