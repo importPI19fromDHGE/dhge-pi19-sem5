@@ -629,7 +629,7 @@ Organisation der Durchführung von Prozessen
 
 ### Sie können die Risiken bei der Umsetzung an einem Ampelsystem erläutern und die Bedeutung und den Inhalt der Nachhaltigkeit darstellen!
 
-- TODO:
+- TODO: **Jonathan**: PM II.pdf Folie 34, Qualitätsmanagement.pdf Seite 76 noch mal
 
 ### Sie kennen die fünf notwendigen Anforderungen an den Projektleiter!
 
@@ -795,7 +795,15 @@ $\rightarrow$ hat der Projektleiter diese Dinge zur Verfügung, sinkt das Risiko
 
 ### Sie können eine Zielstellung nach ihren Bedingungen und Dimensionen darstellen und deren zwingenden Zusammenhang darstellen!
 
-- TODO
+- **Termin**
+  - Bis Wann?
+- **Sache/Content**
+  -  Was?
+- **Kosten/Ausmaß**
+  - Wie viel?
+
+If you can´t measure it, you can´t manage it.
+vgl. auch **SMART**-Ziel
 
 ### Sie sind in der Lage innerhalb der Operationalisierung einzelne Ziele nach muss, soll und kann zu bestimmen!
 
@@ -809,9 +817,7 @@ $\rightarrow$ hat der Projektleiter diese Dinge zur Verfügung, sinkt das Risiko
 - Neue Technik/Technologie
 - Umweltstandards
 
-### Sie kennen Führungsarten, Führungsstile und drei Führungstechniken mit denen ein Projektleiter das Projekt führen kann und sind in der Lage diese zu beschreiben!
-
-TODO: Ich glaub das ist allgemein und nicht nur für Projektmanagement?
+### Sie kennen Führungsarten, Führungsstile und drei Führungstechniken mit denen ein Projektleiter (das Projekt) führen kann und sind in der Lage diese zu beschreiben!
 
 **Führungsarten**
 
@@ -980,7 +986,14 @@ PDCA!
 
 ### Sie beherrschen die Methode nach Eisenhower und können diese erklären und anwenden!
 
-- TODO
+- Fehlerursachen -> nach Wichtigkeit/Dringlichkeit ordnen
+
+| Kriterum              | Dringend                                   | Nicht dringend                       |
+|-----------------------|--------------------------------------------|--------------------------------------|
+| Wichtig               | **Do** (Selbst erledigen. Jetzt.)          | **Decide** (Zeit festlegen, planen)  |
+| Nicht wichtig         | **Delegieren** (Wer kann das erledigen?)   | **Delete** (Aufgabe wegwerfen)       |
+
+TODO: Leder-konforme Begriffe
 
 ### Sie können eine Aufgabenstellung in ihrem Ablauf mittels Managementkreislauf darstellen!
 
