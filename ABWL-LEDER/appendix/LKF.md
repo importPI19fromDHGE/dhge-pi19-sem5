@@ -816,7 +816,7 @@ $\rightarrow$ hat der Projektleiter diese Dinge zur Verfügung, sinkt das Risiko
 - **Termin**
   - Bis Wann?
 - **Sache/Content**
-  -  Was?
+  - Was?
 - **Kosten/Ausmaß**
   - Wie viel?
 
