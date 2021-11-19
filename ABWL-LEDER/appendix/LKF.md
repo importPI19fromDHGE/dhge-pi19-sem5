@@ -143,16 +143,32 @@ Organisation der Durchführung von Prozessen
 
 #### Sie kennen die drei Methoden zur Berechnung des quantitativen Personaleinsatzes und können diese erläutern
 
-- **Analogie-Schlussmethode** z.B. Für 100 Aufträge benötigt man 10 MA, also für 150 Aufträge 15 MA
+- **Trend-Exploration**
+- Bestimmung des Trends der Entwicklung des Unternehmens
+- in Bezug auf die betriebliche Entwicklung
+- im festgelegten Zeitraum
+- die notwendige Entwicklung des Personalbestandes
+- Szenarien entwickeln (Trichter-Diagramm)
+- positive Entwicklung $\leftrightarrow$ negative Entwicklung
+
+- **Analogie-Schlussmethode**
+- z.B. Für 100 Aufträge benötigt man 10 MA, also für 150 Aufträge 15 MA
 - betriebliche Vorgänge werden mit einem Zeitaufwand verbunden und einem notwendigen Personalbedarf gegenübergestellt
 
+- **Stellenplanmethode**
+- Vorlage eines Organigramm über den Aufbau des Unternehmens
+- Bestimmen der Hierarchien
+- Zählen der Stellen
+- Bestimmen von Einsparungen (Stellenwegfall)
+- Bestimmen von neuen notwendigen Stellen (Stellenzuwachs)
+- Ermittlung des Bedarfs an Stellen
+
+<!--
 - **Berechnung des Personalbedarfs**
 - gegenwärtige vorhandene Stellen laut Ermittlungsmethode + neue Bedarfsstellen im Planungszeitraum - entfallende Stellen im Planungszeitraum = Bruttopersonalbedarf
 - gegenwärtiger Personalbestand + feststehende Personalzugänge - feststehende Personalabgänge = fortgeschriebener Personalbedarf
 - Bruttopersonalbedarf - fortgeschriebener Personalbestand = Nettopersonalbedarf
-
-- **Kommentar: Was ist Nr. 3? TODO**
-
+--->
 #### Sie kennen die Einflussgrößen auf die Personalkosten, die Bestandteile und deren Einteilung
 
 - Einflussgrößen: Entstehung, Art, Entwicklung und Beeinflussung
