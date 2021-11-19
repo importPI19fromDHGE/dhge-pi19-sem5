@@ -360,10 +360,6 @@ Organisation der Durchführung von Prozessen
 - Aufteilung der Kosten nach Zurechenbarkeit $\rightarrow$ fix-Kosten / variable Kosten
 - nachdem gewünschtes Einkommen & feste Kosten erreicht $\rightarrow$ Berücksichtigung variabler Kosten mit neuem (günstigerem) Preis
 
-#### Sie kennen die Kontenklassen des allgemeinen Industriekontenrahmens
-
-- TODO **Kommentar: S. 35-36, würde ich aber rauslassen.. würde bei uns im Unterricht auch geskipped**
-
 ## Skript 3
 
 ### Investition und Finanzierung
