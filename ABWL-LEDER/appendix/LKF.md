@@ -464,7 +464,7 @@ Organisation der Durchführung von Prozessen
 - **Push-Marketing:** Interesse wecken $\rightarrow$ Kunden zum Kauf animieren (Traditionelle Werbung)
 - **Pull-Marketing:** Orientierung an den Bedürfnissen des Marktes $\rightarrow$ Interesse der Kunden nutzen (Nachfrage decken)
 
-#### Sie kennen die Möglichkeiten der Preisgestaltung und können diese erläutern
+#### Sie kennen die Einflussfaktoren auf den Preis und den Prozess der Preisfindung und können diese erläutern
 
 - Einfluss auf den Preis:
   - Kostenorientierung (Kalkulation $\rightarrow$ Teil-, Vollkostenrechnung)
@@ -478,10 +478,15 @@ Organisation der Durchführung von Prozessen
 
 - Preisdifferienzierung nach Raum, Zeit, Menge, Person
 
-- **offensive Preispolitik:** **Hochpreispoltik** (aufwendiges Verkaufsambiente und/oder hochwertige Ware), **Niedrigpreispolitik** (Discount)
-- **defensive Preispolitik:** kein Engagement im Preiskampf (Anpassen der Preise an Wettbewerb und/oder Überzeugung durch Leistung), Herstellerempfehlung (Markenprodukt)
+#### Sie können zwei Formen der Preispolitik unterscheiden und erläutern
 
-- TODO **Kommentar: bitte um Kürzung oder Trennung, S. 39-48**
+- **offensive Preispolitik:**
+  - **Hochpreispoltik** (aufwendiges Verkaufsambiente und/oder hochwertige Ware)
+  - **Niedrigpreispolitik** (Discount)
+
+- **defensive Preispolitik:**
+  - kein Engagement im Preiskampf (Anpassen der Preise an Wettbewerb und/oder Überzeugung durch Leistung)
+  - Herstellerempfehlung (Markenprodukt)
 
 #### Sie beherrschen die Darstellung und Nutzen der Preiselastizität (INFORMATIV)
 
