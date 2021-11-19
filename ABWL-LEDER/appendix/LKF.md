@@ -459,6 +459,24 @@ Organisation der Durchführung von Prozessen
 - Sättigungsphase (erste Angebote zur Steigerung der Attraktivität)
 - Degenerationsphase (Abverkauf)
 
+#### Sie können Produkte im Produktlebenszyklus anhand der Dimensionen "Relativer Markanteil" und "Marktwachstum" zuordnen (Tip: BCG-Portfolio)
+
+```text
+        Marktwachstum
+              ▲
+              ┃
+   ┏━━━━━━━━┓ ┃ ┏━━━━━━━━┓
+   ┃Question┃ ┃ ┃ Stars  ┃
+   ┃ Marks  ┃ ┃ ┃        ┃
+   ┗━━━━━━━━┛ ┃ ┗━━━━━━━━┛
+  ━━━━━━━━━━━━╋━━━━━━━━━━━━━━━━⏵Relativer Marktanteil
+   ┏━━━━━━━━┓ ┃ ┏━━━━━━━━┓
+   ┃  Poor  ┃ ┃ ┃  Cash  ┃
+   ┃  Dogs  ┃ ┃ ┃  Cows  ┃
+   ┗━━━━━━━━┛ ┃ ┗━━━━━━━━┛
+              ┃
+```
+
 #### Sie können den Unterschied zwischen Pull- und Push-Marketing erläutern
 
 - **Push-Marketing:** Interesse wecken $\rightarrow$ Kunden zum Kauf animieren (Traditionelle Werbung)
