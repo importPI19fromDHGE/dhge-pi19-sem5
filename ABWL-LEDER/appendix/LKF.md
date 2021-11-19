@@ -731,9 +731,14 @@ Nachteile
 
 ### Sie kennen die fünf notwendigen Anforderungen an den Projektleiter!
 
-- fachliche, soziale, methodische Kompetenzen
-- Führungskompetenzen (Methoden der Führung)
-- ToDo: Add more
+- fachliche Kompetenzen
+  - Lösungsorientiert
+  - Projektbezogen
+- soziale Kompetenzen
+  - Kommunikativ, Motivierend
+  - Führungskompetenzen (Methoden der Führung)
+- methodische Kompetenzen
+  - Methoden des Projektmanagements
 
 ### Sie kennen die Entwicklung von Gruppen [Gruppen-/Teambildung]!
 
