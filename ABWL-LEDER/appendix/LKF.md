@@ -79,18 +79,16 @@ Organisation der Durchführung von Prozessen
 
 #### Sie beherrschen die Darstellung und Erläuterung der Funktionalorganisation
 
-- nach Verrichtungen \[Bereiche\]
-- Verrichtungszentralisation
-- Vollkompetenz
-- Einfachunterstellung
+- einfache Gliederung nach betrieblichen Verrichtungen
+- Bündelung gleichartiger Tätigkeiten
+
+> **Verrichtungszentralisation**, **Einfachunterstellung**, **Vollkompetenz**
 
 #### Sie beherrschen die Darstellung und Erläuterung der Spartenorganisation
 
-- Kombination zentraler & dezentraler Einheiten
-- Objektdezentralisation
-- Vollkompetenz
-- Einfachunterstellung
-- Objekte können sein: nach Produkten, nach Regionen, nach Kunden
+- Kombination zentraler und dezentraler Einheiten
+- Objektdezentralisation (nach Produkten, nach Regionen, nach Kunden, ...)
+- Vollkompetenz und Einfachunterstellung
 
 #### Sie beherrschen die Darstellung und Erläuterung der Matrixorganisation
 
@@ -99,6 +97,10 @@ Organisation der Durchführung von Prozessen
 - Dezentrale Abteilungen
 - Doppelunterstellung
 - Voll- und Teilkompetenz
+
+- Gliederung nach zwei Aspekten:
+  - betriebliche Verrichtungen/Funktionen (Beschaffung, Produktion, Absatz, Verwaltung)
+  - vorhandene Divisionen/Sparten (Produkte, Regionen, Kunden)
 
 #### Sie beherrschen die Darstellung und Erläuterung der Centerorganisation
 
@@ -109,9 +111,7 @@ Organisation der Durchführung von Prozessen
   - Revenue-Center $\rightarrow$ Umsatzorientiert \[Umsatz\]
   - Investment-Center $\rightarrow$ Gewinnverwendung \[ROI\]
 
-#### Sie können Vor- und Nachteile aus den Strukturen der Liniensysteme ableiten
-
-**Einliniensystem**
+#### Nennen Sie Vor- und Nachteile des Einliniensystems
 
 Vorteile
 
@@ -127,7 +127,7 @@ Nachteile
 - **geringe Flexibilität** und Reaktionsgeschwindigkeit
 - **starr**e Entscheidungs- und Handlungsprozesse
 
-**Mehrliniensysteme**
+#### Nennen Sie Vor- und Nachteile des Mehrliniensystems
 
 Vorteile
 
@@ -142,7 +142,7 @@ Nachteile
 - **Unübersichtlichkeit** (Verlust klarer Zuordnungen)
 - unklare Verantwortungsbereiche
 
-**Stabliniensystem**
+#### Nennen Sie Vor- und Nachteile des Stabliniensystems
 
 Vorteile
 
@@ -158,9 +158,7 @@ Nachteile
 
 ![Stabliniensystem](assets/stabliniensystem.png)
 
-#### Sie können Vor- und Nachteile aus den Strukturen der Organisationsformen ableiten
-
-**Funktionalorganisation**
+#### Nennen Sie Vor- und Nachteile der Funktionalorganisation
 
 - einfache Gliederung nach betrieblichen Verrichtungen
 - Bündelung gleichartiger Tätigkeiten
@@ -168,13 +166,16 @@ Nachteile
 > **Verrichtungszentralisation**, **Einfachunterstellung**, **Vollkompetenz**
 <!-- TODO Vor, Nachteile -->
 
-**Spartenorganisationv**
+#### Nennen Sie Vor- und Nachteile der Spartenorganisation
 
 - Kombination zentraler und dezentraler Einheiten
 - Objektdezentralisation (nach Produkten, nach Regionen, nach Kunden, ...)
 - Vollkompetenz und Einfachunterstellung
 
 <!-- TODO Vor, Nachteile -->
+
+#### Nennen Sie Vor- und Nachteile der Matrixorganisation
+
 **Matrixorganisation**
 
 - Gliederung nach zwei Aspekten:
