@@ -34,9 +34,6 @@ Organisation der Durchführung von Prozessen
 
 - **Aufgabenanalyse:** Ermitteln von **elementaren (Teil-)Aufgaben** $\rightarrow$ fachlich und zeitlich **optimale Zusammenfassung/Bündelung zu Stelle**
 - **Aufgabensynthese:** ökonomisch sinnvolle Aufgaben bündeln (von Stellen) zu Abteilungen bis hin zur Gestaltung der gesamten Aufbauorganisation $\rightarrow$ rationell gestaltete Arbeitsteilung im Unternehmen
-
-#### Sie können Aufgabenanalyse und –Synthese zum Erstellen der Inhalte einer Ablauforganisation erläutern
-
 - TODO
 
 #### Sie können Verantwortung an einem Beispiel erläutern und kennen die Kompetenzen einer Stelle
