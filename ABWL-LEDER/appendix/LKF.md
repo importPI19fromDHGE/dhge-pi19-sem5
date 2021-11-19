@@ -112,25 +112,23 @@ Organisation der Durchführung von Prozessen
   - Revenue-Center $\rightarrow$ Umsatzorientiert \[Umsatz\]
   - Investment-Center $\rightarrow$ Gewinnverwendung \[ROI\]
 
-#### Sie können Vor- und Nachteile aus den Strukturen ableiten
-
-***Liniensysteme***
+#### Sie können Vor- und Nachteile aus den Strukturen der Liniensysteme ableiten
 
 **Einliniensystem**
 
 Vorteile
 
 - klare, einfache, verständliche Gliederung
-- eindeutige Zuordnung der Weisungsbefugnisse (Eindeutiger Dienstweg)
+- **eindeutige Zuordnung** der Weisungsbefugnisse (Eindeutiger Dienstweg)
 - deutliche Abgrenzung von Kompetenzen und Verantwortungsbereichen
-- klare Regeln der Kommunikations- und Informationsbeziehungen
+- **klare Regeln** der Kommunikations- und Informationsbeziehungen
 
 Nachteile
 
-- langwierige Kommunikationswege
+- **langwierige Kommunikationswege**
 - hohe Belastung und Inanspruchnahme der höheren Instanzen
-- geringe Flexibilität und Reaktionsgeschwindigkeit
-- starre Entscheidungs- und Handlungsprozesse
+- **geringe Flexibilität** und Reaktionsgeschwindigkeit
+- **starr**e Entscheidungs- und Handlungsprozesse
 
 **Mehrliniensysteme**
 
@@ -163,14 +161,15 @@ Nachteile
 
 ![Stabliniensystem](assets/stabliniensystem.png)
 
-***Organisationsformen***
+#### Sie können Vor- und Nachteile aus den Strukturen der Organisationsformen ableiten
 
-**Funktionalorganisation****
+**Funktionalorganisation**
 
 - einfache Gliederung nach betrieblichen Verrichtungen
 - Bündelung gleichartiger Tätigkeiten
 
 > **Verrichtungszentralisation**, **Einfachunterstellung**, **Vollkompetenz**
+<!-- TODO Vor, Nachteile -->
 
 **Spartenorganisationv**
 
@@ -178,6 +177,7 @@ Nachteile
 - Objektdezentralisation (nach Produkten, nach Regionen, nach Kunden, ...)
 - Vollkompetenz und Einfachunterstellung
 
+<!-- TODO Vor, Nachteile -->
 **Matrixorganisation**
 
 - Gliederung nach zwei Aspekten:
@@ -187,14 +187,14 @@ Nachteile
 Vorteile
 
 - gleichwertige Berücksichtigung von Funktionen und Sparten
-- engere Kooperation zweier Instanzen
-- direktere Kommunikation
+- **engere Kooperation** zweier Instanzen
+- **direkte**re Kommunikation
 
 Nachteile
 
-- unklare Weisungsverhältnisse ($\rightarrow$ Konflikte)
-- erhöhter Kommunikations- und Informationsaufwand
-- längere Entscheidungsprozesse
+- **unklare Weisungsverhältnisse** ($\rightarrow$ Konflikte)
+- erhöhter Kommunikations- und Informations**aufwand**
+- **länger**e Entscheidungsprozesse
 - Zwang zur Kompromissbildung
 
 ![Matrixorganisation](assets/matrix-organisation.png)
