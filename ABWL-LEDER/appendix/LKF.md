@@ -114,7 +114,90 @@ Organisation der Durchführung von Prozessen
 
 #### Sie können Vor- und Nachteile aus den Strukturen ableiten
 
-- TODO
+***Liniensysteme***
+
+**Einliniensystem**
+
+Vorteile
+
+- klare, einfache, verständliche Gliederung
+- eindeutige Zuordnung der Weisungsbefugnisse (Eindeutiger Dienstweg)
+- deutliche Abgrenzung von Kompetenzen und Verantwortungsbereichen
+- klare Regeln der Kommunikations- und Informationsbeziehungen
+
+Nachteile
+
+- langwierige Kommunikationswege
+- hohe Belastung und Inanspruchnahme der höheren Instanzen
+- geringe Flexibilität und Reaktionsgeschwindigkeit
+- starre Entscheidungs- und Handlungsprozesse
+
+**Mehrliniensysteme**
+
+Vorteile
+
+- **kürzere** Informations- und Kommunikations**wege**
+- Entlastung der Unternehmensführung
+- **weniger Hierarchien, weniger Bürokratie**
+- bessere Entscheidung durch Einbindung mehrerer Instanzen
+
+Nachteile
+
+- **Kompetenzüberschneidungen** und -konflikte
+- **Unübersichtlichkeit** (Verlust klarer Zuordnungen)
+- unklare Verantwortungsbereiche
+
+**Stabliniensystem**
+
+Vorteile
+
+- **Entlastung** der Instanzen und der Unternehmensführung
+- **höhere Qualität der Entscheidungen** (Sachverstand der Spezialisten)
+- eindeutige Informations- und Kommunikationswege
+
+Nachteile
+
+- mögliche **Konflikte zwischen Entscheidern und Berater** (Instanz und Stabstelle)
+- **Demotivierung der Stäbe** durch **mangelnde Kompetenz** Entscheidungen zu treffen
+- **hohe Personalkosten**
+
+![Stabliniensystem](assets/stabliniensystem.png)
+
+***Organisationsformen***
+
+**Funktionalorganisation****
+
+- einfache Gliederung nach betrieblichen Verrichtungen
+- Bündelung gleichartiger Tätigkeiten
+
+> **Verrichtungszentralisation**, **Einfachunterstellung**, **Vollkompetenz**
+
+**Spartenorganisationv**
+
+- Kombination zentraler und dezentraler Einheiten
+- Objektdezentralisation (nach Produkten, nach Regionen, nach Kunden, ...)
+- Vollkompetenz und Einfachunterstellung
+
+**Matrixorganisation**
+
+- Gliederung nach zwei Aspekten:
+  - betriebliche Verrichtungen/Funktionen (Beschaffung, Produktion, Absatz, Verwaltung)
+  - vorhandene Divisionen/Sparten (Produkte, Regionen, Kunden)
+
+Vorteile
+
+- gleichwertige Berücksichtigung von Funktionen und Sparten
+- engere Kooperation zweier Instanzen
+- direktere Kommunikation
+
+Nachteile
+
+- unklare Weisungsverhältnisse ($\rightarrow$ Konflikte)
+- erhöhter Kommunikations- und Informationsaufwand
+- längere Entscheidungsprozesse
+- Zwang zur Kompromissbildung
+
+![Matrixorganisation](assets/matrix-organisation.png)
 
 ### Personalplanung, –Bedarf, – Deckung, –Entwicklung
 
