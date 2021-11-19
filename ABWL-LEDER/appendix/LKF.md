@@ -190,8 +190,16 @@ Organisation der Durchführung von Prozessen
 
 #### Sie können Personalentwicklungsmaßnahmen in Bezug auf den Arbeitsplatz darstellen und den Personaleinsatz nach Zeiträumen definieren
 
-- TODO **Kommentar: Personalentwicklungsmaßnahmen irgendwo zwiscehn S. 113 bis S. 124, bin mir unschlüssig**
-- Personaleinsatz - Zeiträume
+- **Bezug auf Arbeitsplatz**
+- Training
+  - **into** the Job = Beruf lernen
+  - **on** the Job = Trainings im Arbeitsalltag
+  - **along** to the Job = Berufsbegleitende Qualifikation
+  - **near** the Job = Projektarbeit
+  - **off** the Job Lernen = Externe Bildung (Trennung von Tätigkeit und Lernen)
+  - **out of** the Job = Nach/zur Beendigung der Tätigkeit
+
+- **Personaleinsatz - Zeiträume**
   - Langfristig [strategisch]: Entwicklung Stellen und AP, PE der MA
   - Mittelfristig [taktisch]: Grundsätzlicher Arbeitsplatz, Schulungen
   - Kurzfristig [operativ]: Zuordnung zum Arbeitsplatz, Vertretungen
