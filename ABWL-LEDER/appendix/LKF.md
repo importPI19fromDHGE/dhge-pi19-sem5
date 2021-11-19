@@ -317,6 +317,14 @@ Organisation der Durchführung von Prozessen
 #### Sie können die Bedeutung des externen Rechnungswesen erläutern
 
 - TODO **Kommentar: wieder etwas irritiert, was er hören will.. irgendwo S. 18-26 ist die Wahrheit**
+- Finanzlage $\rightarrow$ sämtliche Aspekte der Finanzierung
+- Finanzstruktur $\rightarrow$ Aufbau des Kapitals [Bsp.: Eigenkapital, Fremdkapital, …]
+- Deckungsverhältnisse $\rightarrow$ Zuordnung von Kapital zu Bilanzpositionen
+- Zins- und Tilgungsfristen $\rightarrow$ Fristigkeit der Verbindlichkeiten
+- Finanzierungsmöglichkeiten $\rightarrow$ Möglichkeiten der Kapitalbeschaffung
+- Investitionsvorhaben $\rightarrow$ operative, taktische und strategische Investitionen
+- abgeleitet der Finanzierung der Vermögensgegenstände
+- Zahlungsverpflichtungen $\rightarrow$ Übersicht der Verbindlichkeiten
 
 ### Internes Rechnungswesen
 
