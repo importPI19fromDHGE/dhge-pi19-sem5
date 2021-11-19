@@ -805,6 +805,24 @@ $\rightarrow$ hat der Projektleiter diese Dinge zur Verfügung, sinkt das Risiko
 If you can´t measure it, you can´t manage it.
 vgl. auch **SMART**-Ziel
 
+### Sie kennen die Bedeutung der SMART-Ziele in der Definitionsphase (Zielentwicklung)
+
+- **spezifisch**
+  - Sache, Prozess, Weg muss gefunden werden
+  - Zielkonflikte möglich, State of the art
+- **messbar**
+  - Größenordnung, gut messbar
+  - Einbeziehung von Hilfsgrößen
+- **akzeptiert**
+  - notwendige Bedingung
+  - aktiv beeinflussbar, aktuell, agreed
+- **realistisch**
+  - notwendige Bedingung
+  - Vorhandensein der Ressourcen
+- **terminiert**
+  - Zeiträume
+  - Zwischenschritte
+
 ### Sie sind in der Lage innerhalb der Operationalisierung einzelne Ziele nach muss, soll und kann zu bestimmen!
 
 - Üben!
