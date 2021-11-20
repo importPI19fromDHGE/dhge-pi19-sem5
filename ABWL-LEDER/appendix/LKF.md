@@ -409,6 +409,7 @@ Die Folien geben nicht mehr her, ebenso wenig zusätzliche Quellen. -->
 - Problemerkennung
 - Situationsbewertung
 - Darstellung von Zusammenhängen und Abhängigkeiten
+- Darstellung und Verständnis komplexer ökonomischer Prozesse
 - Grundlage für Entscheidungen
 - Kontrolle von Entscheidungen
 - Benchmark/Vergleich
@@ -419,8 +420,9 @@ Die Folien geben nicht mehr her, ebenso wenig zusätzliche Quellen. -->
 - DuPont-Kennzahlensystem
   - ältestes Kennzahlensystem, Grundlage für den Rest
   - Fokus auf ROI
+  - Pyramidenförmiger Aufbau  $\rightarrow$ Abhängigkeiten udn Wechselwirkungen analysierbar
   - verwendeten Kennzahlen überwiegend aus dem betrieblichen Rechnungswesen, Vergleichbarkeit
-  - ausschließlich rückblickenden Betrachtung monetärer Größen
+  - ausschließlich rückblickende Betrachtung monetärer Größen
 - ZVEI-Kennzahlensystem
   - wichtigsten Informationsquellen: Bilanz und die Gewinn- und Verlustrechnung
   - nicht die Gesamtkapitalrentabilität, sondern die Eigenkapitalrentabilität im Fokus
@@ -430,7 +432,11 @@ Die Folien geben nicht mehr her, ebenso wenig zusätzliche Quellen. -->
   - Ziel: sachlogische Zusammenhänge abbilden
   - Spitze des Kennzahlensystems: Liquidität und Rentabilität
 - Kennzahlen-Cockpit
-  - z.B. BSC
+  - z.B. BSC: Unterteilen in:
+    - Finanzperspektive
+    - Potenzialperspektive
+    - Prozessperspektive
+    - Kundenperspektive
   - Darstellungsform der Verknüpfung verschiedener Kennzahlen
   - Zielverfolgungssystem für ein Unternehmen
 
