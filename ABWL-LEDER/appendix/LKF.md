@@ -1257,8 +1257,8 @@ PDCA!
 
 ### Sie kennen mindestens 3 Methoden des Zeit- und Selbstmanagement!
 
-- ABC Analyse
-- Pareto-Regel
+- ABC Analyse (Eisenhower)
+- Pareto-Regel (80/20)
 - Alpenmethode
   1. **A**ufgaben, Termine und geplante Aktivitäten notieren
   2. **L**änge schätzen
@@ -1266,16 +1266,14 @@ PDCA!
   4. **E**ntscheidungen treffen
   5. **N**achkontrolle
 
-### Sie beherrschen die Methode nach Eisenhower und können diese erklären und anwenden!
+### Sie beherrschen die Methode nach Eisenhower (ABC-Analyse) und können diese erklären und anwenden!
 
 - Fehlerursachen -> nach Wichtigkeit/Dringlichkeit ordnen
 
-| Kriterum      | Dringend                                 | Nicht dringend                      |
-| ------------- | ---------------------------------------- | ----------------------------------- |
-| Wichtig       | **Do** (Selbst erledigen. Jetzt.)        | **Decide** (Zeit festlegen, planen) |
-| Nicht wichtig | **Delegieren** (Wer kann das erledigen?) | **Delete** (Aufgabe wegwerfen)      |
-
-TODO: Leder-konforme Begriffe
+| Kriterum      | Dringend                                   | Nicht dringend                        |
+| ------------- | ------------------------------------------ | ------------------------------------- |
+| Wichtig       | **A** -Do (Selbst erledigen. Jetzt.)       | **B** -Decide (Erledigung einplanen)  |
+| Nicht wichtig | **C** -Delegieren(Wer kann das erledigen?) | **D** -Delete (Aufgabe wegwerfen)     |
 
 ### Sie können eine Aufgabenstellung in ihrem Ablauf mittels Managementkreislauf darstellen!
 
