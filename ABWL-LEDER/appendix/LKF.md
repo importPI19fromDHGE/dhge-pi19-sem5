@@ -822,6 +822,12 @@ Kombination von Wahrscheinlichkeit des Stattfindens und Auswirkung/Ausmaß $\rig
 
 - häufig > wahrscheinlich > gelegentlich > entfernt vorstellbar > unwahrscheinlich > unvorstellbar
 
+**Auswirkung:**
+
+- katastrophal > kritisch > geringfügig > unwesentlich
+
+<!-- vgl. Ampel Risikobewertung für Prozesse ähnlich Eisenhower Priorisierung für Aufgaben -->
+
 ### Sie können die Bedeutung und den Inhalt der Nachhaltigkeit darstellen!
 
 $$\begin{matrix}
@@ -846,10 +852,10 @@ $$\begin{matrix}
 ### Sie kennen die Entwicklung von Gruppen [Gruppen-/Teambildung]!
 
 1. Kennenlernen, Zusammenstellung $\rightarrow$ Forming
-2. Rangordnung, Rollen festlegen \rightarrow\rightarrow Storming
+2. Rangordnung, Rollen festlegen $\rightarrow$ Storming
 3. Qualität und Quantität oder Aufgabenerfüllung $\rightarrow$ Norming
 4. Doing, Erfüllung, höchste Leistungsfähigkeit $\rightarrow$ Performing
-5. Verabschiedung, Auflösung \rightarrow\rightarrow Adjourning
+5. Verabschiedung, Auflösung $\rightarrow$ Adjourning
 
 ### Sie kennen die Institutionen zur Unterstützung eines Projektes!
 
@@ -1216,10 +1222,10 @@ PDCA!
 
 - Fehlerursachen -> nach Wichtigkeit/Dringlichkeit ordnen
 
-| Kriterum              | Dringend                                   | Nicht dringend                       |
-|-----------------------|--------------------------------------------|--------------------------------------|
-| Wichtig               | **Do** (Selbst erledigen. Jetzt.)          | **Decide** (Zeit festlegen, planen)  |
-| Nicht wichtig         | **Delegieren** (Wer kann das erledigen?)   | **Delete** (Aufgabe wegwerfen)       |
+| Kriterum      | Dringend                                 | Nicht dringend                      |
+| ------------- | ---------------------------------------- | ----------------------------------- |
+| Wichtig       | **Do** (Selbst erledigen. Jetzt.)        | **Decide** (Zeit festlegen, planen) |
+| Nicht wichtig | **Delegieren** (Wer kann das erledigen?) | **Delete** (Aufgabe wegwerfen)      |
 
 TODO: Leder-konforme Begriffe
 
