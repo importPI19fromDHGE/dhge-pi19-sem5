@@ -531,7 +531,7 @@ Die Folien geben nicht mehr her, ebenso wenig zusätzliche Quellen. -->
 
 - **Objektbezug**
   - Sachinvestitionen (Gebäude, Maschinen, Roh- und Hilfsstoffe $\rightarrow$ Realinvestitionen): Abschreibung auf Nutzungsdauer, technische & wirtschaftliche Nutzungsdauer können differieren
-  - Finanzinvestitionen (Bankguthaben, festverzinsliche Wertpapiere, gewährtes Darlehn $\rightarrow$ Normalinvestition): Bewertung notwendig (Wertminderung)
+  - Finanzinvestitionen (Bankguthaben, festverzinsliche Wertpapiere, gewährtes Darlehen $\rightarrow$ Normalinvestition): Bewertung notwendig (Wertminderung)
   - immaterielle Investitionen (Software & Patente $\rightarrow$ Abschreibung auf Nutzungsdauer): Ausbildung, Fortbildung, Marketing $\rightarrow$ Bekannheitsgrad
 - **Hierarchie/Entscheidungsebenen**
   - strategisch: im Top-Management entschieden, lange Laufzeiten (3-5 Jahre), Gebäude, Maschinenkomplexe,...
@@ -557,11 +557,18 @@ Die Folien geben nicht mehr her, ebenso wenig zusätzliche Quellen. -->
 
 #### Sie kennen die Ursache einer Finanzierung und deren begrifflichen Inhalt
 
+- ist die Beschaffung von Kapital, welches zur Leistungserstellung (Produktion) und oder Leistungsverwertung (Dienstleistung) benötigt wird
+- kann Geld, Sachwerte und Rechte beeinhalten
+- Fragen:
+  - Größe des Kapitalbedarfs?
+  - Finanzierungsarten?
+  - Kostenoptimale Finanzierung?
+
+<!--
+Vorschlag: dieses rausnehmen. Ist Investition, nicht Finanzierung
 - Investition ist notwendig oder erwünscht $\rightarrow$ Abstimmung $\rightarrow$ Finanzierungsmöglichkeiten evaluieren
 - entweder realisierbare Investionen (mit endgültigen Investitionsbedarf & Investitionsprogramm) oder nicht realisierbare Investition
-- Größe des Kapitalbedarfs?
-- Finanzierungsarten?
-- Kostenoptimale Finanzierung?
+-->
 
 #### Sie können die Kriterien der Einteilung der Betrachtung von Finanzierungen darstellen
 
