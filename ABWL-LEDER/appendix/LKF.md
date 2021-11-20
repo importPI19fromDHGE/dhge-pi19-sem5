@@ -1189,7 +1189,16 @@ PDCA!
 
 ### Sie können den Inhalt und Funktion einer Aufbauorganisation beschreiben!
 
-- TODO
+**Funktion**
+
+- schafft eine klare Struktur $\rightarrow$ regelt Zuständigkeiten und Verantwortlichkeiten
+
+**Inhalte**
+
+- Welche Abteilungen, Stellen?
+- Wer hat welche Weisungs- und Machtbefugnisse?
+- Wer hat welche Verantwortlichkeit?
+- Wie ist der Befehls- und Informationsfluss?
 
 ### Für den KVP können sie den Managementkreislauf anwenden!
 
