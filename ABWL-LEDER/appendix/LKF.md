@@ -846,10 +846,10 @@ $$\begin{matrix}
 ### Sie kennen die Entwicklung von Gruppen [Gruppen-/Teambildung]!
 
 1. Kennenlernen, Zusammenstellung $\rightarrow$ Forming
-2. Rangordnung, Rollen festlegen \rightarrow\rightarrow Storming
+2. Rangordnung, Rollen festlegen $\rightarrow$ Storming
 3. Qualität und Quantität oder Aufgabenerfüllung $\rightarrow$ Norming
 4. Doing, Erfüllung, höchste Leistungsfähigkeit $\rightarrow$ Performing
-5. Verabschiedung, Auflösung \rightarrow\rightarrow Adjourning
+5. Verabschiedung, Auflösung $\rightarrow$ Adjourning
 
 ### Sie kennen die Institutionen zur Unterstützung eines Projektes!
 
