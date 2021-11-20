@@ -787,9 +787,19 @@ Vorschlag: dieses rausnehmen. Ist Investition, nicht Finanzierung
 ### Sie können den PDCA als Führungsmethodik am konkreten Beispiel anwenden!
 
 - Plan
+  - Prozessplanung
+  - Erkennen von Verbesserungspotentialen, Aufgaben und Zielstellung
+  - Analyse des aktuellen Stands, Entwicklung eines neuen Konzepts
 - Do
+  - Ausprobieren, Testen, praktisches Optimieren des Konzeptes
+  - durch schnell realisierbare, einfache Mittel
+  - Erfassen und Sammeln der anfallenden Daten
 - Check
+  - Überprüfen und Analyse der gesammelten Daten
+  - bei Erfolg als Standard für Umsetzung freigeben
 - Act
+  - Anwendung und Fixierung des neuen Standards in der Organisation
+  - Überprüfung der Daten auf Einhaltung $\rightarrow$ Audits
 
 ### Sie kennen die vier Abschnitte des Gesamtprozesses der Projektumsetzung!
 
