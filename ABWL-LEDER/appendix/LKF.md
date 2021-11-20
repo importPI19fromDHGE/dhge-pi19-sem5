@@ -474,18 +474,17 @@ Die Folien geben nicht mehr her, ebenso wenig zusätzliche Quellen. -->
 
 #### Sie können die Bedeutung des externen Rechnungswesen erläutern
 
-<!--Kommentar: denke, dass das so weitestgehend passen sollte. Ist im Skript ja auch mit "Bedeutung" überzeichnet-->
+> externes Rechnungswesen: Entscheidungsgrundlage für Unternehmensexterne, Top-Management, Betriebsrat
 
-- TODO **Kommentar: wieder etwas irritiert, was er hören will.. irgendwo S. 18-26 ist die Wahrheit**
-- Finanzlage $\rightarrow$ sämtliche Aspekte der Finanzierung
-- Finanzstruktur $\rightarrow$ Aufbau des Kapitals [Bsp.: Eigenkapital, Fremdkapital, …]
-- Deckungsverhältnisse $\rightarrow$ Zuordnung von Kapital zu Bilanzpositionen
-- Zins- und Tilgungsfristen $\rightarrow$ Fristigkeit der Verbindlichkeiten
-- Finanzierungsmöglichkeiten $\rightarrow$ Möglichkeiten der Kapitalbeschaffung
-- Investitionsvorhaben $\rightarrow$ operative, taktische und strategische Investitionen
+- **Finanzlage** $\rightarrow$ sämtliche Aspekte der Finanzierung
+- **Finanzstruktur** $\rightarrow$ Aufbau des Kapitals [Bsp.: Eigenkapital, Fremdkapital, …]
+- **Deckungsverhältnisse** $\rightarrow$ Zuordnung von Kapital zu Bilanzpositionen
+- **Zins- und Tilgungsfristen** $\rightarrow$ Fristigkeit der Verbindlichkeiten
+- **Finanzierungsmöglichkeiten** $\rightarrow$ Möglichkeiten der Kapitalbeschaffung
+- **Investitionsvorhaben** $\rightarrow$ operative, taktische und strategische Investitionen
 - abgeleitet der Finanzierung der Vermögensgegenstände
-- Zahlungsverpflichtungen $\rightarrow$ Übersicht der Verbindlichkeiten
-- Ertragslage $\rightarrow$ Erfolg des Unternehemns darstellen
+- **Zahlungsverpflichtungen** $\rightarrow$ Übersicht der Verbindlichkeiten
+- **Ertragslage** $\rightarrow$ Erfolg des Unternehemns darstellen
 
 ### Internes Rechnungswesen
 
