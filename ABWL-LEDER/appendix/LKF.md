@@ -1068,7 +1068,11 @@ vgl. auch **SMART**-Ziel
 
 ### Sie sind in der Lage innerhalb der Operationalisierung einzelne Ziele nach muss, soll und kann zu bestimmen!
 
-- Üben!
+Beispiel: Autobau
+
+- Muss: Motor, Airbags
+- Soll: Tempomat
+- Kann: Ambientbeleuchtung
 
 ### Sie kennen die fünf grundsätzlichen Risiken eines Projektes und können deren Wertigkeit bestimmen!
 
