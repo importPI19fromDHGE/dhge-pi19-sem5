@@ -1065,6 +1065,7 @@ vgl. auch **SMART**-Ziel
 - Wie wird es gemacht?
 - Wann wird es gemacht?
 - Wo soll es getan werden?
+- Wieso wird es nicht anders gemacht?
 
 ### Sie beherrschen den Managementkreislauf in seiner Anwendung!
 
