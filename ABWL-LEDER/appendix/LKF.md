@@ -455,22 +455,22 @@ Nachteile
 
 #### Sie kennen die Einteilung der Investitionen und können deren Inhalt darstellen
 
-- Objektbezug
+- **Objektbezug**
   - Sachinvestitionen (Gebäude, Maschinen, Roh- und Hilfsstoffe $\rightarrow$ Realinvestitionen): Abschreibung auf Nutzungsdauer, technische & wirtschaftliche Nutzungsdauer können differieren
   - Finanzinvestitionen (Bankguthaben, festverzinsliche Wertpapiere, gewährtes Darlehn $\rightarrow$ Normalinvestition): Bewertung notwendig (Wertminderung)
   - immaterielle Investitionen (Software & Patente $\rightarrow$ Abschreibung auf Nutzungsdauer): Ausbildung, Fortbildung, Marketing $\rightarrow$ Bekannheitsgrad
-- Hierarchie/Entscheidungsebenen
+- **Hierarchie/Entscheidungsebenen**
   - strategisch: im Top-Management entschieden, lange Laufzeiten (3-5 Jahre), Gebäude, Maschinenkomplexe,...
   - taktisch: im Middle-Management entschieden, mittelfristige Laufzeiten (1-3 Jahre), Ausrüstung
   - operativ: im Low-Management entschieden, kurzfristige Laufzeiten, routinemäßige Anschaffungen
-- Häufigkeit des Anfallens
+- **Häufigkeit des Anfallens**
   - einzelne: einmalig, ohne Wdh.
   - als Folge: häufig anfallend, wiederholend
   - als Kette: wiederholend, Bedingtheit
-- Umfang (Größenordnung)
+- **Umfang (Größenordnung)**
   - Routine: geringer Zeitaufwand, Ersatz von Material, GWGs (Geringwertiges Wirtschaftsgut) & Schreibmaterialbestellung
   - Unternehmenspolitisch: hoher Zeitaufwand, bedeutend für die Leistungsfähigkeit, Ausrüstung
-- der zu erzielenden Wirkung
+- der zu **erzielende**n **Wirkung**
   - Nettoinvestition: Gründung oder Erweiterung
   - Reinvestition: Ersatz, Rationalisierung, Umstellung, Diversifikation oder Sicherung
 
