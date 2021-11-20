@@ -799,7 +799,7 @@ Herstellen eines Mehrheitsinteresses aller Beteiligten und am Projekt Interessie
 #### Technisches Risiko
 
 - Quellen
-  - technisches, finanzielles, rechtliches, personelles, Risiko
+  - technisches, finanzielles, rechtliches, personelles Risiko
   - sozialer Bereich
 - Faktoren
   - Personalprobleme
