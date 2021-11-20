@@ -8,7 +8,7 @@
 
 **Aufbauorganisation**
 
-Struktur des Unternehmens mit seinen Hierarchien
+Planung der Struktur des Unternehmens mit seinen Hierarchien
 
 **Ablauforganisation**
 
@@ -16,10 +16,10 @@ Organisation der Durchführung von Prozessen
 
 #### Sie kennen die Instrumente der Erstellung einer Aufbauorganisation
 
-- Stelllenbeschreibung
+- Stellenbeschreibung
   - Aufgaben, Anforderungen
 - Organigramm
-- Information
+- Informationsfluss
   - Top-Down
   - Bottom-Up
 
@@ -32,9 +32,20 @@ Organisation der Durchführung von Prozessen
 
 #### Sie können Aufgabenanalyse und –Synthese zum Erstellen der Inhalte einer Aufbauorganisation erläutern
 
-- **Aufgabenanalyse:** Ermitteln von **elementaren (Teil-)Aufgaben** $\rightarrow$ fachlich und zeitlich **optimale Zusammenfassung/Bündelung zu Stelle**
-- **Aufgabensynthese:** ökonomisch sinnvolle Aufgaben bündeln (von Stellen) zu Abteilungen bis hin zur Gestaltung der gesamten Aufbauorganisation $\rightarrow$ rationell gestaltete Arbeitsteilung im Unternehmen
-- TODO
+- **Aufgabenanalyse:**:
+  - Betrachten des Ziels/ der Ziele der Organisation
+  - Aufteilen der zur Erreichung des Zieles notwendigen Schritte in elementare (Teil-)Aufgaben
+  - ggf. Gliederung nach Kriterien:
+    - Verrichtung: nach Tätigkeit / Arbeitsart
+    - Objekt: nach Gegenstand oder Personengruppe an dem/der gearbeitet wird
+    - Phase: nach Planung, Realisierung, Kontrolle
+    - Rang: ist es Ausführungs- oder Entscheidungsaufgabe?
+    - Zweckbeziehung: Kernprozess oder Supportaufgabe?
+- **Aufgabensynthese:**:
+- Zusammenfassung der Teilaufgaben zu Aufgabenkomplexen $\rightarrow$ Organisationseinheiten bilden
+  - Stellen $\rightarrow$ Gruppen $\rightarrow$ Abteilungen
+- Struktur der Aufbauorganiation festlegen: Zentralisation/Dezentralisation, Tätigkeiten, Aufgaben- und Kompetenzträger, Informationswege, ...
+- Arbeitsteilung wird festgelegt: wie sind die Organisationseinheiten gebündelt? $\rightarrow$ Planung, Einkauf, Montage, ...
 
 #### Sie können Verantwortung an einem Beispiel erläutern und kennen die Kompetenzen einer Stelle
 
