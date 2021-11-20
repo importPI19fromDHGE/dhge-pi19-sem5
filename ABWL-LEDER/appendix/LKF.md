@@ -817,6 +817,11 @@ Kombination von Wahrscheinlichkeit des Stattfindens und Auswirkung/Ausmaß $\rig
 
 - häufig > wahrscheinlich > gelegentlich > entfernt vorstellbar > unwahrscheinlich > unvorstellbar
 
+**Auswirkung:**
+
+- katastrophal > kritisch > geringfügig > unwesentlich
+<!-- vgl. Ampel Risikobewertung für Prozesse ähnlich Eisenhower Priorisierung für Aufgaben -->
+
 ### Sie können die Bedeutung und den Inhalt der Nachhaltigkeit darstellen!
 
 $$\begin{matrix}
