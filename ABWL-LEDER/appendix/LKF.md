@@ -249,6 +249,8 @@ Nachteile
 - taktisch: >1 bis 3/5 Jahre, mittelfristig, Teilziele
 - operativ: kurzfristig, Prozess-Steuerung
 
+Auswirkung auf andere Pläne wird durch die Länge des Planungshorizontes bestimmt: Je länger dieser ist, umso größer ist die Unsicherheit in der Planung.
+
 #### Sie können die Gründe des quantitativen Personaleinsatzes unterscheiden
 
 - Ersatz-Bedarf: Natürliche und künstliche Fluktuation
