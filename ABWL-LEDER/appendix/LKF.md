@@ -820,6 +820,7 @@ Kombination von Wahrscheinlichkeit des Stattfindens und Auswirkung/Ausmaß $\rig
 **Auswirkung:**
 
 - katastrophal > kritisch > geringfügig > unwesentlich
+
 <!-- vgl. Ampel Risikobewertung für Prozesse ähnlich Eisenhower Priorisierung für Aufgaben -->
 
 ### Sie können die Bedeutung und den Inhalt der Nachhaltigkeit darstellen!
@@ -1216,10 +1217,10 @@ PDCA!
 
 - Fehlerursachen -> nach Wichtigkeit/Dringlichkeit ordnen
 
-| Kriterum              | Dringend                                   | Nicht dringend                       |
-|-----------------------|--------------------------------------------|--------------------------------------|
-| Wichtig               | **Do** (Selbst erledigen. Jetzt.)          | **Decide** (Zeit festlegen, planen)  |
-| Nicht wichtig         | **Delegieren** (Wer kann das erledigen?)   | **Delete** (Aufgabe wegwerfen)       |
+| Kriterum      | Dringend                                 | Nicht dringend                      |
+| ------------- | ---------------------------------------- | ----------------------------------- |
+| Wichtig       | **Do** (Selbst erledigen. Jetzt.)        | **Decide** (Zeit festlegen, planen) |
+| Nicht wichtig | **Delegieren** (Wer kann das erledigen?) | **Delete** (Aufgabe wegwerfen)      |
 
 TODO: Leder-konforme Begriffe
 
