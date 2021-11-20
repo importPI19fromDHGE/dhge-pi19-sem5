@@ -383,17 +383,25 @@ Nachteile
 
 #### Sie kennen die Funktionen des Externen Rechnungswesen
 
-- Informationsfunktion: Informationsaustausch zw. Kapitalgeber und Management - vergangenheitsbasiert (dient möglicher Prognose)
-- Ausschüttungsbemessungsfunktion: Gewinnermittlung & Gewinnverwendung
-- Im Rahmen der Insolvenz: Signal für Überschuldung und Vermögen des Schuldners < den Verbindlichkeiten des Schuldners
+- **Informations**funktion: Informationsaustausch zw. Kapitalgeber und Management - vergangenheitsbasiert (dient möglicher Prognose)
+- **Ausschüttungsbemessung**sfunktion: Gewinnermittlung & Gewinnverwendung
+- Im Rahmen der Insolvenz: Signal für **Überschuldung und Vermögen** des Schuldners **<** den **Verbindlichkeiten** des Schuldners
 - Entscheidungsanreizsystem: Bilanzpolitik - Beeinflussung von Entscheidungen (Bsp. Kapitalvergabe, Top-Management, Anlagestrategien..)
 
-- Entscheidungsgrundlage für: Unternehmensexterne, Top-Management, Betriebsrat
-- Ziel: vergangenheitsorientierte Dokumentation und Rechenschaftslegung
+- Entscheidungsgrundlage für:
+  - Unternehmensexterne
+  - Top-Management
+  - Betriebsrat
+- Ziel: vergangenheitsorientierte **Dokumentation** und Rechenschaftslegung
 - gesetzliche Regelung: beachten handels- und steuerrechtlicher Regelungen
 - Objekt der erfassten Daten: das ganze Unternehmen
-- Zeitraum der erfassten Daten: ein Jahr (im Allgemeinen)
-- Instrumente: Bilanz, Gewinn- und Verlustrechnung, Lagebericht, Kapitalfluss, Eigenkapitalspiegel
+- Zeitraum der erfassten Daten: **ein Jahr** (im Allgemeinen)
+- Instrumente:
+  - Bilanz
+  - Gewinn- und Verlustrechnung
+  - Lagebericht
+  - Kapitalfluss
+  - Eigenkapitalspiegel
 
 #### Sie können die Bedeutung des externen Rechnungswesen erläutern
 
