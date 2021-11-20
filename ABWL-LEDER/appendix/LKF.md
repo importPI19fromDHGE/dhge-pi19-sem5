@@ -173,13 +173,13 @@ Nachteile
 
 - einfache Gliederung nach betrieblichen Verrichtungen auf der zweiten Hierarchieebene
 - Bündelung gleichartiger Tätigkeiten: z.B Produktion, Vertrieb, Verwaltung
-- vor allem für kleine bis mittlere Unternehmen geeignet
+- vor allem für kleine bis mittlere Unternehmen geeignets
 
 > **Verrichtungszentralisation**, **Einfachunterstellung**, **Vollkompetenz**
 
 Vorteile
 
-- hohe Tranparenz: einfach kontrollierbar (quasi Einliniensystem)
+- hohe Transparenz: einfach kontrollierbar (quasi Einliniensystem)
 - fachspezifische Arbeitsbereiche mit Spezialisten $\rightarrow$ hohe Fachkompetenz und Spezialisierung
 - Synergieeffekte zwischen Teilbereichen
 
@@ -195,7 +195,18 @@ Nachteile
 - Objektdezentralisation (nach Produkten, nach Regionen, nach Kunden, ...)
 - Vollkompetenz und Einfachunterstellung
 
-<!-- TODO Vor, Nachteile -->
+Vorteile
+
+- Entlastung der Führungsebene
+- bessere Orientierung auf / Wissen zu Kunden/Region/Produkt
+- hohe Anpassungsfähigkeit auf Veränderungen
+- Verwaltung innerhalb der Sparte vereinfacht (kleinere Einheiten)
+
+Nachteile:
+
+- `Spartenegoismus` $\rightarrow$ Interesse an Gewinnmaximierung des eigenen Bereichs, daraus ggf. Konflikte
+- Synergieeffekte werden evt. nicht ausgeschöpft
+- spartenübergreifende Verwaltung erschwert
 
 #### Nennen Sie Vor- und Nachteile der Matrixorganisation
 
@@ -275,6 +286,7 @@ Nachteile
 - Bruttopersonalbedarf - fortgeschriebener Personalbestand = Nettopersonalbedarf
 
 --->
+
 #### Sie kennen die Einflussgrößen auf die Personalkosten, die Bestandteile und deren Einteilung
 
 - Einflussgrößen: Entstehung, Art, Entwicklung und Beeinflussung
