@@ -649,6 +649,15 @@ Vorschlag: dieses rausnehmen. Ist Investition, nicht Finanzierung
               ┃
 ```
 
+- Question Marks:
+  - Newcomerprodukte, Wachtumspotenzial bei kleinem Marktanteil, Investieren oder Produkt aufgeben
+- Stars:
+  - vielversprechende Produkte: hoher Markanteil, Markt im Wachstum: Investieren und ggf. Abschöpfen
+- Cashcows:
+  - hoher Marktanteil, geringes Wachstum: Festpreise
+- Poor Dogs:
+  - Auslaufprodukte: kleiner Marktanteil, kein Wachstum: Desinvestieren
+
 #### Sie können den Unterschied zwischen Pull- und Push-Marketing erläutern
 
 - **Push-Marketing:** Interesse wecken $\rightarrow$ Kunden zum Kauf animieren (Traditionelle Werbung)
