@@ -317,7 +317,7 @@ Die Folien geben nicht mehr her, ebenso wenig zusätzliche Quellen. -->
 - Anforderungsprofile für eine Stelle (Definition der notwendigen Anforderungen einer Stelle)
 - Abgleich des Bedarfs (Soll-IST-Vergleich)
 
-#### Sie können Personalentwicklungsmaßnahmen in Bezug auf den Arbeitsplatz darstellen und den Personaleinsatz nach Zeiträumen definieren
+#### Sie können Personalentwicklungsmaßnahmen in Bezug auf den Arbeitsplatz darstellen
 
 - Innerbetriebliche Personalentwicklung:
   - Ausbildung (Erlangen beruflicher Handlungsfähigkeit)
@@ -338,6 +338,8 @@ Die Folien geben nicht mehr her, ebenso wenig zusätzliche Quellen. -->
   - **near** the Job = Projektarbeit
   - **off** the Job Lernen = Externe Bildung (Trennung von Tätigkeit und Lernen)
   - **out of** the Job = Nach/zur Beendigung der Tätigkeit
+
+#### Sie können den Personaleinsatz nach Zeiträumen definieren
 
 - **Personaleinsatz - Zeiträume**
   - Langfristig [strategisch]: Entwicklung Stellen und AP, PE der MA
