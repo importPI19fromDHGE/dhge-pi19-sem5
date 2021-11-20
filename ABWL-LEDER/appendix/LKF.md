@@ -474,6 +474,8 @@ Die Folien geben nicht mehr her, ebenso wenig zusätzliche Quellen. -->
 
 #### Sie können die Bedeutung des externen Rechnungswesen erläutern
 
+<!--Kommentar: denke, dass das so weitestgehend passen sollte. Ist im Skript ja auch mit "Bedeutung" überzeichnet-->
+
 - TODO **Kommentar: wieder etwas irritiert, was er hören will.. irgendwo S. 18-26 ist die Wahrheit**
 - Finanzlage $\rightarrow$ sämtliche Aspekte der Finanzierung
 - Finanzstruktur $\rightarrow$ Aufbau des Kapitals [Bsp.: Eigenkapital, Fremdkapital, …]
@@ -483,6 +485,7 @@ Die Folien geben nicht mehr her, ebenso wenig zusätzliche Quellen. -->
 - Investitionsvorhaben $\rightarrow$ operative, taktische und strategische Investitionen
 - abgeleitet der Finanzierung der Vermögensgegenstände
 - Zahlungsverpflichtungen $\rightarrow$ Übersicht der Verbindlichkeiten
+- Ertragslage $\rightarrow$ Erfolg des Unternehemns darstellen
 
 ### Internes Rechnungswesen
 
@@ -492,7 +495,9 @@ Die Folien geben nicht mehr her, ebenso wenig zusätzliche Quellen. -->
 - Ziel: Planung & Steuerung der betrieblichen Prozesse (meist mittels ERP-System)
 - gesetzliche Regelung: Grundsatz ist die doppelte Buchführung, Einzelvorschriften in der Darstellung (z.B. Abschreibung)
 - Objekt der erfassten Daten: von einzelnen Unternehmensbereichen (Abteilung, Gruppe, Bereich..) bis zum Gesamtunternehmen
-- Zeitraum der erfassten Daten: unterjährig $\rightarrow$ Kostenleistungsrechnung (KLR), mehrjährig $\rightarrow$ Investitionsrechnung (Abschreibung gesamt)
+- Zeitraum der erfassten Daten:
+  - unterjährig $\rightarrow$ Kostenleistungsrechnung (KLR)
+  - mehrjährig $\rightarrow$ Investitionsrechnung (Abschreibung gesamt)
 - Instrumente: KLR, Investitionsrechnung, Finanzrechnung (Bonität)
 
 #### Sie können die Funktion der BSC erläutern
