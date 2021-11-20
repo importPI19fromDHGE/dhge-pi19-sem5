@@ -9,11 +9,6 @@ Lernkontrollfragen Systemprogrammierung / Verteilte Systeme
 
 <!-- md2apkg ignore-card -->
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # Lernkontrollfragen
 
 ## Wiederholungsfragen zu Beginn der Veranstaltung
