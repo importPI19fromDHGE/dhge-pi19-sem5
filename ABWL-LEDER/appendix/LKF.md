@@ -260,7 +260,7 @@ Nachteile
 #### Sie kennen die Inhalte des quantitativen Personaleinsatzes
 
 <!--Würde hier tatsächlich meine Ergänzungen aus den grundsätzlichen Inhalten der Personalplanung nochmal doppeln.
-Die Folien geben nicht mehr her, ebenso wenig zuaätzliche Quellen. -->
+Die Folien geben nicht mehr her, ebenso wenig zusätzliche Quellen. -->
 
 - Ebenen der Organisationshierarchie, bzw. Stellen müssen besetzt sein:
   - Wie viele Mitarbeiter braucht es dafür?
@@ -308,15 +308,29 @@ Die Folien geben nicht mehr her, ebenso wenig zuaätzliche Quellen. -->
 
 #### Sie kennen die Inhalte der qualitativen Personalplanung und können diesen erläutern
 
-- fachliche, methodische, persönliche Kompetenzen
-- notwendige, vorhandene, künftige Kompetenzen
+- Kompetenzerfassung:
+  - fachlich: erlernter Beruf, Studium, Erfahrung
+  - methodisch: Methodik der Umsetzung: Situationsansatz
+  - persönlich: soziale Kompetenz und Individualkompetenz
+- Abgleich notwendiger, vorhandener, künftiger Kompetenzen
 - Kenntnis der Potenziale der MA (Definition vorhandener Potentiale der MA)
 - Anforderungsprofile für eine Stelle (Definition der notwendigen Anforderungen einer Stelle)
 - Abgleich des Bedarfs (Soll-IST-Vergleich)
 
 #### Sie können Personalentwicklungsmaßnahmen in Bezug auf den Arbeitsplatz darstellen und den Personaleinsatz nach Zeiträumen definieren
 
-- **Bezug auf Arbeitsplatz**
+- Innerbetriebliche Personalentwicklung:
+  - Ausbildung (Erlangen beruflicher Handlungsfähigkeit)
+    - innerbetriebliche Ausbildung
+    - außerbetriebliche Ausbildung
+  - betriebliche Qualifikation $\rightarrow$ Erhalt, Anpassung, Erweiterung der Handlungsfähigkeit
+    - Fortbildung $\rightarrow$ Erweiterung der Qualifikation in einem Beruf **mit** Abschluss
+    - Weiterbildung $\rightarrow$ Erweiterung der Qualifikation in einem Beruf **ohne** Abschluss
+    - Umschulung $\rightarrow$ Erweiterung der Qualifikation in einem **anderen** Beruf **mit** Abschluss
+  - innerbetriebliche Förderung
+    - Job-enrichment
+    - Job-enlargement
+    - Job-rotation
 - Training
   - **into** the Job = Beruf lernen
   - **on** the Job = Trainings im Arbeitsalltag
