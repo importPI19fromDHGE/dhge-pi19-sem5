@@ -259,7 +259,12 @@ Nachteile
 
 #### Sie kennen die Inhalte des quantitativen Personaleinsatzes
 
-- TODO **Kommentar: Folie 78? Bin mir unsicher, was darauf die richtige Antwort ist**
+<!--Würde hier tatsächlich meine Ergänzungen aus den grundsätzlichen Inhalten der Personalplanung nochmal doppeln.
+Die Folien geben nicht mehr her, ebenso wenig zuaätzliche Quellen. -->
+
+- Ebenen der Organisationshierarchie, bzw. Stellen müssen besetzt sein:
+  - Wie viele Mitarbeiter braucht es dafür?
+  - Planung des Verhältnisses MA zu Führungskräften
 
 #### Sie kennen die drei Methoden zur Berechnung des quantitativen Personaleinsatzes und können diese erläutern
 
