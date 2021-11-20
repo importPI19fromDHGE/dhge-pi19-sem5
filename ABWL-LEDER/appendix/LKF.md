@@ -236,7 +236,12 @@ Nachteile
 #### Sie kennen die grundsätzlichen Inhalte der Personalplanung
 
 - quantitativ: Recruiting, Kosten, Anpassung
+  - Wie viele MA werden benötigt?
+  - negativer Bedarf: zu viele MA vorhanden $\rightarrow$ Stellenreduzierung
+  - postiver Bedarf: zu wenige MA vorhanden $\rightarrow$ Stellenaufbau
 - qualitativ: Einsatz, Kosten, Entwicklung
+  - leitet sich aus Stellenbeschreibung der Aufbauorganisation ab
+  - WEN brauchen wir? $\rightarrow$ Qualifikationen
 
 #### Sie kennen die Planungszeiträume und die Auswirkungen auf andere Pläne
 
