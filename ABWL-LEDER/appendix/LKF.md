@@ -1108,6 +1108,17 @@ vgl. auch **SMART**-Ziel
 
 ### Sie kennen min. 5 Instrumentarien zur Qualitätsbestimmung!
 
+(Pyramide denken, Spitze zuerst)
+
+- Unternehmensleitbild zur Realisierung von Qualität
+- Struktur
+  - Unternehmensstruktur (Aufbauorganisation)
+- Prozesse
+  - Prozessabläufe im Unternehmen (Bsp.: innerbetriebliche Logistik)
+- Stellenbeschreibung für alle Mitarbeiter
+- Beurteilung von Leistung und Verhalten der Mitarbeiter
+- Realisierung der Vorgaben (Unternehmenskultur)
+
 ## Qualitätsmanagementmethoden und -Techniken
 
 ### Sie kennen die Bedeutung von TQM!
