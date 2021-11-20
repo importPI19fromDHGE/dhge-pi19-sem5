@@ -611,10 +611,10 @@ Vorschlag: dieses rausnehmen. Ist Investition, nicht Finanzierung
 
 #### Sie kennen das AIDA-Prinzip und können dies erläutern
 
-- **A**ttention: Wecken von Aufmerksamkeit
-- **I**nterest: Interesse wecken
-- **D**esire: Wunsch nach Produkt/Dienstleistung hervorrufen
-- **A**ction: Kunde soll kaufen
+- **A**ttention: Wecken von Aufmerksamkeit (durch Werbung)
+- **I**nterest: Interesse wecken (Durch Promotion / Werbung)
+- **D**esire: Wunsch nach Produkt/Dienstleistung hervorrufen (Durch Angebote, Image und Prestige, Bedarf)
+- **A**ction: Kunde soll kaufen (Vertragsabschluss)
 
 #### Sie beherrschen die Markteinteilung durch Bedarf und Nachfrage
 
