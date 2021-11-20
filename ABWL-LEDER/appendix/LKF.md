@@ -171,11 +171,23 @@ Nachteile
 
 #### Nennen Sie Vor- und Nachteile der Funktionalorganisation
 
-- einfache Gliederung nach betrieblichen Verrichtungen
-- Bündelung gleichartiger Tätigkeiten
+- einfache Gliederung nach betrieblichen Verrichtungen auf der zweiten Hierarchieebene
+- Bündelung gleichartiger Tätigkeiten: z.B Produktion, Vertrieb, Verwaltung
+- vor allem für kleine bis mittlere Unternehmen geeignet
 
 > **Verrichtungszentralisation**, **Einfachunterstellung**, **Vollkompetenz**
-<!-- TODO Vor, Nachteile -->
+
+Vorteile
+
+- hohe Tranparenz: einfach kontrollierbar (quasi Einliniensystem)
+- fachspezifische Arbeitsbereiche mit Spezialisten $\rightarrow$ hohe Fachkompetenz und Spezialisierung
+- Synergieeffekte zwischen Teilbereichen
+
+Nachteile
+
+- hoher Koordinationsaufwand v.a. für Unternehmensführung
+- ggf. mangelnder Informationsautausch $\rightarrow$ was machen die anderen eigentlich?
+- lange Informations- und Weisungsketten
 
 #### Nennen Sie Vor- und Nachteile der Spartenorganisation
 
