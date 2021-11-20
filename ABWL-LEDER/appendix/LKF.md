@@ -566,8 +566,10 @@ Die Folien geben nicht mehr her, ebenso wenig zusätzliche Quellen. -->
 
 <!--
 Vorschlag: dieses rausnehmen. Ist Investition, nicht Finanzierung
+
 - Investition ist notwendig oder erwünscht $\rightarrow$ Abstimmung $\rightarrow$ Finanzierungsmöglichkeiten evaluieren
 - entweder realisierbare Investionen (mit endgültigen Investitionsbedarf & Investitionsprogramm) oder nicht realisierbare Investition
+
 -->
 
 #### Sie können die Kriterien der Einteilung der Betrachtung von Finanzierungen darstellen
