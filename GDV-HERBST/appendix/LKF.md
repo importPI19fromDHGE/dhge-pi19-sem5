@@ -409,11 +409,12 @@ Das Datenmodell unterstützt unterschiedlichste Repräsentationen der CAD-Geomet
 
 ## Worum handelt es sich bei der Abkürzung "BREP"?
 
-- TODO
+> **B**oundary **Rep**resentation, ist eine Darstellungsform eines Flächen- oder Volumenmodells, in der Objekte durch ihre begrenzenden Oberflächen beschrieben werden.
 
 ## Probleme geometrische Schnittstellen/Direktschnittstellen/Neutralformate
 
 - TODO
+- HÄ? Verluste, Ungenauigkeiten in Neutralformaten?
 
 
 
