@@ -125,11 +125,17 @@
 
 ## Farbprofil
 
+> ICC-Farbprofil: gerätespezifisch, Ziel der Realisierung einer durchgängigen Absicherung der Farbwiedergabe über die Systemgrenzen hinweg (Farbmanagement)
+
 ## Farbraum
 
 - Alle Farben eines Farbmodells
+- durch Menschen wahrnehmbaren Farben vs. durch technische Systeme realisierbare Farben
 
 ## Farbtiefe
+
+- Anzahl der Bits/Bytes zur Codierung der Farben
+- Differenzierung aller Helligkeits- und Farbwerte
 
 ## Feature Modellierung
 
