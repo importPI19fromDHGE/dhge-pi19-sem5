@@ -345,7 +345,7 @@ wir behandeln:
 
 ## Texture mapping (Mapping)
 
-- platzieren von Grafiken auf Oberflächen
+- Platzieren von Grafiken auf Oberflächen
 - Zuordnung von Texturkoordinaten (UVW) zu Objekt- bzw. Flächenkoordinaten (XYZ)
 
 ## Tiefenkanal (Z-Abstand oder depth channel)
