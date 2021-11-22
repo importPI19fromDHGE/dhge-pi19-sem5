@@ -4,7 +4,7 @@
 
 - Farben leuchten selbst
   - wenn alle leuchten $\rightarrow$ weiß
-  - keine leuchten $\rightarrow $schwarz
+  - keine leuchten $\rightarrow$ schwarz
 
 ![Additive Farbmischung](assets/additive.png)
 
@@ -86,9 +86,24 @@
 
 ## Computer Vision
 
+- Verarbeitung und Analyse von Bildern, um:
+  - Inhalt zu verstehen
+  - geometrische Informationen zu extrahieren
+- z.B. Objekterkennung, Vermessung geometrischer Strukturen (3D-Scan)
+
 ## CSG
 
+> **C**onstructive **S**olid **G**eometry
+
+- Technik zum Modellieren von Körpern
+- Grundlage: Kombination von Grundkörpern durch **boolesche Operatoren**
+
 ## DCC
+
+> **D**igital **C**ontent **C**reation
+
+- Erstellung von multimedialen Inhalten
+- Zusammenfassung verschiedenster Technologien
 
 ## Digitale Prozesskette
 
