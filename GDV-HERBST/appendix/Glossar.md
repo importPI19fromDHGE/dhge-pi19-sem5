@@ -173,6 +173,7 @@ Hier für die verlustfreie oder verlustbehaftete Komprimierung in Dateiformaten 
 - Koordinaten eines Punktes in einem Koordinatensystem dessen Koordinaten in einem anderen Koordinatensystem berechnet
 
 wir behandeln:
+
 - Translation
 - Rotation
 - Skalierung
