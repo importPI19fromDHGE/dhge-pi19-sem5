@@ -15,7 +15,7 @@ header-includes:
 
 ---------->
 
-Rechnernetzadministration/Verteilte Systeme
+Rechnernetzadministration
 ===========================================
 
 <!-- md2apkg ignore-card -->
