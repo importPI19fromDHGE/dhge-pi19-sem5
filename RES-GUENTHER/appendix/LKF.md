@@ -126,9 +126,9 @@ $\rightarrow$ Prozesse, die verwandt sind, können über vor fork() angelegte Pi
 
 ### Welche Operationen auf einer Pipe kennen Sie? Beschreiben Sie deren Funktion
 
-- `write(pipefd[0],buffer)`
+- `write(pipefd[1],buffer)`
   - Write: Aus Programm auf die Pipe schreiben, in den Kernelbuffer
-- `read(pipefd[1],buffer)`
+- `read(pipefd[0],buffer)`
   - Read: Aus Kernelbuffer in Programmbuffer schreiben; aus Sicht des Programms von Pipe lesen
 
 ### Wie können Sie bidirektionale IPC ermöglichen?
