@@ -24,7 +24,11 @@ Parameter -j
 
 ### Was ist ein Deadlock?
 
-...
+- **Allgemein**
+  - Situation, in der sich beide Alternativen eines Dilemmas gegenseitig blockieren **oder**
+  - in der die Handlungspartner nicht zu Kompromissen zur Lösung einer solchen Situation bereit sind, wodurch die Situation ausweglos wird.
+- **Informatik**
+  - ausweglose Situation, bei dem sich mehrere Prozesse gegenseitig blockieren, weil sie auf die Freigabe von Betriebsmitteln warten, die ein anderer beteiligter Prozess bereits exklusiv belegt hat
 
 ### Wie kann ich einen Deadlock verhindern/auflösen
 
@@ -41,11 +45,6 @@ Nicht genug Ressourcen, Deadlock kann entstehen
 ### Gedankenspiele Anzahl Philosophen/Anzahl Stäbchen 5/2, 10/10, 10/5 beantworten können
 
 ...
-
-### Was ist fork
-
-(nicht die englische Übersetzung)
-Benedict: Prozese aufspalten, Vater, Kind Prozess
 
 ### Haupteigenschaft fork-Prozesse
 
@@ -156,10 +155,12 @@ Bei Pipes:
 
 - PID Tabelle war voll, es wurden freigegebene kleinere PID genutzt
 
-### Wie können sie sich die PID von Prozessen (auf dem Terminal) anzeigen lassen?
+### Wie können sie sich die PID von Prozessen (/auf dem Terminal) anzeigen lassen?
 
 - htop / anderer Taskmanager für Betriebssystem, alle Prozesse
+- `ps`
 - `getpid()` für ein Programm
+
 
 ### Wer/was definiert/ist kritischer Abschnitt?
 
