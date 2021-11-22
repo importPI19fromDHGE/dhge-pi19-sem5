@@ -40,7 +40,10 @@ Parameter -j
 
 ## Philosophenproblem nacherzählen und erklären
 
-Nicht genug Ressourcen, Deadlock kann entstehen
+- Denken oder Essen; 5 Philosophen mit 5 Stäbchen an rundem Tisch
+- Nicht genug Ressourcen für alle
+- gleichzeitiger Zugriff
+- Deadlock kann entstehen
 
 ### Gedankenspiele Anzahl Philosophen/Anzahl Stäbchen 5/2, 10/10, 10/5 beantworten können
 
@@ -90,10 +93,8 @@ PID - Prozess ID zu Identifikation
 
 ### Wann werden Semaphoren- Operationen aufgerufen
 
-- P - Vor dem kritischen Abschnitt LOCK
-- V - Nach dem kritischen Abschnitt UNLOCK
-
-Bekannte Fragen:
+- P - Vor dem kritischen Abschnitt LOCK - Ressourcen blockieren
+- V - Nach dem kritischen Abschnitt UNLOCK - Ressourcen freigeben
 
 ### Rückgabewerte Fork
 
