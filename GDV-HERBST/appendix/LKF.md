@@ -341,10 +341,20 @@ $$
 
 ## Wie werden die Berechnungsverfahren wie Phong, Metal, Blinn usw. aus technischer Sicht bezeichnet?
 
+- TODO
+
 ## Welche Bedeutung haben die grafischen Schnittstellen OpenGL, DirectX/3D?
+
+- TODO
 
 ## Welche Bestandteile des JT-Datenformates können Sie benennen?
 
+- TODO
+
 ## Worum handelt es sich bei der Abkürzung "BREP"?
 
+- TODO
+
 ## Probleme geometrische Schnittstellen/Direktschnittstellen/Neutralformate
+
+- TODO
