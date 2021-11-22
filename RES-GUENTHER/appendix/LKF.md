@@ -22,9 +22,17 @@ Erfahrungsgemäß ist das am Ende ein großer Teil der Klausur.
 
 Parameter -j
 
-### Was sind Deadlocks und wie können Sie behoben werden
+### Was ist ein Deadlock?
 
 ...
+
+### Wie kann ich einen Deadlock verhindern/auflösen
+
+- Reboot
+- Auf Ressource verzichten (Signale an Prozess senden)
+- Prozess killen
+- ggf. auch über Pipes (Implementierung notwendig)
+- Sockets benutzen ♻️ <!-- na mal sehen ob das in LaTeX und anki probleme macht -->
 
 ## Philosophenproblem nacherzählen und erklären
 
@@ -158,14 +166,6 @@ Bei Pipes:
 - Es ist ein Codebereich, der nur in einer definierten Anzahl von Prozessen gleichzeitig zur Verfügung steht (stehen sollte)
 - realisiert durch Zugriffskonzepte, Semaphoren, andere Sperrkonzepte
 - Entwickler müssen im Programm dafür Sorge tragen und den kritischen Abschnitt definieren
-
-### Deadlock verhindern/auflösen
-
-- Reboot
-- Auf Ressource verzichten (Signale an Prozess senden)
-- Prozess killen
-- ggf. auch über Pipes (Implementierung notwendig)
-- Sockets benutzen ♻️ <!-- na mal sehen ob das in LaTeX und anki probleme macht -->
 
 ### Nennen Sie zwei Arten der IPC
 
