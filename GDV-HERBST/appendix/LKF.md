@@ -229,6 +229,7 @@ Windows, macOS (Linux als Ausnahme)
 
 <!--Quatsch-->
 
+- TODO
 - Parameter können editiert werden, Komponente passt sich entsprechend an
 
 ## Was ist das Ziel geometrischer Grundelemente im 2D- und 3D-Bereich?
@@ -284,6 +285,8 @@ Windows, macOS (Linux als Ausnahme)
 
 ## Welche (Farb-)Werte können Sie mit Hilfe des HLS/HSL-Modells verändern/definieren?
 
+- TODO
+
 ## Was beschreibt das CIE-Farbwertdiagramm?
 
 - alle Farben, die der Mensch sehen kann
@@ -326,6 +329,8 @@ $$
 - dementsprechend dann verlustfrei
 
 ## Erklären Sie die Unterschiede zwischen Farbmodell, Farbraum und Farbprofil. (und Verbindungen der einzelnen Sachen)
+
+- TODO
 
 ## Aus welchen Reflexionsanteilen setzt sich das Beleuchtungsmodell nach Phong zusammen? Wie werden die Faktoren für reale Materialien ermittelt?
 
