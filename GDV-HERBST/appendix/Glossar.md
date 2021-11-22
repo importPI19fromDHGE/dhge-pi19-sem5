@@ -187,15 +187,34 @@
 
 ## High Dynamic Range Image (HDRI)
 
+- Bilder mit einem vergrößertem Dynamikumfang
+- z.B. zur Nutzung im Rahmen von Image-based Lighting (IBL)
+
 ## Image-based Lighting (IBL)
+
+- Bildbasierte Beleuchtungsverfahren für realistischere Beleuchtung
+- meist auf Basis von 360°-Bildern (möglichst HDR-Images)
 
 ## indizierte Farben
 
+- Datenstruktur jedes Pixels enthält Index eines Eintrages einer Farbtabelle (nicht direkt einzelnen Farbwerte!)
+
+> Alternativ: **Farbpalette**
+
 ## Industrie 4.0
+
+- steht für die vierte industrielle Revolution
+- Technische Grundlage hierfür sind **intelligente und digital vernetzte Systeme**
 
 ## Integriertes Produktdatenmodell
 
+- ToDo: siehe Folien
+
 ## Internet of Things
+
+- physische und virtuelle Objekte werden miteinander vernetzt
+
+> Alternativ: **IoT**
 
 ## Kernelmodellierer
 
