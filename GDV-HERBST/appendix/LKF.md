@@ -415,17 +415,3 @@ Das Datenmodell unterstützt unterschiedlichste Repräsentationen der CAD-Geomet
 
 - TODO
 - HÄ? Verluste, Ungenauigkeiten in Neutralformaten?
-
-
-
-
-
-
-
-
-
-
-
-
-
-
