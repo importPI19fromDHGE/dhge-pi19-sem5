@@ -83,7 +83,7 @@ PID - Prozess ID zu Identifikation
 ### Semaphoren unterscheiden
 
 - Binäre Semaphoren: Phasen Frei/Blockiert
--  Zählende Semaphoren: Anzahl Ressourcen verwaltbar
+- Zählende Semaphoren: Anzahl Ressourcen verwaltbar
 
 ### Semaphoren benutzen
 
