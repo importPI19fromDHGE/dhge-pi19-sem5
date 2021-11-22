@@ -139,11 +139,25 @@
 
 ## Feature Modellierung
 
+- Verwenden von Features zu Konstruktionszwecken in der Modellumgebung
+- Features = konstruktive Aspekte als Einheit
+- $\hookrightarrow$ neben geometrischem Informationsgehalt auch technologische, fertigungstechnische oder qualitätsbezogene Aspekte
+
 ## Freiheitsgrade
+
+- Möglichkeiten zur Änderung geometriescher Elemente (z.B. in Skizzen und Einzelteile in Baugruppen)
+- Auch z.B. bei möglichen Bewegungen von Robotern oder Werkzeugmaschinen
+
+> Alternativ: **DoF - Degree of Freedom**
 
 ## Gammakorrektur
 
+- Korrektur nichtlinearen Kennlinien in Anpassung an das menschlichen Empfinden
+
 ## Geometrische Schnittstelle
+
+- Realisierung des Datenaustauschs z. B. bei CAD- und DCC-Systemen
+- Beispiele: `JT`, `STEP`, `IGES`, `FBX`, `OBJ`, `Alembic`
 
 ## Grafikpipeline
 
