@@ -337,12 +337,12 @@ $$
 
 ## Erklären Sie die Unterschiede zwischen Farbmodell, Farbraum und Farbprofil. (und Verbindungen der einzelnen Sachen)
 
-- Farbmodell
+- **Farbmodell**
   - entsteht aus dem **abstrakten Farbsystem** meist **dreidimensional** für die praktische Darstellung, die unterschiedliche Formen haben kann.
   - Innerhalb Modelle: eindeutig Farben $\leftrightarrow$  Zahlenwerte zugeordnet
-- Farbraum einer farbgebenden Methode
+- **Farbraum** einer farbgebenden Methode
   - möglichst **alle Farben**, die innerhalb des Farbmodells **darstellbar** sind
-- Farbfprofil
+- **Farbprofil**
   - **Farben von einem Farbraum in einen anderen Farbraum übersetzen**
   - ohne dass die Farbechtheit der Ausgangsvorlage dadurch leidet.
   - Ziel: **unveränderte Farbwiedergabe** auf allen Ausgabegeräten
@@ -367,14 +367,45 @@ $$
 ## Wie werden die Berechnungsverfahren wie Phong, Metal, Blinn usw. aus technischer Sicht bezeichnet?
 
 - TODO
+- Beleuchtungsmodell/Shading Modells
+- Nutzung Halfway-Vektoren
 
 ## Welche Bedeutung haben die grafischen Schnittstellen OpenGL, DirectX/3D?
 
+- Gemeinsamkeiten:
+  - CG-APIs zum Rendern von 2D und 3D CG.
+  - GPU haben normalerweise mindestens eine der beiden implementiert
+- **OpenGL**
+  - offener Standard (größtenteils)
+  - Cross-Platform
+  - OpenGL-ähnliche Bibliotheken für viele Unix-basierte Systeme
+    - Mac OS X, Linux, Nintendo, Sony
+  - Teilmenge von OpenGL als Haupt-Grafikbibliothek:
+    - Android, BlackBerry, iOS [..]
+- **DirectX / Direct3D**
+  - proprietäre Lizenz
+  - Microsoft $\rightarrow$ Windows, Xbox
+
 - TODO
+
+[Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_OpenGL_and_Direct3D)
+
 
 ## Welche Bestandteile des JT-Datenformates können Sie benennen?
 
-- TODO
+> JT (Jupiter Tesselation) ist ein ISO-Standard-Grafikformat für 3D-Daten.
+
+Das Datenmodell unterstützt unterschiedlichste Repräsentationen der CAD-Geometrie:
+
+- „tesselierte“ Dreiecksflächen-Geometrie
+- „exakte“ Brep-Geometrie: JT-BREPs; XT-BREPs; LIBRA-Format (stark komprimieret, verlustbehaftetet)
+
+**Szenengraph** mit CAD-spezifischen Knoten und Attribute-Unterstützun
+- Facetteninformation (**Dreiecke**) ausgereiften Kompressionstechniken.
+- mathematisch **exakte Geometriedefinition**
+- Produktstruktur, **Produkt- und Fertigungsinformation** (PMI),
+- **visuelle Attribute** wie Licht, Textur und Shader
+- **Metadaten**
 
 ## Worum handelt es sich bei der Abkürzung "BREP"?
 
@@ -383,3 +414,17 @@ $$
 ## Probleme geometrische Schnittstellen/Direktschnittstellen/Neutralformate
 
 - TODO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
