@@ -245,7 +245,7 @@ wir behandeln:
 
 ## Level of Detail (LOD)
 
-- auch Verwendung in JT-Format für Datenaustausch (siehe Tesselierung)
+- auch Verwendung in `JT`-Format für Datenaustausch (siehe Tesselierung)
 - verschiedene Detailstufen bei der Darstellung virtueller Welten
 
 ## Lichtquellen (Lichttypen)
@@ -258,27 +258,29 @@ wir behandeln:
 - Verstärkung des Kontrastes zwischen unterschiedlich hellen Flächen
 - Kontrastphänomen, dass Farben aufgrund der Nachbarfarben heller oder dunkler wirken
 
-## Material Beschreibung
+## Material-Beschreibung
 
-- Parameter zur Beschreibung der optischen Eigenschaften eines Werkstoffs
-  - abhängig vom eingesetzten Berechnungsverfahren (Renderer)
-  - Anforderungen an den Datenaustasuch (siehe Geometrische Schnisstellen)
-  - neue Anforderungen für Echtzeitvisualisierungen
-  - einfache Modelle z.B. für Phon Beleuchtungsmodell und Phong Shading
-  - Wechsel zu physikbasierten Materialbeschreibungen z.B. MDL
+> Parameter zur Beschreibung der optischen Eigenschaften eines Werkstoffs
+
+- abhängig vom eingesetzten Berechnungsverfahren (Renderer)
+- Anforderungen an den Datenaustausch (siehe Geometrische Schnittstellen)
+- neue Anforderungen für Echtzeitvisualisierungen
+- einfache Modelle z.B. für Phon Beleuchtungsmodell und Phong Shading
+- Wechsel zu physikbasierten Materialbeschreibungen z.B. MDL
 
 ## Mechatronik
 
-- Verbindung Mechanik (MCAD), Elektronik (ECAD), Software
+- Verbindung Mechanik (MCAD), Elektronik (ECAD) und Software
 
 ## Metaball-System (blob oder BlobMesh)
 
-Spezielle Modellierungsmethode auf Basis von Grundelementen Kugeln mit Eigenschaften welche mit der Oberflächenspannung von Wassertropfen verglichen werden können
+- Spezielle Modellierungsmethode auf Basis von  Kugeln als Grundelement
+- Kugeln besitzen spezielle Eigenschaften welche mit der Oberflächenspannung von Wassertropfen verglichen werden können
 
 ## Metadaten (Attribute, Eigenschaften)
 
 - Zusätzliche Informationen z.B. in Dateien (3D-Modelle, Pixelbilder)
-- Beispiele Fotos: EXIF
+- Beispiel Fotos: EXIF
 - siehe geometrische Schnittstellen (z.B. JT, STEP)
 - Ablage auch in Datenbanksystemen z.B. für PDM, PLM und Assetmanagement
 
@@ -288,10 +290,10 @@ Spezielle Modellierungsmethode auf Basis von Grundelementen Kugeln mit Eigenscha
 
 ![Objektraum](assets/objektraum.png)
 
-## Phong Beleuchtungsmodell
+## Phong-Beleuchtungsmodell
 
 - einfaches Modell zur Berechnung der Schattierung von Oberflächen
-- diffuse R., spekuläre R., ambiente R.
+- drei Komponenten: diffuse, spekuläre und ambiente Reflektion
 - für Darstellung von glatten, plastikähnlichen Oberflächen geeignet
 - keine physikalische Grundlage
 - trotzdem Dank seiner Einfachheit hohe Beliebtheit
@@ -346,12 +348,13 @@ Spezielle Modellierungsmethode auf Basis von Grundelementen Kugeln mit Eigenscha
 
 ## Tiefenkanal (Z-Abstand oder depth channel)
 
-Speichert, vergleichbar mit dem Alpha-Kanal, Informationen zum Abstand des Bildpunktes von der Kamera (Tiefeninformation bzw. Tiefen-Map)
-z.B. Format OpenEXR
+> Speichert Informationen zum Abstand des Bildpunktes von der Kamera (Tiefeninformation bzw. Tiefen-Map, vgl. Alpha-Kanal)
+>
+> z.B. Format `OpenEXR`
 
 ## virtueller Prototyp (Digital Prototyping)
 
-"Mit Digital Prototyping soll die Entwicklungszeit von neuen Produkten verkürzt, die Kosten der Entwicklung gesenkt und die Qualität der Produkte verbessert werden."
+> *"Mit Digital Prototyping soll die Entwicklungszeit von neuen Produkten verkürzt, die Kosten der Entwicklung gesenkt und die Qualität der Produkte verbessert werden."*
 
 ## Virtuelles Produkt
 
