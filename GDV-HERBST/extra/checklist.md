@@ -7,7 +7,6 @@ Speicher das Dokument lokal und tracke so deinen Lernfortschritt.
 
 # Checklist
 
-
 ## CAD / CAE / Hardware
 
 - [ ] Begriffe aus dem CAx-Umfeld
@@ -40,8 +39,7 @@ Speicher das Dokument lokal und tracke so deinen Lernfortschritt.
 - [ ] Wellenlängen, sichtbares Licht
 - [ ] Lichtquellen, Lichtausbreitung
 - [ ] Farbraum, Farbprofil, CIE-Diagramm, Weißpunkt
-- [ ] Farbmodelle RGB, CMYK, HSV, Umrechnung, Darstellungen, additive und subtraktive
-Farbmischung
+- [ ] Farbmodelle RGB, CMYK, HSV, Umrechnung, Darstellungen, additive und subtraktive Farbmischung
 - [ ] Farbtiefe, Alpha-Kanal und Transparenz, Tiefeninformationen (Z-Abstand)
 - [ ] Dateiformate, Komprimierung
 - [ ] Punkt, Strecke, Polygonzug, Polygon, Kurve, Spline, B-Spline, Bezier

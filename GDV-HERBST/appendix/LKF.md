@@ -33,7 +33,7 @@ Verbindung Mechanik (MCAD) mit Elektronik (ECAD) und Software
 
 ## Was ist das Ziel eines PDM- bzw. PLM-Systems?
 
->Unternehmen erhoffen sich vom PLM eine verbesserte Kontrolle über die diversen Prozesse, die in jedem Teil eines Lebenszyklus erforderlich sind, und damit auch transparente Aufwände und Erträge. ([Wikipedia](https://de.wikipedia.org/wiki/Product-Lifecycle-Management))
+> Unternehmen erhoffen sich vom PLM eine verbesserte Kontrolle über die diversen Prozesse, die in jedem Teil eines Lebenszyklus erforderlich sind, und damit auch transparente Aufwände und Erträge. ([Wikipedia](https://de.wikipedia.org/wiki/Product-Lifecycle-Management))
 
 - Verkürzung des Zyklus in bestimmten Teil-Bereichen
 - Optimierung der Effizienz der Herstellung
@@ -390,7 +390,6 @@ $$
 
 [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_OpenGL_and_Direct3D)
 
-
 ## Welche Bestandteile des JT-Datenformates können Sie benennen?
 
 > JT (Jupiter Tesselation) ist ein ISO-Standard-Grafikformat für 3D-Daten.
@@ -400,7 +399,8 @@ Das Datenmodell unterstützt unterschiedlichste Repräsentationen der CAD-Geomet
 - „tesselierte“ Dreiecksflächen-Geometrie
 - „exakte“ Brep-Geometrie: JT-BREPs; XT-BREPs; LIBRA-Format (stark komprimieret, verlustbehaftetet)
 
-**Szenengraph** mit CAD-spezifischen Knoten und Attribute-Unterstützun
+**Szenengraph** mit CAD-spezifischen Knoten und Attribute-Unterstützung
+
 - Facetteninformation (**Dreiecke**) ausgereiften Kompressionstechniken.
 - mathematisch **exakte Geometriedefinition**
 - Produktstruktur, **Produkt- und Fertigungsinformation** (PMI),
