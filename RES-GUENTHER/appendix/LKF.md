@@ -20,7 +20,7 @@ Erfahrungsgemäß ist das am Ende ein großer Teil der Klausur.
 
 ### Mit make Kerne auslasten
 
-Parameter -j
+Parameter `-j`
 
 ### Was ist ein Deadlock?
 
@@ -64,10 +64,10 @@ PID - Prozess ID zu Identifikation
 
 ## Differenzierung zwischen Vater- und Kind-Prozess
 
-- Rückgabewert fork() im Vater ist getpid() vom Kind
-- Rückgabewert fork() im Kind ist 0
-- getppid() vom Kind ist getpid() vom Vater
-- getppid() vom Vater ist die aufrufende Shell
+- Rückgabewert `fork()` im Vater ist `getpid()` vom Kind
+- Rückgabewert `fork()` im Kind ist `0`
+- `getppid()` vom Kind ist `getpid()` vom Vater
+- `getppid()` vom Vater ist die aufrufende Shell
 
 ### Was passiert, wenn man in Schleifen forkt
 
@@ -82,8 +82,8 @@ PID - Prozess ID zu Identifikation
 
 ### Semaphoren unterscheiden
 
-- Binäre Semaphoren - Zählende Semaphoren
-- Phasen Frei/Blockiert - Anzahl Ressourcen verwaltbar
+- Binäre Semaphoren: Phasen Frei/Blockiert
+-  Zählende Semaphoren: Anzahl Ressourcen verwaltbar
 
 ### Semaphoren benutzen
 
@@ -99,15 +99,15 @@ PID - Prozess ID zu Identifikation
 ### Rückgabewerte Fork
 
 - Was gibt fork zurück, wenn Kind nicht gestartet hat?
-  - -1
-- fork() gibt 23 zurück - was ist passiert?
-  - Kind hat PID 23, wir sind Vater.
-- fork() gibt 0 zurück.
+  - `-1`
+- `fork()` gibt `23` zurück - was ist passiert?
+  - Kind hat PID `23`, wir sind Vater.
+- `fork()` gibt `0` zurück.
   - Wir sind Kindprozess eines Fork.
 
 ### Zweck pipe
 
-IPC Prozess A -> B
+IPC Prozess A $\rightarrow$ B
 
 ### Wie kommt der Kanal zwischen Prozess A und B zustande, inbesondere mit fork()?
 
@@ -118,16 +118,16 @@ IPC Prozess A -> B
 
 ### Was passiert, wenn ich forke?
 
-- Ab fork() entsteht Kindprozess
+- Ab `fork()` entsteht Kindprozess
 - gesamter Speicher des Prozesses, inklusive Filedeskriptoren (auch Pipes), Variablen, etc. werden kopiert
 - Nicht kopiert werden: PID<!-- DUH -->
 
-$\rightarrow$ Prozesse, die verwandt sind, können über vor fork() angelegte Pipes kommunizieren.
+$\rightarrow$ Prozesse, die verwandt sind, können über vor `fork()` angelegte Pipes kommunizieren.
 
 ### Welche Operationen auf einer Pipe kennen Sie? Beschreiben Sie deren Funktion
 
 - `write(pipefd[1],buffer)`
-  - Write: Aus Programm auf die Pipe schreiben, in den Kernelbuffer
+  - Write: Aus Programmbuffer auf die Pipe schreiben, in den Kernelbuffer
 - `read(pipefd[0],buffer)`
   - Read: Aus Kernelbuffer in Programmbuffer schreiben; aus Sicht des Programms von Pipe lesen
 
@@ -156,9 +156,9 @@ Bei Pipes:
 
 - PID Tabelle war voll, es wurden freigegebene kleinere PID genutzt
 
-### Wie können sie sich die PID von Prozessen (/auf dem Terminal) anzeigen lassen?
+### Wie können sie sich die PID von Prozessen (in einem C-Programm/auf dem Terminal) anzeigen lassen?
 
-- htop / anderer Taskmanager für Betriebssystem, alle Prozesse
+- `htop` / anderer Taskmanager für Betriebssystem, alle Prozesse
 - `ps`
 - `getpid()` für ein Programm
 
