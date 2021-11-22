@@ -161,9 +161,29 @@
 
 ## Grafikpipeline
 
+> Schritte zur Umsetzung einer Grafischen Darstellung aus dem zwei- oder dreidimensionalen Raum
+
+- Koordinatensysteme
+- Definition des Objektes
+- Tesselation
+- Transformationen
+- Perspektiven
+- Clipping
+- Rasterisierung
+- Shader
+
+> Alternativ: **Rendering Pipeline**
+
 ## Grafische Schnittstelle
 
+- Plattform- und programmiersprachenübergreifenden Programmierschnittstelle zur Entwicklung von 2D- und 3D-Computergrafikanwendungen
+- Beispiele: `DirectX`/`Direct3D`, `OpenGL`, `Vulkan`, `Metal`
+
 ## Graphisches Kernsystem (GKS)
+
+- erster Standard für Computergrafik
+
+> Alternativ: **Graphic Kernel System**
 
 ## High Dynamic Range Image (HDRI)
 
