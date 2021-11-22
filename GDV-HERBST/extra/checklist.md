@@ -17,7 +17,7 @@ Speicher das Dokument lokal und tracke so deinen Lernfortschritt.
 - [ ] Aufbau von CAD-Systemen
 - [ ] Besonderheiten CAD-Rechner, E/A-Komponenten, Betriebssysteme für CAD-Arbeitsplätze
 - [ ] CAD-Kernel und –Systeme, Applikationen
-- [ ] Grafikstandards- [ ] bzw. -schnittstellen
+- [ ] Grafikstandards- bzw. -schnittstellen
 - [ ] Volumenmodelle
 - [ ] Boolesche Operatoren, Formelemente, CSG
 - [ ] Tesselierung, Level of Detail
@@ -29,7 +29,7 @@ Speicher das Dokument lokal und tracke so deinen Lernfortschritt.
 
 ## Grafische Datenverarbeitung
 
-- [ ] Objekt- [ ] und Bildraum
+- [ ] Objekt- und Bildraum
 - [ ] 2D-, 3D-Grafikpipeline
 - [ ] Bildauflösung, Bildschirmgrößen, Umrechnungen, Seitenverhältnisse
 - [ ] Probleme bei Rastergeräten zur Ausgabe:
