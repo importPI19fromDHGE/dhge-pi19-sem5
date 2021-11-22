@@ -107,15 +107,27 @@
 
 ## Digitale Prozesskette
 
-## Digitaler Zwillig
+## Digitaler Zwilling
+
+- digitale Repräsentation eines Objektes aus der realen Welt in der digitalen Welt
 
 ## ERP
 
-## Farbmodelle
+> **E**nterprise **R**esource **P**lanning
+
+- betriebswirtschaftliche Softwarelösungen zur Steuerung von Geschäftsprozessen
+
+## Farbmodell
+
+- z.B. RGB, CMYK, HSV, ...
+- definieren eine abstrakte Darstellung von Farben $\rightarrow$ Berechenbarkeit
+- innerhalb der Modelle sind allen Farben eindeutige Zahlenwerte zugeordnet
 
 ## Farbprofil
 
 ## Farbraum
+
+- Alle Farben eines Farbmodells
 
 ## Farbtiefe
 
