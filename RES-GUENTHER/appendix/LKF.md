@@ -162,7 +162,6 @@ Bei Pipes:
 - `ps`
 - `getpid()` für ein Programm
 
-
 ### Wer/was definiert/ist kritischer Abschnitt?
 
 - Es ist ein Codebereich, der nur in einer definierten Anzahl von Prozessen gleichzeitig zur Verfügung steht (stehen sollte)
