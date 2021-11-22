@@ -62,10 +62,10 @@ PID - Prozess ID zu Identifikation
 
 ## Differenzierung zwischen Vater- und Kind-Prozess
 
-Rückgabewert fork() im Vater ist getpid() vom Kind
-Rückgabewert fork() im Kind ist 0
-getppid() vom Kind ist getpid() vom Vater
-getppid() vom Vater ist die aufrufende Shell
+- Rückgabewert fork() im Vater ist getpid() vom Kind
+- Rückgabewert fork() im Kind ist 0
+- getppid() vom Kind ist getpid() vom Vater
+- getppid() vom Vater ist die aufrufende Shell
 
 ### Was passiert, wenn man in Schleifen forkt
 
@@ -74,25 +74,25 @@ getppid() vom Vater ist die aufrufende Shell
 
 ### Wozu Semaphoren
 
-Deadlock vermeiden, exklusiven Zugriff auf Ressourcen verwalten; Programmabarbeitung übergreifend verwalten
-Kritischer Abschnitt - 2 Prozesse greifen auf gleiche Ressource zu; gleichzeitiger Zugriff führt zu unvorhersehbaren Ergebnissen
-Daher Interprozesskommunikation notwendig
+- Deadlock vermeiden, exklusiven Zugriff auf Ressourcen verwalten; Programmabarbeitung übergreifend verwalten
+- Kritischer Abschnitt - 2 Prozesse greifen auf gleiche Ressource zu; gleichzeitiger Zugriff führt zu unvorhersehbaren Ergebnissen
+- Daher Interprozesskommunikation notwendig
 
 ### Semaphoren unterscheiden
 
-Binäre Semaphoren - Zählende Semaphoren
-Phasen Frei/Blockiert - Anzahl Ressourcen verwaltbar
+- Binäre Semaphoren - Zählende Semaphoren
+- Phasen Frei/Blockiert - Anzahl Ressourcen verwaltbar
 
 ### Semaphoren benutzen
 
-Deklaration
-Initialisierung
-Verwendung (Operation)
+- Deklaration
+- Initialisierung
+- Verwendung (Operation)
 
 ### Wann werden Semaphoren- Operationen aufgerufen
 
-P - Vor dem kritischen Abschnitt LOCK
-V - Nach dem kritischen Abschnitt UNLOCK
+- P - Vor dem kritischen Abschnitt LOCK
+- V - Nach dem kritischen Abschnitt UNLOCK
 
 Bekannte Fragen:
 
