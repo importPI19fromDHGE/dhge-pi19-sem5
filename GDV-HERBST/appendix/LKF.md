@@ -339,7 +339,7 @@ $$
 
 - **Farbmodell**
   - entsteht aus dem **abstrakten Farbsystem** meist **dreidimensional** für die praktische Darstellung, die unterschiedliche Formen haben kann.
-  - Innerhalb Modelle: eindeutig Farben $\leftrightarrow$  Zahlenwerte zugeordnet
+  - Innerhalb der Modelle: eindeutige Farben $\leftrightarrow$  Zahlenwerte zugeordnet
 - **Farbraum** einer farbgebenden Methode
   - möglichst **alle Farben**, die innerhalb des Farbmodells **darstellbar** sind
 - **Farbprofil**
@@ -367,14 +367,14 @@ $$
 ## Wie werden die Berechnungsverfahren wie Phong, Metal, Blinn usw. aus technischer Sicht bezeichnet?
 
 - TODO
-- Beleuchtungsmodell/Shading Modells
+- Beleuchtungsmodell/Shading Models
 - Nutzung Halfway-Vektoren
 
 ## Welche Bedeutung haben die grafischen Schnittstellen OpenGL, DirectX/3D?
 
 - Gemeinsamkeiten:
   - CG-APIs zum Rendern von 2D und 3D CG.
-  - GPU haben normalerweise mindestens eine der beiden implementiert
+  - GPU hat normalerweise mindestens eine der beiden implementiert
 - **OpenGL**
   - offener Standard (größtenteils)
   - Cross-Platform
