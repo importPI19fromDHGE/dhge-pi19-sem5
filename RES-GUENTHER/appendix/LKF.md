@@ -137,7 +137,7 @@ $\rightarrow$ Prozesse, die verwandt sind, können über vor `fork()` angelegte 
 - 2 Pipes verwenden
 - Socket benutzen
 
-### Was bedeutet close generell / bei Pipe?
+### Was bedeutet `close` generell / bei Pipe?
 
 - Der Filedeskriptor wird gelöscht und steht nicht mehr zur Verfügung
 - Dadurch ist das dahinterliegende File (everything is a file) nicht mehr trivial erreichbar
