@@ -32,8 +32,7 @@
 - Wellenlängen, sichtbares Licht
 - Lichtquellen, Lichtausbreitung
 - Farbraum, Farbprofil, CIE-Diagramm, Weißpunkt
-- Farbmodelle RGB, CMYK, HSV, Umrechnung, Darstellungen, additive und subtraktive
-Farbmischung
+- Farbmodelle RGB, CMYK, HSV, Umrechnung, Darstellungen, additive und subtraktive Farbmischung
 - Farbtiefe, Alpha-Kanal und Transparenz, Tiefeninformationen (Z-Abstand)
 - Dateiformate, Komprimierung
 - Punkt, Strecke, Polygonzug, Polygon, Kurve, Spline, B-Spline, Bezier
