@@ -285,7 +285,14 @@ Windows, macOS (Linux als Ausnahme)
 
 ## Welche (Farb-)Werte können Sie mit Hilfe des HLS/HSL-Modells verändern/definieren?
 
-- TODO
+- **H**=Hue (Farbton)
+- **L**=Lightness (Helligkeit)
+- **S**=Saturation (Sättigung)
+  - sechseckige Doppelpyramide
+
+- HSV (Hue Saturation Value)
+  - sechseckige Pyramide
+  - halbe Zylinder / Kegel
 
 ## Was beschreibt das CIE-Farbwertdiagramm?
 
@@ -330,7 +337,20 @@ $$
 
 ## Erklären Sie die Unterschiede zwischen Farbmodell, Farbraum und Farbprofil. (und Verbindungen der einzelnen Sachen)
 
-- TODO
+- Farbmodell
+  - entsteht aus dem **abstrakten Farbsystem** meist **dreidimensional** für die praktische Darstellung, die unterschiedliche Formen haben kann.
+  - Innerhalb Modelle: eindeutig Farben $\leftrightarrow$  Zahlenwerte zugeordnet
+- Farbraum einer farbgebenden Methode
+  - möglichst **alle Farben**, die innerhalb des Farbmodells **darstellbar** sind
+- Farbfprofil
+  - **Farben von einem Farbraum in einen anderen Farbraum übersetzen**
+  - ohne dass die Farbechtheit der Ausgangsvorlage dadurch leidet.
+  - Ziel: **unveränderte Farbwiedergabe** auf allen Ausgabegeräten
+
+> Alle Farben eines Farbmodells, die durch eine farbgebende Methode tatsächlich ausgegeben werden können, werden in dem dreidimensionalen Farbraum dargestellt. Jede farbgebende Methode hat ihren eigenen Farbraum.
+
+[Wikipedia](https://de.wikipedia.org/wiki/Farbraum)
+[Allbranded](https://www.allbranded.de/Farbprofil/)
 
 ## Aus welchen Reflexionsanteilen setzt sich das Beleuchtungsmodell nach Phong zusammen? Wie werden die Faktoren für reale Materialien ermittelt?
 
