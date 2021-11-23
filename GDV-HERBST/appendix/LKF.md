@@ -21,6 +21,13 @@ computer-aided Engineering (CAE)
   - Produktentwicklung
     - Produktentwurf
 
+## virtuelle Prototypen, rapid prototyping, additive manufacturing
+
+- schnelle Entwicklung von Protoypen im Objektraum
+- Simulation des Prototypen mit allen Eigenschaften des realen Produkts
+- Rapid Prototyping ist die schnelle Herstellung eines Musters oder Modells eines Bauteils
+- 3D-Druck/additive Fertigung beschreibt Fertigungsverfahren, bei welchen Material Schicht für Schicht aufgetragen wird mit dem Ziel dreidimensionale Gegenstände zu realisieren
+
 ## Was versteht man unter "Mechatronik"?
 
 Verbindung Mechanik (MCAD) mit Elektronik (ECAD) und Software
@@ -269,6 +276,13 @@ Windows, macOS (Linux als Ausnahme)
 - Flächen bestehen aus Kanten
 - Kanten bestehen aus Punkten
 
+## Vorgehensweise Modellierung mit Inventor
+
+- Erstellung von 2D-Skizzen (Constraints, Bemaßung)
+- Erstellung von 3D-Modelle auf Basis der 2D-Skizzen (Extrusion)
+- Bearbeiten der 3D-Elemente mit Hilfe von Features und Boolschen Operationen
+- ggf. weitere Skizzen auf 3D-Element erstellen
+
 ## Woran erkennt man schnell die Komplexität der Darstellung einer Geometrie?
 
 - Vertices anzeigen lassen (Ecken eines Polygons)
@@ -308,6 +322,22 @@ Windows, macOS (Linux als Ausnahme)
 <!--Quatsch-->
 
 - Parameter können editiert werden, Komponente passt sich entsprechend an
+- Inventor: unter Verwendung des Parameter-Editors
+  - Nutzung von Variablen zur Bemaßung
+
+## Was sind Skizziertechniken (CAD)?
+
+- Anfertigen einer 2D-Skizze als Basis für 3D-Modell
+- mit Unterstützung des Solvers
+
+## Was sind Bauteile?
+
+- einzeln und zusammenhängendes 3D-Modell
+- besteht aus (Grund)elementen und Features
+
+## Was sind Baugruppen?
+
+- bestehen aus Bauteilen (n-fache Verwendung eines Bauteils möglich)
 
 ## Was ist das Ziel geometrischer Grundelemente im 2D- und 3D-Bereich?
 
@@ -426,3 +456,7 @@ $$
 ## Worum handelt es sich bei der Abkürzung "BREP"?
 
 ## Probleme geometrische Schnittstellen/Direktschnittstellen/Neutralformate
+
+## 2D-, 3D-Grafikpipeline
+
+
