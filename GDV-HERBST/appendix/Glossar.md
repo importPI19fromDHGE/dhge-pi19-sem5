@@ -8,6 +8,10 @@
 
 ![Additive Farbmischung](assets/additive.png)
 
+## Additive Manufacturing
+
+> = 3D-Druck $\rightarrow$ Rapid Prototyping
+
 ## Aliasing
 
 > **Problem:** Rasterung in der Computergrafik. Ausgabe fast ausschließlich über Rastergeräte (Monitior, Drucker)
@@ -50,6 +54,10 @@
 
 - Verarbeitung von (2D-)Bildinformationen
 
+## Boolsche Operatoren
+
+<!-- ToDo -->
+
 ## Boundary Representation (BREP)
 
 - exakte Geometrie z.B. in Dateiformaten für den Datenaustausch (z.B. JT, STEP)
@@ -62,6 +70,15 @@
 - **C**omputer-**a**ided **D**esign
 - Unterstützung von konstruktiven Aufgabe mittels EDV
 - Weitere Unterteilung: MCAD (Mechanik), ECAD (Elektronik)
+
+### CAD-Systeme nach Hersteller
+
+<!-- ToDo Produkte ergänzen -->
+
+- Autodesk
+- Siemens
+- Dassault Systemés
+- PTC
 
 ## CAE
 
@@ -76,7 +93,7 @@
 ## CG
 
 - **C**omputer **G**raphics
-- Computergestützte Bilderzeugung (und im weiteren Sinne -bearbeitung)
+- Umwandlung von Daten des Objektraums in grafische Daten des Bildraumes
 
 ## Clipping
 
@@ -106,6 +123,8 @@
 - Zusammenfassung verschiedenster Technologien
 
 ## Digitale Prozesskette
+
+![Prozesskette](assets/prozesskette.png)
 
 ## Digitaler Zwilling
 
@@ -140,7 +159,7 @@
 ## Feature Modellierung
 
 - Verwenden von Features zu Konstruktionszwecken in der Modellumgebung
-- Features = konstruktive Aspekte als Einheit
+- Features = konstruktive Aspekte als Einheit (Eltern-Kind-Beziehung)
 - $\hookrightarrow$ neben geometrischem Informationsgehalt auch technologische, fertigungstechnische oder qualitätsbezogene Aspekte
 
 ## Freiheitsgrade
@@ -208,8 +227,27 @@
 
 ## Integriertes Produktdatenmodell
 
-- ToDo: siehe Folien
+- Produktdefinition
+  - Identifikation, Klassifikation
+  - Freigabe und Änderungszustände
+- ProduktrepräsentationEigenschaften über Merkmale ausgedrückt
+  - Geometrie, Topologie
+  - FEM, Kinematik usw.
+- Produktpräsentation Darstellung der Repräsentation
+  - Grafisch, textuell, zeichnerisch
+  - Multimedial, Animationen usw.
 
+<!-- ToDo: Beispiele in den LKF anschauen, eventuell übernehmen -->
+
+### Bestandteile des Integrierten Produktdatenmodells
+
+- 2D- und 3D-CAD-Daten (z.B. Einzelteile, Baugruppen, parametrische Beziehungen sowie Element-, Standard- und Normteil- Bibliotheken)
+- Zeichnungsdaten (z.B. aus dem 3D-CAD-System abgeleitete Einzelteil- und Zusammenbau-Zeichnungen, gescannte 2D- Zeichnung)
+- Stücklisten und Auftragskopfdaten
+- Arbeits- und Montagepläne, NC-Datensätze und Prüfpläne
+- Werkzeug- und Betriebsmitteldaten
+- Projektplanungsdaten
+- Methoden
 ## Internet of Things
 
 - physische und virtuelle Objekte werden miteinander vernetzt
@@ -274,7 +312,7 @@ wir behandeln:
 
 ## Metaball-System (blob oder BlobMesh)
 
-- Spezielle Modellierungsmethode auf Basis von  Kugeln als Grundelement
+- Spezielle Modellierungsmethode auf Basis von Kugeln als Grundelement
 - Kugeln besitzen spezielle Eigenschaften welche mit der Oberflächenspannung von Wassertropfen verglichen werden können
 
 ## Metadaten (Attribute, Eigenschaften)
@@ -283,6 +321,12 @@ wir behandeln:
 - Beispiel Fotos: EXIF
 - siehe geometrische Schnittstellen (z.B. JT, STEP)
 - Ablage auch in Datenbanksystemen z.B. für PDM, PLM und Assetmanagement
+
+## NC
+
+> **N**erical **C**ontrol
+
+- Bearbeitung vollautomatisch und hochpräzise erledigen
 
 ## Objektraum
 
@@ -301,6 +345,48 @@ wir behandeln:
 ## PLM (Product-Lifecycle-Management)
 
 ![PLM](assets/plm.png)
+
+### Einordung von Konstruktion im PLM
+
+![Konstruktion im PLM](assets/plm-konstruktion.png)
+
+### PLM-Systeme
+
+<!--ToDo: Beispiele einfügen -->
+
+## PDM
+
+- Produktdatenmanagement
+- $\text{PDM}\subset\text{PLM}$
+
+### Ziel eines PDM- bzw. PLM-Systems
+
+> Unternehmen erhoffen sich vom PLM eine verbesserte Kontrolle über die diversen Prozesse, die in jedem Teil eines Lebenszyklus erforderlich sind, und damit auch transparente Aufwände und Erträge.
+
+- Verkürzung des Zyklus in bestimmten Teil-Bereichen
+- Optimierung der Effizienz der Herstellung
+- Verminderung von Kosten
+- Wegfall redundanter Datenerfassungen im Unternehmen
+
+### Anforderungen an PDM
+
+<!--ToDo andere aus Bild übernehmen-->
+
+- Konsistenz bei Änderungen muss erhalten bleiben
+- Freigabe und Änderungen müssen organisiert werden
+- Rückverfolgbarkeit (back tracing) muss gewährleistet sein
+
+### Beispiele für PDM-Systeme
+
+- Productstream/COMPASS (Autodesk)
+- Vault (Autodesk Inventor)
+- PDMWorks (SolidWorks/Dassault)
+
+## PPS
+
+> Produktions-Planungs-System
+
+![PPS](assets/pps.png)
 
 ## Produktentstehungsprozess (PEP)
 
@@ -357,5 +443,8 @@ wir behandeln:
 > *"Mit Digital Prototyping soll die Entwicklungszeit von neuen Produkten verkürzt, die Kosten der Entwicklung gesenkt und die Qualität der Produkte verbessert werden."*
 
 ## Virtuelles Produkt
+
+- Vorteil: Verwaltung von Produktdaten in DB zur Unterstützung paralleler Arbeitsprozesse
+- Problem: zeitgleiche Ver- und Bearbeitung von Daten kann schnell zu Inkonsistenzen im Datenbestand führen
 
 ![Virtuelles_Produkt](assets/virtuellesprodukt.png)
