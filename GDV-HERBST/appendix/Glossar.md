@@ -17,6 +17,7 @@
 > **Problem:** Rasterung in der Computergrafik. Ausgabe fast ausschließlich über Rastergeräte (Monitior, Drucker)
 
 - **Treppeneffekt** wird durch **Antialiasing** entgegengewirkt
+  - Vor- und Nachfilterung, Flächenabtastung
 - Antialiasing wird auch in Hardware implementiert (Full-Scene Antialiasing - FSAA)
 
 > Alternativ: **Alias-Effekt**
@@ -46,9 +47,13 @@
 > Unterscheidung in lokale und globale Beleuchtungsmodelle
 
 - **lokale Modelle:** Phong, Blinn
-- **globale Modelle** Raytracing, Ausbreitung von Licht einer Szene
+- **globale Modelle:** Raytracing, Ausbreitung von Licht einer Szene
 
 > Bedeutend für Bildsynthese (Grafik aus Rohdaten erzeugen)
+
+## Bildformate
+
+> `JPG`, `PNG`, `BMP`, `GIF`, `WwebP`
 
 ## Bildraum
 
@@ -80,6 +85,10 @@
 - Dassault Systemés
 - PTC
 
+### Aufbau von CAD- und DCC-Software
+
+![Aufbau](assets/aufbau-cad-dcc.png)
+
 ## CAE
 
 - **C**omputer-**a**ided **E**ngineering
@@ -97,10 +106,16 @@
 - **C**omputer **G**raphics
 - Umwandlung von Daten des Objektraums in grafische Daten des Bildraumes
 
+## CI-Farbwertdiagramm
+
+> Das gebogene Dreieck umfasst alle wahrnehmbaren Farben unter Vernachlässigung der Leuchtdichte. Nur wenn sich zwei Farben in ihrer Farbigkeit (Farbton und/oder Sättigung) unterscheiden, werden sie durch zwei unterschiedliche Punkte dargestellt.
+
 ## Clipping
 
+> Zuschneiden transformierter Objekte
+
 - 2D-Bereich: z.B. Ansichtsfenster
-- 3D-Bereich: in Form eines Clippingvolumens
+- 3D-Bereich: in Form eines Clippingvolumens (Transformation von Weltkoordinaten in normalisierte Ansichtskoordinaten)
 - Probleme z. B. im 3D-Umfeld (Spieglungen, Schatten, ...)
 
 ## Computer Vision
@@ -132,6 +147,11 @@
 
 - digitale Repräsentation eines Objektes aus der realen Welt in der digitalen Welt
 
+## Dithering
+
+- Erzeugen der Illusion einer größeren Farbtiefe
+- Nachbildung von fehlenden Farben durch bestimmte Pixelanordnung
+
 ## ERP
 
 > **E**nterprise **R**esource **P**lanning
@@ -140,9 +160,17 @@
 
 ## Farbmodell
 
-- z.B. RGB, CMYK, HSV, ...
+- z.B. `RGB`, `CMYK`, `HSV`, `HSL` ...
 - definieren eine abstrakte Darstellung von Farben $\rightarrow$ Berechenbarkeit
 - innerhalb der Modelle sind allen Farben eindeutigen Zahlenwerten zugeordnet
+
+<!-- ToDo: HSV und HSL -> Sechseckige Pyramide eventuell -->
+
+## Farbwahrnehmung (Begriffe)
+
+- **Leuchtdichte:** Helligkeit
+- **Farbton:** dominante Wellenlänge
+- **Sättigung:** Erregungseinheit
 
 ## Farbprofil
 
@@ -164,6 +192,13 @@
 - Features = konstruktive Aspekte als Einheit (Eltern-Kind-Beziehung)
 - $\hookrightarrow$ neben geometrischem Informationsgehalt auch technologische, fertigungstechnische oder qualitätsbezogene Aspekte
 
+### Beispiele für Feature-Modellierung
+
+- Rundung (hinzufügen/abtragen)
+- Fase (hinzufügen/abtragen)
+- Bohrung (abtragen)
+- Welle (hinzufügen)
+
 ## Freiheitsgrade
 
 - Möglichkeiten zur Änderung geometrischer Elemente (z.B. in Skizzen, oder Einzelteile in Baugruppen)
@@ -174,11 +209,16 @@
 ## Gammakorrektur
 
 - Korrektur nichtlinearer Kennlinien in Anpassung an das menschlichen Empfinden
+- Kalibriert die Intensität der Anzeige, nicht die Farben
 
 ## Geometrische Schnittstelle
 
 - Realisierung des Datenaustauschs z.B. bei CAD- und DCC-Systemen
-- Beispiele: `JT`, `STEP`, `IGES`, `FBX`, `OBJ`, `Alembic`
+- Beispiele CAD: `JT`, `STEP`, `IGES`
+- Beispiele DCC: `JT`, `FBX`, `OBJ`
+
+<!-- ToDo: Aus welchen geometrischen Elementen ist eine komplexe Geometrie aufgebaut? -->
+<!-- ToDo: Step als Bsp eventuell genauer -->
 
 ## Grafikpipeline
 
@@ -192,6 +232,9 @@
 - Clipping
 - Rasterisierung
 - Shader
+
+![Grafik-Pipeline 2D](assets/grafikpipeline-2d.png)
+![Grafik-Pipeline 2D](assets/grafikpipeline-3d.png)
 
 > Alternativ: **Rendering Pipeline**
 
@@ -250,11 +293,16 @@
 - Werkzeug- und Betriebsmitteldaten
 - Projektplanungsdaten
 - Methoden
+
 ## Internet of Things
 
 - physische und virtuelle Objekte werden miteinander vernetzt
 
 > Alternativ: **IoT**
+
+## JT
+
+<!--ToDo: Inhalte von Folien übernehmen Skript B S. 27 -->
 
 ## Kernelmodellierer
 
@@ -264,8 +312,8 @@
 
 ## Komprimierung (Bildkompression)
 
-Hier für die verlustfreie oder verlustbehaftete Komprimierung in Dateiformaten (speziell für Pixelgrafiken). z. B. RLE, JPEG oder Wavlet.
-![Bildkomprimierung](assets/bildkomprimierung.png)
+> verlustfreie oder verlustbehaftete Komprimierung in Dateiformaten (speziell für Pixelgrafiken)
+> z.B. RLE, JPEG oder Wavlet
 
 ## Koordinatentransformationen
 
@@ -291,12 +339,7 @@ wir behandeln:
 ## Lichtquellen (Lichttypen)
 
 - verschiedene Lichtausbreitungsberechnungen (Energieerhaltung)
-- siehe Image Based Lighting
-
-## Mach-Band-Effekt (Machsche Streifen oder Machsche Bänder)
-
-- Verstärkung des Kontrastes zwischen unterschiedlich hellen Flächen
-- Kontrastphänomen, dass Farben aufgrund der Nachbarfarben heller oder dunkler wirken
+- z.B.: Richtungslicht, Punktlicht, Spotlicht, Umgebungslicht (s. Image Based Lighting)
 
 ## Material-Beschreibung
 
@@ -337,6 +380,10 @@ wir behandeln:
 ![Objektraum](assets/objektraum.png)
 
 ## Phong-Beleuchtungsmodell
+
+> nicht relevant
+
+<!-- md2apkg split -->
 
 - einfaches Modell zur Berechnung der Schattierung von Oberflächen
 - drei Komponenten: diffuse, spekuläre und ambiente Reflektion
@@ -389,6 +436,12 @@ wir behandeln:
 > Produktions-Planungs-System
 
 ![PPS](assets/pps.png)
+
+## PMI
+
+> **P**roduct **M**anufacturing **I**nformation
+
+<!-- ToDo: Infos erggänzen-->
 
 ## Produktentstehungsprozess (PEP)
 
