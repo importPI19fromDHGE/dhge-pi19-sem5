@@ -542,3 +542,12 @@ Farbmischung
 
 - Splines und B-Splines können durch Interpolation beschrieben werden
   - > finde Funktion, die durch die Punkte geht
+
+## Texturen und Mapping
+
+- definieren Gestalt der Oberfläche von Objekten
+
+## grundlegende Vorgehensweise 3DS Max
+
+- Modellierung $\rightarrow$ Beleuchtung $\rightarrow$ Kamera $\rightarrow$ Material $\rightarrow$
+Import/Export Pixelgrafik $\rightarrow$ Rendering mit Scanline oder Arnold
