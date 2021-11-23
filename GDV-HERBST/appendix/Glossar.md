@@ -39,7 +39,7 @@
 
 - in CAD & DCC-Systemen
 - Funktionen, die stückweise aus Polynomen höchsten n-ten Grades zusammengesetzt sind
-- beschreiben Schriftarten in der Computergrafik
+- beschreiben u. a. Schriftarten in der Computergrafik
 
 ## Beleuchtungsmodell
 
@@ -84,6 +84,8 @@
 
 - **C**omputer-**a**ided **E**ngineering
 - Rechnergestützte Entwicklung (CAD)
+- alle Varianten der Rechner-Unterstützung von Arbeitsprozessen in der Technik (Wikipedia)
+- Analyse der entworfenen Visualisierung
 
 ## CAM
 
@@ -105,7 +107,7 @@
 
 - Verarbeitung und Analyse von Bildern, um:
   - Inhalt zu verstehen
-  - geometrische Informationen zu extrahieren
+  - geometrische Informationen zu extrahieren (Umwandlung: Bildraum \rightarrow\rightarrow Objektraum)
 - z.B. Objekterkennung, Vermessung geometrischer Strukturen (3D-Scan)
 
 ## CSG
@@ -140,7 +142,7 @@
 
 - z.B. RGB, CMYK, HSV, ...
 - definieren eine abstrakte Darstellung von Farben $\rightarrow$ Berechenbarkeit
-- innerhalb der Modelle sind allen Farben eindeutige Zahlenwerte zugeordnet
+- innerhalb der Modelle sind allen Farben eindeutigen Zahlenwerten zugeordnet
 
 ## Farbprofil
 
@@ -164,18 +166,18 @@
 
 ## Freiheitsgrade
 
-- Möglichkeiten zur Änderung geometriescher Elemente (z.B. in Skizzen und Einzelteile in Baugruppen)
+- Möglichkeiten zur Änderung geometrischer Elemente (z.B. in Skizzen, oder Einzelteile in Baugruppen)
 - Auch z.B. bei möglichen Bewegungen von Robotern oder Werkzeugmaschinen
 
 > Alternativ: **DoF - Degree of Freedom**
 
 ## Gammakorrektur
 
-- Korrektur nichtlinearen Kennlinien in Anpassung an das menschlichen Empfinden
+- Korrektur nichtlinearer Kennlinien in Anpassung an das menschlichen Empfinden
 
 ## Geometrische Schnittstelle
 
-- Realisierung des Datenaustauschs z. B. bei CAD- und DCC-Systemen
+- Realisierung des Datenaustauschs z.B. bei CAD- und DCC-Systemen
 - Beispiele: `JT`, `STEP`, `IGES`, `FBX`, `OBJ`, `Alembic`
 
 ## Grafikpipeline
@@ -195,7 +197,7 @@
 
 ## Grafische Schnittstelle
 
-- Plattform- und programmiersprachenübergreifenden Programmierschnittstelle zur Entwicklung von 2D- und 3D-Computergrafikanwendungen
+- Plattform- und programmiersprachenübergreifende Programmierschnittstelle zur Entwicklung von 2D- und 3D-Computergrafikanwendungen
 - Beispiele: `DirectX`/`Direct3D`, `OpenGL`, `Vulkan`, `Metal`
 
 ## Graphisches Kernsystem (GKS)
@@ -216,7 +218,7 @@
 
 ## indizierte Farben
 
-- Datenstruktur jedes Pixels enthält Index eines Eintrages einer Farbtabelle (nicht direkt einzelnen Farbwerte!)
+- Datenstruktur jedes Pixels enthält Index eines Eintrages einer Farbtabelle (nicht direkt einzelne Farbwerte!)
 
 > Alternativ: **Farbpalette**
 
@@ -267,14 +269,14 @@ Hier für die verlustfreie oder verlustbehaftete Komprimierung in Dateiformaten 
 
 ## Koordinatentransformationen
 
-- Koordinaten eines Punktes in einem Koordinatensystem dessen Koordinaten in einem anderen Koordinatensystem berechnet
+- Koordinaten eines Punktes in einem Koordinatensystem, dessen Koordinaten in einem anderen Koordinatensystem berechnet werden
 
 wir behandeln:
 
 - Translation
 - Rotation
 - Skalierung
-- Spieglung
+- Spiegelung
 - Scherung
 
 ## Leuchtdichte (Luminance)
@@ -303,7 +305,7 @@ wir behandeln:
 - abhängig vom eingesetzten Berechnungsverfahren (Renderer)
 - Anforderungen an den Datenaustausch (siehe Geometrische Schnittstellen)
 - neue Anforderungen für Echtzeitvisualisierungen
-- einfache Modelle z.B. für Phon Beleuchtungsmodell und Phong Shading
+- einfache Modelle z.B. für Phong-Beleuchtungsmodell und Phong-Shading
 - Wechsel zu physikbasierten Materialbeschreibungen z.B. MDL
 
 ## Mechatronik
@@ -429,7 +431,7 @@ wir behandeln:
 
 ## Texture mapping (Mapping)
 
-- platzieren von Grafiken auf Oberflächen
+- Platzieren von Grafiken auf Oberflächen
 - Zuordnung von Texturkoordinaten (UVW) zu Objekt- bzw. Flächenkoordinaten (XYZ)
 
 ## Tiefenkanal (Z-Abstand oder depth channel)
