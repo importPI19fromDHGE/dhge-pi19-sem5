@@ -25,6 +25,13 @@ computer-aided Engineering (CAE)
 
 Verbindung Mechanik (MCAD) mit Elektronik (ECAD) und Software
 
+## Nennen Sie die Phasen des Produktlebenszyklus
+
+- Produkt**entstehung**
+- Produkt**vertrieb**
+- Produkt**nutzung**
+- Produkt**recycling** und -**entsorgung**
+
 ## Wofür steht PDM/PLM?
 
 - Product-Lifecycle-Management(PLM)
@@ -159,6 +166,44 @@ Außerdem: Gründe für Änderungen, Lieferant
 - Siemens NX
 - CATIA
 
+## Nennen Sie Beispiele für CAD-Kernel
+
+- Parasolid (Siemens)
+- Granite One (PTC)
+- ACIS (Spatial / Dassault Systemes)
+
+## Aufbau von CAD-Systemen
+
+- Grafikkernel
+- Programmierschnittstellen (API)
+- Benutzeroberfläche (UI)
+  - Geometrie-Solver
+- grafische Schnittstellen
+  - DirectX, OpenGL, ...
+- geometrische Schnittstellen
+  - Dateiformate
+    - STEP, JT, STL, ...
+
+## Besonderheiten CAD-Rechner
+
+- High-Performance-PCs erforderlich
+  - High-End GPU (z.B. NVidia Quattro, AMD Radeon Pro)
+  - \>32, besser 64 GB RAM
+  - Multicore CPU mit hoher Taktrate
+
+### besondere E/A-Komponenten beim CAD-Rechner
+
+- Spacemouse zur erleichterten Bedienung
+- 3D-Drucker
+- VR/AR Systeme (Microsoft HoloLens)
+
+## Grafikstandards- bzw. Schnittstellen
+
+- GKS (Grafisches Kernsystem)
+- OpenGL
+- DirectX (Graphics)
+- Vulkan
+
 ## Welche Betriebssysteme stehen für CAD-Systeme bevorzugt zur Verfügung?
 
 Windows, macOS (Linux als Ausnahme)
@@ -195,6 +240,28 @@ Windows, macOS (Linux als Ausnahme)
 
 - Kombination graphischer Primitive zur Bildung komplexer Geometrien
 
+## Nennen Sie 2D-Grundelemente
+
+- Kreis
+- Rechteck
+- Dreieck
+
+## Nennen Sie 3D-Grundelemente
+
+- Quader, Zylinder
+- Kugel, Kreisring
+
+## Volumenmodelle
+
+- Erweiterung des Flächenmodells
+- Beschreibung der geometrischen Eigenschaften eines 3D-Grundelements
+
+## Was sind Formelemente?
+
+- Manipulation von geometrischen 3D-Grundelementen
+  - durch Boolsche Operatoren
+  - durch Features
+
 ## Aus welchen geometrischen Elementen ist eine komplexe Geometrie aufgebaut?
 
 - Einzelteile bestehen aus Volumen
@@ -205,6 +272,17 @@ Windows, macOS (Linux als Ausnahme)
 ## Woran erkennt man schnell die Komplexität der Darstellung einer Geometrie?
 
 - Vertices anzeigen lassen (Ecken eines Polygons)
+
+## Was versteht man unter Tesselierung/Tesselation und wann wird sie angewendet?
+
+- Zerlegung einer exakten Geometrie in ebene Flächen (meist Dreiecke)
+- beim Datenaustausch (JT-Format, DCC-Formate)
+
+## was versteht man unter Level of Detail?
+
+- Detailgrad der Darstellung eines 3D-Modells
+- vor allem bei Export eines 3D-Modells/Umwandlung in Neutralformat
+- siehe JT Streaming
 
 ## Worum handelt es sich bei geometrischen Randbedingungen?
 
