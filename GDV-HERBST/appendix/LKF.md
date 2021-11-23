@@ -540,7 +540,8 @@ Farbraum, Farbprofil, CIE-Diagramm, Weißpunkt
 ## Interpolation
 
 - Splines und B-Splines können durch Interpolation beschrieben werden
-  - >finde Funktion, die durch die Punkte geht
+
+> finde Funktion, die durch die Punkte geht
 
 ## Texturen und Mapping
 
