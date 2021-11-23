@@ -459,4 +459,86 @@ $$
 
 ## 2D-, 3D-Grafikpipeline
 
+![2D-/3D-Grafikpipeline](./assets/grafikpipeline.png)
 
+## Bildauflösung, Bildschirmgrößen, Seitenverhältnisse
+
+- Begriff mehrdeutig:
+  - physikalisch: Pixel pro LE
+  - umgangssprachlich: Höhe und Breite in Pixeln
+- beliebte Formate [in der Wikipedia](https://de.wikipedia.org/wiki/Bildaufl%C3%B6sung#/media/Datei:Vector_Video_Standards.svg)
+
+## Dithering, Antialiasing und Aliasing
+
+- Dithering/Fehlerdiffusion:
+  - Technik in der Computergrafik um bei Bildern mit verringerter Farbtiefe die Illusion einer größeren Farbtiefe zu erzeugen
+    - d.h. mit Mustern größere Farbtiefe antäuschen
+- Aliasing/Kantenentstehung:
+  - unerwünschte Effekte, welche bei der Erzeugung von Computergrafiken aufgrund der begrenzten Pixelanzahl entstehen
+    - Treppeneffekt
+    - vgl. Kreis durch Pixel dargestellt
+- Antialiasing/Kantenglättung:
+  - Verminderung von unerwünschten Effekten die durch das begrenzte Pixelraster entstehen würden
+  - Bildinhalte werden nicht mehr nur an Pixeln sondern auch an anderen Positionen ausgewertet
+
+## Farbe, Farbton, Sättigung
+
+- Farbe: vermittelter Sinneseindruck (durch Zäpfchen)
+- Farbton: durch dominante Wellenlänge definiert
+- Sättigung: Intensität und Reinheit eines Farbtons
+
+## Licht-, Schattenberechnung, Leuchtdichte
+
+- Lichtberechnung: Lichtstrahlen von Leuchtquelle aus
+- Schattenberechnung: TODO
+- Leuchtdichte: Lichtstärke pro Fläche
+- Sichtbares Licht: Wellenlängen zwischen 400nm und 780nm
+
+## Lichtquellen, Lichtausbreitung
+
+- die Sonne<!--praise the sun!-->, Punktlicht, Spotlicht, Netzlicht
+- Ausbreitung abhängig vom Lichtquelle
+
+## Farbraum, Farbprofil, CIE-Diagramm
+
+- CIE-Diagramm: Farbraum, der vom menschl. Auge wahrgenommen werden kann
+- TODO
+
+## TODO
+
+Farbraum, Farbprofil, CIE-Diagramm, Weißpunkt
+
+- Farbmodelle RGB, CMYK, HSV, Umrechnung, Darstellungen, additive und subtraktive
+Farbmischung
+- Farbtiefe, Alpha-Kanal und Transparenz, Tiefeninformationen (Z-Abstand)
+
+## Dateiformate, Komprimierung (DCC)
+
+- verlustfreie und verlustbehaftete Komprimierung
+  - JPEG-Artefakte, ...
+- `.max`, `JT`, `FBX`, `OBJ`
+
+## Dateiformate, Komprimierung (CAx)
+
+- verlustfreie und verlustbehaftete Komprimierung
+  - Verluste u.a.: Tesselierung, keine Historie, komplexe Geometrie durch Primitive abgebildet
+- Neutralformate: `JT`, `STEP`, `MTL`
+- Dateiformate: `CAT`, `CATpart`, Bauteil: `IPT`, Baugruppe: `IAM`
+
+## Polygonzug
+
+- Kantenzug durch mehrere Punkte $\rightarrow$ offener oder geschlossener Polygonzug
+
+## Polygon
+
+- geschlossener Polygonzug $\rightarrow$ schließt Fläche ein
+
+## Spline, B-Spline
+
+- Spline: Polynom n-ten Grades
+  - B-Spline: Vereinfachung von Spline $\rightarrow$ reduziert Komplexität des Spline und somit Berechnungszeit durch Approximation
+
+## Interpolation
+
+- Splines und B-Splines können durch Interpolation beschrieben werden
+  - > finde Funktion, die durch die Punkte geht
