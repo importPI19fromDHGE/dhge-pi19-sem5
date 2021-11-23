@@ -508,8 +508,7 @@ $$
 
 Farbraum, Farbprofil, CIE-Diagramm, Weißpunkt
 
-- Farbmodelle RGB, CMYK, HSV, Umrechnung, Darstellungen, additive und subtraktive
-Farbmischung
+- Farbmodelle RGB, CMYK, HSV, Umrechnung, Darstellungen, additive und subtraktive Farbmischung
 - Farbtiefe, Alpha-Kanal und Transparenz, Tiefeninformationen (Z-Abstand)
 
 ## Dateiformate, Komprimierung (DCC)
@@ -541,7 +540,7 @@ Farbmischung
 ## Interpolation
 
 - Splines und B-Splines können durch Interpolation beschrieben werden
-  - > finde Funktion, die durch die Punkte geht
+  - >finde Funktion, die durch die Punkte geht
 
 ## Texturen und Mapping
 
@@ -550,4 +549,4 @@ Farbmischung
 ## grundlegende Vorgehensweise 3DS Max
 
 - Modellierung $\rightarrow$ Beleuchtung $\rightarrow$ Kamera $\rightarrow$ Material $\rightarrow$
-Import/Export Pixelgrafik $\rightarrow$ Rendering mit Scanline oder Arnold
+- Import/Export Pixelgrafik $\rightarrow$ Rendering mit Scanline oder Arnold
