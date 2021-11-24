@@ -460,19 +460,43 @@ $$
 
 ## Aus welchen Reflexionsanteilen setzt sich das Beleuchtungsmodell nach Phong zusammen? Wie werden die Faktoren für reale Materialien ermittelt?
 
-- diffuse Reflektion
-- spekuläre Reflektion
+- Annahmen:
+  - Lichtquellen sind punktförmig
+  - Geometrie der Oberflächen wird weitestgehend ignoriert
+  - diffuse und spiegelnde Reflexion nur lokal modelliert
+  - ambiente Reflexion global modelliert
+  - bei mehreren Lichtquellen Einzelberechnung dann aufsummieren
+  - Faktoren für reale Materialien sind abhängig von ihrer Rauheit
+
+- diffuse Reflektion:
+  - abhängig von:
+    - Einfallsswinkel des Punktlichtstrahls
+    - Materialkonstante (Reflexionsfaktor)
+  - unabhängig von:
+    - Blickwinkel des Betrachters
+- spekuläre / spiegelnde Reflektion
+  - abhängig von:
+    - Einfallswinkel des Lichtstrahls
+    - Reflexionsfaktor für spiegelnde Komponente
+    - Oberflächenbeschaffenheit
+    - Blickwinkel des Betrachters
 - ambiente Reflektion
+  - abhängig von:
+    - Stärke des Umgebungslichts
+    - Reflexionsfaktor des Materials
+  - unabhängig von:
+    - Einfallswinkel des Lichtstrahls
+    - Blickwinkel des Betrachters
 
-**TODO: Wie ordnet man die Dinge hier zu?**
-
+<!--genaue Einordnung des Folgenden auch mir unklar.-->
 - ideal spiegelnd
 - gerichtet diffus
 - ideal diffus
 
 ## Wie werden die Berechnungsverfahren wie Phong, Metal, Blinn usw. aus technischer Sicht bezeichnet?
 
-- TODO
+- empirisches Modell: keine physikalische Grundlage
+- lokales Modell: keine Wechselwirkungen zwischen verschiedenen Gegenständen und Oberflächen in der Szene
 - Beleuchtungsmodell/Shading Models
 - Nutzung Halfway-Vektoren
 
