@@ -21,9 +21,23 @@ computer-aided Engineering (CAE)
   - Produktentwicklung
     - Produktentwurf
 
+## virtuelle Prototypen, rapid prototyping, additive manufacturing
+
+- schnelle Entwicklung von Protoypen im Objektraum
+- Simulation des Prototypen mit allen Eigenschaften des realen Produkts
+- Rapid Prototyping ist die schnelle Herstellung eines Musters oder Modells eines Bauteils
+- 3D-Druck/additive Fertigung beschreibt Fertigungsverfahren, bei welchen Material Schicht für Schicht aufgetragen wird mit dem Ziel dreidimensionale Gegenstände zu realisieren
+
 ## Was versteht man unter "Mechatronik"?
 
 Verbindung Mechanik (MCAD) mit Elektronik (ECAD) und Software
+
+## Nennen Sie die Phasen des Produktlebenszyklus
+
+- Produkt**entstehung**
+- Produkt**vertrieb**
+- Produkt**nutzung**
+- Produkt**recycling** und -**entsorgung**
 
 ## Wofür steht PDM/PLM?
 
@@ -33,7 +47,7 @@ Verbindung Mechanik (MCAD) mit Elektronik (ECAD) und Software
 
 ## Was ist das Ziel eines PDM- bzw. PLM-Systems?
 
->Unternehmen erhoffen sich vom PLM eine verbesserte Kontrolle über die diversen Prozesse, die in jedem Teil eines Lebenszyklus erforderlich sind, und damit auch transparente Aufwände und Erträge. ([Wikipedia](https://de.wikipedia.org/wiki/Product-Lifecycle-Management))
+> Unternehmen erhoffen sich vom PLM eine verbesserte Kontrolle über die diversen Prozesse, die in jedem Teil eines Lebenszyklus erforderlich sind, und damit auch transparente Aufwände und Erträge. ([Wikipedia](https://de.wikipedia.org/wiki/Product-Lifecycle-Management))
 
 - Verkürzung des Zyklus in bestimmten Teil-Bereichen
 - Optimierung der Effizienz der Herstellung
@@ -159,6 +173,44 @@ Außerdem: Gründe für Änderungen, Lieferant
 - Siemens NX
 - CATIA
 
+## Nennen Sie Beispiele für CAD-Kernel
+
+- Parasolid (Siemens)
+- Granite One (PTC)
+- ACIS (Spatial / Dassault Systemes)
+
+## Aufbau von CAD-Systemen
+
+- Grafikkernel
+- Programmierschnittstellen (API)
+- Benutzeroberfläche (UI)
+  - Geometrie-Solver
+- grafische Schnittstellen
+  - DirectX, OpenGL, ...
+- geometrische Schnittstellen
+  - Dateiformate
+    - STEP, JT, STL, ...
+
+## Besonderheiten CAD-Rechner
+
+- High-Performance-PCs erforderlich
+  - High-End GPU (z.B. NVidia Quattro, AMD Radeon Pro)
+  - \>32, besser 64 GB RAM
+  - Multicore CPU mit hoher Taktrate
+
+### besondere E/A-Komponenten beim CAD-Rechner
+
+- Spacemouse zur erleichterten Bedienung
+- 3D-Drucker
+- VR/AR Systeme (Microsoft HoloLens)
+
+## Grafikstandards- bzw. Schnittstellen
+
+- GKS (Grafisches Kernsystem)
+- OpenGL
+- DirectX (Graphics)
+- Vulkan
+
 ## Welche Betriebssysteme stehen für CAD-Systeme bevorzugt zur Verfügung?
 
 Windows, macOS (Linux als Ausnahme)
@@ -195,6 +247,28 @@ Windows, macOS (Linux als Ausnahme)
 
 - Kombination graphischer Primitive zur Bildung komplexer Geometrien
 
+## Nennen Sie 2D-Grundelemente
+
+- Kreis
+- Rechteck
+- Dreieck
+
+## Nennen Sie 3D-Grundelemente
+
+- Quader, Zylinder
+- Kugel, Kreisring
+
+## Volumenmodelle
+
+- Erweiterung des Flächenmodells
+- Beschreibung der geometrischen Eigenschaften eines 3D-Grundelements
+
+## Was sind Formelemente?
+
+- Manipulation von geometrischen 3D-Grundelementen
+  - durch Boolsche Operatoren
+  - durch Features
+
 ## Aus welchen geometrischen Elementen ist eine komplexe Geometrie aufgebaut?
 
 - Einzelteile bestehen aus Volumen
@@ -202,9 +276,27 @@ Windows, macOS (Linux als Ausnahme)
 - Flächen bestehen aus Kanten
 - Kanten bestehen aus Punkten
 
+## Vorgehensweise Modellierung mit Inventor
+
+- Erstellung von 2D-Skizzen (Constraints, Bemaßung)
+- Erstellung von 3D-Modelle auf Basis der 2D-Skizzen (Extrusion)
+- Bearbeiten der 3D-Elemente mit Hilfe von Features und Boolschen Operationen
+- ggf. weitere Skizzen auf 3D-Element erstellen
+
 ## Woran erkennt man schnell die Komplexität der Darstellung einer Geometrie?
 
 - Vertices anzeigen lassen (Ecken eines Polygons)
+
+## Was versteht man unter Tesselierung/Tesselation und wann wird sie angewendet?
+
+- Zerlegung einer exakten Geometrie in ebene Flächen (meist Dreiecke)
+- beim Datenaustausch (JT-Format, DCC-Formate)
+
+## was versteht man unter Level of Detail?
+
+- Detailgrad der Darstellung eines 3D-Modells
+- vor allem bei Export eines 3D-Modells/Umwandlung in Neutralformat
+- siehe JT Streaming
 
 ## Worum handelt es sich bei geometrischen Randbedingungen?
 
@@ -227,9 +319,24 @@ Windows, macOS (Linux als Ausnahme)
 
 ## Was versteht man unter "Parametric Design"?
 
-<!--Quatsch-->
-
+- Algorithmen-basierte Gestaltung bei denen Parameter und Regeln definiert werden, die den Zusammenhang zwischen Designgedanken und Designoutcome beschreiben
 - Parameter können editiert werden, Komponente passt sich entsprechend an
+- Inventor: unter Verwendung des Parameter-Editors
+  - Nutzung von Variablen zur Bemaßung
+
+## Was sind Skizziertechniken (CAD)?
+
+- Anfertigen einer 2D-Skizze als Basis für 3D-Modell
+- mit Unterstützung des Solvers
+
+## Was sind Bauteile?
+
+- einzeln und zusammenhängendes 3D-Modell
+- besteht aus (Grund)elementen und Features
+
+## Was sind Baugruppen?
+
+- bestehen aus Bauteilen (n-fache Verwendung eines Bauteils möglich)
 
 ## Was ist das Ziel geometrischer Grundelemente im 2D- und 3D-Bereich?
 
@@ -284,6 +391,15 @@ Windows, macOS (Linux als Ausnahme)
 
 ## Welche (Farb-)Werte können Sie mit Hilfe des HLS/HSL-Modells verändern/definieren?
 
+- **H**=Hue (Farbton)
+- **L**=Lightness (Helligkeit)
+- **S**=Saturation (Sättigung)
+  - sechseckige Doppelpyramide
+
+- HSV (Hue Saturation Value)
+  - sechseckige Pyramide
+  - halbe Zylinder / Kegel
+
 ## Was beschreibt das CIE-Farbwertdiagramm?
 
 - alle Farben, die der Mensch sehen kann
@@ -297,7 +413,7 @@ Windows, macOS (Linux als Ausnahme)
 ## Erklären Sie additive und subtraktive Farbmischung
 
 - additiv: Farben leuchten selbst, wenn alle leuchten erhalten wir weiß, wenn keine leuchten schwarz
-- subtraktiv: Farben sind auf reflektiertes Licht hingewiesen, verwenden daher Komplementärfarben von RGB $\rightarrow$ CMY
+- subtraktiv: Farben sind auf reflektiertes Licht angewiesen, verwenden daher Komplementärfarben von RGB $\rightarrow$ CMY
 
 ## Welche Typen von Lichtquellen werden beispielhaft unterschieden? Warum werden unterschiedliche Typen definiert?
 
@@ -327,13 +443,52 @@ $$
 
 ## Erklären Sie die Unterschiede zwischen Farbmodell, Farbraum und Farbprofil. (und Verbindungen der einzelnen Sachen)
 
+- **Farbmodell**
+  - entsteht aus dem **abstrakten Farbsystem** meist **dreidimensional** für die praktische Darstellung, die unterschiedliche Formen haben kann.
+  - Innerhalb der Modelle: eindeutige Farben $\leftrightarrow$ Zahlenwerte zugeordnet
+- **Farbraum** einer farbgebenden Methode
+  - möglichst **alle Farben**, die innerhalb des Farbmodells **darstellbar** sind
+- **Farbprofil**
+  - **Farben von einem Farbraum in einen anderen Farbraum übersetzen**
+  - ohne dass die Farbechtheit der Ausgangsvorlage dadurch leidet.
+  - Ziel: **unveränderte Farbwiedergabe** auf allen Ausgabegeräten
+
+> Alle Farben eines Farbmodells, die durch eine farbgebende Methode tatsächlich ausgegeben werden können, werden in dem dreidimensionalen Farbraum dargestellt. Jede farbgebende Methode hat ihren eigenen Farbraum.
+
+[Wikipedia](https://de.wikipedia.org/wiki/Farbraum)
+[Allbranded](https://www.allbranded.de/Farbprofil/)
+
 ## Aus welchen Reflexionsanteilen setzt sich das Beleuchtungsmodell nach Phong zusammen? Wie werden die Faktoren für reale Materialien ermittelt?
 
-- diffuse Reflektion
-- spekuläre Reflektion
-- ambiente Reflektion
+- Annahmen:
+  - Lichtquellen sind punktförmig
+  - Geometrie der Oberflächen wird weitestgehend ignoriert
+  - diffuse und spiegelnde Reflexion nur lokal modelliert
+  - ambiente Reflexion global modelliert
+  - bei mehreren Lichtquellen Einzelberechnung dann aufsummieren
+  - Faktoren für reale Materialien sind abhängig von ihrer Rauheit
 
-**TODO: Wie ordnet man die Dinge hier zu?**
+- diffuse Reflektion:
+  - abhängig von:
+    - Einfallsswinkel des Punktlichtstrahls
+    - Materialkonstante (Reflexionsfaktor)
+  - unabhängig von:
+    - Blickwinkel des Betrachters
+- spekuläre / spiegelnde Reflektion
+  - abhängig von:
+    - Einfallswinkel des Lichtstrahls
+    - Reflexionsfaktor für spiegelnde Komponente
+    - Oberflächenbeschaffenheit
+    - Blickwinkel des Betrachters
+- ambiente Reflektion
+  - abhängig von:
+    - Stärke des Umgebungslichts
+    - Reflexionsfaktor des Materials
+  - unabhängig von:
+    - Einfallswinkel des Lichtstrahls
+    - Blickwinkel des Betrachters
+
+<!--genaue Einordnung des Folgenden auch mir unklar.-->
 
 - ideal spiegelnd
 - gerichtet diffus
@@ -341,10 +496,149 @@ $$
 
 ## Wie werden die Berechnungsverfahren wie Phong, Metal, Blinn usw. aus technischer Sicht bezeichnet?
 
+- empirisches Modell: keine physikalische Grundlage
+- lokales Modell: keine Wechselwirkungen zwischen verschiedenen Gegenständen und Oberflächen in der Szene
+- Beleuchtungsmodell/Shading Models
+- Nutzung Halfway-Vektoren
+
 ## Welche Bedeutung haben die grafischen Schnittstellen OpenGL, DirectX/3D?
+
+- Gemeinsamkeiten:
+  - CG-APIs zum Rendern von 2D und 3D CG.
+  - GPU hat normalerweise mindestens eine der beiden implementiert
+- **OpenGL**
+  - offener Standard (größtenteils)
+  - Cross-Platform
+  - OpenGL-ähnliche Bibliotheken für viele Unix-basierte Systeme
+    - Mac OS X, Linux, Nintendo, Sony
+  - Teilmenge von OpenGL als Haupt-Grafikbibliothek:
+    - Android, BlackBerry, iOS [..]
+- **DirectX / Direct3D**
+  - proprietäre Lizenz
+  - Microsoft $\rightarrow$ Windows, Xbox
+
+- TODO
+
+[Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_OpenGL_and_Direct3D)
 
 ## Welche Bestandteile des JT-Datenformates können Sie benennen?
 
+> JT (Jupiter Tesselation) ist ein ISO-Standard-Grafikformat für 3D-Daten.
+
+Das Datenmodell unterstützt unterschiedlichste Repräsentationen der CAD-Geometrie:
+
+- „tesselierte“ Dreiecksflächen-Geometrie
+- „exakte“ Brep-Geometrie: JT-BREPs; XT-BREPs; LIBRA-Format (stark komprimieret, verlustbehaftetet)
+
+**Szenengraph** mit CAD-spezifischen Knoten und Attribute-Unterstützung
+
+- Facetteninformation (**Dreiecke**) ausgereiften Kompressionstechniken.
+- mathematisch **exakte Geometriedefinition**
+- Produktstruktur, **Produkt- und Fertigungsinformation** (PMI),
+- **visuelle Attribute** wie Licht, Textur und Shader
+- **Metadaten**
+
 ## Worum handelt es sich bei der Abkürzung "BREP"?
 
+> **B**oundary **Rep**resentation, ist eine Darstellungsform eines Flächen- oder Volumenmodells, in der Objekte durch ihre begrenzenden Oberflächen beschrieben werden.
+
 ## Probleme geometrische Schnittstellen/Direktschnittstellen/Neutralformate
+
+- manche Daten können in manchen Formaten nicht richtig gespeichert werden
+  - proprietären Sachen von speziellen Programmen
+- Bei Neutralformaten, die nur tesselierte Modelle speichern, geht die BREP verloren.
+
+## 2D-, 3D-Grafikpipeline
+
+![2D-/3D-Grafikpipeline](./assets/grafikpipeline.png)
+
+## Bildauflösung, Bildschirmgrößen, Seitenverhältnisse
+
+- Begriff mehrdeutig:
+  - physikalisch: Pixel pro LE
+  - umgangssprachlich: Höhe und Breite in Pixeln
+- beliebte Formate [in der Wikipedia](https://de.wikipedia.org/wiki/Bildaufl%C3%B6sung#/media/Datei:Vector_Video_Standards.svg)
+
+## Dithering, Antialiasing und Aliasing
+
+- Dithering/Fehlerdiffusion:
+  - Technik in der Computergrafik um bei Bildern mit verringerter Farbtiefe die Illusion einer größeren Farbtiefe zu erzeugen
+    - d.h. mit Mustern größere Farbtiefe antäuschen
+- Aliasing/Kantenentstehung:
+  - unerwünschte Effekte, welche bei der Erzeugung von Computergrafiken aufgrund der begrenzten Pixelanzahl entstehen
+    - Treppeneffekt
+    - vgl. Kreis durch Pixel dargestellt
+- Antialiasing/Kantenglättung:
+  - Verminderung von unerwünschten Effekten die durch das begrenzte Pixelraster entstehen würden
+  - Bildinhalte werden nicht mehr nur an Pixeln sondern auch an anderen Positionen ausgewertet
+
+## Farbe, Farbton, Sättigung
+
+- Farbe: vermittelter Sinneseindruck (durch Zäpfchen)
+- Farbton: durch dominante Wellenlänge definiert
+- Sättigung: Intensität und Reinheit eines Farbtons
+
+## Licht-, Schattenberechnung, Leuchtdichte
+
+- Lichtberechnung: Lichtstrahlen von Leuchtquelle aus
+- Schattenberechnung: TODO
+- Leuchtdichte: Lichtstärke pro Fläche
+- Sichtbares Licht: Wellenlängen zwischen 400nm und 780nm
+
+## Lichtquellen, Lichtausbreitung
+
+- die Sonne<!--praise the sun!-->, Punktlicht, Spotlicht, Netzlicht
+- Ausbreitung abhängig vom Lichtquelle
+
+## Farbraum, Farbprofil, CIE-Diagramm
+
+- CIE-Diagramm: Farbraum, der vom menschl. Auge wahrgenommen werden kann
+- TODO
+
+## TODO
+
+Farbraum, Farbprofil, CIE-Diagramm, Weißpunkt
+
+- Farbmodelle RGB, CMYK, HSV, Umrechnung, Darstellungen, additive und subtraktive Farbmischung
+- Farbtiefe, Alpha-Kanal und Transparenz, Tiefeninformationen (Z-Abstand)
+
+## Dateiformate, Komprimierung (DCC)
+
+- verlustfreie und verlustbehaftete Komprimierung
+  - JPEG-Artefakte, ...
+- `.max`, `JT`, `FBX`, `OBJ`
+
+## Dateiformate, Komprimierung (CAx)
+
+- verlustfreie und verlustbehaftete Komprimierung
+  - Verluste u.a.: Tesselierung, keine Historie, komplexe Geometrie durch Primitive abgebildet
+- Neutralformate: `JT`, `STEP`, `MTL`
+- Dateiformate: `CAT`, `CATpart`, Bauteil: `IPT`, Baugruppe: `IAM`
+
+## Polygonzug
+
+- Kantenzug durch mehrere Punkte $\rightarrow$ offener oder geschlossener Polygonzug
+
+## Polygon
+
+- geschlossener Polygonzug $\rightarrow$ schließt Fläche ein
+
+## Spline, B-Spline
+
+- Spline: Polynom n-ten Grades
+  - B-Spline: Vereinfachung von Spline $\rightarrow$ reduziert Komplexität des Spline und somit Berechnungszeit durch Approximation
+
+## Interpolation
+
+- Splines und B-Splines können durch Interpolation beschrieben werden
+
+> finde Funktion, die durch die Punkte geht
+
+## Texturen und Mapping
+
+- definieren Gestalt der Oberfläche von Objekten
+
+## grundlegende Vorgehensweise 3DS Max
+
+- Modellierung $\rightarrow$ Beleuchtung $\rightarrow$ Kamera $\rightarrow$ Material $\rightarrow$
+- Import/Export Pixelgrafik $\rightarrow$ Rendering mit Scanline oder Arnold

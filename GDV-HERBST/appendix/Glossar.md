@@ -61,7 +61,12 @@
 
 ## Boolsche Operatoren
 
-<!-- ToDo -->
+Werden verwendet, um Formen miteinander zu vereinigen und so neue Formen zu erzeugen.
+Zur Anwendung kommen:
+
+- Vereinigung OR
+- Differenzmenge "A\\B" (NOT?)
+- Schnittmenge AND
 
 ## Boundary Representation (BREP)
 
@@ -94,7 +99,7 @@
 - **C**omputer-**a**ided **E**ngineering
 - Rechnergestützte Entwicklung (CAD)
 - alle Varianten der Rechner-Unterstützung von Arbeitsprozessen in der Technik (Wikipedia)
-- Analyse der entworfenen Visualisierung
+- Analyse der entworfenen Visualisierung z.B. für Anwendung für Thermodynamik, Belastungsanalyse, Flussanalyse von Flüssigkeiten durch die Bauteile
 
 ## CAM
 
@@ -143,20 +148,38 @@
 
 ![Prozesskette](assets/prozesskette.png)
 
+## Digitale Transformation
+
+Der fortlaufende, durch digitale Technologien begründete gesamtgesellschaftliche Veränderungsprozess.
+Betrachtet werden vor allem Auswirkungen auf Wirtschaft und Industrie.
+
 ## Digitaler Zwilling
 
 - digitale Repräsentation eines Objektes aus der realen Welt in der digitalen Welt
+- Beispiele:
+  - Track and Trace in der Logistik
+  - Anwendungen im PLM
 
 ## Dithering
 
 - Erzeugen der Illusion einer größeren Farbtiefe
 - Nachbildung von fehlenden Farben durch bestimmte Pixelanordnung
 
+## e-collaboration
+
+Beschreibt die Maßnahmen zur dezentralen computergestützten Zusammenarbeit von zeitlich und/oder räumlich getrennten Teams und Gruppen, die an einer gemeinsamen Aufgabe arbeiten.
+
+Hier: arbeiten gemeinsam an einem Produkt.
+
+> Quelle [Wikipedia: e-collaboration](https://de.wikipedia.org/wiki/E-Collaboration)
+
 ## ERP
 
-> **E**nterprise **R**esource **P**lanning
+**E**nterprise **R**esource **P**lanning beschreibt Softwarelösungen zur Ressourcenverwaltung und -planung in einem Unternehmen oder einer Organisation.
 
-- betriebswirtschaftliche Softwarelösungen zur Steuerung von Geschäftsprozessen
+Es integriert eine Vielzahl von Geschäftsanwendungen und Betriebsdaten für die Verwaltung in einer zentralen Datenbank.
+
+Hier werden vor allem personelle und finanzielle Ressourcen verwaltet. **PPS**-Systeme können ggf. integriert werden.
 
 ## Farbmodell
 
@@ -255,10 +278,18 @@
 - Bilder mit einem vergrößertem Dynamikumfang
 - z.B. zur Nutzung im Rahmen von Image-based Lighting (IBL)
 
+## Historiengraph
+
+Historiengraph (Modellbaum) beschreibt die vollständige Geometrie und auch die "Entstehungsgeschichte" der Objekte, enthält "Know-how des Konstrukteurs"
+
 ## Image-based Lighting (IBL)
 
 - Bildbasierte Beleuchtungsverfahren für realistischere Beleuchtung
 - meist auf Basis von 360°-Bildern (möglichst HDR-Images)
+
+## Immersion
+
+Der Grad, mit dem eine virtuelle Umgebung als real empfunden wird. Wird durch enstprechende Hardware (VR-Brillen, Interaktionsequipment, ...) erhöht.
 
 ## indizierte Farben
 
@@ -270,6 +301,11 @@
 
 - steht für die vierte industrielle Revolution
 - Technische Grundlage hierfür sind **intelligente und digital vernetzte Systeme**
+- Prinzipien:
+  - Vernetzung
+  - Informationstransparenz
+  - technische Assistenz
+  - dezentrale Entscheidungen
 
 ## Integriertes Produktdatenmodell
 
@@ -297,13 +333,18 @@
 
 ## Internet of Things
 
-- physische und virtuelle Objekte werden miteinander vernetzt
+Das Netzwerk physischer Objekte, die z.B. per Sensoren Daten sammeln und per integrierter Software über das Internet mit anderen Objekten Daten austauschen.
 
 > Alternativ: **IoT**
 
 ## JT
 
-<!--ToDo: Inhalte von Folien übernehmen Skript B S. 27 -->
+- ISO-Standard-Grafikformat für 3D-Daten
+- erweitert CAD um:
+  - PMI (Toleranz- und Fertigungsinformationen)
+  - CAD-Parameter und Atrribute
+  - exakte BREP: Boundary Representation
+  - Facettierung mit schnellem Laden auch für große Baugruppen
 
 ## Kernelmodellierer
 
@@ -354,7 +395,7 @@ wir behandeln:
 
 ## Mechatronik
 
-- Verbindung Mechanik (MCAD), Elektronik (ECAD) und Software
+**Mechatronik** bezeichnet das interdisziplinäre Zusammenwirken von Mechanik/Maschinenbau, Elektronik/Elektrotechnik und Informatik (und weiteren).
 
 ## Metaball-System (blob oder BlobMesh)
 
@@ -380,11 +421,12 @@ wir behandeln:
 
 ![Objektraum](assets/objektraum.png)
 
+## PEP
+
+**P**rodukt**e**ntstehungs**p**rozess: Darstellung und Beschreibung der Arbeitsabläufe von der Produktidee bis Herstellung und Verkauf.
+Normung nach DIN.
+
 ## Phong-Beleuchtungsmodell
-
-> nicht relevant
-
-<!-- md2apkg split -->
 
 - einfaches Modell zur Berechnung der Schattierung von Oberflächen
 - drei Komponenten: diffuse, spekuläre und ambiente Reflektion
@@ -393,6 +435,10 @@ wir behandeln:
 - trotzdem Dank seiner Einfachheit hohe Beliebtheit
 
 ## PLM (Product-Lifecycle-Management)
+
+**P**roduct **L**ifecycle **M**anagement ist ein Management-Ansatz zur Verwaltung aller Daten, die im Lebenszyklus eines Produktes anfallen.
+PLM kann durch EDV unterstützt werden, wobei die Daten schnell und zentral bereitgestellt werden sollen.
+Integration in oder Schnittstellen zu anderen Systemen wie ERP sind sinnvoll, da Daten der CAD, CAE, CAM, ERP, PDM, ..., hier zentral verwaltet werden sollen.
 
 ![PLM](assets/plm.png)
 
@@ -436,19 +482,47 @@ wir behandeln:
 
 > Produktions-Planungs-System
 
+**P**roduct **P**lanning **S**ystems oder Produktplanungs- und Produktsteuerungssysteme sind Softwarelösungen, die die Produktionsplanung und -steuerung unterstützen.
+
+Sie übernehmen die mit dem Prozess verbundene Datenverwaltung.
+
+Ziel:
+
+- kurze Durchlaufzeiten
+- optimale Bestandshöhen
+- Termineinhaltung
+- wirtschaftliche Nutzung der Betriebsmittel
+
 ![PPS](assets/pps.png)
 
 ## PMI
 
 > **P**roduct **M**anufacturing **I**nformation
 
-<!-- ToDo: Infos erggänzen-->
+- Hinzufügen nicht-geometrischer Informationen zum CAD-Modell
+- Beispiele:
+  - Bemaßungen und Toleranzen
+  - Anmerkungen in Textform
+  - Informationen zu Oberflächenbehandlung / Finishing
+  - Materialspezifikationen
 
 ## Produktentstehungsprozess (PEP)
 
 - Bestand ist die Produktentwicklung
 
 ![produktentwicklung](assets/produktentwicklung.png)
+
+## Rapid-prototyping
+
+**Rapid-Prototyping** bezeichnet die schnelle Herstellung eines Musters oder Modells auf Basis von CAD-Daten.
+
+Dies geschieht häufig durch **additive manufacturing**, also z.B. 3D-Druck, wo schichtweise (additiv) das Modell hergestellt wird.
+
+Vorteile:
+
+- frühes Bild, wie das Produkt aussehen wird
+- kostengünstige Prototypherstellung
+- frühe Problemerkennung
 
 ## Rasterung (Rasterisierung oder Scanconversation)
 
@@ -461,6 +535,9 @@ wir behandeln:
 
 - Software zur Berechnung der Bilder
 - Erzeugung eines Bildes aus Rohdaten (geometrische Beschreibungen im 2D- oder 3D-Raum)
+- Beispiele:
+  - Fertigstellen eines Videos aus dem Schnittprogramm
+  - Erstellen einer Grafik aus CAD-Modell
 
 ## Shader
 
@@ -504,3 +581,14 @@ wir behandeln:
 - Problem: zeitgleiche Ver- und Bearbeitung von Daten kann schnell zu Inkonsistenzen im Datenbestand führen
 
 ![Virtuelles_Produkt](assets/virtuellesprodukt.png)
+
+## VR, AR, MR, XR
+
+- **V**irtual Reality: Darstellung und Wahrnehmung einer scheinbaren Wirklichkeit und ihrer Eigenschaften in Echtzeit
+  - z.B. VR-Brillen
+- **A**ugmented **R**eality: computergestützte Erweiterung der Realitätswahrnehmung (durch Einblendung, Überlagerung)
+  - z.B. Pokemon Go
+- **M**ixed **R**eality: Überführung der Realität in virtuelle Realität
+  - durch Devices (Handbewegungen ins Digitale)
+  - durch Kamera (realer Raum ins Digitale)
+- e***X**tended **R**eality: Überbegriff für AR,VR,MR
