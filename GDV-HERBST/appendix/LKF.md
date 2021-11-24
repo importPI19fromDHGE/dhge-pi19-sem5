@@ -47,7 +47,7 @@ Verbindung Mechanik (MCAD) mit Elektronik (ECAD) und Software
 
 ## Was ist das Ziel eines PDM- bzw. PLM-Systems?
 
->Unternehmen erhoffen sich vom PLM eine verbesserte Kontrolle über die diversen Prozesse, die in jedem Teil eines Lebenszyklus erforderlich sind, und damit auch transparente Aufwände und Erträge. ([Wikipedia](https://de.wikipedia.org/wiki/Product-Lifecycle-Management))
+> Unternehmen erhoffen sich vom PLM eine verbesserte Kontrolle über die diversen Prozesse, die in jedem Teil eines Lebenszyklus erforderlich sind, und damit auch transparente Aufwände und Erträge. ([Wikipedia](https://de.wikipedia.org/wiki/Product-Lifecycle-Management))
 
 - Verkürzung des Zyklus in bestimmten Teil-Bereichen
 - Optimierung der Effizienz der Herstellung
@@ -319,8 +319,7 @@ Windows, macOS (Linux als Ausnahme)
 
 ## Was versteht man unter "Parametric Design"?
 
-<!--Quatsch-->
-
+- Algorithmen-basierte Gestaltung bei denen Parameter und Regeln definiert werden, die den Zusammenhang zwischen Designgedanken und Designoutcome beschreiben
 - Parameter können editiert werden, Komponente passt sich entsprechend an
 - Inventor: unter Verwendung des Parameter-Editors
   - Nutzung von Variablen zur Bemaßung
@@ -392,6 +391,15 @@ Windows, macOS (Linux als Ausnahme)
 
 ## Welche (Farb-)Werte können Sie mit Hilfe des HLS/HSL-Modells verändern/definieren?
 
+- **H**=Hue (Farbton)
+- **L**=Lightness (Helligkeit)
+- **S**=Saturation (Sättigung)
+  - sechseckige Doppelpyramide
+
+- HSV (Hue Saturation Value)
+  - sechseckige Pyramide
+  - halbe Zylinder / Kegel
+
 ## Was beschreibt das CIE-Farbwertdiagramm?
 
 - alle Farben, die der Mensch sehen kann
@@ -405,7 +413,7 @@ Windows, macOS (Linux als Ausnahme)
 ## Erklären Sie additive und subtraktive Farbmischung
 
 - additiv: Farben leuchten selbst, wenn alle leuchten erhalten wir weiß, wenn keine leuchten schwarz
-- subtraktiv: Farben sind auf reflektiertes Licht hingewiesen, verwenden daher Komplementärfarben von RGB $\rightarrow$ CMY
+- subtraktiv: Farben sind auf reflektiertes Licht angewiesen, verwenden daher Komplementärfarben von RGB $\rightarrow$ CMY
 
 ## Welche Typen von Lichtquellen werden beispielhaft unterschieden? Warum werden unterschiedliche Typen definiert?
 
@@ -435,13 +443,52 @@ $$
 
 ## Erklären Sie die Unterschiede zwischen Farbmodell, Farbraum und Farbprofil. (und Verbindungen der einzelnen Sachen)
 
+- **Farbmodell**
+  - entsteht aus dem **abstrakten Farbsystem** meist **dreidimensional** für die praktische Darstellung, die unterschiedliche Formen haben kann.
+  - Innerhalb der Modelle: eindeutige Farben $\leftrightarrow$ Zahlenwerte zugeordnet
+- **Farbraum** einer farbgebenden Methode
+  - möglichst **alle Farben**, die innerhalb des Farbmodells **darstellbar** sind
+- **Farbprofil**
+  - **Farben von einem Farbraum in einen anderen Farbraum übersetzen**
+  - ohne dass die Farbechtheit der Ausgangsvorlage dadurch leidet.
+  - Ziel: **unveränderte Farbwiedergabe** auf allen Ausgabegeräten
+
+> Alle Farben eines Farbmodells, die durch eine farbgebende Methode tatsächlich ausgegeben werden können, werden in dem dreidimensionalen Farbraum dargestellt. Jede farbgebende Methode hat ihren eigenen Farbraum.
+
+[Wikipedia](https://de.wikipedia.org/wiki/Farbraum)
+[Allbranded](https://www.allbranded.de/Farbprofil/)
+
 ## Aus welchen Reflexionsanteilen setzt sich das Beleuchtungsmodell nach Phong zusammen? Wie werden die Faktoren für reale Materialien ermittelt?
 
-- diffuse Reflektion
-- spekuläre Reflektion
-- ambiente Reflektion
+- Annahmen:
+  - Lichtquellen sind punktförmig
+  - Geometrie der Oberflächen wird weitestgehend ignoriert
+  - diffuse und spiegelnde Reflexion nur lokal modelliert
+  - ambiente Reflexion global modelliert
+  - bei mehreren Lichtquellen Einzelberechnung dann aufsummieren
+  - Faktoren für reale Materialien sind abhängig von ihrer Rauheit
 
-**TODO: Wie ordnet man die Dinge hier zu?**
+- diffuse Reflektion:
+  - abhängig von:
+    - Einfallsswinkel des Punktlichtstrahls
+    - Materialkonstante (Reflexionsfaktor)
+  - unabhängig von:
+    - Blickwinkel des Betrachters
+- spekuläre / spiegelnde Reflektion
+  - abhängig von:
+    - Einfallswinkel des Lichtstrahls
+    - Reflexionsfaktor für spiegelnde Komponente
+    - Oberflächenbeschaffenheit
+    - Blickwinkel des Betrachters
+- ambiente Reflektion
+  - abhängig von:
+    - Stärke des Umgebungslichts
+    - Reflexionsfaktor des Materials
+  - unabhängig von:
+    - Einfallswinkel des Lichtstrahls
+    - Blickwinkel des Betrachters
+
+<!--genaue Einordnung des Folgenden auch mir unklar.-->
 
 - ideal spiegelnd
 - gerichtet diffus
@@ -449,13 +496,57 @@ $$
 
 ## Wie werden die Berechnungsverfahren wie Phong, Metal, Blinn usw. aus technischer Sicht bezeichnet?
 
+- empirisches Modell: keine physikalische Grundlage
+- lokales Modell: keine Wechselwirkungen zwischen verschiedenen Gegenständen und Oberflächen in der Szene
+- Beleuchtungsmodell/Shading Models
+- Nutzung Halfway-Vektoren
+
 ## Welche Bedeutung haben die grafischen Schnittstellen OpenGL, DirectX/3D?
+
+- Gemeinsamkeiten:
+  - CG-APIs zum Rendern von 2D und 3D CG.
+  - GPU hat normalerweise mindestens eine der beiden implementiert
+- **OpenGL**
+  - offener Standard (größtenteils)
+  - Cross-Platform
+  - OpenGL-ähnliche Bibliotheken für viele Unix-basierte Systeme
+    - Mac OS X, Linux, Nintendo, Sony
+  - Teilmenge von OpenGL als Haupt-Grafikbibliothek:
+    - Android, BlackBerry, iOS [..]
+- **DirectX / Direct3D**
+  - proprietäre Lizenz
+  - Microsoft $\rightarrow$ Windows, Xbox
+
+- TODO
+
+[Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_OpenGL_and_Direct3D)
 
 ## Welche Bestandteile des JT-Datenformates können Sie benennen?
 
+> JT (Jupiter Tesselation) ist ein ISO-Standard-Grafikformat für 3D-Daten.
+
+Das Datenmodell unterstützt unterschiedlichste Repräsentationen der CAD-Geometrie:
+
+- „tesselierte“ Dreiecksflächen-Geometrie
+- „exakte“ Brep-Geometrie: JT-BREPs; XT-BREPs; LIBRA-Format (stark komprimieret, verlustbehaftetet)
+
+**Szenengraph** mit CAD-spezifischen Knoten und Attribute-Unterstützung
+
+- Facetteninformation (**Dreiecke**) ausgereiften Kompressionstechniken.
+- mathematisch **exakte Geometriedefinition**
+- Produktstruktur, **Produkt- und Fertigungsinformation** (PMI),
+- **visuelle Attribute** wie Licht, Textur und Shader
+- **Metadaten**
+
 ## Worum handelt es sich bei der Abkürzung "BREP"?
 
+> **B**oundary **Rep**resentation, ist eine Darstellungsform eines Flächen- oder Volumenmodells, in der Objekte durch ihre begrenzenden Oberflächen beschrieben werden.
+
 ## Probleme geometrische Schnittstellen/Direktschnittstellen/Neutralformate
+
+- manche Daten können in manchen Formaten nicht richtig gespeichert werden
+  - proprietären Sachen von speziellen Programmen
+- Bei Neutralformaten, die nur tesselierte Modelle speichern, geht die BREP verloren.
 
 ## 2D-, 3D-Grafikpipeline
 
