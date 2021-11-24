@@ -53,7 +53,7 @@
 
 ## Bildformate
 
-> `JPG`, `PNG`, `BMP`, `GIF`, `WwebP`
+> `JPG`, `PNG`, `BMP`, `GIF`, `WebP`
 
 ## Bildraum
 
@@ -127,7 +127,7 @@ Zur Anwendung kommen:
 
 - Verarbeitung und Analyse von Bildern, um:
   - Inhalt zu verstehen
-  - geometrische Informationen zu extrahieren (Umwandlung: Bildraum \rightarrow\rightarrow Objektraum)
+  - geometrische Informationen zu extrahieren (Umwandlung: Bildraum $\rightarrow$ Objektraum)
 - z.B. Objekterkennung, Vermessung geometrischer Strukturen (3D-Scan)
 
 ## CSG
@@ -341,7 +341,7 @@ Das Netzwerk physischer Objekte, die z.B. per Sensoren Daten sammeln und per int
 - ISO-Standard-Grafikformat für 3D-Daten
 - erweitert CAD um:
   - PMI (Toleranz- und Fertigungsinformationen)
-  - CAD-Parameter und Atrribute
+  - CAD-Parameter und Attribute
   - exakte BREP: Boundary Representation
   - Facettierung mit schnellem Laden auch für große Baugruppen
 
@@ -412,7 +412,7 @@ Quelle [Wikipedia: Mechatronik](https://de.wikipedia.org/wiki/Mechatronik)
 
 ## NC
 
-> **N**erical **C**ontrol
+> **N**umerical **C**ontrol
 
 - Bearbeitung vollautomatisch und hochpräzise erledigen
 
