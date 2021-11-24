@@ -175,7 +175,7 @@ Hier: arbeiten gemeinsam an einem Produkt.
 
 ## ERP
 
-**E**nterprise **R**essource **P**lanning beschreibt Softwarelösungen zur Ressourcenverwaltung und -planung in einem Unternehmen oder einer Organisation.
+**E**nterprise **R**esource **P**lanning beschreibt Softwarelösungen zur Ressourcenverwaltung und -planung in einem Unternehmen oder einer Organisation.
 
 Es integriert eine Vielzahl von Geschäftsanwendungen und Betriebsdaten für die Verwaltung in einer zentralen Datenbank.
 
