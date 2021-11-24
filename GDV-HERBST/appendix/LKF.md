@@ -447,7 +447,7 @@ $$
 
 - **Farbmodell**
   - entsteht aus dem **abstrakten Farbsystem** meist **dreidimensional** für die praktische Darstellung, die unterschiedliche Formen haben kann.
-  - Innerhalb der Modelle: eindeutige Farben $\leftrightarrow$  Zahlenwerte zugeordnet
+  - Innerhalb der Modelle: eindeutige Farben $\leftrightarrow$ Zahlenwerte zugeordnet
 - **Farbraum** einer farbgebenden Methode
   - möglichst **alle Farben**, die innerhalb des Farbmodells **darstellbar** sind
 - **Farbprofil**
