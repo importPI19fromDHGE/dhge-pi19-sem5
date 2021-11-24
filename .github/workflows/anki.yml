@@ -24,7 +24,7 @@ jobs:
                then name=$name-LKF
                fi
                if [[ $mdPath == *"Glossar"* ]]
-               then name=$name-Glossar
+               then name=$name-GLOSSAR
                fi
                md2apkg -o output/${name}.apkg ${mdPath}
           done
