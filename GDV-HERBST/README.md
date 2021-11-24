@@ -13,6 +13,7 @@ Graphische Datenverarbeitung
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Graphische Datenverarbeitung](#graphische-datenverarbeitung)
 - [Organisatorisches](#organisatorisches)
 - [CAD - Computer Aided Design](#cad---computer-aided-design)
   - [Grundlagen und Glossar](#grundlagen-und-glossar)
@@ -213,7 +214,7 @@ Inhalt:
 - Produktrepräsentation (Eigenschaften über Merkmale ausgedrückt):
   - Geometrie, Topologie
   - FEM, Kinematik
-Produktpräsentation:
+- Produktpräsentation:
   - grafisch, textuell, zeichnerisch
   - multimedial
   - Animationen
