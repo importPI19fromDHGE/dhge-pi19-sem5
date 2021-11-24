@@ -18,10 +18,13 @@ jobs:
       - run: npm install -g md2apkg
       - run: mkdir output
       - run: |
-          for mdPath in $(find . -regextype posix-egrep -regex './[A-Z]*[A-Z]-[A-Z]*[A-Z]/(README|appendix/LKF).md')
+          for mdPath in $(find . -regextype posix-egrep -regex './[A-Z]*[A-Z]-[A-Z]*[A-Z]/(README|appendix/LKF|appendix/Glossar).md')
           do name=$(echo $mdPath | awk -F/ '{print $2}')
                if [[ $mdPath == *"LKF"* ]]
                then name=$name-LKF
+               fi
+               if [[ $mdPath == *"Glossar"* ]]
+               then name=$name-Glossar
                fi
                md2apkg -o output/${name}.apkg ${mdPath}
           done
