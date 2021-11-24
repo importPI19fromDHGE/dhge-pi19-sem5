@@ -489,6 +489,7 @@ $$
     - Blickwinkel des Betrachters
 
 <!--genaue Einordnung des Folgenden auch mir unklar.-->
+
 - ideal spiegelnd
 - gerichtet diffus
 - ideal diffus
