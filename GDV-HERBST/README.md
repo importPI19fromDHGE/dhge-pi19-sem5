@@ -214,15 +214,26 @@ Betrachtet werden vor allem Auswirkungen auf Wirtschaft und Industrie.
 
 Ein Datenmodell, welches das komplette Produkt beschreibt.
 
+Inhalt:
+
+- Produktdefinition:
+  - Identifikation, Klassifikation
+  - Freigabe und Änderungszustände
+- Produktrepräsentation (Eigenschaften über Merkmale ausgedrückt):
+  - Geometrie, Topologie
+  - FEM, Kinematik
+Produktpräsentation:
+  - grafisch, textuell, zeichnerisch
+  - multimedial
+  - Animationen
+
 ### CG
 
-<!--Nur Annahme, was gemeint ist, bestätigt das jemand?-->
-
 **C**omputer **G**raphics: Bildgeneration durch Computersysteme.
+Beschreibt die "Umwandlung von Daten des Objektraumes in grafische Daten des Bildraumes, wozu Methoden wie Balkendiagramme, Ablaufpläne, Karten, Zeichnungen und Schaltpläne
+bis hin zur Illustration dreidimensionaler Objekte zählen."
 
 ### DCC
-
-<!--Auch hier nur Annahme, was gemeint ist, vielleicht auch Dynamic Contrast Control?-->
 
 **D**igital **C**ontent **C**reation: Erstellung multimedialer Inhalte durch Computerunterstützung.
 
@@ -278,14 +289,6 @@ Der Grad, mit dem eine virtuelle Umgebung als real empfunden wird. Wird durch en
 # CG - Computer Graphics
 
 ## CG-Grundlagen
-
-> Umwandlung von Daten des Objektraums in grafische Daten des Bildraumes
-
-- **CG:** Computer Graphics
-- **DCC:** Digital Content Creation
-- **Rendering:** Berechnung der grafischen Ausgabe
-- **Immersion:** Eintauchen in virtuelle Welten
-- **VR/AR/MR/XR:** Virtual-/Augmented-/Mixed-Reality
 
 ## Mathematik
 
