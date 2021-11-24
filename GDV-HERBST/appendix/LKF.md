@@ -21,9 +21,23 @@ computer-aided Engineering (CAE)
   - Produktentwicklung
     - Produktentwurf
 
+## virtuelle Prototypen, rapid prototyping, additive manufacturing
+
+- schnelle Entwicklung von Protoypen im Objektraum
+- Simulation des Prototypen mit allen Eigenschaften des realen Produkts
+- Rapid Prototyping ist die schnelle Herstellung eines Musters oder Modells eines Bauteils
+- 3D-Druck/additive Fertigung beschreibt Fertigungsverfahren, bei welchen Material Schicht für Schicht aufgetragen wird mit dem Ziel dreidimensionale Gegenstände zu realisieren
+
 ## Was versteht man unter "Mechatronik"?
 
 Verbindung Mechanik (MCAD) mit Elektronik (ECAD) und Software
+
+## Nennen Sie die Phasen des Produktlebenszyklus
+
+- Produkt**entstehung**
+- Produkt**vertrieb**
+- Produkt**nutzung**
+- Produkt**recycling** und -**entsorgung**
 
 ## Wofür steht PDM/PLM?
 
@@ -159,6 +173,44 @@ Außerdem: Gründe für Änderungen, Lieferant
 - Siemens NX
 - CATIA
 
+## Nennen Sie Beispiele für CAD-Kernel
+
+- Parasolid (Siemens)
+- Granite One (PTC)
+- ACIS (Spatial / Dassault Systemes)
+
+## Aufbau von CAD-Systemen
+
+- Grafikkernel
+- Programmierschnittstellen (API)
+- Benutzeroberfläche (UI)
+  - Geometrie-Solver
+- grafische Schnittstellen
+  - DirectX, OpenGL, ...
+- geometrische Schnittstellen
+  - Dateiformate
+    - STEP, JT, STL, ...
+
+## Besonderheiten CAD-Rechner
+
+- High-Performance-PCs erforderlich
+  - High-End GPU (z.B. NVidia Quattro, AMD Radeon Pro)
+  - \>32, besser 64 GB RAM
+  - Multicore CPU mit hoher Taktrate
+
+### besondere E/A-Komponenten beim CAD-Rechner
+
+- Spacemouse zur erleichterten Bedienung
+- 3D-Drucker
+- VR/AR Systeme (Microsoft HoloLens)
+
+## Grafikstandards- bzw. Schnittstellen
+
+- GKS (Grafisches Kernsystem)
+- OpenGL
+- DirectX (Graphics)
+- Vulkan
+
 ## Welche Betriebssysteme stehen für CAD-Systeme bevorzugt zur Verfügung?
 
 Windows, macOS (Linux als Ausnahme)
@@ -195,6 +247,28 @@ Windows, macOS (Linux als Ausnahme)
 
 - Kombination graphischer Primitive zur Bildung komplexer Geometrien
 
+## Nennen Sie 2D-Grundelemente
+
+- Kreis
+- Rechteck
+- Dreieck
+
+## Nennen Sie 3D-Grundelemente
+
+- Quader, Zylinder
+- Kugel, Kreisring
+
+## Volumenmodelle
+
+- Erweiterung des Flächenmodells
+- Beschreibung der geometrischen Eigenschaften eines 3D-Grundelements
+
+## Was sind Formelemente?
+
+- Manipulation von geometrischen 3D-Grundelementen
+  - durch Boolsche Operatoren
+  - durch Features
+
 ## Aus welchen geometrischen Elementen ist eine komplexe Geometrie aufgebaut?
 
 - Einzelteile bestehen aus Volumen
@@ -202,9 +276,27 @@ Windows, macOS (Linux als Ausnahme)
 - Flächen bestehen aus Kanten
 - Kanten bestehen aus Punkten
 
+## Vorgehensweise Modellierung mit Inventor
+
+- Erstellung von 2D-Skizzen (Constraints, Bemaßung)
+- Erstellung von 3D-Modelle auf Basis der 2D-Skizzen (Extrusion)
+- Bearbeiten der 3D-Elemente mit Hilfe von Features und Boolschen Operationen
+- ggf. weitere Skizzen auf 3D-Element erstellen
+
 ## Woran erkennt man schnell die Komplexität der Darstellung einer Geometrie?
 
 - Vertices anzeigen lassen (Ecken eines Polygons)
+
+## Was versteht man unter Tesselierung/Tesselation und wann wird sie angewendet?
+
+- Zerlegung einer exakten Geometrie in ebene Flächen (meist Dreiecke)
+- beim Datenaustausch (JT-Format, DCC-Formate)
+
+## was versteht man unter Level of Detail?
+
+- Detailgrad der Darstellung eines 3D-Modells
+- vor allem bei Export eines 3D-Modells/Umwandlung in Neutralformat
+- siehe JT Streaming
 
 ## Worum handelt es sich bei geometrischen Randbedingungen?
 
@@ -231,6 +323,22 @@ Windows, macOS (Linux als Ausnahme)
 
 - TODO
 - Parameter können editiert werden, Komponente passt sich entsprechend an
+- Inventor: unter Verwendung des Parameter-Editors
+  - Nutzung von Variablen zur Bemaßung
+
+## Was sind Skizziertechniken (CAD)?
+
+- Anfertigen einer 2D-Skizze als Basis für 3D-Modell
+- mit Unterstützung des Solvers
+
+## Was sind Bauteile?
+
+- einzeln und zusammenhängendes 3D-Modell
+- besteht aus (Grund)elementen und Features
+
+## Was sind Baugruppen?
+
+- bestehen aus Bauteilen (n-fache Verwendung eines Bauteils möglich)
 
 ## Was ist das Ziel geometrischer Grundelemente im 2D- und 3D-Bereich?
 
@@ -413,5 +521,102 @@ Das Datenmodell unterstützt unterschiedlichste Repräsentationen der CAD-Geomet
 
 ## Probleme geometrische Schnittstellen/Direktschnittstellen/Neutralformate
 
+- manche Daten können in manchen Formaten nicht richtig gespeichert werden, 
+  - proprietären Sachen von speziellen Programmem. 
+- Bei Neutralformaten, die nur tesselierte Modelle speichern, geht die BREP verloren.
+
+## 2D-, 3D-Grafikpipeline
+
+![2D-/3D-Grafikpipeline](./assets/grafikpipeline.png)
+
+## Bildauflösung, Bildschirmgrößen, Seitenverhältnisse
+
+- Begriff mehrdeutig:
+  - physikalisch: Pixel pro LE
+  - umgangssprachlich: Höhe und Breite in Pixeln
+- beliebte Formate [in der Wikipedia](https://de.wikipedia.org/wiki/Bildaufl%C3%B6sung#/media/Datei:Vector_Video_Standards.svg)
+
+## Dithering, Antialiasing und Aliasing
+
+- Dithering/Fehlerdiffusion:
+  - Technik in der Computergrafik um bei Bildern mit verringerter Farbtiefe die Illusion einer größeren Farbtiefe zu erzeugen
+    - d.h. mit Mustern größere Farbtiefe antäuschen
+- Aliasing/Kantenentstehung:
+  - unerwünschte Effekte, welche bei der Erzeugung von Computergrafiken aufgrund der begrenzten Pixelanzahl entstehen
+    - Treppeneffekt
+    - vgl. Kreis durch Pixel dargestellt
+- Antialiasing/Kantenglättung:
+  - Verminderung von unerwünschten Effekten die durch das begrenzte Pixelraster entstehen würden
+  - Bildinhalte werden nicht mehr nur an Pixeln sondern auch an anderen Positionen ausgewertet
+
+## Farbe, Farbton, Sättigung
+
+- Farbe: vermittelter Sinneseindruck (durch Zäpfchen)
+- Farbton: durch dominante Wellenlänge definiert
+- Sättigung: Intensität und Reinheit eines Farbtons
+
+## Licht-, Schattenberechnung, Leuchtdichte
+
+- Lichtberechnung: Lichtstrahlen von Leuchtquelle aus
+- Schattenberechnung: TODO
+- Leuchtdichte: Lichtstärke pro Fläche
+- Sichtbares Licht: Wellenlängen zwischen 400nm und 780nm
+
+## Lichtquellen, Lichtausbreitung
+
+- die Sonne<!--praise the sun!-->, Punktlicht, Spotlicht, Netzlicht
+- Ausbreitung abhängig vom Lichtquelle
+
+## Farbraum, Farbprofil, CIE-Diagramm
+
+- CIE-Diagramm: Farbraum, der vom menschl. Auge wahrgenommen werden kann
 - TODO
-- HÄ? Verluste, Ungenauigkeiten in Neutralformaten?
+
+## TODO
+
+Farbraum, Farbprofil, CIE-Diagramm, Weißpunkt
+
+- Farbmodelle RGB, CMYK, HSV, Umrechnung, Darstellungen, additive und subtraktive Farbmischung
+- Farbtiefe, Alpha-Kanal und Transparenz, Tiefeninformationen (Z-Abstand)
+
+## Dateiformate, Komprimierung (DCC)
+
+- verlustfreie und verlustbehaftete Komprimierung
+  - JPEG-Artefakte, ...
+- `.max`, `JT`, `FBX`, `OBJ`
+
+## Dateiformate, Komprimierung (CAx)
+
+- verlustfreie und verlustbehaftete Komprimierung
+  - Verluste u.a.: Tesselierung, keine Historie, komplexe Geometrie durch Primitive abgebildet
+- Neutralformate: `JT`, `STEP`, `MTL`
+- Dateiformate: `CAT`, `CATpart`, Bauteil: `IPT`, Baugruppe: `IAM`
+
+## Polygonzug
+
+- Kantenzug durch mehrere Punkte $\rightarrow$ offener oder geschlossener Polygonzug
+
+## Polygon
+
+- geschlossener Polygonzug $\rightarrow$ schließt Fläche ein
+
+## Spline, B-Spline
+
+- Spline: Polynom n-ten Grades
+  - B-Spline: Vereinfachung von Spline $\rightarrow$ reduziert Komplexität des Spline und somit Berechnungszeit durch Approximation
+
+## Interpolation
+
+- Splines und B-Splines können durch Interpolation beschrieben werden
+
+> finde Funktion, die durch die Punkte geht
+
+## Texturen und Mapping
+
+- definieren Gestalt der Oberfläche von Objekten
+
+## grundlegende Vorgehensweise 3DS Max
+
+- Modellierung $\rightarrow$ Beleuchtung $\rightarrow$ Kamera $\rightarrow$ Material $\rightarrow$
+- Import/Export Pixelgrafik $\rightarrow$ Rendering mit Scanline oder Arnold
+
