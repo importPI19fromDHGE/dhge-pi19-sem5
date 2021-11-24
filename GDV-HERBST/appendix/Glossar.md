@@ -341,7 +341,7 @@ Das Netzwerk physischer Objekte, die z.B. per Sensoren Daten sammeln und per int
 - ISO-Standard-Grafikformat für 3D-Daten
 - erweitert CAD um:
   - PMI (Toleranz- und Fertigungsinformationen)
-  - CAD-Parameter und Atrribute
+  - CAD-Parameter und Attribute
   - exakte BREP: Boundary Representation
   - Facettierung mit schnellem Laden auch für große Baugruppen
 
