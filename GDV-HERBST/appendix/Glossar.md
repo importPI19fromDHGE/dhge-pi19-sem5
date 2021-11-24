@@ -168,9 +168,10 @@
 
 ## Farbwahrnehmung (Begriffe)
 
-- **Leuchtdichte:** Helligkeit
-- **Farbton:** dominante Wellenlänge
-- **Sättigung:** Erregungseinheit
+- **Farbe:** vermittelter Sinneseindruck, Wellenlängenbereich
+- **Farbton:** dominante Wellenlänge einer Farbe
+- **Sättigung:** Intensität und Reinheit eines Farbtons (Erregungseinheit)
+- **Leuchtdichte:** Lichtstärke pro Fläche (Helligkeitswirkung)
 
 ## Farbprofil
 
