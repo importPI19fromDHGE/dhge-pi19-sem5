@@ -412,7 +412,7 @@ Quelle [Wikipedia: Mechatronik](https://de.wikipedia.org/wiki/Mechatronik)
 
 ## NC
 
-> **N**erical **C**ontrol
+> **N**umerical **C**ontrol
 
 - Bearbeitung vollautomatisch und hochpräzise erledigen
 
