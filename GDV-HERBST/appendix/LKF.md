@@ -413,7 +413,7 @@ Windows, macOS (Linux als Ausnahme)
 ## Erklären Sie additive und subtraktive Farbmischung
 
 - additiv: Farben leuchten selbst, wenn alle leuchten erhalten wir weiß, wenn keine leuchten schwarz
-- subtraktiv: Farben sind auf reflektiertes Licht hingewiesen, verwenden daher Komplementärfarben von RGB $\rightarrow$ CMY
+- subtraktiv: Farben sind auf reflektiertes Licht angewiesen, verwenden daher Komplementärfarben von RGB $\rightarrow$ CMY
 
 ## Welche Typen von Lichtquellen werden beispielhaft unterschieden? Warum werden unterschiedliche Typen definiert?
 
