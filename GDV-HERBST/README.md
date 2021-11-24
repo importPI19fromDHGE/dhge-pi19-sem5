@@ -13,6 +13,7 @@ Graphische Datenverarbeitung
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Graphische Datenverarbeitung](#graphische-datenverarbeitung)
 - [Organisatorisches](#organisatorisches)
 - [CAD - Computer Aided Design](#cad---computer-aided-design)
   - [Glossar](#glossar)
@@ -155,7 +156,7 @@ Mögliche Daten:
 
 ### e-collaboration
 
-Beschreibt die Maßnahmen zur dezentralen computergestützten Zusammenarbeit von zeitlich und/oder räumlich getrennten Teams und Gruppen, die an einer gemeinsamen Aufgabe arbeiten. 
+Beschreibt die Maßnahmen zur dezentralen computergestützten Zusammenarbeit von zeitlich und/oder räumlich getrennten Teams und Gruppen, die an einer gemeinsamen Aufgabe arbeiten.
 Hier: arbeiten gemeinsam an einem Produkt.
 
 > Quelle [Wikipedia: e-collaboration](https://de.wikipedia.org/wiki/E-Collaboration)
