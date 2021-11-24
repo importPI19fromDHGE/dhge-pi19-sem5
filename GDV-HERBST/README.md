@@ -13,7 +13,6 @@ Graphische Datenverarbeitung
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
-- [Graphische Datenverarbeitung](#graphische-datenverarbeitung)
 - [Organisatorisches](#organisatorisches)
 - [CAD - Computer Aided Design](#cad---computer-aided-design)
   - [Glossar](#glossar)
