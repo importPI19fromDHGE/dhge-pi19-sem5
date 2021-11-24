@@ -429,10 +429,6 @@ Normung nach DIN.
 
 ## Phong-Beleuchtungsmodell
 
-> nicht relevant
-
-<!-- md2apkg split -->
-
 - einfaches Modell zur Berechnung der Schattierung von Oberflächen
 - drei Komponenten: diffuse, spekuläre und ambiente Reflektion
 - für Darstellung von glatten, plastikähnlichen Oberflächen geeignet
