@@ -521,8 +521,8 @@ Das Datenmodell unterstützt unterschiedlichste Repräsentationen der CAD-Geomet
 
 ## Probleme geometrische Schnittstellen/Direktschnittstellen/Neutralformate
 
-- manche Daten können in manchen Formaten nicht richtig gespeichert werden, 
-  - proprietären Sachen von speziellen Programmem. 
+- manche Daten können in manchen Formaten nicht richtig gespeichert werden
+  - proprietären Sachen von speziellen Programmen
 - Bei Neutralformaten, die nur tesselierte Modelle speichern, geht die BREP verloren.
 
 ## 2D-, 3D-Grafikpipeline
