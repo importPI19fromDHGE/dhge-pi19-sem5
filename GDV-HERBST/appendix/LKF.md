@@ -319,9 +319,7 @@ Windows, macOS (Linux als Ausnahme)
 
 ## Was versteht man unter "Parametric Design"?
 
-<!--Quatsch-->
-
-- TODO
+- Algorithmen-basierte Gestaltung bei denen Parameter und Regeln definiert werden, die den Zusammenhang zwischen Designgedanken und Designoutcome beschreiben
 - Parameter können editiert werden, Komponente passt sich entsprechend an
 - Inventor: unter Verwendung des Parameter-Editors
   - Nutzung von Variablen zur Bemaßung
@@ -619,4 +617,3 @@ Farbraum, Farbprofil, CIE-Diagramm, Weißpunkt
 
 - Modellierung $\rightarrow$ Beleuchtung $\rightarrow$ Kamera $\rightarrow$ Material $\rightarrow$
 - Import/Export Pixelgrafik $\rightarrow$ Rendering mit Scanline oder Arnold
-
