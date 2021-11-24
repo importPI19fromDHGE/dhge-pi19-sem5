@@ -53,7 +53,7 @@
 
 ## Bildformate
 
-> `JPG`, `PNG`, `BMP`, `GIF`, `WwebP`
+> `JPG`, `PNG`, `BMP`, `GIF`, `WebP`
 
 ## Bildraum
 
@@ -127,7 +127,7 @@ Zur Anwendung kommen:
 
 - Verarbeitung und Analyse von Bildern, um:
   - Inhalt zu verstehen
-  - geometrische Informationen zu extrahieren (Umwandlung: Bildraum \rightarrow\rightarrow Objektraum)
+  - geometrische Informationen zu extrahieren (Umwandlung: Bildraum $\rightarrow$ Objektraum)
 - z.B. Objekterkennung, Vermessung geometrischer Strukturen (3D-Scan)
 
 ## CSG
