@@ -26,8 +26,8 @@
 - 2D-, 3D-Grafikpipeline
 - Bildauflösung, Bildschirmgrößen, Umrechnungen, Seitenverhältnisse
 - Probleme bei Rastergeräten zur Ausgabe:
-- Aliasing, Antialiasing
-- Dithering
+  - Aliasing, Antialiasing
+  - Dithering
 - Licht, Farbe, Farbton, Leuchtdichte, Sättigung, Schattenberechnung
 - Wellenlängen, sichtbares Licht
 - Lichtquellen, Lichtausbreitung
