@@ -13,9 +13,10 @@ Graphische Datenverarbeitung
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Inhaltsverzeichnis**
 
+- [Graphische Datenverarbeitung](#graphische-datenverarbeitung)
 - [Organisatorisches](#organisatorisches)
 - [CAD - Computer Aided Design](#cad---computer-aided-design)
-  - [Glossar](#glossar)
+  - [Grundlagen und Glossar](#grundlagen-und-glossar)
     - [CAD](#cad)
     - [CAE](#cae)
     - [ERP](#erp)
@@ -37,23 +38,9 @@ Graphische Datenverarbeitung
     - [VR, AR, MR, XR](#vr-ar-mr-xr)
     - [Immersion](#immersion)
     - [ungeordnet, muss noch an andere Stelle](#ungeordnet-muss-noch-an-andere-stelle)
-  - [CAD-Technik](#cad-technik)
-  - [Konfiguration](#konfiguration)
-  - [Internet](#internet)
-  - [Konstruktion](#konstruktion)
-  - [Werkzeuge](#werkzeuge)
-- [CG - Computer Graphics](#cg---computer-graphics)
-  - [CG-Grundlagen](#cg-grundlagen)
-  - [Mathematik](#mathematik)
-  - [Farbgebung](#farbgebung)
-  - [CG-Technik](#cg-technik)
-  - [Standards](#standards)
-  - [3D-Objekte](#3d-objekte)
-  - [Visualisierung](#visualisierung)
-  - [Bildformate](#bildformate)
 - [Grundlagen geometrischer Modellierung](#grundlagen-geometrischer-modellierung)
   - [grafische Primitive](#grafische-primitive)
-    - [2D-Elemete](#2d-elemete)
+    - [2D-Elemente](#2d-elemente)
     - [3D-Elemente](#3d-elemente)
   - [Boolsche Operatoren](#boolsche-operatoren)
 
@@ -72,7 +59,7 @@ Graphische Datenverarbeitung
 
 # CAD - Computer Aided Design
 
-## Glossar
+## Grundlagen und Glossar
 
 ### CAD
 
@@ -123,7 +110,7 @@ Integration in oder Schnittstellen zu anderen Systemen wie ERP sind sinnvoll, da
 
 Typische Phasen in Lebenszyklus:
 
-- Konzeption
+- Planung
 - Konstruktion
 - Fertigungsplanung
 - Produktion
@@ -145,6 +132,12 @@ Mögliche Daten:
 - Änderungshistorie
 - Status- und Freigabe
 
+Beispielsoftware:
+
+- Teamcenter (Siemens/UGS)
+- Productstream (Autodesk)
+- Product Manager (IBM)
+
 > Quelle: [contact-software: PDM](https://www.contact-software.com/de/wissen/schwerpunkte/produktdatenmanagement-pdm-system)
 
 ### Mechatronik
@@ -157,6 +150,7 @@ Mögliche Daten:
 
 Beschreibt die Maßnahmen zur dezentralen computergestützten Zusammenarbeit von zeitlich und/oder räumlich getrennten Teams und Gruppen, die an einer gemeinsamen Aufgabe arbeiten.
 Hier: arbeiten gemeinsam an einem Produkt.
+
 
 > Quelle [Wikipedia: e-collaboration](https://de.wikipedia.org/wiki/E-Collaboration)
 
@@ -275,39 +269,11 @@ Der Grad, mit dem eine virtuelle Umgebung als real empfunden wird. Wird durch en
 <!-- das Glossar ist jetzt auch nicht so der Burner, LG Max -->
 <!-- so sollte es jetzt auch anki schlucken. Vielleicht ist das schöner. MfG, Ben-->
 
-## CAD-Technik
-
-## Konfiguration
-
-## Internet
-
-## Konstruktion
-
-## Werkzeuge
-
-# CG - Computer Graphics
-
-## CG-Grundlagen
-
-## Mathematik
-
-## Farbgebung
-
-## CG-Technik
-
-## Standards
-
-## 3D-Objekte
-
-## Visualisierung
-
-## Bildformate
-
 # Grundlagen geometrischer Modellierung
 
 ## grafische Primitive
 
-### 2D-Elemete
+### 2D-Elemente
 
 - Punkte, Linien, Polygone, Spline, Bézier-Kurven, Kreise, Rechtecke, Text (mit Fonts)
 - Kreise sind problematisch, da sie eigentlich Polygone mit unendlich vielen Ecken sind $\rightarrow$ müssen in Liniensegmente aufgeteilt werden
