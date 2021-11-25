@@ -157,6 +157,7 @@ Betrachtet werden vor allem Auswirkungen auf Wirtschaft und Industrie.
 ## Digitaler Zwilling
 
 - digitale Repräsentation eines Objektes aus der realen Welt in der digitalen Welt
+- Datenaustausch zwischen den Zwillingen ist häufig gegeben (Aktualität)
 - Beispiele:
   - Track and Trace in der Logistik
   - Anwendungen im PLM
