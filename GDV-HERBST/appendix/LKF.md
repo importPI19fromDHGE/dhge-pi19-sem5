@@ -432,8 +432,31 @@ Die Unbuntfarbe „Weiß“ (bei voller Leuchtdichte) in Farbräumen
 - Reflektion
 - Schattenberechnung, Schattenwurf, unterschiedliche Modelle (z.B. Raytracing), Schattenmaps mit Parametern
 
+## Erklären Sie die Unterschiede zwischen Farbmodell, Farbraum und Farbprofil. (und Verbindungen der einzelnen Sachen)
+
+- **Farbmodell**
+  - entsteht aus dem **abstrakten Farbsystem** meist **dreidimensional** für die praktische Darstellung, die unterschiedliche Formen haben kann.
+  - Innerhalb der Modelle: eindeutige Farben $\leftrightarrow$ Zahlenwerte zugeordnet
+- **Farbraum** einer farbgebenden Methode
+  - möglichst **alle Farben**, die innerhalb des Farbmodells **darstellbar** sind
+- **Farbprofil**
+  - **Farben von einem Farbraum in einen anderen Farbraum übersetzen**
+  - ohne dass die Farbechtheit der Ausgangsvorlage dadurch leidet.
+  - Ziel: **unveränderte Farbwiedergabe** auf allen Ausgabegeräten
+
+> Alle Farben eines Farbmodells, die durch eine farbgebende Methode tatsächlich ausgegeben werden können, werden in dem dreidimensionalen Farbraum dargestellt. Jede farbgebende Methode hat ihren eigenen Farbraum.
+
+[Wikipedia](https://de.wikipedia.org/wiki/Farbraum)
+[Allbranded](https://www.allbranded.de/Farbprofil/)
+
 ## Beschreiben Sie das RGB-Farbmodell!
 
+- additiv
+- TODO
+
+## Beschreiben Sie das CMY(K)-Farbmodell!
+
+- subtraktives Gegenstück zu RGB
 - TODO
 
 ## Wie erfolgt die Umrechnung vom CMY- in das RGB-Farbmodell?
@@ -451,23 +474,6 @@ $$
 - liegt am Farbprofil
 - Farbmanagement deaktivieren um Farbprofile nicht zu berücksichtigen
 - dementsprechend dann verlustfrei
-
-## Erklären Sie die Unterschiede zwischen Farbmodell, Farbraum und Farbprofil. (und Verbindungen der einzelnen Sachen)
-
-- **Farbmodell**
-  - entsteht aus dem **abstrakten Farbsystem** meist **dreidimensional** für die praktische Darstellung, die unterschiedliche Formen haben kann.
-  - Innerhalb der Modelle: eindeutige Farben $\leftrightarrow$ Zahlenwerte zugeordnet
-- **Farbraum** einer farbgebenden Methode
-  - möglichst **alle Farben**, die innerhalb des Farbmodells **darstellbar** sind
-- **Farbprofil**
-  - **Farben von einem Farbraum in einen anderen Farbraum übersetzen**
-  - ohne dass die Farbechtheit der Ausgangsvorlage dadurch leidet.
-  - Ziel: **unveränderte Farbwiedergabe** auf allen Ausgabegeräten
-
-> Alle Farben eines Farbmodells, die durch eine farbgebende Methode tatsächlich ausgegeben werden können, werden in dem dreidimensionalen Farbraum dargestellt. Jede farbgebende Methode hat ihren eigenen Farbraum.
-
-[Wikipedia](https://de.wikipedia.org/wiki/Farbraum)
-[Allbranded](https://www.allbranded.de/Farbprofil/)
 
 ## Aus welchen Reflexionsanteilen setzt sich das Beleuchtungsmodell nach Phong zusammen? Wie werden die Faktoren für reale Materialien ermittelt?
 
@@ -527,8 +533,6 @@ $$
 - **DirectX / Direct3D**
   - proprietäre Lizenz
   - Microsoft $\rightarrow$ Windows, Xbox
-
-- TODO
 
 [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_OpenGL_and_Direct3D)
 
@@ -592,7 +596,7 @@ Das Datenmodell unterstützt unterschiedlichste Repräsentationen der CAD-Geomet
 ## Licht-, Schattenberechnung, Leuchtdichte
 
 - Lichtberechnung: Lichtstrahlen von Leuchtquelle aus
-- Schattenberechnung: TODO
+- Schattenberechnung: Halbschattenberechnung ist aufwendig
 - Leuchtdichte: Lichtstärke pro Fläche
 - Sichtbares Licht: Wellenlängen zwischen 400nm und 780nm
 
@@ -600,13 +604,6 @@ Das Datenmodell unterstützt unterschiedlichste Repräsentationen der CAD-Geomet
 
 - die Sonne<!--praise the sun!-->, Punktlicht, Spotlicht, Netzlicht
 - Ausbreitung abhängig vom Lichtquelle
-
-## Farbraum, Farbprofil, CIE-Diagramm
-
-<!-- md2apkg ignore-card -->
-
-- TODO
-- Farbmodelle, CMYK, Umrechnung, Darstellungen
 
 ## Worum handelt es sich bei der Farbtiefe?
 
@@ -618,7 +615,7 @@ Alphakanal enthält Informationen zur Transparenz. Der Alphakanal ist also ein z
 
 ## Was sind Tiefeninformationen (Z-Abstand)?
 
-- Z-Buffering
+- Tiefeninformationen in Z-Buffer
 - Verfahren Verdeckungsberechnung,
 - Ermittlung der vom Betrachter aus sichtbaren dreidimensionalen Flächen in einer Computergrafik (effizientes Rendern)
 - pixelweises Verfahren: welche Elemente einer Szene    müssen gezeichnet werden und welche sind verdeckt?
