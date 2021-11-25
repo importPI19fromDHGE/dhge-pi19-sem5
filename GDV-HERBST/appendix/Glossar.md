@@ -39,7 +39,7 @@
 > B-Spline, Bézierkurve, ...
 
 - in CAD & DCC-Systemen
-- Funktionen, die stückweise aus Polynomen höchsten n-ten Grades zusammengesetzt sind
+- Funktionen, die stückweise aus Polynomen höchstens n-ten Grades zusammengesetzt sind
 - beschreiben u. a. Schriftarten in der Computergrafik
 
 ## Beleuchtungsmodell
