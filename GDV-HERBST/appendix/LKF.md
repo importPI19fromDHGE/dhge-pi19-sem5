@@ -597,11 +597,6 @@ Das Datenmodell unterstützt unterschiedlichste Repräsentationen der CAD-Geomet
 
 - CIE-Diagramm: Farbraum, der vom menschl. Auge wahrgenommen werden kann
 - TODO
-
-## TODO
-
-Farbraum, Farbprofil, CIE-Diagramm, Weißpunkt
-
 - Farbmodelle RGB, CMYK, HSV, Umrechnung, Darstellungen, additive und subtraktive Farbmischung
 - Farbtiefe, Alpha-Kanal und Transparenz, Tiefeninformationen (Z-Abstand)
 
