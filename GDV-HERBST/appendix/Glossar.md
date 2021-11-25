@@ -294,6 +294,7 @@ Der Grad, mit dem eine virtuelle Umgebung als real empfunden wird. Wird durch en
 ## indizierte Farben
 
 - Datenstruktur jedes Pixels enthält Index eines Eintrages einer Farbtabelle (nicht direkt einzelne Farbwerte!)
+- vor allem für Bilder/Formate mit wenigen Farbwerten verwendet
 
 > Alternativ: **Farbpalette**
 
