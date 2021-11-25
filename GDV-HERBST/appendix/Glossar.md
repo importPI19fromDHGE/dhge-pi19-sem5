@@ -111,9 +111,10 @@ Zur Anwendung kommen:
 - **C**omputer **G**raphics
 - Umwandlung von Daten des Objektraums in grafische Daten des Bildraumes
 
-## CI-Farbwertdiagramm
+## CIE-Farbwertdiagramm
 
 > Das gebogene Dreieck umfasst alle wahrnehmbaren Farben unter Vernachlässigung der Leuchtdichte. Nur wenn sich zwei Farben in ihrer Farbigkeit (Farbton und/oder Sättigung) unterscheiden, werden sie durch zwei unterschiedliche Punkte dargestellt.
+> Basis ist die Gesamtheit aller (vom Menschen) wahrnehmbaren Farben
 
 ## Clipping
 
