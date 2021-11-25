@@ -353,6 +353,7 @@ Das Netzwerk physischer Objekte, die z.B. per Sensoren Daten sammeln und per int
 ## Kernelmodellierer
 
 - Modellierkern (geometric modeling kernel)
+  - 3D-Software-Komponente für die Volumenmodellierung
 - Bsp.: ACIS, Parasolid
 - 3D solid modeling software component für CAD
 
