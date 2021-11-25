@@ -57,7 +57,9 @@
 
 ## Bildraum
 
-- Verarbeitung von (2D-)Bildinformationen
+- die Abbildung von Inhalten aus dem Objektraum auf einer Ebene
+- in der CG dazu nötig: Verarbeitung von (3D)-Informationen des Objektraums um sie z.B. auf dem Bildschirm darstellbar zu machen
+  - dabei gehen Informationen über die Objekte verloren
 
 ## Boolsche Operatoren
 
