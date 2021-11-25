@@ -85,12 +85,10 @@ Zur Anwendung kommen:
 
 ### CAD-Systeme nach Hersteller
 
-<!-- ToDo Produkte ergänzen -->
-
-- Autodesk
-- Siemens
-- Dassault Systemés
-- PTC
+- Autodesk: AutoCAD, Inventor
+- Siemens: NX, Solid Edge
+- Dassault Systemés: CATIA
+- PTC: Creo
 
 ### Aufbau von CAD- und DCC-Software
 
