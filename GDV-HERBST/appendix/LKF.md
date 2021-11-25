@@ -451,13 +451,14 @@ Die Unbuntfarbe „Weiß“ (bei voller Leuchtdichte) in Farbräumen
 
 ## Beschreiben Sie das RGB-Farbmodell!
 
-- additiv
-- TODO
+- additiv - Farben leuchten selbst
+- üblicherweise (!) 8 Bit je Farbe
 
 ## Beschreiben Sie das CMY(K)-Farbmodell!
 
+- cyan, magenta, yellow, and key (black)
 - subtraktives Gegenstück zu RGB
-- TODO
+- Verwendung bei Druckern - Reflexion von Licht
 
 ## Wie erfolgt die Umrechnung vom CMY- in das RGB-Farbmodell?
 
