@@ -203,6 +203,7 @@ Außerdem: Gründe für Änderungen, Lieferant
 - Spacemouse zur erleichterten Bedienung
 - 3D-Drucker
 - VR/AR Systeme (Microsoft HoloLens)
+- NC-Programmierung
 
 ## Grafikstandards- bzw. Schnittstellen
 
@@ -282,6 +283,7 @@ Windows, macOS (Linux als Ausnahme)
 - Erstellung von 3D-Modelle auf Basis der 2D-Skizzen (Extrusion)
 - Bearbeiten der 3D-Elemente mit Hilfe von Features und Boolschen Operationen
 - ggf. weitere Skizzen auf 3D-Element erstellen
+- Boolesche Operatoren: Rechtsklick auf Objekt - bearbeiten
 
 ## Woran erkennt man schnell die Komplexität der Darstellung einer Geometrie?
 
@@ -323,6 +325,7 @@ Windows, macOS (Linux als Ausnahme)
 - Parameter können editiert werden, Komponente passt sich entsprechend an
 - Inventor: unter Verwendung des Parameter-Editors
   - Nutzung von Variablen zur Bemaßung
+  - Ribbon Bar: `Verwalten` - `Parameter`
 
 ## Was sind Skizziertechniken (CAD)?
 
@@ -613,7 +616,7 @@ Farbraum, Farbprofil, CIE-Diagramm, Weißpunkt
 - verlustfreie und verlustbehaftete Komprimierung
   - Verluste u.a.: Tesselierung, keine Historie, komplexe Geometrie durch Primitive abgebildet
 - Neutralformate: `JT`, `STEP`, `MTL`
-- Dateiformate: `CAT`, `CATpart`, Bauteil: `IPT`, Baugruppe: `IAM`
+- Dateiformate: `CATproduct`, `CATpart`, Bauteil: `IPT`, Baugruppe: `IAM`
 
 ## Polygonzug
 
