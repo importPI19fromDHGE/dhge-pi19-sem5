@@ -403,6 +403,10 @@ Windows, macOS (Linux als Ausnahme)
   - sechseckige Pyramide
   - halbe Zylinder / Kegel
 
+## Was ist der Weißpunkt?
+
+Die Unbuntfarbe „Weiß“ (bei voller Leuchtdichte) in Farbräumen
+
 ## Was beschreibt das CIE-Farbwertdiagramm?
 
 - alle Farben, die der Mensch sehen kann
@@ -428,22 +432,6 @@ Windows, macOS (Linux als Ausnahme)
 - Reflektion
 - Schattenberechnung, Schattenwurf, unterschiedliche Modelle (z.B. Raytracing), Schattenmaps mit Parametern
 
-## Wie erfolgt die Umrechnung vom CMY- in das RGB-Farbmodell?
-
-- Farbwerte werden invertiert
-
-$$
-R = 255 \cdot (1-C) \\
-G = 255 \cdot (1-M) \\
-B = 255 \cdot (1-Y)
-$$
-
-## Umrechnung CMY in RGB normalerweise nicht verlustfrei. Warum?
-
-- liegt am Farbprofil
-- Farbmanagement deaktivieren um Farbprofile nicht zu berücksichtigen
-- dementsprechend dann verlustfrei
-
 ## Erklären Sie die Unterschiede zwischen Farbmodell, Farbraum und Farbprofil. (und Verbindungen der einzelnen Sachen)
 
 - **Farbmodell**
@@ -460,6 +448,33 @@ $$
 
 [Wikipedia](https://de.wikipedia.org/wiki/Farbraum)
 [Allbranded](https://www.allbranded.de/Farbprofil/)
+
+## Beschreiben Sie das RGB-Farbmodell!
+
+- additiv - Farben leuchten selbst
+- üblicherweise (!) 8 Bit je Farbe
+
+## Beschreiben Sie das CMY(K)-Farbmodell!
+
+- cyan, magenta, yellow, and key (black)
+- subtraktives Gegenstück zu RGB
+- Verwendung bei Druckern - Reflexion von Licht
+
+## Wie erfolgt die Umrechnung vom CMY- in das RGB-Farbmodell?
+
+- Farbwerte werden invertiert
+
+$$
+R = 255 \cdot (1-C) \\
+G = 255 \cdot (1-M) \\
+B = 255 \cdot (1-Y)
+$$
+
+## Umrechnung CMY in RGB normalerweise nicht verlustfrei. Warum?
+
+- liegt am Farbprofil
+- Farbmanagement deaktivieren um Farbprofile nicht zu berücksichtigen
+- dementsprechend dann verlustfrei
 
 ## Aus welchen Reflexionsanteilen setzt sich das Beleuchtungsmodell nach Phong zusammen? Wie werden die Faktoren für reale Materialien ermittelt?
 
@@ -519,8 +534,6 @@ $$
 - **DirectX / Direct3D**
   - proprietäre Lizenz
   - Microsoft $\rightarrow$ Windows, Xbox
-
-- TODO
 
 [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_OpenGL_and_Direct3D)
 
@@ -584,7 +597,7 @@ Das Datenmodell unterstützt unterschiedlichste Repräsentationen der CAD-Geomet
 ## Licht-, Schattenberechnung, Leuchtdichte
 
 - Lichtberechnung: Lichtstrahlen von Leuchtquelle aus
-- Schattenberechnung: TODO
+- Schattenberechnung: Halbschattenberechnung ist aufwendig
 - Leuchtdichte: Lichtstärke pro Fläche
 - Sichtbares Licht: Wellenlängen zwischen 400nm und 780nm
 
@@ -593,17 +606,20 @@ Das Datenmodell unterstützt unterschiedlichste Repräsentationen der CAD-Geomet
 - die Sonne<!--praise the sun!-->, Punktlicht, Spotlicht, Netzlicht
 - Ausbreitung abhängig vom Lichtquelle
 
-## Farbraum, Farbprofil, CIE-Diagramm
+## Worum handelt es sich bei der Farbtiefe?
 
-- CIE-Diagramm: Farbraum, der vom menschl. Auge wahrgenommen werden kann
-- TODO
+- Anzahl der unterschiedlichen Farbstufen im 3D-Farbmodell?
 
-## TODO
+## Wie hängen Alpha-Kanal und Transparenz zusammen?
 
-Farbraum, Farbprofil, CIE-Diagramm, Weißpunkt
+Alphakanal enthält Informationen zur Transparenz. Der Alphakanal ist also ein zusätzlicher Kanal, der in Rastergrafiken die Durchsichtigkeit der einzelnen Pixel (Bildpunkte) speichert
 
-- Farbmodelle RGB, CMYK, HSV, Umrechnung, Darstellungen, additive und subtraktive Farbmischung
-- Farbtiefe, Alpha-Kanal und Transparenz, Tiefeninformationen (Z-Abstand)
+## Was sind Tiefeninformationen (Z-Abstand)?
+
+- Tiefeninformationen in Z-Buffer
+- Verfahren Verdeckungsberechnung,
+- Ermittlung der vom Betrachter aus sichtbaren dreidimensionalen Flächen in einer Computergrafik (effizientes Rendern)
+- pixelweises Verfahren: welche Elemente einer Szene    müssen gezeichnet werden und welche sind verdeckt?
 
 ## Dateiformate, Komprimierung (DCC)
 
