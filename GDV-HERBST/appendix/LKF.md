@@ -403,6 +403,10 @@ Windows, macOS (Linux als Ausnahme)
   - sechseckige Pyramide
   - halbe Zylinder / Kegel
 
+## Was ist der Weißpunkt?
+
+Die Unbuntfarbe „Weiß“ (bei voller Leuchtdichte) in Farbräumen
+
 ## Was beschreibt das CIE-Farbwertdiagramm?
 
 - alle Farben, die der Mensch sehen kann
@@ -427,6 +431,10 @@ Windows, macOS (Linux als Ausnahme)
 
 - Reflektion
 - Schattenberechnung, Schattenwurf, unterschiedliche Modelle (z.B. Raytracing), Schattenmaps mit Parametern
+
+## Beschreiben Sie das RGB-Farbmodell!
+
+- TODO
 
 ## Wie erfolgt die Umrechnung vom CMY- in das RGB-Farbmodell?
 
@@ -595,10 +603,25 @@ Das Datenmodell unterstützt unterschiedlichste Repräsentationen der CAD-Geomet
 
 ## Farbraum, Farbprofil, CIE-Diagramm
 
-- CIE-Diagramm: Farbraum, der vom menschl. Auge wahrgenommen werden kann
+<!-- md2apkg ignore-card -->
+
 - TODO
-- Farbmodelle RGB, CMYK, HSV, Umrechnung, Darstellungen, additive und subtraktive Farbmischung
-- Farbtiefe, Alpha-Kanal und Transparenz, Tiefeninformationen (Z-Abstand)
+- Farbmodelle, CMYK, Umrechnung, Darstellungen
+
+## Worum handelt es sich bei der Farbtiefe?
+
+- Anzahl der unterschiedlichen Farbstufen im 3D-Farbmodell?
+
+## Wie hängen Alpha-Kanal und Transparenz zusammen?
+
+Alphakanal enthält Informationen zur Transparenz. Der Alphakanal ist also ein zusätzlicher Kanal, der in Rastergrafiken die Durchsichtigkeit der einzelnen Pixel (Bildpunkte) speichert
+
+## Was sind Tiefeninformationen (Z-Abstand)?
+
+- Z-Buffering
+- Verfahren Verdeckungsberechnung,
+- Ermittlung der vom Betrachter aus sichtbaren dreidimensionalen Flächen in einer Computergrafik (effizientes Rendern)
+- pixelweises Verfahren: welche Elemente einer Szene    müssen gezeichnet werden und welche sind verdeckt?
 
 ## Dateiformate, Komprimierung (DCC)
 
