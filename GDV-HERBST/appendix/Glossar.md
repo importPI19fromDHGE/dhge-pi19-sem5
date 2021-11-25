@@ -453,9 +453,10 @@ Integration in oder Schnittstellen zu anderen Systemen wie ERP sind sinnvoll, da
 
 ![Konstruktion im PLM](assets/plm-konstruktion.png)
 
-### PLM-Systeme
+### PLM-Anbieter
 
-<!--ToDo: Beispiele einfügen -->
+PTC - Windchill
+Siemens - Teamcenter
 
 ## PDM
 
