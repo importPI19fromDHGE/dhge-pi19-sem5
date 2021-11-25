@@ -1,4 +1,4 @@
-# GDV
+# GDV-Glossar
 
 ## Additive Farbmischung
 
@@ -39,7 +39,7 @@
 > B-Spline, Bézierkurve, ...
 
 - in CAD & DCC-Systemen
-- Funktionen, die stückweise aus Polynomen höchsten n-ten Grades zusammengesetzt sind
+- Funktionen, die stückweise aus Polynomen höchstens n-ten Grades zusammengesetzt sind
 - beschreiben u. a. Schriftarten in der Computergrafik
 
 ## Beleuchtungsmodell
@@ -57,7 +57,9 @@
 
 ## Bildraum
 
-- Verarbeitung von (2D-)Bildinformationen
+- die Abbildung von Inhalten aus dem Objektraum auf einer Ebene
+- in der CG dazu nötig: Verarbeitung von (3D)-Informationen des Objektraums um sie z.B. auf dem Bildschirm darstellbar zu machen
+  - dabei gehen Informationen über die Objekte verloren
 
 ## Boolsche Operatoren
 
@@ -83,12 +85,10 @@ Zur Anwendung kommen:
 
 ### CAD-Systeme nach Hersteller
 
-<!-- ToDo Produkte ergänzen -->
-
-- Autodesk
-- Siemens
-- Dassault Systemés
-- PTC
+- Autodesk: AutoCAD, Inventor
+- Siemens: NX, Solid Edge
+- Dassault Systemés: CATIA
+- PTC: Creo
 
 ### Aufbau von CAD- und DCC-Software
 
@@ -111,7 +111,7 @@ Zur Anwendung kommen:
 - **C**omputer **G**raphics
 - Umwandlung von Daten des Objektraums in grafische Daten des Bildraumes
 
-## CI-Farbwertdiagramm
+## CIE-Farbwertdiagramm
 
 > Das gebogene Dreieck umfasst alle wahrnehmbaren Farben unter Vernachlässigung der Leuchtdichte. Nur wenn sich zwei Farben in ihrer Farbigkeit (Farbton und/oder Sättigung) unterscheiden, werden sie durch zwei unterschiedliche Punkte dargestellt.
 
@@ -121,7 +121,7 @@ Zur Anwendung kommen:
 
 - 2D-Bereich: z.B. Ansichtsfenster
 - 3D-Bereich: in Form eines Clippingvolumens (Transformation von Weltkoordinaten in normalisierte Ansichtskoordinaten)
-- Probleme z. B. im 3D-Umfeld (Spieglungen, Schatten, ...)
+- Probleme z. B. im 3D-Umfeld (Spiegelungen, Schatten, ...)
 
 ## Computer Vision
 
@@ -156,6 +156,7 @@ Betrachtet werden vor allem Auswirkungen auf Wirtschaft und Industrie.
 ## Digitaler Zwilling
 
 - digitale Repräsentation eines Objektes aus der realen Welt in der digitalen Welt
+- Datenaustausch zwischen den Zwillingen ist häufig gegeben (Aktualität)
 - Beispiele:
   - Track and Trace in der Logistik
   - Anwendungen im PLM
@@ -293,6 +294,7 @@ Der Grad, mit dem eine virtuelle Umgebung als real empfunden wird. Wird durch en
 ## indizierte Farben
 
 - Datenstruktur jedes Pixels enthält Index eines Eintrages einer Farbtabelle (nicht direkt einzelne Farbwerte!)
+- vor allem für Bilder/Formate mit wenigen Farbwerten verwendet
 
 > Alternativ: **Farbpalette**
 
@@ -311,14 +313,17 @@ Der Grad, mit dem eine virtuelle Umgebung als real empfunden wird. Wird durch en
 - Produktdefinition
   - Identifikation, Klassifikation
   - Freigabe und Änderungszustände
-- ProduktrepräsentationEigenschaften über Merkmale ausgedrückt
+- Produktrepräsentation: Eigenschaften über Merkmale ausgedrückt
   - Geometrie, Topologie
   - FEM, Kinematik usw.
-- Produktpräsentation Darstellung der Repräsentation
+- Produktpräsentation: Darstellung der Repräsentation
   - Grafisch, textuell, zeichnerisch
   - Multimedial, Animationen usw.
 
-<!-- ToDo: Beispiele in den LKF anschauen, eventuell übernehmen -->
+- i. Produktdatenmodell ist Grundlage für PDM
+  - Applikationen (CAD,CAE,CAM,CAx) an PDM-System angeschlossen
+  - Daten liegen in PDM, System, gemeinsamer Zugriff über Benutzeroberfläche
+  - vgl. 3-Schichten-Architektur
 
 ### Bestandteile des Integrierten Produktdatenmodells
 
@@ -338,7 +343,7 @@ Das Netzwerk physischer Objekte, die z.B. per Sensoren Daten sammeln und per int
 
 ## JT
 
-- ISO-Standard-Grafikformat für 3D-Daten
+- **neutrales** ISO-Standard-Grafikformat für 3D-Daten
 - erweitert CAD um:
   - PMI (Toleranz- und Fertigungsinformationen)
   - CAD-Parameter und Attribute
@@ -348,6 +353,7 @@ Das Netzwerk physischer Objekte, die z.B. per Sensoren Daten sammeln und per int
 ## Kernelmodellierer
 
 - Modellierkern (geometric modeling kernel)
+  - 3D-Software-Komponente für die Volumenmodellierung
 - Bsp.: ACIS, Parasolid
 - 3D solid modeling software component für CAD
 
@@ -447,9 +453,10 @@ Integration in oder Schnittstellen zu anderen Systemen wie ERP sind sinnvoll, da
 
 ![Konstruktion im PLM](assets/plm-konstruktion.png)
 
-### PLM-Systeme
+### PLM-Anbieter
 
-<!--ToDo: Beispiele einfügen -->
+PTC - Windchill
+Siemens - Teamcenter
 
 ## PDM
 
