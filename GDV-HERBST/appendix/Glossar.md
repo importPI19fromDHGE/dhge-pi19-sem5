@@ -313,14 +313,17 @@ Der Grad, mit dem eine virtuelle Umgebung als real empfunden wird. Wird durch en
 - Produktdefinition
   - Identifikation, Klassifikation
   - Freigabe und Änderungszustände
-- ProduktrepräsentationEigenschaften über Merkmale ausgedrückt
+- Produktrepräsentation: Eigenschaften über Merkmale ausgedrückt
   - Geometrie, Topologie
   - FEM, Kinematik usw.
-- Produktpräsentation Darstellung der Repräsentation
+- Produktpräsentation: Darstellung der Repräsentation
   - Grafisch, textuell, zeichnerisch
   - Multimedial, Animationen usw.
 
-<!-- ToDo: Beispiele in den LKF anschauen, eventuell übernehmen -->
+- i. Produktdatenmodell ist Grundlage für PDM
+  - Applikationen (CAD,CAE,CAM,CAx) an PDM-System angeschlossen
+  - Daten liegen in PDM, System, gemeinsamer Zugriff über Benutzeroberfläche
+  - vgl. 3-Schichten-Architektur
 
 ### Bestandteile des Integrierten Produktdatenmodells
 
