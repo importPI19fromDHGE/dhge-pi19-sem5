@@ -114,7 +114,6 @@ Zur Anwendung kommen:
 ## CIE-Farbwertdiagramm
 
 > Das gebogene Dreieck umfasst alle wahrnehmbaren Farben unter Vernachlässigung der Leuchtdichte. Nur wenn sich zwei Farben in ihrer Farbigkeit (Farbton und/oder Sättigung) unterscheiden, werden sie durch zwei unterschiedliche Punkte dargestellt.
-> Basis ist die Gesamtheit aller (vom Menschen) wahrnehmbaren Farben
 
 ## Clipping
 
