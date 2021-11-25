@@ -343,7 +343,7 @@ Das Netzwerk physischer Objekte, die z.B. per Sensoren Daten sammeln und per int
 
 ## JT
 
-- ISO-Standard-Grafikformat für 3D-Daten
+- **neutrales** ISO-Standard-Grafikformat für 3D-Daten
 - erweitert CAD um:
   - PMI (Toleranz- und Fertigungsinformationen)
   - CAD-Parameter und Attribute
