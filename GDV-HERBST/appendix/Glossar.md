@@ -1,4 +1,4 @@
-# GDV
+# GDV-Glossar
 
 ## Additive Farbmischung
 
