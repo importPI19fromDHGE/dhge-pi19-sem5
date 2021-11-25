@@ -122,7 +122,7 @@ Zur Anwendung kommen:
 
 - 2D-Bereich: z.B. Ansichtsfenster
 - 3D-Bereich: in Form eines Clippingvolumens (Transformation von Weltkoordinaten in normalisierte Ansichtskoordinaten)
-- Probleme z. B. im 3D-Umfeld (Spieglungen, Schatten, ...)
+- Probleme z. B. im 3D-Umfeld (Spiegelungen, Schatten, ...)
 
 ## Computer Vision
 
