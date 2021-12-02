@@ -371,6 +371,8 @@ Windows, macOS (Linux als Ausnahme)
 ## Was versteht man unter "Subdivision Surface Modeling"?
 
 - Flächenverteilungsmodellierung
+- Oberflächengeometrie von Modellen wird unterteilt und algorithmisch verfeinert
+- dadurch deutlich glattere, bzw. höher aufgelöste Oberflächen möglich
 
 ## Welche Zellen im menschlichen Auge sind für die Farbwahrnehmung verantwortlich?
 
