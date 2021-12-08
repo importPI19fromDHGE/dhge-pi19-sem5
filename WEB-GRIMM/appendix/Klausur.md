@@ -1,10 +1,10 @@
 # Klausurdokumentation
 
 - viel Auswendiglern-Wissen:<!--Oh, du bist also Webentwickler?-->
-  - Webtechnologien einordnen
+  - Webtechnologien einordnen (nach Verwendung und Server/Client)
   - HTML-Skelett vollständig schreiben
-  - HTML-Tags kennen
-  - CSS-Selektoren kennen (recht ausführlich)
+  - semantische HTML-Tags kennen
+  - CSS-Selektoren kennen (recht ausführlich, aber keine Attributsektoren)
   - Javascript und DOM: Lückentext-Code vervollständigen, Grundlagen-Fragen beantworten
   - PHP nur einordnen und Zweck nennen
 - Anwendung:
