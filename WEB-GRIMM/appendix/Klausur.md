@@ -6,6 +6,7 @@
   - semantische HTML-Tags kennen
   - CSS-Selektoren kennen (recht ausführlich, aber keine Attributsektoren)
   - Javascript und DOM: Lückentext-Code vervollständigen, Grundlagen-Fragen beantworten
+    - Funktion und Zweck vom DOM kennen
   - PHP nur einordnen und Zweck nennen
 - Anwendung:
   - eigene Tags schreiben: verglichen mit den Übungen wenig Schreibaufwand
