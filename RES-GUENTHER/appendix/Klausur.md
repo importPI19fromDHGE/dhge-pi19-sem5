@@ -1,7 +1,7 @@
 # Klausurdokumentation
 
 - Keine Überraschungen
-- Fragenkatalog / Wiederholungen sind gute Vorbereitung
+- Fragenkatalog / Wiederholungen sind sehr gute Vorbereitung
 - Fast ausschließlich Freitextantworten
   - 50/50 Nennen/Erläutern
 - eine Multiple-Choice-Frage

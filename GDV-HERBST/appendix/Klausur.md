@@ -5,7 +5,7 @@
 - zutreffende Themenübersicht
 - einige Überraschungen in Details
   - Dateiformate
-  - Farbraumdiagramm zeichnen
+  - Farbraumdiagramm zeichnen (auf S/W \rightarrow\rightarrow Zuordnung Farbe/Ecke merken!)
 
 # Themenübersicht Klausur
 
