@@ -10,5 +10,5 @@
 - viele, kleine Aufgaben
 - es gibt Überpunkte, aber versteckt: er hat in keiner Weise kommuniziert, wo die sind
 - keine Code-Aufgaben
-- Viele Zusammenhänge erfordern Wissen über C, z.B. Speichermanagement, ASAN, Valgrind: man muss wissen, *wie es tickt*
+- viele Zusammenhänge erfordern Wissen über C, z.B. Speichermanagement, ASAN, Valgrind: man muss wissen, *wie es tickt* (deutlich mehr ASAN/Valgrind als nach Klausurbesprechung erwartet!)
 - Fazit: nicht zu unterschätzen, aber human

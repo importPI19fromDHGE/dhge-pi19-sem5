@@ -1,8 +1,8 @@
 # Klausurdokumentation
 
-- Keine Überraschungen
+- keine Überraschungen
 - Fragenkatalog / Wiederholungen sind sehr gute Vorbereitung
-- Fast ausschließlich Freitextantworten
+- fast ausschließlich Freitextantworten
   - 50/50 Nennen/Erläutern
 - eine Multiple-Choice-Frage
-- Eine Aufgabe: Code erklären, korrigieren
+- eine Aufgabe: Code erklären, korrigieren

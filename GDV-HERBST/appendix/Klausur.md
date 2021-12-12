@@ -5,7 +5,8 @@
 - zutreffende Themenübersicht
 - einige Überraschungen in Details
   - Dateiformate
-  - Farbraumdiagramm zeichnen (auf S/W \rightarrow\rightarrow Zuordnung Farbe/Ecke merken!)
+  - D-Cubed
+  - Farbraumdiagramm zeichnen (auf S/W $\rightarrow$ Zuordnung Farbe/Ecke merken!)
 
 # Themenübersicht Klausur
 
