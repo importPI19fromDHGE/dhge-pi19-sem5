@@ -1,3 +1,13 @@
+# Klausurdokumentation
+
+- 25-50 % Multiple-Choice
+- viele bekannte oder ähnliche Fragen
+- zutreffende Themenübersicht
+- einige Überraschungen in Details
+  - Dateiformate
+  - D-Cubed
+  - Farbraumdiagramm zeichnen (auf S/W $\rightarrow$ Zuordnung Farbe/Ecke merken!)
+
 # Themenübersicht Klausur
 
 ## CAD / CAE / Hardware
