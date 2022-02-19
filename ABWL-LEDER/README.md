@@ -197,7 +197,7 @@ Eher Random: Qualität eines Mitarbeiters: fachliche, methodische und persönlic
 - Teile des Marketings: Preis (Kontrahierungspolitik), Verteilung (Distribution), Produktpolitik, Kommunikation
 - Lean Management: flache Hierarchie
 
-## Allgemeine Management Methoden
+## Allgemeine Management-Methoden
 
 - Effektivität (*Ist die Maßnahme zielführend?*) und Effizienz (Aufwand/Nutzen-Verhältnis)
   - wichtig für einheitliche Planungsmethoden
