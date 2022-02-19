@@ -19,7 +19,7 @@ Projektmanagement
   - [Qualitätsmanagement (Klausurschwerpunkte)](#qualit%C3%A4tsmanagement-klausurschwerpunkte)
 - [Grundlagen](#grundlagen)
   - [Allgemeine Wiederholung](#allgemeine-wiederholung)
-  - [Allgemeine Management Methoden](#allgemeine-management-methoden)
+  - [Allgemeine Management-Methoden](#allgemeine-management-methoden)
   - [Projektarten](#projektarten)
 - [Organisation](#organisation)
   - [Ziele eines Projektes](#ziele-eines-projektes)
